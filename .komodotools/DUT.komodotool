@@ -1,0 +1,12 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "DUT", 
+  "value": [
+    "!@#_anchor<abbr title=\"Device Under Test\">DUT</abbr>!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.12", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "auto_abbreviation": "true"
+}

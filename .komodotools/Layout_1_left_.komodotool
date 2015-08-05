@@ -1,0 +1,22 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Layout 1 (left)", 
+  "value": [
+    "<div class=\"layout1\">", 
+    "\t<div class=\"leftBig column span-14 prepend-1\">", 
+    "\t  <h3>HEADLINE</h3>", 
+    "\t  <p class=\"main\">", 
+    "\t\tDescription", 
+    "\t  </p>", 
+    "\t</div>", 
+    "\t<div class=\"rightBig column span-8 last\">", 
+    "\t  <img alt=\"IMAGE\" src=\"/images/IMAGE.png\" class=\"center\" />", 
+    "\t</div>", 
+    "  </div>!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.12", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "auto_abbreviation": "false"
+}

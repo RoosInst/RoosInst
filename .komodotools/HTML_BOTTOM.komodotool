@@ -1,0 +1,33 @@
+{
+  "name": "HTML BOTTOM", 
+  "value": [
+    "!@#_anchor</div> <!-- end of #container -->", 
+    "", 
+    "<!--[if lt IE 7 ]><script src=\"js/dd_belatedpng.js?v=1\"></script> <![endif]-->", 
+    "", 
+    "<script type=\"text/javascript\">", 
+    "var _gaq = [['_setAccount', 'UA-1231691-1'], ['_trackPageview']]; (function(d, t) {", 
+    "var g = d.createElement(t), s = d.getElementsByTagName(t)[0];", 
+    "g.async = true; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s);", 
+    "})(document, 'script');", 
+    "</script>", 
+    "", 
+    "<!-- GOOGLE Search-->", 
+    "<script type=\"text/javascript\" src=\"http://www.google.com/jsapi\"></script>", 
+    "<script type=\"text/javascript\"> google.load('search', '1'); google.setOnLoadCallback(function() { google.search.CustomSearchControl.attachAutoCompletion( '012195191905460761720:_yz700zwfwk', document.getElementById('q'),'cse-search-box');});", 
+    "</script>", 
+    "", 
+    "<!-- GOOGLE Plus-->", 
+    "\t<script type=\"text/javascript\">\twindow.___gcfg = {lang: 'en'};\t(function()\t{var po = document.createElement(\"script\");\tpo.type = \"text/javascript\"; po.async = true;po.src = \"https://apis.google.com/js/plusone.js\";", 
+    "\t\tvar s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(po, s); })();", 
+    "\t\t</script>", 
+    "  </body>", 
+    "</html>", 
+    "!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.12", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "auto_abbreviation": "false"
+}

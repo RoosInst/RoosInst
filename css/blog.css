@@ -1,0 +1,603 @@
+/* (C) Copyright IBM Corp. 2006, 2007  All Rights Reserved.                */
+/* CSS Document */
+/* MODIFIED BY ROOS INSTRUMENTS, commented lines to be removed */
+/* Ryan Benech 12-2010 */
+
+/*this roughly sets the font size to 12px for body text based on normal settings */
+/*body{font:normal .75em/1.5em Helvetica, Arial sans-serif}*/
+/*** D E F A U L T   S T Y L E S***/	
+/*headers*/
+/*h1, h2, h2, h4, h5, h6{font-weight:normal;}*/
+/*h1{font-size:1.5em}*/
+/*h2{font-size:1.4em}*/
+/*h2{font-size:1.3em}*/
+/*h4{font-size:1.2em}	*/
+/*h5{font-size:1.1em}*/
+/*h6{font-size:1em}*/
+/*image*/
+img{border:0;vertical-align:middle}
+/*to make sure list items contain all floated items properly*/
+/*li{float:both}*/
+/*internal link (default link style)*/
+/*a:link, a:visited{color:#105cb6;text-decoration:none}*/
+/*a:hover, a:focus, a:active{color:#05386b;text-decoration:underline;}*/
+
+
+
+/***G E N E R A L   S T Y L E S ***/
+
+/*link styles*/
+/*my links indicate bookmarks you have created*/
+a.my, a.my:visited{color:#44a244;border-bottom:1px dotted #44a244;}
+a.my:hover, a.my:focus{color:#05386b;text-decoration:none;border-bottom:1px dotted #05386b;}
+
+/*external links to a separate web page have a different treatment*/
+/*we are using the important tag in case external links are ever mixed in with a group of action links*/
+a.external, a.external:visited{
+		border-bottom:1px solid #0063dc !important;
+}
+
+a.external:hover, a.external:focus{
+	background-color:transparent;
+	color:#0063dc;
+	border-bottom:2px solid #0063dc !important;
+}
+
+/*person links pop up a related menu*/
+a.person, a.person:visited{color:#578cca; /*border-bottom:1px dotted #578cca;*/}
+
+/*tag*/
+.tags a:link, .tags a:visited, a.tag:link, a.tag:visited{color:#578cca; border-bottom:1px dotted #578cca;}
+
+/*all hover styles are cureently the same, if not, separate these styles*/
+.tags a:hover, .tags a:focus, a.person:hover, a.person:focus, a.my:hover, a.my:focus {color:#05386b;text-decoration:none;border-bottom:1px dotted #05386b;}
+/*single and group action links*/
+/*this is to provide a class for overriding link colors in groups of links to indicate that the link is an action link (like the "Tag this" link in a tag group*/
+a.action, a.action:visited, .actions a, .actions a:visited{color:#105cb6 !important;text-decoration:underline !important;border-bottom:0 !important;}
+a.action:hover, a.action:focus, .actions a:hover, .actions a:focus, .tags a.action:hover, .tags a.action:focus {color:#05386b !important;text-decoration:underline !important;border-bottom:0 !important;}
+/*to assign an icon to an action link, you need to assign a unique id to the link and give it a background image.  The rest of the code is in this css declaration*/
+.icon a{padding-left:18px;background-position:left center;background-repeat:no-repeat}
+
+/*general alignment styles*/
+.indent10 {padding-left:10px;}
+.indent15 {padding-left:15px;}
+.indent20 {padding-left:20px}
+.indent40 {padding-left:40px;}
+.indent60 {padding-left:60px;}
+.left{float:left;text-align:left;}
+.right{float:right;text-align:right;}
+.center {text-align:center;}
+.clear {clear:both}
+.clearLeft {clear:left}
+.clearRight {clear:right}
+
+/*general list styles*/
+.inlinelist{margin:0;padding:0}
+.inlinelist li{display:inline;margin:0 0 0 -4px;padding:0 10px;border-left:1px solid #ccc;}
+.inlinelist li.first{margin-left:0;padding-left:0;border-left-width:0;}
+.inlinelist li.first, .inlinelist li.last{margin-left:-5px;padding-left:0;border-left-width:0;}
+
+/*other general styles*/
+span.date{color:#666}
+.highlight{}
+.selected{}
+.inactive{color:#ccc !important}
+.alternate{}
+
+/*** C O M M E N T S ***/  
+.comments h4{background-color:#ccc;padding:3px;text-align:right;overflow:hidden;}
+.comments h4 .action{font-size:.7em;}
+.comments h5{font-size:.9em;border-bottom:1px solid #ccc;margin-bottom:3px}
+.comments h5 a.person{margin:0 8px}
+.comments h5 span{padding:0 3px}
+.comments h5 span.highlight{background-color:#f6cb26;}
+.comments p{margin-top:0}
+/***********************************************************/
+
+/*** C O N T E N T   E N T R Y ***/
+.entry{padding:10px 0;border-bottom:1px solid #ddd;overflow:hidden;clear:both;}
+.entry h4 input, .entry h4 img{vertical-align:middle;margin-right:3px;float:left}
+.entry h4 input{margin-top:2px}
+.entryBody {margin:0 0 0 20px;}
+.entry h4{margin:0 3em 0 0;font-size:1.2em;font-weight:bold;overflow:hidden}
+.entry h4.alternate{margin-left:20px}/*for a non-hanging entry header*/
+.entry h4 div{float:left}/*need this div to allow long headers to wrap nicely*/
+.entry h4 a{text-decoration:none;vertical-align:middle;}
+.entry h4 a:hover {text-decoration:underline;}
+.entry .icons{float:left}
+.entry .icons img{display:block}
+.entry h5{margin:0 5px 0 0px;font-size:1.0em;color:#666;line-height:1.2em;}
+.entry h6{margin:0 5px 0 0px;font-size:.85em;color:#666;}
+.entry p{margin:5px 5px 0 0px}
+.entry .tags{float:right;margin-right:10px;overflow:hidden}
+.entry ul.actions{margin: 5px 0 0 0px;padding:0 10px 0 0;font-size:.9em}
+.entry ul.actions li{display:inline;margin: 0 0 -4px;padding:0 10px;border-left:1px solid #ccc}
+.entry ul.actions li.first{margin-left:0;padding-left:0;border-left-width:0}
+.entry .divider{margin:0 8px}
+.entry .metaText {color:#666666;}
+/***********************************************************/
+
+/*** F O R M S ***/ 
+form div{/*width: 45em;clear: left;margin: 0;padding: 5px 0 8px 10em;*/}/*10em is width of left column containing the label elements*/
+form label{/*text-align: right;font-weight: bold;float: left;padding-top: 3px;margin-left: -10em; width: 9em;*/}/*margin-left is width of left column; width is width of labels. Should be smaller than left column (155px) to create some right margin*/
+form .text{/*width: 29em;*/}
+form .checkBox{}
+form .radio{}
+form .button{}
+form .image{}
+form textarea{/*width: 29.8em;height: 14em;*/}
+form p{/*margin:0;*/}
+form .indent{/*padding-left: 10em;*/}
+/***********************************************************/
+
+/*** L I S T S ***/
+.list h2{margin:10px 0 5px 0;font-size:1.2em;font-weight:bold}
+.list h2.alternate{color:#ff9523;}
+.list h2.icons{text-align:right;overflow:hidden}
+.list h2.icons img{margin-left:3px}
+.list .label{color:#666}
+.list ul{list-style:none;margin:0;padding: 0;clear:both}
+.list ul li {padding:2px 0}
+.list ul.editable li{text-align:right;overflow:hidden;clear:both;border-bottom:1px solid #b4b4b4}
+.list .description {padding:0;margin:0;margin-bottom:7px;color:#595959;}
+
+/*plain list (no bullets)*/
+.alternate h2{color:#333f06;border-bottom:2px dotted #333f06}
+.alternate ul li{background-image:none}
+div.alternate a, div.alternate a:visited{/*color:#719e0d*/}
+/***********************************************************/
+
+/*** P A G I N G ***/
+.paging{height:2em;line-height:2em;text-align:center;border:1px solid #e0e0e0;-moz-border-radius:2px;margin-top:.2em;color:#848484;padding:0 5px;clear:both;font-size:.9em;background-color:#f0f0f0;}
+.paging ul li, .paging div{/*font-size:0.9em;*/color:#848484;}
+.paging a, .paging a:visited{font-weight:bold !important;}
+.paging input{width:20px;text-align:center;/*font-size:0.9em;*/color:#848484;}
+.paging .inlinelist{padding-left:5px}
+.paging .inlinelist li {padding:0 6px;}
+
+/*paging variations*/
+.table .paging, .caption .paging{background-image:none;background-color:#fdfdfd}
+.table .paging td{border:1px solid #e0e0e0;padding:0 5px}
+.caption .paging, .caption .paging td{margin-top:0;border-top-width:0;border-left-width:0;border-right-width:0;background-color:transparent}
+/***********************************************************/
+
+/*** S E A R C H ***/ 
+.search{}
+.search input{vertical-align:middle;margin-left:3px;}
+.search .text{border:1px solid #868a8b;padding-left:2px;width:11em;}
+.search .inactive{color:#999}
+.search a:hover, .search a:focus{background-color:transparent}
+/***********************************************************/
+
+/*S E C T I O N */
+.section{margin:15px 5px 0 10px;background-color:#f5f9fe;border:1px solid #e0e0e0;-moz-border-radius:7px;padding:2px 5px 10px 5px;}
+.section h2{margin:0}
+.section h4{margin:7px 0 5px 0;font-size:1.1em;font-weight:normal;padding:0px 0px 2px 2px;border-bottom:1px dotted #ccc;clear:both;color:#000}
+.section h4.icons{text-align:right;overflow:hidden}
+.section h4.icons img{margin-left:3px}
+.section h6{margin:0 0 2px 0;color:gray;clear:both;}
+.section .tag{color:#000 !important}
+ 
+.tabSection .tabContainer{border-bottom-width:0;margin:5px 5px 0 10px}
+.tabSection .tabcontent{margin-top:0;z-index:-100;-moz-border-radius:0 7px 7px 7px; }
+
+	/*section list */
+.section .list h2{color:#000;text-align:left;}
+.section .list img {vertical-align:middle;padding:0px 1px 3px 1px;}
+.section .list ul{margin-top:0;}
+.section .list ul li{border-bottom:1px solid #dbdbdb;text-align:right;clear:both;padding:0px 2px 0px 4px}
+.section .list h6{margin:5px 0 0 8px;padding-top:3px;color:#666;color:#84b2d8;border-top:2px dotted #84b2d8;}
+.section .list a, .section .list a:visited{color:#327EBE;border-bottom:0;}
+.section .list h6 a, .section .list h6 a:visited{color:#4f9cef}
+.section .alternate li{border-bottom-width:0 !important;text-align:left !important}
+/****************************************************************/
+
+/*** T A B L E ***/ 
+.table caption, .caption h4{text-align:right;font-weight:bold;background-color:#f3f3f3;border:1px solid #e0e0e0;padding:3px 5px;margin-bottom:0;-moz-border-radius:2px;}
+.table th, .table td{padding:3px 5px;border-collapse:collapse}
+.table th{text-align:left;border-bottom:1px solid #e0e0e0;}
+.table td{border-bottom:1px solid #e0e0e0}
+.table tr.last td{border-bottom-width:0}
+/***********************************************************/
+
+/*** T A B S ***/
+.tabContainer{position:relative;height:3em;border-bottom:1px solid #e0e0e0; z-index: 1;}
+/*ul.tabs{position:absolute;bottom:-1px;overflow:hidden;margin:0;padding:0;list-style:none;}*/
+/*.tabs li{float:left;margin-right:2px;padding-left:3px;background:url(leftTab.gif) top left no-repeat;border-bottom:1px solid #e0e0e0}*/
+/*.tabs a, .tabs a:visited{display:block;padding:5px 15px 4px 10px;text-decoration:none;line-height:1.2em;color:#999;background:url(rightTab.gif) top right no-repeat;}/*line-height is for IE, to keep the selected tab sitting on top of the border when there is a drop-down image in the tab*/*/
+/*.narrow a, .narrow a:visited {display:block;padding:5px 10px 4px 5px;}*/
+/*.tabs a:hover, .tabs a:focus{color:#000;}*/
+/*.tabs li.selected{background:url(leftTabSelected.gif) top left no-repeat;border-bottom-color:#fff}*/
+/*.tabs li.selected a, .tabs li.selected a:visited{background:url(rightTabSelected.gif) top right no-repeat;color:#000;font-weight:bold;}*/
+/*the notatab class on a tab allows you to include other selectable items in a row of tabs*/
+li.notatab:hover, li.notatab:focus{background-image:none}
+li.notatab:hover a, li.notatab:focus a{background-image:none}
+#titleBar .tabs{left:200px;background-image:none}
+#titleBar .tabs li{background-image:none;border-bottom-width:0;}
+#titleBar .tabs a, #titleBar .tabs a:visited{padding:7px 15px 10px 10px;}
+#titleBar .tabs li a{background-image:none;}
+#titleBar .tabs li:hover, .tabs li:focus{background-image:url("leftTabHover.gif")}
+#titleBar .tabs li:hover a, .tabs li:focus a{background-image:url("rightTabHover.gif")}
+#titleBar .tabs li.selected{background-image:url(leftTabSelected.gif);}
+#titleBar .tabs li.selected a, #titleBar .tabs li.selected a:visited{background-image:url(rightTabSelected.gif);padding-left:10px;}
+/***********************************************************/
+
+/*** T A G   C L O U D ***/
+.tagCloud ul{margin:0;padding:0}
+.tagCloud li{display:inline;margin-right:2px;}
+.tagCloud a{text-decoration:none;font-weight:bold}
+.tagCloud a:hover, .tagCloud a:focus{color:#05386b;text-decoration:underline;}
+.tagCloud .tag5 a, .tagCloud .tag5 a:visited { font-size: 115%; color: #1c3052}
+.tagCloud .tag4 a, .tagCloud .tag4 a:visited { font-size: 108%; color: #2b588e}
+.tagCloud .tag3 a, .tagCloud .tag3 a:visited { font-size: 100%; color: #4477bb}
+.tagCloud .tag2 a, .tagCloud .tag2 a:visited { font-size: 95%; color: #649cd8}
+.tagCloud .tag1 a, .tagCloud .tag1 a:visited { font-size: 90%; color: #8bbce8}
+/***********************************************************/
+
+/*** T A G   G R O U P ***/
+.tags{width:8.8em;overflow:hidden;font-size:.9em;text-align:right}
+.tags h4{font-weight:normal;text-transform:uppercase;color:#ccc;border-bottom:1px solid #ccc;margin-bottom:3px;}
+.tags ul{list-style:none;margin:3px 0 0 0;padding:0;}
+/***********************************************************/
+
+.container {background: url("inlineNavCardBgTop.gif") no-repeat;padding:5px 0;width: 190px;min-height: 53px;margin:0 5px;}
+.inlinePersonCard {background:transparent url(inlineNavCardBg.gif) repeat-y;}
+.inlinePersonCard .toggler img {padding-top:20px;}
+.inlinePersonCard .levelOne {display: table;height: 53px; #position: relative;overflow: hidden;}
+.inlinePersonCard .levelOne h4 {#position: absolute;display: table-cell;vertical-align: middle;padding-left:5px;top:25%;}
+.inlinePersonCard .levelOne h4 div {#position: relative;}
+.inlinePersonCard h4 {font-size:1.0em;line-height:1.2em;height:51px;font-weight:bold;width:102px;padding:0;margin:auto 5px;}
+.inlinePersonCard img {border: 0;margin:0 auto;}
+.inlinePersonCard h2 {background: url("inlineNavCardBg.gif") repeat-y;font-size:.9em;padding:3px 5px;margin:0px;}
+.inlinePersonCard h2 span {border-bottom:1px solid #e0e0e0;display:block;margin:-3px 3px 0 0;padding:3px 5px 5px 5px;line-height:1.4em;}
+.inlinePersonCard .levelTwo .adr {color:#646768;}
+.inlinePersonCard span.first {margin-top:-1px;border-top:1px solid #e0e0e0;padding:2px 5px;}
+.inlinePersonCardBottom {background: url("inlineNavCardBgBottom.gif") bottom no-repeat;margin:0px;padding:0;margin-bottom:5px;line-height:.6em;}
+.inlinePersonCard .toggler {background-color:#edeaeb;margin:0 5px;width:10px;height: 51px;}
+.inlinePersonCard .levelTwo {background: url("inlineNavCardBg.gif") repeat-y;clear:both;}
+.inlinePersonCard .levelTwo ul {list-style-type:none;background: url("inlineNavCardBg.gif") repeat-y;margin:0;padding:0 5px 2px 5px;}
+.inlinePersonCard .levelTwo ul li {padding:1px 5px;}
+.inlinePersonCard .levelTwo ul li.selected {margin-left:-3px;padding:2px 8px;background: #cce3fa;border:1px solid #a5d8fe;}
+.inlinePersonCard .levelTwo ul li.selected a, .inlinePersonCard .levelTwo ul li.selected a:hover, .inlinePersonCard .levelTwo ul li.selected a:focus, .inlinePersonCard .levelTwo ul li.selected a:visited {font-weight:bold;color:#000;text-decoration:none;}
+* html .inlinePersonCard h2  {padding-top:0;margin-top:0;}
+* html .inlinePersonCard span.first {padding:2px 5px 5px 5px; margin-top:3px;}
+* html .inlinePersonCardBottom {height:7px;z-index:100;margin-top:-3px}
+* html .inlinePersonCard .toggler {margin-left:3px;}
+* html .inlinePersonCard .toggler img {margin-top:20px;}
+
+/* Body and box-like elements */
+/*profiles*/
+/*html, body{padding:0;margin:0;}*/
+/*body {background: #fff url("background.gif") top left repeat-x;font: normal .75em/1.5em Helvetica, Arial, Verdana, sans-serif;}*/
+	
+/*#frame{margin:0 15px;padding:0;min-width:800px;}*/
+
+#titleBar{background:#fff url(barBack.gif) top left repeat-x;height:3em;position: relative;border-bottom:1px solid #e0e0e0;}
+#titleBar h2{margin:0 0 0 0;padding:8px 0 0 15px;color:#444444;font:normal 1.0em/1.2em Helvetica, Arial, Verdana, sans-serif;letter-spacing:0;}
+/*special styling for titlebar tabs*/
+#titleBar .tabs{background-image:none;left:200px}
+#titleBar .tabs li{background-image:none;}
+#titleBar .tabs a, #titleBar .tabs a:visited{padding:7px 15px 10px 10px;}
+#titleBar .tabs li a{background-image:none;color:#000;}
+#titleBar .tabs li a:hover , .tabs li a:focus{color:#000;}
+#titleBar .tabs li.selected{background-image:url(leftTabSelected.gif);}
+#titleBar .tabs li.selected a, #titleBar .tabs li.selected a:visited{background-image:url(rightTabSelected.gif);padding-left:10px;}
+#titleBar form{position:absolute;top:7px; right:10px;}
+
+/* Main 2,3-Column Layout */
+/*#main{padding:3px;background:#fff;border-left:1px solid #aaa;border-right:1px solid #aaa;border-bottom:1px solid #aaa;border-top:0;-moz-border-radius:5px;overflow:hidden;}*/
+div.short{background: #fff !important;}
+
+#colLeft{/*float:left;*/width:200px;padding:15px 0 10px 0px;}
+td.colLeft {width:200px}
+
+#content{background:#fff;padding:16px 10px 20px 15px; overflow:hidden;/*this (overflow:hidden) sets a new block formatting context, which keeps the center content separate from the floated divs.  This allows us to clear floats in the center. It also makes it so we don't have to use margins on the content div to push it away from the floated columns.*/}
+
+#colRight{
+	/*float: right;*/
+	width: 165px;
+	background: #fff;
+	padding: 15px 10px 0 0px;
+}
+td.colRight {width:165px;}
+
+/* colLeft details */
+#colLeft .infoBox {margin:0 0 15px 0;}	
+#colLeft .tabs li.selected{background-image:url(leftTabSelectedBlue.gif);border-bottom:1px solid #f5f9fe}
+#colLeft .tabs li.selected a, #colLeft .tabs li.selected a:visited{background-image:url(rightTabSelectedBlue.gif);color:#000}
+/* end colLeft details */
+
+#main #content div.moreInfo{padding: 5px 0px;}
+#main #content div.moreInfo p{
+	padding: 0;
+	margin: 15px 30px 0px 13px;
+	color: #111;
+	font-size: 1.1em;
+}
+#frame #content div.moreInfo table p{margin:0;font-size:1em}
+#frame #content div.moreInfo table p{margin:0} 
+#main #content div.moreInfo h2{
+	padding: 10px 20px 0px 20px;
+	margin: 0;
+	color: #69a0cf;
+	font-size: 1.4em;
+}
+
+#main #content div.moreInfo h2 span.date{
+	color: #a6a6a6;
+	font-size: .7em;
+}
+
+#main #content div.moreInfo h2 span.other{
+	color: #111;
+	font-size: .7em;
+}
+/* end content details */
+
+/* colRight details */
+#main #colRight #chain{
+	clear: both;
+	padding:0;
+	font-size:1.1em;
+}
+
+#main #colRight #chain div.person{
+	width: 50px;
+	float: left;
+	padding-right: 15px;
+}
+
+#main #colRight #views{
+	clear: both;
+	padding-top: 20px;
+}
+
+#main #colRight #views h2{
+	margin: 0;
+	padding: 0 0 0 0;
+	font: bold 1.4em/1.6em Helvetica, Arial, Verdana, sans-serif;
+	color: #ff9523;
+}
+/* end colRight details */
+
+#views ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;}
+	
+	#views ul li {font: normal 1.1em/1.6em Helvetica, Arial, Verdana, sans-serif;color: #333;}
+		
+/** Search results **/
+.searchResults #main #content {margin:0 200px 10px 20px;}
+#frame #searchInfo {
+	padding: 10px;
+	border: 1px solid #dedfe1;
+	margin: 0 0 10px 0;
+	font-size: 1.10em;
+}
+#searchResultsTable .resultRow td {
+	border-top: 1px solid #dedfe1;
+}
+#searchResultsTable p {
+	font-weight: normal;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
+}
+#searchResultsTable p a {text-decoration:none;}
+
+.pagingTop {margin-top: 20px;}
+
+
+/*#footer {*/
+	/*clear: both;*/
+	/* background: #fff; */
+	/*min-height:10px;*/
+/*}*/
+
+#footer h5{
+	margin: 0 0 0 10px;
+	padding: 0;
+	font: normal 1em/2.2em Helvetica, Arial, Verdana, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	display:none;
+}
+#footer .aboutInfo {margin:10px 100px;}
+/*#footer p{font-size:.8em;color:#666;margin:0 60px 0 120px;}*/
+
+/** Blogs CSS **/
+.blog h1 {font-size:1.8em;color:#000;margin:0;padding:5px 0px;}
+.blog #frame #content {padding: 15px 10px 20px 13px;}
+.entry p{margin:5px 0 0 0px}
+.entry ul.actions{margin: 5px 0 0 0px;}
+#footer {margin-left:30px;}
+.blog #colLeft .tabContainer, .blog #colLeft .tabSection {padding-top:0;margin-top:0;}
+.blog #colLeft .list {margin-left:10px;}
+.blog #frame #colRight {padding-left:10px;}
+.blog .tagCloud {padding:5px;overflow:hidden;}
+.blog .entryBody {margin:0 0 0 14px;}
+.blog .indent7 {padding-left:7px;}
+.blog .indent12 {padding-left:12px;}
+.blog .header img {padding-top:5px;}
+.blog .pivotForm {padding-left:5px;} /* for filter form on tag cloud */
+
+/* Paging */
+.blog .blogPaging h4{font-weight:normal;font-size:.9em;background-color:#f3f3f3;border:1px solid #e0e0e0;padding:1px 15px;margin-bottom:0;text-align:left;}
+.blog .blogPaging .disabled {color:#999;}
+
+/* About */
+.blog .about h1 {margin-top:5px;}
+.about #main #colRight {padding-top:0px;}
+
+/*Comments*/
+.comments-head {font-weight:normal;font-size:1.1em;background-color:#f3f3f3;border:1px solid #e0e0e0;border-top:0;padding:3px 14px;margin-bottom:0;text-align:left;}
+.comment {padding:0px 15px; /*background-color:#f3f3f3;margin:10px 0;border:1px solid #e0e0e0;*/}
+span.commentLogin {display:block;padding-left:15px;}
+.comments-form {margin:0;}
+.comment-details {margin-bottom:25px;}
+.comment-details-head {display:block;border-bottom:1px solid #e0e0e0;margin-bottom:5px;padding-left:4px;}
+.comment-details-head .action {font-size:0.9em;}
+.comment-count {padding:1px 2px;margin-right:4px;}
+.comment-count-author {color:#fff;background-color:#43a0f6;padding:1px 4px;margin-right:4px;}
+.comment-content {padding:0 4px;display:block;}
+
+/** Roller styles **/
+/* table */
+table.rollertable th, table.rollertable th {background: #F5EBF3;text-align:left;padding: 3px;border: 1px solid #dbdbdb;border-bottom:0;}
+table.rollertable td, table.rollertable tbody td {border: 1px solid #dbdbdb;}
+table.rollertable {border-collapse: collapse; width: 100%;}
+table.rollertable td, table.rollertable tbody td {vertical-align: top;}
+table.rollertable tbody td {padding: 3px;}
+table.rollertable td.center {text-align: center;}
+
+/* Shelf list */
+/ *#frame #colRight {width:250px;}*/
+#colRight .list li {margin:2px 1px;}
+/* Sidebar */
+.sidebarInner h2{margin:0;padding:0;padding-bottom:5px;font:bold 1.2em/1.0em Arial, Helvetica, Verdana, sans-serif;color:#000; }
+.sidebarInner h2 a, .sidebarInner h2 a:hover, .sidebarInner h2 a:visited, .sidebarInner h2 a:focus, .sidebarInner h2 a:active {font-weight:normal;font-size:1.0em;text-decoration:underline;}
+.sidebarInner span, .sidebarInner p {display:block; padding:0;margin:0}
+.sidebarInner p {line-height:1.3em;margin-bottom:10px;}
+div.menu-tl {margin: 0px;padding: 0px;height: 100%;width: 100%;vertical-align: middle;display: table;}
+div.menu-tr {margin: 0px;padding: 0px;height: 100%;width: 100%;}
+td.pendingentry, tr.pendingentry {background: #ffffcc;}
+td.draftentry, tr.draftentry {background: #ffcccc;}
+td.needsapprovalentry, tr.needsapprovalentry {background: #ccccff;}
+.draftEntryBox {background: #ffcccc;border: 1px grey solid;}
+.pendingEntryBox {background: #ffffcc;border: 1px grey solid;}
+.needsApprovalEntryBox {background: #ccccff;border: 1px grey solid;}
+
+/** Form styles */
+form ul{ /*position: relative;width: 100%; */ list-style: none; margin:10px 0;padding:0 15px;background-color:#f3f3f3;border:1px solid #e0e0e0;}
+form li{ line-height: 2em; margin: 0; padding: 1px 1px 6px 0px; }
+form li.focused{ background-color: #fff7c0 !important; }
+form li p{ font-size: 9px; line-height: 13px; color: #444; }
+form li{ display: inline-block; }
+form[id] li{ display: block; }
+form li div{ display: inline-block; }
+form[id] li div{ display: inline; }
+form .left{ float: left !important; margin: 0; }
+form .right{ float: right !important; margin: 0; }
+form .clear{ clear: both; } 
+form li div p{ margin: 0 0 5px 0; }
+form div.left{ margin-right: 2px !important; }
+form div.left[class]{ margin-right: 4px !important; }
+form div.left img{ margin: 0 0 -2px 0; }
+form h2{ font-size: 1.8em; clear: left; } 
+form .info{ display: inline-block; margin: 0 0 10px 0; padding: 0 0 4px 0; border-bottom: 1px dotted #ccc !important;}
+form .info[class]{ display: block; }
+form .info p{ font-size: 1em; line-height: 1.3em; margin: 0 0 8px 0; }
+textarea.textarea{margin-bottom: 1px;}
+textarea.textarea[class]{font-family: Helvetica, Arial, Verdana, sans-serif;}
+select.select{ padding: 1px 0 0 0; margin: 1px 0 3px 0; }
+select.select[class]{ margin: 0; padding: 1px 0 1px 0; }
+form .small{ width: 70px; }
+form .medium{ width: 170px; }
+form .large, form textarea.textarea{ width: 340px; }
+form .tags{ width: 320px; }
+form textarea.small{ height: 5.5em; }
+form textarea.medium{ height: 10em; }
+form textarea.large{ height: 20em; }
+label.desc{margin: 4px 0 3px 0;border: 0;font-size: 1.1em;line-height: 1.3em;display: block;}
+div.row {padding: 2px;}
+div.formrow {float: left;width: 80%;}
+label.formrow {float: left;text-align: right;width: 20%;padding-right: 1em;}
+div.sideformrow {float: left;width: 100%;}
+label.sideformrow {float: left;text-align: left;width: 30%;padding-right: 1em;}
+
+/* Errors and status messages */
+div.messages, div.errors {background-color:#FEF89A;padding:7px 5px 5px 5px;border:1px solid #e0e0e0;margin-bottom:5px;}
+.messages img {vertical-align:top;}
+
+.entryField { width: 90% }
+
+* html .entry table, * html .entry img, * html .entry div {width:auto !important;}
+
+/*#header .hidden { position: absolute; top: -9000px; left: -9000px; }*/
+
+#header .inlinelist{margin:0 0 0 0;padding:0}
+#header .inlinelist li{display:inline;margin:0 0 0 -4px;padding:0 10px;border-left:1px solid #ccc;}
+#header .inlinelist li.first{margin-left:0;padding-left:0;border-left-width:0;}
+#header .inlinelist li.first {margin-left:-5px;padding-left:0;border-left-width:0;}
+
+/*body { margin: 0; background: #fff url( background.gif) top left repeat-x !important; }	*/
+/*#header .hidden { position: absolute; top: -9000px; left: -9000px; }*/
+#header .inlinelist{margin:0 0 0 0;padding:0}
+#header .inlinelist li{display:inline;margin:0 0 0 -4px;padding:0 10px;border-left:1px solid #ccc;}#header .inlinelist li.first{margin-left:0;padding-left:0;border-left-width:0;}
+#header .inlinelist li.first {margin-left:-5px;padding-left:0;border-left-width:0;}
+body { /* margin: 0; background: #fff url( background.gif) top left repeat-x !important; */ }
+/*#header h1{	margin: 0 0 0 10px;	padding: 0px;	float: left;	color: #fff;	font: normal 2.6em/1.4em Georgia, Helvetica, Arial, Verdana, sans-serif;	width:195px;	text-align:left;}*/
+/** html #header h1 {margin:3px 0 0 7px}#header h1 span{	color: #EBEBEB;}*/
+#header .links { 	float:left;	background: transparent;	padding-left:210px;	/*height: 45px;	line-height: 45px;*/	vertical-align: middle;}
+#header .links li img { border: 0px; vertical-align: middle; }
+#header #headerInner {		height: 47px;	background: transparent url("yellowBanner_right.gif") bottom right no-repeat;}
+/* html #header .links li { margin-top: 15px; }   * html #header .links { margin-top: 12px; } */	
+/*#header ul li {	font: normal 1em/3.6em Arial, "Lucida Grande", Verdana, sans-serif;	color: #333;	text-transform: uppercase;}*/
+/*#header ul li#headerUserText {	text-transform: capitalized;	color: #000;}*/
+#header ul.userlist { margin: 0; padding-right: 7px; }
+#header ul.userlist li.first { padding-right: 7px; }
+#header ul.userlist li { text-transform: capitalize !important; display: inline; padding-right: 10px; }		
+/*#header ul li a {	color: #000;	text-decoration: none;	background-color: transparent !important;	}*/
+/*#header ul li a:hover {	text-decoration: underline; }*/
+#header ul.inlinelist li{	border-left-width:0;	background: transparent url("divider-light-yellow.gif") 0 center no-repeat;	padding:0 10px;}
+#header ul.inlinelist li.first{background:transparent}	
+
+<!--[if IE]>
+.actions{padding-bottom:1px}/*to insure the dotted underline border shows in ie*/
+.entry h5.left{margin-top:2px} /*fixes alignment for single-line entry*/
+.actionMenu li{height:1%} /* this is a fix for both IE6 and IE7 so we don't use *html prefix */
+
+/*IE6 fixes*/
+* html #main,
+* html .header,
+* html form div,
+* html .entry,
+* html .entryBody,
+* html .infoBox h2,
+* html .section,
+* html .aboutBox,b
+* html .entry h4,
+* html .entry p,
+* html #entries,
+* html #content .header,
+* html .welcome,
+* html .list li,
+{
+	height: 1%;
+}
+* html #content{display:inline-block;padding:16px 0px 20px 7px !important;}
+ * html .admin #content {width:auto !important;}
+* html .menu li.last{border-bottom:1px solid white}
+* html #frame #colRight #chain {padding-bottom: 0px;}
+
+* html #frame {width:expression( documentElement.clientWidth < 850 ? (documentElement.clientWidth == 0 ? (body.clientWidth < 850 ? "820px" : "auto") : "820px") : "auto" );}
+/* * html .admin #frame {width:expression( documentElement.clientWidth < 950 ? (documentElement.clientWidth == 0 ? (body.clientWidth < 950 ? "920px" : "auto") : "920px") : "auto" );}*/
+* html #banner h1 {margin:3px 0 0 7px}
+* html #welcomeBox .close{position:absolute;top:5px;right:15px}
+* html #welcomeBox .welcomeButton{position:relative}
+* html a.welcomeButtonBottom{padding-bottom:9px;} /* IE spacing */
+* html .welcome h2 {margin-top:20px;}
+* html #titleBar h2 {font-size:1.0em;}
+* html ul.tabs{bottom:-2px;}
+* html .aboutBox {padding-bottom:8px;margin-bottom:20px;}
+* html .aboutBox{margin-bottom:20px}
+* html .aboutBoxBody {float:left}
+* html .section form{margin:0}
+* html .loginContent {padding:10px 0;}
+
+* html #frame #content #bio .bioLevel1Text {padding-bottom:20px;}
+
+/** Truncates long tags in tag cloud **/
+* html .tagCloud {width:155px;}
+
+/* * html #colLeft {position:relative;} */
+
+/*iehacks.css */
+* html .welcome {padding-bottom:0}
+* html .welcome .welcomeButton {position:relative}
+
+* html .entry h4, * html .entry h5 {margin-right:5px !important;}
+* html .entry table {width:auto !important;}
+<![endif]-->    
