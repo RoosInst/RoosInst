@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<!-- TOP - v5
+<!-- TOP - v6
 	changelog:
 	v1-v2: fixed links to be absolute (must start with a "/"), updated <a> hrefs, search fail alert, fixed links to be absolute (must start with a "/")
 	v2-v3: fixed spacing on navbar buttons, broke mobile (deleted style="width: 95" on each button), fixed google search
 	v3-v4: added hideOnSupport to have Support tab disappear on Support page
-	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers-->
+	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers
+	v5-v6: replaced text-align style to text-center class
+	-->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -108,10 +110,10 @@
   <!-- NoScript Alert -->
 	<noscript>
 		<div class="alert alert-danger">
-			<div style="text-align: center;"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
-	
+
 	<div id="page-wrapper" class="page-boxed">
 	<!-- ==========================
     	HEADER - START
@@ -128,7 +130,7 @@
 			<div class="container">
 				<div class="navbar-header">
 
-					<div class="visible-xs visible-sm">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
@@ -142,7 +144,7 @@
 							</a>
 						</div>
 
-						<div class="visible-sm visible-xs container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -194,7 +196,7 @@
                         	<li>
                             	<div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3" style="text-align: center">
+                                        <div class="text-center col-sm-3">
                                         	<h3 style="margin-bottom: 10px">Reference Guide</h3>
 											<ul style="margin-top:3px;" class="list-unstyled">
 											  <li>
@@ -258,7 +260,7 @@
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
                                         </div>
-                                        <div style="text-align: center;" class="col-sm-3">
+                                        <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
 												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
@@ -268,7 +270,7 @@
 												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
 														  Remote Support
 														  </span>
 													  </a>
@@ -315,7 +317,7 @@
     <!-- ==========================
     	HEADER - END
     =========================== -->
-	  
+
 		<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
@@ -323,9 +325,9 @@
 				$( "#nav-products" ).addClass( "active" );
 			});
 		</script>
-	  		
+
     <!-- ==========================
-    	BREADCRUMB - START 
+    	BREADCRUMB - START
     =========================== -->
 		<section class="breadcrumb-wrapper">
 			<div class="container">
@@ -338,11 +340,11 @@
 			</div>
 		</section>
 	<!-- ==========================
-    	BREADCRUMB - END 
+    	BREADCRUMB - END
     =========================== -->
-	
+
 		<div id ="content" class="roosC container block">
-			<h2>Software Architecture</h2>
+			<h5>Software Architecture</h5>
 			<p class="main">
 				From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE
 				hardware and software. We found the best results by using a state-based approach in our software; it allows the
@@ -352,8 +354,8 @@
 				measurements, create test plans, and control the flow of test execution.
 			</p>
 
-			<div style="text-align:center;">
-				<div style="margin: 20px 0 20px 0; text-align: center;"><small><i class="fa fa-2x fa-border fa-hand-pointer-o"></i> Interact with Fixture Diagram to Learn More</small></div>
+			<div class="text-center">
+				<div style="margin: 20px 0 20px 0;"><small><i class="fa fa-2x fa-border fa-hand-pointer-o"></i> Interact with Fixture Diagram to Learn More</small></div>
 				<img style="max-width: 600px;" id="SoftwareArchitecture" src="images/SoftwareArchitecture.png" usemap="#SoftwareArchitecture" border="0" width="600" height="312" alt="Software Artchitecture" />
 				<map id="SoftwareArchitectureMap" name="SoftwareArchitecture">
 					<area id="library" shape="rect" coords="103,235,219,307" href="#SoftwareArchitecture" alt="Test Object Library" title="Test Object Library" >
@@ -362,9 +364,9 @@
 					<area id="testExec" shape="rect" coords="292,30,384,110"  href="#SoftwareArchitecture" alt="Test Exec" title="Test Exec">
 					<area id="guru" shape="rect" coords="145,101,276,230" href="#SoftwareArchitecture" alt="Guru&trade;" title="Guru&trade;">
 				</map>
-				
+
 			</div>
-								
+
 			<script src="/js/jquery.ImageMapResize.js" type="text/javascript"></script>
 			<script type="text/javascript">
 				//RESIZE IMAGEMAP
@@ -373,7 +375,7 @@
 				});
 
 			</script>
-			
+
 			<!--<link href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" rel="stylesheet" type="text/css"> MUST BE IN HEAD-->
 			<script src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script> <!--FOR POPOVER-->
 			<script type="text/javascript">
@@ -394,7 +396,7 @@
 						  }
 					  }
 					});
-					
+
 					$('#builder').qtip({
 						content: {
 							title: 'Test Plan Builder',
@@ -410,7 +412,7 @@
 						  }
 						}
 					});
-					
+
 					$('#synapse').qtip({
 						content: {
 							title: 'Synpase&trade;',
@@ -426,11 +428,12 @@
 						  }
 					   }
 					});
-					  
+
 					$('#testExec').qtip({
 					   content: {
 						   title: 'Test Exec',
-						   text: 'Test plan optimizer that aligns measurement procedure with the hardware to minimize test times and cost.'
+						   text: 'Executes test plans providing real time error correction, hardware optimization and operation workflow. Provides visual feedback to the '
+							   + 'user and saves all results in Guru. Controls handler/prober via Serial, Parallel or GPIB interface.'
 					   },
 					   style: {
 						 classes: 'qtip-bootstrap qtip-shadow'
@@ -441,12 +444,12 @@
 							  mouse: true  // Can be omitted (e.g. default behaviour)
 						  }
 					   }
-					  
+
 					});
-			   
+
 					$('#guru').qtip({
 					  content: {
-						  title: 'Test Exec',
+						  title: 'Guru',
 						  text: 'Repository for all files, resources, and test data. Serves as the central hub for backup, software distribution, and synchronization.'
 					  },
 					  style: {
@@ -461,9 +464,9 @@
 					})
 				});
 			</script>
-	 
-			<hr>				
-			<h2>Rapid Development</h2>
+
+			<hr>
+			<h5>Rapid Development</h5>
 			<p class="main">
 				Simple, reliable test hardware driven by novel system software sets
 				the RI tester apart from the competition. Designed to make fundamental
@@ -478,8 +481,8 @@
 				RI's virtual instrument design provides superior performance at lower cost and
 				high reliability.
 			</p>
-			
-			<h2>Graphical Test Plan Creation Tools</h2>
+
+			<h5>Graphical Test Plan Creation Tools</h5>
 			<p class="main">
 				Test plan development plays a crucial role in the time-to-market equation. RI
 				software provides the tools that enable engineers to quickly and easily debug
@@ -493,16 +496,16 @@
 				resulting in a simplified flow chart-like picture of the test. Completed tests
 				are stored in graphic form and are easily recalled and modified to create new tests.
 			</p>
-			
-			<h2>Measurement Expert System</h2>
+
+			<h5>Measurement Expert System</h5>
 			<p class="main">
 				An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
 				This is especially true when production testing requires a durable DUT interface, consistency across multiple testers,
 				and fast test times.  Cassini integrates 80 collective years of microwave expertise into its workflow.
 				Our expertise translates into accurate measurements, robust hardware, and a simplified user experience.
 			</p>
-			
-			<h2>Optimization Ensures Maximum Performance</h2>
+
+			<h5>Optimization Ensures Maximum Performance</h5>
 			<p class="main">
 				RI's test plan compiler and optimizer automatically considers time requirements
 				for system state changes, identifies duplicate measurement states, and
@@ -517,9 +520,9 @@
 				built-in database. Debugging features including break mains and single stepping
 				that help the user to quickly finish test plans.
 			</p>
-			
-			
-			<h2>Effortless Data Collection</h2>
+
+
+			<h5>Effortless Data Collection</h5>
 			<p class="main">
 				Whether characterizing a part with hundreds of parameters or performing
 				production testing with only a few parameters, capturing and storing measurement
@@ -529,8 +532,8 @@
 				summarize and view data, or export it to a variety of database and spread sheet
 				formats.
 			</p>
-			
-			<h2>Scalable User Interface</h2>
+
+			<h5>Scalable User Interface</h5>
 			<p class="main">
 				Log-on and security features of the RI software automatically tailor the user
 				interface to fit the various requirements of the current user. System operators
@@ -542,8 +545,8 @@
 				the interfaces to match specific production test environments. We also modify
 				our data export formats to support existing data collection systems.
 			</p>
-			
-			<h2>RTalk - ROOS on JVM</h2>
+
+			<h5>RTalk - ROOS on JVM</h5>
 			<p class="main">
 				ROOS development tools are moving to a more capable environment based on the
 				Java Virtual Machine.  "RTalk" provides a Smalltalk compatible emulation layer
@@ -558,8 +561,8 @@
 				</a> workshop @ JVM Language Summit
 				</li>
 			</ul>
-			
-			<h2>Rich Interactive Test Database - Evolution of STDF</h2>
+
+			<h5>Rich Interactive Test Database - Evolution of STDF</h5>
 			<p class="main">
 				Rich Interactive Test Database (RITdb) is the next generation file format for storing and processing testdata.  Cassini systems natively support
 				RITdb.  Download the STDF translator and source code below.
@@ -570,11 +573,11 @@
 			</ul>
 
 		</div> <!-- End of #content block-->
-		
+
 	<!-- ==========================
 		FOOTER - START
 	=========================== -->
-		<footer style="text-align: center; background-color: #F0F0F0;">
+		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
@@ -681,11 +684,12 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v5
+<!--  BOTTOM - v6
 	changelog:
 	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
 	v2-v3: moved footer changelogs to bottom of page
 	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
 	v4-v5: fixed product catalog image text sizes
+	v5-v6: replaced text-align style to text-center class, moved footer background color to css
 	-->
 </html>

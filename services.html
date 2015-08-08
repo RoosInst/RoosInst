@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<!-- TOP - v5
+<!-- TOP - v6
 	changelog:
 	v1-v2: fixed links to be absolute (must start with a "/"), updated <a> hrefs, search fail alert, fixed links to be absolute (must start with a "/")
 	v2-v3: fixed spacing on navbar buttons, broke mobile (deleted style="width: 95" on each button), fixed google search
 	v3-v4: added hideOnSupport to have Support tab disappear on Support page
-	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers-->
+	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers
+	v5-v6: replaced text-align style to text-center class
+	-->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -108,7 +110,7 @@
   <!-- NoScript Alert -->
 	<noscript>
 		<div class="alert alert-danger">
-			<div style="text-align: center;"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
 
@@ -128,7 +130,7 @@
 			<div class="container">
 				<div class="navbar-header">
 
-					<div class="visible-xs visible-sm">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
@@ -142,7 +144,7 @@
 							</a>
 						</div>
 
-						<div class="visible-sm visible-xs container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -194,7 +196,7 @@
                         	<li>
                             	<div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3" style="text-align: center">
+                                        <div class="text-center col-sm-3">
                                         	<h3 style="margin-bottom: 10px">Reference Guide</h3>
 											<ul style="margin-top:3px;" class="list-unstyled">
 											  <li>
@@ -258,7 +260,7 @@
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
                                         </div>
-                                        <div style="text-align: center;" class="col-sm-3">
+                                        <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
 												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
@@ -268,7 +270,7 @@
 												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
 														  Remote Support
 														  </span>
 													  </a>
@@ -341,7 +343,7 @@
     =========================== -->
 
 		<div id ="content" class="roosC container block">
-
+			<div class="row"><div class="col-xs-12">
 			<img style="float: right; max-width: 300px;" alt="Turnkey" src="images/turnkey.jpg">
 			<h2>Turnkey Applications</h2>
 			<p class="main">
@@ -349,20 +351,26 @@
 				expertise and close familiarity with what the modular Cassini ATE platform can accomplish, no
 				test challenge is to great.
 			</p>
-			<a href="turnkey.html" class="main link">Test With Confidence &raquo;</a>
-
-			<img style="padding-top: 50px; padding-right: 20px; float: left; max-width: 225px;" alt="Engineering Services" src="images/toolbox_icon.png">
-
+			<a style="float: right;" href="turnkey.html" class="main link">Test With Confidence &raquo;</a>
+</div></div>
+			<div class="row">
+			  <div class="col-sm-4">
+				<img class="col-sm-offset-5" style="padding: 50px 40px 0 0; float: left; max-width: 225px;" alt="Engineering Services" src="images/toolbox_icon.png">
+			</div>
+			  <div class="col-sm-5 col-sm-offset-1">
 			<h2>Engineering Services</h2>
-			<ul>
+			<div class="col-sm-11">
+			  <ul class="text-right" style="padding: 0 40px 15px 0;">
 				<li>Solutions by ROOS&trade;</li>
 				<li>Device Interface</li>
 				<li>Cassini Configuration</li>
 				<li>Production Workflow Management</li>
 			</ul>
-			  <p class="main">
+			  <p class="col-sm-pull-4 main">
 				  Partner with ROOS Engineers to solve design and production test issues rapidly and effectivly.
-			  </p>
+			  </p></div>
+			  </div>
+			</div>
 			  <br>
 			  <h2>Fully Integrated Solutions<img style="float: right; max-width: 377px;" alt="Bench Correlation"
 			  src="images/all_things_equal-trimmed.png"></h2>
@@ -380,7 +388,7 @@
 	<!-- ==========================
 		FOOTER - START
 	=========================== -->
-		<footer style="text-align: center; background-color: #F0F0F0;">
+		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
@@ -487,11 +495,12 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v5
+<!--  BOTTOM - v6
 	changelog:
 	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
 	v2-v3: moved footer changelogs to bottom of page
 	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
 	v4-v5: fixed product catalog image text sizes
+	v5-v6: replaced text-align style to text-center class, moved footer background color to css
 	-->
 </html>

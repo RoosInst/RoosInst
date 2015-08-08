@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<!-- TOP - v5
+<!-- TOP - v6
 	changelog:
 	v1-v2: fixed links to be absolute (must start with a "/"), updated <a> hrefs, search fail alert, fixed links to be absolute (must start with a "/")
 	v2-v3: fixed spacing on navbar buttons, broke mobile (deleted style="width: 95" on each button), fixed google search
 	v3-v4: added hideOnSupport to have Support tab disappear on Support page
-	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers-->
+	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers
+	v5-v6: replaced text-align style to text-center class
+	-->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -108,7 +110,7 @@
   <!-- NoScript Alert -->
 	<noscript>
 		<div class="alert alert-danger">
-			<div style="text-align: center;"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
 
@@ -128,7 +130,7 @@
 			<div class="container">
 				<div class="navbar-header">
 
-					<div class="visible-xs visible-sm">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
@@ -142,7 +144,7 @@
 							</a>
 						</div>
 
-						<div class="visible-sm visible-xs container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -194,7 +196,7 @@
                         	<li>
                             	<div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3" style="text-align: center">
+                                        <div class="text-center col-sm-3">
                                         	<h3 style="margin-bottom: 10px">Reference Guide</h3>
 											<ul style="margin-top:3px;" class="list-unstyled">
 											  <li>
@@ -258,7 +260,7 @@
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
                                         </div>
-                                        <div style="text-align: center;" class="col-sm-3">
+                                        <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
 												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
@@ -268,7 +270,7 @@
 												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
 														  Remote Support
 														  </span>
 													  </a>
@@ -342,15 +344,19 @@
     =========================== -->
 
 		<div id ="content" class="roosC container block">
-			<div class="row">
-				<div class="col-xs-12">
+
+				<div class="clearfix">
 					<h2>Taking Modular to a Whole New Level</h2>
 					<p class="main">
-						A modular test system is only as modular as it's least configurable component. All of the
-						functionality and capability of traditional load boards have been re-engineered to take advantage of the
-						configurable instrument framework of Cassini. The discrete layers enable maximum design flexibility for high performance RF devices that can adapt to changing application needs.
+						A modular test system is only as modular as it's least
+						configurable component. All of the functionality and
+						capability of traditional load boards have been
+						re-engineered to take advantage of the configurable
+						instrument framework of Cassini. The discrete layers
+						enable maximum design flexibility for high performance
+						RF devices that can adapt to changing application needs.
 					</p>
-					<div style="margin: 20px 0 20px 0; text-align: center;"><small><i class="fa fa-2x fa-border fa-hand-pointer-o"></i> Interact with Fixture Diagram to Learn More</small></div>
+					<div class="text-center" style="margin: 20px 0 20px 0;"><small><i class="fa fa-2x fa-border fa-hand-pointer-o"></i> Interact with Fixture Diagram to Learn More</small></div>
 					<img class="centerImg" style="max-width: 640px;" id="FixtureExplodedViewImg" src="images/FixtureEx_perspective_web.jpg" usemap="#FixtureExplodedView" border="0" alt="Fixture Exploded View">
 					<map id="FixtureExplodedView" name="FixtureExplodedView">
 						<area id="DIB-Clamp" shape="rect" coords="0,0,640,90" href="#" alt="DIB Clamp" title="DIB Clamp">
@@ -508,69 +514,114 @@
 					});
 				</script>
 				</div>
-				<div class="col-xs-12">
-					<h2 style="padding-top: 30px;">Architect the Best Production Test</h2>
-					<img class="imgBorder" style="margin-left: 20px; float: right; max-width: 300px;" title=" Cassini 16 Fixture" alt="Cassini Fixture" src="images/Cassini16fixture.jpg">
+				<hr class="space">
+				<h2>Architect the Best Production Test</h2>
+				<div class="row">
+					<div class="col-sm-6 col-sm-push-6">
+						<img class="dropShadow" style="max-width: 300px;" title=" Cassini 16 Fixture" alt="Cassini Fixture" src="images/Cassini16fixture.jpg">
+					</div>
+					<div class="col-sm-6 col-sm-pull-6">
+						<p class="main">
+							Fixtures carry the modular architecture of Cassini
+							into the device interface environment. Housed in a
+							rugged aluminum enclosure is a completely
+							configurable test resource environment. The form
+							factor provides a versatile application range from
+							DC to 90GHz and a rapid changeout system in
+							production. Seamless integration with Cassini's
+							software allow fixtures to extend and enhance the
+							capabilities of test instruments with an integrated
+							calibration layer that guarantees signal accuracy
+							right to the device pin.
+						</p>
+					</div>
+				</div>
+				<hr class="space">
+				<div class="row">
+					<div class="col-sm-offset-6 col-sm-6">
+						<h2>Production Test Workbench</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-md-offset-2">
+						<img style="max-width: 200px;" alt="Fixture Layers" src="images/FixtureClamWebOpt_260px.png">
+					</div>
+					<div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+						<p class="main">
+							Standardized interfaces, reusable components, and
+							robust interconnects create a rapid development
+							environment in which to design and iterate device
+							applications. With easy access to all of the
+							resources within the fixture, signal path switching
+							and application-specific resources can be tailored
+							to a device, a family of devices, or multiple test
+							sites.
+						</p>
+					</div>
+				</div>
+				<h2>Launch Precision Measurement</h2>
+				<div class="row">
+					<div class="col-sm-6 col-sm-push-6">
+						<img style="max-width: 459px;" alt="Fixture Inserts from DC to 80 GHz." src="images/DeviceInterface.png">
+					</div>
+					<div class="col-sm-6 col-sm-pull-6">
+						<p class="main">
+							Interchangeable DC, high-speed digital, and
+							microwave inserts provide precise contact signal
+							launches onto the device interface board.The inserts
+							support a flexible signal topology for customizing
+							to applications and creating symmetric multi-site
+							layouts.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-6">
+						<h2>Quick&#8209Lock&trade; System</h2>
+					</div>
+				</div>
+					<div class="row"
+					<img class="dropShadow" style="max-width: 374px;" alt="Quick-Lock1" src="images/DUTinterface-integrationview.jpg">
 
-					<p class="main">
-						Fixtures&nbsp;carry the modular architecture of Cassini into the device interface environment.
-						Housed in a rugged aluminum enclosure is a completely configurable test resource environment.
-						The form factor provides a versatile application range from DC to 90GHz and a rapid changeout system in production.
-						Seamless integration with Cassini's software allow fixtures to extend
-						and enhance the capabilities of test instruments with an integrated calibration layer that guarantees
-						signal accuracy right to the device pin.
-					</p>
-				</div>
-				<div class="col-xs-12">
-					<img style="padding-right: 20px; float: left; max-width: 260px;" alt="Fixture Layers" src="images/FixtureClamWebOpt_260px.png">
-					<h2>Production Test Workbench</h2>
-					<p class="main" style="padding-bottom: 50px;">
-						Standardized interfaces, reusable components, and robust interconnects create a
-						rapid development environment in which to design and iterate device applications.  With easy access to all of the
-						resources within the fixture, signal path switching and application-specific resources
-						can be tailored to a device, a family of devices, or multiple test sites.
-					</p>
-				</div>
-				<div class="col-xs-12">
-					<h2>Launch Precision Measurement</h2>
-					<img style="float: right; margin-top: -20px; max-width: 459px;" alt="Fixture Inserts from DC to 80 GHz." src="images/DeviceInterface.png">
-					<p class="main">
-						Interchangeable DC, hig-speed digital, and microwave inserts provide precise contact signal launches onto the device interface board.The inserts support a flexible signal topology for customizing to applications and creating symmetric multi-site layouts.
-					</p>
-				</div>
-				<div class="col-xs-12">
-					<img class="imgBorder" style="float: left; margin-right: 20px; max-width: 374px;" alt="Quick-Lock1" src="images/DUTinterface-integrationview.jpg">
-								<h2>Quick&#8209Lock&trade; System</h2>
 					<p class="main"">
-						The DIB, DIB clamp, and pedestal support comprise a single, serviceable unit in the fixture environment. Four quick-release screws allow
-						for rapid change-out of the device interface layer in production.
+						The DIB, DIB clamp, and pedestal support comprise a
+						single, serviceable unit in the fixture environment.
+						Four quick-release screws allow for rapid change-out of
+						the device interface layer in production.
 					</p>
 
-					<img class="imgBorder" style="float: right; max-width: 300px;" alt="Quick-Lock2" src="images/DUTinterface-bottomview.jpg">
+					<img class="dropShadow" style="max-width: 300px;" alt="Quick-Lock2" src="images/DUTinterface-bottomview.jpg">
 					<p class="main">
-						The&nbsp;precision-milled aluminum housing ensures accurate alignment of the PCB while guide pins align signal pads on the
-						perimeter of the PCB with their corresponding signal launch inserts.
+						The precision-milled aluminum housing ensures accurate
+						alignment of the PCB while guide pins align signal pads
+						on the perimeter of the PCB with their corresponding
+						signal launch inserts.
 					</p>
 				</div>
 				<div class="col-xs-12">
 					<a href="/dibs.html" class="link">&raquo; Learn more about the Device Interface</a>
-					<h2>Multi-Instrument Test Done Right</h2>
+					<h2>Multi&#8209Instrument Test Done Right</h2>
 
 					<div class="col-sm-8">
 					  <img style="max-width: 900px;" alt="TestheadDemo" style="margin: 0px 0px 0px 0px;" src="images/TestHeadResourcesDemo_Cassini16.png">
 					  <p class="main">
-					  The fixture bottom plate lets you customize Cassini to applications while allowing drop-in capability expansion quickly and cost-effectively.
+					  The fixture bottom plate lets you customize Cassini to
+					  applications while allowing drop-in capability expansion
+					  quickly and cost-effectively.
 					  </p>
 					</div>
 					<div class="col-sm-4">
-					  <p class="main" style="margin: 30px 0px 0px 0px;">
-						  Blind-mate interface blocks and RF cables provide configurable interconnect between Test Instrument Modules to synthesize standard microwave instruments
-						  such as vector network analyzers, oscilloscopes, spectrum analyzers, frequency translation and receiver/transmitter chains.
+					  <p class="main">
+						  Blind-mate interface blocks and RF cables provide
+						  configurable interconnect between Test Instrument
+						  Modules to synthesize standard microwave instruments
+						  such as vector network analyzers, oscilloscopes,
+						  spectrum analyzers, frequency translation and
+						  receiver/transmitter chains.
 					  </p>
 					</div>
 
 				</div>
-			</div>
 
 			<div class="row">
 			  <div class="embed-responsive embed-responsive-16by9">
@@ -584,7 +635,7 @@
 	<!-- ==========================
 		FOOTER - START
 	=========================== -->
-		<footer style="text-align: center; background-color: #F0F0F0;">
+		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
@@ -691,11 +742,12 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v5
+<!--  BOTTOM - v6
 	changelog:
 	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
 	v2-v3: moved footer changelogs to bottom of page
 	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
 	v4-v5: fixed product catalog image text sizes
+	v5-v6: replaced text-align style to text-center class, moved footer background color to css
 	-->
 </html>

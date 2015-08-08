@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<!-- TOP - v5
+<!-- TOP - v6
 	changelog:
 	v1-v2: fixed links to be absolute (must start with a "/"), updated <a> hrefs, search fail alert, fixed links to be absolute (must start with a "/")
 	v2-v3: fixed spacing on navbar buttons, broke mobile (deleted style="width: 95" on each button), fixed google search
 	v3-v4: added hideOnSupport to have Support tab disappear on Support page
-	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers-->
+	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers
+	v5-v6: replaced text-align style to text-center class
+	-->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -108,7 +110,7 @@
   <!-- NoScript Alert -->
 	<noscript>
 		<div class="alert alert-danger">
-			<div style="text-align: center;"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
 
@@ -128,7 +130,7 @@
 			<div class="container">
 				<div class="navbar-header">
 
-					<div class="visible-xs visible-sm">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
@@ -142,7 +144,7 @@
 							</a>
 						</div>
 
-						<div class="visible-sm visible-xs container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -194,7 +196,7 @@
                         	<li>
                             	<div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3" style="text-align: center">
+                                        <div class="text-center col-sm-3">
                                         	<h3 style="margin-bottom: 10px">Reference Guide</h3>
 											<ul style="margin-top:3px;" class="list-unstyled">
 											  <li>
@@ -258,7 +260,7 @@
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
                                         </div>
-                                        <div style="text-align: center;" class="col-sm-3">
+                                        <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
 												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
@@ -268,7 +270,7 @@
 												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
 														  Remote Support
 														  </span>
 													  </a>
@@ -348,7 +350,7 @@
     	PARTNERS - START
     =========================== -->
 		<section>
-			<div style="text-align: center;" class="row">
+			<div class="text-center row">
 				<div class="col-md-4"><a href="http://www.ims2015.org/"><img style="margin-top: 25px; max-height: 100px; max-width: 98px;" src="images/IMS_bw.png" alt="IMS" id="partner_001"></a></div>
 				<div class="col-md-4"><a href="http://www.semiconwest.org"><img style="margin-top: 25px; max-height: 100px; max-width: 322px;" src="images/semiconWest_bw.png" alt="Semicon West" id="partner_002"></a></div>
 				<div class="col-md-4"><a href="http://www.itctestweek.org"><img style="margin-top: 25px; margin-bottom: 25px; max-height: 100px; max-width: 92px;" src="images/ITCtestWeek_bw.png" alt="ITC Test Week" id="partner_003"></a></div>
@@ -386,7 +388,7 @@
 	<!-- ==========================
 		FOOTER - START
 	=========================== -->
-		<footer style="text-align: center; background-color: #F0F0F0;">
+		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
@@ -493,11 +495,12 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v5
+<!--  BOTTOM - v6
 	changelog:
 	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
 	v2-v3: moved footer changelogs to bottom of page
 	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
 	v4-v5: fixed product catalog image text sizes
+	v5-v6: replaced text-align style to text-center class, moved footer background color to css
 	-->
 </html>

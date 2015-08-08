@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 
-<!-- TOP - v5
+<!-- TOP - v6
 	changelog:
 	v1-v2: fixed links to be absolute (must start with a "/"), updated <a> hrefs, search fail alert, fixed links to be absolute (must start with a "/")
 	v2-v3: fixed spacing on navbar buttons, broke mobile (deleted style="width: 95" on each button), fixed google search
 	v3-v4: added hideOnSupport to have Support tab disappear on Support page
-	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers-->
+	v4-v5: fixed iTunes link, added #pageTheme to roos-roxie.css to support replace with roos-roxie-dark.css, combined head and header changelogs to TOP, deleted extra unneeded page wrappers
+	v5-v6: replaced text-align style to text-center class
+	-->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -108,7 +110,7 @@
   <!-- NoScript Alert -->
 	<noscript>
 		<div class="alert alert-danger">
-			<div style="text-align: center;"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
 
@@ -128,7 +130,7 @@
 			<div class="container">
 				<div class="navbar-header">
 
-					<div class="visible-xs visible-sm">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
@@ -142,7 +144,7 @@
 							</a>
 						</div>
 
-						<div class="visible-sm visible-xs container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -194,7 +196,7 @@
                         	<li>
                             	<div class="yamm-content">
                                     <div class="row">
-                                        <div class="col-sm-3" style="text-align: center">
+                                        <div class="text-center col-sm-3">
                                         	<h3 style="margin-bottom: 10px">Reference Guide</h3>
 											<ul style="margin-top:3px;" class="list-unstyled">
 											  <li>
@@ -258,7 +260,7 @@
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
                                         </div>
-                                        <div style="text-align: center;" class="col-sm-3">
+                                        <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
 												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
@@ -268,7 +270,7 @@
 												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
 														  Remote Support
 														  </span>
 													  </a>
@@ -344,75 +346,114 @@
 		<div id ="content" class="roosC container block">
 			<h2>Measure the Difference</h2>
 			<a href="tims.html" title="Test Instrument Modules (TIMs)"><img alt="Instruments" src="images/TIM_fan_crop_Web4.jpg"></a>
-			<p class="main">
-				At the heart of Cassini's configurable architecture are Test Instrument Modules (TIMs). These self-contained, swappable
-				instruments provide all of the source, receive, measure, and signal processing capability for a broad range of DC, digital,
-				mixed-signal, RF, and millimeter-wave applications. <br />
-				<a href="tims.html" title="Test Instrument Modules (TIMs)" class="link">Browse Instruments &raquo;</a>
-			</p>
-
-			<h2>Form that Follows Function</h2>
-			<p class="main">
-			  With Test Instrument Modules, we created an instrument design that marries modular test capability with robust production
-			  interfaces and interconnect. The light and portable form factor makes for easy swapping and servicing while
-			  the rugged exterior guarantees durability and reliability on the production floor.
-			</p>
-
-			<img style="display: block; margin-left: auto; margin-right: auto; max-width: 900px;" alt="TIMblueprint" src="images/TIM_blueprint2_web.jpg">
-			<h2>Configure a System in Seconds<img style="float: right; max-width: 500px; padding-bottom: 20px;" alt="configure_cassini" src="images/configure_cassini.jpg"></h2>
-
-			<p class="main">
-			    Each&nbsp;instrument incorporates an easy to use latch system for adding and removing instruments. The integrated
-			    lock ensures precision instrument alignment and secure connection when docking to the testhead.
-				This not only allows the tester to be configured quickly for specific applications but enables incremental
-				capability extension, multi-site expansion, and rapid field servicing.
-			</p>
-
-			<h2 style="padding-top: 40px;">Blind-Mate Instrument Interface</h2>
-			<p class="main">
-				It's the missing piece that transforms a set of modular instruments into a modular test system. The blind-mate
-				interface creates a unified instrument plane on the testhead for integrating resources to each other and to a DUT. The setup provides
-				robust DC, Digital, and RF connections while enabling better access to resources during development, quicker instrument servicing and
-				calibration, and fast DUT interface changeout in production.
-			</p>
 			<div class="row">
-				<div class="col-xs-12">
-				<img style="max-width: 300px" alt="Interface" src="images/ModSigDelivery.png">
-				<h2 style="padding-top: 40px;">Accelerate RF Measurements</h2>
-				<img style="max-width: 500px;float: right"; alt="SyRFcore" src="images/SyRF_graphic4_web.jpg">
+				<p class="col-sm-11 main">
+					At the heart of Cassini's configurable architecture are Test Instrument Modules (TIMs). These self-contained, swappable
+					instruments provide all of the source, receive, measure, and signal processing capability for a broad range of DC, digital,
+					mixed-signal, RF, and millimeter-wave applications. <br />
+					<a style="float: right; padding-right: 20px;" href="tims.html" title="Test Instrument Modules (TIMs)" class="link">Browse Instruments &raquo;</a>
+				</p>
+			</div>
+			<hr class="space">
+			<div class="row">
+				<div class="col-md-7 col-md-offset-5 col-lg-6 col-lg-offset-6">
+					<h2>Form that Follows Function</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-7 col-lg-6 col-lg-offset-2">
+					<img class="centerImg" style="max-width: 500px;" alt="TIMblueprint" src="images/TIM_blueprint2_web.jpg">
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<p class="main">
+						With Test Instrument Modules, we created an instrument design that marries modular test capability with robust production
+						interfaces and interconnect. The light and portable form factor makes for easy swapping and servicing while
+						the rugged exterior guarantees durability and reliability on the production floor.
+					</p>
+				</div>
+			</div>
+			<hr class="space">
+			<h2>Configure a System in Seconds</h2>
+			<div class="row">
+			  				<div class="col-sm-6 col-sm-push-6">
+					<img style="max-width: 350px;" alt="configure_cassini" src="images/configure_cassini.jpg">
+				</div>
+					<div class="col-sm-6 col-sm-pull-6">
+						<p class="main">
+							Each instrument incorporates an easy to use latch system for adding and removing instruments. The integrated
+							lock ensures precision instrument alignment and secure connection when docking to the testhead.
+							This not only allows the tester to be configured quickly for specific applications but enables incremental
+							capability extension, multi-site expansion, and rapid field servicing.
+						</p>
+					</div>
+
+
+			</div>
+			<hr class="space">
+			<div class="row">
+				<div class="col-md-7 col-lg-8 col-md-offset-5 col-lg-offset-4">
+					<h2>Blind-Mate Instrument Interface</h2>
+				</div>
+				<div class="col-sm-4 col-md-5">
+					<img class="dropShadow" style="max-width: 350px" alt="Interface" src="images/ModSigDelivery.png">
+				</div>
+				<div class="col-sm-8 col-md-5">
 				<p class="main">
-					Test&nbsp;set&nbsp;and receiver instruments incorporate our proprietary universal-channel, vector RF architecture called
+					It's the missing piece that transforms a set of modular instruments into a modular test system. The blind-mate
+					interface creates a unified instrument plane on the testhead for integrating resources to each other and to a DUT. The setup provides
+					robust DC, Digital, and RF connections while enabling better access to resources during development, quicker instrument servicing and
+					calibration, and fast DUT interface changeout in production.
+				</p></div>
+			</div>
+			<hr class="space">
+			<h2>Accelerate RF Measurements</h2>
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1 col-md-5 col-sm-push-6">
+					<img style="max-width: 350px;"; alt="SyRFcore" src="images/SyRF_graphic4_web.jpg"><br>
+					<a style="margin-left: 18%;" href="syrfcore.html" title="SyRF Core" class="link">Learn More About SyRF Core &raquo;</a>
+				</div>
+				<div class="col-sm-6 col-md-6 col-sm-pull-6">
+					<p class="main">
+					Test set and receiver instruments incorporate our proprietary universal-channel, vector RF architecture called
 					<abbr title="System RF (pronounced 'surf')">SyRF Core</abbr>.
 					The culmination&nbsp;of 20 years of advanced research and development, the microwave design provides unparalled
 					measurement speed and accuracy up to 90 GHz for a wide range of applications.
+					</p>
 					<ul>
 						<li>Multi-Port S-Parameters</li>
 						<li>Distortion Measurements</li>
 						<li>Modulation/Demodulation Test</li>
 						<li>Spectral Analysis</li>
 					</ul>
-				</p>
-				<a href="syrfcore.html" title="SyRF Core" style="float: left" class="link">Learn More About SyRF Core &raquo;</a>
+				</div>
+			</div>
+			<hr class="space">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-6">
+					<h2>Do More, Use Less</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-2">
+					<img style="max-width: 250px;" alt="TIMefficiency" src="images/TIM_Efficiency.jpg">
+				</div>
+				<div class="col-sm-6">
+					<p class="main">
+						Efficiency doesn't always have to be about pin&nbsp;utilization. Test instrument modules were designed to be
+						much more energy conscious, using less than 100 watts on average. The lower power consumption means lower operating temperatures and
+						simpler thermal management systems. Built-in fans and optimized air-channels keep instruments at a lower
+						and more stable operating temperature, both of which contribute to improved measurement stability
+						and longer product life.
+					</p>
 				</div>
 			</div>
 
-			<img style="float: left; padding-top: 40px; max-width: 250px;" alt="TIMefficiency" src="images/TIM_Efficiency.jpg">
-			<h2 style="padding-right: 20px;">Do More, Use Less</h2>
-			<p class="main">
-				Efficiency&nbsp;doesn't&nbsp;always have to be about pin&nbsp;utilization. Test instrument modules were designed to be
-				much more energy conscious, using less than 100 watts on average. The lower power consumption means lower operating temperatures and
-				simpler thermal management systems. Built-in fans and optimized air-channels keep instruments at a lower
-				and more stable operating temperature, both of which contribute to improved measurement stability
-				and longer product life.
-			</p>
-
 		</div> <!-- End of #content block-->
-		<br>
 
 	<!-- ==========================
 		FOOTER - START
 	=========================== -->
-		<footer style="text-align: center; background-color: #F0F0F0;">
+		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
@@ -455,6 +496,7 @@
 								</span>
 							</div>
 							<div class="overlay-wrapper col-sm-6">
+
 								<img style="background-color: #C1CFE0;" src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
 								<span class="overlay">
 									<a href="/rik">Accessories</a>
@@ -519,11 +561,12 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v5
+<!--  BOTTOM - v6
 	changelog:
 	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
 	v2-v3: moved footer changelogs to bottom of page
 	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
 	v4-v5: fixed product catalog image text sizes
+	v5-v6: replaced text-align style to text-center class, moved footer background color to css
 	-->
 </html>
