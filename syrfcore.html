@@ -321,7 +321,7 @@
 		<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
-				document.title = "Products Overview | Roos Instruments";
+				document.title = "SyRF Core | Roos Instruments";
 				$( "#nav-support" ).addClass( "active" );  //#choices are nav-home, nav-products, nav-services, nav-company, nav-support
 				//$( "#nav-support").empty();	//only on support.html
 			});
@@ -348,8 +348,12 @@
 
 		<div id ="content" class="roosC container block">
 
-			<h2>Accelerate <abbr title="Radio Frequency">RF</abbr> Test <img style="margin-bottom: 20px; max-width: 300px; max-height:220px; float: right;" alt="System Radio Frequency Core" src="images/SyRF_core.png"></h2>
-			<ul>
+
+			<h2>Accelerate <abbr title="Radio Frequency">RF</abbr> Test</h2>
+			<div col="row">
+			  <div class="col-sm-5 col-sm-offset-1 col-sm-push-6">
+			<img style="max-width: 300px;" alt="System Radio Frequency Core" src="images/SyRF_core.png">
+			</div><div class="col-sm-6 col-sm-pull-6"><ul>
 				<li>Real-time measurement with FPGA-powered DSP</li>
 				<li>Dual-channel, complex digitizer</li>
 				<li>Ultra linear, precise syncrodyne receiver</li>
@@ -360,15 +364,16 @@
 				Microwave TIMs incorporate ROOS Instruments proprietary <abbr title="System RF Core(pronounced 'surf')">SyRF Core</abbr> technology, providing unparalleled
 				measurement speed and unmatched test accuracy beyond 80 GHz.  The innovative universal-channel vector RF architecture enables
 				functional microwave test for a wide range of applications.
-			</p>
-			<br>
+			</p></div>
+			</div>
+			<hr class="space">
 			<h2>Coverage from Megahertz to Milimeter Wave</h2>
 			<img class="centerImg" style="max-width: 1007px; max-height: 315px;" alt="Frequency Range" src="images/ROOS_CASSINI_FrequencyRange.jpg">
 			<br>
 			<div class="row">
 				<div class="col-md-6">
 					<h3>Universal Functionality</h3>
-					<ul class="text-center">
+					<ul>
 						<li>Multi-port S-Parameters</li>
 						<li>Modulation &amp; Demodulation Tests</li>
 						<li>Distortion Measure</li>

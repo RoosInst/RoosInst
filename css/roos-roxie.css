@@ -6047,6 +6047,7 @@ abbr:hover::after {
   border-radius: 2px;
   content: attr(data-title);
   background: #FFF;
+  z-index: 1;
 }
 
 .newsSpace {
@@ -6133,7 +6134,6 @@ abbr:hover::after {
 }
 
 .main {  font-family: 'Source Sans Pro', 'HelveticaNeue-Light',arial,veranda, helvetica,'Quando','Times New Roman', Times, serif;
-  font-size: 16px;
   font-weight: 300; }
 
 
@@ -6262,19 +6262,36 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	visibility: hidden;
 }
 
-/* large */
-@media (min-width: 1200px) {
-	.roosC h1 {font-size:3em;line-height:1;margin-bottom:0.25em;}
-	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
-	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
-	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
-	.roosC h5 {font-size:1.75em;margin-bottom:0.5em;}
-	.roosC h6  {font-size:1.75em;}
-	hr.space {margin-bottom: 2.75em}
+/*if declared in extra small, inherits for all. Goes top-down inheritance*/
+/* extra small */
+@media (min-width:0px) {
+	.roosC h1 {font-size: 1.75em; line-height:.5; margin-bottom: 0.05em;}
+	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
+	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
+	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
+	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
+	.roosC h6 {font-size: 1em;}
+	.roosC .main {font-size: 15px}
+	hr.space {margin-bottom: 0em;}
+	.rightImgAlignH1-H3 {margin-top: -38px;}
+	.leftImgAlignH1-H3 {margin-top: 24px;}
+}
+
+/* small */
+@media (min-width:768px) {
+
+	.roosC h1 {font-size:2.25em;line-height:.5;margin-bottom:0.05em;}
+	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
+	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
+	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
+	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
+	.roosC h6  {font-size:1em;}
+	hr.space {margin-bottom: 1em;}
+	.roosC .main {font-size: 16px}
 }
 
 /* medium */
-@media (max-width:1199px) {
+@media (min-width:992px) {
 	.roosC h1 {font-size:2.5em;line-height:.75;margin-bottom:0.1em;}
 	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
 	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
@@ -6285,29 +6302,19 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 }
 
-/* small */
-@media (max-width:991px) {
-
-	.roosC h1 {font-size:2.25em;line-height:.5;margin-bottom:0.05em;}
-	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
-	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
-	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
-	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
-	.roosC h6  {font-size:1em;}
-	hr.space {margin-bottom: 1em;}
+/* large */
+@media (min-width: 1200px) {
+	.roosC h1 {font-size:3em;line-height:1;margin-bottom:0.25em;}
+	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
+	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
+	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
+	.roosC h5 {font-size:1.75em;margin-bottom:0.5em;}
+	.roosC h6  {font-size:1.75em;}
+	hr.space {margin-bottom: 2.75em}
+	.rightImgAlignH1-H3 {margin-top: -67px;}
+	.leftImgAlignH1-H3 {margin-top: 27px;}
 }
 
-/* extra small */
-@media (max-width:767px) {
-	.roosC h1 {font-size: 1.75em; line-height:.5; margin-bottom: 0.05em;}
-	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
-	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
-	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
-	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
-	.roosC h6 {font-size: 1em;}
-	.roosC .main {font-size: 15px}
-	hr.space {margin-bottom: 0em;}
-}
 
 .roosC .noIndent {
 	margin-left: 0;
