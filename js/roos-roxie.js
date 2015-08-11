@@ -27,7 +27,7 @@ $(window).scroll(function(){
 			$('.navbar').addClass('navbar-offset');
 			$('.navbar').removeClass('navbar-static-top');
 			$('.navbar').addClass('navbar-fixed-top');
-			$('body').css("padding-top","40px");
+			$('body').cssfjumf("padding-top","40px");
 		}
 		else {
 			$('.navbar').removeClass('navbar-offset');
@@ -148,7 +148,6 @@ $(document).ready(function() {
 		singleItem : true,
 		pagination : false,
 		transitionStyle : "fade",
-		autoPlay: 5000,
 		slideSpeed : 500,
 		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
@@ -206,6 +205,7 @@ $(document).ready(function() {
 		navigation : true,
 		singleItem : true,
 		slideSpeed : 500,
+		transitionStyle : "fadeUp",
 		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
 	
