@@ -6204,13 +6204,6 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 }
 
 @media (max-width:1199px) {
-
-	.ROOSbanner {
-		max-width:425px;
-	}
-}
-
-@media (max-width:549px) {
 	#mainTitleAdjust {
 		margin-top: 5px;
 		font-size: 30px;
@@ -6221,7 +6214,7 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 	}
 }
 
-@media (max-width:474px) {
+@media (max-width:484px) {
 	#mainTitleAdjust {
 		margin-top: 14px;
 		font-size: 22px;
@@ -6231,7 +6224,7 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 	}
 }
 
-@media (max-width:374px) {
+@media (max-width:384px) {
 	#mainTitleAdjust {
 		margin-top: 19px;
 		font-size: 17.5px;
@@ -6262,7 +6255,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	visibility: hidden;
 }
 
-/*if declared in extra small, inherits for all. Goes top-down inheritance*/
+
+/*if declared only in extra small, inherits for all. Goes top-down inheritance.
+  Only declare here if changes occur in different sizes, else create new below*/
+
 /* extra small */
 @media (min-width:0px) {
 	.roosC h1 {font-size: 1.75em; line-height:.5; margin-bottom: 0.05em;}
@@ -6273,8 +6269,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h6 {font-size: 1em;}
 	.roosC .main {font-size: 15px}
 	hr.space {margin-bottom: 0em;}
-	.rightImgAlignH1-H3 {margin-top: -38px;}
-	.leftImgAlignH1-H3 {margin-top: 24px;}
 }
 
 /* small */
@@ -6287,7 +6281,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
 	.roosC h6  {font-size:1em;}
 	hr.space {margin-bottom: 1em;}
-	.roosC .main {font-size: 16px}
+	.roosC .main {font-size: 16px;}
+	.rightImgAlignH1-H3 {margin-top: -38px;}
+	.leftImgAlignH1-H3 {margin-top: 28px;}
 }
 
 /* medium */
@@ -6312,7 +6308,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h6  {font-size:1.75em;}
 	hr.space {margin-bottom: 2.75em}
 	.rightImgAlignH1-H3 {margin-top: -67px;}
-	.leftImgAlignH1-H3 {margin-top: 27px;}
+	.leftImgAlignH1-H3 {margin-top: 29px;}
 }
 
 
@@ -6322,3 +6318,14 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 }
 
 .roosC img {margin-bottom: 20px;}
+
+@media (min-width:0px) and (max-width: 767px) {
+ .roosC img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		max-height: 150px;
+		height: auto;
+		width: auto;
+		max-width: 252px !important;
+	}
