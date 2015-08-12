@@ -201,11 +201,11 @@ $(document).ready(function() {
 	
 	$("#features-default-carousel #owl-carousel-default").owlCarousel({
 		stopOnHover: true,
-		autoPlay: 5000, 
+		autoPlay: 5000,
 		navigation : true,
 		singleItem : true,
 		slideSpeed : 500,
-		transitionStyle : "fadeUp",
+		transitionStyle : "fade",
 		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
 	
