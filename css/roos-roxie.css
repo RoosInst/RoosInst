@@ -6332,3 +6332,5 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 }
 
 .roosC ul.list-compact, .roosC .list-compact li {padding-left: 0;}
+
+.input-group[class*=col-] {padding: 0 15px;}
