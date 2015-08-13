@@ -1405,7 +1405,7 @@ body .jumbotron5 .btn:first-child:hover {
 /* BREADCRUMB */
 
 .breadcrumb-wrapper {
-	background-color: #0F0F0F;
+	background-color: #191919;
 	border-bottom:1px solid #333;
 	padding:15px 0;
 }
@@ -6006,7 +6006,7 @@ a:focus {
 #nav-tag { font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif; font-weight:300; font-size:18px; color:rgb(76,76,76); margin-bottom: 15px;}
 
 #mainTitleAdjust {
-  color: #333;
+  color: #808080;
   box-sizing: content-box; /*needed?*/
   margin: 0;
   overflow: hidden;

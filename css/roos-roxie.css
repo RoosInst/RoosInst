@@ -6334,3 +6334,29 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 .roosC ul.list-compact, .roosC .list-compact li {padding-left: 0;}
 
 .input-group[class*=col-] {padding: 0 15px;}
+
+.model-slides {
+	position: relative;
+	font-size: 30px;
+    color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    margin: 0 0 10px;
+	padding: 10px 20px;
+	width: 218px;
+	text-align: center;
+	top: 0;
+}
+
+/* fade */
+.owl-cassini-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .5s both ease;
+  -moz-animation: fadeOut .5s both ease;
+  animation: fadeOut .5s both ease;
+}
+.owl-cassini-fade-in {
+  -webkit-animation: fadeIn 2.5s both ease;
+  -moz-animation: fadeIn 2.5s both ease;
+  animation: fadeIn 2.5s both ease;
+}
