@@ -107,8 +107,7 @@
 			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
     </noscript>
-
-	<div id="page-wrapper" class="page-boxed">
+	<div id="page-wrapper">
 	<!-- ==========================
     	HEADER - START
     =========================== -->
@@ -312,46 +311,118 @@
     	HEADER - END
     =========================== -->
 
-			<script type="text/javascript">
-				//INIT PAGE ELEMENTS
-				$(document).ready(function() {
-					document.title = "Home | Roos Instruments";
-					$( "#nav-home" ).addClass( "active" );
-				});
-			</script>
+		<script type="text/javascript">
+			//INIT PAGE ELEMENTS
+			$(document).ready(function() {
+				document.title = "Home | Roos Instruments";
+				$( "#nav-home" ).addClass( "active" );
+			});
+		</script>
 
-		<div id ="content" class="roosC container block">
+
 	    <!--<div id="notice" class="hide column span-12 prepend-4">
 			<p class="text-center notice rounded" style="font-size: larger;">
 			Check out <a href="http://roos.com/parts/CASSINI/$file/CASSINI.pdf" target="_blank">CASSINI</a> and <a href="signup.html">Sign up</a> for our Newsletter.<br />
 			</p>
 		</div>-->
-	  <section id="jumbotron">
-	<!-- ==========================
-		JUMBOTRON - START
-	=========================== -->
-		  <div class="features-item" id="features-default-carousel">
-	  <!--		  <h3 class="text-center features-title"><i class="fa fa-font"></i>Default Carousel</h3>-->
-			  <div id="owl-carousel-default" class="owl-carousel owl-theme hidden-control">
-				  <a href="fixture.html"><div class="item"><img src="images/slide1.jpg" alt="" class="img-responsive"></div></a>
-				  <a href="instruments.html"><div class="item"><img src="images/slide2.jpg" alt="" class="img-responsive"></div></a>
-				  <a href="https://roos.com/parts/CASSINI-AUTO/$file/CASSINI-AUTO.pdf"><div class="item"><img src="images/slide3.jpg" alt="" class="img-responsive"></div></a>
-				  <div class="item"><a href="infrastructure.html"><img src="images/slide4.jpg" alt="" class="img-responsive"></a></div>
-				  <div class="item"><a href="guru.html"><img src="images/slide5.jpg" alt="" class="img-responsive"></a></div>
-			  </div>
-		  </div>
-	  </section>
-	<!-- ==========================
-		JUMBOTRON - END
-	 =========================== -->
 
+		<div id ="content" class="roosC">
+
+    <!-- ==========================
+    	JUMBOTRON - START
+    =========================== -->
+	<section id="jumbotron">
+	<div id="map_container">
+		<div id="map">
+			<div class="jumbotron index-slideshow">
+				<div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
+					<div class="item" id="index-slide-1">
+					  <h2 class="index-slideshow-bar"><div class="container">It's Time To Get Serious About RF</div></h2>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									<h4>When Add-On RF Just Can't Get the Performance you Need.... Now There's an ATE Solution That Puts RF First.</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item" id="index-slide-2">
+						<h2 class="index-slideshow-bar"><div class="container">Modular Instruments... Truly</div></h2>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-7">
+									<h5>It's One Thing to Say Modular.</h3>
+									<h5>It's Something Else Entirely to Do It.</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item" id="index-slide-3">
+						<h2 class="index-slideshow-bar"><div class="container">Automotive Radar Test? <span style="font-family: 'Quando';"><em>Done.</em></span><div></h2>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>We did our best</h2>
+								</div>
+								<div class="col-md-12">
+									<h3>Now it's up to you</h3>
+								</div>
+								<div class="col-md-12">
+									<a href="" class="btn btn-inverse">Buy it</a>
+									<span>or</span>
+									<a href="" class="btn btn-inverse">Check More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item" id="index-slide-4">
+						<h2 class="index-slideshow-bar"><div class="container">Rethink Device Interface Design</div></h2>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h3>Instruments and Interconnects</h3>
+								</div>
+								<div class="col-md-12">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item" id="index-slide-5">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h2>We did our best</h2>
+								</div>
+								<div class="col-md-12">
+									<h3>Now it's up to you</h3>
+								</div>
+								<div class="col-md-12">
+									<a href="" class="btn btn-inverse">Buy it</a>
+									<span>or</span>
+									<a href="" class="btn btn-inverse">Check More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+    <!-- ==========================
+    	JUMBOTRON - END
+    =========================== -->
 
 	<!-- ==========================
     	INTRODUCTION - START
     =========================== -->
-    <section class="content" id="section-introduction">
-            <h2>Fast & Modular</h2>
-            <p><strong>Leading semiconductor manufacturers use our instruments to test millions of chips every year.</strong>
+    <section id="index-content" style="padding: 3% 0;" class="container">
+            <h1>Fast & Modular</h1>
+            <p><strong>Leading semiconductor manufacturers use our instruments to test millions of chips every year.<br></strong>
 				  Roos Instruments combines more than 25 years of research into
 				  modular Automated Test Equipment that leads the industry in test accuracy,
 				  reliability, and time to market.
@@ -459,7 +530,7 @@
 	<!-- ==========================
 		FOOTER - END
     =========================== -->
-	</div>  <!-- #page-wrapper -->
+</div>
 	<!-- ==========================
     	JS
     =========================== -->

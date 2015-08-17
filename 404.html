@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+<html>
   <head>
       <title>404 | Roos Instruments</title>
      <!-- HEAD v1 -->
@@ -55,20 +55,32 @@
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-<!--Google search-->
-	<script type="text/javascript" src="//www.google.com/jsapi"></script>
-	<script type="text/javascript">
-		(function() {
-			var cx = '012195191905460761720:_yz700zwfwk';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
-		})();
-      </script>
-    
-<body>
-	<a href="index.html"><img src="/images/transparent-pixel.png" style="z-index: 0; cursor:pointer; width:100%; height:100%;"></a>
+	<!--Google search-->
+	<script>
+	  (function() {
+		var cx = '016663888408278794732:a1ud06__nsq';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			'//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	  })();
+	</script>
+
+	<!--Google Analytics-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-12101157-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+  </head>
+  <body>
+
     <style>
         @import url(http://fonts.googleapis.com/css?family=Oswald:400, 700);
         html, body {
@@ -82,24 +94,32 @@
            background: -moz-element(#canvas);
            overflow: hidden;
         }
-        
+
         html::after {
             content:'';
-         /*   background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-            position: absolute;*/
+
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
         }
-       
-       .center {
-           height: 400px;
-           width: 500px;
-           position: absolute;
-           top: calc(50% - 200px);
-           left: calc(50% - 250px);
-           text-align: center;
+		.fullScreen {
+			background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+       .center  {
+			max-height: 400px;
+			max-width: 500px;
+			margin: auto;
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			text-align: center;
+
        }
        h1, p {
            margin: 0;
@@ -117,7 +137,7 @@
            font-size: 2rem;
            color: rgba(0, 0, 0, 0.6);
        }
-       
+
        body::after, body::before {
            content:' ';
            display:block;
@@ -136,8 +156,8 @@
            -webkit-animation-delay: 4s;
            animation-delay: 4s;
        }
-       
-           
+
+
        @-webkit-keyframes scanline {
            0% {
                top:-5px;
@@ -191,22 +211,28 @@
            }
         }
     </style>
-      
+
     <canvas id="canvas" hidden></canvas>
+	<div class="fullScreen"><a href="index.html"><img src="/images/transparent-pixel.png" style="cursor:pointer; width:100%; height:100%;"></a></div>
     <div class="center">
         <h1>404</h1>
-        <p>FREQUENCY UNDETECTED</p><br><br>
-        <p style="font-size: 18px;">CLICK SCREEN TO RETURN TO VISIBLE SPECTRUM
-        Find what your looking for:
+        <p>FREQUENCY UNDETECTED</p><br>
+        <p style="font: 900; font-size: 18px;">
+			CLICK SCREEN TO RETURN TO VISIBLE SPECTRUM
+			<hr class="space">
+		</p>
+
+		<div class="main well" style="font: 900; font-size: 18px; background-color: rgba(255, 255, 255, 0.3)">
+        Sorry, we couldn't find the webpge you requested.<br>
+		Find what your looking for:
 			  <a href="javascript: onClick=history.back()">Go Back</a>. (You can try again or click somewhere else.)
 			  Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</u></a> for assistance with this page.
 			  Contact our <a href="/support.html">experienced application engineers</a> for product and technical questions.
 			  Use our <a href="/search.html">site search</a> feature.
 			  Browse <a href="/rik">RI Kit portfolio</a> of accessories.
 			  Browse <a href="/docs.html">technical documentation</a> for application notes, white papers, etc..
-	</p>
     </div>
-    
+	</div>
     <script>
          var canvas = document.getElementById('canvas'),
             context = canvas.getContext('2d'),
@@ -214,7 +240,7 @@
             width = canvas.width = height,
             bcontext = 'getCSSCanvasContext' in document ? document.getCSSCanvasContext('2d', 'noise', width, height) : context;
         noise();
-        
+
         function noise() {
             requestAnimationFrame(noise);
             var idata = context.getImageData(0, 0, width, height);

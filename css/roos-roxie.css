@@ -74,8 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-	/*font-family: 'Source Sans Pro', sans-serif;*/
-	color:#555555;
+	color:#333333; font-weight: 300;
 }
 
 /* TYPOGRAPHY */
@@ -5836,7 +5835,8 @@ footer .navbar-nav > li > a:hover,
 #eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before,
 .jumbotron-event .event-info h2,
 #event-speakers .speaker .speaker-body h3,
-#schedule .schedule-single-info i  {
+#schedule .schedule-single-info i,
+#index-content h1 /*added for custom index style*/ {
 	color:#084AA1;
 }
 
@@ -6082,7 +6082,7 @@ abbr:hover::after {
 	line-height:1.5;
 	color:#777; font-weight:400; font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
 
-.roosC h1, .roosC h2, .roosC h3, .roosC h4, .roosC h5, .roosC h6 {color:#333333; font-weight: 300;}
+/*.roosC h1, .roosC h2, .roosC h3, .roosC h4, .roosC h5, .roosC h6 {color:#333333; font-weight: 300;} overwrote roxie's default, no longer needed*/
 .roosC h1 img, .roosC h2 img, .roosC h3 img, .roosC h4 img, .roosC h5 img, .roosC h6 img {margin:0;}
 /*.roosC p {margin:0 0 1.5em;}*/
 .roosC p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
@@ -6261,7 +6261,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 /* extra small */
 @media (min-width:0px) {
-	.roosC h1 {font-size: 1.75em; line-height:.5; margin-bottom: 0.05em;}
+	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
 	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
 	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
 	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
@@ -6274,7 +6274,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 /* small */
 @media (min-width:768px) {
 
-	.roosC h1 {font-size:2.25em;line-height:.5;margin-bottom:0.05em;}
+	.roosC h1 {font-size:3em;line-height:.5;margin-bottom:0.4em;}
 	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
 	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
 	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
@@ -6288,7 +6288,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 /* medium */
 @media (min-width:992px) {
-	.roosC h1 {font-size:2.5em;line-height:.75;margin-bottom:0.1em;}
+	.roosC h1 {font-size:4em;line-height:.75;margin-bottom:0.4em;}
 	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
 	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
 	.roosC h4 {font-size:1.75em;line-height:1.25;margin-top: 0.25em; margin-bottom:0.5em;}
@@ -6300,7 +6300,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 /* large */
 @media (min-width: 1200px) {
-	.roosC h1 {font-size:3em;line-height:1;margin-bottom:0.25em;}
+	.roosC h1 {font-size:5em;line-height:1;margin-bottom:0.4em;}
 	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
 	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
 	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
@@ -6359,4 +6359,112 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
   -webkit-animation: fadeIn 2.5s both ease;
   -moz-animation: fadeIn 2.5s both ease;
   animation: fadeIn 2.5s both ease;
+}
+
+
+
+/* Index slideshow */
+		#index-slide-1 {
+			background-position:right bottom 50%;
+			background-image: url(/images/index-slide1-4k.jpg);
+		}
+
+		#index-slide-1:before {
+		  position: absolute;
+		  top: 0; right: 0; bottom: 0; left: 0;
+		  background-color: inherit;
+		  content: ' ';
+		}
+
+		#index-slide-2 {
+			background-image: url(/images/index-slide2-4k.jpg);
+			background-position:right bottom 50%;
+		}
+
+
+		#index-slide-3 {
+			background-image: url(/images/index-slide3-4k.jpg);
+			background-position:right top 15%;
+		}
+
+		#index-slide-4 {
+			background-image: url(/images/index-slide4-4k.jpg);
+			background-position:right bottom 5%;
+		}
+
+		#index-slide-5 {
+			background-image: url(/images/index-slide5-4k.jpg);
+			background-position:right bottom 5%;
+		}
+
+
+
+@media (min-width: 1200px) {
+	.index-slideshow .item {
+			height:480px;
+}
+
+@media (max-width: 767px) {
+	.index-slideshow .item {
+			height:307px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.index-slideshow .item {
+		height:40vw;
+	}
+}
+
+
+.index-slideshow .item {
+		background-size:100%;
+		background-repeat:no-repeat;
+}
+
+/*@media(min-width: 1500px) {
+.index-slideshow .item {
+	height:30vw;
+}
+}
+
+/*@media (max-width: 1199px) {*/
+/*	.index-slideshow .item {*/
+/*		height: 300px;*/
+/*}*/
+/**/
+/*@media (max-width: 767px) {*/
+/*	.index-slideshow .item {*/
+/*		height: 150px;*/
+/*}*/
+
+#index-content {
+	text-align: center;
+}
+
+#index-content p {margin: auto 7%;}
+
+.index-slideshow-bar {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	margin: 0;
+	width: 100%;
+}
+
+#index-slide-2 h1,
+#index-slide-2 h2,
+#index-slide-2 h3,
+#index-slide-2 h4,
+#index-slide-2 h5,
+#index-slide-3 h1,
+#index-slide-3 h2,
+#index-slide-3 h3,
+#index-slide-3 h4,
+#index-slide-3 h5,
+#index-slide-4 h1,
+#index-slide-4 h2,
+#index-slide-4 h3,
+#index-slide-4 h4,
+#index-slide-4 h5 {
+	color: #FFF;
 }

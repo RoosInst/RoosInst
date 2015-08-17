@@ -146,10 +146,11 @@ $(document).ready(function() {
 		autoPlay: 5000,
 		navigation : true,
 		singleItem : true,
-		pagination : false,
-		transitionStyle : "fade",
+		//pagination : false,
+		transitionStyle : "backSlide",
 		slideSpeed : 500,
-		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+		navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
+		stopOnHover: true
   	});
 
 	$("#about-slider").owlCarousel({
