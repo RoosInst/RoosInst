@@ -264,7 +264,7 @@ body button.btn-warning:focus {
 }
 
 .btn-inverse {
-	background-color:transparent;
+	background-color: rgba(255, 255, 255, 0.5); /*changed from transparent for index Learn More buttons*/
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 	border-width:2px;
@@ -1059,7 +1059,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 
 /* JUMBOTRON 1 */
 
-#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div,
+/*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div,*/
 #jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div {
     opacity:0;
 	background-color:transparent;
@@ -1069,7 +1069,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 	font-size:60px;
 }
 
-#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover,
+/*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover,*/
 #jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover {
 	background-color:transparent;
 }
@@ -5836,7 +5836,10 @@ footer .navbar-nav > li > a:hover,
 .jumbotron-event .event-info h2,
 #event-speakers .speaker .speaker-body h3,
 #schedule .schedule-single-info i,
-#index-content h1 /*added for custom index style*/ {
+
+#index-content h1, /*added for custom index style*/
+#jumbotron-slider .btn-inverse /*used for index slideshow Learn More buttons*/
+{
 	color:#084AA1;
 }
 
@@ -5883,7 +5886,11 @@ footer .navbar-nav > li > a:hover,
 .comingsoon .brands li a,
 #profile-single .profile-body .profile-contacts li span,
 #eshop .eshop-sidebar .eshop-widget .ui-slider .ui-slider-range,
-.event-ticket.highlighted {
+.event-ticket.highlighted,
+
+#jumbotron-slider .btn-inverse:hover,
+#jumbotron-slider .btn-inverse:focus
+{
     background-color: #084AA1;
 }
 
@@ -5901,7 +5908,10 @@ footer .navbar-nav > li > a:hover,
 .text-highlight,
 #services.services2 .service i,
 #services.services3 .service i,
-#eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before  {
+#eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before,
+
+#jumbotron-slider .btn-inverse /*used for index slideshow Learn More buttons*/
+{
 	border-color:#084AA1;
 }
 
@@ -6087,7 +6097,7 @@ abbr:hover::after {
 /*.roosC p {margin:0 0 1.5em;}*/
 .roosC p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 .roosC p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
-.roosC a:focus, .roosC a:hover {color:#084AA1 !important;}
+.roosC a:focus, .roosC a:hover {color:#084AA1/* !important*/;}
 .roosC blockquote {margin:1.5em;color:#666;font-style:italic;}
 .roosC strong {font-weight:bold;}
 .roosC em, .roosC dfn {font-style:italic;}
@@ -6100,7 +6110,7 @@ abbr:hover::after {
 
 .roosC a {
   font-weight: 400;
-  color: rgb(0,149,215) !important;
+  color: rgb(0,149,215)/* !important*/;
   text-decoration: none;
 }
 
@@ -6269,6 +6279,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h6 {font-size: 1em;}
 	.roosC .main {font-size: 15px}
 	hr.space {margin-bottom: 0em;}
+	.index-slideshow-bar {padding: 10px;}
+	.btn-index {font-size: 12px;}
+	#index-main {font-size: 16px;}
 }
 
 /* small */
@@ -6284,6 +6297,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC .main {font-size: 16px;}
 	.rightImgAlignH1-H3 {margin-top: -38px;}
 	.leftImgAlignH1-H3 {margin-top: 28px;}
+	.index-slideshow-bar {padding: 20px;}
+	.btn-index {font-size: 14px;}
+	#index-main {font-size: 17px;}
 }
 
 /* medium */
@@ -6295,12 +6311,13 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h5 {font-size:1.25em;margin-bottom:0.25em;}
 	.roosC h6  {font-size:1.25em;}
 	hr.space {margin-bottom: 2.5em;}
-
+	.btn-index {font-size: 16px;}
+	#index-main {font-size: 18px;}
 }
 
 /* large */
 @media (min-width: 1200px) {
-	.roosC h1 {font-size:5em;line-height:1;margin-bottom:0.4em;}
+	.roosC h1 {font-size:4em;line-height:1;margin-bottom:0.4em;}
 	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
 	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
 	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
@@ -6309,6 +6326,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	hr.space {margin-bottom: 2.75em}
 	.rightImgAlignH1-H3 {margin-top: -67px;}
 	.leftImgAlignH1-H3 {margin-top: 29px;}
+	.index-slideshow-bar {padding: 40px;}
+	.btn-index {font-size: 18px;}
+	#index-main {font-size: 20px;}
 }
 
 
@@ -6320,7 +6340,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 .roosC img {margin-bottom: 20px;}
 
 @media (min-width:0px) and (max-width: 767px) {
- .roosC img {
+	.roosC img {
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
@@ -6329,6 +6349,11 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		width: auto;
 		max-width: 252px !important;
 	}
+	#index-slide-1 h1, #index-slide-2 h1, #index-slide-3 h1, #index-slide-4 h1, #index-slide-5 h1 {font-size: 2em;}
+	#index-slide-1 h2, #index-slide-2 h2, #index-slide-3 h2, #index-slide-4 h2, #index-slide-5 h2 {font-size: 1.25em;}
+	#index-slide-1 h3, #index-slide-2 h3, #index-slide-3 h3, #index-slide-4 h3, #index-slide-5 h3 {font-size: 1em;}
+	#index-slide-1 h4, #index-slide-2 h4, #index-slide-3 h4, #index-slide-4 h4, #index-slide-5 h4 {font-size: 1em;}
+	#index-slide-1 h5, #index-slide-2 h5, #index-slide-3 h5, #index-slide-4 h5, #index-slide-5 h5 {font-size: 0.75em;}
 }
 
 .roosC ul.list-compact, .roosC .list-compact li {padding-left: 0;}
@@ -6364,79 +6389,70 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 
 /* Index slideshow */
-		#index-slide-1 {
-			background-position:right bottom 50%;
-			background-image: url(/images/index-slide1-4k.jpg);
-		}
-
-		#index-slide-1:before {
-		  position: absolute;
-		  top: 0; right: 0; bottom: 0; left: 0;
-		  background-color: inherit;
-		  content: ' ';
-		}
-
-		#index-slide-2 {
-			background-image: url(/images/index-slide2-4k.jpg);
-			background-position:right bottom 50%;
-		}
-
-
-		#index-slide-3 {
-			background-image: url(/images/index-slide3-4k.jpg);
-			background-position:right top 15%;
-		}
-
-		#index-slide-4 {
-			background-image: url(/images/index-slide4-4k.jpg);
-			background-position:right bottom 5%;
-		}
-
-		#index-slide-5 {
-			background-image: url(/images/index-slide5-4k.jpg);
-			background-position:right bottom 5%;
-		}
-
-
-
-@media (min-width: 1200px) {
-	.index-slideshow .item {
-			height:480px;
+#index-slide-1 {
+	background-position:right bottom 50%;
+	background-image: url(/images/redbox/index-slide1-4k.jpg);
 }
 
-@media (max-width: 767px) {
+#index-slide-1:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+
+#index-slide-2 {
+	background-image: url(/images/redbox/index-slide2-4k.jpg);
+	background-position:right bottom 60%;
+}
+
+
+#index-slide-3 {
+	background-image: url(/images/redbox/index-slide3-4k.jpg);
+	background-position:right top 15%;
+}
+
+#index-slide-4 {
+	background-image: url(/images/redbox/index-slide4-4k.jpg);
+	background-position:right bottom 5%;
+}
+
+#index-slide-5 {
+	background-image: url(/images/redbox/index-slide5-4k.jpg);
+	background-position:right bottom 5%;
+}
+
+
+@media (max-width: 807px) {
+	.index-slideshow .item {
+		height:65vmin;
+	}
+}
+
+@media (min-width: 808px) {
+	.index-slideshow .item {
+		height:525px;
+	}
+}
+
+@media (min-width: 991px) {
+	.index-slideshow .item {
+			height:480px; /*45px difference from above due to titlebar shrinking on mobile*/
+	}
+}
+
+/*@media (max-width: 767px) {
 	.index-slideshow .item {
 			height:307px;
 	}
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-	.index-slideshow .item {
-		height:40vw;
-	}
-}
+}*/
 
 
 .index-slideshow .item {
-		background-size:100%;
+		background-size:116%; /* minimal % needed for background images to always reach top of titlebar*/
 		background-repeat:no-repeat;
 }
 
-/*@media(min-width: 1500px) {
-.index-slideshow .item {
-	height:30vw;
-}
-}
-
-/*@media (max-width: 1199px) {*/
-/*	.index-slideshow .item {*/
-/*		height: 300px;*/
-/*}*/
-/**/
-/*@media (max-width: 767px) {*/
-/*	.index-slideshow .item {*/
-/*		height: 150px;*/
-/*}*/
 
 #index-content {
 	text-align: center;
@@ -6445,17 +6461,12 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 #index-content p {margin: auto 7%;}
 
 .index-slideshow-bar {
-	background-color: rgba(0, 0, 0, 0.2);
-	padding: 10px;
+	background-color: rgba(127, 127, 127, 0.25);
 	margin: 0;
 	width: 100%;
 }
 
-#index-slide-2 h1,
 #index-slide-2 h2,
-#index-slide-2 h3,
-#index-slide-2 h4,
-#index-slide-2 h5,
 #index-slide-3 h1,
 #index-slide-3 h2,
 #index-slide-3 h3,
@@ -6466,5 +6477,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 #index-slide-4 h3,
 #index-slide-4 h4,
 #index-slide-4 h5 {
+	color: #FFF;
+}
+
+#jumbotron-slider .btn-inverse:hover,
+#jumbotron-slider .btn-inverse:focus {
 	color: #FFF;
 }
