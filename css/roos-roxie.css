@@ -6260,7 +6260,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	width: 100%;
 	border: none;
 	height: 1px;
-	background: #fff;
+	background: transparent;
 	color: #fff;
 	visibility: hidden;
 }

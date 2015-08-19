@@ -74,8 +74,7 @@ h3,
 h4,
 h5,
 h6 {
-	/*font-family: 'Source Sans Pro', sans-serif;*/
-	color:#555555;
+	color:#CCC; font-weight: 300;
 }
 
 /* TYPOGRAPHY */
@@ -265,7 +264,7 @@ body button.btn-warning:focus {
 }
 
 .btn-inverse {
-	background-color:transparent;
+	background-color: rgba(255, 255, 255, 0.5); /*changed from transparent for index Learn More buttons*/
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 	border-width:2px;
@@ -745,8 +744,8 @@ body .brands.main li a:hover {
 ------------------------------*/
 
 .top-header {
-	background-color:#F0F0F0;
-	border-bottom:1px solid #DDDDDD;
+	background-color:#191919;
+	border-bottom:1px solid #333;
 	padding-left: 30px;
 	padding-right: 30px;
 	height:25px;
@@ -914,7 +913,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 .navbar-default .navbar-nav > li.shopping-cart-toggle > a > i,
 .navbar-default .navbar-nav > li.search-form-toggle > a > i {
 	font-size:22px;
-	background-color:#F0F0F0;
+	background-color:#222;
 	color:#AAAAAA;
 	padding:8px;
 	border-radius:4px;
@@ -1060,7 +1059,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 
 /* JUMBOTRON 1 */
 
-#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div,
+/*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div,*/
 #jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div {
     opacity:0;
 	background-color:transparent;
@@ -1070,7 +1069,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 	font-size:60px;
 }
 
-#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover,
+/*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover,*/
 #jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover {
 	background-color:transparent;
 }
@@ -2016,7 +2015,7 @@ body #section-features .feature:hover i {
 ------------------------------*/
 
 footer {
-	background-color:#EAEAEA;
+	background-color:#191919;
 	color:#555555;
 	padding:30px 0 15px;
 	margin-top: 50px;  	/*space between content - rjb*/
@@ -2067,12 +2066,12 @@ footer .brands li {
 }
 
 footer .brands li a {
-	background-color:#777777;
-	color:#FFFFFF;
+	background-color:#888;
+	color:#000;
 }
 
 footer .footer-bottom {
-	border-top:1px solid #DADADA;
+	border-top:1px solid #252525;
 	padding:15px 0 0;
 	margin:10px 0 0;
 }
@@ -2535,7 +2534,7 @@ body #services.services3 .service:hover i {
 }
 */
 #about-slider {
-	margin-top:61px;
+	/*margin-top:61px;*/
 }
 
 
@@ -5836,7 +5835,11 @@ footer .navbar-nav > li > a:hover,
 #eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before,
 .jumbotron-event .event-info h2,
 #event-speakers .speaker .speaker-body h3,
-#schedule .schedule-single-info i  {
+#schedule .schedule-single-info i,
+
+#index-content h1, /*added for custom index style*/
+#jumbotron-slider .btn-inverse /*used for index slideshow Learn More buttons*/
+{
 	color:#084AA1;
 }
 
@@ -5883,7 +5886,11 @@ footer .navbar-nav > li > a:hover,
 .comingsoon .brands li a,
 #profile-single .profile-body .profile-contacts li span,
 #eshop .eshop-sidebar .eshop-widget .ui-slider .ui-slider-range,
-.event-ticket.highlighted {
+.event-ticket.highlighted,
+
+#jumbotron-slider .btn-inverse:hover,
+#jumbotron-slider .btn-inverse:focus
+{
     background-color: #084AA1;
 }
 
@@ -5901,7 +5908,10 @@ footer .navbar-nav > li > a:hover,
 .text-highlight,
 #services.services2 .service i,
 #services.services3 .service i,
-#eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before  {
+#eshop .eshop-sidebar .eshop-widget .checkbox input[type=checkbox]:checked + label:before,
+
+#jumbotron-slider .btn-inverse /*used for index slideshow Learn More buttons*/
+{
 	border-color:#084AA1;
 }
 
@@ -5993,7 +6003,7 @@ a:focus {
 
 .ROOSbanner {
   overflow: hidden;
-  max-width:450px; height:2px;
+  max-width:590px; height:2px;
   background: -moz-linear-gradient(left, rgba(94,188,240,1) 0%, rgba(84,182,236,1) 18%, rgba(0,149,215,1) 34%, rgba(0,133,202,1) 60%, rgba(24,111,183,1) 73%, rgba(38,98,172,0.84) 81%, rgba(40,88,163,0.67) 95%, rgba(42,75,151,0) 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(94,188,240,1)), color-stop(18%,rgba(84,182,236,1)), color-stop(34%,rgba(0,149,215,1)), color-stop(60%,rgba(0,133,202,1)), color-stop(73%,rgba(24,111,183,1)), color-stop(95%,rgba(38,98,172,0)), color-stop(89%,rgba(40,88,163,0.67)), color-stop(100%,rgba(42,75,151,0.28)));
   background: -webkit-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
@@ -6047,6 +6057,7 @@ abbr:hover::after {
   border-radius: 2px;
   content: attr(data-title);
   background: #FFF;
+  z-index: 1;
 }
 
 .newsSpace {
@@ -6077,45 +6088,30 @@ abbr:hover::after {
 #content.roosC {background: #000;}
 
 /* typography.css */
-.roosC { font-size: 20px;
+.roosC { font-size: 16px;
 	line-height:1.5;
 	color:#777; font-weight:400; font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
 
-.roosC h1, .roosC h2, .roosC h3, .roosC h4, .roosC h5, .roosC h6 {color:#ccc; font-weight: 300;}
-.roosC h1 {font-size:3em;line-height:1;margin-bottom:0.25em;}
-.roosC h2 {font-size:2em;margin-bottom:0.5em;}
-.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:1.25em;}
-.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 1.5em; margin-bottom:1em;}
-.roosC h5 {font-size:1.75em;margin-bottom:1.5em;}
-.roosC h6  {font-size:1.75em;}
+/*.roosC h1, .roosC h2, .roosC h3, .roosC h4, .roosC h5, .roosC h6 {color:#333333; font-weight: 300;} overwrote roxie's default, no longer needed*/
 .roosC h1 img, .roosC h2 img, .roosC h3 img, .roosC h4 img, .roosC h5 img, .roosC h6 img {margin:0;}
 /*.roosC p {margin:0 0 1.5em;}*/
 .roosC p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
 .roosC p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
-.roosC a:focus, .roosC a:hover {color:#084AA1 !important;}
+.roosC a:focus, .roosC a:hover {color:#084AA1/* !important*/;}
 .roosC blockquote {margin:1.5em;color:#666;font-style:italic;}
 .roosC strong {font-weight:bold;}
 .roosC em, .roosC dfn {font-style:italic;}
 .roosC .roosC dfn {font-weight:bold;}
 .roosC sup, .roosC sub {line-height:0;}
 
-.roosC ul {list-style-type:none; margin-left: 40px;}
+.roosC ul {list-style-type:none; margin-left: 40px; color: rgb(71,71,71);}
 .roosC .nav ul {list-style-type:none; margin-left: 0px;}
 .roosC img {width: 100%; height: 100%;} /*This will resize image once below max-width, important for responsive design*/
 
 .roosC a {
   font-weight: 400;
-  color: rgb(0,149,215) !important;
+  color: rgb(0,149,215)/* !important*/;
   text-decoration: none;
-}
-
-#productImg {
-  max-width: 260px;
-  float: right;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  margin-right: 10%;
 }
 
 .imgBorder {
@@ -6123,6 +6119,10 @@ abbr:hover::after {
   background-color: #F0F0F0;
   border: 1px solid #CCC;
   border-radius: 4px;
+}
+
+.dropShadow {
+	box-shadow: 4px 4px 3px #6f6f6f;
 }
 
 /*.overview > a {
@@ -6144,8 +6144,8 @@ abbr:hover::after {
 }
 
 .main {  font-family: 'Source Sans Pro', 'HelveticaNeue-Light',arial,veranda, helvetica,'Quando','Times New Roman', Times, serif;
-  font-size: 20px;
   font-weight: 300; }
+
 
  .navButton {
 	background-color: transparent;
@@ -6211,4 +6211,274 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 	margin-left: -60px;
 	margin-top: -18px;
 	}
+}
+
+@media (max-width:1199px) {
+	#mainTitleAdjust {
+		margin-top: 5px;
+		font-size: 30px;
+	}
+
+	.ROOSbanner {
+		max-width:355px;
+	}
+}
+
+@media (max-width:484px) {
+	#mainTitleAdjust {
+		margin-top: 14px;
+		font-size: 22px;
+	}
+	.ROOSbanner {
+		max-width:260px;
+	}
+}
+
+@media (max-width:384px) {
+	#mainTitleAdjust {
+		margin-top: 19px;
+		font-size: 17.5px;
+	}
+	.ROOSbanner {
+		max-width:212px;
+	}
+}
+
+#services .service ul {margin: 0;}
+
+#services .service.noRadius i {border-radius: 0;}
+
+#companyService .service {
+	min-height: 410px;
+}
+
+hr.space { /* not all of these properties seem needed anymore, but keeping for compatibility */
+	clear: both;
+	float: none;
+	width: 100%;
+	border: none;
+	height: 1px;
+	background: #fff;
+	color: #fff;
+	visibility: hidden;
+}
+
+
+/*if declared only in extra small, inherits for all. Goes top-down inheritance.
+  Only declare here if changes occur in different sizes, else create new below*/
+
+/* extra small */
+@media (min-width:0px) {
+	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
+	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
+	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
+	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
+	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
+	.roosC h6 {font-size: 1em;}
+	.roosC .main {font-size: 15px}
+	hr.space {margin-bottom: 0em;}
+	.index-slideshow-bar {padding: 10px;}
+	.btn-index {font-size: 12px;}
+	#index-main {font-size: 16px;}
+}
+
+/* small */
+@media (min-width:768px) {
+
+	.roosC h1 {font-size:3em;line-height:.5;margin-bottom:0.4em;}
+	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
+	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
+	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
+	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
+	.roosC h6  {font-size:1em;}
+	hr.space {margin-bottom: 1em;}
+	.roosC .main {font-size: 16px;}
+	.rightImgAlignH1-H3 {margin-top: -38px;}
+	.leftImgAlignH1-H3 {margin-top: 28px;}
+	.index-slideshow-bar {padding: 20px;}
+	.btn-index {font-size: 14px;}
+	#index-main {font-size: 17px;}
+}
+
+/* medium */
+@media (min-width:992px) {
+	.roosC h1 {font-size:4em;line-height:.75;margin-bottom:0.4em;}
+	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
+	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
+	.roosC h4 {font-size:1.75em;line-height:1.25;margin-top: 0.25em; margin-bottom:0.5em;}
+	.roosC h5 {font-size:1.25em;margin-bottom:0.25em;}
+	.roosC h6  {font-size:1.25em;}
+	hr.space {margin-bottom: 2.5em;}
+	.btn-index {font-size: 16px;}
+	#index-main {font-size: 18px;}
+}
+
+/* large */
+@media (min-width: 1200px) {
+	.roosC h1 {font-size:4em;line-height:1;margin-bottom:0.4em;}
+	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
+	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
+	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
+	.roosC h5 {font-size:1.75em;margin-bottom:0.5em;}
+	.roosC h6  {font-size:1.75em;}
+	hr.space {margin-bottom: 2.75em}
+	.rightImgAlignH1-H3 {margin-top: -67px;}
+	.leftImgAlignH1-H3 {margin-top: 29px;}
+	.index-slideshow-bar {padding: 40px;}
+	.btn-index {font-size: 18px;}
+	#index-main {font-size: 20px;}
+}
+
+
+.roosC .noIndent {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.roosC img {margin-bottom: 20px;}
+
+@media (min-width:0px) and (max-width: 767px) {
+	.roosC img {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		max-height: 150px;
+		height: auto;
+		width: auto;
+		max-width: 252px !important;
+	}
+	#index-slide-1 h1, #index-slide-2 h1, #index-slide-3 h1, #index-slide-4 h1, #index-slide-5 h1 {font-size: 2em;}
+	#index-slide-1 h2, #index-slide-2 h2, #index-slide-3 h2, #index-slide-4 h2, #index-slide-5 h2 {font-size: 1.25em;}
+	#index-slide-1 h3, #index-slide-2 h3, #index-slide-3 h3, #index-slide-4 h3, #index-slide-5 h3 {font-size: 1em;}
+	#index-slide-1 h4, #index-slide-2 h4, #index-slide-3 h4, #index-slide-4 h4, #index-slide-5 h4 {font-size: 1em;}
+	#index-slide-1 h5, #index-slide-2 h5, #index-slide-3 h5, #index-slide-4 h5, #index-slide-5 h5 {font-size: 0.75em;}
+}
+
+.roosC ul.list-compact, .roosC .list-compact li {padding-left: 0;}
+
+.input-group[class*=col-] {padding: 0 15px;}
+
+.model-slides {
+	position: relative;
+	font-size: 30px;
+    color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+    margin: 0 0 10px;
+	padding: 10px 20px;
+	width: 218px;
+	text-align: center;
+	top: 0;
+}
+
+/* fade */
+.owl-cassini-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .5s both ease;
+  -moz-animation: fadeOut .5s both ease;
+  animation: fadeOut .5s both ease;
+}
+.owl-cassini-fade-in {
+  -webkit-animation: fadeIn 2.5s both ease;
+  -moz-animation: fadeIn 2.5s both ease;
+  animation: fadeIn 2.5s both ease;
+}
+
+
+
+/* Index slideshow */
+#index-slide-1 {
+	background-position:right bottom 50%;
+	background-image: url(/images/redbox/index-slide1-4k.jpg);
+}
+
+#index-slide-1:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+
+#index-slide-2 {
+	background-image: url(/images/redbox/index-slide2-4k.jpg);
+	background-position:right bottom 60%;
+}
+
+
+#index-slide-3 {
+	background-image: url(/images/redbox/index-slide3-4k.jpg);
+	background-position:right top 15%;
+}
+
+#index-slide-4 {
+	background-image: url(/images/redbox/index-slide4-4k.jpg);
+	background-position:right bottom 5%;
+}
+
+#index-slide-5 {
+	background-image: url(/images/redbox/index-slide5-4k.jpg);
+	background-position:right bottom 5%;
+}
+
+
+@media (max-width: 807px) {
+	.index-slideshow .item {
+		height:65vmin;
+	}
+}
+
+@media (min-width: 808px) {
+	.index-slideshow .item {
+		height:525px;
+	}
+}
+
+@media (min-width: 991px) {
+	.index-slideshow .item {
+			height:480px; /*45px difference from above due to titlebar shrinking on mobile*/
+	}
+}
+
+/*@media (max-width: 767px) {
+	.index-slideshow .item {
+			height:307px;
+	}
+}*/
+
+
+.index-slideshow .item {
+		background-size:116%; /* minimal % needed for background images to always reach top of titlebar*/
+		background-repeat:no-repeat;
+}
+
+
+#index-content {
+	text-align: center;
+}
+
+#index-content p {margin: auto 7%;}
+
+.index-slideshow-bar {
+	background-color: rgba(127, 127, 127, 0.25);
+	margin: 0;
+	width: 100%;
+}
+
+#index-slide-2 h2,
+#index-slide-3 h1,
+#index-slide-3 h2,
+#index-slide-3 h3,
+#index-slide-3 h4,
+#index-slide-3 h5,
+#index-slide-4 h1,
+#index-slide-4 h2,
+#index-slide-4 h3,
+#index-slide-4 h4,
+#index-slide-4 h5 {
+	color: #FFF;
+}
+
+#jumbotron-slider .btn-inverse:hover,
+#jumbotron-slider .btn-inverse:focus {
+	color: #FFF;
 }
