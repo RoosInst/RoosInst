@@ -213,26 +213,50 @@
     </style>
 
     <canvas id="canvas" hidden></canvas>
-	<div class="fullScreen"><a href="index.html"><img src="/images/transparent-pixel.png" style="cursor:pointer; width:100%; height:100%;"></a></div>
+	<a href="index.html">
+		<div class="fullScreen">
+			<img src="/images/transparent-pixel.png" style="cursor:pointer; width:100%; height:100%;">
+		</div>
     <div class="center">
-        <h1>404</h1>
-        <p>FREQUENCY UNDETECTED</p><br>
-        <p style="font: 900; font-size: 18px;">
-			CLICK SCREEN TO RETURN TO VISIBLE SPECTRUM
-			<hr class="space">
-		</p>
+		<h1>404</h1>
+		<div style="font-weight: 700;">
+			<p>FREQUENCY UNDETECTED<br><br>
+			<span style="font-size: 16px;">CLICK SCREEN TO RETURN TO VISIBLE SPECTRUM</span></p>
+			<br><br> <!--using this instead of <hr class="space"> because hr breaks link to index page-->
+		</div>
+	</a>
+		<div class="main well" style="font-weight: 900; font-size: 18px; background-color: rgba(255, 255, 255, 0.3)">
+         Sorry, we couldn't find the webapge you requested.<br>
+		Find what your looking for:<br>
+		<a href="javascript: onClick=history.back()">Go Back</a> or
+				<a class="" href="#" data-toggle="modal" data-target="#searchModal">Search our website</a>.<br>
+		<small>Feel this was a mistake? Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</u></a> for assistance with this page, or
+		contact our <a href="/support.html">experienced application engineers</a> for product and technical questions.</small>
 
-		<div class="main well" style="font: 900; font-size: 18px; background-color: rgba(255, 255, 255, 0.3)">
-        Sorry, we couldn't find the webpge you requested.<br>
-		Find what your looking for:
-			  <a href="javascript: onClick=history.back()">Go Back</a>. (You can try again or click somewhere else.)
-			  Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</u></a> for assistance with this page.
-			  Contact our <a href="/support.html">experienced application engineers</a> for product and technical questions.
-			  Use our <a href="/search.html">site search</a> feature.
-			  Browse <a href="/rik">RI Kit portfolio</a> of accessories.
-			  Browse <a href="/docs.html">technical documentation</a> for application notes, white papers, etc..
-    </div>
+		<!-- Modal -->
+		<div id="searchModal" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Search</h3>
+					</div>
+					<div class="modal-body">
+						<div class="reset-box-sizing" id="search">
+							<gcse:search></gcse:search>
+						</div> <!-- end of #search -->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 	</div>
+
     <script>
          var canvas = document.getElementById('canvas'),
             context = canvas.getContext('2d'),
