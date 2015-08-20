@@ -1,14 +1,7 @@
 /* -----------------------------------------------------------------------
-
-
- Blueprint CSS Framework 0.9
- http://blueprintcss.org
-
-   * Copyright (c) 2007-Present. See LICENSE for more info.
-   * See README for instructions on how to use Blueprint.
-   * For credits and origins, see AUTHORS.
-   * This is a compressed file. See the sources in the 'src' directory.
-
+  Roos Instruments, Inc.
+  roos.com v5
+  Print friendly, remove all navigation, readable font
 ----------------------------------------------------------------------- */
 /* TODO Show margins, printable...
  */
@@ -17,9 +10,9 @@
 #fb-root, #LikePluginPagelet { display:none; }
 #floatContainer {display:none;}
 #rightSideBar {display:none;}
-#footer, #footer-nav,#side-nav, #tagline,#search, #actions, #actions2, #action-nav,#docNav, #nav-tag, address, nav { display:none; }
+#footer, #footer-nav,#side-nav, #tagline,#search, #actions, #actions2, #action-nav,#docNav, #nav-tag, header, footer, address, nav { display:none; }
 #logo { float:right; overflow:hidden; }
-#title { size: 12pt; color: #aaa; float:right; overflow:hidden; }
+#title { size: 12pt; color: #aaa; overflow:hidden; display: block !important }
 #translate, #fdbk_tab, #fdbk_overlay, #fdbk_container, #fdbk_screen { display:none; }
 body {line-height:1.5;font-family:'Source Sans Pro','Helvetica Neue', Arial, Helvetica, sans-serif;color:#000;background:none;}
 .container {background:none;}
