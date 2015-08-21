@@ -834,7 +834,7 @@ body .brands.main li a:hover {
 }
 
 .dropdown-menu > li {
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px solid #C5C5C5;
 }
 
 .dropdown-menu > li:last-child {
@@ -4582,9 +4582,9 @@ form.event-register .form-control {
 	body .navbar.navbar-default .navbar-nav > li.open > a,
 	body .navbar.navbar-default .navbar-nav > li.open > a:hover,
 	body .navbar.navbar-default .navbar-nav > li.open > a:focus {
-		background-color:#FFFFFF;
-		color: #555555;
-		padding:5px 0;
+		/*background-color:#FFFFFF;*/
+		/*color: #555555;*/
+		padding:9px;
 		border-bottom:2px solid #E5E5E5;
 		font-size:14px;
 		font-weight:600;
@@ -4611,7 +4611,7 @@ form.event-register .form-control {
 	.navbar-default .navbar-nav .dropdown-menu > li > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
 	.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
-		background-color:#FFFFFF;
+		background-color:#F3F3F3;
 		padding:8px 10px;
 		transition:none;
 	}
@@ -6388,56 +6388,124 @@ ul.nav { margin-left: 5px;}
 
 
 
-/* Index slideshow */
 #index-slide-1 {
 	background-position:right bottom 50%;
-	background-image: url(/images/redbox/index-slide1-4k.jpg);
+	background-image: url(/images/index-slide1-4k.jpg);
+
 }
 
 #index-slide-1:before {
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: inherit;
-  content: ' ';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: inherit;
+	content: ' ';
 }
 
+
 #index-slide-2 {
-	background-image: url(/images/redbox/index-slide2-4k.jpg);
+	background-image: url(/images/index-slide2-4k.jpg);
 	background-position:right bottom 60%;
 }
 
 
 #index-slide-3 {
-	background-image: url(/images/redbox/index-slide3-4k.jpg);
+	background-image: url(/images/index-slide3-4k.jpg);
 	background-position:right top 15%;
 }
 
 #index-slide-4 {
-	background-image: url(/images/redbox/index-slide4-4k.jpg);
+	background-image: url(/images/index-slide4-4k.jpg);
 	background-position:right bottom 5%;
 }
 
 #index-slide-5 {
-	background-image: url(/images/redbox/index-slide5-4k.jpg);
+	background-image: url(/images/index-slide5-4k.jpg);
 	background-position:right bottom 5%;
 }
 
 
-@media (max-width: 807px) {
-	.index-slideshow .item {
-		height:65vmin;
+/* Index slideshow */
+
+@media (min-width: 768px) {
+	#index-slide-1,
+	#index-slide-2,
+	#index-slide-3,
+	#index-slide-4,
+	#index-slide-5 {
+		background-size: 3442px 660px;
 	}
 }
 
-@media (min-width: 808px) {
+@media (max-width: 767px) {
+	#index-slide-1,
+	#index-slide-2,
+	#index-slide-3,
+	#index-slide-4,
+	#index-slide-5 {
+		background-size: cover;
+	}
+}
+
+	#index-slide-1 {
+		background-position: center center;
+		background-image: url(/images/index-slide1-wide.jpg);
+	}
+
+	#index-slide-1:before {
+	  position: absolute;
+	  top: 0; right: 0; bottom: 0; left: 0;
+	  background-color: inherit;
+	  content: ' ';
+	}
+
+	#index-slide-2 {
+		background-image: url(/images/index-slide2-wide.jpg);
+		background-position: center center;
+	}
+
+
+	#index-slide-3 {
+		background-image: url(/images/index-slide3-wide.jpg);
+		background-position: center center;
+	}
+
+	#index-slide-4 {
+		background-image: url(/images/index-slide4-wide.jpg);
+		background-position: center center;
+	}
+
+	#index-slide-5 {
+		background-image: url(/images/index-slide5-wide.jpg);
+		background-position: center center;
+	}
+}
+@media (min-width: 1200px) {
+	#index-slide-1,
+	#index-slide-2,
+	#index-slide-3,
+	#index-slide-4,
+	#index-slide-5 {
+		background-size: 3208px 615px;
+	}
+}
+
+
+@media (max-width: 767px) {
 	.index-slideshow .item {
-		height:525px;
+		height:79vw;
+		max-height: 605px;
+	}
+}
+
+@media (min-width: 768px) {
+	.index-slideshow .item {
+		height:605px;
 	}
 }
 
 @media (min-width: 991px) {
 	.index-slideshow .item {
-			height:480px; /*45px difference from above due to titlebar shrinking on mobile*/
+			height:560px; /*45px difference from above due to titlebar shrinking on mobile*/
 	}
 }
 
@@ -6449,7 +6517,7 @@ ul.nav { margin-left: 5px;}
 
 
 .index-slideshow .item {
-		background-size:116%; /* minimal % needed for background images to always reach top of titlebar*/
+		/*background-size:116%;*/ /* minimal % needed for background images to always reach top of titlebar*/
 		background-repeat:no-repeat;
 }
 
@@ -6462,8 +6530,9 @@ ul.nav { margin-left: 5px;}
 
 .index-slideshow-bar {
 	background-color: rgba(127, 127, 127, 0.25);
-	margin: 0;
+	margin: 0 auto;
 	width: 100%;
+	max-width: 3208px; /* size of images */
 }
 
 #index-slide-2 h2,
@@ -6484,3 +6553,6 @@ ul.nav { margin-left: 5px;}
 #jumbotron-slider .btn-inverse:focus {
 	color: #FFF;
 }
+
+@media (max-width: 767px) {
+	#nav-home > a, #nav-mobile-support > a {color: #4293FF !important;}

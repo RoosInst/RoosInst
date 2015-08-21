@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v8 -->
+<!-- TOP - v9 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -206,89 +206,87 @@
 											<div class="col-sm-3">
 												<h3 style="margin-bottom: 10px">Online Documents</h3>
 												<ul style="margin-top: 3px" class="nav vertical-nav">
-												  <li>
 													<script type="text/javascript">
-													$("#docSearchButton").click( function() { goSearch() });
-													function goSearch(){
-														var docSearch = window.document.docsSearch;
-														var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
-														//alert(searchPhrase)
-														if(searchPhrase==''){
-															$("#searchFail").removeClass("hidden");
-															docSearch.query.value = "";
-															docSearch.query.focus();
-															return true;
-														} else {
-															var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
-															//alert(searchString);
-															location.href= searchString;
-															$("#searchFail").addClass("hidden");
-															docSearch.query.value = "";
-															return true;
-														}
-													}; //end function
-												</script>
-												<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
-												  <div class="form-group nospace">
-													<div id="searchFail" class="alert alert-warning hidden" role="alert">
-													  <strong>Oops!</strong> Search for something.
-													</div>
-													<div class="input-group">
-														<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
-														<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-													</div>
-												  </div>
-											  </form>
-											  </li>
-												<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
-												<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
-												<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-												<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
-											</ul>
-										</div> <!-- End of .col -->
-                                        <div class="col-sm-3">
-                                        	<h3>Support Links</h3>
-                                        	<ul class="nav vertical-nav">
-                                            	<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
-                                                <li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-                                                <li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
-                                                <li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
-                                                <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
-                                            </ul>
-                                        </div> <!-- End of .col -->
-                                        <div class="text-center col-sm-3">
-                                            <h3>Get Support</h3>
-											<ul class="list-unstyled">
-												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
-												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
-												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
-												<li style="padding-top:15px">
-												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
-													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
-														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
-															  Remote Support
-														  </span>
-													  </a>
-												  </div>
-												</li>
-											</ul>
-											<br>
-										</div> <!-- End of .col -->
-                                    </div> <!-- End of .row -->
-                                </div> <!-- End of .yamm-content -->
-                            </li>
-                        </ul>
-                    </li>
-				</ul> <!-- End of .nav .navbar-nav -->
-				<ul class="nav navbar-nav hidden-xs hidden-sm">
-					<li style="margin-right: -12px;" class="search-form-toggle">
-						<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
-					</li>
-				</ul>
-			</div> <!-- End of .navbar-collapse -->
-				</div> <!-- End of .container -->
-			</header>
+														$("#docSearchButton").click( function() { goSearch() });
+														function goSearch(){
+															var docSearch = window.document.docsSearch;
+															var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
+															//alert(searchPhrase)
+															if(searchPhrase==''){
+																$("#searchFail").removeClass("hidden");
+																docSearch.query.value = "";
+																docSearch.query.focus();
+																return true;
+															} else {
+																var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
+																//alert(searchString);
+																location.href= searchString;
+																$("#searchFail").addClass("hidden");
+																docSearch.query.value = "";
+																return true;
+															}
+														}; //end function
+													</script>
+													<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+													  <div class="form-group nospace">
+														<div id="searchFail" class="alert alert-warning hidden" role="alert">
+														  <strong>Oops!</strong> Search for something.
+														</div>
+														<div class="input-group">
+															<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
+															<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+														</div>
+													  </div>
+													</form>
+													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
+													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
+													<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+													<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
+												</ul>
+											</div> <!-- End of .col -->
+											<div class="col-sm-3">
+												<h3>Support Links</h3>
+												<ul class="nav vertical-nav">
+													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
+													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
+													<li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
+													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
+												</ul>
+											</div> <!-- End of .col -->
+											<div class="text-center col-sm-3">
+												<h3>Get Support</h3>
+												<ul class="list-unstyled">
+													<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
+													<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+													<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+													<li style="padding-top:15px">
+													  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
+														  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
+															  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
+															  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
+																  Remote Support
+															  </span>
+														  </a>
+													  </div>
+													</li>
+												</ul>
+												<br>
+											</div> <!-- End of .col -->
+										</div> <!-- End of .row -->
+									</div> <!-- End of .yamm-content -->
+								</li>
+							</ul>
+						</li>
+					</ul> <!-- End of .nav .navbar-nav -->
+					<ul class="nav navbar-nav hidden-xs hidden-sm">
+						<li style="margin-right: -12px;" class="search-form-toggle">
+							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+						</li>
+					</ul>
+				</div> <!-- End of .navbar-collapse -->
+			</div> <!-- End of .container -->
+		</header>
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
@@ -346,9 +344,7 @@
 
 			<h5 style="position:relative; z-index: 2; top: 55px;">Automotive Radar Test</h5>
 			<div class="text-center">
-				<div id="AutoArt">
-					<img title="Automotive Radar" alt="Automotive Radar" src="/images/auto1.png" style="position: relative; z-index: 1;">
-				</div>
+				<img title="Automotive Radar" alt="Automotive Radar" src="/images/auto1.png" style="position: relative; z-index: 1;">
 			</div>
 			<p class="main">
 				The high consumer demand and mission-critical safety requirements of
@@ -361,16 +357,10 @@
 			<hr class="space">
 			<h5 class="col-sm-offset-1">Anatomy of Radar Test</h5>
 
-			<!--<map name="mmWaveCassiniMap">
-				<area shape="rect" coords="0,0,1000,200" href="#mmWave1" alt="Production Millimeter Wave" title="Production Millimeter Wave">
-				<area shape="rect" coords="0,200,1000,350" href="#mmWave2" alt="Waveguide Interconnect System" title="Waveguide Interconnect System">
-				<area shape="rect" coords="0,350,1000,750" href="#mmWave3" alt="Precision Measurements" title="Precision Measurements">
-			</map>-->
-
 			<map name="mmWaveCassiniMap">
 				<area shape="poly" alt="" coords="69,109,425,109,601,285,408,285,343,220,69,220" href="#mmWave1" alt="Production Millimeter Wave" title="Production Millimeter Wave">
 				<area shape="rect" alt="" coords="0,286,525,375" href="#mmWave2" alt="Waveguide Interconnect System" title="Waveguide Interconnect System">
-				<area shape="rect" coords="0,439,556,532" href="#mmWave3" alt="Precision Measurements" title="Precision Measurements">
+				<area shape="rect" coords="0,376,655,601" href="#mmWave3" alt="Precision Measurements" title="Precision Measurements">
 			</map>
 
 
@@ -383,7 +373,7 @@
 				});
 			</script>
 
-			<p class="main">
+			<p class="main"><span id="mmWave1"></span>
 				Built upon the sucessful and proven technology of the industry's first
 				production radar test system (RI7100C), our second generation Cassini
 				radar test system picks up right where it's predecessor left off. With a
@@ -392,12 +382,15 @@
 				performance to tackle a diverse array of radar components while offering
 				tighter performance specifications.<br>
 				<a class="link" href="/parts/CASSINI-AUTO/$file/CASSINI-AUTO.pdf" title="Automotive Radar Brochure">Download the Brochure &raquo;</a>
+
 			</p>
+
 			<a href="#mmWaveCassini" style="text-decoration: none;">
 				<h5 style="position: relative; display: inline;">
-					<img alt="1)" src="/images/auto_id1.png" class="automotiveNums">
+					<img  alt="1)" src="/images/auto_id1.png" class="automotiveNums">
 					Production Millimeter Wave Ports
 				</h5>
+
 			</a>
 			<hr class="space">
 			<div class="row">
@@ -406,7 +399,7 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="hidden-xs" style="margin-top: 55px;"></div>
-					<p class="main">
+					<p id="mmWave2"class="main">
 						Using military-grade components and connectors, we have created the
 						industry's first blind-mate, production waveguide interface. The robust
 						mechanical design provides consistent waveguide alignment and docking
@@ -422,58 +415,56 @@
 						Waveguide Interconnect System
 					</h5>
 				</a>
-				<div id="mmWave2">
-					<div class="col-sm-6 col-sm-push-6">
-					   <img alt="Waveguide Interconnect System" src="images/auto4.png" style="max-width: 386px;">
-					</div>
-					<div class="col-sm-6 col-sm-pull-6">
-						<p class="main" style="margin-top: 55px;">
-							The interconnect system incorporates waveguide seamlessly into the
-							device interface environment to deliver optimum signal performance to
-							and from the device under test.<br>
-							Keyed guide pins and precision blind-mate surface tooling provide
-							reliable and repeatable waveguide connections while enabling easy
-							access to resources during development and field servicing of the test
-							bench in production.
-						</p>
-					</div>
+
+				<div class="col-sm-6 col-sm-push-6">
+				   <img alt="Waveguide Interconnect System" src="images/auto4.png" style="max-width: 386px;">
+				</div>
+				<div class="col-sm-6 col-sm-pull-6">
+					<p class="main" style="margin-top: 55px;">
+						The interconnect system incorporates waveguide seamlessly into the
+						device interface environment to deliver optimum signal performance to
+						and from the device under test.<br>
+						Keyed guide pins and precision blind-mate surface tooling provide
+						reliable and repeatable waveguide connections while enabling easy
+						access to resources during development and field servicing of the test
+						bench in production.
+					</p>
 				</div>
 			</div>
 			<hr class="space">
-			<div id="mmWave3">
-				<a href="#mmWaveCassini" style="text-decoration: none;">
-					<h5>
-						<img alt="3)" src="/images/auto_id3.png" class="automotiveNums">
-						Precision Measurements
-					</h5>
-				</a>
-				<div class="row">
-					<div class="col-sm-6">
-						<img alt="RI8564 Test Set" src="/images/auto5.png" style="max-width: 386px;">
-					</div>
-					<div class="col-sm-6">
-						<p class="main" style="margin-top: 40px;">
-							The RI8564 Test Set extends the microwave front-end of Cassini source and
-							receivers with frequency and port conversion for test and measure
-							capability in the 75 GHz to 81 GHz range. With integrated waveguide port
-							conversion, calibrated signal paths, and our SyRF Core vector RF
-							architecture, the instrument provides frequency translation and signal
-							condition for phase and power measurements, S-parameters, and distortion
-							test.<br>
-							<a class="link" href="/web/RI8564_TestSet_80GHz.pdf">Download RI8564 Test Set Brief &raquo;</a>
-						</p>
-					</div>
+			<a href="#mmWaveCassini" style="text-decoration: none;">
+				<h5>
+					<img id="mmWave3" alt="3)" src="/images/auto_id3.png" class="automotiveNums">
+					Precision Measurements
+				</h5>
+			</a>
+			<div class="row">
+				<div class="col-sm-6">
+					<img alt="RI8564 Test Set" src="/images/auto5.png" style="max-width: 386px;">
 				</div>
-				<hr class="space">
-				<div class="row">
-					<div class="col-sm-6">
-					  <img class="centerImg" alt="Source Performance from 74 GHz to 84 GHz" src="/images/auto6-pt1.png" style="max-width: 324px;">
-					</div>
-					<div class="col-sm-6">
-					   <img class="centerImg" alt="Receive Performance from 74 GHz to 84 GHz" src="/images/auto6-pt2.png" style="max-width: 324px;">
-					</div>
+				<div class="col-sm-6">
+					<p class="main" style="margin-top: 40px;">
+						The RI8564 Test Set extends the microwave front-end of Cassini source and
+						receivers with frequency and port conversion for test and measure
+						capability in the 75 GHz to 81 GHz range. With integrated waveguide port
+						conversion, calibrated signal paths, and our SyRF Core vector RF
+						architecture, the instrument provides frequency translation and signal
+						condition for phase and power measurements, S-parameters, and distortion
+						test.<br>
+						<a class="link" href="/web/RI8564_TestSet_80GHz.pdf">Download RI8564 Test Set Brief &raquo;</a>
+					</p>
 				</div>
 			</div>
+			<hr class="space">
+			<div class="row">
+				<div class="col-sm-6">
+				  <img class="centerImg" alt="Source Performance from 74 GHz to 84 GHz" src="/images/auto6-pt1.png" style="max-width: 324px;">
+				</div>
+				<div class="col-sm-6">
+				   <img class="centerImg" alt="Receive Performance from 74 GHz to 84 GHz" src="/images/auto6-pt2.png" style="max-width: 324px;">
+				</div>
+			</div>
+
 
 		</div> <!-- End of #content block-->
 

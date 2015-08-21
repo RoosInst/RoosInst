@@ -29,6 +29,7 @@ html,body {
 body {
 	font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
 	background-color:#121212;
+	color: #AAA;
 }
 
 #page-wrapper {
@@ -312,7 +313,7 @@ body button.btn-warning:focus {
 /* VERTICAL NAV */
 
 .nav.vertical-nav li {
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px solid #AAA;
 }
 
 .nav.vertical-nav li:last-child {
@@ -320,7 +321,7 @@ body button.btn-warning:focus {
 }
 
 .nav.vertical-nav li a {
-	color: #555555;
+	color: #AAA;
     font-weight: 400;
     padding: 6px 0;
 	transition-duration: 0.4s;
@@ -823,7 +824,7 @@ body .brands.main li a:hover {
 /* DROPDOWN */
 
 .navbar-nav > li > .dropdown-menu {
-    background-color: #F8F8F8;
+    background-color: #121212;
     border:0;
 	border-bottom:3px solid #16A085;
     border-radius:0;
@@ -834,7 +835,7 @@ body .brands.main li a:hover {
 }
 
 .dropdown-menu > li {
-	border-bottom: 1px solid #E5E5E5;
+	border-bottom: 1px solid #1A1A1A;
 }
 
 .dropdown-menu > li:last-child {
@@ -842,11 +843,11 @@ body .brands.main li a:hover {
 }
 
 .dropdown-menu > li > a {
-    color: #555555;
+    color: #AAAAAA;
     font-weight: 400;
     padding: 10px 15px;
 	transition: 0.3s ease-in-out 0s;
-	background-color: #FFFFFF;
+	background-color: #121212;
 	position:relative;
 }
 
@@ -862,7 +863,7 @@ body .brands.main li a:hover {
 }
 
 .dropdown-menu > li > a:hover {
-    background-color: #E5E5E5;
+    background-color: #B7B7B7;
 	color: #333333;
 	padding-left:20px;
 }
@@ -4563,7 +4564,7 @@ form.event-register .form-control {
 
 	.navbar-default .navbar-collapse .navbar-nav {
 		margin: 0 -15px;
-		background-color:#FFFFFF;
+		background-color:#000;
 		padding:5px 15px;
 		float:none;
 	}
@@ -4582,10 +4583,10 @@ form.event-register .form-control {
 	body .navbar.navbar-default .navbar-nav > li.open > a,
 	body .navbar.navbar-default .navbar-nav > li.open > a:hover,
 	body .navbar.navbar-default .navbar-nav > li.open > a:focus {
-		background-color:#FFFFFF;
-		color: #555555;
+		background-color:#000;
+		color: #AAA;
 		padding:5px 0;
-		border-bottom:2px solid #E5E5E5;
+		border-bottom:2px solid #AAA;
 		font-size:14px;
 		font-weight:600;
 	}
@@ -4611,7 +4612,7 @@ form.event-register .form-control {
 	.navbar-default .navbar-nav .dropdown-menu > li > a,
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
 	.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
-		background-color:#FFFFFF;
+		/*background-color:#FFFFFF;*/
 		padding:8px 10px;
 		transition:none;
 	}
