@@ -6154,7 +6154,7 @@ abbr:hover::after {
 
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
-	background-color:rgba(8, 74, 161, 0.75);
+	background-color: #4677B8;
 }
 
 .list-compact li {

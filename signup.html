@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v7 -->
+<!-- TOP - v8 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -131,7 +131,7 @@
 
 					<div id="title">
 						<div class="hidden-sm hidden-xs">
-							<a href="/index.html" style="text-decoration: none">
+							<a href="/index.html">
 								<h1 id="mainTitleAdjust">Roos Instruments</h1>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
@@ -139,7 +139,9 @@
 						</div>
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
+							<a href="/index.html">
+								<h1 id="mainTitleAdjust">Roos Instruments</h1>
+							</a>
 							<div class="ROOSbanner"></div>
 						</div>
 					</div> <!-- end of #header-title -->
@@ -226,24 +228,24 @@
 														}
 													}; //end function
 												</script>
-													<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
-													  <div class="form-group nospace">
-														<div id="searchFail" class="alert alert-warning hidden" role="alert">
-														  <strong>Oops!</strong> Search for something.
-														</div>
-														<div class="input-group">
-															<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
-															<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-														</div>
-													  </div>
-												  </form>
-												  </li>
-													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
-													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
-													<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
-												</ul>
-											</div>
+												<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+												  <div class="form-group nospace">
+													<div id="searchFail" class="alert alert-warning hidden" role="alert">
+													  <strong>Oops!</strong> Search for something.
+													</div>
+													<div class="input-group">
+														<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
+														<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+													</div>
+												  </div>
+											  </form>
+											  </li>
+												<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
+												<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
+												<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+												<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
+											</ul>
+										</div> <!-- End of .col -->
                                         <div class="col-sm-3">
                                         	<h3>Support Links</h3>
                                         	<ul class="nav vertical-nav">
@@ -253,7 +255,7 @@
                                                 <li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
-                                        </div>
+                                        </div> <!-- End of .col -->
                                         <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
@@ -265,27 +267,27 @@
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
 														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
-														  Remote Support
+															  Remote Support
 														  </span>
 													  </a>
 												  </div>
 												</li>
 											</ul>
 											<br>
-										</div>
-                                    </div>
-                                </div>
+										</div> <!-- End of .col -->
+                                    </div> <!-- End of .row -->
+                                </div> <!-- End of .yamm-content -->
                             </li>
                         </ul>
                     </li>
-					</ul>
-					<ul class="nav navbar-nav hidden-xs hidden-sm">
-						<li style="margin-right: -12px;" class="search-form-toggle">
-							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
-						</li>
-					</ul>
-					</div>
-				</div> <!-- End of navbar collapse -->
+				</ul> <!-- End of .nav .navbar-nav -->
+				<ul class="nav navbar-nav hidden-xs hidden-sm">
+					<li style="margin-right: -12px;" class="search-form-toggle">
+						<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+					</li>
+				</ul>
+			</div> <!-- End of .navbar-collapse -->
+				</div> <!-- End of .container -->
 			</header>
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
@@ -327,9 +329,9 @@
 			<div class="container">
 				<h2>Signup</h2>
 				<ol class="breadcrumb">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="fixture.html">Device Interface</a></li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/products.html">Products</a></li>
+					<li><a href="/fixture.html">Device Interface</a></li>
 				</ol>
 			</div>
 		</section>
@@ -536,7 +538,7 @@ function mce_success_cb(resp){
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png" /></a>
+					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png"></a>
 						  <div>
 							  <h3><i class="fa fa-flag"></i>Contact</h3>
 							  <div class="vcard">
@@ -641,3 +643,4 @@ function mce_success_cb(resp){
   </body>
 <!--  BOTTOM - v7 -->
 </html>
+

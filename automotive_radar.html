@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v7 -->
+<!-- TOP - v8 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -131,7 +131,7 @@
 
 					<div id="title">
 						<div class="hidden-sm hidden-xs">
-							<a href="/index.html" style="text-decoration: none">
+							<a href="/index.html">
 								<h1 id="mainTitleAdjust">Roos Instruments</h1>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
@@ -139,7 +139,9 @@
 						</div>
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-							<h1 id="mainTitleAdjust"><a href="/index.html" style="text-decoration: none; color:black">Roos Instruments</a></h1>
+							<a href="/index.html">
+								<h1 id="mainTitleAdjust">Roos Instruments</h1>
+							</a>
 							<div class="ROOSbanner"></div>
 						</div>
 					</div> <!-- end of #header-title -->
@@ -226,24 +228,24 @@
 														}
 													}; //end function
 												</script>
-													<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
-													  <div class="form-group nospace">
-														<div id="searchFail" class="alert alert-warning hidden" role="alert">
-														  <strong>Oops!</strong> Search for something.
-														</div>
-														<div class="input-group">
-															<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
-															<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-														</div>
-													  </div>
-												  </form>
-												  </li>
-													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
-													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
-													<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
-												</ul>
-											</div>
+												<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+												  <div class="form-group nospace">
+													<div id="searchFail" class="alert alert-warning hidden" role="alert">
+													  <strong>Oops!</strong> Search for something.
+													</div>
+													<div class="input-group">
+														<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
+														<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+													</div>
+												  </div>
+											  </form>
+											  </li>
+												<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
+												<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
+												<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+												<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
+											</ul>
+										</div> <!-- End of .col -->
                                         <div class="col-sm-3">
                                         	<h3>Support Links</h3>
                                         	<ul class="nav vertical-nav">
@@ -253,7 +255,7 @@
                                                 <li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
                                                 <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
                                             </ul>
-                                        </div>
+                                        </div> <!-- End of .col -->
                                         <div class="text-center col-sm-3">
                                             <h3>Get Support</h3>
 											<ul class="list-unstyled">
@@ -265,27 +267,27 @@
 													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
 														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
 														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
-														  Remote Support
+															  Remote Support
 														  </span>
 													  </a>
 												  </div>
 												</li>
 											</ul>
 											<br>
-										</div>
-                                    </div>
-                                </div>
+										</div> <!-- End of .col -->
+                                    </div> <!-- End of .row -->
+                                </div> <!-- End of .yamm-content -->
                             </li>
                         </ul>
                     </li>
-					</ul>
-					<ul class="nav navbar-nav hidden-xs hidden-sm">
-						<li style="margin-right: -12px;" class="search-form-toggle">
-							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
-						</li>
-					</ul>
-					</div>
-				</div> <!-- End of navbar collapse -->
+				</ul> <!-- End of .nav .navbar-nav -->
+				<ul class="nav navbar-nav hidden-xs hidden-sm">
+					<li style="margin-right: -12px;" class="search-form-toggle">
+						<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+					</li>
+				</ul>
+			</div> <!-- End of .navbar-collapse -->
+				</div> <!-- End of .container -->
 			</header>
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
@@ -315,7 +317,7 @@
 	  	<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
-				document.title = "Careers | Roos Instruments";
+				document.title = "Automotive Radar | Roos Instruments";
 				$( "#nav-company" ).addClass( "active" );
 
 				$("#pageTheme").attr("href", "css/roos-roxie-dark.css");
@@ -328,11 +330,11 @@
     =========================== -->
 		<section class="breadcrumb-wrapper">
 			<div class="container">
-				<h2>Careers</h2>
+				<h2>Automotive Radar</h2>
 				<ol class="breadcrumb">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="company.html">Company</a></li>
-					<li class="active">Careers</li>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/company.html">Company</a></li>
+					<li class="active">Automotive Radar</li>
 				</ol>
 			</div>
 		</section>
@@ -358,12 +360,29 @@
 			</p>
 			<hr class="space">
 			<h5 class="col-sm-offset-1">Anatomy of Radar Test</h5>
-			<map name="mmWaveCassiniMap">
+
+			<!--<map name="mmWaveCassiniMap">
 				<area shape="rect" coords="0,0,1000,200" href="#mmWave1" alt="Production Millimeter Wave" title="Production Millimeter Wave">
 				<area shape="rect" coords="0,200,1000,350" href="#mmWave2" alt="Waveguide Interconnect System" title="Waveguide Interconnect System">
 				<area shape="rect" coords="0,350,1000,750" href="#mmWave3" alt="Precision Measurements" title="Precision Measurements">
+			</map>-->
+
+			<map name="mmWaveCassiniMap">
+				<area shape="poly" alt="" coords="69,109,425,109,601,285,408,285,343,220,69,220" href="#mmWave1" alt="Production Millimeter Wave" title="Production Millimeter Wave">
+				<area shape="rect" alt="" coords="0,286,525,375" href="#mmWave2" alt="Waveguide Interconnect System" title="Waveguide Interconnect System">
+				<area shape="rect" coords="0,439,556,532" href="#mmWave3" alt="Precision Measurements" title="Precision Measurements">
 			</map>
-			<img class="centerImg" id="mmWaveCassini" alt="Cassini Test System for Automotive Radar" src="/images/AutomotiveTestSystem3.png" usemap="#mmWaveCassiniMap">
+
+
+			<img style="max-width: 1000px;" class="centerImg" id="mmWaveCassini" alt="Cassini Test System for Automotive Radar" src="/images/AutomotiveTestSystem3.png" usemap="#mmWaveCassiniMap">
+			<script src="/js/jquery.ImageMapResize.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				//RESIZE IMAGEMAP
+				$(document).ready(function() {
+					$('#mmWaveCassini').ImageMapResize({ origImageWidth: "1000" });
+				});
+			</script>
+
 			<p class="main">
 				Built upon the sucessful and proven technology of the industry's first
 				production radar test system (RI7100C), our second generation Cassini
@@ -376,7 +395,7 @@
 			</p>
 			<a href="#mmWaveCassini" style="text-decoration: none;">
 				<h5 style="position: relative; display: inline;">
-					<img alt="1)" src="/images/auto_id1.png" style="max-width: 64px;">
+					<img alt="1)" src="/images/auto_id1.png" class="automotiveNums">
 					Production Millimeter Wave Ports
 				</h5>
 			</a>
@@ -399,7 +418,7 @@
 			<div class="row">
 				<a href="#mmWaveCassini" style="text-decoration: none;">
 					<h5 class="col-xs-12 col-sm-7 col-sm-offset-5">
-						<img alt="2)" src="/images/auto_id2.png" style="max-width: 64px;">
+						<img alt="2)" src="/images/auto_id2.png" class="automotiveNums">
 						Waveguide Interconnect System
 					</h5>
 				</a>
@@ -424,7 +443,7 @@
 			<div id="mmWave3">
 				<a href="#mmWaveCassini" style="text-decoration: none;">
 					<h5>
-						<img alt="3)" src="/images/auto_id3.png" style="max-width: 64px;">
+						<img alt="3)" src="/images/auto_id3.png" class="automotiveNums">
 						Precision Measurements
 					</h5>
 				</a>
@@ -465,7 +484,7 @@
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png" /></a>
+					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png"></a>
 						  <div>
 							  <h3><i class="fa fa-flag"></i>Contact</h3>
 							  <div class="vcard">

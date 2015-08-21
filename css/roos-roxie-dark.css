@@ -4510,7 +4510,7 @@ form.event-register .form-control {
 	/* NAVBAR */
 
 	.navbar-default {
-		background-color:#F0F0F0;
+		background-color:#0F0F0F;
 		height:50px;
 	}
 
@@ -6154,7 +6154,7 @@ abbr:hover::after {
 
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
-	background-color:rgba(8, 74, 161, 0.75);
+	background-color: #4677B8;
 }
 
 .list-compact li {
@@ -6289,7 +6289,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
 	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
 	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
-	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
+	.roosC h5 {font-size:1.25em;margin-bottom:0.125em;}
 	.roosC h6  {font-size:1em;}
 	hr.space {margin-bottom: 1em;}
 	.roosC .main {font-size: 16px;}
@@ -6306,7 +6306,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
 	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
 	.roosC h4 {font-size:1.75em;line-height:1.25;margin-top: 0.25em; margin-bottom:0.5em;}
-	.roosC h5 {font-size:1.25em;margin-bottom:0.25em;}
+	.roosC h5 {font-size:1.5em;margin-bottom:0.25em;}
 	.roosC h6  {font-size:1.25em;}
 	hr.space {margin-bottom: 2.5em;}
 	.btn-index {font-size: 16px;}
@@ -6481,4 +6481,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 #jumbotron-slider .btn-inverse:hover,
 #jumbotron-slider .btn-inverse:focus {
 	color: #FFF;
+}
+
+img.automotiveNums {
+	display: inline;
+	max-width: 64px;
+	width: 10vw;
 }
