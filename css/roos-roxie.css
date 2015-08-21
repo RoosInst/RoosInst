@@ -3657,7 +3657,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 
 .eshop-detail .eshop-product .label {
 	font-size:14px;
-	padding: 7px 10x;
+	padding: 7px 10px;
 }
 
 .eshop-detail .eshop-product h3 {
@@ -5936,7 +5936,7 @@ footer .navbar-nav > li > a:hover,
 
 .jumbotron2,
 .jumbotron4 {
-	background-image: linear-gradient(rgba(8, 74, 161, 0.9), rgba(8, 74, 161, 0.9)), url(/images/bg3.jpg);
+	background-image: linear-gradient(rgba(8, 74, 161, 0.9), rgba(8, 74, 161, 0.9)), url(../image/bg3.jpg);
 }
 
 .jumbotron7 {
@@ -5947,7 +5947,7 @@ footer .navbar-nav > li > a:hover,
 #section-testimonials,
 #section-statistics,
 .jumbotron1 {
-	background-image: linear-gradient(rgba(8, 74, 161, 0.6), rgba(8, 74, 161, 0.6)), url(/images/bg3.jpg);
+	background-image: linear-gradient(rgba(8, 74, 161, 0.6), rgba(8, 74, 161, 0.6)), url(../image/bg3.jpg);
 }
 
 @media (max-width:991px) {
@@ -6273,12 +6273,12 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width:0px) {
 	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
 	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
-	.roosC h3 {font-size: 1.5em; line-height: 0.75; margin-bottom: 0.5em;}
-	.roosC h4 {font-size: 1.5em; line-height: 1; margin-top: 0.125em; margin-bottom: 0.25em;}
+	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
+	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
 	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
 	.roosC h6 {font-size: 1em;}
 	.roosC .main {font-size: 15px}
-	hr.space {margin-bottom: 0.125em;}
+	hr.space {margin-bottom: 0em;}
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
@@ -6288,10 +6288,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width:768px) {
 
 	.roosC h1 {font-size:3em;line-height:.5;margin-bottom:0.4em;}
-	.roosC h2 {font-size:2.25em;margin-bottom:0.25em;}
-	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.5em;}
+	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
+	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
 	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
-	.roosC h5 {font-size:1em;margin-bottom:0.25em;}
+	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
 	.roosC h6  {font-size:1em;}
 	hr.space {margin-bottom: 1em;}
 	.roosC .main {font-size: 16px;}
@@ -6306,7 +6306,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width:992px) {
 	.roosC h1 {font-size:4em;line-height:.75;margin-bottom:0.4em;}
 	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
-	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.5em;}
+	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
 	.roosC h4 {font-size:1.75em;line-height:1.25;margin-top: 0.25em; margin-bottom:0.5em;}
 	.roosC h5 {font-size:1.25em;margin-bottom:0.25em;}
 	.roosC h6  {font-size:1.25em;}
@@ -6319,7 +6319,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width: 1200px) {
 	.roosC h1 {font-size:4em;line-height:1;margin-bottom:0.4em;}
 	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
-	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.5em;}
+	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
 	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
 	.roosC h5 {font-size:1.75em;margin-bottom:0.5em;}
 	.roosC h6  {font-size:1.75em;}
@@ -6356,7 +6356,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-slide-1 h5, #index-slide-2 h5, #index-slide-3 h5, #index-slide-4 h5, #index-slide-5 h5 {font-size: 0.75em;}
 }
 
-ul.nav { margin-left: 5px;}
+.roosC ul.list-compact, .roosC .list-compact li {padding-left: 0;}
 
 .input-group[class*=col-] {padding: 0 15px;}
 
@@ -6388,7 +6388,7 @@ ul.nav { margin-left: 5px;}
 
 
 
-#index-slide-1 {
+/*#index-slide-1 {
 	background-position:right bottom 50%;
 	background-image: url(/images/index-slide1-4k.jpg);
 
@@ -6422,7 +6422,7 @@ ul.nav { margin-left: 5px;}
 	background-image: url(/images/index-slide5-4k.jpg);
 	background-position:right bottom 5%;
 }
-
+*/
 
 /* Index slideshow */
 
@@ -6479,6 +6479,7 @@ ul.nav { margin-left: 5px;}
 		background-position: center center;
 	}
 }
+
 @media (min-width: 1200px) {
 	#index-slide-1,
 	#index-slide-2,
@@ -6549,10 +6550,38 @@ ul.nav { margin-left: 5px;}
 	color: #FFF;
 }
 
+
 #jumbotron-slider .btn-inverse:hover,
 #jumbotron-slider .btn-inverse:focus {
 	color: #FFF;
 }
 
-@media (max-width: 767px) {
-	#nav-home > a, #nav-mobile-support > a {color: #4293FF !important;}
+
+@media (max-width: 991px) {
+  #nav-home > a, #nav-mobile-support > a {
+  font-weight: 700;
+  color: rgb(0,149,215)/* !important*/;
+  text-decoration: none;
+  }
+}
+
+
+#productImg img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 3px #6f6f6f;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#quantity {
+	width: 60px; text-align: center;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+#productTabs {background-color: #FFF;}
