@@ -10,6 +10,7 @@
 #fb-root, #LikePluginPagelet { display:none; }
 #floatContainer {display:none;}
 #rightSideBar {display:none;}
+#moreinfo {display:none;}
 #footer, #footer-nav,#side-nav, #tagline,#search, #actions, #actions2, #action-nav,#docNav, #nav-tag, header, footer, address, nav { display:none; }
 #logo { float:right; overflow:hidden; }
 #title { size: 12pt; color: #aaa; overflow:hidden; display: block !important }
