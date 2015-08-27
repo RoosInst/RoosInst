@@ -387,10 +387,13 @@ body button.btn-warning:focus {
 }
 
 .tab-content {
-	background-color:#F0F0F0;
-	box-shadow:0 1px 1px 0 rgba(0,0,0,0.2);
+	/*background-color:#F0F0F0;*/
+	/*box-shadow:0 1px 1px 0 rgba(0,0,0,0.2);*/
 	padding:20px;
-	margin-bottom:50px;
+	/*margin-bottom:50px;*/
+	border: 2px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224); /* changes made for product catalog, if needed an ID can be used and this can be changed to default roxie*/
 }
 
 /* PANELS */
@@ -2210,8 +2213,8 @@ body .comingsoon .brands li a:hover {
 ------------------------------*/
 
 .forms-only h1 {
-	font-size:80px;
-	margin:80px 0 50px;
+/*	font-size:80px;
+	margin:80px 0 50px;*/
 }
 
 .forms-only {
@@ -3476,11 +3479,11 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 
 /* ESHOP PRODUCTS */
 
-.eshop-product {
-	background-color:#F9F9F9;
+/*.eshop-product {
+	background-color:#FFF;
 	box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);
 	margin:0 0 30px;
-}
+}*/
 
 .eshop-product h3 {
 	margin:0 0 7px;
@@ -3612,15 +3615,16 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 /* ESHOP - DETAIL */
 
 .eshop-detail .eshop-product {
-	margin:0 0 30px;
+	/*margin:0 0 30px;*/
 	padding:30px;
 	position:relative;
 }
 
 #eshop-slider.owl-carousel .owl-wrapper-outer {
     box-shadow:none;
+	/*
 	background-color: #EBEBEB;
-	border:3px solid #DDDDDD;
+	border:3px solid #DDDDDD;*/
 }
 
 #eshop-slider .owl-item img {
@@ -6282,6 +6286,12 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
+	#parentbox {height: 250px;}
+	#productImg img {max-height: 250px; width: auto;}
+	#productImg .item img {
+	height: auto;
+	width: 100px; /* max width of eshop slider */
+	}
 }
 
 /* small */
@@ -6300,6 +6310,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 20px;}
 	.btn-index {font-size: 14px;}
 	#index-main {font-size: 17px;}
+	#parentbox {height: 275px;}
+	#productImg img {max-height: 275px;}
+	#productImg .item img {
+	}
 }
 
 /* medium */
@@ -6313,6 +6327,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	hr.space {margin-bottom: 2.5em;}
 	.btn-index {font-size: 16px;}
 	#index-main {font-size: 18px;}
+	#parentbox {height: 350px;}
+	#productImg img {max-height: 350px; width: 100%;}
+	#productImg .item img {
+	}
 }
 
 /* large */
@@ -6329,6 +6347,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 40px;}
 	.btn-index {font-size: 18px;}
 	#index-main {font-size: 20px;}
+	#productImg .item img {
+	}
 }
 
 
@@ -6347,7 +6367,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		max-height: 150px;
 		height: auto;
 		width: auto;
-		max-width: 252px !important;
+		max-width: 252px !important; /* fits smallest screen size*/
 	}
 	#index-slide-1 h1, #index-slide-2 h1, #index-slide-3 h1, #index-slide-4 h1, #index-slide-5 h1 {font-size: 2em;}
 	#index-slide-1 h2, #index-slide-2 h2, #index-slide-3 h2, #index-slide-4 h2, #index-slide-5 h2 {font-size: 1.25em;}
@@ -6567,12 +6587,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 
 #productImg img {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 4px 4px 3px #6f6f6f;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  vertical-align: middle;
+	background-color: #EBEBEB;
+	border: 3px solid #DDDDDD;
 }
 
 #quantity {
@@ -6585,3 +6602,43 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 #productTabs {background-color: #FFF;}
+
+.tab-content p {margin: 0;}
+
+
+/* aligns images both vertically and horizontally, used for product catalog */
+#parentbox {
+    width:100%;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+
+
+#parentbox:before {      /* create a full-height inline block pseudo-element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+#childbox {
+    display: inline-block;
+    vertical-align: middle;          /* vertical alignment of the inline element */
+    font: 16px/1 Arial, sans-serif;  /* reset the font property */
+}
+
+#productImg .item {
+	height: 100px;
+	width: auto;
+}
+
+
+/*#eshop-slider .owl-item {width: initial !important};*/
+
+.forms-only > fieldset {
+	text-align:left;
+	background-color:#F9F9F9;
+	box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);
+	padding:40px;
+}

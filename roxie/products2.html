@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v8 -->
+<!-- TOP - v9 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -206,89 +206,87 @@
 											<div class="col-sm-3">
 												<h3 style="margin-bottom: 10px">Online Documents</h3>
 												<ul style="margin-top: 3px" class="nav vertical-nav">
-												  <li>
 													<script type="text/javascript">
-													$("#docSearchButton").click( function() { goSearch() });
-													function goSearch(){
-														var docSearch = window.document.docsSearch;
-														var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
-														//alert(searchPhrase)
-														if(searchPhrase==''){
-															$("#searchFail").removeClass("hidden");
-															docSearch.query.value = "";
-															docSearch.query.focus();
-															return true;
-														} else {
-															var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
-															//alert(searchString);
-															location.href= searchString;
-															$("#searchFail").addClass("hidden");
-															docSearch.query.value = "";
-															return true;
-														}
-													}; //end function
-												</script>
-												<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
-												  <div class="form-group nospace">
-													<div id="searchFail" class="alert alert-warning hidden" role="alert">
-													  <strong>Oops!</strong> Search for something.
-													</div>
-													<div class="input-group">
-														<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
-														<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-													</div>
-												  </div>
-											  </form>
-											  </li>
-												<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
-												<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
-												<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-												<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
-											</ul>
-										</div> <!-- End of .col -->
-                                        <div class="col-sm-3">
-                                        	<h3>Support Links</h3>
-                                        	<ul class="nav vertical-nav">
-                                            	<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
-                                                <li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-                                                <li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
-                                                <li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
-                                                <li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
-                                            </ul>
-                                        </div> <!-- End of .col -->
-                                        <div class="text-center col-sm-3">
-                                            <h3>Get Support</h3>
-											<ul class="list-unstyled">
-												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
-												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
-												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
-												<li style="padding-top:15px">
-												  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
-													  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
-														  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
-														  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
-															  Remote Support
-														  </span>
-													  </a>
-												  </div>
-												</li>
-											</ul>
-											<br>
-										</div> <!-- End of .col -->
-                                    </div> <!-- End of .row -->
-                                </div> <!-- End of .yamm-content -->
-                            </li>
-                        </ul>
-                    </li>
-				</ul> <!-- End of .nav .navbar-nav -->
-				<ul class="nav navbar-nav hidden-xs hidden-sm">
-					<li style="margin-right: -12px;" class="search-form-toggle">
-						<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
-					</li>
-				</ul>
-			</div> <!-- End of .navbar-collapse -->
-				</div> <!-- End of .container -->
-			</header>
+														$("#docSearchButton").click( function() { goSearch() });
+														function goSearch(){
+															var docSearch = window.document.docsSearch;
+															var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
+															//alert(searchPhrase)
+															if(searchPhrase==''){
+																$("#searchFail").removeClass("hidden");
+																docSearch.query.value = "";
+																docSearch.query.focus();
+																return true;
+															} else {
+																var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
+																//alert(searchString);
+																location.href= searchString;
+																$("#searchFail").addClass("hidden");
+																docSearch.query.value = "";
+																return true;
+															}
+														}; //end function
+													</script>
+													<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+													  <div class="form-group nospace">
+														<div id="searchFail" class="alert alert-warning hidden" role="alert">
+														  <strong>Oops!</strong> Search for something.
+														</div>
+														<div class="input-group">
+															<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
+															<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+														</div>
+													  </div>
+													</form>
+													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
+													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
+													<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+													<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
+												</ul>
+											</div> <!-- End of .col -->
+											<div class="col-sm-3">
+												<h3>Support Links</h3>
+												<ul class="nav vertical-nav">
+													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
+													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
+													<li><a href="/newFullUser"><i class="fa fa-angle-double-right"></i>Apply for User Account</a></li>
+													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
+												</ul>
+											</div> <!-- End of .col -->
+											<div class="text-center col-sm-3">
+												<h3>Get Support</h3>
+												<ul class="list-unstyled">
+													<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Email Support</button></a></li>
+													<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+													<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+													<li style="padding-top:15px">
+													  <div style="position: relative; width:120px; height:60px; margin-left: 35px;">
+														  <a href="//get.teamviewer.com/roosinst" style="text-decoration:none;">
+															  <img src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer" width="120" height="60" />
+															  <span class="text-center" style="position:absolute; top:25px; left:80px; display:block; cursor:pointer; color:#424242; font-family:Source Sans Pro; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
+																  Remote Support
+															  </span>
+														  </a>
+													  </div>
+													</li>
+												</ul>
+												<br>
+											</div> <!-- End of .col -->
+										</div> <!-- End of .row -->
+									</div> <!-- End of .yamm-content -->
+								</li>
+							</ul>
+						</li>
+					</ul> <!-- End of .nav .navbar-nav -->
+					<ul class="nav navbar-nav hidden-xs hidden-sm">
+						<li style="margin-right: -12px;" class="search-form-toggle">
+							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+						</li>
+					</ul>
+				</div> <!-- End of .navbar-collapse -->
+			</div> <!-- End of .container -->
+		</header>
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
@@ -766,14 +764,14 @@
     	ESHOP - ALERT - END
     =========================== -->
 
-  	<!-- ==========================
+	<!-- ==========================
 		FOOTER - START
 	=========================== -->
 		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png" /></a>
+					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png"></a>
 						  <div>
 							  <h3><i class="fa fa-flag"></i>Contact</h3>
 							  <div class="vcard">
@@ -797,7 +795,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 hidden-xs hidden-sm">
-						<h3><i class="fa fa-th"></i>Product Catalog</h3>
+						<h3><i class="fa fa-th-large"></i>Product Catalog</h3>
 						<div class="row" id="latest-work-footer">
 							<div class="overlay-wrapper col-sm-6">
 								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" style="background-color: #C1CFE0;" class="img-responsive" alt="Request a Quote">
@@ -876,12 +874,5 @@
 	  })();
 	</script>
   </body>
-<!--  BOTTOM - v6
-	changelog:
-	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
-	v2-v3: moved footer changelogs to bottom of page
-	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
-	v4-v5: fixed product catalog image text sizes
-	v5-v6: replaced text-align style to text-center class, moved footer background color to css
-	-->
+<!--  BOTTOM - v7 -->
 </html>

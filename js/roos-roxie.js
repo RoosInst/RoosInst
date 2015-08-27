@@ -27,7 +27,7 @@ $(window).scroll(function(){
 			$('.navbar').addClass('navbar-offset');
 			$('.navbar').removeClass('navbar-static-top');
 			$('.navbar').addClass('navbar-fixed-top');
-			$('body').cssfjumf("padding-top","40px");
+			$('body').css("padding-top","40px");
 		}
 		else {
 			$('.navbar').removeClass('navbar-offset');
@@ -170,19 +170,19 @@ $(document).ready(function() {
 		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
 
-	$("#eshop-slider").owlCarousel({
-		autoPlay: 5000,
-		scrollPerPage : true,
-		items : 3,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [991,2]
-  	});
-
-	$('#eshop-slider .item img').mouseenter(function(e) {
-		var source = $(this).attr("src");
-		$("#product-detail-image").attr("src",source);
-		$("#product-detail-image-link").attr("href",source);
-    });
+//	$("#eshop-slider").owlCarousel({
+//		autoPlay: 5000,
+//		scrollPerPage : true,
+//		items : 3,
+//		itemsDesktop : [1199,3],
+//		itemsDesktopSmall : [991,2]
+//  	});
+//
+//	$('#eshop-slider .item img').mouseenter(function(e) {
+//		var source = $(this).attr("src");
+//		$("#product-detail-image").attr("src",source);
+//		$("#product-detail-image-link").attr("href",source);
+//    });
 
 	$("#portfolio-slider").owlCarousel({
 		autoPlay: 5000,
@@ -296,5 +296,6 @@ $(document).ready(function() {
 		  '//www.google.com/cse/cse.js?cx=' + cx;
 	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
 	})(); //For Google CSE
+
 
 });
