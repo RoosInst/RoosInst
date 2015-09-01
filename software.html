@@ -377,6 +377,11 @@
 			<script type="text/javascript">
 				//QTIP POPOVER
 				$(document).ready(function() {
+				var positionMy;
+				var positionAt;
+			  if ($(window).width() < 768) { positionMy = 'center center'; positionAt = 'bottom center';
+			  } else { positionMy = 'top left'; postionAt = 'bottom right'};
+
 					$('#library').qtip({
 						content: {
 							title: 'Test Object Library',
@@ -386,12 +391,15 @@
 							classes: 'qtip-bootstrap qtip-shadow'
 						},
 						position: {
+						  my: positionMy,
+						  at: positionAt,
 						  target: 'mouse',
 						  adjust: {
-							  mouse: true  // Can be omitted (e.g. default behaviour)
-						  }
-					  }
-					});
+							  mouse: false
+						  },
+						},
+						hide: 'mouseleave unfocus'
+					  });
 
 					$('#builder').qtip({
 						content: {
@@ -402,11 +410,14 @@
 							classes: 'qtip-bootstrap qtip-shadow'
 						},
 						position: {
+						  my: positionMy,
+						  at: positionAt,
 						  target: 'mouse',
 						  adjust: {
-							  mouse: true  // Can be omitted (e.g. default behaviour)
+							  mouse: false
 						  }
-						}
+						},
+						hide: 'mouseleave unfocus'
 					});
 
 					$('#synapse').qtip({
@@ -418,11 +429,14 @@
 						  classes: 'qtip-bootstrap qtip-shadow'
 						},
 						position: {
+						  my: positionMy,
+						  at: positionAt,
 						  target: 'mouse',
 						  adjust: {
-							  mouse: true  // Can be omitted (e.g. default behaviour)
+							  mouse: false
 						  }
-					   }
+					   },
+					   hide: 'mouseleave unfocus'
 					});
 
 					$('#testExec').qtip({
@@ -435,12 +449,14 @@
 						 classes: 'qtip-bootstrap qtip-shadow'
 					   },
 					   position: {
+						  my: positionMy,
+						  at: positionAt,
 						  target: 'mouse',
 						  adjust: {
-							  mouse: true  // Can be omitted (e.g. default behaviour)
+							  mouse: false
 						  }
-					   }
-
+					  },
+					  hide: 'mouseleave unfocus'
 					});
 
 					$('#guru').qtip({
@@ -452,11 +468,14 @@
 						classes: 'qtip-bootstrap qtip-shadow'
 					  },
 					  position: {
+						  my: positionMy,
+						  at: positionAt,
 						  target: 'mouse',
 						  adjust: {
-							  mouse: true  // Can be omitted (e.g. default behaviour)
+							  mouse: false
 						  }
-					   }
+					   },
+					   hide: 'mouseleave unfocus'
 					})
 				});
 			</script>

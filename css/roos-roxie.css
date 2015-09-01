@@ -5842,7 +5842,9 @@ footer .navbar-nav > li > a:hover,
 #schedule .schedule-single-info i,
 
 #index-content h1, /*added for custom index style*/
-#jumbotron-slider .btn-inverse /*used for index slideshow Learn More buttons*/
+#jumbotron-slider .btn-inverse, /*used for index slideshow Learn More buttons*/
+#questionMark, /*qtip2 hover question mark used on forms for more information*/
+.nav.vertical-nav > li > a:hover i /*for support widemenu fa double arrows*/
 {
 	color:#084AA1;
 }
@@ -6287,7 +6289,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
 	#parentbox {height: 250px;}
-	#productImg img {max-height: 250px; width: auto;}
+	#productImg img {max-height: 250px; max-width: 100%; height: auto;}
 	#productImg .item img {
 	height: auto;
 	width: 100px; /* max width of eshop slider */
@@ -6312,8 +6314,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-main {font-size: 17px;}
 	#parentbox {height: 275px;}
 	#productImg img {max-height: 275px;}
-	#productImg .item img {
-	}
 }
 
 /* medium */
@@ -6329,8 +6329,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-main {font-size: 18px;}
 	#parentbox {height: 350px;}
 	#productImg img {max-height: 350px; width: 100%;}
-	#productImg .item img {
-	}
+	.supportMenuLinksSpacing {margin-left: 84px;}
+
 }
 
 /* large */
@@ -6347,8 +6347,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 40px;}
 	.btn-index {font-size: 18px;}
 	#index-main {font-size: 20px;}
-	#productImg .item img {
-	}
+	.supportMenuLinksSpacing {margin-left: 84px;}
+
 }
 
 
@@ -6642,3 +6642,32 @@ input[type='number']::-webkit-outer-spin-button {
 	box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);
 	padding:40px;
 }
+
+.faSameWidth {
+	width: 20px;
+}
+
+.input-group textarea.form-control {height: auto;}
+
+textarea {padding: 10px 12px !important}
+
+.nav.vertical-nav > li > a:hover {
+	padding-left: 5px;
+	color: #555;
+}
+
+ {
+	color: #000;
+}
+
+/*used to stop title shifting from scrollbar disappearing upon opening modal caused*/
+.modal {
+ overflow-y: auto;
+}
+
+.modal-open {
+ overflow: auto;
+}
+
+.vertical-nav > li > a {background-color: #F8F8F8; padding-left: 5px;} /*background color needed to fade out with hovering color*/
+.vertical-nav > li:hover {background-color: #E5E5E5;}

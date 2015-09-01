@@ -356,7 +356,7 @@
 								on fundamental production test techniques for
 								DC, digital, mixed signal and microwave
 								applications.<br>
-								<a href="/web/Cassini_Basic_Training_Syllabus.pdf" class="pull-right link">View Basic Training Syllabus &raquo;</a>
+								<a href="/web/Cassini_Basic_Training_Syllabus.pdf" class="pull-right link">View Basic Training Syllabus&nbsp;&raquo;</a>
 							</p>
 
 						</div>
@@ -378,7 +378,7 @@
 								preparation, setup, software maintenance, and
 								customization of Cassini ATE test and data
 								workflow.<br>
-								<a href="/web/Admin_Training_Syllabus.pdf" class="pull-right link">View Admin Training Syllabus &raquo;</a>
+								<a href="/web/Admin_Training_Syllabus.pdf" class="pull-right link">View Admin Training Syllabus&nbsp;&raquo;</a>
 							</p>
 						</div>
 					</div>
@@ -413,28 +413,28 @@
 					<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=25c9968a62" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-horizontal validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 							<div class="form-group">
-								<label class="control-label col-sm-2" for="mce-EMAIL">Email&nbsp;Address<span class="asterisk">*</span></label>
+								<label class="control-label col-sm-2" for="mce-EMAIL">Email:<span class="asterisk">*</span></label>
 								<div class="col-sm-10 input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL">
+									<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-sm-2" for="mce-FNAME">First Name </label>
+								<label class="control-label col-sm-2" for="mce-FNAME">First name:</label>
 								<div class="col-sm-10 input-group">
 									<span class="input-group-addon"><i class="fa fa-user"></i></span>
-									<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+									<input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="first name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-sm-2" for="mce-LNAME">Last Name </label>
+								<label class="control-label col-sm-2" for="mce-LNAME">Last name:</label>
 								<div class="col-sm-10 input-group">
 									<span class="input-group-addon"><i class="fa fa-user"></i></span>
-									<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+									<input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="last name">
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-xs-12 col-sm-3">Shirt Size</label>
+								<label class="control-label col-xs-12 col-sm-3">Shirt size:</label>
 								<div class="col-sm-2 col-xs-6">
 									<div class="radio"><label for="mce-SHIRTSIZE-0"><input type="radio" value="Mens 2XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-0">Mens 2XL</label></div>
 									<div class="radio"><label for="mce-SHIRTSIZE-1"><input type="radio" value="Mens XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-1">Mens XL</label></div>
@@ -453,14 +453,44 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-2" for="mce-USR_NAME">User Account</label>
+							<script src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script> <!--FOR POPOVER-->
+							<script type="text/javascript">
+									//QTIP POPOVER
+									$(document).ready(function() {
+										$('#questionMark').qtip({
+											content: {
+												title: 'Username Information',
+												text: 'This is your suggested account name responsible for verification on our website. You must know it to login later. If the name is taken, then one will be assigned to you.'
+											},
+											style: {
+												classes: 'qtip-bootstrap qtip-shadow'
+											},
+											position: {
+												target: 'mouse',
+					 							adjust: {
+					 								mouse: false
+				  								}
+			  								},
+											hide: 'mouseleave unfocus'
+										});
+									});
+								</script>
+							<label class="control-label col-sm-2" for="mce-USR_NAME">New&nbsp;username:</label>
+
 							<div class="col-sm-10 input-group">
+
 								<span class="input-group-addon"><i class="fa fa-user-plus"></i></span>
-								<input type="text" value="" name="USR_NAME" class="form-control" id="mce-USR_NAME">
+								<div class="col-sm-11" style="padding-left: 0;">
+								<input type="text" value="" name="USR_NAME" class="form-control" id="mce-USR_NAME" placeholder="new username">
+							  </div>
+							  <div class="col-sm-1">
+								<i id="questionMark" class="fa fa-question-circle"></i>
+							  </div>
 							</div>
+
 						</div>
 						<div class="form-group">
-								<label class="control-label col-sm-2">Lab App</label>
+								<label class="control-label col-sm-2">Lab App:</label>
 							<div class="col-sm-5">
 								<div class="checkbox"><label label for="mce-group[5377]-5377-0"><input type="checkbox" value="1" name="group[5377][1]" id="mce-group[5377]-5377-0">Remote Desktop App (rdp)</label></div>
 								<div class="checkbox"><label label for="mce-group[5377]-5377-1"><input type="checkbox" value="2" name="group[5377][2]" id="mce-group[5377]-5377-1">VirtualBox with CPU Virtualization enabled</label></div>
@@ -600,4 +630,3 @@
   </body>
 <!--  BOTTOM - v7 -->
 </html>
-
