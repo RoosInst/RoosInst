@@ -277,7 +277,6 @@ $(document).ready(function() {
 	//	},{offset:'85%'}
 	//);
 
-
 	function replaceTitleAttributes(){
 		var elements = document.querySelectorAll('abbr[title]'),
 		i;
@@ -291,66 +290,9 @@ $(document).ready(function() {
 	
 	//Document Search
 	$("#docSearchButton").click( function() { goSearch() });
-		function goSearch(){
-			var docSearch = window.document.docsSearch;
-			var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
-			//alert(searchPhrase)
-			if(searchPhrase==''){
-				$("#searchFail").removeClass("hidden");
-				docSearch.query.value = "";
-				docSearch.query.focus();
-				return true;
-			} else {
-				var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
-				//alert(searchString);
-				location.href= searchString;
-				$("#searchFail").addClass("hidden");
-				docSearch.query.value = "";
-				return true;
-			}
-		}; //end function
-		
 	$("#docSearchButton2").click( function() { goSearch2() });
-		function goSearch2(){
-			var docSearch2 = window.document.docsSearch2;
-			var searchPhrase2 = docSearch2.query2.value.toString();  //ensures numbers will be treated as strings
-			//alert(searchPhrase2)
-			if(searchPhrase2==''){
-				$("#searchFail2").removeClass("hidden");
-				docSearch2.query2.value = "";
-				docSearch2.query2.focus();
-				return true;
-			} else {
-				var searchString2 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
-				//alert(searchString);
-				location.href= searchString2;
-				$("#searchFail2").addClass("hidden");
-				docSearch2.query2.value = "";
-				return true;
-			}
-		}; //end function
-		
 	$("#docSearchButton3").click( function() { goSearch3() });
-	function goSearch3(){
-			var docSearch3 = window.document.docsSearch3;
-			var searchPhrase3 = docSearch3.query3.value.toString();  //ensures numbers will be treated as strings
-			//alert(searchPhrase2)
-			if(searchPhrase2==''){
-				$("#searchFail3").removeClass("hidden");
-				docSearch3.query3.value = "";
-				docSearch3.query3.focus();
-				return true;
-			} else {
-				var searchString3 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
-				//alert(searchString);
-				location.href= searchString3;
-				$("#searchFail3").addClass("hidden");
-				docSearch3.query3.value = "";
-				return true;
-			}
-		}; //end function
-
-	
+		
 	//Google search
 	(function() {
 		var cx = '016663888408278794732:a1ud06__nsq';
@@ -371,7 +313,61 @@ $(document).ready(function() {
 	  ga('create', 'UA-12101157-1', 'auto');
 	  ga('send', 'pageview');
 	  
-	  
-
-
 });
+
+function goSearch(){
+	var docSearch = window.document.docsSearch;
+	var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase)
+	if(searchPhrase==''){
+		$("#searchFail").removeClass("hidden");
+		docSearch.query.value = "";
+		docSearch.query.focus();
+		return true;
+	} else {
+		var searchString = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
+		//alert(searchString);
+		location.href= searchString;
+		$("#searchFail").addClass("hidden");
+		docSearch.query.value = "";
+		return true;
+	}
+}; //end function
+
+function goSearch2(){
+	var docSearch2 = window.document.docsSearch2;
+	var searchPhrase2 = docSearch2.query2.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase2)
+	if(searchPhrase2==''){
+		$("#searchFail2").removeClass("hidden");
+		docSearch2.query2.value = "";
+		docSearch2.query2.focus();
+		return true;
+	} else {
+		var searchString2 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
+		//alert(searchString);
+		location.href= searchString2;
+		$("#searchFail2").addClass("hidden");
+		docSearch2.query2.value = "";
+		return true;
+	}
+}; //end function
+
+function goSearch3(){
+	var docSearch3 = window.document.docsSearch3;
+	var searchPhrase3 = docSearch3.query3.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase2)
+	if(searchPhrase3==''){
+		$("#searchFail3").removeClass("hidden");
+		docSearch3.query3.value = "";
+		docSearch3.query3.focus();
+		return true;
+	} else {
+		var searchString3 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
+		//alert(searchString);
+		location.href= searchString3;
+		$("#searchFail3").addClass("hidden");
+		docSearch3.query3.value = "";
+		return true;
+	}
+}; //end function
