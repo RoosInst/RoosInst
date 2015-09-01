@@ -389,32 +389,11 @@
 				</div>
 			  </div>
 			  <div class="col-md-7">
-				 <script type="text/javascript">
-					$("#docSearchButton2").click( function() { goSearch2() });
-					function goSearch2(){
-						var docSearch2 = window.document.docsSearch2;
-						var searchPhrase2 = docSearch2.query2.value.toString();  //ensures numbers will be treated as strings
-						//alert(searchPhrase2)
-						if(searchPhrase2==''){
-							$("#searchFail2").removeClass("hidden");
-							docSearch2.query2.value = "";
-							docSearch2.query2.focus();
-							return true;
-						} else {
-							var searchString2 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
-							//alert(searchString);
-							location.href= searchString2;
-							$("#searchFail2").addClass("hidden");
-							docSearch2.query2.value = "";
-							return true;
-						}
-					}; //end function
-				</script>
-					<form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+					<form name="docsSearch3" method="POST" action="#" onSubmit="goSearch3(); return false;">
 					  <div class="form-group nospace">
 						<div class="input-group">
-							<input type="text" class="form-control" id="query2" placeholder="Search Online Documentation" required>
-							<span onclick="goSearch2(); return false;" class="input-group-btn"><button style="margin-top: 0;" class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+							<input type="text" class="form-control" id="query3" placeholder="Search Online Documentation" required>
+							<span onclick="goSearch3(); return false;" class="input-group-btn"><button style="margin-top: 0;" class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
 						</div>
 					  </div>
 					  <div id="searchFail2" class="alert alert-warning hidden" role="alert">
