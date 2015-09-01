@@ -849,7 +849,7 @@ body .brands.main li a:hover {
     font-weight: 400;
     padding: 10px 15px;
 	transition: 0.3s ease-in-out 0s;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	position:relative;
 }
 
@@ -4613,11 +4613,11 @@ form.event-register .form-control {
 	}
 
 	.navbar-default .navbar-nav .dropdown-menu > li > a,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
-	.navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a
+	/*.navbar-default .navbar-nav .dropdown-menu > li > a:hover*/ {
 		background-color:#F3F3F3;
 		padding:8px 10px;
-		transition:none;
+		/*transition:none;*/
 	}
 
 	/* FULL WIDTH NAVBAR */
@@ -5959,7 +5959,7 @@ footer .navbar-nav > li > a:hover,
 @media (max-width:991px) {
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus,
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	/*.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,*/
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
 		color:#0D58A6;
 	}
@@ -6578,10 +6578,17 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 
 
 @media (max-width: 991px) {
-  #nav-home > a, #nav-mobile-support > a {
+  #nav-home > a, #nav-mobile-support > a, #nav-mobile-privacy > a {
   font-weight: 700;
   color: rgb(0,149,215)/* !important*/;
   text-decoration: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #nav-home.active > a, #nav-mobile-support.active > a, #nav-mobile-privacy.active > a,
+  #nav-home:hover > a, #nav-mobile-support:hover > a, #nav-mobile-privacy:hover > a{
+  color: #FFF;
   }
 }
 
@@ -6651,14 +6658,13 @@ input[type='number']::-webkit-outer-spin-button {
 
 textarea {padding: 10px 12px !important}
 
-.nav.vertical-nav > li > a:hover {
-	padding-left: 5px;
-	color: #555;
+@media (max-width:991px) {
+	.nav.vertical-nav > li > a:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
+		padding-left: 10px;
+		color: #555;
+	}
 }
 
- {
-	color: #000;
-}
 
 /*used to stop title shifting from scrollbar disappearing upon opening modal caused*/
 .modal {
@@ -6669,5 +6675,15 @@ textarea {padding: 10px 12px !important}
  overflow: auto;
 }
 
-.vertical-nav > li > a {background-color: #F8F8F8; padding-left: 5px;} /*background color needed to fade out with hovering color*/
-.vertical-nav > li:hover {background-color: #E5E5E5;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {color: #555;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+	color: #555;
+}
+@media (max-width:991px) {
+	.nav.vertical-nav > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:hover {background-color: #E5E5E5;}
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {background-color: #E5E5E5; color: #555;}
+	.navbar-default .navbar-nav .dropdown-menu > li > a:hover { padding: 8px 10px 8px 15px; background-color: #E5E5E5; color: #555;} /*without hover, padding is 10px left, so 5px more*/
+	.dropdown-menu > li > a { background-color: #F8F8F8;}
+}
+
+.nav.vertical-nav > li:hover a { padding-left: 5px; color: #555;}
