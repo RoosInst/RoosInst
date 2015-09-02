@@ -6664,11 +6664,11 @@ textarea {padding: 10px 12px !important}
 
 @media (max-width:411px) {
 	#mainTitleAdjust {
-		margin-top: 15px;
-		font-size: 16px;
+		margin-top: 17px;
+		font-size: 15px;
 	}
 	.ROOSbanner {
-		max-width:201px;
+		max-width:188.6px;
 	}
 }
 
