@@ -6004,33 +6004,12 @@ a:focus {
   height: 31px;
 }
 
-#title { font-family: 'Michroma','Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial, Helvetica, sans-serif; color:#000000;
+#title { font-family: 'Michroma','Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial, Helvetica, sans-serif; color:#000000; line-height: 1.2;
 }
 
-.ROOSbanner {
-  overflow: hidden;
-  max-width:590px; height:2px;
-  background: -moz-linear-gradient(left, rgba(94,188,240,1) 0%, rgba(84,182,236,1) 18%, rgba(0,149,215,1) 34%, rgba(0,133,202,1) 60%, rgba(24,111,183,1) 73%, rgba(38,98,172,0.84) 81%, rgba(40,88,163,0.67) 95%, rgba(42,75,151,0) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(94,188,240,1)), color-stop(18%,rgba(84,182,236,1)), color-stop(34%,rgba(0,149,215,1)), color-stop(60%,rgba(0,133,202,1)), color-stop(73%,rgba(24,111,183,1)), color-stop(95%,rgba(38,98,172,0)), color-stop(89%,rgba(40,88,163,0.67)), color-stop(100%,rgba(42,75,151,0.28)));
-  background: -webkit-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
-  background: -o-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
-  background: -ms-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
-  background: linear-gradient(to right, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
-  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ebcf0', endColorstr='#472a4b97',GradientType=1 );*/
-}
 
-#nav-tag { font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif; font-weight:300; font-size:18px; color:rgb(76,76,76); margin-bottom: 15px;}
+#nav-tag { font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif; font-weight:300; color:rgb(76,76,76); margin-bottom: 15px;}
 
-#mainTitleAdjust {
-  color: #333;
-  box-sizing: content-box; /*needed?*/
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  word-wrap: break-word;
-}
 
 .mobileTopBtn {
   top: 9px;
@@ -6219,36 +6198,6 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 	}
 }
 
-@media (max-width:1199px) {
-	#mainTitleAdjust {
-		margin-top: 5px;
-		font-size: 30px;
-	}
-
-	.ROOSbanner {
-		max-width:355px;
-	}
-}
-
-@media (max-width:484px) {
-	#mainTitleAdjust {
-		margin-top: 14px;
-		font-size: 22px;
-	}
-	.ROOSbanner {
-		max-width:260px;
-	}
-}
-
-@media (max-width:384px) {
-	#mainTitleAdjust {
-		margin-top: 19px;
-		font-size: 17.5px;
-	}
-	.ROOSbanner {
-		max-width:212px;
-	}
-}
 
 #services .service ul {margin: 0;}
 
@@ -6290,9 +6239,22 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-main {font-size: 16px;}
 	#parentbox {height: 250px;}
 	#productImg img {max-height: 250px; max-width: 100%; height: auto;}
-	#productImg .item img {
-	height: auto;
-	width: 100px; /* max width of eshop slider */
+	#productImg .item img {height: auto; width: 100px;} /* max width of eshop slider */
+	#mainTitleAdjust {
+		color: #333;
+		margin-top: 3px;
+		font-size: 30px;
+	}
+	.ROOSbanner {
+		background: -moz-linear-gradient(left, rgba(94,188,240,1) 0%, rgba(84,182,236,1) 18%, rgba(0,149,215,1) 34%, rgba(0,133,202,1) 60%, rgba(24,111,183,1) 73%, rgba(38,98,172,0.84) 81%, rgba(40,88,163,0.67) 95%, rgba(42,75,151,0) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(94,188,240,1)), color-stop(18%,rgba(84,182,236,1)), color-stop(34%,rgba(0,149,215,1)), color-stop(60%,rgba(0,133,202,1)), color-stop(73%,rgba(24,111,183,1)), color-stop(95%,rgba(38,98,172,0)), color-stop(89%,rgba(40,88,163,0.67)), color-stop(100%,rgba(42,75,151,0.28)));
+		background: -webkit-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
+		background: -o-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
+		background: -ms-linear-gradient(left, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
+		background: linear-gradient(to right, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
+		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ebcf0', endColorstr='#472a4b97',GradientType=1 );*/
+		height:2px;
+		width:377px; /* 7/88 ratio between mainTitleAdjust font-size and width */
 	}
 }
 
@@ -6330,7 +6292,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#parentbox {height: 350px;}
 	#productImg img {max-height: 350px; width: 100%;}
 	.supportMenuLinksSpacing {margin-left: 84px;}
-
+	#nav-tag {font-size: 15.5px;}
 }
 
 /* large */
@@ -6348,7 +6310,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.btn-index {font-size: 18px;}
 	#index-main {font-size: 20px;}
 	.supportMenuLinksSpacing {margin-left: 84px;}
-
+	#nav-tag {font-size: 18px;}
+	#mainTitleAdjust { font-size: 35px; margin-top: -1px;}
+	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
 }
 
 
@@ -6405,7 +6369,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
   -moz-animation: fadeIn 2.5s both ease;
   animation: fadeIn 2.5s both ease;
 }
-
 
 
 /*#index-slide-1 {
@@ -6687,3 +6650,34 @@ textarea {padding: 10px 12px !important}
 }
 
 .nav.vertical-nav > li:hover a { padding-left: 5px; color: #555;}
+
+
+@media (max-width:511px) {
+	#mainTitleAdjust {
+		margin-top: 8px;
+		font-size: 23px;
+	}
+	.ROOSbanner {
+		max-width:289px;
+	}
+}
+
+@media (max-width:411px) {
+	#mainTitleAdjust {
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	.ROOSbanner {
+		max-width:201px;
+	}
+}
+
+/*@media (max-width:384px) {
+	#mainTitleAdjust {
+		margin-top: 19px;
+		font-size: 17.5px;
+	}
+	.ROOSbanner {
+		max-width:212px;
+	}
+}*/
