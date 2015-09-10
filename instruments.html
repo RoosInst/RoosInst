@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v9 -->
+<!-- TOP - v10 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -172,8 +172,8 @@
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
-													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
+													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Training</a></li>
+													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
 												</ul>
 											</div>
 										</div> <!-- End of .col -->
@@ -250,16 +250,16 @@
 					<div class="modal-body">
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="#tab1" data-toggle="tab">Website</a></li>
-								<li><a href="#tab2" data-toggle="tab">Documentation</a></li>
+								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation</a></li>
 							</ul>
 							<div class="tab-content">
-								<div class="tab-pane fade in active" id="tab1">
+								<div class="tab-pane fade in active" id="google-search">
 									<div class="reset-box-sizing" id="search">
 										<gcse:search></gcse:search>
 									</div> <!-- end of #search -->
 								</div>
-								<div class="tab-pane fade" id="tab2">
+								<div class="tab-pane fade" id="document-search">
 									<form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
 										<div class="form-group nospace">
 											<div id="searchFail2" class="alert alert-warning hidden" role="alert">
@@ -424,7 +424,7 @@
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png" /></a>
+					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png"></a>
 						  <div>
 							  <h3><i class="fa fa-flag"></i>Contact</h3>
 							  <div class="vcard">
@@ -448,7 +448,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 hidden-xs hidden-sm">
-						<h3><i class="fa fa-th"></i>Product Catalog</h3>
+						<h3><i class="fa fa-th-large"></i>Product Catalog</h3>
 						<div class="row" id="latest-work-footer">
 							<div class="overlay-wrapper col-sm-6">
 								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" style="background-color: #C1CFE0;" class="img-responsive" alt="Request a Quote">
@@ -463,7 +463,6 @@
 								</span>
 							</div>
 							<div class="overlay-wrapper col-sm-6">
-
 								<img style="background-color: #C1CFE0;" src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
 								<span class="overlay">
 									<a href="/rik">Accessories</a>
@@ -487,25 +486,26 @@
 							  <fieldset>
 								<div class="input-group" style="padding-bottom: 15px;">
 								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button>
+								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button></span>
 								</div>
 							  </fieldset>
 							</div>
 						</form>
 						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
 						<a href="/parts/CASSINI/$file/CASSINI.pdf""><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
-							<p style="padding-top: 5px;">Learn more about Cassini<p>
+							<p style="padding-top: 5px;">Learn more about Cassini</p>
 						</a>
 					</div>
 				</div>
 				<div class="footer-bottom">
 					<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/products.html">Products</a></li>
-						<li><a href="/services.html">Services</a></li>
-						<li><a href="/company.html">Company</a></li>
-						<li><a href="/support.html">Support</a></li>
-						<li><a href="/contact.html">Contact</a></li>
+						<li><a title="Roos Instruments" href="/index.html">Home</a></li>
+						<li><a title="Products Overview" href="/products.html">Products</a></li>
+						<li><a title="Services Overview" href="/services.html">Services</a></li>
+						<li><a title="Company Overview" href="/company.html">Company</a></li>
+						<li><a title="Support Overview" href="/support.html">Support</a></li>
+						<li><a title="Contact Overview" href="/contact.html">Contact</a></li>
+						<li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
 					</ul>
 				</div>
 			</div>
@@ -527,13 +527,7 @@
 	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
 	  })();
 	</script>
+	<!--  BOTTOM - v8 -->
   </body>
-<!--  BOTTOM - v6
-	changelog:
-	v1-v2: newsletter, absolute links, fixed ALT text around Product Catalog, links to pages, added margin-top:50px to CSS to make space for content to breath
-	v2-v3: moved footer changelogs to bottom of page
-	v3-v4: updated Catalog links.  Systems -> /apps, Services -> /services
-	v4-v5: fixed product catalog image text sizes
-	v5-v6: replaced text-align style to text-center class, moved footer background color to css
-	-->
 </html>
+

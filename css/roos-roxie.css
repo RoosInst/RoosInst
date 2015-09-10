@@ -264,7 +264,7 @@ body button.btn-warning:focus {
 }
 
 .btn-inverse {
-	background-color: rgba(255, 255, 255, 0.5); /*changed from transparent for index Learn More buttons*/
+	background-color: transparent;
 	border-color: #FFFFFF;
 	color: #FFFFFF;
 	border-width:2px;
@@ -5844,7 +5844,8 @@ footer .navbar-nav > li > a:hover,
 #index-content h1, /*added for custom index style*/
 #jumbotron-slider .btn-inverse, /*used for index slideshow Learn More buttons*/
 #questionMark, /*qtip2 hover question mark used on forms for more information*/
-.nav.vertical-nav > li > a:hover i /*for support widemenu fa double arrows*/
+.nav.vertical-nav > li > a:hover i, /*for support widemenu fa double arrows*/
+#jumbotron-slider #index-slide-3 .btn-inverse:hover /*automotive radar learn more button*/
 {
 	color:#084AA1;
 }
@@ -6237,9 +6238,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
-	#parentbox {height: 250px;}
-	#productImg img {max-height: 250px; max-width: 100%; height: auto;}
-	#productImg .item img {height: auto; width: 100px;} /* max width of eshop slider */
+	#parentbox {height: 150px;}
+	#productImg img {max-height: 150px; max-width: 100%; height: auto;}
+	#productImg .item img {height: auto; max-width: 83px; max-height: 100px; width: auto;} /* max width of eshop slider */
 	#mainTitleAdjust {
 		color: #333;
 		margin-top: 3px;
@@ -6274,8 +6275,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 20px;}
 	.btn-index {font-size: 14px;}
 	#index-main {font-size: 17px;}
-	#parentbox {height: 275px;}
-	#productImg img {max-height: 275px;}
+	#parentbox {height: 200px;}
+	#productImg img {max-height: 200px; max-width: 100%; height: auto;}
 }
 
 /* medium */
@@ -6289,8 +6290,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	hr.space {margin-bottom: 2.5em;}
 	.btn-index {font-size: 16px;}
 	#index-main {font-size: 18px;}
-	#parentbox {height: 350px;}
-	#productImg img {max-height: 350px; width: 100%;}
+	#parentbox {height: 250px;}
+	#productImg img {max-height: 250px; max-width: 100%;}
 	.supportMenuLinksSpacing {margin-left: 84px;}
 	#nav-tag {font-size: 15.5px;}
 }
@@ -6331,7 +6332,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		max-height: 150px;
 		height: auto;
 		width: auto;
-		max-width: 252px !important; /* fits smallest screen size*/
+		max-width: 252px !important; /* fits smallest screen size, 15px for padding on right to mimick left*/
 	}
 	#index-slide-1 h1, #index-slide-2 h1, #index-slide-3 h1, #index-slide-4 h1, #index-slide-5 h1 {font-size: 2em;}
 	#index-slide-1 h2, #index-slide-2 h2, #index-slide-3 h2, #index-slide-4 h2, #index-slide-5 h2 {font-size: 1.25em;}
@@ -6474,24 +6475,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 }
 
 
-@media (max-width: 767px) {
-	.index-slideshow .item {
-		height:79vw;
-		max-height: 605px;
-	}
-}
-
-@media (min-width: 768px) {
-	.index-slideshow .item {
-		height:605px;
-	}
-}
-
-@media (min-width: 991px) {
-	.index-slideshow .item {
-			height:560px; /*45px difference from above due to titlebar shrinking on mobile*/
-	}
-}
 
 /*@media (max-width: 767px) {
 	.index-slideshow .item {
@@ -6642,6 +6625,7 @@ textarea {padding: 10px 12px !important}
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
 	color: #555;
 }
+
 @media (max-width:991px) {
 	.nav.vertical-nav > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:hover {background-color: #E5E5E5;}
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {background-color: #E5E5E5; color: #555;}
@@ -6672,12 +6656,41 @@ textarea {padding: 10px 12px !important}
 	}
 }
 
-/*@media (max-width:384px) {
-	#mainTitleAdjust {
-		margin-top: 19px;
-		font-size: 17.5px;
+
+.btn-index {
+	margin-top: 10px;
+	margin-left: 55px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+@media (max-width: 767px) {
+	.index-slideshow .item {
+		height:79vmin;
+		max-height: 605px;
 	}
-	.ROOSbanner {
-		max-width:212px;
+	#jumbotron h5 {
+		font-size: 4vmin;
 	}
-}*/
+}
+
+@media (min-width: 768px) {
+	.index-slideshow .item {
+		height:605px;
+	}
+	#jumbotron .index-slideshow h5 {
+		font-size: 30.68px;
+	}
+}
+
+@media (min-width: 991px) {
+	.index-slideshow .item {
+			height:560px; /*45px difference from above due to titlebar shrinking on mobile*/
+	}
+}
+
+#index-slide-3 .btn-inverse {background-color: transparent; border-color: #FFF; color: #FFF;}
+#index-slide-3 .btn-inverse:hover {background-color: #FFF;}
+
+li[type="disc"] {margin-left: 40px;}
+ol[type="1"] {margin-left: 40px;}

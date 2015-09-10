@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v9 -->
+<!-- TOP - v10 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -172,8 +172,8 @@
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Login</a></li>
-													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Documentation</a></li>
+													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Training</a></li>
+													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
 												</ul>
 											</div>
 										</div> <!-- End of .col -->
@@ -250,16 +250,16 @@
 					<div class="modal-body">
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="#tab1" data-toggle="tab">Website</a></li>
-								<li><a href="#tab2" data-toggle="tab">Documentation</a></li>
+								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation</a></li>
 							</ul>
 							<div class="tab-content">
-								<div class="tab-pane fade in active" id="tab1">
+								<div class="tab-pane fade in active" id="google-search">
 									<div class="reset-box-sizing" id="search">
 										<gcse:search></gcse:search>
 									</div> <!-- end of #search -->
 								</div>
-								<div class="tab-pane fade" id="tab2">
+								<div class="tab-pane fade" id="document-search">
 									<form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
 										<div class="form-group nospace">
 											<div id="searchFail2" class="alert alert-warning hidden" role="alert">
@@ -324,15 +324,15 @@
 					RF devices that can adapt to changing application needs.
 				</p>
 				<div class="text-center" style="margin: 20px 0 20px 0;"><small><i class="fa fa-2x fa-border fa-hand-pointer-o"></i> Interact with Fixture Diagram to Learn More</small></div>
-				<img class="centerImg" style="max-width: 640px;" id="FixtureExplodedViewImg" src="images/FixtureEx_perspective_web.jpg" usemap="#FixtureExplodedView" border="0" alt="Fixture Exploded View">
+				<img class="centerImg" style="max-width: 640px; max-height: 100%" id="FixtureExplodedViewImg" src="images/FixtureEx_perspective_web.jpg" usemap="#FixtureExplodedView" border="0" alt="Fixture Exploded View">
 				<map id="FixtureExplodedView" name="FixtureExplodedView">
-					<area id="DIB-Clamp" shape="rect" coords="0,0,640,90" href="#" alt="DIB Clamp" title="DIB Clamp">
-					<area id="DIB" shape="rect" coords="0,90,640,155" href="#tabs" alt="Device Interface Board (DIB)" title="Device Interface Board (DIB)">
-					<area id="pedestals" shape="rect" coords="0,155,640,235" href="#tabs" alt="Pedestals & Pedestal Support" title="Pedestals & Pedestal Support">
-					<area id="topPlate" shape="rect" coords="0,235,640,284" href="#tabs" alt="Top Plate & Signal Launches" title="Top Plate & Signal Launches">
-					<area id="carrier" shape="rect" coords="0,284,640,341" href="#tabs" alt="Fixture Carrier" title="Fixture Carrier"    />
-					<area id="bodyAndDocking" shape="rect" coords="0,341,640,590" href="#tabs" alt="Fixture Body with Docking Ears" title="Fixture Body with Docking Ears">
-					<area id="bottomPlate" shape="rect" coords="0,590,640,800" href="#tabs" alt="Bottom Plate & Interface Inserts" title="Bottom Plate & Interface Inserts">
+					<area id="DIB-Clamp" shape="rect" coords="0,0,640,90" alt="DIB Clamp" title="DIB Clamp">
+					<area id="DIB" shape="rect" coords="0,90,640,155" alt="Device Interface Board (DIB)" title="Device Interface Board (DIB)">
+					<area id="pedestals" shape="rect" coords="0,155,640,235" alt="Pedestals & Pedestal Support" title="Pedestals & Pedestal Support">
+					<area id="topPlate" shape="rect" coords="0,235,640,284" alt="Top Plate & Signal Launches" title="Top Plate & Signal Launches">
+					<area id="carrier" shape="rect" coords="0,284,640,341" alt="Fixture Carrier" title="Fixture Carrier">
+					<area id="bodyAndDocking" shape="rect" coords="0,341,640,590" alt="Fixture Body with Docking Ears" title="Fixture Body with Docking Ears">
+					<area id="bottomPlate" shape="rect" coords="0,590,640,800" alt="Bottom Plate & Interface Inserts" title="Bottom Plate & Interface Inserts">
 				</map>
 
 				<script src="/js/jquery.ImageMapResize.js" type="text/javascript"></script>
@@ -360,10 +360,9 @@
 								  classes: 'qtip-bootstrap qtip-shadow'
 							  },
 							  position: {
-								  target: 'mouse',
-								  adjust: {
-									  mouse: true  // Can be omitted (e.g. default behaviour)
-								  }
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
 							  }
 						  });
 
@@ -378,11 +377,10 @@
 							  style: {
 								  classes: 'qtip-bootstrap qtip-shadow'
 							  },
-							  position: {
-								  target: 'mouse',
-								  adjust: {
-									  mouse: true  // Can be omitted (e.g. default behaviour)
-								  }
+							   position: {
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
 							  }
 						  });
 
@@ -397,11 +395,10 @@
 							  style: {
 								classes: 'qtip-bootstrap qtip-shadow'
 							  },
-							  position: {
-								  target: 'mouse',
-								  adjust: {
-									  mouse: true  // Can be omitted (e.g. default behaviour)
-								  }
+							   position: {
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
 							  }
 						  });
 
@@ -417,11 +414,10 @@
 							   classes: 'qtip-bootstrap qtip-shadow'
 							 },
 							 position: {
-								 target: 'mouse',
-								 adjust: {
-									 mouse: true  // Can be omitted (e.g. default behaviour)
-								 }
-							 }
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
+							  }
 						  });
 
 						  $('#carrier').qtip({
@@ -434,12 +430,11 @@
 							 style: {
 							   classes: 'qtip-bootstrap qtip-shadow'
 							 },
-							 position: {
-								 target: 'mouse',
-								 adjust: {
-									 mouse: true  // Can be omitted (e.g. default behaviour)
-								  }
-							 }
+							  position: {
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
+							  }
 						   });
 
 						$('#bodyAndDocking').qtip({
@@ -453,12 +448,11 @@
 							style: {
 							  classes: 'qtip-bootstrap qtip-shadow'
 							},
-							position: {
-								target: 'mouse',
-								adjust: {
-									mouse: true  // Can be omitted (e.g. default behaviour)
-								}
-							}
+							 position: {
+								  my: 'top center',
+								  at: 'bottom center',
+								  viewport: $('#content')
+							  }
 						});
 
 						$('#bottomPlate').qtip({
@@ -471,12 +465,11 @@
 							style: {
 							  classes: 'qtip-bootstrap qtip-shadow'
 							},
-							position: {
-								target: 'mouse',
-								adjust: {
-									mouse: true  // Can be omitted (e.g. default behaviour)
-								}
-							}
+							 position: {
+								  my: 'bottom center',
+								  at: 'top center',
+								  viewport: $('#content')
+							  }
 						})
 					});
 				</script>
@@ -695,14 +688,14 @@
 							  <fieldset>
 								<div class="input-group" style="padding-bottom: 15px;">
 								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button>
+								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button></span>
 								</div>
 							  </fieldset>
 							</div>
 						</form>
 						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
 						<a href="/parts/CASSINI/$file/CASSINI.pdf""><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
-							<p style="padding-top: 5px;">Learn more about Cassini<p>
+							<p style="padding-top: 5px;">Learn more about Cassini</p>
 						</a>
 					</div>
 				</div>
@@ -739,4 +732,3 @@
 	<!--  BOTTOM - v8 -->
   </body>
 </html>
-
