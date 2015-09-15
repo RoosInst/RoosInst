@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v10 -->
+<!-- TOP - v11 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -92,7 +92,10 @@
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
-			<div class="header-item pull-right"><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i>Sign in</a></div>
+			<div class="header-item pull-right">
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span></a>
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out"><i class="fa fa-signout"></i></a></span>
+			</div>
 		</div>
 
 		<header class="navbar yamm navbar-default navbar-static-top">
@@ -111,6 +114,7 @@
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
+						
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
@@ -237,6 +241,17 @@
 				</div> <!-- End of .navbar-collapse -->
 			</div> <!-- End of .container -->
 		</header>
+		
+		<!-- Print view only -->
+		<div class="clearfix visible-print">
+			<div class="pull-left">
+			   <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+			</div>
+			<div class="pull-right">
+				  <img style="width: 11px;" src="/images/ri_back.png" alt="RI logo">
+			</div>
+		</div>
+		
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
@@ -407,19 +422,19 @@
 							<div class="form-group">
 								<label class="control-label col-xs-12 col-sm-3">Shirt size:</label>
 								<div class="col-sm-2 col-xs-6">
-									<div class="radio"><label for="mce-SHIRTSIZE-0"><input type="radio" value="Mens 2XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-0">Mens 2XL</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-1"><input type="radio" value="Mens XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-1">Mens XL</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-2"><input type="radio" value="Mens L" name="SHIRTSIZE" id="mce-SHIRTSIZE-2">Mens L</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-3"><input type="radio" value="Mens M" name="SHIRTSIZE" id="mce-SHIRTSIZE-3">Mens M</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-4"><input type="radio" value="Mens S" name="SHIRTSIZE" id="mce-SHIRTSIZE-4">Mens S</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-5"><input type="radio" value="Mens XS" name="SHIRTSIZE" id="mce-SHIRTSIZE-5">Mens XS</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-0"><input type="radio" value="Mens 2XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-0">Men's 2XL</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-1"><input type="radio" value="Mens XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-1">Men's XL</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-2"><input type="radio" value="Mens L" name="SHIRTSIZE" id="mce-SHIRTSIZE-2">Men's L</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-3"><input type="radio" value="Mens M" name="SHIRTSIZE" id="mce-SHIRTSIZE-3">Men's M</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-4"><input type="radio" value="Mens S" name="SHIRTSIZE" id="mce-SHIRTSIZE-4">Men's S</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-5"><input type="radio" value="Mens XS" name="SHIRTSIZE" id="mce-SHIRTSIZE-5">Men's XS</label></div>
 								</div>
 								<div class="col-sm-3 col-xs-6">
-									<div style="margin-top: 32px;" class="radio"><label for="mce-SHIRTSIZE-6"><input type="radio" value="Womens XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-6">Womens XL</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-7"><input type="radio" value="Womens L" name="SHIRTSIZE" id="mce-SHIRTSIZE-7">Womens L</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-8"><input type="radio" value="Womens M" name="SHIRTSIZE" id="mce-SHIRTSIZE-8">Womens M</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-9"><input type="radio" value="Womens S" name="SHIRTSIZE" id="mce-SHIRTSIZE-9">Womens S</label></div>
-									<div class="radio"><label for="mce-SHIRTSIZE-10"><input type="radio" value="Womens XS" name="SHIRTSIZE" id="mce-SHIRTSIZE-10">Womens XS</label></div>
+									<div style="margin-top: 36px;" class="radio"><label for="mce-SHIRTSIZE-6"><input type="radio" value="Womens XL" name="SHIRTSIZE" id="mce-SHIRTSIZE-6">Women's XL</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-7"><input type="radio" value="Womens L" name="SHIRTSIZE" id="mce-SHIRTSIZE-7">Women's L</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-8"><input type="radio" value="Womens M" name="SHIRTSIZE" id="mce-SHIRTSIZE-8">Women's M</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-9"><input type="radio" value="Womens S" name="SHIRTSIZE" id="mce-SHIRTSIZE-9">Women's S</label></div>
+									<div class="radio"><label for="mce-SHIRTSIZE-10"><input type="radio" value="Womens XS" name="SHIRTSIZE" id="mce-SHIRTSIZE-10">Women's XS</label></div>
 								</div>
 							</div>
 						</div>
@@ -439,10 +454,6 @@
 											position: {
 											  my: 'bottom right',
 											  at: 'top left',
-											  adjust: {
-												  mouse: false
-											  },
-											  viewport: $('#content')
 											},
 										});
 									});
@@ -455,7 +466,7 @@
 								<div class="col-sm-11" style="padding-left: 0;">
 								<input type="text" value="" name="USR_NAME" class="form-control" id="mce-USR_NAME" placeholder="new username">
 							  </div>
-							  <div class="col-sm-1">
+							  <div class="col-sm-1" style="display: inline; margin-left: -5px;">
 								<i id="questionMark" class="fa fa-question-circle"></i>
 							  </div>
 							</div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v10 -->
+<!-- TOP - v11 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -92,7 +92,10 @@
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
-			<div class="header-item pull-right"><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i>Sign in</a></div>
+			<div class="header-item pull-right">
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span></a>
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out"><i class="fa fa-signout"></i></a></span>
+			</div>
 		</div>
 
 		<header class="navbar yamm navbar-default navbar-static-top">
@@ -111,6 +114,7 @@
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
+						
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
@@ -237,6 +241,17 @@
 				</div> <!-- End of .navbar-collapse -->
 			</div> <!-- End of .container -->
 		</header>
+		
+		<!-- Print view only -->
+		<div class="clearfix visible-print">
+			<div class="pull-left">
+			   <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+			</div>
+			<div class="pull-right">
+				  <img style="width: 11px;" src="/images/ri_back.png" alt="RI logo">
+			</div>
+		</div>
+		
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
@@ -349,7 +364,7 @@
 				or replacement, at Roos Instruments' discretion, within 15 calendar days
 				from the invoice date.<br>
 				<br>
-				<b>Opned and/or Unopened Non-Defective Returns</b> being returned for
+				<b>Opened and/or Unopened Non-Defective Returns</b> being returned for
 				credit or replacement are subject to a 20% restocking fee and must be
 				completed within 15 days from the invoice date. <br>
 				<br>

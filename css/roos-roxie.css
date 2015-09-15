@@ -6314,6 +6314,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#nav-tag {font-size: 18px;}
 	#mainTitleAdjust { font-size: 35px; margin-top: -1px;}
 	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
+	#productImg .item img {height: auto; max-width: 104px;} /* max width of eshop slider */
 }
 
 

@@ -34,3 +34,11 @@ a:link, a:visited {background:transparent;font-weight:700;text-decoration:underl
  removed - too much information
  a:link:after, a:visited:after {content:" (" attr(href) ")";font-size:90%;}
 */
+
+a[href]:after {
+  content: none !important;
+}
+
+.tab-content > .tab-pane {display: block !important; opacity: 1 !important; visibility: visible !important}
+
+/*html, body {height: 99%;}*/
