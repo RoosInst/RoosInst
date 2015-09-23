@@ -304,8 +304,53 @@
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
 				document.title = "RIK Catalog | Roos Instruments";
-				$( "#nav-products" ).addClass( "active" );  //#choices are nav-home, nav-products, nav-services, nav-company, nav-support
-				//$( "#nav-support").empty();	//only on support.html
+				$( "#nav-products" ).addClass( "active" );
+			
+			function filterParts() {
+			$('.product').show();
+			minFreq = parseInt($("#amount").val(), 10);
+			maxFreq = parseInt($("#amount2").val(), 10);
+			
+			for (i = 0; i < minFreq; i++) {
+				$("div[data-frequency='"+ i + "']").hide(); //before range
+			};
+			
+			for (i = minFreq; i < maxFreq; i++) { //within range
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not (:checked')) { //yes yes no
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not (:checked') && $('#ri7100a').is(':checked')) { //yes no yes
+					$('div[data-model="cassini8"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not (:checked') && $('#ri7100a').is(':not (:checked')) { //yes no no
+					$('div[data-model="cassini8"]').hide();
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':not (:checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':checked')) { //no yes yes
+					$('div[data-model="cassini16"]').hide();
+				}
+				if ($('#cassini16').is(':not (:checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not (:checked')) { //no yes no
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="ri7100a]').hide();
+				}
+				if ($('#cassini16').is(':not (:checked') && $('#cassini8').is(':not (:checked') && $('#ri7100a').is(':checked')) { //no no yes
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="cassini8]').hide();
+				}
+				
+				if ($('#cassini16').is(':not (:checked') && $('#cassini8').is(':not (:checked') && $('#ri7100a').is(':not (:checked')) { //no no no (all unchecked)
+					//$("div[data-frequency='"+ i + "']").show();
+					$('div[data-model="cassini16"]').show();
+					$('div[data-model="cassini8]').show();
+					$('div[data-model="ri7100a]').show();
+				}
+			};
+			
+				for (i = maxFreq; i < 200; i++) { //200 being the highest frequency in GHz (currently 90 on site, futureproofing)
+					$("div[data-frequency='"+ i + "']").hide();
+				};
+				
+			};
 			});
 		</script>
 
@@ -325,12 +370,11 @@
     	BREADCRUMB - END
     =========================== -->
 
-	<div id ="content" class="roosC container block">
+	<div id ="content" class="roosC container">
     <!-- ==========================
     	ESHOP - START
     =========================== -->
-    <section class="content bg-color-2" id="eshop">
-    	<div class="container">
+    <section class="content" id="eshop">
         	<div class="eshop-banner">
                 <div class="row">
                 	<a href="" class="col-sm-4"><img src="image/fixtures.png" class="img-responsive" alt=""><span>Fixtures</span></a>
@@ -388,9 +432,9 @@
             	<div class="col-md-3 eshop-sidebar">
 
                     <div class="eshop-widget hidden-xs hidden-sm">
-                        <h3>Categories</h3>
+                        <h3 style="font-size: 24px; font-weight: 500;">Categories</h3>
                         <div id="fixtures" class="menu-item">
-							<h4><a>Fixtures<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
+							<h4 style="font-size: 18px;"><a>Fixtures<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
 							<ul>
 								<li><a href="QuickLock.html">QuickLock</a></li>
 								<li><a href="Top.html">Top</a></li>
@@ -399,13 +443,13 @@
 							</ul>
 						</div>
 						<div id="applications" class="menu-item">
-							<h4><a>Applications<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
+							<h4 style="font-size: 18px;"><a>Applications<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
 							<ul>
 								<li><a href="#">N/A</a></li>
 							</ul>
 						</div>
 						<div id="service" class="menu-item">
-							<h4><a>Service & Support<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
+							<h4 style="font-size: 18px;"><a>Service & Support<span style="float: right"><i class="fa fa-angle-down"></i></span></a></h4>
 							<ul>
 								<li><a href="#">N/A</a></li>
 							</ul>
@@ -413,9 +457,9 @@
                     </div>
                     <div class="hidden-xs hidden-sm">
 						<div class="eshop-widget">
-							<h4>Filter by system:</h4>
+							<h4 style="font-size: 18px;">Filter by system:</h4>
 							<div class="checkbox">
-							   <input id="cassini16" type="checkbox" name="check" value="cassini16" checked>
+							   <input id="cassini16" type="checkbox" onchange="filterParts()" name="check" value="cassini16">
 								<label for="cassini16">Cassini 16 (1)</label>
 							</div>
 							<div class="checkbox">
@@ -508,7 +552,7 @@
 				  </div>-->
 
 				  <div class="eshop-widget">
-                    	<h4>Frequency range:</h4>
+                    	<h4 style="font-size: 18px;">Frequency range:</h4>
                         <div class="price-slider">
                             <input type="text" class="pull-left" id="amount" readonly>
                             <input type="text" class="pull-right" id="amount2" readonly>
@@ -516,12 +560,12 @@
                         </div>
 				  </div>
 
-				  <div class="eshop-widget">
-					  <h4>Filter by TIM</h4>
+<!--				  <div class="eshop-widget">
+					  <h4 style="font-size: 18px;">Filter by TIM</h4>
 					  <div class="form-group">
-						  <input id="TIMs" class="form-control" name="TIMs"/>
+						  <input id="TIMs" class="form-control" name="TIMs">
 					  </div>
-				  </div>
+				  </div>-->
 				  </div>
 				</div>
                 <!-- ESHOP SIDEBAR - END -->
@@ -531,13 +575,13 @@
                 	<div class="row">
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product" data-frequency="5" data-model="cassini16">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
                                     <span class="label label-danger">New</span>
                                 </div>
-                            	<img src="image/product-image_001.jpg" class="img-responsive" alt="">
+                            	<a href="productdetail.html"><img src="image/product-image_001.jpg" class="img-responsive" alt=""></a>
                                 <div class="eshop-product-body">
                                     <h3><a href="productdetail.html">Product Name</a></h3>
                                     <div class="product-price clearfix">
@@ -549,7 +593,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product" data-frequency="50" data-model="cassini8">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -567,7 +611,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product" data-frequency="50" data-model="cassini8">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -585,7 +629,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product" data-frequency="50">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -603,7 +647,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -621,7 +665,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -639,7 +683,7 @@
                         </div>
 
                     	<!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -657,7 +701,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -675,7 +719,7 @@
                         </div>
 
                         <!-- ESHOP PRODUCT -->
-                    	<div class="col-md-4">
+                    	<div class="col-md-4 product">
                         	<div class="eshop-product">
                             	<div class="product-tags pull-left">
                                     <span class="label label-info">Stock</span>
@@ -734,9 +778,8 @@
                     </div>
                 </div>
             </div>
-
-        </div>
     </section>
+	</div>
     <!-- ==========================
     	ESHOP - END
     =========================== -->

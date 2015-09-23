@@ -41,6 +41,49 @@ $(window).scroll(function(){
 //TWITTER SHARE BUTTON
 //!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
+ function filterParts() {
+			$('.product').show();
+			minFreq = parseInt($("#amount").val(), 10);
+			maxFreq = parseInt($("#amount2").val(), 10);
+			
+			for (i = 0; i < minFreq; i++) {
+				$("div[data-frequency='"+ i + "']").hide(); //before range
+			};
+			
+			for (i = minFreq; i < maxFreq; i++) { //within range
+				if ($('#cassini16').is(':checked') || $('#cassini8').is(':checked') || $('#ri7100a').is(':checked)')) {
+					$('div.product:not([data-model])').hide();
+				}
+				
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //yes yes no
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':checked')) { //yes no yes
+					$('div[data-model="cassini8"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':not(:checked)')) { //yes no no
+					$('div[data-model="cassini8"]').hide();
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':checked') && $('#ri7100a').is(':checked')) { //no yes yes
+					$('div[data-model="cassini16"]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //no yes no
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="ri7100a]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':checked')) { //no no yes
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="cassini8]').hide();
+				}
+			};
+			
+				for (i = maxFreq; i < 200; i++) { //200 being the highest frequency in GHz (currently 90 on site, futureproofing)
+					$("div[data-frequency='"+ i + "']").hide();
+				};
+				
+			};	
+
 $(document).ready(function() {
 	//NAVBAR
 	$('.navbar-main-menu > li.dropdown').mouseenter(function() {
@@ -55,14 +98,53 @@ $(document).ready(function() {
 	var maximum = 90;
 
 	$( "#slider-range" ).slider({
-      range: true,
-      min: minimum,
-      max: maximum,
-      values: [ minimum, maximum ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( ui.values[ 0 ] + " GHz");
-		$( "#amount2" ).val( ui.values[ 1 ] + " GHz");
-      }
+		change: filterParts(), /*{ //local function
+			$('.product').show();
+			minFreq = parseInt($("#amount").val(), 10);
+			maxFreq = parseInt($("#amount2").val(), 10);
+			
+			for (i = 0; i < minFreq; i++) {
+				$("div[data-frequency='"+ i + "']").hide(); //before range
+			};
+			
+			for (i = minFreq; i < maxFreq; i++) { //within range
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //yes yes no
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':checked')) { //yes no yes
+					$('div[data-model="cassini8"]').hide();
+				}
+				if ($('#cassini16').is(':checked') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':not(:checked)')) { //yes no no
+					$('div[data-model="cassini8"]').hide();
+					$('div[data-model="ri7100a"]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':checked') && $('#ri7100a').is(':checked')) { //no yes yes
+					$('div[data-model="cassini16"]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //no yes no
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="ri7100a]').hide();
+				}
+				if ($('#cassini16').is(':not(:checked)') && $('#cassini8').is(':not(:checked)') && $('#ri7100a').is(':checked')) { //no no yes
+					$('div[data-model="cassini16"]').hide();
+					$('div[data-model="cassini8]').hide();
+				}
+			};
+			
+				for (i = maxFreq; i < 200; i++) { //200 being the highest frequency in GHz (currently 90 on site, futureproofing)
+					$("div[data-frequency='"+ i + "']").hide();
+				};
+				
+			},	*/
+		
+			range: true,
+			min: minimum,
+			max: maximum,
+			values: [ minimum, maximum ],
+			slide: function( event, ui ) {
+			  $( "#amount" ).val( ui.values[ 0 ] + " GHz");
+			  $( "#amount2" ).val( ui.values[ 1 ] + " GHz");
+			}
     });
     $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + " GHz");
 	$( "#amount2" ).val( $( "#slider-range" ).slider( "values", 1 ) + " GHz");

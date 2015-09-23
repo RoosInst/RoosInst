@@ -3365,7 +3365,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 	font-weight:500;
 	color:#f0f0f0;
 	font-size:20px;
-	background-color:rgba(255,255,255,0.2);
+	background-color:rgba(0, 0, 0, 0.5);
 	padding:5px 0;
 	transition: background-color 0.5s ease;
 }
@@ -6614,12 +6614,9 @@ textarea {padding: 10px 12px !important}
 
 
 /*used to stop title shifting from scrollbar disappearing upon opening modal caused*/
-.modal {
- overflow-y: auto;
-}
-
 .modal-open {
  overflow: auto;
+ padding-right: 0 !important;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {color: #555;}
