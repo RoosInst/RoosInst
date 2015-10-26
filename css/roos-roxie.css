@@ -6228,8 +6228,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 /* extra small */
 @media (min-width:0px) {
 	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
-	.roosC h2 {font-size: 1.75em; margin-bottom: 0.125em;}
-	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.05em;}
+	.roosC h2 {font-size: 1.75em; margin-bottom: 0.4em;}
+	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.4em;}
 	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
 	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
 	.roosC h6 {font-size: 1em;}
@@ -6263,8 +6263,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width:768px) {
 
 	.roosC h1 {font-size:3em;line-height:.5;margin-bottom:0.4em;}
-	.roosC h2 {font-size:2.25em;margin-bottom:0.125em;}
-	.roosC h3 {font-size:1.5em;line-height:.75;margin-bottom:0.05em;}
+	.roosC h2 {font-size:2.25em;margin-bottom:0.4em;}
+	.roosC h3 {font-size:1.5em; margin-bottom:0.4em;}
 	.roosC h4 {font-size:1.5em;line-height:1;margin-top: 0.125em; margin-bottom:0.25em;}
 	.roosC h5 {font-size:1em;margin-bottom:0.125em;}
 	.roosC h6  {font-size:1em;}
@@ -6282,8 +6282,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 /* medium */
 @media (min-width:992px) {
 	.roosC h1 {font-size:4em;line-height:.75;margin-bottom:0.4em;}
-	.roosC h2 {font-size:2.5em;margin-bottom:0.25em;}
-	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.1em;}
+	.roosC h2 {font-size:2.5em;margin-bottom:0.4em;}
+	.roosC h3 {font-size:1.75em;line-height:1;margin-bottom:0.4em;}
 	.roosC h4 {font-size:1.75em;line-height:1.25;margin-top: 0.25em; margin-bottom:0.5em;}
 	.roosC h5 {font-size:1.25em;margin-bottom:0.25em;}
 	.roosC h6  {font-size:1.25em;}
@@ -6300,7 +6300,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 @media (min-width: 1200px) {
 	.roosC h1 {font-size:4em;line-height:1;margin-bottom:0.4em;}
 	.roosC h2 {font-size:3em;margin-bottom:0.5em;}
-	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.25em;}
+	.roosC h3 {font-size:2.25em;line-height:1;margin-bottom:0.5em;}
 	.roosC h4 {font-size:2.25em;line-height:1.25;margin-top: 0.5em; margin-bottom:1em;}
 	.roosC h5 {font-size:1.75em;margin-bottom:0.5em;}
 	.roosC h6  {font-size:1.75em;}
@@ -6692,3 +6692,5 @@ textarea {padding: 10px 12px !important}
 
 li[type="disc"] {margin-left: 40px;}
 ol[type="1"] {margin-left: 40px;}
+
+.nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover
