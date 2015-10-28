@@ -59,6 +59,7 @@
     =========================== -->
 	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="/js/js.cookie.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/waypoints.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
@@ -93,8 +94,8 @@
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
 			<div class="header-item pull-right">
-			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span></a>
-			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out"><i class="fa fa-sign-out"></i></a></span>
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a> 
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout()"><i class="fa fa-sign-out"></i>Sign Out</a></span>
 			</div>
 		</div>
 
@@ -344,7 +345,7 @@
 						</small>
 					</a>
 					<div style="font-size: larger; margin-top: 10px;">
-						<a href="/visitRI.html">Plan a Visit</a>
+						<a href="/visitRI.html"><i class="fa fa-calendar"></i> Plan a Visit</a>
 					</div>
 
 				</div>
@@ -445,13 +446,14 @@
 			<hr>
 			<br>
 			<div id="forFabless" class="block">
-				<h2 class="upper">Test Development Partners <span class="quiet">(for Fabless Companies)</span></h2>
-				<a href="mailto:sales@roos.com" title="Contact ROOS to get on this list">Partner with ROOS for Test Development</a>
-				<a title="Presto Engineering" href="http://www.salland.com">
-				Salland Engineering <br></a>
+				<h2 class="upper">Test Development Partners</h2>
+				<a href="mailto:sales@roos.com" title="Contact ROOS to get on this list">Partner with Roos Instruments for rapid Test Development</a>
+				<br>
 				<a class="no_u" title="Salland Engineering" href="http://www.salland.com">
 				<img style="max-width: 300px; max-height: 74px;" src="images/Salland.png" alt="Salland Engineering" style="width: 320px; height: 70px;">
-				</a>
+				</a><br>
+				<a title="Salland Engineering" href="http://www.salland.com">
+				Salland Engineering</a>
 				<blockquote class="panel">
 					"Salland Engineering is an international technology company specializing in products,
 					solutions and services that enable semiconductor manufacturers to optimize the efficiency,
@@ -461,8 +463,8 @@
 			<br>
 			<hr>
 			<br>
-			<h2 class="upper">Test House Partners <span class="quiet">(for Fabless Companies)</span></h2>
-			<a href="mailto:sales@roos.com" title="Contact ROOS to get on this list">Partner with ROOS for Assembly and Test</a><br><br><br>
+			<h2 class="upper">Test House Partners</h2>
+			<a href="mailto:sales@roos.com" title="Contact ROOS to get on this list">Partner with Roos Instruments to maximize value of Assembly and Test</a><br><br><br>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="row">
