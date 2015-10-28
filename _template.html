@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v15 -->
+<!-- TOP - v16 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -59,6 +59,7 @@
     =========================== -->
 	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="/js/js.cookie.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/waypoints.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
@@ -93,8 +94,8 @@
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
 			<div class="header-item pull-right">
-			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span></a>
-			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out"><i class="fa fa-sign-out"></i></a></span>
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a> 
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout()"><i class="fa fa-sign-out"></i>Sign Out</a></span>
 			</div>
 		</div>
 
