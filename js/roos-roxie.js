@@ -395,6 +395,12 @@ $(document).ready(function() {
 	  ga('create', 'UA-12101157-1', 'auto');
 	  ga('send', 'pageview');
 	  
+	//replace sign in with username when signed in, requires js.cookies.js
+	  if ( Cookies.get("username") ) {
+				  $( "#username").html( Cookies.get("username") );
+				  $( "#logout").removeClass("hidden");
+		}
+	  
 });
 
 function goSearch(){
@@ -453,3 +459,10 @@ function goSearch3(){
 		return true;
 	}
 }; //end function
+
+
+function logout(){
+	Cookies.remove("username");
+	 $( "#username").html( "Sign in" );
+	 $( "#logout").addClass("hidden");
+};

@@ -506,7 +506,7 @@ textarea.form-control {
 	resize:vertical;
 }
 
-form .row:last-child .form-group {
+form .row:last-child .form-group:last-child {
 	margin-bottom:0;
 }
 
