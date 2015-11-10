@@ -387,7 +387,7 @@ body button.btn-warning:focus {
 }
 
 .tab-content {
-	/*background-color:#F0F0F0;*/
+	background-color:#F9F9F9;
 	/*box-shadow:0 1px 1px 0 rgba(0,0,0,0.2);*/
 	padding:20px;
 	/*margin-bottom:50px;*/
@@ -532,9 +532,9 @@ form span.required {
 	margin-right:5px;
 }
 
-form button.btn {
+/*form button.btn {
 	margin:20px 0 0;
-}
+}*/
 
 .input-group .form-control {
 	height: 40px;
