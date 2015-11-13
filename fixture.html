@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<!-- TOP - v11 -->
+<!-- TOP - v17 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
-	<!-- ==========================
+	 <!-- ==========================
     	Meta Tags
     =========================== -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -94,8 +94,8 @@
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
 			<div class="header-item pull-right">
-			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span></a>
-			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out"><i class="fa fa-signout"></i></a></span>
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a> 
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout()"><i class="fa fa-sign-out"></i>Sign Out</a></span>
 			</div>
 		</div>
 
@@ -140,6 +140,7 @@
 								<li><a href="/products.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
 								<li><a href="/infrastructure.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Test Systems</a></li>
 								<li><a href="/instruments.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Instruments</a></li>
+								<li><a href="/tims.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Browse TIMs</a></li>
 								<li><a href="/software.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Software</a></li>
 								<li><a href="/fixture.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Device Interface</a></li>
 							<li><a href="/rik"><i class="fa fa-angle-double-right"></i>RIK Catalog</a></li>
@@ -173,7 +174,7 @@
 										<div class="col-sm-3">
 											<h3 class="text-center">Planning</h3>
 											<a href="/newFullUser"><button class="centerImg btn btn-primary"><i class="fa fa-user-plus"></i> Create Account</button></a>
-											<div style="width: 130px;" class="centerImg">
+											<div style="width: 150px;" class="centerImg">
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
@@ -195,7 +196,7 @@
 													</div>
 												</div>
 											</form>
-											<div class="centerImg" style="width: 130px;">
+											<div class="centerImg" style="width: 150px;">
 												<ul style="margin-top: 10px" class="nav vertical-nav">
 													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
 													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
@@ -218,12 +219,9 @@
 												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
 												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
 											</ul>
-												<a href="//get.teamviewer.com/roosinst" style="position: relative;">
-													<img style="margin-top: 7px;" src="/images/teamviewerQS.png" alt="TeamViewer Quick Support" title="Roos Quick Support with TeamViewer">
-													<span style="position: absolute; right: 5px; top: 9px; color:#424242; font-size:11px; line-height:1.2em; font-weight:bold; width:70px;">
-													   Remote Support
-													</span>
-												</a>
+											<a href="//get.teamviewer.com/roosinst" style="position: relative;">
+												<button class="btn btn-primary"><i class="fa fa-binoculars"></i> Remote Support</button>
+											</a>
 											<br>
 										</div> <!-- End of .col -->
 									</div> <!-- End of .row -->
