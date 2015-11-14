@@ -6693,4 +6693,5 @@ textarea {padding: 10px 12px !important}
 li[type="disc"] {margin-left: 40px;}
 ol[type="1"] {margin-left: 40px;}
 
-.nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover
+.nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover*/
+.modal-body .tab-content { background-color: #FFF;}
