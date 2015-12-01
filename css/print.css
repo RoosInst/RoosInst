@@ -15,7 +15,7 @@
 #logo { float:right; overflow:hidden; }
 #title { size: 12pt; color: #aaa; overflow:hidden; display: block !important }
 #translate, #fdbk_tab, #fdbk_overlay, #fdbk_container, #fdbk_screen { display:none; }
-#btn-group { display: none; }
+.btn-group, .btn-group a { display: none; }
 body {line-height:1.5;font-family:'Source Sans Pro','Helvetica Neue', Arial, Helvetica, sans-serif;color:#000;background:none;}
 .container {background:none;}
 hr {background:#ccc;color:#ccc;width:100%;height:2px;margin:2em 0;padding:0;border:none;}
