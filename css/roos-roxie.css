@@ -6277,6 +6277,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-main {font-size: 17px;}
 	#parentbox {height: 200px;}
 	#productImg img {max-height: 200px; max-width: 100%; height: auto;}
+	.catHeadImg {height: 157px !important;}
 }
 
 /* medium */
@@ -6315,6 +6316,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#mainTitleAdjust { font-size: 35px; margin-top: -1px;}
 	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
 	#productImg .item img {height: auto; max-width: 104px;} /* max width of eshop slider */
+	.catHeadImg {height: 249px !important;}
 }
 
 
@@ -6695,3 +6697,5 @@ ol[type="1"] {margin-left: 40px;}
 
 .nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover*/
 .modal-body .tab-content { background-color: #FFF;}
+
+.catHeadImg {width: auto !important;}
