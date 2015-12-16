@@ -6066,7 +6066,7 @@ abbr:hover::after {
 
 
 .roosC table {border-collapse:separate;border-spacing:0;}
-.roosC caption, th, td {text-align:left;font-weight:normal;}
+/*.roosC caption, th, td {text-align:left;font-weight:normal;}*/
 .roosC blockquote:before, blockquote:after, q:before, q:after {content:"";}
 .roosC blockquote, q {quotes:"" "";}
 .roosC a img {border:none;}
@@ -6226,7 +6226,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
   Only declare here if changes occur in different sizes, else create new below*/
 
 /* extra small */
-@media (min-width:0px) {
 	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
 	.roosC h2 {font-size: 1.75em; margin-bottom: 0.4em;}
 	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.4em;}
@@ -6257,7 +6256,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		height:2px;
 		width:377px; /* 7/88 ratio between mainTitleAdjust font-size and width */
 	}
-}
+
 
 /* small */
 @media (min-width:768px) {
@@ -6698,4 +6697,15 @@ ol[type="1"] {margin-left: 40px;}
 .nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover*/
 .modal-body .tab-content { background-color: #FFF;}
 
-.catHeadImg {width: auto !important;}
+.catHeadImg {width: auto !important;} /*catalog head images (Fixture, Accessories, Service & Support)*/
+
+@media (max-width: 767px) {
+	#eshop .eshop-banner div {
+		text-align: center;  /*centers Catalog head images in xs */
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#eshop .eshop-banner span {
+		margin-left: 48px; /*indents catalog head images in sm */
+	}
+}
