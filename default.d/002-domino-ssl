@@ -1,0 +1,28 @@
+server {
+        listen [::]:443;
+ 
+        client_max_body_size 100m;
+ 
+        ssl on;
+        ssl_certificate /etc/nginx/ssl/roos.com-2017.pem;
+        ssl_certificate_key /etc/nginx/ssl/roos.com-2017.key;
+
+	 # added to disable SSLv3 due to POODLE attack, RJB 11-11-2014
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+ 
+        location / {
+                proxy_read_timeout 240;
+                proxy_pass http://localhost:8088;
+                proxy_redirect off;
+                proxy_buffering off;
+ 
+                proxy_set_header        Host               $host;
+                proxy_set_header        X-Forwarded-For    $proxy_add_x_forwarded_for;
+                proxy_set_header        $WSRA              $remote_addr;
+                proxy_set_header        $WSRH              $remote_addr;
+                proxy_set_header        $WSSN              $host;
+                proxy_set_header        $WSIS              True;
+        }
+	
+	error_page 502 /local/notesdata/domino/html/502.html
+}

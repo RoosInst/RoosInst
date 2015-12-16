@@ -394,6 +394,7 @@ $(document).ready(function() {
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-12101157-1', 'auto');
 	  ga('send', 'pageview');
+	  ga('set', '&uid',  Cookies.get('username')); // Set the user ID using signed-in user_id.
 	  
 	//replace sign in with username when signed in, requires js.cookies.js
 	  if ( Cookies.get("username") ) {
