@@ -3371,7 +3371,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 }
 
 #eshop .eshop-banner .row > a:hover span {
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.35); /*changed from .4 default*/
 }
 
 #eshop .eshop-header ul li {
@@ -3574,6 +3574,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 	padding:0 10px 10px;
 	position:absolute;
 	top:5px;
+	width: 100%; /*so tags can be pulled left and right*/
 }
 
 /* ESHOP - LIST */
@@ -5733,58 +5734,6 @@ nav {
           box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.menu-item {
-  width: 200px;
-}
-
-.menu-item h4 {
-  color: #555;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0px;
-}
-
-.menu-item h4 a {
-  color: #555;
-  display: block;
-  text-decoration: none;
-  width: 200px;
-}
-
-
-.menu-item ul {
-  background: #fff;
-  font-size: 13px;
-  line-height: 30px;
-  list-style-type: none;
-  overflow: hidden;
-  padding: 0px;
-  height: 0px;
-
-    /*Animation*/
-  -webkit-transition: height 1s ease;
-     -moz-transition: height 1s ease;
-       -o-transition: height 1s ease;
-      -ms-transition: height 1s ease;
-          transition: height 1s ease;
-}
-
-.menu-item ul a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #aaa;
-  display: block;
-  width: 200px;
-}
-
-/*li Styles*/
-.menu-item li {
-  border-bottom: 1px solid #eee;
-}
-
-.menu-item li:hover li:after {
-  background: #eee;
-}
 
 /*------------------------------
 	BLUE
@@ -6226,10 +6175,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
   Only declare here if changes occur in different sizes, else create new below*/
 
 /* extra small */
-	.roosC h1 {font-size: 2.5em; font-weight: 500; line-height:.5; margin-bottom: 0.4em;}
+	.roosC h1 {font-size: 2.5em; font-weight: 500; margin-bottom: 0.4em;}
 	.roosC h2 {font-size: 1.75em; margin-bottom: 0.4em;}
-	.roosC h3 {font-size: 1.5em; line-height:.75; margin-bottom:0.4em;}
-	.roosC h4 {font-size:1.5em; line-height:1; margin-top: 0.125em; margin-bottom: 0.25em;}
+	.roosC h3 {font-size: 1.5em; margin-bottom:0.4em;}
+	.roosC h4 {font-size:1.5em; margin-top: 0.125em; margin-bottom: 0.25em;}
 	.roosC h5 {font-size: 1em; margin-bottom: 0.125em;}
 	.roosC h6 {font-size: 1em;}
 	.roosC .main {font-size: 15px}
@@ -6581,6 +6530,7 @@ input[type='number']::-webkit-outer-spin-button {
     display: inline-block;
     vertical-align: middle;          /* vertical alignment of the inline element */
     font: 16px/1 Arial, sans-serif;  /* reset the font property */
+	position: relative;
 }
 
 #productImg .item {
@@ -6708,4 +6658,75 @@ ol[type="1"] {margin-left: 40px;}
 	#eshop .eshop-banner span {
 		margin-left: 48px; /*indents catalog head images in sm */
 	}
+}
+
+.eshop-product a .product-num {
+	position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%);
+	color: #F0F0F0; background-color: rgba(0, 0, 0, 0.5); padding: 0 3px; transition: background-color 0.5s ease;     transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: initial;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.eshop-product a:hover .product-num {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+#fixtures-sidebar li {
+	border: none;
+}
+
+
+#fixtures-sidebar ul {
+	border: none;
+    background-clip: padding-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	position: relative;
+	width: 100%;
+	padding: 0; /*dropdown-menu gives padding 5, glitches collapse transition*/
+}
+
+.expanding-icons {
+	float: right;
+}
+
+#fixtures-sidebar .collapsed .expanding-icons:after {
+	content:"\f067";
+	font-family: "FontAwesome";
+}
+
+#fixtures-sidebar .expanding-icons:after {
+	content: "\f068";
+	font-family: "FontAwesome";
+}
+
+#fixtures-sidebar .collapsed .dropdown-menu > li > a {
+	transition: none !important;
+} /*fixes bug where transition occurs in li after closing Categories, temporarily showing undesired text*/
+
+#fixtures-sidebar .collapsing {
+	display: initial !important; /*overwrites dropdown-menu display: none so transition can work while collapsing*/
+}
+
+#fixtures-sidebar ul li.dropdown-header {
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 1px solid #C5C5C5;
+	font-size: 16px;
+}
+
+#fixtures-sidebar ul li.dropdown-header > i {
+	position: absolute;
+	height: 50%;
+	margin: auto;
+	right: 0;
+	top: 50%;
+	bottom: 50%;
 }

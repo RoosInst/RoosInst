@@ -401,7 +401,7 @@ $(document).ready(function() {
 				  $( "#username").html( Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
 		}
-	  
+		
 });
 
 function goSearch(){
