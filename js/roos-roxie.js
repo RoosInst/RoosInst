@@ -228,8 +228,8 @@ $(document).ready(function() {
 		autoPlay: 5000,
 		navigation : true,
 		singleItem : true,
-		//pagination : false,
-		transitionStyle : "backSlide",
+		pagination : false,
+		transitionStyle : "fade",
 		slideSpeed : 500,
 		navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
 		stopOnHover: true

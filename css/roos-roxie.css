@@ -6690,20 +6690,25 @@ ol[type="1"] {margin-left: 40px;}
 	position: relative;
 	width: 100%;
 	padding: 0; /*dropdown-menu gives padding 5, glitches collapse transition*/
+	margin-left: 0;
 }
 
-.expanding-icons {
-	float: right;
+#fixtures-sidebar ul li:last-child {
+	margin-bottom: 20px;
 }
 
-#fixtures-sidebar .collapsed .expanding-icons:after {
-	content:"\f067";
+.changing-chevrons {
+	float: left;
 	font-family: "FontAwesome";
 }
 
-#fixtures-sidebar .expanding-icons:after {
-	content: "\f068";
-	font-family: "FontAwesome";
+
+#fixtures-sidebar .collapsed .changing-chevrons:after {
+	content:"\f054";
+}
+
+#fixtures-sidebar .changing-chevrons:after {
+	content: "\f078";
 }
 
 #fixtures-sidebar .collapsed .dropdown-menu > li > a {
@@ -6720,13 +6725,15 @@ ol[type="1"] {margin-left: 40px;}
 	position: relative;
 	border-bottom: 1px solid #C5C5C5;
 	font-size: 16px;
+	white-space: normal; /*default is no-wrap, breaks multiple collapsing categories*/
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 #fixtures-sidebar ul li.dropdown-header > i {
-	position: absolute;
-	height: 50%;
-	margin: auto;
-	right: 0;
-	top: 50%;
-	bottom: 50%;
+	float: right;
+}
+
+#fixture-sidebar .dropdown-menu > li:last-child {
+	margin-bottom: 50px;
 }
