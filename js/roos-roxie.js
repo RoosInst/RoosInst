@@ -401,6 +401,12 @@ $(document).ready(function() {
 				  $( "#username").html( Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
 		}
+
+	//Document Search
+	$("#docSearchButton").click( function() { goSearch() });
+	$("#docSearchButton2").click( function() { goSearch2() });
+	$("#docSearchButton3").click( function() { goSearch3() });
+	$("#docSearchButton4").click( function() { goSearch4() });
 		
 });
 
@@ -457,6 +463,25 @@ function goSearch3(){
 		location.href= searchString3;
 		$("#searchFail3").addClass("hidden");
 		docSearch3.query3.value = "";
+		return true;
+	}
+}; //end function
+
+function goSearch4(){
+	var docSearch4 = window.document.docsSearch4;
+	var searchPhrase4 = docSearch4.query.value.toString();  //ensures numbers will be treated as strings, id = query
+	//alert(searchPhrase2)
+	if(searchPhrase3==''){
+		$("#searchFail4").removeClass("hidden");
+		docSearch3.query.value = "";
+		docSearch3.query.focus();
+		return true;
+	} else {
+		var searchString3 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
+		//alert(searchString);
+		location.href= searchString3;
+		$("#searchFail4").addClass("hidden");
+		docSearch3.query.value = "";
 		return true;
 	}
 }; //end function
