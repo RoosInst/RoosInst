@@ -228,8 +228,8 @@ $(document).ready(function() {
 		autoPlay: 5000,
 		navigation : true,
 		singleItem : true,
-		//pagination : false,
-		transitionStyle : "backSlide",
+		pagination : false,
+		transitionStyle : "fade",
 		slideSpeed : 500,
 		navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
 		stopOnHover: true
@@ -370,7 +370,11 @@ $(document).ready(function() {
 	replaceTitleAttributes();
 	//Removes default attributes of abbr tag, allows custom css
 	
-	
+	//Document Search
+	$("#docSearchButton").click( function() { goSearch() });
+	$("#docSearchButton2").click( function() { goSearch2() });
+	$("#docSearchButton3").click( function() { goSearch3() });
+		
 	//Google search
 	(function() {
 		var cx = '016663888408278794732:a1ud06__nsq';
@@ -397,7 +401,7 @@ $(document).ready(function() {
 				  $( "#username").html( Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
 		}
-	
+
 	//Document Search
 	$("#docSearchButton").click( function() { goSearch() });
 	$("#docSearchButton2").click( function() { goSearch2() });
