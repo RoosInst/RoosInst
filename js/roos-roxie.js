@@ -369,11 +369,6 @@ $(document).ready(function() {
 	}
 	replaceTitleAttributes();
 	//Removes default attributes of abbr tag, allows custom css
-	
-	//Document Search
-	$("#docSearchButton").click( function() { goSearch() });
-	$("#docSearchButton2").click( function() { goSearch2() });
-	$("#docSearchButton3").click( function() { goSearch3() });
 		
 	//Google search
 	(function() {
@@ -393,6 +388,7 @@ $(document).ready(function() {
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-12101157-1', 'auto');
+	  ga('require', 'dnt', {'logStatus':'dimension1'});
 	  ga('send', 'pageview');
 	  ga('set', '&uid',  Cookies.get('username')); // Set the user ID using signed-in user_id.
 	  
