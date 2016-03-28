@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v21 -->
+<!-- TOP - v22 -->
 
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
@@ -61,6 +61,7 @@
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 	<script src="/js/js.cookie.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
 	<script src="/js/waypoints.min.js"></script>
     <script src="/js/owl.carousel.js"></script>
     <script src="/js/isotope.pkgd.min.js"></script>
@@ -167,7 +168,7 @@
 							</ul>
 						</li>
 						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
-							<a class="dropdown-toggle" data-toggle="dropdown">Support <i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-hover="dropdown">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
 									<div class="row">
@@ -207,7 +208,7 @@
 										</div> <!-- End of .col -->
 										<div class="col-sm-3 text-center">
 											<h3>Reference Guide</h3>
-											<a href="/web/CassiniReferenceGuide_1.3.1.pdf" download="Cassini_Reference_Guide_1.3.1.pdf"><button class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Access PDF</button></a>
+											<a href="/web/CassiniReferenceGuide_1.3.1.pdf" download="Cassini_Reference_Guide_1.3.1.pdf"><button class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Download PDF</button></a>
 											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
 												<img style="padding-top: 9px; width: 160px;" class="centerImg" src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
 											</a>
@@ -322,7 +323,8 @@
     	BREADCRUMB - END
     =========================== -->
 
-		<div id ="content" class="roosC container block">
+		<section id ="content" class="roosC container">
+		  
 			<div class="row">
 				<div style="margin-bottom: 50px;" class="col-xs-12">
 					<h2>Maximize Uptime<img style="max-width: 250px; margin-left: 30px; float: right;" alt="Coming soon!" src="images/IMAGE.png"></h2>
@@ -332,24 +334,18 @@
 					</p>
 				</div>
 			</div>
-
-
-
 			<div class="row">
 				<div class="col-md-8 col-md-push-4">
 					<h2>Only 1 Scheduled Downtime Per Year</h2>
 					<p class="main">Calibrate once, only when swapping TIMs!  The production line is up the rest of the time.</p>
-
 				</div>
 				<div class="col-md-4 col-md-pull-8">
 				<img style="margin-right: 30px; max-width: 250px;" alt="Coming soon!" src="images/IMAGE.png">
 				</div>
-
 			</div>
-
 			<br>
-					</div> <!-- End of #content block-->
-
+			
+		</section> <!-- End of #content section-->
 
 	<!-- ==========================
 		FOOTER - START
@@ -426,7 +422,7 @@
 							</div>
 						</form>
 						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-						<a href="/parts/CASSINI/$file/CASSINI.pdf""><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
+						<a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
 							<p style="padding-top: 5px;">Learn more about Cassini</p>
 						</a>
 					</div>
@@ -461,6 +457,6 @@
 	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
 	  })();
 	</script>
-	<!--  BOTTOM - v8 -->
+	<!--  BOTTOM - v9 -->
   </body>
 </html>
