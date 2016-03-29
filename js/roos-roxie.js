@@ -369,11 +369,6 @@ $(document).ready(function() {
 	}
 	replaceTitleAttributes();
 	//Removes default attributes of abbr tag, allows custom css
-	
-	//Document Search
-	$("#docSearchButton").click( function() { goSearch() });
-	$("#docSearchButton2").click( function() { goSearch2() });
-	$("#docSearchButton3").click( function() { goSearch3() });
 		
 	//Google search
 	(function() {
@@ -386,21 +381,28 @@ $(document).ready(function() {
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(gcse, s);
 	  })();
-
+	//replace sign in with username when signed in, requires js.cookies.js
+	  if ( Cookies.get("username") ) {
+				  $( "#username").html( Cookies.get("username") );
+				  $( "#logout").removeClass("hidden");
+		}
+		
+	//replace username with sign in, hides logout
+	function logout(){
+		Cookies.remove("username");
+		 $( "#username").html( "Sign in" );
+		 $( "#logout").addClass("hidden");
+	};
+	  
 	//Google Analytics
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-12101157-1', 'auto');
+	  ga('require', 'dnt', {'logStatus':'dimension1'});
 	  ga('send', 'pageview');
-	  ga('set', '&uid',  Cookies.get('username')); // Set the user ID using signed-in user_id.
-	  
-	//replace sign in with username when signed in, requires js.cookies.js
-	  if ( Cookies.get("username") ) {
-				  $( "#username").html( Cookies.get("username") );
-				  $( "#logout").removeClass("hidden");
-		}
+	  ga('set', 'userId',  Cookies.get('username')); // Set the user ID using signed-in username.
 
 	//Document Search
 	$("#docSearchButton").click( function() { goSearch() });
@@ -486,9 +488,3 @@ function goSearch4(){
 	}
 }; //end function
 
-
-function logout(){
-	Cookies.remove("username");
-	 $( "#username").html( "Sign in" );
-	 $( "#logout").addClass("hidden");
-};
