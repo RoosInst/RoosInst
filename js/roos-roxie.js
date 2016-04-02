@@ -382,17 +382,10 @@ $(document).ready(function() {
 		s.parentNode.insertBefore(gcse, s);
 	  })();
 	//replace sign in with username when signed in, requires js.cookies.js
-	  if ( Cookies.get("username") ) {
+	if ( Cookies.get("username") ) {
 				  $( "#username").html( Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
 		}
-		
-	//replace username with sign in, hides logout
-	function logout(){
-		Cookies.remove("username");
-		 $( "#username").html( "Sign in" );
-		 $( "#logout").addClass("hidden");
-	};
 	  
 	//Google Analytics
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -411,6 +404,13 @@ $(document).ready(function() {
 	$("#docSearchButton4").click( function() { goSearch4() });
 		
 });
+
+//replace username with sign in, hides logout
+function logout(){
+		Cookies.remove("username");
+		 $( "#username").html( "Sign in" );
+		 $( "#logout").addClass("hidden");
+	};
 
 function goSearch(){
 	var docSearch = window.document.docsSearch;
