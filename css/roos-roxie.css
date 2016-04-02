@@ -6472,17 +6472,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	max-width: 3208px; /* size of images */
 }
 
-#index-slide-2 h2,
-#index-slide-3 h1,
-#index-slide-3 h2,
-#index-slide-3 h3,
-#index-slide-3 h4,
-#index-slide-3 h5,
-#index-slide-4 h1,
-#index-slide-4 h2,
-#index-slide-4 h3,
-#index-slide-4 h4,
-#index-slide-4 h5 {
+#index-slide-2 h2, #index-slide-2 h5,
+#index-slide-3 h2, #index-slide-3 h5,
+#index-slide-4 h2, #index-slide-4 h5 {
 	color: #FFF;
 }
 
@@ -6617,10 +6609,10 @@ textarea {padding: 10px 12px !important}
 @media (max-width:411px) {
 	#mainTitleAdjust {
 		margin-top: 17px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	.ROOSbanner {
-		max-width:188.6px;
+		max-width:176px;
 	}
 }
 
@@ -6773,4 +6765,8 @@ footer {
   footer {
     width: 1200px;
   }
+}
+
+.jumbotron .container {
+	margin-left: 5%;
 }
