@@ -473,17 +473,20 @@ function goSearch4(){
 	var docSearch4 = window.document.docsSearch4;
 	var searchPhrase4 = docSearch4.query.value.toString();  //ensures numbers will be treated as strings, id = query
 	//alert(searchPhrase2)
-	if(searchPhrase3==''){
+	if(searchPhrase4==''){
 		$("#searchFail4").removeClass("hidden");
-		docSearch3.query.value = "";
-		docSearch3.query.focus();
+		docSearch4.query.value = "";
+		docSearch4.query.focus();
 		return true;
 	} else {
-		var searchString3 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
+		var searchString4 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
 		//alert(searchString);
-		location.href= searchString3;
+		location.href= searchString4;
 		$("#searchFail4").addClass("hidden");
-		docSearch3.query.value = "";
+		docSearch4.query.value = searchString4;
+		docSearch3.query.value = searchString4;
+		docSearch2.query.value = searchString4;
+		docSearch.query.value = searchString4;
 		return true;
 	}
 }; //end function
