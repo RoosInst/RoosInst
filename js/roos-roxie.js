@@ -443,16 +443,16 @@ function goSearch2(){
 	} else {
 		var searchString2 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
 		//alert(searchString);
-		location.href= searchString2;
 		$("#searchFail2").addClass("hidden");
-		docSearch2.query2.value = "";
+		docSearch2.query2.value = searchPhrase2;
+		location.href= searchString2;
 		return true;
 	}
 }; //end function
 
 function goSearch3(){
 	var docSearch3 = window.document.docsSearch3;
-	var searchPhrase3 = docSearch3.query3.value.toString();  //ensures numbers will be treated as strings
+	var searchPhrase3 = docSearch3.query.value.toString();  //ensures numbers will be treated as strings
 	//alert(searchPhrase2)
 	if(searchPhrase3==''){
 		$("#searchFail3").removeClass("hidden");
@@ -462,31 +462,31 @@ function goSearch3(){
 	} else {
 		var searchString3 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
 		//alert(searchString);
-		location.href= searchString3;
 		$("#searchFail3").addClass("hidden");
 		docSearch3.query3.value = "";
+		location.href= searchString3;
 		return true;
 	}
 }; //end function
 
 function goSearch4(){
 	var docSearch4 = window.document.docsSearch4;
+	var docSearch = window.document.docsSearch;
 	var searchPhrase4 = docSearch4.query.value.toString();  //ensures numbers will be treated as strings, id = query
-	//alert(searchPhrase2)
+	//alert(searchPhrase4)
 	if(searchPhrase4==''){
 		$("#searchFail4").removeClass("hidden");
 		docSearch4.query.value = "";
 		docSearch4.query.focus();
 		return true;
 	} else {
-		var searchString4 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
-		//alert(searchString);
-		location.href= searchString4;
+		var searchString4 = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase4);
 		$("#searchFail4").addClass("hidden");
-		docSearch4.query.value = searchString4;
-		docSearch3.query.value = searchString4;
-		docSearch2.query.value = searchString4;
-		docSearch.query.value = searchString4;
+		docSearch4.query.value = searchPhrase4;
+		docSearch.query.value = searchPhrase4;
+		 $('#documentSearch').addClass("active");
+		 //alert(searchString4);
+		location.href= searchString4;
 		return true;
 	}
 }; //end function
