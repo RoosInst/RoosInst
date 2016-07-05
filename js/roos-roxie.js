@@ -45,16 +45,16 @@ $(window).scroll(function(){
 			$('.product').show();
 			minFreq = parseInt($("#amount").val(), 10);
 			maxFreq = parseInt($("#amount2").val(), 10);
-			
+
 			for (i = 0; i < minFreq; i++) {
 				$("div[data-frequency='"+ i + "']").hide(); //before range
 			};
-			
+
 			for (i = minFreq; i < maxFreq; i++) { //within range
 				if ($('#cassini16').is(':checked') || $('#cassini8').is(':checked') || $('#ri7100a').is(':checked)')) {
 					$('div.product:not([data-model])').hide();
 				}
-				
+
 				if ($('#cassini16').is(':checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //yes yes no
 					$('div[data-model="ri7100a"]').hide();
 				}
@@ -77,12 +77,12 @@ $(window).scroll(function(){
 					$('div[data-model="cassini8]').hide();
 				}
 			};
-			
+
 				for (i = maxFreq; i < 200; i++) { //200 being the highest frequency in GHz (currently 90 on site, futureproofing)
 					$("div[data-frequency='"+ i + "']").hide();
 				};
-				
-			};	
+
+			};
 
 $(document).ready(function() {
 	//NAVBAR
@@ -102,11 +102,11 @@ $(document).ready(function() {
 			$('.product').show();
 			minFreq = parseInt($("#amount").val(), 10);
 			maxFreq = parseInt($("#amount2").val(), 10);
-			
+
 			for (i = 0; i < minFreq; i++) {
 				$("div[data-frequency='"+ i + "']").hide(); //before range
 			};
-			
+
 			for (i = minFreq; i < maxFreq; i++) { //within range
 				if ($('#cassini16').is(':checked') && $('#cassini8').is(':checked') && $('#ri7100a').is(':not(:checked)')) { //yes yes no
 					$('div[data-model="ri7100a"]').hide();
@@ -130,13 +130,13 @@ $(document).ready(function() {
 					$('div[data-model="cassini8]').hide();
 				}
 			};
-			
+
 				for (i = maxFreq; i < 200; i++) { //200 being the highest frequency in GHz (currently 90 on site, futureproofing)
 					$("div[data-frequency='"+ i + "']").hide();
 				};
-				
+
 			},	*/
-		
+
 			range: true,
 			min: minimum,
 			max: maximum,
@@ -369,7 +369,7 @@ $(document).ready(function() {
 	}
 	replaceTitleAttributes();
 	//Removes default attributes of abbr tag, allows custom css
-		
+
 	//Google search
 	(function() {
 		var cx = '016663888408278794732:a1ud06__nsq';
@@ -385,8 +385,9 @@ $(document).ready(function() {
 	if ( Cookies.get("username") ) {
 				  $( "#username").html( Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
+				  $( "#newuser").addClass("hidden");
 		}
-	  
+
 	//Google Analytics
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -402,7 +403,7 @@ $(document).ready(function() {
 	$("#docSearchButton2").click( function() { goSearch2() });
 	$("#docSearchButton3").click( function() { goSearch3() });
 	$("#docSearchButton4").click( function() { goSearch4() });
-		
+
 });
 
 //replace username with sign in, hides logout
@@ -410,6 +411,7 @@ function logout(){
 		Cookies.remove("username");
 		 $( "#username").html( "Sign in" );
 		 $( "#logout").addClass("hidden");
+		 $( "#newuser").removeClass("hidden");
 	};
 
 function goSearch(){
@@ -490,4 +492,3 @@ function goSearch4(){
 		return true;
 	}
 }; //end function
-
