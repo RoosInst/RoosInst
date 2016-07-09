@@ -3538,6 +3538,9 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 
 .eshop-grid .eshop-product {
 	position:relative;
+	/*added border around each item*/
+	border: 2px solid #f0f0f0;
+	margin-bottom: 5px;
 }
 
 .eshop-grid .eshop-product img {
@@ -6205,9 +6208,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
-	#parentbox {height: 150px;}
-	#productImg img {max-height: 150px; max-width: 100%; height: auto;}
-	#productImg .item img {height: auto; max-width: 83px; max-height: 100px; width: auto;} /* max width of eshop slider */
+	.parentbox {height: 150px;}
+	.catalogImg {max-height:150px;}
+	#productImg img {max-height: 230px; max-width: 100%; height: auto;}
+	#productImg .item img {height: auto; max-width: 78px; margin: 3px auto;} /* max width of eshop slider */
 	#mainTitleAdjust {
 		color: #333;
 		margin-top: 3px;
@@ -6242,8 +6246,9 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 20px;}
 	.btn-index {font-size: 14px;}
 	#index-main {font-size: 17px;}
-	#parentbox {height: 200px;}
-	#productImg img {max-height: 200px; max-width: 100%; height: auto;}
+	.catalogImg {max-height:230px; width: initial !important; height: initial !important;}
+	.parentbox {height: 230px;}
+	.parentbox2 {height: 230px;} /*product entry img*/
 	.catHeadImg {height: 157px !important;}
 }
 
@@ -6258,8 +6263,8 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	hr.space {margin-bottom: 2.5em;}
 	.btn-index {font-size: 16px;}
 	#index-main {font-size: 18px;}
-	#parentbox {height: 250px;}
-	#productImg img {max-height: 250px; max-width: 100%;}
+	.catalogImg {max-height:196px;}
+	.parentbox {height: 196px;} /*KITS6 img in view "(Products by Category)"*/
 	.supportMenuLinksSpacing {margin-left: 84px;}
 	#nav-tag {font-size: 15.5px;}
 }
@@ -6282,8 +6287,10 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#nav-tag {font-size: 18px;}
 	#mainTitleAdjust { font-size: 35px; margin-top: -1px;}
 	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
-	#productImg .item img {height: auto; max-width: 104px;} /* max width of eshop slider */
 	.catHeadImg {height: 249px !important;}
+	.catalogImg {max-height:175px;}
+	.parentbox {height: 175px;} /*KITS6 img in view "(Products by Category)"*/
+	#productImg .item img {max-width: 98px;}
 }
 
 
@@ -6504,7 +6511,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 #productImg img {
   vertical-align: middle;
 	background-color: #EBEBEB;
-	border: 3px solid #DDDDDD;
+	outline: 3px solid #DDDDDD;
 }
 
 #quantity {
@@ -6522,26 +6529,26 @@ input[type='number']::-webkit-outer-spin-button {
 
 
 /* aligns images both vertically and horizontally, used for product catalog */
-#parentbox {
+.parentbox, .parentbox2 {
     width:100%;
     text-align: center;  /* align the inline(-block) elements horizontally */
-    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+	font: 0/0 a; /* KEEP THIS - fixes inline-block providing small spacing which makes not perfectly centered*/
 }
 
 
 
-#parentbox:before {      /* create a full-height inline block pseudo-element */
+.parentbox:before, .parentbox2:before {      /* create a full-height inline block pseudo-element */
     content: ' ';
     display: inline-block;
     vertical-align: middle; /* vertical alignment of the inline element */
     height: 100%;
 }
 
-#childbox {
+.childbox {
     display: inline-block;
     vertical-align: middle;          /* vertical alignment of the inline element */
-    font: 16px/1 Arial, sans-serif;  /* reset the font property */
 	position: relative;
+	font: 16px 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif; /* KEEP - needed because parentbox, parentbox2 set font as 0 to fix spacing for inline-block*/
 }
 
 #productImg .item {
@@ -6674,7 +6681,7 @@ ol[type="1"] {margin-left: 40px;}
 .eshop-product a .product-num {
 	position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 0;
     transform: translate(-50%,-50%);
 	color: #F0F0F0; background-color: rgba(0, 0, 0, 0.5); padding: 0 3px; transition: background-color 0.5s ease;     transition-property: background-color;
     transition-duration: 0.5s;
@@ -6682,6 +6689,8 @@ ol[type="1"] {margin-left: 40px;}
     transition-delay: initial;
 	font-weight: bold;
 	z-index: 1;
+	padding: 5px 10px;
+	border-radius: .25em;
 }
 
 .eshop-product a:hover .product-num {
@@ -6770,3 +6779,6 @@ footer {
 .jumbotron .container {
 	margin-left: 5%;
 }
+
+#eshop-slider {margin-top: 6px;}
+.catalogImg {padding: 5px;}
