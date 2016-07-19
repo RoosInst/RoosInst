@@ -332,11 +332,21 @@
       <!-- ==========================
     	PARTNERS - START
     =========================== -->
+	<script>
+	  $(document).ready(function() {
+		$('#partner_001').mouseenter(function() {$(this).attr("src","images/IMS-logo.jpg");});
+		$('#partner_001').mouseleave(function() {$(this).attr("src","images/IMS-logo-bw.gif");});
+		$('#partner_002').mouseenter(function() {$(this).attr("src","images/semi.jpg");});
+		$('#partner_002').mouseleave(function() {$(this).attr("src","images/semi-bw.gif");});
+		$('#partner_003').mouseenter(function() {$(this).attr("src","images/ITC-2016.jpg");});
+		$('#partner_003').mouseleave(function() {$(this).attr("src","images/ITC-2016-bw.gif");});
+	  });
+	</script>
 		<section>
 			<div class="text-center row">
-				<div class="col-md-4"><a href="http://www.ims2015.org/"><img style="margin-top: 25px; max-height: 100px; max-width: 98px;" src="images/IMS_bw.png" alt="IMS" id="partner_001"></a></div>
-				<div class="col-md-4"><a href="http://www.semiconwest.org"><img style="margin-top: 25px; max-height: 100px; max-width: 322px;" src="images/semiconWest_bw.png" alt="Semicon West" id="partner_002"></a></div>
-				<div class="col-md-4"><a href="http://www.itctestweek.org"><img style="margin-top: 25px; margin-bottom: 25px; max-height: 100px; max-width: 92px;" src="images/ITCtestWeek_bw.png" alt="ITC Test Week" id="partner_003"></a></div>
+				<div class="col-md-4 col-md-offset-1 centerImg"><a href="http://www.semiconwest.org"><img style="margin-top: 25px; max-height: 100px; max-width: 322px;" src="images/semi-bw.gif" alt="Semicon West" id="partner_002"></a></div>
+				<div class="col-md-3 centerImg"><a href="http://www.itctestweek.org"><img style="margin-top: 25px; margin-bottom: 25px; max-height: 100px; max-width: 100px;" src="images/ITC-2016-bw.gif" alt="ITC Test Week" id="partner_003"></a></div>
+				<div class="col-md-4 centerImg"><a href="https://www.mtt.org/ims"><img style="margin-top: 25px; max-height: 100px; max-width: 389px;" src="images/IMS-logo-bw.gif" alt="IMS" id="partner_001"></a></div>
 			</div>
 		</section>
     <!-- ==========================
@@ -472,4 +482,3 @@
 	<!--  BOTTOM - v10 -->
   </body>
 </html>
-
