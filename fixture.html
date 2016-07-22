@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<!-- TOP - v24 -->
+<!-- TOP - v25 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	 <!-- ==========================
@@ -21,12 +20,16 @@
     <title>Roos Instruments</title>
 
     <!-- ==========================
-    	Favicons
+    	Bookmark Icons
     =========================== -->
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" type="image/png" href="/images/icon_ball-128.png" sizes="16x16 32x32 64x64 128x128">
+	<link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="icon" type="image/gif" href="/images/icon_ball-128.gif">
-	<link rel="icon" type="image/png" href="/images/icon_ball-128.png">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="apple-touch-startup-image" href="/images/apple-touch-startup.png">
 	<link rel="alternate" type="application/rss+xml" href="/press.rss" title="Announcements (Press Releases)">
 
 	<!-- ==========================
@@ -49,7 +52,7 @@
     <link href="/css/owl.transitions.css" rel="stylesheet" type="text/css">
     <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="/css/creative-brands.css" rel="stylesheet" type="text/css">
-	<link href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
 	<link id="pageTheme" href="/css/roos-roxie.css" rel="stylesheet" type="text/css">
 	<link href="/css/print.css" rel="stylesheet" type="text/css" media="print">
 
@@ -69,7 +72,7 @@
 	<script src="/magicsuggest/magicsuggest.js"></script>
 	<script src="/js/roos-magicsuggest.js"></script>
 	<script src="/js/roos-roxie.js"></script>
-	<script async src="//storage.googleapis.com/outfox/dnt_min.js"></script>
+	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -89,13 +92,13 @@
 	<!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header">
-			<div class="pull-left hidden-xs">
+		<div class="top-header hidden-xs hidden-sm">
+			<div class="pull-left">
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
 			<div class="header-item pull-right">
-			  <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</span>
+			  <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
 			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a>
 			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
 			</div>
@@ -112,7 +115,7 @@
 					<div id="title">
 						<div class="hidden-sm hidden-xs">
 							<a href="/index.html">
-								<div id="mainTitleAdjust">Roos Instruments</div>
+								<div class="mainTitleAdjust">Roos Instruments</div>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
@@ -121,7 +124,7 @@
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
-								<div style="display: inline-block;" id="mainTitleAdjust">Roos Instruments</div>
+								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
 							</a>
 							<div class="ROOSbanner"></div>
 						</div>
@@ -135,6 +138,9 @@
 						</li>
 						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
 							<a href="/support.html">Support</a>
+						</li>
+						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
+							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown">Products<i class="fa fa-chevron-down"></i></a>
@@ -175,7 +181,9 @@
 									<div class="row">
 										<div class="col-sm-3">
 											<h3 class="text-center">Planning</h3>
-											<a href="/newFullUser"><button class="centerImg btn btn-primary"><i class="fa fa-user-plus"></i> Create Account</button></a>
+											<div style="text-align: center">
+											  <a href="/newFullUser" class="btn btn-primary" style="margin: auto; width:60%;"><i class="fa fa-user-plus"></i> Create Account</a>
+											</div>
 											<div style="width: 150px;" class="centerImg">
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
@@ -209,21 +217,24 @@
 										</div> <!-- End of .col -->
 										<div class="col-sm-3 text-center">
 											<h3>Reference Guide</h3>
-											<a href="/web/CassiniReferenceGuide_2.0_mini.pdf" download="CassiniReferenceGuide_2.0_mini.pdf" onclick="ga('send','event','PDF','view','Cassini Reference Guide');"><button class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Download PDF</button></a>
+										  <div style="text-align: center">
+											<a class="btn btn-primary" href="/web/CassiniReferenceGuide_2.0_mini.pdf" download="CassiniReferenceGuide_2.0_mini.pdf" onclick="ga('send','event','PDF','view','Cassini Reference Guide');"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
 											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10" onclick="ga('send','event','iBook','view','Cassini Reference Guide');">
 												<img style="padding-top: 9px; width: 160px;" class="centerImg" src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
 											</a>
+										  </div>
 										</div> <!-- End of .col -->
 										<div class="col-sm-3 text-center">
 											<h3>Get Support</h3>
-											<ul style="margin-bottom: 15px;" class="list-unstyled">
-												<li style="padding-top: 0px"><a href="mailto:support@roos.com"><button class="btn btn-primary"><i class="fa fa-envelope"></i> Email Support</button></a></li>
+											<ul style="margin-bottom: 15px; text-align: center;" class="list-unstyled">
+												<li style="padding-top: 0px"><a class="btn btn-primary" href="mailto:support@roos.com"><i class="fa fa-envelope"></i> Email Support</a></li>
 												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
 												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
 											</ul>
-											<a href="//get.teamviewer.com/roosinst" onclick="ga('send','event','RemoteSupport','access','TeamViewer');" style="position: relative;">
-												<button class="btn btn-primary"><i class="fa fa-binoculars"></i> Remote Support</button>
-											</a>
+											<div style="text-align: center">
+											<a href="//get.teamviewer.com/roosinst" class="btn btn-primary" onclick="ga('send','event','RemoteSupport','access','TeamViewer');" style="position: relative;">
+												<i class="fa fa-binoculars"></i> Remote Support</a>
+											</div>
 											<br>
 										</div> <!-- End of .col -->
 									</div> <!-- End of .row -->
@@ -272,7 +283,7 @@
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
 									<div class="reset-box-sizing" id="search">
-										<gcse:search></gcse:search>
+										<div class="gcse-search"></div>
 									</div> <!-- end of #search -->
 								</div>
 								<div class="tab-pane fade" id="document-search">
@@ -656,7 +667,7 @@
 											  <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
 											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
 										  </li>
-										  <li><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
+										  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
 										  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
 									</ul>
 								</div>
@@ -702,7 +713,7 @@
 						<h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
 						<!-- Begin MailChimp Signup Form -->
 						<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						  <div id="form-group nospace">
+						  <div class="form-group nospace">
 							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							<div style="position: absolute; left: -5000px;"><input type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
 							  <fieldset>
@@ -714,7 +725,7 @@
 							</div>
 						</form>
 						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-						<a href="/parts/CASSINI/$file/CASSINI.pdf" onclick="ga('send','event','PDF','view','Cassini')"><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
+						<a href="/parts/CASSINI/$file/CASSINI.pdf" onclick="ga('send','event','PDF','view','Cassini')"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
 							<p style="padding-top: 5px;">Learn more about Cassini</p>
 						</a>
 					</div>
@@ -740,6 +751,6 @@
     	JS
     =========================== -->
 	<!--[if lt IE 7 ]><script src="/js/dd_belatedpng.js?v=1"></script> <![endif]-->
-	<!--  BOTTOM - v10 -->
+	<!--  BOTTOM - v11 -->
   </body>
 </html>

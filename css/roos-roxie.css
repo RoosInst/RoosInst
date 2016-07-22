@@ -6025,25 +6025,6 @@ abbr:hover::after {
 .roosC blockquote, q {quotes:"" "";}
 .roosC a img {border:none;}
 
-#content {
-	background: #FFF;
-	position: relative;
-	padding-bottom: 295px; /*padding size of footer +30px for space*/
-}
-
-
-@media (min-width: 768px) {
-#content {
-	padding-bottom: 369px; /*padding size of footer +40px for space*/
-}
-}
-
-@media (min-width: 992px) {
-#content {
-	padding-bottom: 399px; /*padding size of footer +50px for space*/
-}
-}
-
 /* typography.css */
 .roosC { font-size: 16px;
 	line-height:1.5;
@@ -6208,18 +6189,13 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
-<<<<<<< HEAD
+
 	.parentbox {height: 150px;}
 	.catalogImg {max-height:150px;}
 	#productImg img {max-height: 230px; max-width: 100%; height: auto;}
 	#productImg .item img {height: auto; max-width: 78px; margin: 3px auto;} /* max width of eshop slider */
-	#mainTitleAdjust {
-=======
-	#parentbox {height: 150px;}
-	#productImg img {max-height: 150px; max-width: 100%; height: auto;}
-	#productImg .item img {height: auto; max-width: 83px; max-height: 100px; width: auto;} /* max width of eshop slider */
+
 	.mainTitleAdjust, #mainTitleAdjust {
->>>>>>> bb541d0b1970722c2a487b78e35f03650c7df186
 		color: #333;
 		margin-top: 3px;
 		font-size: 30px;
@@ -6786,9 +6762,26 @@ footer {
 .jumbotron .container {
 	margin-left: 5%;
 }
-<<<<<<< HEAD
+
 
 #eshop-slider {margin-top: 6px;}
 .catalogImg {padding: 5px;}
-=======
->>>>>>> bb541d0b1970722c2a487b78e35f03650c7df186
+
+#content {
+    background: #FFF;
+    position: relative;
+    padding-bottom: 295px; /*padding size of footer +30px for space*/
+}
+ 
+ 
+@media (min-width: 768px) {
+#content {
+    padding-bottom: 369px; /*padding size of footer +40px for space*/
+}
+}
+ 
+@media (min-width: 992px) {
+#content {
+    padding-bottom: 399px; /*padding size of footer +50px for space*/
+}
+}
