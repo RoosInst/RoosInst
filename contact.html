@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<!-- TOP - v22 -->
-
+<!-- TOP - v24 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	 <!-- ==========================
@@ -33,7 +32,7 @@
 	<!-- ==========================
     	Fonts
     =========================== -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Quando|Michroma" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet" type="text/css">
 
 	 <!-- ==========================
     	CSS
@@ -70,6 +69,7 @@
 	<script src="/magicsuggest/magicsuggest.js"></script>
 	<script src="/js/roos-magicsuggest.js"></script>
 	<script src="/js/roos-roxie.js"></script>
+	<script async src="//storage.googleapis.com/outfox/dnt_min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -95,8 +95,9 @@
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 			</div>
 			<div class="header-item pull-right">
-			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a> 
-			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout()"><i class="fa fa-sign-out"></i>Sign Out</a></span>
+			  <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</span>
+			  <a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-user"></i><span id="username">Sign in</span>&nbsp;&nbsp;</a>
+			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
 			</div>
 		</div>
 
@@ -116,7 +117,7 @@
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-						
+
 
 						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
@@ -168,7 +169,7 @@
 							</ul>
 						</li>
 						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
-							<a class="dropdown-toggle" data-hover="dropdown">Support <i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-hover="dropdown" onclick="ga('send','event','nav','support','Support Tab');">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
 									<div class="row">
@@ -208,8 +209,8 @@
 										</div> <!-- End of .col -->
 										<div class="col-sm-3 text-center">
 											<h3>Reference Guide</h3>
-											<a href="/web/CassiniReferenceGuide_1.3.1.pdf" download="Cassini_Reference_Guide_1.3.1.pdf"><button class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Download PDF</button></a>
-											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+											<a href="/web/CassiniReferenceGuide_2.0_mini.pdf" download="CassiniReferenceGuide_2.0_mini.pdf" onclick="ga('send','event','PDF','view','Cassini Reference Guide');"><button class="btn btn-primary"><i class="fa fa-file-pdf-o"></i>Download PDF</button></a>
+											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10" onclick="ga('send','event','iBook','view','Cassini Reference Guide');">
 												<img style="padding-top: 9px; width: 160px;" class="centerImg" src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
 											</a>
 										</div> <!-- End of .col -->
@@ -220,7 +221,7 @@
 												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
 												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
 											</ul>
-											<a href="//get.teamviewer.com/roosinst" style="position: relative;">
+											<a href="//get.teamviewer.com/roosinst" onclick="ga('send','event','RemoteSupport','access','TeamViewer');" style="position: relative;">
 												<button class="btn btn-primary"><i class="fa fa-binoculars"></i> Remote Support</button>
 											</a>
 											<br>
@@ -235,13 +236,13 @@
 					</ul> <!-- End of .nav .navbar-nav -->
 					<ul class="nav navbar-nav hidden-xs hidden-sm">
 						<li style="margin-right: -12px;" class="search-form-toggle">
-							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
 					</ul>
 				</div> <!-- End of .navbar-collapse -->
 			</div> <!-- End of .container -->
 		</header>
-		
+
 		<!-- Print view only -->
 		<div class="clearfix visible-print">
 			<div class="pull-left">
@@ -251,7 +252,7 @@
 				  <img style="width: 11px;" src="/images/ri_back.png" alt="RI logo">
 			</div>
 		</div>
-		
+
 		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
@@ -266,7 +267,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation</a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation (<i class="fa fa-lock"></i> Sign In Required)</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
@@ -419,7 +420,7 @@
 					9F-1, No.101, Sec.2<br>
 					Gongdao 5th Road<br>
 					Hsinchu, 30070, Taiwan<br>
-					
+
 				</div>
 				<div class="col-md-4">
 					<h4>Japan</h4>
@@ -431,7 +432,7 @@
 				</div>
 			  </div> <!-- .row -->
 			  <div class="row">
-				
+
 				<div class="col-md-4 col-md-offset-2">
 					<h4>China</h4>
 					  <a class="no_u" href="http://www.sandtekcorp.com/">
@@ -602,4 +603,3 @@
 	<!--  BOTTOM - v10 -->
   </body>
 </html>
-
