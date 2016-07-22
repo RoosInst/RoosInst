@@ -6208,11 +6208,18 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.index-slideshow-bar {padding: 10px;}
 	.btn-index {font-size: 12px;}
 	#index-main {font-size: 16px;}
+<<<<<<< HEAD
 	.parentbox {height: 150px;}
 	.catalogImg {max-height:150px;}
 	#productImg img {max-height: 230px; max-width: 100%; height: auto;}
 	#productImg .item img {height: auto; max-width: 78px; margin: 3px auto;} /* max width of eshop slider */
 	#mainTitleAdjust {
+=======
+	#parentbox {height: 150px;}
+	#productImg img {max-height: 150px; max-width: 100%; height: auto;}
+	#productImg .item img {height: auto; max-width: 83px; max-height: 100px; width: auto;} /* max width of eshop slider */
+	.mainTitleAdjust, #mainTitleAdjust {
+>>>>>>> bb541d0b1970722c2a487b78e35f03650c7df186
 		color: #333;
 		margin-top: 3px;
 		font-size: 30px;
@@ -6226,7 +6233,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		background: linear-gradient(to right, rgba(94,188,240,1) 0%,rgba(84,182,236,1) 18%,rgba(0,149,215,1) 34%,rgba(0,133,202,1) 60%,rgba(24,111,183,1) 73%,rgba(38,98,172,0.84) 81%,rgba(40,88,163,0.67) 95%,rgba(42,75,151,0) 100%);
 		/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ebcf0', endColorstr='#472a4b97',GradientType=1 );*/
 		height:2px;
-		width:377px; /* 7/88 ratio between mainTitleAdjust font-size and width */
+		width:377px; /* 7/88 ratio between .mainTitleAdjust font-size and width */
 	}
 
 
@@ -6285,7 +6292,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#index-main {font-size: 20px;}
 	.supportMenuLinksSpacing {margin-left: 84px;}
 	#nav-tag {font-size: 18px;}
-	#mainTitleAdjust { font-size: 35px; margin-top: -1px;}
+	.mainTitleAdjust, #mainTitleAdjust { font-size: 35px; margin-top: -1px;}
 	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
 	.catHeadImg {height: 249px !important;}
 	.catalogImg {max-height:175px;}
@@ -6604,7 +6611,7 @@ textarea {padding: 10px 12px !important}
 
 
 @media (max-width:511px) {
-	#mainTitleAdjust {
+	.mainTitleAdjust, #mainTitleAdjust {
 		margin-top: 8px;
 		font-size: 23px;
 	}
@@ -6614,7 +6621,7 @@ textarea {padding: 10px 12px !important}
 }
 
 @media (max-width:411px) {
-	#mainTitleAdjust {
+	.mainTitleAdjust, #mainTitleAdjust {
 		margin-top: 17px;
 		font-size: 14px;
 	}
@@ -6779,6 +6786,9 @@ footer {
 .jumbotron .container {
 	margin-left: 5%;
 }
+<<<<<<< HEAD
 
 #eshop-slider {margin-top: 6px;}
 .catalogImg {padding: 5px;}
+=======
+>>>>>>> bb541d0b1970722c2a487b78e35f03650c7df186

@@ -322,14 +322,6 @@ $(document).ready(function() {
 		$(this).find(".owl-next").animate({opacity:0,right:"40px"});
     });
 
-	//TRADESHOWS
-	$('#partner_001').mouseenter(function() {$(this).attr("src","images/IMS.png");});
-	$('#partner_001').mouseleave(function() {$(this).attr("src","images/IMS_bw.png");});
-	$('#partner_002').mouseenter(function() {$(this).attr("src","images/semiconWest.png");});
-	$('#partner_002').mouseleave(function() {$(this).attr("src","images/semiconWest_bw.png");});
-	$('#partner_003').mouseenter(function() {$(this).attr("src","images/ITCtestWeek.png");});
-	$('#partner_003').mouseleave(function() {$(this).attr("src","images/ITCtestWeek_bw.png");});
-
 	//HOTELS
 	$('#hotel-1').mouseenter(function() {$(this).attr("src","images/hotel-best.png");});
 	$('#hotel-1').mouseleave(function() {$(this).attr("src","images/hotel-best_bw.png");});
