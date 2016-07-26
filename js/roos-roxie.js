@@ -225,14 +225,24 @@ $(document).ready(function() {
   	});
 
 	$("#jumbotron-slider").owlCarousel({
-		autoPlay: 5000,
-		navigation : true,
-		singleItem : true,
-		pagination : false,
-		transitionStyle : "fade",
-		slideSpeed : 500,
-		navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
-		stopOnHover: true
+		//autoPlay: 5000,
+		//navigation : true,
+		//singleItem : true,
+		//pagination : false,
+		//transitionStyle : "fade",
+		//slideSpeed : 500,
+		//navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
+		//stopOnHover: true,
+      //afterInit : progressBar,
+      //afterMove : moved,
+      //startDragging : pauseOnDragging
+	  items: 1,
+	  loop: true,
+	  nav: true,
+	  navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+	  autoplay: true,
+	  autoplayHoverPause: true
+	  
   	});
 
 	$("#about-slider").owlCarousel({
@@ -396,6 +406,80 @@ $(document).ready(function() {
 	$("#docSearchButton3").click( function() { goSearch3() });
 	$("#docSearchButton4").click( function() { goSearch4() });
 
+//	var time = 5; // time in seconds
+// 
+//  var $progressBar,
+//      $bar, 
+//      $elem, 
+//      isPause, 
+//      tick,
+//      percentTime;
+// 
+//    //Init the carousel
+//   
+// 
+//    //Init progressBar where elem is $("#owl-demo")
+//    function progressBar(elem){
+//      $elem = elem;
+//      //build progress bar elements
+//      buildProgressBar();
+//      //start counting
+//      start();
+//    }
+// 
+//    //create div#progressBar and div#bar then prepend to $("#owl-demo")
+//    function buildProgressBar(){
+//      $progressBar = $("<div>",{
+//        id:"progressBar"
+//      });
+//      $bar = $("<div>",{
+//        id:"bar"
+//      });
+//      $progressBar.append($bar).prependTo($elem);
+//    }
+// 
+//    function start() {
+//      //reset timer
+//      percentTime = 0;
+//      isPause = false;
+//      //run interval every 0.01 second
+//      tick = setInterval(interval, 10);
+//    };
+// 
+//    function interval() {
+//      if(isPause === false){
+//        percentTime += 1 / time;
+//        $bar.css({
+//           width: percentTime+"%"
+//         });
+//        //if percentTime is equal or greater than 100
+//        if(percentTime >= 100){
+//          //slide to next item 
+//          $elem.trigger('owl.next')
+//        }
+//      }
+//    }
+// 
+//    //pause while dragging 
+//    function pauseOnDragging(){
+//      isPause = true;
+//    }
+// 
+//    //moved callback
+//    function moved(){
+//      //clear interval
+//      clearTimeout(tick);
+//      //start again
+//      start();
+//    }
+// 
+//    //uncomment this to make pause on mouseover 
+//     $elem.on('mouseover',function(){
+//      isPause = true;
+//     })
+//     $elem.on('mouseout',function(){
+//       isPause = false;
+//     })
 });
 
 //replace username with sign in, hides logout

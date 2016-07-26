@@ -625,7 +625,95 @@ form span.required {
 
 /* OWL CAROUSEL */
 
-.owl-carousel .owl-wrapper-outer {
+/* OWL CAROUSEL */
+
+.owl-carousel {
+    margin:0 0 80px;
+}
+
+.owl-carousel .owl-stage-outer {
+	box-shadow:0 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.owl-dots {
+	text-align:center;
+	margin-top:20px;
+}
+
+.owl-carousel .owl-controls .owl-dots {
+	position:absolute;
+	text-align:center;
+	width:100%;
+}
+
+.owl-carousel .owl-controls .owl-dot {
+	display:inline-block;
+}
+
+.owl-carousel .owl-controls .owl-dot span,
+.owl-carousel .owl-controls .owl-dot.active span {
+    background-color:#CCCCCC;
+    border-radius:50%;
+    display:block;
+    margin:0 3px;
+    width:16px;
+	height:16px;
+}
+
+.owl-carousel .owl-controls .owl-nav div {
+	border:1px solid rgba(0,0,0,0.1);
+	transition:all 0.3s ease;
+	width:46px;
+	height:46px;
+	text-align:center;
+	border-radius:50%;
+	font-size:29px;
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+}
+
+.owl-carousel .owl-controls .owl-nav div:hover {
+	color:#FFFFFF;
+}
+
+.owl-carousel .owl-controls .owl-nav div.owl-prev {
+    left:-80px;
+}
+
+.owl-carousel .owl-controls .owl-nav div.owl-prev i {
+    margin-right:3px;
+}
+
+.owl-carousel .owl-controls .owl-nav div.owl-next {
+    right:-80px;
+}
+
+.owl-carousel .owl-controls .owl-nav div.owl-next i {
+    margin-left:3px;
+}
+
+.hidden-control.owl-carousel {
+    margin-bottom:0;
+}
+
+.hidden-control.owl-carousel .owl-controls .owl-nav div {
+    opacity:0;
+	transition-duration:0s;
+	color:#FFFFFF;
+}
+
+.hidden-control.owl-carousel .owl-controls .owl-nav div.owl-prev {
+    left:40px;
+}
+
+.hidden-control.owl-carousel .owl-controls .owl-nav div.owl-next {
+    right:40px;
+}
+
+/*.owl-carousel .owl-wrapper-outer {
 	box-shadow:0 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -702,7 +790,7 @@ body .owl-theme .owl-controls .owl-buttons div:hover {
 .hidden-control.owl-theme .owl-controls .owl-buttons div.owl-next {
     right:40px;
 	color: #FFFFFF;
-}
+}*/
 
 /* ISOTOPE */
 
@@ -2097,6 +2185,8 @@ footer .navbar-nav > li > a:hover {
 
 #latest-work-footer {
 	margin:0;
+	
+	color
 }
 
 #latest-work-footer > div {
@@ -5848,7 +5938,6 @@ footer .navbar-nav > li > a:hover,
 #profile-single .profile-body .profile-contacts li span,
 #eshop .eshop-sidebar .eshop-widget .ui-slider .ui-slider-range,
 .event-ticket.highlighted,
-
 #jumbotron-slider .btn-inverse:hover,
 #jumbotron-slider .btn-inverse:focus
 {
@@ -6784,4 +6873,22 @@ footer {
 #content {
     padding-bottom: 399px; /*padding size of footer +50px for space*/
 }
+}
+
+#eshop .eshop-banner .row > a.active, #latest-work-footer img {
+	background-color: #c1cfe0;
+}
+#eshop .eshop-banner .row > a.active:before {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#bar{
+  width: 0%;
+  max-width: 100%;
+  height: 4px;
+  background: #084AA1;
+}
+#progressBar{
+  width: 100%;
+  background: #dfdfdf;
 }
