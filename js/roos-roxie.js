@@ -217,41 +217,39 @@ $(document).ready(function() {
 
 	//OWL CAROUSEL
 	$("#section-partners #partners-slider").owlCarousel({
-		autoPlay: 3000,
-		pagination : false,
-		items : 4,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [991,2]
-  	});
+		//transitionStyle: "cassini-fade",
+		dots: false,
+		autoplayHoverPause: true,
+		items: 4,
+		autoplayTimeout: 2500,
+		autoplay: true,
+		responsive:{
+			0:{items: 1},
+			767:{items: 2},
+			992:{items: 3},
+			1200:{items: 4}
+		},
+		loop: true
+		});
 
 	$("#jumbotron-slider").owlCarousel({
-		//autoPlay: 5000,
-		//navigation : true,
-		//singleItem : true,
-		//pagination : false,
-		//transitionStyle : "fade",
-		//slideSpeed : 500,
-		//navigationText : ["<i class='owl-prev fa fa-angle-left'></i>","<i class='owl-next fa fa-angle-right'></i>"],
-		//stopOnHover: true,
-      //afterInit : progressBar,
-      //afterMove : moved,
-      //startDragging : pauseOnDragging
 	  items: 1,
+	  dots: false,
 	  loop: true,
 	  nav: true,
 	  navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
 	  autoplay: true,
 	  autoplayHoverPause: true
-	  
   	});
 
 	$("#about-slider").owlCarousel({
-		autoPlay: 0,
-		singleItem : true,
-		transitionStyle: "cassini-fade",
-		pagination: false,
+		autoplay: true,
+		//transitionStyle: "cassini-fade",
 		mouseDrag: false,
-		touchDrag: false
+		touchDrag: false,
+		items: 1,
+		dots: false,
+		autoplayHoverPause: true
   	});
 
 	$("#jumbotron-eshop-slider").owlCarousel({
