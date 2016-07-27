@@ -220,7 +220,6 @@ $(document).ready(function() {
 		//transitionStyle: "cassini-fade",
 		dots: false,
 		autoplayHoverPause: true,
-		items: 4,
 		autoplayTimeout: 2500,
 		autoplay: true,
 		responsive:{
@@ -253,11 +252,17 @@ $(document).ready(function() {
   	});
 
 	$("#jumbotron-eshop-slider").owlCarousel({
-		autoPlay: 5000,
-		navigation : true,
-		singleItem : true,
-		transitionStyle : "fade",
-		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+dots: false,
+		autoplayHoverPause: true,
+		autoplayTimeout: 2500,
+		autoplay: true,
+		responsive:{
+			0:{items: 1},
+			767:{items: 2},
+			992:{items: 3},
+			1200:{items: 4}
+		},
+		loop: true
   	});
 
 //	$("#eshop-slider").owlCarousel({
