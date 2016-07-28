@@ -219,7 +219,6 @@ $(document).ready(function() {
 	$("#section-partners #partners-slider").owlCarousel({
 		//transitionStyle: "cassini-fade",
 		dots: false,
-		autoplayHoverPause: true,
 		autoplayTimeout: 2500,
 		autoplay: true,
 		responsive:{
@@ -229,6 +228,23 @@ $(document).ready(function() {
 			1200:{items: 4}
 		},
 		loop: true
+		});
+	
+	$(".catalogCategoriesSlider").owlCarousel({
+		//transitionStyle: "cassini-fade",
+		dots: false,
+		autoplayTimeout: 4000,
+		autoplay: true,
+		responsive:{
+			0:{items: 1},
+			767:{items: 2},
+			992:{items: 3},
+			1200:{items: 4}
+		},
+		loop: true,
+		autoplayHoverPause: true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		lazyLoad: true
 		});
 
 	$("#jumbotron-slider").owlCarousel({
@@ -252,32 +268,12 @@ $(document).ready(function() {
   	});
 
 	$("#jumbotron-eshop-slider").owlCarousel({
-dots: false,
-		autoplayHoverPause: true,
-		autoplayTimeout: 2500,
-		autoplay: true,
-		responsive:{
-			0:{items: 1},
-			767:{items: 2},
-			992:{items: 3},
-			1200:{items: 4}
-		},
-		loop: true
+		autoPlay: 5000,
+		navigation : true,
+		singleItem : true,
+		transitionStyle : "fade",
+		navigationText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
   	});
-
-//	$("#eshop-slider").owlCarousel({
-//		autoPlay: 5000,
-//		scrollPerPage : true,
-//		items : 3,
-//		itemsDesktop : [1199,3],
-//		itemsDesktopSmall : [991,2]
-//  	});
-//
-//	$('#eshop-slider .item img').mouseenter(function(e) {
-//		var source = $(this).attr("src");
-//		$("#product-detail-image").attr("src",source);
-//		$("#product-detail-image-link").attr("href",source);
-//    });
 
 	$("#portfolio-slider").owlCarousel({
 		autoPlay: 5000,
@@ -335,29 +331,6 @@ dots: false,
 		$(this).find(".owl-next").animate({opacity:0,right:"40px"});
     });
 
-	//HOTELS
-	$('#hotel-1').mouseenter(function() {$(this).attr("src","images/hotel-best.png");});
-	$('#hotel-1').mouseleave(function() {$(this).attr("src","images/hotel-best_bw.png");});
-	$('#hotel-2').mouseenter(function() {$(this).attr("src","images/hotel-biltmore.png");});
-	$('#hotel-2').mouseleave(function() {$(this).attr("src","images/hotel-biltmore_bw.png");});
-	$('#hotel-3').mouseenter(function() {$(this).attr("src","images/hotel-holiday.png");});
-	$('#hotel-3').mouseleave(function() {$(this).attr("src","images/hotel-holiday_bw.png");});
-	$('#hotel-4').mouseenter(function() {$(this).attr("src","images/hotel-marriott.png");});
-	$('#hotel-4').mouseleave(function() {$(this).attr("src","images/hotel-marriott_bw.png");});
-	$('#hotel-5').mouseenter(function() {$(this).attr("src","images/hotel-avatar.png");});
-	$('#hotel-5').mouseleave(function() {$(this).attr("src","images/hotel-avatar_bw.png");});
-	$('#hotel-6').mouseenter(function() {$(this).attr("src","images/hotel-quality.png");});
-	$('#hotel-6').mouseleave(function() {$(this).attr("src","images/hotel-quality_bw.png");});
-	$('#hotel-7').mouseenter(function() {$(this).attr("src","images/hotel-candlewood.png");});
-	$('#hotel-7').mouseleave(function() {$(this).attr("src","images/hotel-candlewood_bw.png");});
-	$('#hotel-8').mouseenter(function() {$(this).attr("src","images/hotel-hilton.png");});
-	$('#hotel-8').mouseleave(function() {$(this).attr("src","images/hotel-hilton_bw.png");});
-	$('#hotel-9').mouseenter(function() {$(this).attr("src","images/hotel-hyatt-regency.png");});
-	$('#hotel-9').mouseleave(function() {$(this).attr("src","images/hotel-hyatt-regency_bw.png");});
-	$('#hotel-10').mouseenter(function() {$(this).attr("src","images/hotel-hyatt-house.png");});
-	$('#hotel-10').mouseleave(function() {$(this).attr("src","images/hotel-hyatt-house_bw.png");});
-	$('#hotel-11').mouseenter(function() {$(this).attr("src","images/hotel-embassy.png");});
-	$('#hotel-11').mouseleave(function() {$(this).attr("src","images/hotel-embassy_bw.png");});
 
 	//$('#section-statistics').waypoint(function(){
 	//	$('#section-statistics .number').countTo();
@@ -409,81 +382,52 @@ dots: false,
 	$("#docSearchButton3").click( function() { goSearch3() });
 	$("#docSearchButton4").click( function() { goSearch4() });
 
-//	var time = 5; // time in seconds
-// 
-//  var $progressBar,
-//      $bar, 
-//      $elem, 
-//      isPause, 
-//      tick,
-//      percentTime;
-// 
-//    //Init the carousel
-//   
-// 
-//    //Init progressBar where elem is $("#owl-demo")
-//    function progressBar(elem){
-//      $elem = elem;
-//      //build progress bar elements
-//      buildProgressBar();
-//      //start counting
-//      start();
-//    }
-// 
-//    //create div#progressBar and div#bar then prepend to $("#owl-demo")
-//    function buildProgressBar(){
-//      $progressBar = $("<div>",{
-//        id:"progressBar"
-//      });
-//      $bar = $("<div>",{
-//        id:"bar"
-//      });
-//      $progressBar.append($bar).prependTo($elem);
-//    }
-// 
-//    function start() {
-//      //reset timer
-//      percentTime = 0;
-//      isPause = false;
-//      //run interval every 0.01 second
-//      tick = setInterval(interval, 10);
-//    };
-// 
-//    function interval() {
-//      if(isPause === false){
-//        percentTime += 1 / time;
-//        $bar.css({
-//           width: percentTime+"%"
-//         });
-//        //if percentTime is equal or greater than 100
-//        if(percentTime >= 100){
-//          //slide to next item 
-//          $elem.trigger('owl.next')
-//        }
-//      }
-//    }
-// 
-//    //pause while dragging 
-//    function pauseOnDragging(){
-//      isPause = true;
-//    }
-// 
-//    //moved callback
-//    function moved(){
-//      //clear interval
-//      clearTimeout(tick);
-//      //start again
-//      start();
-//    }
-// 
-//    //uncomment this to make pause on mouseover 
-//     $elem.on('mouseover',function(){
-//      isPause = true;
-//     })
-//     $elem.on('mouseout',function(){
-//       isPause = false;
-//     })
-});
+	var imgNum = $("#productImg").find('img').length -1;
+	sourcelink = $('#eshop-slider img:first-child').attr('src');
+	if (imgNum <= 0) {
+		$('#product-detail-image').attr('src', '/images/no-image-available.png');
+		$('#product-detail-image-link').attr('href', '#');
+	} else {
+				$('#product-detail-image').attr('src', sourcelink );
+		$('#product-detail-image-link').attr('href', sourcelink );
+	};
+	if (imgNum > 1) {
+			$('img').addClass("img-responsive centerImg");
+			$('#eshop-slider img').wrap('<div class="item"></div>');
+	};
+	function sliderNum(imgNum) { 
+		if (imgNum <= 4) { 
+			return imgNum;
+		} else { 
+			return 4;
+		};
+	};
+	
+
+	if (imgNum > 1) {
+		$("#eshop-slider").owlCarousel({
+			autoplayHoverPause: true,
+			autoplayTimeout: 2500,
+			autoplay: true,
+			items: sliderNum(imgNum),
+			rewind: true,
+			margin: 3
+		})
+
+		$('#eshop-slider .item img').mouseenter(function(e) {
+			var source = $(this).attr("src");
+			$("#product-detail-image").attr("src",source);
+			$("#product-detail-image-link").attr("href",source);
+		})
+	} else {
+		$("#eshop-slider").remove();
+	};
+	
+	if (imgNum <=4) {
+		$(".owl-controls").remove();
+	}
+
+}); //end Ready function
 
 //replace username with sign in, hides logout
 function logout(){

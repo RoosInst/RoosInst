@@ -639,27 +639,29 @@ form span.required {
 	margin-top:20px;
 }
 
-.owl-carousel .owl-controls .owl-dots {
+.owl-carousel /*.owl-controls*/ .owl-dots {
 	position:absolute;
 	text-align:center;
 	width:100%;
 }
 
-.owl-carousel .owl-controls .owl-dot {
+.owl-carousel /*.owl-controls*/ .owl-dot {
 	display:inline-block;
 }
 
-.owl-carousel .owl-controls .owl-dot span,
-.owl-carousel .owl-controls .owl-dot.active span {
-    background-color:#CCCCCC;
-    border-radius:50%;
+.owl-carousel /*.owl-controls*/ .owl-dot span,
+.owl-carousel /*.owl-controls*/ .owl-dot.active span {
+    /*background-color: #CCCCCC;*/
+	border-radius:50%;
     display:block;
     margin:0 3px;
     width:16px;
 	height:16px;
 }
+.owl-carousel /*.owl-controls*/ .owl-dot span {background-color: #CCCCCC;}
 
-.owl-carousel .owl-controls .owl-nav div {
+
+.owl-carousel /*.owl-controls*/ .owl-nav div {
 	border:1px solid rgba(0,0,0,0.1);
 	transition:all 0.3s ease;
 	width:46px;
@@ -674,24 +676,24 @@ form span.required {
 	margin-top:-20px;
 }
 
-.owl-carousel .owl-controls .owl-nav div:hover {
+.owl-carousel /*.owl-controls*/ .owl-nav div:hover {
 	background-color:rgba(8, 74, 161, 1);
 	color: #FFF;
 }
 
-.owl-carousel .owl-controls .owl-nav div.owl-prev {
+.owl-carousel /*.owl-controls*/ .owl-nav div.owl-prev {
     left:-80px;
 }
 
-.owl-carousel .owl-controls .owl-nav div.owl-prev i {
+.owl-carousel /*.owl-controls*/ .owl-nav div.owl-prev i {
     margin-right:3px;
 }
 
-.owl-carousel .owl-controls .owl-nav div.owl-next {
+.owl-carousel /*.owl-controls*/ .owl-nav div.owl-next {
     right:-80px;
 }
 
-.owl-carousel .owl-controls .owl-nav div.owl-next i {
+.owl-carousel /*.owl-controls*/ .owl-nav div.owl-next i {
     margin-left:3px;
 }
 
@@ -699,17 +701,17 @@ form span.required {
     margin-bottom:0;
 }
 
-.hidden-control.owl-carousel .owl-controls .owl-nav div {
+.hidden-control.owl-carousel /*.owl-controls*/ .owl-nav div {
     opacity:0;
 	transition-duration:0s;
 	color:#FFFFFF;
 }
 
-.hidden-control.owl-carousel .owl-controls .owl-nav div.owl-prev {
+.hidden-control.owl-carousel /*.owl-controls*/ .owl-nav div.owl-prev {
     left:40px;
 }
 
-.hidden-control.owl-carousel .owl-controls .owl-nav div.owl-next {
+.hidden-control.owl-carousel /*.owl-controls*/ .owl-nav div.owl-next {
     right:40px;
 }
 
@@ -1075,7 +1077,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 /* JUMBOTRON 1 */
 
 /*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div,*/
-#jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div {
+#jumbotron-eshop-slider.hidden-control.owl-theme /*.owl-controls*/ .owl-buttons div {
     opacity:0;
 	background-color:transparent;
 	color: #FFFFFF;
@@ -1085,7 +1087,7 @@ Not good aesthetic look with pdf button on bottom of support menu
 }
 
 /*#jumbotron-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover,*/
-#jumbotron-eshop-slider.hidden-control.owl-theme .owl-controls .owl-buttons div:hover {
+#jumbotron-eshop-slider.hidden-control.owl-theme /*.owl-controls*/ .owl-buttons div:hover {
 	background-color:transparent;
 }
 
@@ -1700,7 +1702,7 @@ body #section-features .feature:hover i {
 /* BLOG POSTS */
 
 #section-blog-posts {
-	padding:50px 0;
+	padding:25px 0;
 }
 
 #section-blog-posts  h2{
@@ -3635,7 +3637,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 
 .eshop-detail .eshop-product {
 	/*margin:0 0 30px;*/
-	padding:30px;
+	/*padding:30px;*/
 	position:relative;
 }
 
@@ -4904,6 +4906,7 @@ form.event-register .form-control {
 
 	#eshop-slider {
 		margin-bottom:30px;
+		height: 100%;
 	}
 
 	.eshop-detail .eshop-product form button[type=submit] {
@@ -5862,7 +5865,8 @@ footer .navbar-nav > li > a:hover,
 #eshop .eshop-sidebar .eshop-widget .ui-slider .ui-slider-range,
 .event-ticket.highlighted,
 #jumbotron-slider .btn-inverse:hover,
-#jumbotron-slider .btn-inverse:focus
+#jumbotron-slider .btn-inverse:focus,
+.owl-carousel /*.owl-controls*/ .owl-dot.active span
 {
     background-color: #084AA1;
 }
@@ -6205,7 +6209,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.parentbox {height: 150px;}
 	.catalogImg {max-height:150px;}
 	#productImg img {max-height: 230px; max-width: 100%; height: auto;}
-	#productImg .item img {height: auto; max-width: 78px; margin: 3px auto;} /* max width of eshop slider */
+	#productImg .item img {height: auto; margin-top: 3px; max-width: 112.25px;}
 
 	.mainTitleAdjust, #mainTitleAdjust {
 		color: #333;
@@ -6223,6 +6227,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		height:2px;
 		width:377px; /* 7/88 ratio between .mainTitleAdjust font-size and width */
 	}
+	#eshop-slider.owl-carousel .owl-dots {top: -203px; margin: 0;}
 
 
 /* small */
@@ -6245,6 +6250,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.parentbox {height: 230px;}
 	.parentbox2 {height: 230px;} /*product entry img*/
 	.catHeadImg {height: 157px !important;}
+	#eshop-slider.owl-carousel .owl-dots {top: -258px;}
 }
 
 /* medium */
@@ -6285,7 +6291,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.catHeadImg {height: 249px !important;}
 	.catalogImg {max-height:175px;}
 	.parentbox {height: 175px;} /*KITS6 img in view "(Products by Category)"*/
-	#productImg .item img {max-width: 98px;}
 }
 
 
@@ -6506,7 +6511,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 #productImg img {
   vertical-align: middle;
 	background-color: #EBEBEB;
-	outline: 3px solid #DDDDDD;
+	border: 3px solid #DDDDDD;
 }
 
 #quantity {
@@ -6776,7 +6781,6 @@ footer {
 }
 
 
-#eshop-slider {margin-top: 6px;}
 .catalogImg {padding: 5px;}
 
 #content {
@@ -6819,3 +6823,14 @@ footer {
 	#about-slider .owl-stage-outer {
 		box-shadow: none;
 	}
+	
+	#eshop-slider.owl-carousel .owl-stage-outer {height: 174px;}
+	
+	@media (max-width:767px) {
+		#productImg img {max-height: 175px;}
+		.parentbox2 {height: 175px;}
+		#productImg .item img {max-width:75px;}
+	}
+
+#eshop-slider.owl-carousel {margin: 0}
+	
