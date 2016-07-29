@@ -230,22 +230,7 @@ $(document).ready(function() {
 		loop: true
 		});
 	
-	$(".catalogCategoriesSlider").owlCarousel({
-		//transitionStyle: "cassini-fade",
-		dots: false,
-		autoplayTimeout: 4000,
-		autoplay: true,
-		responsive:{
-			0:{items: 1},
-			767:{items: 2},
-			992:{items: 3},
-			1200:{items: 4}
-		},
-		loop: true,
-		autoplayHoverPause: true,
-		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
-		lazyLoad: true
-		});
+
 
 	$("#jumbotron-slider").owlCarousel({
 	  items: 1,
@@ -382,34 +367,53 @@ $(document).ready(function() {
 	$("#docSearchButton3").click( function() { goSearch3() });
 	$("#docSearchButton4").click( function() { goSearch4() });
 
-	var imgNum = $("#productImg").find('img').length -1;
+	var imgNumProduct = $("#productImg").find('img').length -1;
 	sourcelink = $('#eshop-slider img:first-child').attr('src');
-	if (imgNum <= 0) {
+	if (imgNumProduct <= 0) {
 		$('#product-detail-image').attr('src', '/images/no-image-available.png');
 		$('#product-detail-image-link').attr('href', '#');
 	} else {
 				$('#product-detail-image').attr('src', sourcelink );
 		$('#product-detail-image-link').attr('href', sourcelink );
 	};
-	if (imgNum > 1) {
+	if (imgNumProduct > 1) {
 			$('img').addClass("img-responsive centerImg");
 			$('#eshop-slider img').wrap('<div class="item"></div>');
 	};
-	function sliderNum(imgNum) { 
-		if (imgNum <= 4) { 
-			return imgNum;
+	function sliderNumProduct(imgNumProduct) { 
+		if (imgNumProduct <= 4) { 
+			return imgNumProduct;
 		} else { 
 			return 4;
 		};
 	};
 	
+	$('.catalogCategoriesSlider').each(function() {
+	$(this).owlCarousel({
+		//transitionStyle: "cassini-fade",
+		dots: false,
+		autoplayTimeout: 4000,
+		autoplay: true,
+		responsive:{
+			0:{items: 1},
+			767:{items: 2},
+			992:{items: 3},
+			1200:{items: 4}
+		},
+		rewind: $(this).find('img').length > 4,
+		dots: true,
+		autoplayHoverPause: true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		lazyLoad: true
+		});
+	})
 
-	if (imgNum > 1) {
+	if (imgNumProduct > 1) {
 		$("#eshop-slider").owlCarousel({
 			autoplayHoverPause: true,
 			autoplayTimeout: 2500,
 			autoplay: true,
-			items: sliderNum(imgNum),
+			items: sliderNumProduct(imgNumProduct),
 			rewind: true,
 			margin: 3
 		})
@@ -423,7 +427,7 @@ $(document).ready(function() {
 		$("#eshop-slider").remove();
 	};
 	
-	if (imgNum <=4) {
+	if (imgNumProduct <=4) {
 		$(".owl-controls").remove();
 	}
 

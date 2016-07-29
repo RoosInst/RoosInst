@@ -630,10 +630,10 @@ form span.required {
     margin:0 0 80px;
 }
 
-.owl-carousel .owl-stage-outer {
+/*.owl-carousel .owl-stage-outer {
 	box-shadow:0 1px 1px 1px rgba(0,0,0,0.1);
 }
-
+*/
 .owl-dots {
 	text-align:center;
 	margin-top:20px;
@@ -3555,7 +3555,7 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 	position:relative;
 	/*added border around each item*/
 	border: 2px solid #f0f0f0;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
 }
 
 .eshop-grid .eshop-product img {
@@ -6154,10 +6154,6 @@ input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus,.gsc-se
 	text-align: center;
 }
 
-#about-slider.owl-carousel, #about-slider .owl-stage-outer {
-	box-shadow: 0 0 0 0;
-}
-
 /*Fixes footer's Product Catalog text overlay resizing issue*/
 @media (min-width:992px) and (max-width:1199px) {
 	.overlay-wrapper .overlay a {
@@ -6250,7 +6246,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.parentbox {height: 230px;}
 	.parentbox2 {height: 230px;} /*product entry img*/
 	.catHeadImg {height: 157px !important;}
-	#eshop-slider.owl-carousel .owl-dots {top: -258px;}
+	#eshop-slider.owl-carousel .owl-dots {top: -8px;}
 }
 
 /* medium */
@@ -6809,28 +6805,15 @@ footer {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-#bar{
-  width: 0%;
-  max-width: 100%;
-  height: 4px;
-  background: #084AA1;
-}
-#progressBar{
-  width: 100%;
-  background: #dfdfdf;
+#eshop-slider.owl-carousel .owl-stage-outer {height: 174px;}
+
+@media (max-width:767px) {
+	#productImg img {max-height: 175px;}
+	.parentbox2 {height: 175px;}
+	#productImg .item img {max-width:75px;}
+	#eshop-slider.owl-carousel .owl-dots {top: -8px;}
+	
 }
 
-	#about-slider .owl-stage-outer {
-		box-shadow: none;
-	}
-	
-	#eshop-slider.owl-carousel .owl-stage-outer {height: 174px;}
-	
-	@media (max-width:767px) {
-		#productImg img {max-height: 175px;}
-		.parentbox2 {height: 175px;}
-		#productImg .item img {max-width:75px;}
-	}
-
-#eshop-slider.owl-carousel {margin: 0}
-	
+#eshop-slider.owl-carousel .owl-dots {margin: 31px 0 0 0;}
+#eshop-slider.owl-carousel .owl-stage {margin-top: 58px;}
