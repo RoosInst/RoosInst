@@ -229,7 +229,7 @@ $(document).ready(function() {
 		},
 		loop: true
 		});
-	
+
 
 
 	$("#jumbotron-slider").owlCarousel({
@@ -346,7 +346,7 @@ $(document).ready(function() {
 	  })();
 	//replace sign in with username when signed in, requires js.cookies.js
 	if ( Cookies.get("username") ) {
-				  $( "#username").html( Cookies.get("username") );
+				  $( "#username").html( "<i class='fa fa-user'></i>" + Cookies.get("username") );
 				  $( "#logout").removeClass("hidden");
 				  $( "#newuser").addClass("hidden");
 		}
@@ -380,14 +380,14 @@ $(document).ready(function() {
 			$('img').addClass("img-responsive centerImg");
 			$('#eshop-slider img').wrap('<div class="item"></div>');
 	};
-	function sliderNumProduct(imgNumProduct) { 
-		if (imgNumProduct <= 4) { 
+	function sliderNumProduct(imgNumProduct) {
+		if (imgNumProduct <= 4) {
 			return imgNumProduct;
-		} else { 
+		} else {
 			return 4;
 		};
 	};
-	
+
 	$('.catalogCategoriesSlider').each(function() {
 	$(this).owlCarousel({
 		//transitionStyle: "cassini-fade",
@@ -426,7 +426,7 @@ $(document).ready(function() {
 	} else {
 		$("#eshop-slider").remove();
 	};
-	
+
 	if (imgNumProduct <=4) {
 		$(".owl-controls").remove();
 	}
@@ -436,7 +436,7 @@ $(document).ready(function() {
 //replace username with sign in, hides logout
 function logout(){
 		Cookies.remove("username");
-		 $( "#username").html( "Sign in" );
+		 $( "#username").html( "<i class='fa fa-lock'></i> Sign in" );
 		 $( "#logout").addClass("hidden");
 		 $( "#newuser").removeClass("hidden");
 	};
