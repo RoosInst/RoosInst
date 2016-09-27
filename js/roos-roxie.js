@@ -481,8 +481,7 @@ function goSearch2(){
 
 function goSearch3(){
 	var docSearch3 = window.document.docsSearch3;
-	var searchPhrase3 = docSearch3.query.value.toString();  //ensures numbers will be treated as strings
-	//alert(searchPhrase2)
+	var searchPhrase3 = docSearch3.query3.value.toString();  //ensures numbers will be treated as strings
 	if(searchPhrase3==''){
 		$("#searchFail3").removeClass("hidden");
 		docSearch3.query3.value = "";

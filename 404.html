@@ -136,14 +136,15 @@
            animation: funnytext 4s ease-in-out infinite;
        }
        h1 {
-           font-size: 16rem;
+           font-size: 16em;
            color: rgba(0, 0, 0, 0.3);
            -webkit-filter: blur(3px);
            filter: blur(3px);
        }
        p {
-           font-size: 2rem;
+           font-size: 2em;
            color: rgba(0, 0, 0, 0.6);
+
        }
 
        body::after, body::before {
@@ -184,19 +185,19 @@
        }
        @-webkit-keyframes funnytext {
            0% {
-               color: rgba(0, 0, 0, 0.3);
+               color: rgba(175, 175, 175, 0.3);
                -webkit-filter: blur(3px);
            }
            30% {
-               color: rgba(0, 0, 0, 0.5);
+               color: rgba(175, 175, 175, 0.5);
                -webkit-filter: blur(1px);
            }
            65% {
-               color: rgba(0, 0, 0, 0.2);
+               color: rgba(175, 175, 175, 0.9);
                -webkit-filter: blur(5px);
            }
            100% {
-               color: rgba(0, 0, 0, 0.3);
+               color: rgba(175, 175, 175, 0.3);
                -webkit-filter: blur(3px);
            }
        }
@@ -207,15 +208,15 @@
            }
            30% {
                color: rgba(0, 0, 0, 0.5);
-               filter: blur(1px);
-           }
-           65% {
-               color: rgba(0, 0, 0, 0.2);
                filter: blur(5px);
            }
+           65% {
+               color: rgba(0, 0, 0, 0.9);
+               filter: blur(1px);
+           }
            100% {
-               color: rgba(0, 0, 0, 0.3);
-               filter: blur(3px);
+               color: rgba(0, 0, 0, 0.4);
+               filter: blur(1px);
            }
         }
     </style>
@@ -227,9 +228,9 @@
 		</div>
     <div class="center">
 		<h1>404</h1>
-		<div style="font-family: Iconconsolata; font-weight: 700;">
-			<p>ERROR<br><br>
-			<span style="font-size: 16px;">Please click to return to the home page.</span></p>
+		<div style="font-family: Inconsolata; font-weight: 700;">
+			<p>ERROR<br>
+			<span style="font-size: 20px;">Please click to return to the home page.</span></p>
 			<br><br> <!--using this instead of <hr class="space"> because hr breaks link to index page-->
 		</div>
 	</a>
@@ -282,7 +283,7 @@
                 idata.data[i + 3] = 255;
             }
             bcontext.putImageData(idata, 0, 0);
-        }
+        };
     </script>
   </body>
   </html>

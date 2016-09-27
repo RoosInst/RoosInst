@@ -42,4 +42,6 @@ a[href]:after {
 
 .tab-content > .tab-pane {display: block !important; opacity: 1 !important; visibility: visible !important}
 
+table tr td, table tr th {page-break-inside: avoid;}
+
 /*html, body {height: 99%;}*/
