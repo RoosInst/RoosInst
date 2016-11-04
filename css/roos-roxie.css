@@ -6645,7 +6645,7 @@ textarea {padding: 10px 12px !important}
 	}
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
 	.index-slideshow .item {
 			height:560px; /*45px difference from above due to titlebar shrinking on mobile*/
 	}
@@ -6825,3 +6825,84 @@ footer {
 @media (min-width:768px) {
 	.eshop-content .kitType:not(:first-of-type) {margin-top:80px;}
 }
+
+img { /*img-responsive properties from bootstrap applied to all images*/
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width:767px) {
+	.eshop-content .kitType:not(:first-of-type) {display: none;}
+}
+
+/* MEGAMENU */
+
+header.navbar .navbar-nav > li.megamenu {
+	position:static;
+}
+
+header.navbar .megamenu .dropdown-menu {
+	left:15px;
+	right:15px;
+	padding:20px 10px;
+}
+
+header.navbar .megamenu .dropdown-menu li {
+	padding:0 10px;
+	border-bottom:0;
+}
+
+header.navbar .megamenu .dropdown-menu li ul li {
+	border-bottom:1px solid #E5E5E5;
+}
+
+header.navbar .megamenu .dropdown-menu li ul li:last-child {
+	border-bottom:0;
+}
+
+header.navbar .megamenu .dropdown-menu li ul li a span {
+    margin-left:4px;
+    position:absolute;
+    right:0;
+    padding:4px 6px;
+}
+
+header.navbar .megamenu .dropdown-menu li h3 {
+	margin:0 0 15px;
+	min-height:26px;
+}
+
+header.navbar .megamenu .dropdown-menu li p {
+	margin:0;
+	line-height:24px;
+}
+
+header.navbar .megamenu .dropdown-menu li img {
+	margin-bottom:20px;
+}
+
+header.navbar .megamenu .dropdown-menu li ul li a:hover {
+	background-color:transparent;
+}
+
+.FixtureCatalogChevron {position: absolute; left: 242px;}
+@media (min-width: 768px) and (max-width: 991px) {
+	.FixtureCatalogChevron {
+	top: 345px;
+	}
+}
+@media (min-width: 992px) {
+	.FixtureCatalogChevron {
+	top: 434px;
+	left: 242px;
+	}
+}
+
+@media (max-width: 767px) {
+	.owl-dots {
+		display: none;
+	}
+}
+
+
