@@ -70,8 +70,13 @@
     <script src="/js/isotope.pkgd.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/creative-brands.js"></script>
-	<script src="/js/roos-roxie.js"></script>
+	<script src="/magicsuggest/magicsuggest.js"></script>
+	<script src="/js/roos-magicsuggest.js"></script>
+	
+    <!--<script src="/js/roos-roxie.js"></script>-->
+    
 	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
+    <script src="/js/bootstrap-hover-dropdown.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -91,7 +96,7 @@
 	<!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header hidden-xs">
+		<div class="top-header hidden-xs hidden-sm">
 			<div class="pull-left">
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
@@ -106,29 +111,22 @@
 		<header class="navbar yamm navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
-					<div class="visible-xs-block">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
 
 					<div id="title">
-						
-						<div class="hidden-xs hidden-sm">
+						<div class="hidden-sm hidden-xs">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-						
-						<div class="visible-sm">
-							<a href="/index.html">
-								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
-								<!--<div class="ROOSbanner"></div>-->
-							</a>
-						</div>
 
-						<div class="visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
 								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
 							</a>
@@ -142,10 +140,10 @@
 						<li id="nav-home" class="dropdown">
 							<a href="/index.html">Home</a>
 						</li>
-						<li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
 							<a href="/support.html">Support</a>
 						</li>
-						<li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-myAccount" class="dropdown hidden-md hidden-lg">
 							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
@@ -171,7 +169,7 @@
 							</ul>
 						</li>
 						<li id="nav-company" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown">Company<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">Company<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
 								<li><a href="/news.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>News & Events</a></li>
@@ -180,7 +178,7 @@
 								<li><a href="/contact.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Contact Us</a></li>
 							</ul>
 						</li>
-						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
+						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
 							<a class="dropdown-toggle" data-hover="dropdown" onclick="ga('send','event','nav','support','Support Tab');">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
@@ -247,11 +245,11 @@
 								</div> <!-- End of .yamm-content -->
 							</ul>
 						</li>
-						<li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-privacy" class="dropdown hidden-md hidden-lg">
 							<a href="/privacy.html">Privacy</a>
 						</li>
 					</ul> <!-- End of .nav .navbar-nav -->
-					<ul class="nav navbar-nav hidden-xs">
+					<ul class="nav navbar-nav hidden-xs hidden-sm">
 						<li style="margin-right: -12px;" class="search-form-toggle">
 							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
@@ -284,7 +282,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs hidden-sm">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
@@ -321,8 +319,9 @@
 		<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
-				document.title = "Cassini Configurations | Roos Instruments";
-				$( "#nav-products" ).addClass( "active" );
+				document.title = "Template | Roos Instruments";
+				$( "#nav-support" ).addClass( "active" );  //#choices are nav-home, nav-products, nav-services, nav-company, nav-support
+				//$( "#nav-support").empty();	//only on support.html
 			});
 		</script>
 
@@ -331,11 +330,10 @@
     =========================== -->
 		<section class="breadcrumb-wrapper">
 			<div class="container">
-				<h2>Cassini Configurations</h2>
+				<h2>Products Overview</h2>
 				<ol class="breadcrumb">
 					<li><a href="/index.html">Home</a></li>
-					<li><a href="/products.html">Products</a></li>
-					<li><a href="/infrastructure.html">Test Systems</a></li>
+					<li class="active">Products Overview</li>
 				</ol>
 			</div>
 		</section>
@@ -343,53 +341,43 @@
     	BREADCRUMB - END
     =========================== -->
 
-		<section id ="content" class="roosC container">
+	<section id ="content" class="roosC container">
+	<!-- ==========================
+    	CONTENT - START  (this is comment line can be excluded from actual content)
+    =========================== -->
 
-			<section class="content services2" id="services">
-				<div style="margin: 0;" class="text-center row">
-					<div class="col-sm-4">
-						<div class="noRadius service">
-							<i class="fa fa-space-shuttle"></i>
-							<div class="service-body">
-								<h5 class="upper">Future Technology</h5>
-								<ul id="future" class="first">
-								  <li><a href="/">60GHz <abbr title="Personal Area Networks">PANs</abbr></a></li>
-								  <li><a href="/">Ultra Low Power Tx/Rx</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="noRadius service">
-							<i class="fa fa-desktop"></i>
-							<div class="service-body">
-								<h5 class="upper">Current Devices</h5>
-								<ul id="future" class="first">
-									<li><a href="/">Automotive Radar</a></li>
-									<li><a href="/">LTE</a></li>
-									<li><a href="/">Wifi (A,B,G,N)</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="noRadius service">
-							<i class="fa fa-floppy-o"></i>
-							<div class="service-body">
-								<h6 class="upper">Legacy Equipment</h6>
-								<ul id="legacy" class="first">
-									<li><a href="/parts/CASSINI-3G">3G - CDMA 2000, UMTS</a></li>
-									<li><a href="/">RF Power Amplifiers</a></li>
-									<li><a href="/">Cordless Phones</a></li>
-									<li><a href="/">Satellite Transceivers</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<div class="row">
+  <div class="layout1">
+	<div class="leftBig col-md-8">
+	  <h2>HEADLINE</h2>
+	  <p class="main">
+		Content here
+	  </p>
+	</div>
+	<div class="rightSmall col-md-4">
+	  <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
+	</div>
+  </div> <!-- end .layout1 -->
+</div> <!-- end .row -->
 
-		</section> <!-- End of #content section-->
+  <div class="row">
+	<div class="layout2">
+	  <div class="leftSmall col-md-4">
+		<img alt="IMAGE" src="/images/IMAGE.png" class="center" />
+	  </div>
+	  <div class="rightBig col-md-8 right-element">
+		<h2>Headline</h2>
+		<p class="text-left main">
+		  Description.
+		</p>
+	  </div>
+  </div> <!-- end .layout2 -->
+</div> <!-- end .row -->
+
+<!-- ==========================
+    	CONTENT - End  (this is comment line can be excluded from actual content)
+    =========================== -->
+</section> <!-- End of #content section-->
 
 	<!-- ==========================
 		FOOTER - START
@@ -493,4 +481,3 @@
 	<!--  BOTTOM - v13 -->
   </body>
 </html>
-
