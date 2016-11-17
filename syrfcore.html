@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v28 -->
+<!-- TOP - v30 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -42,7 +42,8 @@
     =========================== -->
 	<link href="//code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/animate.css" rel="stylesheet" type="text/css">
     <link href="/css/yamm.css" rel="stylesheet" type="text/css">
@@ -69,8 +70,6 @@
     <script src="/js/isotope.pkgd.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/creative-brands.js"></script>
-	<script src="/magicsuggest/magicsuggest.js"></script>
-	<script src="/js/roos-magicsuggest.js"></script>
 	<script src="/js/roos-roxie.js"></script>
 	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
 
@@ -92,7 +91,7 @@
 	<!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header hidden-xs hidden-sm">
+		<div class="top-header hidden-xs">
 			<div class="pull-left">
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
@@ -107,22 +106,29 @@
 		<header class="navbar yamm navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
-					<div class="visible-xs-block visible-sm-block">
+					<div class="visible-xs-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
 
 					<div id="title">
-						<div class="hidden-sm hidden-xs">
+						
+						<div class="hidden-xs hidden-sm">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
+						
+						<div class="visible-sm">
+							<a href="/index.html">
+								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+								<!--<div class="ROOSbanner"></div>-->
+							</a>
+						</div>
 
-
-						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+						<div class="visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
 								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
 							</a>
@@ -136,10 +142,10 @@
 						<li id="nav-home" class="dropdown">
 							<a href="/index.html">Home</a>
 						</li>
-						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
+						<li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
 							<a href="/support.html">Support</a>
 						</li>
-						<li id="nav-mobile-myAccount" class="dropdown hidden-md hidden-lg">
+						<li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
 							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
@@ -174,7 +180,7 @@
 								<li><a href="/contact.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Contact Us</a></li>
 							</ul>
 						</li>
-						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
+						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
 							<a class="dropdown-toggle" data-hover="dropdown" onclick="ga('send','event','nav','support','Support Tab');">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
@@ -241,11 +247,11 @@
 								</div> <!-- End of .yamm-content -->
 							</ul>
 						</li>
-						<li id="nav-mobile-privacy" class="dropdown hidden-md hidden-lg">
+						<li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
 							<a href="/privacy.html">Privacy</a>
 						</li>
 					</ul> <!-- End of .nav .navbar-nav -->
-					<ul class="nav navbar-nav hidden-xs hidden-sm">
+					<ul class="nav navbar-nav hidden-xs">
 						<li style="margin-right: -12px;" class="search-form-toggle">
 							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
@@ -278,7 +284,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation (<i class="fa fa-lock"></i> Sign In Required)</a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">

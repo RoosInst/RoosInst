@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<!-- TOP - v30 -->
-<html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-	<!-- ==========================
+<html>   
+<head>
+<!-- ==========================
     	Meta Tags
     =========================== -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -37,6 +36,7 @@
     =========================== -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet" type="text/css">
 
+
 	<!-- ==========================
     	CSS
     =========================== -->
@@ -57,41 +57,34 @@
 	<link href="/css/roos-roxie.css" rel="stylesheet" type="text/css" id="pageTheme">
 	<link href="/css/print.css" rel="stylesheet" type="text/css" media="print">
 
-	<!-- ==========================
+<link href="/css/roos-roxie.css" rel="stylesheet" type="text/css" id="pageTheme">
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/css/yamm.css" rel="stylesheet" type="text/css">
+
+<!-- ==========================
 		JS
     =========================== -->
 	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-	<script src="/js/js.cookie.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
-	<script src="/js/waypoints.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
+    
+	
     <script src="/js/isotope.pkgd.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/creative-brands.js"></script>
-	<script src="/js/roos-roxie.js"></script>
 	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-  </head>
-  <body>
-	<!-- NoScript Alert -->
-	<noscript>
-		<div class="alert alert-danger">
-			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.&nbsp;&nbsp;&nbsp;<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
-		</div>
-    </noscript>
-
-	<div id="page-wrapper" class="page-boxed">
-	<!-- ==========================
+</head>
+<body>
+    
+    <div id="page-wrapper" class="page-boxed">
+<!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header hidden-xs">
+		<div class="top-header hidden-xs hidden-sm">
 			<div class="pull-left">
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
@@ -106,29 +99,22 @@
 		<header class="navbar yamm navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
-					<div class="visible-xs-block">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
 
 					<div id="title">
-						
-						<div class="hidden-xs hidden-sm">
+						<div class="hidden-sm hidden-xs">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-						
-						<div class="visible-sm">
-							<a href="/index.html">
-								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
-								<!--<div class="ROOSbanner"></div>-->
-							</a>
-						</div>
 
-						<div class="visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
 								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
 							</a>
@@ -142,10 +128,10 @@
 						<li id="nav-home" class="dropdown">
 							<a href="/index.html">Home</a>
 						</li>
-						<li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
 							<a href="/support.html">Support</a>
 						</li>
-						<li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-myAccount" class="dropdown hidden-md hidden-lg">
 							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
@@ -171,7 +157,7 @@
 							</ul>
 						</li>
 						<li id="nav-company" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown">Company<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">Company<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
 								<li><a href="/news.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>News & Events</a></li>
@@ -180,7 +166,7 @@
 								<li><a href="/contact.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Contact Us</a></li>
 							</ul>
 						</li>
-						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
+						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
 							<a class="dropdown-toggle" data-hover="dropdown" onclick="ga('send','event','nav','support','Support Tab');">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
@@ -247,11 +233,11 @@
 								</div> <!-- End of .yamm-content -->
 							</ul>
 						</li>
-						<li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-privacy" class="dropdown hidden-md hidden-lg">
 							<a href="/privacy.html">Privacy</a>
 						</li>
 					</ul> <!-- End of .nav .navbar-nav -->
-					<ul class="nav navbar-nav hidden-xs">
+					<ul class="nav navbar-nav hidden-xs hidden-sm">
 						<li style="margin-right: -12px;" class="search-form-toggle">
 							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
@@ -284,7 +270,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs hidden-sm">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
@@ -317,210 +303,7 @@
     <!-- ==========================
     	HEADER - END
     =========================== -->
-
-		<script type="text/javascript">
-			//INIT PAGE ELEMENTS
-			$(document).ready(function() {
-				document.title = "Home | Roos Instruments";
-				$( "#nav-home" ).addClass( "active" );
-				});
-		</script>
-
-
-	    <!--<div id="notice" class="hide column span-12 prepend-4">
-			<p class="text-center notice rounded" style="font-size: larger;">
-			Check out <a href="http://roos.com/parts/CASSINI/$file/CASSINI.pdf" target="_blank">CASSINI</a> and <a href="signup.html">Sign up</a> for our Newsletter.<br />
-			</p>
-		</div>-->
-
-		<section id ="content" class="roosC">
-
-    <!-- ==========================
-    	JUMBOTRON - START
-    =========================== -->
-			<section id="jumbotron">
-				<div class="jumbotron index-slideshow">
-					<div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-						<div class="item" id="index-slide-1">
-							<h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
-							<div class="container">
-								<div class="row">
-									<div class="col-xs-7">
-										<h5>When Add-On RF Can't Get the</h5>
-										<h5>Performance you Need...</h5>
-										<h5>Now There's an ATE Solution That Puts RF First.</h5>
-										<a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-2">
-							<h2 class="index-slideshow-bar">Modular Instruments... Truly</h2>
-							<div class="container">
-										<h5>It's One Thing to Say Modular.</h5>
-										<h5>It's Something Else Entirely to Do It.</h5>
-										<a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-3">
-							<h2 class="index-slideshow-bar">
-								Automotive Radar Test?
-									<span style="font-family: 'Quando';">
-										<em>Done.</em>
-									</span>
-							</h2>
-							<div class="container">
-										<h5>Production-Ready mmWave.</h5>
-										<h5>All Part of the ATE Industry's Fastest</h5>
-										<h5>and Most Accurate ATE Platform.</h5>
-										<a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-4">
-							<h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
-							<div class="container" >
-										<h5>Instruments and Interconnects</h5>
-									  <h5>in a Configurable, Scalable,</h5>
-									  <h5>and Cost-Effective Environment.</h5>
-									  <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-5">
-							<h2 class="index-slideshow-bar">Guru Knows Where Everything Goes</h2>
-							<div class="container">
-										<h5>Database Storage, Automated Backups, Distribution Control</h5>
-										<h5>Guru Brings Test and Data Management</h5>
-										<h5>to a Whole New Level.</h5>
-										<a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-    <!-- ==========================
-    	JUMBOTRON - END
-    =========================== -->
-
-	<!-- ==========================
-    	INTRODUCTION - START
-    =========================== -->
-			<section id="index-content" style="padding: 2% 0;" class="container">
-					<h1>Fast & Modular</h1>
-					<p id="index-main"><strong>Semiconductor manufacturers use our instruments to test millions of chips every year.</strong><br>
-						Roos Instruments combines more than 25 years of research into
-						modular Automated Test Equipment that leads the industry in test accuracy,
-						reliability, and time to market.
-					</p>
-			</section>
-    <!-- ==========================
-    	INTRODUCTION - END
-    =========================== -->
-
-	  </section> <!-- End of #content section-->
-
-	<!-- ==========================
-		FOOTER - START
-	=========================== -->
-		<footer class="text-center">
-			<div class="defaultCursor container">
-				<div class="row">
-					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/ri-logo-white-33.png"></a>
-							  <h3><i class="fa fa-flag"></i>Contact</h3>
-							  <div class="vcard">
-								  <div class="org">
-									  <ul class="list-unstyled">
-										  <li>
-											  <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
-											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
-										  </li>
-										  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
-										  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<ul class="brands brands-inline brands-sm brands-transition brands-circle">
-								<li><a href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-								<li><a href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-					  </div>
-					<div class="col-md-4 hidden-xs hidden-sm">
-						<h3><i class="fa fa-th-large"></i>Product Catalog</h3>
-						<div class="row" id="latest-work-footer">
-							<div class="overlay-wrapper col-sm-6">
-								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
-								<span class="overlay">
-									<a style="padding-left: 15px;" href="/apps">Systems</a>
-								</span>
-							</div>
-							<div class="overlay-wrapper col-sm-6">
-								<img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
-								<span class="overlay">
-									<a style="padding-left: 20px;" href="/fixtures">Fixtures</a>
-								</span>
-							</div>
-							<div class="overlay-wrapper col-sm-6">
-								<img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
-								<span class="overlay">
-									<a href="/accessories">Accessories</a>
-								</span>
-							</div>
-							<div class="overlay-wrapper col-sm-6">
-								<img src="/images/service.png" class="img-responsive" alt="Services">
-								<span class="overlay">
-									<a style="padding-left: 20px;" href="/services">Services</a>
-								</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4 hidden-xs">
-						<h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
-						<!-- Begin MailChimp Signup Form -->
-						<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						  <div class="form-group nospace">
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;"><input type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
-							  <fieldset>
-								<div class="input-group" style="padding-bottom: 15px;">
-								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button></span>
-								</div>
-							  </fieldset>
-							</div>
-						</form>
-						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-						<a href="/parts/CASSINI/$file/CASSINI.pdf" onclick="ga('send','event','PDF','view','Cassini')"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
-							<p style="padding-top: 5px;">Learn more about Cassini</p>
-						</a>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-						<li><a title="Roos Instruments" href="/index.html">Home</a></li>
-						<li><a title="Products Overview" href="/products.html">Products</a></li>
-						<li><a title="Services Overview" href="/services.html">Services</a></li>
-						<li><a title="Company Overview" href="/company.html">Company</a></li>
-						<li><a title="Support Overview" href="/support.html">Support</a></li>
-						<li><a title="Contact Overview" href="/contact.html">Contact</a></li>
-						<li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	<!-- ==========================
-		FOOTER - END
-    =========================== -->
-	</div>  <!-- #page-wrapper -->
-	<!-- ==========================
-    	JS
-    =========================== -->
-	<!--[if lt IE 7 ]><script src="/js/dd_belatedpng.js?v=1"></script> <![endif]-->
-	<!--  BOTTOM - v13 -->
-  </body>
+    
+    </div>
+</body>
 </html>

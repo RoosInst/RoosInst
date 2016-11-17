@@ -70,8 +70,13 @@
     <script src="/js/isotope.pkgd.min.js"></script>
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/creative-brands.js"></script>
-	<script src="/js/roos-roxie.js"></script>
+	<script src="/magicsuggest/magicsuggest.js"></script>
+	<script src="/js/roos-magicsuggest.js"></script>
+	
+    <!--<script src="/js/roos-roxie.js"></script>-->
+    
 	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
+    <script src="/js/bootstrap-hover-dropdown.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -91,7 +96,7 @@
 	<!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header hidden-xs">
+		<div class="top-header hidden-xs hidden-sm">
 			<div class="pull-left">
 				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
@@ -106,29 +111,22 @@
 		<header class="navbar yamm navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
-					<div class="visible-xs-block">
+					<div class="visible-xs-block visible-sm-block">
 						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
 
 					<div id="title">
-						
-						<div class="hidden-xs hidden-sm">
+						<div class="hidden-sm hidden-xs">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
 								<div class="ROOSbanner"></div>
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-						
-						<div class="visible-sm">
-							<a href="/index.html">
-								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
-								<!--<div class="ROOSbanner"></div>-->
-							</a>
-						</div>
 
-						<div class="visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+
+						<div class="visible-sm-block visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
 							<a href="/index.html">
 								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
 							</a>
@@ -142,10 +140,10 @@
 						<li id="nav-home" class="dropdown">
 							<a href="/index.html">Home</a>
 						</li>
-						<li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-support" class="dropdown hidden-md hidden-lg">
 							<a href="/support.html">Support</a>
 						</li>
-						<li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-myAccount" class="dropdown hidden-md hidden-lg">
 							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
@@ -171,7 +169,7 @@
 							</ul>
 						</li>
 						<li id="nav-company" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown">Company<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">Company<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
 								<li><a href="/news.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>News & Events</a></li>
@@ -180,7 +178,7 @@
 								<li><a href="/contact.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Contact Us</a></li>
 							</ul>
 						</li>
-						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
+						<li id="nav-support" class="dropdown yamm-fw hidden-xs hidden-sm">
 							<a class="dropdown-toggle" data-hover="dropdown" onclick="ga('send','event','nav','support','Support Tab');">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
@@ -247,11 +245,11 @@
 								</div> <!-- End of .yamm-content -->
 							</ul>
 						</li>
-						<li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+						<li id="nav-mobile-privacy" class="dropdown hidden-md hidden-lg">
 							<a href="/privacy.html">Privacy</a>
 						</li>
 					</ul> <!-- End of .nav .navbar-nav -->
-					<ul class="nav navbar-nav hidden-xs">
+					<ul class="nav navbar-nav hidden-xs hidden-sm">
 						<li style="margin-right: -12px;" class="search-form-toggle">
 							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
@@ -284,7 +282,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs hidden-sm">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
@@ -321,106 +319,65 @@
 		<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
-				document.title = "Home | Roos Instruments";
-				$( "#nav-home" ).addClass( "active" );
-				});
+				document.title = "Template | Roos Instruments";
+				$( "#nav-support" ).addClass( "active" );  //#choices are nav-home, nav-products, nav-services, nav-company, nav-support
+				//$( "#nav-support").empty();	//only on support.html
+			});
 		</script>
 
-
-	    <!--<div id="notice" class="hide column span-12 prepend-4">
-			<p class="text-center notice rounded" style="font-size: larger;">
-			Check out <a href="http://roos.com/parts/CASSINI/$file/CASSINI.pdf" target="_blank">CASSINI</a> and <a href="signup.html">Sign up</a> for our Newsletter.<br />
-			</p>
-		</div>-->
-
-		<section id ="content" class="roosC">
-
     <!-- ==========================
-    	JUMBOTRON - START
+    	BREADCRUMB - START
     =========================== -->
-			<section id="jumbotron">
-				<div class="jumbotron index-slideshow">
-					<div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-						<div class="item" id="index-slide-1">
-							<h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
-							<div class="container">
-								<div class="row">
-									<div class="col-xs-7">
-										<h5>When Add-On RF Can't Get the</h5>
-										<h5>Performance you Need...</h5>
-										<h5>Now There's an ATE Solution That Puts RF First.</h5>
-										<a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-2">
-							<h2 class="index-slideshow-bar">Modular Instruments... Truly</h2>
-							<div class="container">
-										<h5>It's One Thing to Say Modular.</h5>
-										<h5>It's Something Else Entirely to Do It.</h5>
-										<a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-3">
-							<h2 class="index-slideshow-bar">
-								Automotive Radar Test?
-									<span style="font-family: 'Quando';">
-										<em>Done.</em>
-									</span>
-							</h2>
-							<div class="container">
-										<h5>Production-Ready mmWave.</h5>
-										<h5>All Part of the ATE Industry's Fastest</h5>
-										<h5>and Most Accurate ATE Platform.</h5>
-										<a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-4">
-							<h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
-							<div class="container" >
-										<h5>Instruments and Interconnects</h5>
-									  <h5>in a Configurable, Scalable,</h5>
-									  <h5>and Cost-Effective Environment.</h5>
-									  <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-
-						<div class="item" id="index-slide-5">
-							<h2 class="index-slideshow-bar">Guru Knows Where Everything Goes</h2>
-							<div class="container">
-										<h5>Database Storage, Automated Backups, Distribution Control</h5>
-										<h5>Guru Brings Test and Data Management</h5>
-										<h5>to a Whole New Level.</h5>
-										<a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-    <!-- ==========================
-    	JUMBOTRON - END
-    =========================== -->
-
+		<section class="breadcrumb-wrapper">
+			<div class="container">
+				<h2>Products Overview</h2>
+				<ol class="breadcrumb">
+					<li><a href="/index.html">Home</a></li>
+					<li class="active">Products Overview</li>
+				</ol>
+			</div>
+		</section>
 	<!-- ==========================
-    	INTRODUCTION - START
-    =========================== -->
-			<section id="index-content" style="padding: 2% 0;" class="container">
-					<h1>Fast & Modular</h1>
-					<p id="index-main"><strong>Semiconductor manufacturers use our instruments to test millions of chips every year.</strong><br>
-						Roos Instruments combines more than 25 years of research into
-						modular Automated Test Equipment that leads the industry in test accuracy,
-						reliability, and time to market.
-					</p>
-			</section>
-    <!-- ==========================
-    	INTRODUCTION - END
+    	BREADCRUMB - END
     =========================== -->
 
-	  </section> <!-- End of #content section-->
+	<section id ="content" class="roosC container">
+	<!-- ==========================
+    	CONTENT - START  (this is comment line can be excluded from actual content)
+    =========================== -->
+
+<div class="row">
+  <div class="layout1">
+	<div class="leftBig col-md-8">
+	  <h2>HEADLINE</h2>
+	  <p class="main">
+		Content here
+	  </p>
+	</div>
+	<div class="rightSmall col-md-4">
+	  <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
+	</div>
+  </div> <!-- end .layout1 -->
+</div> <!-- end .row -->
+
+  <div class="row">
+	<div class="layout2">
+	  <div class="leftSmall col-md-4">
+		<img alt="IMAGE" src="/images/IMAGE.png" class="center" />
+	  </div>
+	  <div class="rightBig col-md-8 right-element">
+		<h2>Headline</h2>
+		<p class="text-left main">
+		  Description.
+		</p>
+	  </div>
+  </div> <!-- end .layout2 -->
+</div> <!-- end .row -->
+
+<!-- ==========================
+    	CONTENT - End  (this is comment line can be excluded from actual content)
+    =========================== -->
+</section> <!-- End of #content section-->
 
 	<!-- ==========================
 		FOOTER - START
