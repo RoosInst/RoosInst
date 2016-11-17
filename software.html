@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v28 -->
+<!-- TOP - v30 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -42,7 +42,8 @@
     =========================== -->
 	<link href="//code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
     <link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/animate.css" rel="stylesheet" type="text/css">
     <link href="/css/yamm.css" rel="stylesheet" type="text/css">
@@ -278,7 +279,7 @@
 						<div class="features-item" id="features-tabs-panels">
 							<ul class="nav nav-tabs">
 								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation (<i class="fa fa-lock"></i> Sign In Required)</a></li>
+								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs hidden-sm">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane fade in active" id="google-search">
@@ -337,9 +338,92 @@
     	BREADCRUMB - END
     =========================== -->
 
+	 <!-- ==========================
+    	PRICING - START
+    =========================== -->
+    <section class="content" id="pricing">
+    	<div class="container">
+        	<h2>RI System Software</h2>
+            <div class="row">
+
+                <!-- Pricing plan -->
+            	<div class="col-sm-4">
+                	<div class="pricing-plan">
+                        <h3>Cassini</h3>
+                        <div class="pricing-plan-price">
+						  <span class="pricing-plan-number"><i class="fa fa-microchip"></i></span>
+                            <span class="pricing-plan-text">Automated Test Equipment</span>
+                        </div>
+                        <ul class="list-unstyled">
+						   <li><i class="fa fa-flash"></i><b>Real Time</b> Measurements</li>
+                           <li><i class="fa fa-save"></i><b>Guru</b> Apps & Data</li>
+                            <li><i class="fa fa-pencil-square-o"></i><b>Graphical</b> Integrated Development Environment</li>
+                            <li><i class="fa fa-check"></i><b>Measurement Expert</b> System</li>
+                            <li><i class="fa fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+							<li><i class="fa fa-upload"></i>Regular Software Updates</li>
+							<li><i class="fa fa-database"></i>Effortless Data Collection</li>
+							<li><i class="fa fa-hand-o-up"></i><b>Touch UI</b> option for Production</li>
+                        </ul>
+                        <a href="/apps" class="btn btn-lg btn-primary">Configure ATE</a>
+                    </div>
+                </div>
+
+                <!-- Pricing plan -->
+            	<div class="col-sm-4">
+                	<div class="pricing-plan popular">
+                        <h3>Desktop</h3>
+						<p>Offline Development</p>
+                        <div class="pricing-plan-price">
+						  <span class="pricing-plan-number"><i class="fa fa-desktop"></i></span>
+                        	<span class="pricing-plan-text">Desktop Virtualization</span>
+                        </div>
+                        <ul class="list-unstyled">
+                        	<li><i class="fa fa-flash"></i><b>Simulated</b> Instruments</li>
+                           <li><i class="fa fa-save"></i><b>Guru</b> Apps & Data</li>
+                            <li><i class="fa fa-pencil-square-o"></i><b>Graphical</b> Integrated Development Environment</li>
+							<li><i class="fa fa-check"></i><b>Measurement Expert</b> System</li>
+                            <li><i class="fa fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+							<li><i class="fa fa-upload"></i>Regular Software Updates</li>
+							<li><i class="fa fa-database"></i>Effortless Data Collection</li>
+							<li><i class="fa fa-desktop"></i>4K for Development</li>
+                        </ul>
+                        <a href="/parts/RIK0126A" class="btn btn-lg btn-primary">Purchase</a>
+                    </div>
+                </div>
+
+                <!-- Pricing plan -->
+            	<div class="col-sm-4">
+                	<div class="pricing-plan">
+                        <h3>Network Appliance</h3>
+                        <div class="pricing-plan-price">
+						  	<span class="pricing-plan-number"><i class="fa fa-users"></i></span>
+							<span class="pricing-plan-text">via Remote Desktop</span>
+                        </div>
+                        <ul class="list-unstyled">
+						  <li><i class="fa fa-flash"></i><b>Simulated</b> Instruments</li>
+
+                           <li><i class="fa fa-save"></i><b>Guru</b> Apps & Data</li>
+                            <li><i class="fa fa-pencil-square-o"></i><b>Graphical</b> Integrated Development Environment</li>
+							<li><i class="fa fa-check"></i><b>Measurement Expert</b> System</li>
+                            <li><i class="fa fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+							<li><i class="fa fa-upload"></i>Regular Software Updates</li>
+							<li><i class="fa fa-database"></i>Effortless Data Collection</li>
+							<li><i class="fa fa-flash"></i><b>8 or more</b> Simultaneous Workstations</li>
+                        </ul>
+                        <a href="#" class="btn btn-lg btn-primary">Purchase</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==========================
+    	PRICING - END
+    =========================== -->
+
 		<section id ="content" class="roosC container">
 			<h5>Software Architecture</h5>
-			<p class="main">
+			<p>
 				From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE
 				hardware and software. We found the best results by using a state-based approach in our software; it allows the
 				software's commands to operate on the hardware components as state-based objects. It becomes easier to develop
@@ -459,7 +543,7 @@
 
 			<hr>
 			<h5>Rapid Development</h5>
-			<p class="main">
+			<p>
 				Simple, reliable test hardware driven by novel system software sets
 				the RI tester apart from the competition. Designed to make fundamental
 				measurements, the system hardware is tailored for speed, reliability and
@@ -475,7 +559,7 @@
 			</p>
 
 			<h5>Graphical Test Plan Creation Tools</h5>
-			<p class="main">
+			<p>
 				Test plan development plays a crucial role in the time-to-market equation. RI
 				software provides the tools that enable engineers to quickly and easily debug
 				tests, revise test programs, document, and analyze test data. Test plan creation
@@ -490,7 +574,7 @@
 			</p>
 
 			<h5>Measurement Expert System</h5>
-			<p class="main">
+			<p>
 				An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
 				This is especially true when production testing requires a durable DUT interface, consistency across multiple testers,
 				and fast test times.  Cassini integrates 80 collective years of microwave expertise into its workflow.
@@ -498,7 +582,7 @@
 			</p>
 
 			<h5>Optimization Ensures Maximum Performance</h5>
-			<p class="main">
+			<p>
 				RI's test plan compiler and optimizer automatically considers time requirements
 				for system state changes, identifies duplicate measurement states, and
 				restructures the test sequence for highest measurement speed. Execution speed is
@@ -515,7 +599,7 @@
 
 
 			<h5>Effortless Data Collection</h5>
-			<p class="main">
+			<p>
 				Whether characterizing a part with hundreds of parameters or performing
 				production testing with only a few parameters, capturing and storing measurement
 				data is effortless with the integrated RI database. Test plans automatically
@@ -526,7 +610,7 @@
 			</p>
 
 			<h5>Scalable User Interface</h5>
-			<p class="main">
+			<p>
 				Log-on and security features of the RI software automatically tailor the user
 				interface to fit the various requirements of the current user. System operators
 				can easily select tests and start and stop the tester with a click of the mouse.
@@ -538,28 +622,34 @@
 				our data export formats to support existing data collection systems.
 			</p>
 
-			<h5>RTalk - ROOS on JVM</h5>
-			<p class="main">
-				ROOS development tools are moving to a more capable environment based on the
-				Java Virtual Machine.  "RTalk" provides a Smalltalk compatible emulation layer
+			<h5>RTalk - Smalltalk 'Live' Environment on the JVM</h5>
+			<p>
+				RI Smalltalk developers are developing apps that can run within the Java virtual machine.  "RTalk" provides a Smalltalk compatible emulation layer
 				that implements a dynamic language on the JVM.
 			</p>
-			<ul class="main">
-				<li><a href="http://wiki.jvmlangsummit.com/RTalk:_a_Smalltalk_%27Live%27_Environment_Built_on_the_JVM">
-					"Live" Smalltalk Environment on JVM
-				</a> presentation by Mark Roos</li>
-				<li><a href="http://wiki.jvmlangsummit.com/Building_a_Dynamic_Language_on_the_JVM">
-					Smalltalk Dynamic Lanugage on JVM
-				</a> workshop @ JVM Language Summit
+			<ul>
+				<li>
+				  <div class="btn-group" role="group">
+						<a href="http://medianetwork.oracle.com/video/player/1785452097001" class="btn btn-default"><i class="fa fa-play"></i>Watch</a>
+						<a href="http://wiki.jvmlangsummit.com/images/7/73/Roos-Rtalk12.pdf" class="btn btn-default"><i class="fa fa-desktop"></i>Slides</a>
+				  </div>
+				  "Live" Smalltalk Environment on JVM presentation by Mark Roos at the <a href="http://www.oracle.com/technetwork/java/javase/community/jvmls2012-1840099.html" frame="_new">JVM Language Summit 2012</a>
+				</li>
+				<li>
+				   <div class="btn-group" role="group">
+					  <a href="http://medianetwork.oracle.com/video/player/1113248955001" class="btn btn-default"><i class="fa fa-play"></i>Watch</a>
+					  <a href="http://www.wiki.jvmlangsummit.com/images/e/e5/Roos-Rtalk.pdf" class="btn btn-default"><i class="fa fa-desktop"></i>Slides</a>
+				   </div>
+					Smalltalk Dynamic Lanugage on JVM at the <a href="http://www.oracle.com/technetwork/java/javase/community/jvmls2011-sessions-461516.html">JVM Language Summit 2011</a>
 				</li>
 			</ul>
 
 			<h5>Rich Interactive Test Database - Evolution of STDF</h5>
-			<p class="main">
+			<p>
 				Rich Interactive Test Database (RITdb) is the next generation file format for storing and processing testdata.  Cassini systems natively support
 				RITdb.  Download the STDF translator and source code below.
 			</p>
-			<ul class="main">
+			<ul>
 				<li><a href="/web/stdfTranslatorV51.zip">Java STDF Translator</a> version 51</li>
 				<li><a href="/web/stdfTranslatorV51JavaSrc.zip">Java STDF Translator Source Code</a> version 51</li>
 			</ul>
