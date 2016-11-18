@@ -6919,10 +6919,6 @@ header.navbar .megamenu .dropdown-menu li ul li a:hover {
 		padding-right:10px;
 	}
 	
-	.navbar-nav > li > .dropdown-menu {
-		min-width:240px;
-	}
-	
 	.dropdown-menu > li > a {
 		font-size:13px;
 	}
