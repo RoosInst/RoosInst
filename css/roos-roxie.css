@@ -6454,7 +6454,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 textarea {padding: 10px 12px !important}
 
-@media (max-width:991px) {
+@media (max-width:767px) {
 	.nav.vertical-nav > li > a:hover, .navbar-default .navbar-nav .dropdown-menu > li > a:hover {
 		padding-left: 10px;
 		color: #555;
@@ -6473,11 +6473,13 @@ textarea {padding: 10px 12px !important}
 	color: #555;
 }
 
-@media (max-width:991px) {
+@media (max-width:767px) {
 	.nav.vertical-nav > li:hover, .navbar-default .navbar-nav .dropdown-menu > li:hover {background-color: #E5E5E5;}
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {background-color: #E5E5E5; color: #555;}
 	.navbar-default .navbar-nav .dropdown-menu > li > a:hover { padding: 8px 10px 8px 15px; background-color: #E5E5E5; color: #555;} /*without hover, padding is 10px left, so 5px more*/
 	.dropdown-menu > li > a { background-color: #F8F8F8;}
+	
+	#nav-products {margin-top: 10px;}
 }
 
 .nav.vertical-nav > li:hover a { padding-left: 5px; color: #555;}

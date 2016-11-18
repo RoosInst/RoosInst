@@ -85,14 +85,6 @@ $(window).scroll(function(){
 			};
 
 $(document).ready(function() {
-	//NAVBAR
-	$('.navbar-main-menu > li.dropdown').mouseenter(function() {
-		$(this).addClass('open');
-	});
-
-	$('.navbar-main-menu > li.dropdown').mouseleave(function() {
-		$(this).removeClass('open');
-	});
 
 	var minimum = 0;
 	var maximum = 90;
