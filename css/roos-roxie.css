@@ -6712,6 +6712,9 @@ footer {
 @media (min-width:768px) {
 	.eshop-content .kitType:not(:first-of-type) {margin-top:80px;}
 }
+@media (max-width:767px) {
+	.eshop-content .kitType:not(:first-of-type) {margin-top:40px;}
+}
 
 img { /*img-responsive properties from bootstrap applied to all images*/
 	display: block;
@@ -6719,9 +6722,9 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 	height: auto;
 }
 
-@media (max-width:767px) {
+/*@media (max-width:767px) {
 	.eshop-content .kitType:not(:first-of-type) {display: none;}
-}
+}*/
 
 /* MEGAMENU */
 /*
