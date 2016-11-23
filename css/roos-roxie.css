@@ -539,7 +539,7 @@ form span.required {
 }*/
 
 .input-group .form-control {
-	height: 40px;
+	height: 38px; /*prev 40*/
 	border-radius:4px 0 0 4px;
 }
 
@@ -1387,7 +1387,7 @@ body .jumbotron5 .btn:first-child:hover {
 }
 
 .content-full {
-	text-align:center;
+	/*text-align:center;*/ /*not expected in forms*/
 	height:auto !important; /* real browsers */
 	height:100%; /* IE6: treaded as min-height*/
 	min-height:100%; /* real browsers */
@@ -1763,9 +1763,9 @@ body #section-features .feature:hover i {
 	text-decoration:none;
 }
 
-#section-blog-posts .btn {
+#section-blog-posts .btn,   #section-blog-posts  {
 	margin-top:50px;
-	color:#FFFFFF;
+	color:#AAA; /*prev FFFFFFF*/
 }
 
 /* PORTFOLIO */
@@ -5750,7 +5750,13 @@ footer .navbar-nav > li > a:hover,
 .event-ticket.highlighted,
 #jumbotron-slider .btn-inverse:hover,
 #jumbotron-slider .btn-inverse:focus,
-.owl-carousel /*.owl-controls*/ .owl-dot.active span
+.owl-carousel /*.owl-controls*/ .owl-dot.active span,
+
+#section-blog-posts,
+#section-testimonials,
+#section-statistics,
+.jumbotron1
+
 {
     background-color: #084AA1;
 }
@@ -5804,12 +5810,6 @@ footer .navbar-nav > li > a:hover,
 	background-image: linear-gradient(rgba(8, 74, 161, 0.6), rgba(8, 74, 161, 0.6)),url(../images/gplaypattern.png);
 }
 
-#section-blog-posts,
-#section-testimonials,
-#section-statistics,
-.jumbotron1 {
-	background-image: linear-gradient(rgba(8, 74, 161, 0.6), rgba(8, 74, 161, 0.6)), url(../images/bg3.jpg);
-}
 
 @media (max-width:991px) {
 	.navbar-default .navbar-toggle:hover,
@@ -6129,7 +6129,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.catalogImg {max-height:230px; width: initial !important; height: initial !important;}
 	.parentbox {height: 230px;}
 	.parentbox2 {height: 230px;} /*product entry img*/
-	.catHeadImg {height: 157px !important;}
 	#eshop-slider.owl-carousel .owl-dots {top: -8px;}
 }
 
@@ -6168,7 +6167,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	#nav-tag {font-size: 18px;}
 	.mainTitleAdjust, #mainTitleAdjust { font-size: 35px; margin-top: -1px;}
 	.ROOSbanner {width: 440px;} /* 7/88 ratio between mainTitleAdjust font-size and width */
-	.catHeadImg {height: 249px !important;}
 	.catalogImg {max-height:175px;}
 	.parentbox {height: 175px;} /*KITS6 img in view "(Products by Category)"*/
 }
@@ -6547,8 +6545,6 @@ ol[type="1"] {margin-left: 40px;}
 .nav.vertical-nav > li:hover {background-color: transparent;} /*overwrites roxie, removes colored background on xs-sm support page links on hover*/
 .modal-body .tab-content { background-color: #FFF;}
 
-.catHeadImg {width: auto !important;} /*catalog head images (Fixture, Accessories, Service & Support)*/
-
 @media (max-width: 767px) {
 	#eshop .eshop-banner div {
 		text-align: center;  /*centers Catalog head images in xs */
@@ -6727,54 +6723,57 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 }*/
 
 /* MEGAMENU */
-/*
-header.navbar .navbar-nav > li.megamenu {
+
+ li.megamenu {
 	position:static;
 }
 
-header.navbar .megamenu .dropdown-menu {
+.megamenu .dropdown-menu {
 	left:15px;
 	right:15px;
 	padding:20px 10px;
 }
 
-header.navbar .megamenu .dropdown-menu li {
+.megamenu .dropdown-menu li {
 	padding:0 10px;
 	border-bottom:0;
 }
 
-header.navbar .megamenu .dropdown-menu li ul li {
+.megamenu .dropdown-menu li ul li {
 	border-bottom:1px solid #E5E5E5;
 }
 
-header.navbar .megamenu .dropdown-menu li ul li:last-child {
+.megamenu .dropdown-menu li ul li:last-child {
 	border-bottom:0;
 }
 
-header.navbar .megamenu .dropdown-menu li ul li a span {
+.megamenu .dropdown-menu li ul li a span {
     margin-left:4px;
     position:absolute;
     right:0;
     padding:4px 6px;
 }
 
-header.navbar .megamenu .dropdown-menu li h3 {
+.megamenu .dropdown-menu li h3 {
 	margin:0 0 15px;
 	min-height:26px;
 }
 
-header.navbar .megamenu .dropdown-menu li p {
+.megamenu .dropdown-menu li p {
 	margin:0;
 	line-height:24px;
 }
 
-header.navbar .megamenu .dropdown-menu li img {
+.megamenu .dropdown-menu li img {
 	margin-bottom:20px;
 }
 
-header.navbar .megamenu .dropdown-menu li ul li a:hover {
+.megamenu .dropdown-menu li ul li a:hover {
 	background-color:transparent;
 }*/
+
+
+
 
 .FixtureCatalogChevron {position: absolute; left: 242px;}
 
@@ -6926,3 +6925,5 @@ header.navbar .megamenu .dropdown-menu li ul li a:hover {
 		font-size:13px;
 	}
 }
+
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {margin-top: 0;}
