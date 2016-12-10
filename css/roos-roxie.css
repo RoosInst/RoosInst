@@ -6370,18 +6370,15 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 }
 
 
-@media (max-width: 991px) {
-  #nav-home > a, #nav-mobile-support > a, #nav-mobile-privacy > a {
+@media (max-width: 767px) {
+  #nav-home > a, #nav-mobile-support > a, #nav-mobile-privacy > a, #nav-mobile-myAccount > a {
   font-weight: 700;
   color: rgb(0,149,215)/* !important*/;
   text-decoration: none;
   }
-}
 
-@media (max-width: 991px) {
-  #nav-home.active > a, #nav-mobile-support.active > a, #nav-mobile-privacy.active > a,
-  #nav-home:hover > a, #nav-mobile-support:hover > a, #nav-mobile-privacy:hover > a{
-  color: #FFF;
+  #nav-home:hover > a, #nav-mobile-support:hover > a, #nav-mobile-privacy:hover > a, #nav-mobile-myAccount:hover > a{
+  color: #1280ed;
   }
 }
 
@@ -6477,7 +6474,7 @@ textarea {padding: 10px 12px !important}
 	.navbar-default .navbar-nav .dropdown-menu > li > a:hover { padding: 8px 10px 8px 15px; background-color: #E5E5E5; color: #555;} /*without hover, padding is 10px left, so 5px more*/
 	.dropdown-menu > li > a { background-color: #F8F8F8;}
 	
-	#nav-products {margin-top: 10px;}
+	#nav-products {margin-top: 15px;}
 }
 
 .nav.vertical-nav > li:hover a { padding-left: 5px; color: #555;}
@@ -6889,7 +6886,7 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 		float:none;
 		box-shadow:none;
 		border:0;
-		margin-bottom:10px;
+		margin-bottom:15px;
 	}
 
 	.navbar-nav > li:last-child > .dropdown-menu {
@@ -6927,3 +6924,12 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {margin-top: 0;}
+
+@media (max-width: 767px) {
+.navbar-nav .dropdown-menu>li>a {
+	line-height: 20px;
+}
+	
+	.navbar-default .navbar-nav a.dropdown-toggle, .navbar-default .navbar-nav a:hover.dropdown-toggle {background-color: #4677B8; color: #FFF;}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {background-color: #084AA1;}
+}
