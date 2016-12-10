@@ -2,7 +2,7 @@
 <html>
   <!-- head for 404s v2 -->
   <head>
-      <title>404 Page Not Found | Roos Instruments</title>
+      <title>Roos Training Lab Server | Roos Instruments</title>
 	 <!-- ==========================
     	Meta Tags
     =========================== -->
@@ -122,7 +122,7 @@
 
        .center  {
 			max-height: 400px;
-			max-width: 500px;
+			max-width: 60%;
 			margin: auto;
 			position: absolute;
 			top: 0; left: 0; bottom: 0; right: 0;
@@ -137,13 +137,13 @@
        }
        h1 {
            font-size: 16em;
-           color: rgba(0, 0, 0, 0.3);
+           color: rgba(224, 224, 224, 0.3);
            -webkit-filter: blur(3px);
            filter: blur(3px);
        }
        p {
            font-size: 2em;
-           color: rgba(0, 0, 0, 0.6);
+           color: rgba(214, 214, 214, 0.6);
 
        }
 
@@ -220,50 +220,22 @@
     </style>
 
     <canvas id="canvas" hidden></canvas>
-	<a href="index.html">
+
 		<div class="fullScreen">
 			<img src="/images/transparent-pixel.png" style="cursor:pointer; width:100%; height:100%;">
 		</div>
     <div class="center">
-		<h1>404</h1>
+		<h1>LAB</h1>
 		<div style="font-family: Inconsolata; font-weight: 700;">
-			<p>ERROR<br>
-			<span style="font-size: 20px;">Please click to return to the home page.</span></p>
-			<br><br> <!--using this instead of <hr class="space"> because hr breaks link to index page-->
+			<p>Roos Instruments</p>
+			  <br><br>
 		</div>
-	</a>
 		<div class="main well" style="font-weight: 900; border-radius: 10px; font-size: 18px; background-color: rgba(255, 255, 255, 0.3)">
-         This page can no longer be found.<br>
-		Find what your looking for:<br>
-		<a href="javascript: onClick=history.back()">Go Back</a> or
-				<a class="" href="#" data-toggle="modal" data-target="#searchModal">Search our website</a>.<br>
-		<small>Feel this was a mistake? Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</a> for assistance with this page, or
-		contact our <a href="/support.html">experienced application engineers</a> for product and technical questions.<br>
-		In the meantime, check out our <a href="/rik">RI Kit Portfolio</a> of accessories or browse <a href="/docs">techinical documentation</a> for aplpication notes, white papers, and more.</small>
-
-		<!-- Modal -->
-		<div id="searchModal" class="modal fade" role="dialog">
-			<div class="modal-dialog modal-lg">
-
-			<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Search</h3>
-					</div>
-					<div class="modal-body">
-						<div class="reset-box-sizing" id="search">
-							<gcse:search></gcse:search>
-						</div> <!-- end of #search -->
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+        Please connect via <a href="https://roos.com/parts/RIK0126A">Cassini Virtualbox Workstation</a> or via
+		<a href="https://technet.microsoft.com/en-us/library/dn473009(v=ws.11).aspx">Remote Desktop Client</a>.
 		</div>
 	</div>
+
 
     <script>
          var canvas = document.getElementById('canvas'),
