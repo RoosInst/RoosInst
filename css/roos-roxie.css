@@ -545,7 +545,7 @@ form span.required {
 
 .input-group .btn {
 	padding: 9px 13px 8px;
-	font-size:14px;
+	font-size:13px;
 	margin:0;
 }
 
@@ -1764,7 +1764,7 @@ body #section-features .feature:hover i {
 }
 
 #section-blog-posts .btn,   #section-blog-posts  {
-	margin-top:50px;
+	/*margin-top:50px;*/
 	color:#AAA; /*prev FFFFFFF*/
 }
 
@@ -6726,8 +6726,8 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 }
 
 .megamenu .dropdown-menu {
-	left:15px;
-	right:15px;
+/*	left:15px;
+	right:15px;*/
 	padding:20px 10px;
 }
 
@@ -6926,10 +6926,15 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {margin-top: 0;}
 
 @media (max-width: 767px) {
-.navbar-nav .dropdown-menu>li>a {
-	line-height: 20px;
-}
-	
+	.navbar-nav .dropdown-menu>li>a {line-height: 20px;}
 	.navbar-default .navbar-nav a.dropdown-toggle, .navbar-default .navbar-nav a:hover.dropdown-toggle {background-color: #4677B8; color: #FFF;}
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {background-color: #084AA1;}
+	
+	#searchKits {margin-bottom: 15px}
+	#vShiftChevron {top: 60px;}
+	#section-blog-posts {padding-bottom: 10px;}
+}
+
+@media (min-width: 768px) {
+	#vShiftChevron {top: 7px;}
 }
