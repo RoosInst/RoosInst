@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v31 -->
+<!-- TOP - v34 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -40,8 +40,8 @@
 	<!-- ==========================
     	CSS
     =========================== -->
-	<link href="//code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<!--	<link href="//code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">-->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -60,8 +60,8 @@
 	<!-- ==========================
 		JS
     =========================== -->
-	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="/js/jquery-2.2.4.min.js"></script>
+<!--    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>-->
 	<script src="/js/js.cookie.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
@@ -92,18 +92,20 @@
     	HEADER - START
     =========================== -->
 		<div class="top-header hidden-xs">
-			<div class="pull-left">
-				<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
-				<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
-			</div>
-			<div class="header-item pull-right">
-			  <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
-			  <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fa fa-lock"></i>Sign in</span>&nbsp;&nbsp;</a>
-			  <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
+			<div class="container">
+				<div class="pull-left">
+					<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
+					<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
+				</div>
+				<div class="header-item pull-right">
+					<span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
+					<a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fa fa-lock"></i>Sign in</span>&nbsp;&nbsp;</a>
+					<span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
+				</div>
 			</div>
 		</div>
 
-		<header class="navbar yamm navbar-default navbar-static-top">
+		<header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
 			<div class="container">
 				<div class="navbar-header">
 					<div class="visible-xs-block">
@@ -112,7 +114,7 @@
 					</div>
 
 					<div id="title">
-
+						
 						<div class="hidden-xs hidden-sm">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
@@ -120,7 +122,7 @@
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-
+						
 						<div class="visible-sm">
 							<a href="/index.html">
 								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
@@ -149,7 +151,7 @@
 							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
 						</li>
 						<li id="nav-products" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Products<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Products<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="/products.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
 								<li><a href="/infrastructure.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Test Systems</a></li>
@@ -161,7 +163,7 @@
 							</ul>
 						</li>
 						<li id="nav-services" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Services<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Services<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 							   <li><a href="/services.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
 							   <li><a href="/turnkey.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>Turnkey</a></li>
@@ -171,7 +173,7 @@
 							</ul>
 						</li>
 						<li id="nav-company" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Company<i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Company<i class="fa fa-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
 								<li><a href="/news.html">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-double-right"></i>News & Events</a></li>

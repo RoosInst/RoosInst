@@ -6933,8 +6933,35 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 	#searchKits {margin-bottom: 15px}
 	#vShiftChevron {top: 60px;}
 	#section-blog-posts {padding-bottom: 10px;}
+	
+	table.fixedHeader-floating {top: 50px !important;}
 }
 
 @media (min-width: 768px) {
 	#vShiftChevron {top: 7px;}
+	
+	table.fixedHeader-floating {top: 70px !important;}
+}
+
+/* Changing dataTable's default background-image path from DataTables-1.10.13/images/sort_* to /images */
+table.dataTable thead .sorting_asc {background-image: url(/images/sort_asc.png) !important;}
+table.dataTable thead .sorting_desc {background-image: url(/images/sort_desc.png) !important;}
+table.dataTable thead .sorting {background-image: url(/images/sort_both.png) !important;}
+
+.dataTables_wrapper .dataTables_filter {/*text-align: center !important;*/ float: left !important}
+
+.eshop-content {margin-top: 10px;}
+
+table.dataTable select {width: 100%;}
+
+table.dataTable td li {
+    max-width: 80vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#productImg .childbox img {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
 }
