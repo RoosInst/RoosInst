@@ -367,23 +367,22 @@ $(document).ready(function() {
 	} else {
 				$('#product-detail-image').attr('src', sourcelink );
 		$('#product-detail-image-link').attr('href', sourcelink );
-	};
+	}
 	if (imgNumProduct > 1) {
 			$('img').addClass("img-responsive centerImg");
 			$('#eshop-slider img').wrap('<div class="item"></div>');
-	};
+	}
 	function sliderNumProduct(imgNumProduct) {
 		if (imgNumProduct <= 4) {
 			return imgNumProduct;
 		} else {
 			return 4;
-		};
-	};
+		}
+	}
 
 	$('.catalogCategoriesSlider').each(function() {
 	$(this).owlCarousel({
 		//transitionStyle: "cassini-fade",
-		dots: false,
 		autoplayTimeout: 4000,
 		autoplay: true,
 		responsive:{
@@ -393,12 +392,13 @@ $(document).ready(function() {
 			1200:{items: 4}
 		},
 		rewind: $(this).find('img').length > 4,
-		dots: true,
 		autoplayHoverPause: true,
+		nav: true,
 		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		dots: true,
 		lazyLoad: true
 		});
-	})
+	});
 
 	if (imgNumProduct > 1) {
 		$("#eshop-slider").owlCarousel({

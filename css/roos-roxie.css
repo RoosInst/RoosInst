@@ -636,7 +636,8 @@ form span.required {
 */
 .owl-dots {
 	text-align:center;
-	margin-top:20px;
+	/*margin-top:20px; makes nav arrows appear twice*/
+	padding-top: 20px; /*fixes missing margin-top without nav arrows triggering twice*/
 }
 
 .owl-carousel /*.owl-controls*/ .owl-dots {
@@ -6186,7 +6187,7 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		margin-left: auto;
 		max-height: 150px;
 		height: auto;
-		width: auto;
+		width: auto !important; /*owl carousel wants to override to 100% width*/
 		max-width: 252px !important; /* fits smallest screen size, 15px for padding on right to mimick left*/
 	}
 	#index-slide-1 h1, #index-slide-2 h1, #index-slide-3 h1, #index-slide-4 h1, #index-slide-5 h1 {font-size: 2em;}
@@ -6944,11 +6945,11 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 }
 
 /* Changing dataTable's default background-image path from DataTables-1.10.13/images/sort_* to /images */
-table.dataTable thead .sorting_asc {background-image: url(/images/sort_asc.png) !important;}
+/*table.dataTable thead .sorting_asc {background-image: url(/images/sort_asc.png) !important;}
 table.dataTable thead .sorting_desc {background-image: url(/images/sort_desc.png) !important;}
 table.dataTable thead .sorting {background-image: url(/images/sort_both.png) !important;}
-
-.dataTables_wrapper .dataTables_filter {/*text-align: center !important;*/ float: left !important}
+*/
+/*.dataTables_wrapper .dataTables_filter {float: left !important}*/
 
 .eshop-content {margin-top: 10px;}
 
@@ -6965,3 +6966,33 @@ table.dataTable td li {
     cursor: -moz-zoom-in;
     cursor: zoom-in;
 }
+.catalogCategoriesSlider .owl-nav {
+		position: absolute;
+		width: 100%;
+}
+
+@media (min-width: 1200px) {
+	.catalogCategoriesSlider .owl-nav {
+		top: 87.5px;
+	}
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+	.catalogCategoriesSlider .owl-nav {
+		top: 98px;
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+	.catalogCategoriesSlider .owl-nav {
+		top: 115px;
+	}
+}
+
+@media (max-width: 767px) {
+	.catalogCategoriesSlider .owl-nav {
+		top: 75px;
+	}
+}
+
+.product-tags span.label {display: inline-block; margin-top: 5px;}
