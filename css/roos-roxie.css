@@ -641,7 +641,7 @@ form span.required {
 }
 
 .owl-carousel /*.owl-controls*/ .owl-dots {
-	position:absolute;
+	position: relative;
 	text-align:center;
 	width:100%;
 }
@@ -6108,7 +6108,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 		height:2px;
 		width:377px; /* 7/88 ratio between .mainTitleAdjust font-size and width */
 	}
-	#eshop-slider.owl-carousel .owl-dots {top: -203px; margin: 0;}
 
 
 /* small */
@@ -6130,7 +6129,6 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 	.catalogImg {max-height:230px; width: initial !important; height: initial !important;}
 	.parentbox {height: 230px;}
 	.parentbox2 {height: 230px;} /*product entry img*/
-	#eshop-slider.owl-carousel .owl-dots {top: -8px;}
 }
 
 /* medium */
@@ -6428,7 +6426,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 #productImg .item {
-	height: 100px;
+	height: 100%;
 	width: auto;
 }
 
@@ -6685,7 +6683,7 @@ footer {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-#eshop-slider.owl-carousel .owl-stage-outer {height: 270px;}
+#eshop-slider.owl-carousel .owl-stage-outer {height: 100%;}
 
 @media (max-width:767px) {
 	#productImg img {max-height: 175px;}
@@ -6695,8 +6693,7 @@ footer {
 	
 }
 
-#eshop-slider.owl-carousel .owl-dots {margin: 31px 0 0 0;}
-#eshop-slider.owl-carousel .owl-stage {margin-top: 58px;}
+#eshop-slider.owl-carousel .owl-dots {position: relative; padding-bottom: 20px;}
 
 .product-price span {
 	float: right;
@@ -6955,12 +6952,13 @@ table.dataTable thead .sorting {background-image: url(/images/sort_both.png) !im
 
 table.dataTable select {width: 100%;}
 
+/* ENABLE ONLY IF NO NOWRAP CLASS IN TABLE
 table.dataTable td li {
     max-width: 80vw;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
+}*/
 #productImg .childbox img {
     cursor: -webkit-zoom-in;
     cursor: -moz-zoom-in;
@@ -6996,3 +6994,15 @@ table.dataTable td li {
 }
 
 .product-tags span.label {display: inline-block; margin-top: 5px;}
+
+li.dt-button.buttons-columnVisibility.active > a {background-color: #F0F0F0; color: #555555;}
+li.dt-button.buttons-columnVisibility.active > a:first-of-type {}
+li.dt-button.buttons-columnVisibility.active > a:active, li.dt-button.buttons-columnVisibility.active > a:focus{background-color: #F0F0F0; color: #555555;}
+li.dt-button.buttons-columnVisibility> a:active, li.dt-button.buttons-columnVisibility > a:focus, li.dt-button.buttons-columnVisibility > a {background-color: #FFF;  color: #555555;}
+
+/*.tableExpand {width: 100%; overflow-x: scroll;}
+.tableExpand td, .tableExpand th {display: initial !important;}
+*/
+
+img.tableImg {max-width: 100px !important}
+.child img.tableImg {max-width: 252px !important} /* 252px from @media (max-width: 767px) and (min-width: 0px) roosc img{}*/
