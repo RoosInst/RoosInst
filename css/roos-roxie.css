@@ -600,11 +600,11 @@ form span.required {
 .overlay-wrapper .overlay a {
 	font-size:30px;
 	color:#FFFFFF;
-	position: absolute;
+/*	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -72px;
-	margin-top: -23px;
+	margin-top: -23px;*/
 }
 
 .overlay-wrapper .overlay a:hover {
@@ -3637,8 +3637,9 @@ body .blog-timeline .blog-post:hover .blog-post-info .month {
 /* ESHOP - DETAIL */
 
 .eshop-detail .eshop-product {
-	margin-top: 30px;+
+	margin-top: 30px;
 	position:relative;
+	margin-bottom: 15px;
 }
 
 #eshop-slider.owl-carousel .owl-stage-outer {
@@ -5301,9 +5302,9 @@ form.event-register .form-control {
 
 	/* TABS */
 
-	.nav-tabs > li > a {
+/*	.nav-tabs > li > a {
 		padding:8px 12px;
-	}
+	}*/
 
 	.nav-tabs > li.active > a,
 	.nav-tabs > li.active > a:hover,
@@ -5312,9 +5313,9 @@ form.event-register .form-control {
 		margin-top:-4px;
 	}
 
-	.tab-content {
+/*	.tab-content {
 		padding:10px;
-	}
+	}*/
 
 	/* CONTENT */
 
@@ -5508,9 +5509,9 @@ form.event-register .form-control {
 
 	/* ESHOP */
 
-	.eshop-detail .blog-post-buttons {
+	/*.eshop-detail .blog-post-buttons {
 		display:none;
-	}
+	}*/
 
 	.eshop-detail .eshop-product .product-price .old-price {
 		font-size:16px;
@@ -5555,38 +5556,6 @@ form.event-register .form-control {
 	}
 }
 
-@media (max-width:320px) {
-	.overlay-wrapper .overlay a {
-		font-size:30px;
-		margin-left: -15px;
-		margin-top: -18px;
-	}
-
-	#contact .brands li {
-		margin-right:4px;
-	}
-
-	#features .features-content h3.features-title {
-		font-size:14px;
-	}
-
-	#section-portfolio .portfolio-item .hover-overlay {
-		padding-top: 5px;
-	}
-
-	#section-portfolio .portfolio-item p {
-		font-size:13px;
-		line-height:18px;
-		margin-bottom:8px;
-	}
-
-	#section-portfolio .portfolio-item a i {
-		font-size: 14px;
-		height: 35px;
-		padding-top:9px;
-		width: 35px;
-	}
-}
 
 /*------------------------------
 	FLEX VIDEO
@@ -6939,6 +6908,8 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 	#vShiftChevron {top: 7px;}
 	
 	table.fixedHeader-floating {top: 70px !important;}
+	
+	.dataTables_filter {float: right;} /*display hidden now because custom input, but keeping in case decide to go back to default dataTable input*/
 }
 
 /* Changing dataTable's default background-image path from DataTables-1.10.13/images/sort_* to /images */
@@ -6991,6 +6962,15 @@ table.dataTable td li {
 	.catalogCategoriesSlider .owl-nav {
 		top: 75px;
 	}
+	.nav-tabs > li > a {
+		padding:8px 12px;
+	}
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus {
+		padding:10px 14px;
+		margin-top:-4px;
+	}
 }
 
 .product-tags span.label {display: inline-block; margin-top: 5px;}
@@ -7006,3 +6986,18 @@ li.dt-button.buttons-columnVisibility> a:active, li.dt-button.buttons-columnVisi
 
 img.tableImg {max-width: 100px !important}
 .child img.tableImg {max-width: 252px !important} /* 252px from @media (max-width: 767px) and (min-width: 0px) roosc img{}*/
+#BOM > div > .row > .col-sm-12 {padding: 0; overflow-x: auto;} /*BOM = Bill of Materials*/
+#BOM > div > .row {margin: 0;}
+
+.dt-buttons.btn-group .btn i {margin: 0;}
+
+.catalogTable td {vertical-align: middle !important;}
+.catalogTable th {white-space: nowrap;}
+.catalogTable {display: none;} /*Javascript will make it visible once dataTables finished*/
+
+footer .overlay-wrapper .overlay a {top: 28px; position: relative;}
+.nav-indent1 {margin-left:8px;}
+.nav-indent2 {margin-left: 16px;}
+noscript a {margin-left: 10px;}
+.dataTables_filter {display: none;}
+form#searchKits > ul.dropdown-menu {max-height: 360px; overflow-y: scroll;}
