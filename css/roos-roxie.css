@@ -2111,7 +2111,7 @@ footer .navbar-nav > li > a:hover {
 
 #latest-work-footer {
 	margin:0;
-	
+
 	color
 }
 
@@ -5917,7 +5917,27 @@ abbr:hover::after {
 	color: rgb(8, 74, 161);
 }
 
-
+/* .roosC replacement */
+.default {
+	font-size: 16px;
+	line-height:1.5;
+	color:#777; font-weight:400; font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
+.default h1 img, .default h2 img, .default h3 img, .default h4 img, .default h5 img, .default h6 img {margin:0;}
+.default p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+.default p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+.default ul {list-style-type:circle; margin-left: 40px;}
+.default a {
+  font-weight: 400;
+  color: rgb(0,149,215)/* !important*/;
+  text-decoration: none;
+}
+.default a:focus, .default a:hover {color:#084AA1/* !important*/;}
+.default blockquote {margin:1.5em;color:#666;font-style:italic;}
+.default strong {font-weight:bold;}
+.default em, .roosC dfn {font-style:italic;}
+.default .roosC dfn {font-weight:bold;}
+.default sup, .roosC sub {line-height:0;}
+.default img {width: 100%; height: 100%;} /*This will resize image once below max-width, important for responsive design*/
 
 
 .roosC table {border-collapse:separate;border-spacing:0;}
@@ -6472,7 +6492,7 @@ textarea {padding: 10px 12px !important}
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {background-color: #E5E5E5; color: #555;}
 	.navbar-default .navbar-nav .dropdown-menu > li > a:hover { padding: 8px 10px 8px 15px; background-color: #E5E5E5; color: #555;} /*without hover, padding is 10px left, so 5px more*/
 	.dropdown-menu > li > a { background-color: #F8F8F8;}
-	
+
 	#nav-products {margin-top: 15px;}
 }
 
@@ -6662,14 +6682,14 @@ footer {
     position: relative;
     padding-bottom: 295px; /*padding size of footer +30px for space*/
 }
- 
- 
+
+
 @media (min-width: 768px) {
 #content {
     padding-bottom: 369px; /*padding size of footer +40px for space*/
 }
 }
- 
+
 @media (min-width: 992px) {
 #content {
     padding-bottom: 399px; /*padding size of footer +50px for space*/
@@ -6690,7 +6710,7 @@ footer {
 	.parentbox2 {height: 175px;}
 	#productImg .item img {max-width:75px;}
 	#eshop-slider.owl-carousel .owl-dots {top: -8px;}
-	
+
 }
 
 #eshop-slider.owl-carousel .owl-dots {position: relative; padding-bottom: 20px;}
@@ -6789,7 +6809,7 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 	.owl-dots {
 		display: none;
 	}
-	
+
 			/* NAVBAR */
 
 	.navbar-default {
@@ -6908,14 +6928,14 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 }
 
 @media (min-width:992px) and (max-width:1199px) {
-	
+
 	/* NAVBAR */
-	
+
 	.navbar-default .navbar-nav > li > a {
 		padding-left:10px;
 		padding-right:10px;
 	}
-	
+
 	.dropdown-menu > li > a {
 		font-size:13px;
 	}
@@ -6927,17 +6947,17 @@ img { /*img-responsive properties from bootstrap applied to all images*/
 	.navbar-nav .dropdown-menu>li>a {line-height: 20px;}
 	.navbar-default .navbar-nav a.dropdown-toggle, .navbar-default .navbar-nav a:hover.dropdown-toggle {background-color: #4677B8; color: #FFF;}
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {background-color: #084AA1;}
-	
+
 	#searchKits {margin-bottom: 15px}
 	#vShiftChevron {top: 60px;}
 	#section-blog-posts {padding-bottom: 10px;}
-	
+
 	table.fixedHeader-floating {top: 50px !important;}
 }
 
 @media (min-width: 768px) {
 	#vShiftChevron {top: 7px;}
-	
+
 	table.fixedHeader-floating {top: 70px !important;}
 }
 
