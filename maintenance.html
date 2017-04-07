@@ -111,7 +111,7 @@
 					</div>
 
 					<div id="title">
-						
+
 						<div class="hidden-xs hidden-sm">
 							<a href="/index.html">
 								<div class="mainTitleAdjust">Roos Instruments</div>
@@ -119,7 +119,7 @@
 								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
 							</a>
 						</div>
-						
+
 						<div class="visible-sm">
 							<a href="/index.html">
 								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
@@ -340,28 +340,95 @@
     	BREADCRUMB - END
     =========================== -->
 
-		<section id ="content" class="roosC container">
-		  
+		<section id="content" class="container default">
+
 			<div class="row">
-				<div style="margin-bottom: 50px;" class="col-xs-12">
-					<h2>Maximize Uptime<img style="max-width: 250px; margin-left: 30px; float: right;" alt="Coming soon!" src="images/IMAGE.png"></h2>
-					<p class="main">
+				<div style="margin-bottom: 50px;" class="col-xs-12" class="show">
+					<h2>Exchange a TIM</h2>
+					<p><a class="btn btn-primary" href="mailto:support@roos.com?subject=Request RMA?body=System: <Serial>, TIM: <Serial>, Full Diags attached."><i class="fa fa-envelope"></i> Request RMA</a>&nbsp;
+					Send Diagnostic Data with Show Full Results Option along with System &amp; TIMs Serial Numbers to Support.</p>
+					<p>
 						Swapping a Failed TIM takes just minutes.  All configuration and calibration
-						data is automatically loaded via <abbr title="Guru provides enterprise class network storage and workflow.">Guru&trade;</abbr>.
+						data is automatically loaded via <abbr title="Guru provides enterprise class network storage and workflow.">Guru&trade;</abbr>.  Procedure to exchange Cassini Test Instrument Module (TIM) in 4 steps.  Detailed step-by-step process available in the Cassini Reference Guide, Chapter 4: Service, Section 1: Exchanging a New or Repaired TIM
 					</p>
+						<h3>Step 1) Prepare for TIM Exchange</h3>
+						<ul>
+						  <li><a href="/docs/RBEH-AEGP8B">Import Cal Data </a> into Guru from the email attachment sent to the site's primary maintenance manager or contact who opened the RMA (Filename = CalData_&lt;serial#&gt;.gzp)</li>
+						  <li>Unlatch and Lower Testhead from Handler and Remove Fixture.</li>
+						  <li>Choose <b>System &gt; Check</b> from Main System Window (Fixture removed from Configuration)</li>
+						  <li>Remove TIM From Shipping Box. Do Not Trash TIM Box, Keep For Return Shipment.</li>
+						</ul>
+						<h3>Step 2) Exchange TIM</h3>
+						<ul>
+						  <li>Remove Failed TIM, Pull Top Latch Then Pull Bottom Handle to Release from the Testhead.</li>
+						  <li>Perform <b>System &gt; Check</b> (Instrument(s) Removed from Configuration)</li>
+						  <li>Install New TIM in the same T-location labeled on TIM.  Example: <button style="background-color: rgb(255,255,255); border: 1px solid; border-radius: 5px;" disabled="true">&nbsp;&nbsp;&nbsp;T-4&nbsp;&nbsp;&nbsp;</button> <br> Slide TIM Horizontally Until Touching Testhead, Slide TIM Vertically Until In Position, Press Top Latch Down</li>
+						  <li>Perform <b>System &gt; Check </b>(Instrument(s) Added to Configuration).  Start Warm Up Timer (20 minutes)</li>
+						</ul>
+						<h3>Step 3) Verify and Release to Production</h3>
+						<ul>
+						  <li>Latch Diag/Cal Plate from Diagnostic Kit</li>
+
+						  <li>Perform <b>System &gt; Check </b>(Fixture Added to Configuration)</li>
+						  <li>Open Configuration window ( <b>System &gt; Tester</b> ) Perform Targeted Diags (<b>Tester &gt; Diagnose</b>, Select Plans for Instrument Model #s)
+						  <div class="alert alert-warning" style="margin-bottom:0px;"><b>NOTICE!</b> Wait for the TIM to warm up at least 20 minutes before running Diagnostics</div>
+						  </li>
+						  <li>If Diags Pass, Unlatch Diag/Cal Plate, Latch Fixture and Release to Production (Skip To Step 4)</li>
+						  <li>To Confirm Recent Cal Data, Select Instrument from Config Window, RMB Menu Choose <b>Calibration &gt; Restore... &gt; OK</b>.  If One or More Dates Do Not Appear, Import Cal Data (contact Manager) and Choose <b>System &gt; Startup</b>.  Perform Targeted Diags Again.</li>
+						  <li>If Diags Fail, Run Full Diags, then Perform Targeted Calibration (TIM or Complete RF System)</li>
+						</ul>
+						<h3>Step 4) Document and Return Failed TIM</h3>
+						<ul>
+						  <li>Prepare return shipping documents according to Return Shipment Instructions (RSI) (HTC, value, description)</li>
+						  <li>Write Serial Number if not already included on RSI.  Include any relevant information (Diag data, symptoms)</li>
+						  <li>Ship Failed TIM in provided TIM Box.  If a TIM Box is not available, follow these Safe Packing Instructions.</li>
+						</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-8 col-md-push-4">
-					<h2>Only 1 Scheduled Downtime Per Year</h2>
-					<p class="main">Calibrate once, only when swapping TIMs!  The production line is up the rest of the time.</p>
+				<div style="margin-bottom: 50px;" class="col-xs-12" class="show">
+					<h2>Maintenance Schedule</h2>
+					<p>Detailed Maintenance Schedule information and proceedures are in the Cassini Reference Guide, CH 3: Care & Maintenance.</p>
+					<table  id="maintSchedule" class="table table-striped table-bordered" cellspacing="0" width="100%" style="width: 100%;">
+						<thead style="width: 100%">
+							<tr>
+								<th>Item</th>
+								<th>Time Period</th>
+								<th>As Needed</th>
+								<th>Time to Complete</th>
+								<th>Role/Login</th>
+								<th>Required Tools</th>
+								<th>Notify Support</th>
+							</tr>
+						</thead>
+						<tbody>
+						  <tr><td>Socket</td><td>Daily</td><td>Mfg. Suggestion</td><td>1-2 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>DIB</td><td>Monthly</td><td>>10% Yield Change</td><td>5 min</td><td>Maintenance</td><td>Standard Tools, Voltmeter, Magnifier</td><td></td></tr>
+						  <tr><td>Test Head TIM Blocks</td><td>Monthly</td><td>1000 Fixture Docks</td><td>2 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Aux Rack RF Cables</td><td>Yearly</td><td>TIM Exchange</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Fixture Inserts</td><td>Daily</td><td>1000 DIB Installs</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Calibrate Fixture</td><td>Never</td><td>Modification</td><td>Varies</td><td>Developer</td><td>Calibration Kit</td><td></td></tr>
+						  <tr><td>Docking Hardware</td><td>Monthly</td><td>1000 Docks</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td>If wear is found</td></tr>
+						  <tr><td>Handler POD/RIFL Cable</td><td>Quarterly</td><td>Frequent Handler Changes</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Diagnose/Verify</td><td>Monthly</td><td>Yield Drops</td><td>5-30 min</td><td>Maintenance</td><td>Standard Tools</td><td>On Failure</td></tr>
+						  <tr><td>Calibrate TIMs</td><td>Yearly</td><td>TIM Repair</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Calibrate RF System</td><td>Yearly</td><td>TIM Exchange</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td>Yes</td></tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="col-md-4 col-md-pull-8">
-				<img style="margin-right: 30px; max-width: 250px;" alt="Coming soon!" src="images/IMAGE.png">
+			</div> <!-- .row -->
+						<div class="row">
+				<div style="margin-bottom: 50px;" class="col-xs-12" class="show">
+					<h2>Diagnose and Calibration</h2>
+					<p>Detailed Diagnose and Calibration information and proceedures are in the Cassini Reference Guide, CH 5: Diagnose and CH 6: Calibration.</p>
+					<ul>
+					  <li>Diagnostic Kits: custom interface fixture, cables and components needed to self-diagnose issues. (included with system order, required for Calibration)</li>
+					  <li><a href="/commerce/catalog.nsf/accessoriesbyType?openform&RestrictToCategory=Calibration+Tools">Calibration Kits</a>: used to calibrate RF system, frequency dependant.</li>
+					  <li><a href="/docs/RBEH-6XH5L4">Calibration - Written Procedure for Complete Cassini System Cal</a></li>
+						<li><a href="/web/RoosCalibrationScope_v1.0.pdf">Calibration Scope</a></li>
+					</ul>
 				</div>
-			</div>
-			<br>
-			
+			</div> <!-- .row -->
 		</section> <!-- End of #content section-->
 
 	<!-- ==========================
