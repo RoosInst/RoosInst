@@ -2086,7 +2086,7 @@ footer .brands li {
 }
 
 footer .brands li a {
-	background-color:#888;
+	background-color:#777;
 	color:#000;
 }
 
@@ -5917,7 +5917,7 @@ abbr:hover::after {
 /* typography.css */
 .roosC { font-size: 16px;
 	line-height:1.5;
-	color:#777; font-weight:400; font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
+	color:#ccc; font-weight:400; font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif;}
 
 /*.roosC h1, .roosC h2, .roosC h3, .roosC h4, .roosC h5, .roosC h6 {color:#333333; font-weight: 300;} overwrote roxie's default, no longer needed*/
 .roosC h1 img, .roosC h2 img, .roosC h3 img, .roosC h4 img, .roosC h5 img, .roosC h6 img {margin:0;}
