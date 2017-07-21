@@ -1,12 +1,12 @@
 # README #
 
-This is a private repository for Roos Instruments website that provides customer engagement, includes a product catalog and document library.
+This is a public repository for static content hosted on the Roos Instruments website.
 
 ### What is this repository for? ###
 
 * Public HTML
-* Does not include IBM Domino apps that support secure portion of the site
+* Does not include IBM Domino apps that support secure portion of the site.
 
 ### Who do I talk to? ###
 
-* Please direct suggetsions to rbenech@roos.com
+* Please direct suggestions to rbenech@roos.com.
