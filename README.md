@@ -4,7 +4,7 @@ This is a public repository for static content hosted on the Roos Instruments we
 
 ### What is this repository for? ###
 
-* Public HTML
+* Public HTML.
 * Does not include IBM Domino apps that support secure portion of the site.
 
 ### Who do I talk to? ###
