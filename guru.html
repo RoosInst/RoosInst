@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v36 -->
+<!-- TOP - v37 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -10,10 +10,10 @@
 	<meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
 	<meta name="author" content="Roos Instruments, Inc.">
 	<meta itemprop="name" content="Roos Instruments">
-	<meta itemprop="image" content="http://roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
+	<meta itemprop="image" content="https://www.roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.roos.com/index.html">
-	<meta property="og:image" content="http://www.roos.com/android-chrome-192x192.png">
+	<meta property="og:url" content="https://www.roos.com/index.html">
+	<meta property="og:image" content="https://www.roos.com/android-chrome-192x192.png">
     <!-- ==========================
     	Title
     =========================== -->
@@ -40,7 +40,7 @@
     =========================== -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="/css/animate.css" rel="stylesheet" type="text/css">
   <link href="/css/yamm.css" rel="stylesheet" type="text/css">
   <link href="/css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
@@ -56,13 +56,11 @@
 	<!-- ==========================
 		JS
     =========================== -->
-	<script src="/js/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="/js/js.cookie.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
-	<script src="/js/waypoints.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
-  <script src="/js/isotope.pkgd.min.js"></script>
   <script src="/js/jquery.magnific-popup.min.js"></script>
   <script src="/js/creative-brands.js"></script>
 	<script src="/js/roos-roxie.js"></script>
@@ -178,7 +176,7 @@
 							</ul>
 						</li>
 						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
-							<a class="dropdown-toggle" data-toggle="dropdown" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onmouseenter="ga('send','event','nav','support','Support Tab');" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
 									<div class="row">
@@ -191,7 +189,7 @@
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Training</a></li>
+													<li><a href="/training.html"><i class="fa fa-angle-double-right"></i>Training</a></li>
 													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
 												</ul>
 											</div>
@@ -699,54 +697,50 @@ Each Cassini system and Virtual Workstation has a local Guru that backs up every
 					</div> <!-- .row #ForthRow -->
 					<div class="row" id="FithRow">
 					<!-- Automation with Agents -->
-					<div class="col-sm-4">
-						<div class="service">
-							<i class="fa fa-key"></i>
-							<div class="service-body">
-								<h3>Encryption</h3>
-								<p class="main">
-				When data security is an ultimate concern, 128-bit Blowfish encryption can be used to encrypt the object payload and selective metadata tags allowing robust sharing accross the public web.  Policy based access control enforces end-to-end encryption supporting a robust security implementation by using a one to one permission based access control.
-								</p>
-							</div>
-						</div>
-					</div>
+  					<div class="col-sm-4">
+  						<div class="service">
+  							<i class="fa fa-key"></i>
+  							<div class="service-body">
+  								<h3>Encryption</h3>
+  								<p class="main">
+  				When data security is an ultimate concern, 128-bit Blowfish encryption can be used to encrypt the object payload and selective metadata tags allowing robust sharing accross the public web.  Policy based access control enforces end-to-end encryption supporting a robust security implementation by using a one to one permission based access control.
+  								</p>
+  							</div>
+  						</div>
+  					</div>
 					<!-- Automation with Agents -->
-					<div class="col-sm-4">
-						<div class="service">
-							<i class="fa fa-rocket"></i>
-							<div class="service-body">
-								<h3>Agent Automation</h3>
-								<p class="main">
-				Guru is able to launch scripts on timed events, such as
-				when Guru is itself started or every hour while Guru is running. A Guru Agent copies files from
-				the Guru to a local filesystem or a FTP server. Files can be selected using keys and
-				values, for example, to send any new datalogs to a special FTP account for processing by your own analytics suite.
-								</p>
-							</div>
-						</div>
-					</div>
-
+  					<div class="col-sm-4">
+  						<div class="service">
+  							<i class="fa fa-rocket"></i>
+  							<div class="service-body">
+  								<h3>Agent Automation</h3>
+  								<p class="main">
+  				Guru is able to launch scripts on timed events, such as
+  				when Guru is itself started or every hour while Guru is running. A Guru Agent copies files from
+  				the Guru to a local filesystem or a FTP server. Files can be selected using keys and
+  				values, for example, to send any new datalogs to a special FTP account for processing by your own analytics suite.
+  								</p>
+  							</div>
+  						</div>
+  					</div>
 					</div> <!-- .row #FithRow -->
+        </section>
 
-			</section>
-
-		<section id ="content" class="roosC container">
-			<p>More <a href="http://roos.com/docs/RBEH-6JEMAG?Open" class="locked-small link">Features of Guru &raquo;</a></p>
-			<ul class="awesome first">
-				<li><a class="link" href="/parts/GURU-SRV">Guru Enterprise Server</a></li>
-				<li><a class="link" href="/parts/GURU-SU">Guru Server Software Updates</a></li>
-			</ul>
-			</section> <!-- End of #content section-->
-
-	<!-- ==========================
-		FOOTER - START
-	=========================== -->
+        <section id ="content" class="roosC container">
+    			<p>More <a href="http://roos.com/docs/RBEH-6JEMAG?Open" class="locked-small link">Features of Guru &raquo;</a></p>
+    			<ul class="awesome first">
+    				<li><a class="link" href="/parts/GURU-SRV">Guru Enterprise Server</a></li>
+    				<li><a class="link" href="/parts/GURU-SU">Guru Server Software Updates</a></li>
+    			</ul>
+        </section> <!-- End of #content section-->
+    <!-- ==========================
+  		FOOTER - START
+  	=========================== -->
 		<footer class="text-center">
 			<div class="defaultCursor container">
 				<div class="row">
 					<div class="col-md-4 col-sm-8">
-					  <a href="/index.html"><img style="float: left;" alt="ROOS Logo" src="/images/ri-logo-white-33.png" /></a>
-						  <div>
+					  <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
 							  <h3><i class="fa fa-flag"></i>Contact</h3>
 							  <div class="vcard">
 								  <div class="org">
@@ -755,44 +749,43 @@ Each Cassini system and Virtual Workstation has a local Guru that backs up every
 											  <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
 											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
 										  </li>
-										  <li><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
+										  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
 										  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
 									</ul>
 								</div>
 							</div>
 							<ul class="brands brands-inline brands-sm brands-transition brands-circle">
-								<li><a href="https://facebook.com/RoosInst" class="brands-facebook" style="margin-left: 55px;"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
 								<li><a href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
-						</div>
-					</div>
+					  </div>
 					<div class="col-md-4 hidden-xs hidden-sm">
 						<h3><i class="fa fa-th-large"></i>Product Catalog</h3>
 						<div class="row" id="latest-work-footer">
 							<div class="overlay-wrapper col-sm-6">
-								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" style="background-color: #C1CFE0;" class="img-responsive" alt="Request a Quote">
+								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
 								<span class="overlay">
-									<a style="padding-left: 15px;" href="/apps">Systems</a>
+									<a href="/apps">Systems</a>
 								</span>
 							</div>
 							<div class="overlay-wrapper col-sm-6">
-								<img style="background-color: #C1CFE0" src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
+								<img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
 								<span class="overlay">
-									<a style="padding-left: 20px;" href="/fixtures">Fixtures</a>
+									<a href="/rik">RIK Catalog</a>
 								</span>
 							</div>
 							<div class="overlay-wrapper col-sm-6">
-								<img style="background-color: #C1CFE0;" src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
+								<img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
 								<span class="overlay">
-									<a href="/rik">Accessories</a>
+									<a href="/accessories">Accessories</a>
 								</span>
 							</div>
 							<div class="overlay-wrapper col-sm-6">
-								<img style="background-color: #C1CFE0" src="/images/service.png" class="img-responsive" alt="Services">
+								<img src="/images/service.png" class="img-responsive" alt="Services">
 								<span class="overlay">
-									<a style="padding-left: 20px;" href="/services">Services</a>
+									<a href="/services">Services</a>
 								</span>
 							</div>
 						</div>
@@ -801,31 +794,32 @@ Each Cassini system and Virtual Workstation has a local Guru that backs up every
 						<h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
 						<!-- Begin MailChimp Signup Form -->
 						<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						  <div id="form-group nospace">
+						  <div class="form-group nospace">
 							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							<div style="position: absolute; left: -5000px;"><input type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
 							  <fieldset>
 								<div class="input-group" style="padding-bottom: 15px;">
 								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Submit</button>
+								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
 								</div>
 							  </fieldset>
 							</div>
 						</form>
 						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-						<a href="/parts/CASSINI/$file/CASSINI.pdf""><img width="160" class="centerImg" src="/images/cassini-brochure.png" class="img-responsive" alt="Cassini Brochure">
-							<p style="padding-top: 5px;">Learn more about Cassini<p>
+						<a href="/parts/CASSINI/$file/CASSINI.pdf" onclick="ga('send','event','PDF','view','Cassini')"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
+							<p style="padding-top: 5px;">Learn more about Cassini</p>
 						</a>
 					</div>
 				</div>
 				<div class="footer-bottom">
-					<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
-						<li><a href="/index.html">Home</a></li>
-						<li><a href="/products.html">Products</a></li>
-						<li><a href="/services.html">Services</a></li>
-						<li><a href="/company.html">Company</a></li>
-						<li><a href="/support.html">Support</a></li>
-						<li><a href="/contact.html">Contact</a></li>
+					<ul class="nav navbar-nav navbar-right hidden-xs">
+						<li><a title="Roos Instruments" href="/index.html">Home</a></li>
+						<li><a title="Products Overview" href="/products.html">Products</a></li>
+						<li><a title="Services Overview" href="/services.html">Services</a></li>
+						<li><a title="Company Overview" href="/company.html">Company</a></li>
+						<li><a title="Support Overview" href="/support.html">Support</a></li>
+						<li><a title="Contact Overview" href="/contact.html">Contact</a></li>
+						<li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
 					</ul>
 				</div>
 			</div>
@@ -833,20 +827,11 @@ Each Cassini system and Virtual Workstation has a local Guru that backs up every
 	<!-- ==========================
 		FOOTER - END
     =========================== -->
-	</div>  <!-- #page-wrapper -->
+  </div>  <!-- #page-wrapper -->
 	<!-- ==========================
     	JS
     =========================== -->
 	<!--[if lt IE 7 ]><script src="/js/dd_belatedpng.js?v=1"></script> <![endif]-->
-	<script type="text/javascript">
-	  var _urq = _urq || [];
-	  _urq.push(['initSite', '7d4fdea1-f0e6-4d7f-b242-504818501c8c']);
-	  (function() {
-	  var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
-	  ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
-	  })();
-	</script>
+	<!--  BOTTOM - v16 -->
   </body>
-<!--  BOTTOM - v7 -->
 </html>

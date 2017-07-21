@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v36 -->
+<!-- TOP - v37 -->
 <html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -10,10 +10,10 @@
 	<meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
 	<meta name="author" content="Roos Instruments, Inc.">
 	<meta itemprop="name" content="Roos Instruments">
-	<meta itemprop="image" content="http://roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
+	<meta itemprop="image" content="https://www.roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.roos.com/index.html">
-	<meta property="og:image" content="http://www.roos.com/android-chrome-192x192.png">
+	<meta property="og:url" content="https://www.roos.com/index.html">
+	<meta property="og:image" content="https://www.roos.com/android-chrome-192x192.png">
     <!-- ==========================
     	Title
     =========================== -->
@@ -40,7 +40,7 @@
     =========================== -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="/css/animate.css" rel="stylesheet" type="text/css">
   <link href="/css/yamm.css" rel="stylesheet" type="text/css">
   <link href="/css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
@@ -56,13 +56,11 @@
 	<!-- ==========================
 		JS
     =========================== -->
-	<script src="/js/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="/js/js.cookie.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
-	<script src="/js/waypoints.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
-  <script src="/js/isotope.pkgd.min.js"></script>
   <script src="/js/jquery.magnific-popup.min.js"></script>
   <script src="/js/creative-brands.js"></script>
 	<script src="/js/roos-roxie.js"></script>
@@ -178,7 +176,7 @@
 							</ul>
 						</li>
 						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
-							<a class="dropdown-toggle" data-toggle="dropdown" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onmouseenter="ga('send','event','nav','support','Support Tab');" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
 									<div class="row">
@@ -191,7 +189,7 @@
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Training</a></li>
+													<li><a href="/training.html"><i class="fa fa-angle-double-right"></i>Training</a></li>
 													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
 												</ul>
 											</div>
@@ -338,11 +336,6 @@
 			<section id="jumbotron">
 				<div class="jumbotron index-slideshow">
 					<div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-
-            <a href="http://expo.semi.org/west2017/Public/EventMap.aspx">
-              <div class="item" id="index-slide-temp">
-						  </div>
-            </a>
 
 						<div class="item" id="index-slide-1">
 							<h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>

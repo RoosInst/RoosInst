@@ -154,37 +154,6 @@ $(document).ready(function() {
 	//POPOVER
 	$('.popover-init').popover();
 
-	//PORTFOLIO - ISOTOPE
-	var $container = $('.portfolio-wrapper');
-	$container.isotope({
-	  	itemSelector: '.portfolio-item',
-	});
-
-	$('.portfolio-filter li a').click(function(e) {
-		$('.portfolio-filter li a').removeClass('active');
-		$(this).addClass('active');
-
-        var category = $(this).attr('data-filter');
-		$container.isotope({
-			filter: category
-		});
-    });
-
-	//BLOG - ISOTOPE
-	var $container2 = $('.blog-wrapper');
-	$container2.isotope({
-	  	itemSelector: '.blog-item',
-	});
-
-	$('.blog-filter li a').click(function(e) {
-		$('.blog-filter li a').removeClass('active');
-		$(this).addClass('active');
-
-        var category = $(this).attr('data-filter');
-		$container2.isotope({
-			filter: category
-		});
-    });
 
 	//FORM TOGGLE
 	$('#reset-password-toggle').click(function() {
