@@ -1,3 +1,2 @@
-*.dropbox
-.dropbox.attr
 desktop.ini
+*.DS_Store
