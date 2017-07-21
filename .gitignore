@@ -1,3 +1,8 @@
 desktop.ini
 *.DS_Store
 *.gz
+help/
+download/
+oneuiv*/
+sametime/
+IBM_iNotes*
