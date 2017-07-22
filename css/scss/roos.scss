@@ -3050,3 +3050,12 @@ footer .overlay-wrapper .overlay a {
 .dataTables_filter {
   display: none;
 }
+
+.panel-warning > .panel-heading {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+
+.navbar.navbar-default {
+  border-radius: 0;
+}
