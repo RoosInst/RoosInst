@@ -2009,7 +2009,7 @@ hr.space {
 
 /* extra small */
 
-.roosC {
+// .roosC {
   h1 {
     font-size: 2.5em;
     font-weight: 500;
@@ -2035,7 +2035,7 @@ hr.space {
   .main {
     font-size: 15px;
   }
-}
+// }
 
 hr.space {
   margin-bottom: 0em;
@@ -2274,6 +2274,9 @@ hr.space {
   }
   img {
     margin-bottom: 20px;
+  }
+  img.catalogImg {
+    margin-bottom: 0;
   }
   ul.list-compact, .list-compact li {
     padding-left: 0;
@@ -3058,4 +3061,22 @@ footer .overlay-wrapper .overlay a {
 
 .navbar.navbar-default {
   border-radius: 0;
+}
+
+.mediaKit img {
+  background-color: #f0f0f0;
+
+}
+
+.roosC.mediaKit {
+  h5 {
+    text-align: center;
+  }
+ .parentbox {
+    margin-bottom: 40px;
+    &:before {
+      vertical-align: initial;
+      display: initial;
+    }
+  }
 }
