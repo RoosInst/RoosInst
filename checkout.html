@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TOP - v41 -->
+<!-- TOP - v40 -->
 <html itemscope itemtype="https://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
@@ -86,7 +86,7 @@
 		<div class="top-header hidden-xs">
 			<div class="container">
 				<div class="pull-left">
-					<div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
+					<div class="header-item"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
 					<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
 				</div>
 				<div class="header-item pull-right">
@@ -101,7 +101,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<div class="visible-xs-block">
-						<button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+						<button style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
 						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
 					</div>
 
@@ -248,7 +248,7 @@
 					</ul> <!-- End of .nav .navbar-nav -->
 					<ul class="nav navbar-nav hidden-xs">
 						<li style="margin-right: -12px;" class="search-form-toggle">
-							<a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
+							<a class="navButton" href="#" data-toggle="modal" data-target="#searchModal" onclick="ga('send','event','nav','search','Search Modal');" ><i class="fa fa-search"></i></a>
 						</li>
 					</ul>
 				</div> <!-- End of .navbar-collapse -->
@@ -265,11 +265,11 @@
 			</div>
 		</div>
 
-		<!-- Search Modal -->
+		<!-- Modal -->
 		<div id="searchModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg">
 
-			<!-- Search Modal content-->
+			<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -316,9 +316,8 @@
 		<script type="text/javascript">
 			//INIT PAGE ELEMENTS
 			$(document).ready(function() {
-				document.title = "Template | Roos Instruments";
-				$( "#nav-support" ).addClass( "active" );  //#choices are nav-home, nav-products, nav-services, nav-company, nav-support
-				//$( "#nav-support").empty();	//only on support.html
+				document.title = "Checkout | Roos Instruments";
+				$( "#nav-products" ).addClass( "active" );
 			});
 		</script>
 
@@ -327,10 +326,11 @@
     =========================== -->
 		<section class="breadcrumb-wrapper">
 			<div class="container">
-				<h2>Products Overview</h2>
+				<h2>Training</h2>
 				<ol class="breadcrumb">
 					<li><a href="/index.html">Home</a></li>
-					<li class="active">Products Overview</li>
+					<li><a href="/products.html">Products</a></li>
+					<li class="active">Checkout</li>
 				</ol>
 			</div>
 		</section>
@@ -338,43 +338,53 @@
     	BREADCRUMB - END
     =========================== -->
 
-	<section id ="content" class="roosC container">
-	<!-- ==========================
-    	CONTENT - START  (this is comment line can be excluded from actual content)
-    =========================== -->
+		<section id ="content" class="roosC container">
+			<section class="content services1" id="services">
+				<!-- Service -->
+				<div class="col-sm-4">
+					<div class="service">
+						<i class="fa fa-microchip"></i>
+						<div class="service-body">
+							<h3>Checkout</h3>
+							<p>
+								Use this page to submit payments via credit card.</p>
+						</div>
+					</div>
+				</div>
 
-<div class="row">
-  <div class="layout1">
-	<div class="leftBig col-md-8">
-	  <h2>HEADLINE</h2>
-	  <p class="main">
-		Content here
-	  </p>
-	</div>
-	<div class="rightSmall col-md-4">
-	  <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
-	</div>
-  </div> <!-- end .layout1 -->
-</div> <!-- end .row -->
 
-  <div class="row">
-	<div class="layout2">
-	  <div class="leftSmall col-md-4">
-		<img alt="IMAGE" src="/images/IMAGE.png" class="center" />
-	  </div>
-	  <div class="rightBig col-md-8 right-element">
-		<h2>Headline</h2>
-		<p class="text-left main">
-		  Description.
-		</p>
-	  </div>
-  </div> <!-- end .layout2 -->
-</div> <!-- end .row -->
+		<section id="paywithCC"><!-- Payment Form -->
+			<hr class="space">
+			<div style="padding: 0;" class="col-lg-8 col-lg-offset-2 panel-default form-only panel" id="payment">
+				<div class="panel-heading">
+					<h5 style="margin-bottom: 0;" class="panel-title">Pay for Developer Training</h5>
+				</div>
+				<div class="panel-body">
+				  <form action="" method="POST">
+					<p>Please use the "Pay with Card" button to process your credit card for the amount due for the training class.  Do not pay until your registration
+					has been processed and date is confirmed via email.</p>
+					<div class="col-sm-3 pull-right">
+					<script
+					  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+					  data-key="pk_live_1UhR4hfdIYQAuML4rQT1rlh1"
+					  data-name="Roos Instruments Inc."
+					  data-description="Widget"
+					  data-image="https://s3.amazonaws.com/stripe-uploads/acct_150zhiCItvmu7x8Wmerchant-icon-1442449387324-icon_ball-128.png"
+					  data-locale="auto"
+					  data-zip-code="true"
+					  data-amount="260000"
+					  >
+					</script>
+					</div>
+					<div class="col-sm-9">
+					 <span style="text-align: right;">US$ 2,600</span>
+					</div>
+				  </form>
+				</div>
+			</div> <!--End mc_embed_signup-->
+		</section>
 
-<!-- ==========================
-    	CONTENT - End  (this is comment line can be excluded from actual content)
-    =========================== -->
-</section> <!-- End of #content section-->
+		</section> <!-- End of #content section-->
 
 	<!-- ==========================
 		FOOTER - START
@@ -398,10 +408,10 @@
 								</div>
 							</div>
 							<ul class="brands brands-inline brands-sm brands-transition brands-circle">
-								<li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-								<li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-								<li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 					  </div>
 					<div class="col-md-4 hidden-xs hidden-sm">
@@ -439,11 +449,11 @@
 						<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						  <div class="form-group nospace">
 							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;"><input aria-hidden="true "type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
+							<div style="position: absolute; left: -5000px;"><input type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
 							  <fieldset>
 								<div class="input-group" style="padding-bottom: 15px;">
 								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-								  <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
+								  <span class="input-group-btn"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
 								</div>
 							  </fieldset>
 							</div>
@@ -475,6 +485,6 @@
     	JS
     =========================== -->
 	<!--[if lt IE 7 ]><script src="/js/dd_belatedpng.js?v=1"></script> <![endif]-->
-	<!--  BOTTOM - v17 -->
+	<!--  BOTTOM - v16 -->
   </body>
 </html>
