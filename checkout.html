@@ -326,7 +326,7 @@
     =========================== -->
 		<section class="breadcrumb-wrapper">
 			<div class="container">
-				<h2>Training</h2>
+				<h2>Checkout</h2>
 				<ol class="breadcrumb">
 					<li><a href="/index.html">Home</a></li>
 					<li><a href="/products.html">Products</a></li>
@@ -341,49 +341,53 @@
 		<section id ="content" class="roosC container">
 			<section class="content services1" id="services">
 				<!-- Service -->
-				<div class="col-sm-4">
+				<div class="col-lg-8">
 					<div class="service">
-						<i class="fa fa-microchip"></i>
+						<i class="fa fa-credit-card"></i>
 						<div class="service-body">
 							<h3>Checkout</h3>
 							<p>
-								Use this page to submit payments via credit card.</p>
+								Use this page to submit payments via credit card for any Purchase Order that has been accepted by Roos Instruments and includes a 3% processing fee.
+								A Purchase Order is only accepted after an acknowledgement email has been sent in response.</p>
 						</div>
 					</div>
 				</div>
-
-
-		<section id="paywithCC"><!-- Payment Form -->
-			<hr class="space">
-			<div style="padding: 0;" class="col-lg-8 col-lg-offset-2 panel-default form-only panel" id="payment">
-				<div class="panel-heading">
-					<h5 style="margin-bottom: 0;" class="panel-title">Pay for Developer Training</h5>
-				</div>
-				<div class="panel-body">
-				  <form action="" method="POST">
-					<p>Please use the "Pay with Card" button to process your credit card for the amount due for the training class.  Do not pay until your registration
-					has been processed and date is confirmed via email.</p>
-					<div class="col-sm-3 pull-right">
-					<script
-					  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-					  data-key="pk_live_1UhR4hfdIYQAuML4rQT1rlh1"
-					  data-name="Roos Instruments Inc."
-					  data-description="Widget"
-					  data-image="https://s3.amazonaws.com/stripe-uploads/acct_150zhiCItvmu7x8Wmerchant-icon-1442449387324-icon_ball-128.png"
-					  data-locale="auto"
-					  data-zip-code="true"
-					  data-amount="260000"
-					  >
-					</script>
+			</section>
+			<section id="paywithCC"><!-- Payment Form -->
+				<hr class="space">
+				<div style="padding: 0;" class="col-lg-8 col-lg-offset-1 panel-default form-only panel" id="payment">
+					<div class="panel-heading">
+						<h5 style="margin-bottom: 0;" class="panel-title"><i class="fa fa-cc-stripe"></i> Payment for Purchase Order</h5>
 					</div>
-					<div class="col-sm-9">
-					 <span style="text-align: right;">US$ 2,600</span>
+					<div class="panel-body">
+					  <form action="" method="POST">
+						<p>Please use the button below to process your credit card for the amount due for the Purchase Order.  Do not pay until the Purchase Order has been accepted and
+						you were provided a link to this page for payment.  The PO must include 3% credit card processing fee.</p>
+						<div class="col-lg-2 col-lg-offset-1">
+						<script
+						  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+						  data-key="pk_live_1UhR4hfdIYQAuML4rQT1rlh1"
+						  data-name="Roos Instruments Inc."
+						  data-description="For accepted Purchase Order"
+						  data-image="https://s3.amazonaws.com/stripe-uploads/acct_150zhiCItvmu7x8Wmerchant-icon-1442449387324-icon_ball-128.png"
+						  data-locale="auto"
+						  data-zip-code="true"
+						  data-panel-label="Pay"
+						  >
+						</script>
+						</div>
+					  </form>
 					</div>
-				  </form>
-				</div>
-			</div> <!--End mc_embed_signup-->
-		</section>
-
+					<div id="cc-security" class="panel-footer">
+					  <i class="fa fa-shield"></i> <a href="https://stripe.com/docs/security">Security with Stripe</a>
+					  <p>
+						<small>Never stored by Roos Instruments, all cardholder information is transmitted and stored by Stripe.  PCI Level 1 compliance is validated with annual
+						  <abbr title="Self-Assessment Questionnaire">SAQ</abbr>.
+						</small>
+					  </p>
+					</div>
+				</div> <!--End Payment form-->
+			</section>
 		</section> <!-- End of #content section-->
 
 	<!-- ==========================

@@ -1,5 +1,6 @@
 {
     "name": "Roos Instruments",
+    "short_name" : "Roos Inst"
     "icons": [
         {
             "src": "/android-chrome-192x192.png?v=M4o5RbaqAp",

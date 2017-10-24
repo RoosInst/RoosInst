@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- TOP - v40 -->
-<html itemscope itemtype="https://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
+<!-- TOP - v36 -->
+<html itemscope itemtype="http://schema.org/Organization" dir="ltr" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
 	<!-- ==========================
     	Meta Tags
@@ -10,10 +10,10 @@
 	<meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
 	<meta name="author" content="Roos Instruments, Inc.">
 	<meta itemprop="name" content="Roos Instruments">
-	<meta itemprop="image" content="https://www.roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
+	<meta itemprop="image" content="http://roos.com/images/RILogoWeb.png">  <!-- Image used for snippit -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.roos.com/index.html">
-	<meta property="og:image" content="https://www.roos.com/android-chrome-192x192.png">
+	<meta property="og:url" content="http://www.roos.com/index.html">
+	<meta property="og:image" content="http://www.roos.com/android-chrome-192x192.png">
     <!-- ==========================
     	Title
     =========================== -->
@@ -40,7 +40,7 @@
     =========================== -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/css/font-awesome-animation.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="/css/animate.css" rel="stylesheet" type="text/css">
   <link href="/css/yamm.css" rel="stylesheet" type="text/css">
   <link href="/css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
@@ -50,21 +50,24 @@
   <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
   <link href="/css/creative-brands.css" rel="stylesheet" type="text/css">
 	<link href="/css/jquery.qtip.min.css" rel="stylesheet" type="text/css">
-	<link href="/css/roos.css" rel="stylesheet" type="text/css" id="pageTheme">
+	<link href="/css/roos-roxie.css" rel="stylesheet" type="text/css" id="pageTheme">
 	<link href="/css/print.css" rel="stylesheet" type="text/css" media="print">
 
 	<!-- ==========================
 		JS
     =========================== -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script async src="/js/js.cookie.js"></script>
-	<script async src="/js/bootstrap-hover-dropdown.min.js"></script>
-  <script async src="/js/jquery.magnific-popup.min.js"></script>
-  <script async src="/js/creative-brands.js"></script>
-	<script async src="//storage.googleapis.com/outfox/dnt_min.js"></script>
-  <script async src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="/js/jquery-2.2.4.min.js"></script>
+	<script src="/js/js.cookie.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-hover-dropdown.min.js"></script>
+	<script src="/js/waypoints.min.js"></script>
   <script src="/js/owl.carousel.min.js"></script>
-  <script async src="/js/roos-roxie.js"></script>
+  <script src="/js/isotope.pkgd.min.js"></script>
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <script src="/js/creative-brands.js"></script>
+	<script src="/js/roos-roxie.js"></script>
+	<script src="//storage.googleapis.com/outfox/dnt_min.js"></script>
+
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -170,13 +173,12 @@
 								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
 								<li><a href="/news.html"><i class="nav-indent1 fa fa-angle-double-right"></i>News & Events</a></li>
 								<li><a href="/careers.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Careers</a></li>
-                <li><a href="/mediaKit.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Media Kit</a></li>
 								<li><a href="/visitRI.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Plan a Visit</a></li>
 								<li><a href="/contact.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Contact Us</a></li>
 							</ul>
 						</li>
 						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
-							<a class="dropdown-toggle" data-toggle="dropdown" onmouseenter="ga('send','event','nav','support','Support Tab');" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" onclick="ga('send','event','nav','support','Support Tab');" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
 							<ul id="hideOnSupport" class="dropdown-menu">
 								<div class="yamm-content">
 									<div class="row">
@@ -189,7 +191,7 @@
 												<ul style="margin-top: 15px;" class="nav vertical-nav">
 													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
 													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/training.html"><i class="fa fa-angle-double-right"></i>Training</a></li>
+													<li><a href="/docs"><i class="fa fa-angle-double-right"></i>Training</a></li>
 													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
 												</ul>
 											</div>
@@ -219,7 +221,7 @@
 										<div class="col-sm-3 text-center">
 											<h3>Reference Guide</h3>
 										  <div style="text-align: center">
-											<a class="btn btn-primary" href="/web/CassiniReferenceGuide_2.1.1_mini.pdf" download="CassiniReferenceGuide_2.1.1_mini.pdf" onclick="ga('send','event','PDF','view','Cassini Reference Guide');"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
+											<a class="btn btn-primary" href="/pdf/CassiniReferenceGuide_2.1.1_mini.pdf" download="CassiniReferenceGuide_2.1.1_mini.pdf" onclick="ga('send','event','PDF','view','Cassini Reference Guide');"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
 											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10" onclick="ga('send','event','iBook','view','Cassini Reference Guide');">
 												<img style="padding-top: 9px; width: 160px;" class="centerImg" src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
 											</a>
@@ -344,33 +346,34 @@
 				<div class="col-md-6 col-md-offset-1">
 					<h5>DC &amp; Digital I/O</h5>
 					<ul>
-						<li><a href="/web/RI8546_DevicePower.pdf" title="RI8546" class="link" onclick="ga('send','event','PDF','view','RI8546 Device Power')">Device Power/Measure</a> <small>RI8546</small></li>
-						<li><a href="/web/RI8535_UniversalDigital.pdf" title="RI8535" class="link" onclick="ga('send','event','PDF','view','RI8535 Universal Digital')">Universal Digital</a> <small>RI8535</small></li>
-						<li><a href="/web/RI8589_FETpulser.pdf" title="RI8535" class="link" onclick="ga('send','event','PDF','view','RI8589 FETPulser')">High Power Supply/Pulser</a> <small>RI8589</small></li>
+						<li><a href="/pdf/RI8546_DevicePower.pdf" title="RI8546" class="link" onclick="ga('send','event','PDF','view','RI8546 Device Power')">Device Power/Measure</a> <small>RI8546</small></li>
+						<li><a href="/pdf/RI8535_UniversalDigital.pdf" title="RI8535" class="link" onclick="ga('send','event','PDF','view','RI8535 Universal Digital')">Universal Digital</a> <small>RI8535</small></li>
+						<li><a href="/pdf/RI8589_FETpulser.pdf" title="RI8535" class="link" onclick="ga('send','event','PDF','view','RI8589 FETPulser')">High Power Supply/Pulser</a> <small>RI8589</small></li>
 					</ul>
 					<h5>Signal Generators</h5>
 					<ul>
-						<li><a href="/web/RI8572_TimeDomainSourceMeasure.pdf" title="RI8572" class="link" onclick="ga('send','event','PDF','view','RI8572 Waveform')">Waveform/Time Domain Measure</a> <small>RI8572</small></li>
-						<li><a href="/web/RI8594_HighPerformanceWaveformMeasure.pdf" title="RI8594" class="link" onclick="ga('send','event','PDF','view','RI8594 Waveform+LNC')">Waveform/Measure &amp; Low Noise Clock</a> <small>RI8594</small></li>
-						<li><a href="/web/RI8508_RFModulatedSource.pdf" title="RI8508" class="link" onclick="ga('send','event','PDF','view','RI8508 6GHz RFSource')">100kHz to 6GHz Source - RF Modulated Source</a> <small>RI8508</small></li>
+						<li><a href="/pdf/RI8572_TimeDomainSourceMeasure.pdf" title="RI8572" class="link" onclick="ga('send','event','PDF','view','RI8572 Waveform')">Waveform/Time Domain Measure</a> <small>RI8572</small></li>
+						<li><a href="/pdf/RI8594_HighPerformanceWaveformMeasure.pdf" title="RI8594" class="link" onclick="ga('send','event','PDF','view','RI8594 Waveform+LNC')">Waveform/Measure &amp; Low Noise Clock</a> <small>RI8594</small></li>
+						<li><a href="/pdf/RI8508_RFModulatedSource.pdf" title="RI8508" class="link" onclick="ga('send','event','PDF','view','RI8508 6GHz RFSource')">100kHz to 6GHz Source - RF Modulated Source</a> <small>RI8508</small></li>
 						<li>0.01 to 20GHz Microwave Source - <small>RI7725</small></li>
-						<li><a href="/web/RI8577_Combiner.pdf" title="RI8577" class="link" onclick="ga('send','event','PDF','view','RI8577 Combiner')">Microwave Source Combiner</a> <small>RI8577</small></li>
-						<li><a href="/web/RI8595_PowerAmplifier.pdf" title="RI8595" class="link" onclick="ga('send','event','PDF','view','RI8595 PA')">RF Power Amplifier</a> <small>RI8595</small></li>
-						<li><a href="/web/RI8601_SourceTFI_web.pdf" title="RI8601" class="link" onclick="ga('send','event','PDF','view','RI8601 80GHz Source TFI')">71 - 86 GHz Source <abbr title="Test Fixture Instrument">TFI</abbr></a> <small>RI8601</small></li>
+						<li><a href="/pdf/RI8577_Combiner.pdf" title="RI8577" class="link" onclick="ga('send','event','PDF','view','RI8577 Combiner')">Microwave Source Combiner</a> <small>RI8577</small></li>
+						<li class="hidden"><a href="/pdf/RI8595_PowerAmplifier.pdf" title="RI8595" class="link" onclick="ga('send','event','PDF','view','RI8595 PA')">RF Power Amplifier</a> <small>RI8595</small></li>
+						<li class="hide"><a href="/pdf/RI8601_SourceTFI_web.pdf" title="RI8601" class="link" onclick="ga('send','event','PDF','view','RI8601 80GHz Source TFI')">71 - 86 GHz Source <abbr title="Test Fixture Instrument">TFI</abbr></a> <small>RI8601</small></li>
 					</ul>
 				</div>
 				<div class="col-md-5">
 					<h5>RF Measurement</h5>
 					<ul>
-						<li><a href="/web/RI8575_PhaseNoise.pdf" title="RI8575" class="link" onclick="ga('send','event','PDF','view','RI8575 Phase Noise')">Phase Noise Measure</a> <small>RI8575</small></li>
-						<li><a href="/web/RI8567_TestSet_12GHz.pdf" title="RI8567 12 GHz Test Set" onclick="ga('send','event','PDF','view','RI8567 12GHz TestSet')">100kHz - 12GHz Test Set</a> <small>RI8567</small></li>
-						<li><a href="/web/RI8581_Receiver_20GHz.pdf" title="RI8581 20 GHz Receiver" onclick="ga('send','event','PDF','view','RI8581 20GHz Reciever')">100kHz - 20GHz Receiver</a> <small>RI8581</small></li>
-						<li><a href="/web/RI8587_ReceiverDSP_20GHz.pdf" title="RI8567 20 GHz Receiver w/DSP" onclick="ga('send','event','PDF','view','RI8587 20GHz Reciever w/DSP')">100kHz - 20GHz Receiver w/DSP</a> <small>RI8587</small></li>
-						<li><a href="/web/RI8545_TestSet_20GHz.pdf" title="RI8567 20 GHz Test Set" onclick="ga('send','event','PDF','view','RI8567 20 GHz Test Set')">0.1 - 20GHz Test Set</a> <small>RI8545</small></li>
-						<li><a href="/web/RI8563_TestSet_40GHz.pdf" title="RI8563 40 GHz Test Set" onclick="ga('send','event','PDF','view','RI8563 40 GHz Test Set')">4 - 40.5GHz Test Set</a> <small>RI8563</small></li>
-						<li><a href="/web/RI8580_TestSet_60GHz.pdf" title="RI8580 60 GHz Test Set" onclick="ga('send','event','PDF','view','RI8580 60 GHz Test Set')">56 - 67GHz Test Set</a> <small>RI8580</small></li>
-						<li><a href="/web/RI8564_TestSet_80GHz.pdf" title="RI8564 80 GHz Test Set" onclick="ga('send','event','PDF','view','RI8564 80 GHz Test Set')">71 - 86GHz Test Set</a> <small>RI8564</small></li>
-						<li><a href="/web/RI8602_ReceiveTFI_web.pdf" title="RI8602" class="link" onclick="ga('send','event','PDF','view','RI8567 20 GHz Test Set')">71 - 86 GHz Receive <abbr title="Test Fixture Instrument">TFI</abbr></a> <small>RI8602</small></li>
+						<li><a href="/pdf/RI8575_PhaseNoise.pdf" title="RI8575" class="link" onclick="ga('send','event','PDF','view','RI8575 Phase Noise')">Phase Noise Measure</a> <small>RI8575</small></li>
+						<li><a href="/pdf/RI8567_TestSet_12GHz.pdf" title="RI8567 12 GHz Test Set" onclick="ga('send','event','PDF','view','RI8567 12GHz TestSet')">100kHz - 12GHz Test Set</a> <small>RI8567</small></li>
+						<li><a href="/pdf/RI8581_Receiver_20GHz.pdf" title="RI8581 20 GHz Receiver" onclick="ga('send','event','PDF','view','RI8581 20GHz Receiver')">100kHz - 20GHz Receiver</a> <small>RI8581</small></li>
+						<li><a href="/pdf/RI8587_ReceiverDSP_20GHz.pdf" title="RI8567 20 GHz Receiver w/DSP" onclick="ga('send','event','PDF','view','RI8587 20GHz Reciever w/DSP')">100kHz - 20GHz Receiver w/DSP</a> <small>RI8587</small></li>
+						<li><a href="/pdf/RI8545_TestSet_20GHz.pdf" title="RI8567 20 GHz Test Set" onclick="ga('send','event','PDF','view','RI8567 20 GHz Test Set')">0.1 - 20GHz Test Set</a> <small>RI8545</small></li>
+						<li><a href="/pdf/RI8563_TestSet_40GHz.pdf" title="RI8563 40 GHz Test Set" onclick="ga('send','event','PDF','view','RI8563 40 GHz Test Set')">4 - 40.5GHz Test Set</a> <small>RI8563</small></li>
+						<li><a href="/pdf/RI8580_TestSet_60GHz.pdf" title="RI8580 60 GHz Test Set" onclick="ga('send','event','PDF','view','RI8580 60 GHz Test Set')">56 - 67GHz Test Set</a> <small>RI8580</small></li>
+						<li class="hide"><a href="/pdf/RI8564_TestSet_80GHz.pdf" title="RI8564 80 GHz Test Set" onclick="ga('send','event','PDF','view','RI8564 80 GHz Test Set')">71 - 86GHz Test Set</a> <small>RI8564</small></li>
+						<li class="hide"><a href="/pdf/RI8602_ReceiveTFI_web.pdf" title="RI8602" class="link" onclick="ga('send','event','PDF','view','RI8567 20 GHz Test Set')">71 - 86 GHz Receive <abbr title="Test Fixture Instrument">TFI</abbr></a> <small>RI8602</small></li>
+						<li><a href="/pdf/RI8604_TestSet_80GHz.pdf" title="RI8604" class="link" onclick="ga('send','event','PDF','view','RI8604 71 to 86 GHz Test Set')">71 to 86 GHz Test Set</a> <small>RI8604</small></li>
 					  </ul>
 				</div>
 			</div>

@@ -383,12 +383,35 @@
 			</div>
 			<div class="row">
 				<div style="margin-bottom: 50px;" class="col-xs-12" class="show">
+					<h2>When to Recalibrate?</h2>
+					<p>
+					  Never recalibrate "stand-alone" TIMs because they only interface with the Fixture and DIB and so their Calibration data is valid for any configuration.  Recalibration may only be needed when changing TIMs with "RF System" connections.  The "RF System" is any cable connection between TIMs found on the Diag/Cal Inteface Plate (Diag Fixture).  Fixture Calibration may be required on Fixtures that use the "calPerTester=True" attribute in the Device Connection Editor. Always follow the Cassini Reference Guide, CH 5: Diagnose proceedure after changing TIMs and prior to releasing the tester for production.
+					</p>
+					<table  id="standaloneTIMs" class="table table-striped table-bordered" cellspacing="0" width="100%" style="width: 100%;">
+						<thead style="width: 100%">
+							<tr>
+								<th>TIM Model</th>
+								<th>Description of Standalone TIMs</th>
+							</tr>
+						</thead>
+						<tbody>
+						  <tr><td>RI8535</td><td>80/40/20 Univeral Digital TIM</td></tr>
+						  <tr><td>RI8545</td><td>Device Power TIM</td></tr>
+						  <tr><td>RI8572</td><td>Waveform TIM</td></tr>
+						  <tr><td>RI8589</td><td>FET Pulser TIM</td></tr>
+						  <tr><td>RI8594</td><td>Waveform TIM with Low Noise Clock</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div> <!-- .row -->
+			<div class="row">
+				<div style="margin-bottom: 50px;" class="col-xs-12" class="show">
 					<h2>Maintenance Schedule</h2>
 					<p>Detailed Maintenance Schedule information and proceedures are in the Cassini Reference Guide, CH 3: Care & Maintenance.</p>
 					<table  id="maintSchedule" class="table table-striped table-bordered" cellspacing="0" width="100%" style="width: 100%;">
 						<thead style="width: 100%">
 							<tr>
-								<th>Item</th>
+								<th>Item to Inspect</th>
 								<th>Time Period</th>
 								<th>As Needed</th>
 								<th>Time to Complete</th>
@@ -398,17 +421,17 @@
 							</tr>
 						</thead>
 						<tbody>
-						  <tr><td>Socket</td><td>Daily</td><td>Mfg. Suggestion</td><td>1-2 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Socket</td><td>Daily</td><td>Mfg. Suggestion</td><td>1-2 min</td><td>Operator</td><td>Standard Tools, Magnifier</td><td></td></tr>
 						  <tr><td>DIB</td><td>Monthly</td><td>>10% Yield Change</td><td>5 min</td><td>Maintenance</td><td>Standard Tools, Voltmeter, Magnifier</td><td></td></tr>
-						  <tr><td>Test Head TIM Blocks</td><td>Monthly</td><td>1000 Fixture Docks</td><td>2 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
-						  <tr><td>Aux Rack RF Cables</td><td>Yearly</td><td>TIM Exchange</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td></td></tr>
-						  <tr><td>Fixture Inserts</td><td>Daily</td><td>1000 DIB Installs</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
+						  <tr><td>Test Head TIM Blocks</td><td>Monthly</td><td>1000 Fixture Docks</td><td>2 min</td><td>Operator</td><td>Connector Cleaner (lube free), Compressed Air</td><td></td></tr>
+						  <tr><td>Aux Rack SMA Cables</td><td>Yearly</td><td>20 GHz Source Exchange</td><td>1-2 min</td><td>Maintenance</td><td>SMA Torque Wrench</td><td></td></tr>
+						  <tr><td>Fixture Inserts</td><td>Daily</td><td>1000 DIB Installs</td><td>1 min</td><td>Operator</td><td>Connector Cleaner (lube free)</td><td></td></tr>
 						  <tr><td>Calibrate Fixture</td><td>Never</td><td>Modification</td><td>Varies</td><td>Developer</td><td>Calibration Kit</td><td></td></tr>
-						  <tr><td>Docking Hardware</td><td>Monthly</td><td>1000 Docks</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td>If wear is found</td></tr>
+						  <tr><td>Docking Hardware</td><td>Monthly</td><td>1000 Docks</td><td>1 min</td><td>Operator</td><td>None (Eyes)</td><td>If wear is found</td></tr>
 						  <tr><td>Handler POD/RIFL Cable</td><td>Quarterly</td><td>Frequent Handler Changes</td><td>1 min</td><td>Operator</td><td>Standard Tools</td><td></td></tr>
-						  <tr><td>Diagnose/Verify</td><td>Monthly</td><td>Yield Drops</td><td>5-30 min</td><td>Maintenance</td><td>Standard Tools</td><td>On Failure</td></tr>
-						  <tr><td>Calibrate TIMs</td><td>Yearly</td><td>TIM Repair</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td></td></tr>
-						  <tr><td>Calibrate RF System</td><td>Yearly</td><td>TIM Exchange</td><td>1-2 min</td><td>Maintenance</td><td>Standard Tools</td><td>Yes</td></tr>
+						  <tr><td>Diagnose/Verify</td><td>Monthly</td><td>Yield Drops</td><td>5-30 min</td><td>Maintenance</td><td>Diagnostic Kit</td><td>On Failure</td></tr>
+						  <tr><td>Calibrate TIMs</td><td>Yearly</td><td>TIM Repair</td><td>5-30 min</td><td>Maintenance</td><td>Diag &amp; Calibration Kit</td><td></td></tr>
+						  <tr><td>Calibrate RF System</td><td>Yearly</td><td>TIM Exchange</td><td>2-6 hours</td><td>Maintenance</td><td>Diag &amp; Calibration Kit</td><td>Yes</td></tr>
 						</tbody>
 					</table>
 				</div>
