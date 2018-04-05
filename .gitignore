@@ -7,3 +7,5 @@ oneuiv*/
 sametime/
 IBM_iNotes*
 *.komodoproject
+node_modules/
+dist/
