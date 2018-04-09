@@ -1,0 +1,2512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://roos.com/index.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://roos.com/newFullUser</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/profiles.nsf/myAccount</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/support.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/products.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/infrastructure.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/instruments.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/tims.html</loc>
+  <lastmod>2018-03-26T21:02:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/software.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/fixture.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/rik</loc>
+  <lastmod>2018-03-30T18:27:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/services.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/turnkey.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/production.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/guru.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/training.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/company.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/news.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/careers.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/mediaKit.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/visitRI.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/contact.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/supportPlans.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/maintenance.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/help/dev</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/help/admin</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/help/maint</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/help/operate</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/CassiniReferenceGuide_2.1.1_mini.pdf</loc>
+  <lastmod>2016-10-17T20:12:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/privacy.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/automotive_radar.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/apps</loc>
+  <lastmod>2018-03-30T18:27:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/accessories</loc>
+  <lastmod>2018-03-30T18:27:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/services</loc>
+  <lastmod>2018-03-30T18:27:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/CASSINI/$file/CASSINI.pdf</loc>
+  <lastmod>2018-03-08T03:22:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/registration.nsf/passwordRecovery!OpenForm&amp;Seq=1</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/docs</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Pack_TIM.pdf</loc>
+  <lastmod>2015-02-14T02:41:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Pack_AUX_Src.pdf</loc>
+  <lastmod>2015-02-14T02:38:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Exchange_TIM.pdf</loc>
+  <lastmod>2015-02-14T02:47:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/webTopicFixturing!OpenView</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/webTopicTestPlans!OpenView</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/webTopicPartSpecs!OpenView</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/webByTopic!OpenView</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/access</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/profiles.nsf/myAccount?openform</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/registration.nsf/changePassword?openform</loc>
+  <lastmod>2018-03-30T18:28:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/docs/RBEH-AEHSLJ</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/syrfcore.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/CassiniReferenceGuide_2.1.1_mini.pdf</loc>
+  <lastmod>2017-10-10T18:43:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8546_DevicePower.pdf</loc>
+  <lastmod>2017-09-26T17:47:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8535_UniversalDigital.pdf</loc>
+  <lastmod>2017-09-26T17:47:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8589_FETpulser.pdf</loc>
+  <lastmod>2017-09-26T17:48:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8572_TimeDomainSourceMeasure.pdf</loc>
+  <lastmod>2017-09-26T17:48:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8594_HighPerformanceWaveformMeasure.pdf</loc>
+  <lastmod>2017-09-28T23:19:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8508_RFModulatedSource.pdf</loc>
+  <lastmod>2017-09-26T17:47:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8577_Combiner.pdf</loc>
+  <lastmod>2017-09-26T17:48:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8595_PowerAmplifier.pdf</loc>
+  <lastmod>2017-10-24T02:14:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8601_SourceTFI_web.pdf</loc>
+  <lastmod>2017-09-26T17:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8575_PhaseNoise.pdf</loc>
+  <lastmod>2017-09-26T17:48:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8567_TestSet_12GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8581_Receiver_20GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8587_ReceiverDSP_20GHz.pdf</loc>
+  <lastmod>2017-09-26T17:35:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8545_TestSet_20GHz.pdf</loc>
+  <lastmod>2017-09-26T17:47:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8563_TestSet_40GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8580_TestSet_60GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8564_TestSet_80GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8602_ReceiveTFI_web.pdf</loc>
+  <lastmod>2017-09-26T17:48:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/pdf/RI8604_TestSet_80GHz.pdf</loc>
+  <lastmod>2017-09-26T17:48:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0126A</loc>
+  <lastmod>2018-03-30T18:29:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/fixtures</loc>
+  <lastmod>2018-03-30T18:29:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/dibs.html</loc>
+  <lastmod>2018-03-28T02:46:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/table</loc>
+  <lastmod>2018-03-30T18:29:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/cables/Filters=Launch</loc>
+  <lastmod>2018-03-30T18:29:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/cables/Filters=Module</loc>
+  <lastmod>2018-03-30T18:29:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/cables/Filters=Block</loc>
+  <lastmod>2018-03-30T18:29:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/cables</loc>
+  <lastmod>2018-03-30T18:29:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Top+Plates</loc>
+  <lastmod>2018-03-30T18:29:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Inserts</loc>
+  <lastmod>2018-03-30T18:29:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Resource+Plates</loc>
+  <lastmod>2018-03-30T18:29:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Carriers</loc>
+  <lastmod>2018-03-30T18:29:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Modules</loc>
+  <lastmod>2018-03-30T18:29:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Sides</loc>
+  <lastmod>2018-03-30T18:29:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Accessories</loc>
+  <lastmod>2018-03-30T18:29:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Bottom+Plates</loc>
+  <lastmod>2018-03-30T18:29:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/category/Fixture+Blocks</loc>
+  <lastmod>2018-03-30T18:29:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Calibration+Tools</loc>
+  <lastmod>2018-03-30T18:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Replacement+Parts</loc>
+  <lastmod>2018-03-30T18:29:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Docking</loc>
+  <lastmod>2018-03-30T18:29:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Control+Pods</loc>
+  <lastmod>2018-03-30T18:29:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+DIB+Layer</loc>
+  <lastmod>2018-03-30T18:29:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Pedestal+Support+&amp;+Clamps</loc>
+  <lastmod>2018-03-30T18:29:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts</loc>
+  <lastmod>2018-03-30T18:29:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Featured</loc>
+  <lastmod>2018-03-30T18:29:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0273A</loc>
+  <lastmod>2018-03-30T18:29:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0253A</loc>
+  <lastmod>2018-03-30T18:29:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0216A</loc>
+  <lastmod>2018-03-30T18:29:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0212A</loc>
+  <lastmod>2018-03-30T18:29:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0201B</loc>
+  <lastmod>2018-03-30T18:29:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0200A</loc>
+  <lastmod>2018-03-30T18:29:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Calibration+Tools</loc>
+  <lastmod>2018-03-30T18:29:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0297A</loc>
+  <lastmod>2018-03-30T18:29:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0286A</loc>
+  <lastmod>2018-03-30T18:29:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0249A</loc>
+  <lastmod>2018-03-30T18:29:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0167A</loc>
+  <lastmod>2018-03-30T18:29:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0150A</loc>
+  <lastmod>2018-03-30T18:29:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0149A</loc>
+  <lastmod>2018-03-30T18:29:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0130A</loc>
+  <lastmod>2018-03-30T18:29:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0028A</loc>
+  <lastmod>2018-03-30T18:29:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Accessories</loc>
+  <lastmod>2018-03-30T18:29:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0300A</loc>
+  <lastmod>2018-03-30T18:29:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0257A</loc>
+  <lastmod>2018-03-30T18:29:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0244A</loc>
+  <lastmod>2018-03-30T18:29:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0242A</loc>
+  <lastmod>2018-03-30T18:29:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0204A</loc>
+  <lastmod>2018-03-30T18:29:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0199B</loc>
+  <lastmod>2018-03-30T18:29:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0020A</loc>
+  <lastmod>2018-03-30T18:29:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Blocks</loc>
+  <lastmod>2018-03-30T18:29:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0287A</loc>
+  <lastmod>2018-03-30T18:29:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0211A</loc>
+  <lastmod>2018-03-30T18:29:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0202A</loc>
+  <lastmod>2018-03-30T18:29:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0198B</loc>
+  <lastmod>2018-03-30T18:29:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0187B</loc>
+  <lastmod>2018-03-30T18:30:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0168A</loc>
+  <lastmod>2018-03-30T18:30:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0166B</loc>
+  <lastmod>2018-03-30T18:30:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0146A</loc>
+  <lastmod>2018-03-30T18:30:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0144A</loc>
+  <lastmod>2018-03-30T18:30:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0141A</loc>
+  <lastmod>2018-03-30T18:30:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Bottom+Plates</loc>
+  <lastmod>2018-03-30T18:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0178A</loc>
+  <lastmod>2018-03-30T18:30:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0018B</loc>
+  <lastmod>2018-03-30T18:30:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Cables</loc>
+  <lastmod>2018-03-30T18:30:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0298A</loc>
+  <lastmod>2018-03-30T18:30:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0284A</loc>
+  <lastmod>2018-03-30T18:30:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0280A</loc>
+  <lastmod>2018-03-30T18:30:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0272A</loc>
+  <lastmod>2018-03-30T18:30:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0258A</loc>
+  <lastmod>2018-03-30T18:30:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0248A</loc>
+  <lastmod>2018-03-30T18:30:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0247A</loc>
+  <lastmod>2018-03-30T18:30:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0246A</loc>
+  <lastmod>2018-03-30T18:30:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0243A</loc>
+  <lastmod>2018-03-30T18:30:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0238A</loc>
+  <lastmod>2018-03-30T18:30:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0237B</loc>
+  <lastmod>2018-03-30T18:30:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0232A</loc>
+  <lastmod>2018-03-30T18:30:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0231A</loc>
+  <lastmod>2018-03-30T18:30:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0230A</loc>
+  <lastmod>2018-03-30T18:30:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0210A</loc>
+  <lastmod>2018-03-30T18:30:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0209A</loc>
+  <lastmod>2018-03-30T18:30:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0208A</loc>
+  <lastmod>2018-03-30T18:30:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0206A</loc>
+  <lastmod>2018-03-30T18:30:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0199A</loc>
+  <lastmod>2018-03-30T18:30:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0197A</loc>
+  <lastmod>2018-03-30T18:30:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0196A</loc>
+  <lastmod>2018-03-30T18:30:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0195A</loc>
+  <lastmod>2018-03-30T18:30:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0194A</loc>
+  <lastmod>2018-03-30T18:30:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0193A</loc>
+  <lastmod>2018-03-30T18:30:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0192A</loc>
+  <lastmod>2018-03-30T18:30:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0191A</loc>
+  <lastmod>2018-03-30T18:30:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0190A</loc>
+  <lastmod>2018-03-30T18:30:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0189A</loc>
+  <lastmod>2018-03-30T18:30:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0185A</loc>
+  <lastmod>2018-03-30T18:30:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0184A</loc>
+  <lastmod>2018-03-30T18:30:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0183A</loc>
+  <lastmod>2018-03-30T18:30:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0181A</loc>
+  <lastmod>2018-03-30T18:30:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0179A</loc>
+  <lastmod>2018-03-30T18:30:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0172A</loc>
+  <lastmod>2018-03-30T18:30:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0171A</loc>
+  <lastmod>2018-03-30T18:30:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0169B</loc>
+  <lastmod>2018-03-30T18:30:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0157A</loc>
+  <lastmod>2018-03-30T18:30:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0148A</loc>
+  <lastmod>2018-03-30T18:30:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0128A</loc>
+  <lastmod>2018-03-30T18:30:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0113A</loc>
+  <lastmod>2018-03-30T18:30:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0073A</loc>
+  <lastmod>2018-03-30T18:30:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0072B</loc>
+  <lastmod>2018-03-30T18:30:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0009A</loc>
+  <lastmod>2018-03-30T18:30:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0007B</loc>
+  <lastmod>2018-03-30T18:30:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0007A</loc>
+  <lastmod>2018-03-30T18:30:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Carriers</loc>
+  <lastmod>2018-03-30T18:30:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0236A</loc>
+  <lastmod>2018-03-30T18:30:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0175B</loc>
+  <lastmod>2018-03-30T18:30:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0160A</loc>
+  <lastmod>2018-03-30T18:30:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0014B</loc>
+  <lastmod>2018-03-30T18:30:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Control+PODs</loc>
+  <lastmod>2018-03-30T18:30:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0267B</loc>
+  <lastmod>2018-03-30T18:30:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0266A</loc>
+  <lastmod>2018-03-30T18:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0265A</loc>
+  <lastmod>2018-03-30T18:30:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0264A</loc>
+  <lastmod>2018-03-30T18:31:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0263A</loc>
+  <lastmod>2018-03-30T18:31:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0279A</loc>
+  <lastmod>2018-03-30T18:31:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0278A</loc>
+  <lastmod>2018-03-30T18:31:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0262A</loc>
+  <lastmod>2018-03-30T18:31:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0261A</loc>
+  <lastmod>2018-03-30T18:31:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0260B</loc>
+  <lastmod>2018-03-30T18:31:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0241A</loc>
+  <lastmod>2018-03-30T18:31:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0240A</loc>
+  <lastmod>2018-03-30T18:31:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0239A</loc>
+  <lastmod>2018-03-30T18:31:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0213B</loc>
+  <lastmod>2018-03-30T18:31:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0129A</loc>
+  <lastmod>2018-03-30T18:31:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0123A</loc>
+  <lastmod>2018-03-30T18:31:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0119A</loc>
+  <lastmod>2018-03-30T18:31:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0094A</loc>
+  <lastmod>2018-03-30T18:31:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0093A</loc>
+  <lastmod>2018-03-30T18:31:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0090A</loc>
+  <lastmod>2018-03-30T18:31:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0165A</loc>
+  <lastmod>2018-03-30T18:31:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0070A</loc>
+  <lastmod>2018-03-30T18:31:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0068A</loc>
+  <lastmod>2018-03-30T18:31:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/HNDPLATE</loc>
+  <lastmod>2018-03-30T18:31:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Inserts</loc>
+  <lastmod>2018-03-30T18:31:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0217A</loc>
+  <lastmod>2018-03-30T18:31:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0156A</loc>
+  <lastmod>2018-03-30T18:31:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0138A</loc>
+  <lastmod>2018-03-30T18:31:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0137A</loc>
+  <lastmod>2018-03-30T18:31:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0135C</loc>
+  <lastmod>2018-03-30T18:31:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0118A</loc>
+  <lastmod>2018-03-30T18:31:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0117A</loc>
+  <lastmod>2018-03-30T18:31:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Modules</loc>
+  <lastmod>2018-03-30T18:31:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0256A</loc>
+  <lastmod>2018-03-30T18:31:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0255A</loc>
+  <lastmod>2018-03-30T18:31:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0254A</loc>
+  <lastmod>2018-03-30T18:31:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0252A</loc>
+  <lastmod>2018-03-30T18:31:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0251A</loc>
+  <lastmod>2018-03-30T18:31:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0250A</loc>
+  <lastmod>2018-03-30T18:31:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0220A</loc>
+  <lastmod>2018-03-30T18:31:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0218A</loc>
+  <lastmod>2018-03-30T18:31:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0203B</loc>
+  <lastmod>2018-03-30T18:31:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0147A</loc>
+  <lastmod>2018-03-30T18:31:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0132A</loc>
+  <lastmod>2018-03-30T18:31:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0105A</loc>
+  <lastmod>2018-03-30T18:31:34+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0095B</loc>
+  <lastmod>2018-03-30T18:31:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0092A</loc>
+  <lastmod>2018-03-30T18:31:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0088A</loc>
+  <lastmod>2018-03-30T18:31:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0087A</loc>
+  <lastmod>2018-03-30T18:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0053B</loc>
+  <lastmod>2018-03-30T18:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0039B</loc>
+  <lastmod>2018-03-30T18:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Repair</loc>
+  <lastmod>2018-03-30T18:31:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0099A</loc>
+  <lastmod>2018-03-30T18:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0071A</loc>
+  <lastmod>2018-03-30T18:31:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Resource+Plates</loc>
+  <lastmod>2018-03-30T18:31:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0275A</loc>
+  <lastmod>2018-03-30T18:31:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0274A</loc>
+  <lastmod>2018-03-30T18:31:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0271A</loc>
+  <lastmod>2018-03-30T18:31:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0270A</loc>
+  <lastmod>2018-03-30T18:31:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0269A</loc>
+  <lastmod>2018-03-30T18:31:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0268A</loc>
+  <lastmod>2018-03-30T18:31:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0229A</loc>
+  <lastmod>2018-03-30T18:31:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0228A</loc>
+  <lastmod>2018-03-30T18:31:49+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0227A</loc>
+  <lastmod>2018-03-30T18:31:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0226A</loc>
+  <lastmod>2018-03-30T18:31:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0225A</loc>
+  <lastmod>2018-03-30T18:31:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0224A</loc>
+  <lastmod>2018-03-30T18:31:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0223A</loc>
+  <lastmod>2018-03-30T18:31:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0222A</loc>
+  <lastmod>2018-03-30T18:31:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Sides</loc>
+  <lastmod>2018-03-30T18:31:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0235A</loc>
+  <lastmod>2018-03-30T18:31:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0234A</loc>
+  <lastmod>2018-03-30T18:31:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0233A</loc>
+  <lastmod>2018-03-30T18:31:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0182B</loc>
+  <lastmod>2018-03-30T18:31:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0164A</loc>
+  <lastmod>2018-03-30T18:31:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0159A</loc>
+  <lastmod>2018-03-30T18:32:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0153B</loc>
+  <lastmod>2018-03-30T18:32:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Top+Plates</loc>
+  <lastmod>2018-03-30T18:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0285A</loc>
+  <lastmod>2018-03-30T18:32:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0214B</loc>
+  <lastmod>2018-03-30T18:32:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0163A</loc>
+  <lastmod>2018-03-30T18:32:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0012B</loc>
+  <lastmod>2018-03-30T18:32:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Replacement+Parts</loc>
+  <lastmod>2018-03-30T18:32:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0276A</loc>
+  <lastmod>2018-03-30T18:32:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0205A</loc>
+  <lastmod>2018-03-30T18:32:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0173A</loc>
+  <lastmod>2018-03-30T18:32:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0131A</loc>
+  <lastmod>2018-03-30T18:32:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124G</loc>
+  <lastmod>2018-03-30T18:32:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124A</loc>
+  <lastmod>2018-03-30T18:32:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0112A</loc>
+  <lastmod>2018-03-30T18:32:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0085A</loc>
+  <lastmod>2018-03-30T18:32:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0057A</loc>
+  <lastmod>2018-03-30T18:32:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0036A</loc>
+  <lastmod>2018-03-30T18:32:14+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0019A</loc>
+  <lastmod>2018-03-30T18:32:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Services</loc>
+  <lastmod>2018-03-30T18:32:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0245A</loc>
+  <lastmod>2018-03-30T18:32:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0125A</loc>
+  <lastmod>2018-03-30T18:32:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0110A</loc>
+  <lastmod>2018-03-30T18:32:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0082A</loc>
+  <lastmod>2018-03-30T18:32:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0048A</loc>
+  <lastmod>2018-03-30T18:32:20+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0047A</loc>
+  <lastmod>2018-03-30T18:32:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0046A</loc>
+  <lastmod>2018-03-30T18:32:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0043A</loc>
+  <lastmod>2018-03-30T18:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=System+Support+Options</loc>
+  <lastmod>2018-03-30T18:32:23+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0063B</loc>
+  <lastmod>2018-03-30T18:32:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0050A</loc>
+  <lastmod>2018-03-30T18:32:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0043B</loc>
+  <lastmod>2018-03-30T18:32:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0041B</loc>
+  <lastmod>2018-03-30T18:32:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Training+Courses</loc>
+  <lastmod>2018-03-30T18:32:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0040A</loc>
+  <lastmod>2018-03-30T18:32:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/GURU-SRV</loc>
+  <lastmod>2018-03-30T18:32:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/GURU-SU</loc>
+  <lastmod>2018-03-30T18:32:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Cassini_Basic_Training_Syllabus.pdf</loc>
+  <lastmod>2015-09-10T21:42:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Admin_Training_Syllabus.pdf</loc>
+  <lastmod>2015-09-10T21:42:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/Cassini_Maintenance_Training_Syllabus.pdf</loc>
+  <lastmod>2015-09-10T21:42:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/green.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/shipping.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/returns.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/legal.html</loc>
+  <lastmod>2018-03-28T02:46:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/terms.html</loc>
+  <lastmod>2018-03-28T02:46:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/news.nsf/</loc>
+  <lastmod>2018-03-30T18:32:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/newPartialUser</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0109A</loc>
+  <lastmod>2018-03-30T18:32:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0108A</loc>
+  <lastmod>2018-03-30T18:32:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0107A</loc>
+  <lastmod>2018-03-30T18:32:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RITS</loc>
+  <lastmod>2018-03-30T18:32:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0045A</loc>
+  <lastmod>2018-03-30T18:32:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/Patches.nsf/releasedPatches?openform&amp;count=1000</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/7100_updates.rss</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/docs/RBEH-AEGP8B</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/docs/RBEH-6XH5L4</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/RoosCalibrationScope_v1.0.pdf</loc>
+  <lastmod>2016-03-24T20:59:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/CASSINI-AUTO.pdf</loc>
+  <lastmod>2017-04-07T18:11:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/web/RI8564_TestSet_80GHz.pdf</loc>
+  <lastmod>2015-12-18T23:06:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/4G-CASSINI</loc>
+  <lastmod>2018-03-30T18:32:57+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/5G-CASSINI</loc>
+  <lastmod>2018-03-30T18:32:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/AUTO-CASSINI</loc>
+  <lastmod>2018-03-30T18:32:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/BACK-CASSINI</loc>
+  <lastmod>2018-03-30T18:32:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/MEMS-CASSINI</loc>
+  <lastmod>2018-03-30T18:33:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/PA-CASSINI</loc>
+  <lastmod>2018-03-30T18:33:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/WIGIG-CASSINI</loc>
+  <lastmod>2018-03-30T18:33:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Calibration%20Tools</loc>
+  <lastmod>2018-03-30T18:33:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Fixture%20Accessories</loc>
+  <lastmod>2018-03-30T18:33:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Fixture%20Blocks</loc>
+  <lastmod>2018-03-30T18:33:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Replacement%20Parts</loc>
+  <lastmod>2018-03-30T18:33:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/66ce4b2a5a0cf49d8825768e006997de/a45689d2886a27d78825746700787bfe!OpenDocument</loc>
+  <lastmod>2018-03-30T18:33:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/66ce4b2a5a0cf49d8825768e006997de/7b69c99d5883c0e2882574750006f6ab!OpenDocument</loc>
+  <lastmod>2018-03-30T18:33:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/commerce/catalog.nsf/KITS2?openform&amp;count=1000&amp;RestrictToCategory=Replacement%20Parts</loc>
+  <lastmod>2018-03-30T18:33:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/a5d9dc807b3887b08825783e00739671!OpenDocument</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/19ed8609a2559dce88257f9e00560bd9!OpenDocument</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/77d3d59d25dcf5038825782c0000e555!OpenDocument</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/roos/documentation.nsf/14e44b3fe715e5ab8825683b00078bcd/1cd9ab44fa76cb69882579a000639c60!OpenDocument</loc>
+  <lastmod>2018-03-30T18:39:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/W+S</loc>
+  <lastmod>2018-03-30T18:33:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/WARRANTY</loc>
+  <lastmod>2018-03-30T18:33:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/T-X</loc>
+  <lastmod>2018-03-30T18:33:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/T-U</loc>
+  <lastmod>2018-03-30T18:33:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/T-L</loc>
+  <lastmod>2018-03-30T18:33:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/SU</loc>
+  <lastmod>2018-03-30T18:33:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0283B</loc>
+  <lastmod>2018-03-30T18:33:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0283A</loc>
+  <lastmod>2018-03-30T18:33:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0277A</loc>
+  <lastmod>2018-03-30T18:33:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0260A</loc>
+  <lastmod>2018-03-30T18:33:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0259A</loc>
+  <lastmod>2018-03-30T18:33:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0237A</loc>
+  <lastmod>2018-03-30T18:33:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0215A</loc>
+  <lastmod>2018-03-30T18:33:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0214A</loc>
+  <lastmod>2018-03-30T18:33:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0213C</loc>
+  <lastmod>2018-03-30T18:33:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0213A</loc>
+  <lastmod>2018-03-30T18:33:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0203A</loc>
+  <lastmod>2018-03-30T18:33:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0201A</loc>
+  <lastmod>2018-03-30T18:33:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0198A</loc>
+  <lastmod>2018-03-30T18:33:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0188A</loc>
+  <lastmod>2018-03-30T18:33:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0187A</loc>
+  <lastmod>2018-03-30T18:33:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0186A</loc>
+  <lastmod>2018-03-30T18:33:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0182A</loc>
+  <lastmod>2018-03-30T18:33:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0180A</loc>
+  <lastmod>2018-03-30T18:33:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0177A</loc>
+  <lastmod>2018-03-30T18:33:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0176A</loc>
+  <lastmod>2018-03-30T18:33:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0175A</loc>
+  <lastmod>2018-03-30T18:33:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0174A</loc>
+  <lastmod>2018-03-30T18:33:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0170A</loc>
+  <lastmod>2018-03-30T18:33:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0169A</loc>
+  <lastmod>2018-03-30T18:33:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0166A</loc>
+  <lastmod>2018-03-30T18:33:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0162A</loc>
+  <lastmod>2018-03-30T18:33:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0161A</loc>
+  <lastmod>2018-03-30T18:33:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0158A</loc>
+  <lastmod>2018-03-30T18:33:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0155B</loc>
+  <lastmod>2018-03-30T18:33:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0155A</loc>
+  <lastmod>2018-03-30T18:33:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0154A</loc>
+  <lastmod>2018-03-30T18:33:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0153A</loc>
+  <lastmod>2018-03-30T18:33:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0152B</loc>
+  <lastmod>2018-03-30T18:33:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0152A</loc>
+  <lastmod>2018-03-30T18:33:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0151B</loc>
+  <lastmod>2018-03-30T18:33:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0151A</loc>
+  <lastmod>2018-03-30T18:33:48+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0145A</loc>
+  <lastmod>2018-03-30T18:33:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0143B</loc>
+  <lastmod>2018-03-30T18:33:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0143A</loc>
+  <lastmod>2018-03-30T18:33:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0142A</loc>
+  <lastmod>2018-03-30T18:33:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0136A</loc>
+  <lastmod>2018-03-30T18:33:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0135B</loc>
+  <lastmod>2018-03-30T18:33:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0135A</loc>
+  <lastmod>2018-03-30T18:33:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0134B</loc>
+  <lastmod>2018-03-30T18:33:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0134A</loc>
+  <lastmod>2018-03-30T18:33:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0133A</loc>
+  <lastmod>2018-03-30T18:33:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0127A</loc>
+  <lastmod>2018-03-30T18:33:57+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0126B</loc>
+  <lastmod>2018-03-30T18:33:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124F</loc>
+  <lastmod>2018-03-30T18:33:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124E</loc>
+  <lastmod>2018-03-30T18:34:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124D</loc>
+  <lastmod>2018-03-30T18:34:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124C</loc>
+  <lastmod>2018-03-30T18:34:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0124B</loc>
+  <lastmod>2018-03-30T18:34:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0122A</loc>
+  <lastmod>2018-03-30T18:34:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0121A</loc>
+  <lastmod>2018-03-30T18:34:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0120B</loc>
+  <lastmod>2018-03-30T18:34:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0120A</loc>
+  <lastmod>2018-03-30T18:34:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0116A</loc>
+  <lastmod>2018-03-30T18:34:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0115A</loc>
+  <lastmod>2018-03-30T18:34:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0114A</loc>
+  <lastmod>2018-03-30T18:34:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0111A</loc>
+  <lastmod>2018-03-30T18:34:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0104A</loc>
+  <lastmod>2018-03-30T18:34:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0103C</loc>
+  <lastmod>2018-03-30T18:34:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0103B</loc>
+  <lastmod>2018-03-30T18:34:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0103A</loc>
+  <lastmod>2018-03-30T18:34:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0102A</loc>
+  <lastmod>2018-03-30T18:34:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0101B</loc>
+  <lastmod>2018-03-30T18:34:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0101A</loc>
+  <lastmod>2018-03-30T18:34:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0100B</loc>
+  <lastmod>2018-03-30T18:34:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0100A</loc>
+  <lastmod>2018-03-30T18:34:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0098A</loc>
+  <lastmod>2018-03-30T18:34:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0097A</loc>
+  <lastmod>2018-03-30T18:34:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0096A</loc>
+  <lastmod>2018-03-30T18:34:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0095A</loc>
+  <lastmod>2018-03-30T18:34:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0091C</loc>
+  <lastmod>2018-03-30T18:34:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0091B</loc>
+  <lastmod>2018-03-30T18:34:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0091A</loc>
+  <lastmod>2018-03-30T18:34:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0089A</loc>
+  <lastmod>2018-03-30T18:34:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0086A</loc>
+  <lastmod>2018-03-30T18:34:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0084A</loc>
+  <lastmod>2018-03-30T18:34:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0083A</loc>
+  <lastmod>2018-03-30T18:34:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0081A</loc>
+  <lastmod>2018-03-30T18:34:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0080B</loc>
+  <lastmod>2018-03-30T18:34:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0080A</loc>
+  <lastmod>2018-03-30T18:34:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0079A</loc>
+  <lastmod>2018-03-30T18:34:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0078A</loc>
+  <lastmod>2018-03-30T18:34:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0077B</loc>
+  <lastmod>2018-03-30T18:34:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0077A</loc>
+  <lastmod>2018-03-30T18:34:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0076A</loc>
+  <lastmod>2018-03-30T18:34:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0075A</loc>
+  <lastmod>2018-03-30T18:34:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0074C</loc>
+  <lastmod>2018-03-30T18:34:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0074B</loc>
+  <lastmod>2018-03-30T18:34:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0074A</loc>
+  <lastmod>2018-03-30T18:34:37+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0072A</loc>
+  <lastmod>2018-03-30T18:34:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0069A</loc>
+  <lastmod>2018-03-30T18:34:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0067A</loc>
+  <lastmod>2018-03-30T18:34:40+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0066A</loc>
+  <lastmod>2018-03-30T18:34:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0065A</loc>
+  <lastmod>2018-03-30T18:34:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0064A</loc>
+  <lastmod>2018-03-30T18:34:42+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0063A</loc>
+  <lastmod>2018-03-30T18:34:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0062A</loc>
+  <lastmod>2018-03-30T18:34:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0061A</loc>
+  <lastmod>2018-03-30T18:34:45+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0060A</loc>
+  <lastmod>2018-03-30T18:34:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0059A</loc>
+  <lastmod>2018-03-30T18:34:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0058B</loc>
+  <lastmod>2018-03-30T18:34:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0058A</loc>
+  <lastmod>2018-03-30T18:34:48+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0056B</loc>
+  <lastmod>2018-03-30T18:34:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0056A</loc>
+  <lastmod>2018-03-30T18:34:50+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0055A</loc>
+  <lastmod>2018-03-30T18:34:51+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0054B</loc>
+  <lastmod>2018-03-30T18:34:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0054A</loc>
+  <lastmod>2018-03-30T18:34:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0053A</loc>
+  <lastmod>2018-03-30T18:34:53+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0052A</loc>
+  <lastmod>2018-03-30T18:34:54+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0051A</loc>
+  <lastmod>2018-03-30T18:34:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0049A</loc>
+  <lastmod>2018-03-30T18:34:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0044A</loc>
+  <lastmod>2018-03-30T18:34:57+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0042C</loc>
+  <lastmod>2018-03-30T18:34:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0042B</loc>
+  <lastmod>2018-03-30T18:34:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0042A</loc>
+  <lastmod>2018-03-30T18:35:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0041A</loc>
+  <lastmod>2018-03-30T18:35:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0039A</loc>
+  <lastmod>2018-03-30T18:35:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0038A</loc>
+  <lastmod>2018-03-30T18:35:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0037A</loc>
+  <lastmod>2018-03-30T18:35:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0035A</loc>
+  <lastmod>2018-03-30T18:35:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0034A</loc>
+  <lastmod>2018-03-30T18:35:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0033B</loc>
+  <lastmod>2018-03-30T18:35:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0033A</loc>
+  <lastmod>2018-03-30T18:35:06+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0032A</loc>
+  <lastmod>2018-03-30T18:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0031A</loc>
+  <lastmod>2018-03-30T18:35:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0030A</loc>
+  <lastmod>2018-03-30T18:35:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0029B</loc>
+  <lastmod>2018-03-30T18:35:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0029A</loc>
+  <lastmod>2018-03-30T18:35:11+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0027A</loc>
+  <lastmod>2018-03-30T18:35:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0026B</loc>
+  <lastmod>2018-03-30T18:35:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0025A</loc>
+  <lastmod>2018-03-30T18:35:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0024A</loc>
+  <lastmod>2018-03-30T18:35:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0023A</loc>
+  <lastmod>2018-03-30T18:35:15+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0022A</loc>
+  <lastmod>2018-03-30T18:35:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0021A</loc>
+  <lastmod>2018-03-30T18:35:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0018A</loc>
+  <lastmod>2018-03-30T18:35:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0017A</loc>
+  <lastmod>2018-03-30T18:35:18+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0016A</loc>
+  <lastmod>2018-03-30T18:35:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0015A</loc>
+  <lastmod>2018-03-30T18:35:20+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0014A</loc>
+  <lastmod>2018-03-30T18:35:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0013B</loc>
+  <lastmod>2018-03-30T18:35:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0013A</loc>
+  <lastmod>2018-03-30T18:35:23+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0012A</loc>
+  <lastmod>2018-03-30T18:35:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0011C</loc>
+  <lastmod>2018-03-30T18:35:24+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0011B</loc>
+  <lastmod>2018-03-30T18:35:25+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0011A</loc>
+  <lastmod>2018-03-30T18:35:26+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0010A</loc>
+  <lastmod>2018-03-30T18:35:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0008A</loc>
+  <lastmod>2018-03-30T18:35:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0006B</loc>
+  <lastmod>2018-03-30T18:35:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0006A</loc>
+  <lastmod>2018-03-30T18:35:30+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0005A</loc>
+  <lastmod>2018-03-30T18:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0004B</loc>
+  <lastmod>2018-03-30T18:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0004A</loc>
+  <lastmod>2018-03-30T18:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0003A</loc>
+  <lastmod>2018-03-30T18:35:33+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://roos.com/parts/RIK0002A</loc>
+  <lastmod>2018-03-30T18:35:34+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
