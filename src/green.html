@@ -1,543 +1,514 @@
 <!DOCTYPE html>
-<!-- TOP - v46 -->
-<html>
-  <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
-	<meta name="author" content="Roos Instruments, Inc.">
-	<meta name="theme-color" content="#f0f0f0">
-	<title>Roos Instruments</title>
-	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="/css/roos.min.css" rel="stylesheet" type="text/css" id="pageTheme">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script defer src="/js/roos.min.js?v1"></script>
-  </head>
-  <body>
-	<!-- NoScript Alert -->
-	<noscript>
+<!-- TOP - v47 -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
+  <meta name="author" content="Roos Instruments, Inc.">
+  <meta name="theme-color" content="#f0f0f0">
+
+  <title>Roos Instruments</title>
+
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="/css/roos.min.css" rel="stylesheet" id="pageTheme">
+  <link href="roos-print.min.css" rel="stylesheet" media="print">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script defer src="/js/roos.min.js?v1"></script>
+</head>
+
+<body>
+  <noscript>
 		<div class="alert alert-danger">
 			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
 		</div>
   </noscript>
-    <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+  <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
-	<div id="page-wrapper" class="page-boxed">
-	<!-- ==========================
+  <div id="page-wrapper" class="page-boxed">
+    <!-- ==========================
     	HEADER - START
     =========================== -->
-		<div class="top-header hidden-xs">
-			<div class="container">
-				<div class="pull-left">
-					<div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
-					<div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
-				</div>
-				<div class="header-item pull-right">
-					<span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
-					<a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fa fa-lock"></i>Sign in</span>&nbsp;&nbsp;</a>
-					<span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
-				</div>
-			</div>
-		</div>
+    <div class="top-header hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
+          <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
+        </div>
+        <div class="header-item pull-right">
+          <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
+          <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fa fa-lock"></i>Sign in</span>&nbsp;&nbsp;</a>
+          <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
+        </div>
+      </div>
+    </div>
+    <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+      <div class="container">
 
-		<header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
-			<div class="container">
-				<div class="navbar-header">
-					<div class="visible-xs-block">
-						<button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
-						<div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
-					</div>
+        <div class="navbar-header">
+          <div class="visible-xs-block">
+            <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+            <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
+          </div>
 
-					<div id="title">
+          <div id="title">
+            <div class="hidden-xs hidden-sm">
+              <a href="/index.html">
+                <div class="mainTitleAdjust">Roos Instruments</div>
+                <div class="ROOSbanner"></div>
+                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
+              </a>
+            </div>
+            <div class="visible-sm">
+              <a href="/index.html">
+                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+              </a>
+            </div>
+            <div class="visible-xs-block container">
+              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+              <a href="/index.html">
+                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+              </a>
+              <div class="ROOSbanner"></div>
+            </div>
+          </div>
 
-						<div class="hidden-xs hidden-sm">
-							<a href="/index.html">
-								<div class="mainTitleAdjust">Roos Instruments</div>
-								<div class="ROOSbanner"></div>
-								<span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most Advanced Technology</span>
-							</a>
-						</div>
-
-						<div class="visible-sm">
-							<a href="/index.html">
-								<div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
-								<!--<div class="ROOSbanner"></div>-->
-							</a>
-						</div>
-
-						<div class="visible-xs-block container"> <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-							<a href="/index.html">
-								<div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
-							</a>
-							<div class="ROOSbanner"></div>
-						</div>
-					</div> <!-- end of #header-title -->
-
-				</div> <!-- end of .navbar-header -->
-				<div class="navbar-collapse collapse navbar-right">
-					<ul class="nav navbar-nav">
-						<li id="nav-home" class="dropdown">
-							<a href="/index.html">Home</a>
-						</li>
-						<li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
-							<a href="/support.html">Support</a>
-						</li>
-						<li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
-							<a href="/commerce/profiles.nsf/myAccount">My Account</a>
-						</li>
-						<li id="nav-products" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Products<i class="fa fa-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="/products.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
-								<li><a href="/infrastructure.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Test Systems</a></li>
-								<li><a href="/instruments.html"><i class=" nav-indent1 fa fa-angle-double-right"></i>Instruments</a></li>
-								<li><a href="/tims.html"><i class="nav-indent2 fa fa-angle-double-right"></i>Browse TIMs</a></li>
-								<li><a href="/software.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Software</a></li>
-								<li><a href="/fixture.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Device Interface</a></li>
-							<li><a href="/rik"><i class="fa fa-angle-double-right"></i>RIK Catalog</a></li>
-							</ul>
-						</li>
-						<li id="nav-services" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Services<i class="fa fa-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-							   <li><a href="/services.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
-							   <li><a href="/turnkey.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Turnkey</a></li>
-							   <li><a href="/production.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Production</a></li>
-							   <li><a href="/guru.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Enterprise</a></li>
-							   <li><a href="/training.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Training</a></li>
-							</ul>
-						</li>
-						<li id="nav-company" class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Company<i class="fa fa-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-								<li><a href="/news.html"><i class="nav-indent1 fa fa-angle-double-right"></i>News & Events</a></li>
-								<li><a href="/careers.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Careers</a></li>
+        </div>
+        <!-- end of .navbar-header -->
+        <nav class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li id="nav-home" class="dropdown">
+              <a href="/index.html">Home</a>
+            </li>
+            <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/support.html">Support</a>
+            </li>
+            <li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/commerce/profiles.nsf/myAccount">My Account</a>
+            </li>
+            <li id="nav-products" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Products<i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/products.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/infrastructure.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Test Systems</a></li>
+                <li><a href="/instruments.html"><i class=" nav-indent1 fa fa-angle-double-right"></i>Instruments</a></li>
+                <li><a href="/tims.html"><i class="nav-indent2 fa fa-angle-double-right"></i>Browse TIMs</a></li>
+                <li><a href="/software.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Software</a></li>
+                <li><a href="/fixture.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Device Interface</a></li>
+                <li><a href="/rik"><i class="fa fa-angle-double-right"></i>RIK Catalog</a></li>
+              </ul>
+            </li>
+            <li id="nav-services" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Services<i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/services.html"><i class="fa fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/turnkey.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Turnkey</a></li>
+                <li><a href="/production.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Production</a></li>
+                <li><a href="/guru.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Enterprise</a></li>
+                <li><a href="/training.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Training</a></li>
+              </ul>
+            </li>
+            <li id="nav-company" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown" data-delay="300">Company<i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/company.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+                <li><a href="/news.html"><i class="nav-indent1 fa fa-angle-double-right"></i>News & Events</a></li>
+                <li><a href="/careers.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Careers</a></li>
                 <li><a href="/mediaKit.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Media Kit</a></li>
-								<li><a href="/visitRI.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Plan a Visit</a></li>
-								<li><a href="/contact.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Contact Us</a></li>
-							</ul>
-						</li>
-						<li id="nav-support" class="dropdown yamm-fw hidden-xs">
-							<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
-							<ul id="hideOnSupport" class="dropdown-menu">
-								<div class="yamm-content">
-									<div class="row">
-										<div class="col-sm-3">
-											<h3 class="text-center">Planning</h3>
-											<div style="text-align: center">
-											  <a href="/newFullUser" class="btn btn-primary"><i class="fa fa-user-plus"></i> Create Account</a>
-											</div>
-											<div style="width: 150px;" class="centerImg">
-												<ul style="margin-top: 15px;" class="nav vertical-nav">
-													<li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
-													<li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/training.html"><i class="fa fa-angle-double-right"></i>Training</a></li>
-													<li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
-												</ul>
-											</div>
-										</div> <!-- End of .col -->
-										<div class="col-sm-3">
-											<h3 class="text-center">Online Documents</h3>
-											<form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
-												<div class="form-group nospace">
-													<div id="searchFail" class="alert alert-warning hidden" role="alert">
-														<strong>Oops!</strong> Search for something.
-													</div>
-													<div class="input-group">
-														<input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
-														<span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-													</div>
-												</div>
-											</form>
-											<div class="centerImg" style="width: 150px;">
-												<ul style="margin-top: 10px" class="nav vertical-nav">
-													<li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
-													<li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
-													<li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
-													<li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
-												</ul>
-											</div>
-										</div> <!-- End of .col -->
-										<div class="col-sm-3 text-center">
-											<h3>Reference Guide</h3>
-										  <div style="text-align: center">
-											<a class="btn btn-primary" href="/web/CassiniReferenceGuide_2.3_mini.pdf" download="CassiniReferenceGuide_2.3_mini.pdf"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
-											<a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+                <li><a href="/visitRI.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Plan a Visit</a></li>
+                <li><a href="/contact.html"><i class="nav-indent1 fa fa-angle-double-right"></i>Contact Us</a></li>
+              </ul>
+            </li>
+            <li id="nav-support" class="dropdown yamm-fw hidden-xs">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Support <i class="fa fa-chevron-down"></i></a>
+              <section id="hideOnSupport" class="dropdown-menu">
+                <div class="yamm-content">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Planning</h3>
+                      <div style="text-align: center">
+                        <a href="/newFullUser" class="btn btn-primary"><i class="fa fa-user-plus"></i> Create Account</a>
+                      </div>
+                      <div style="width: 150px;" class="centerImg">
+                        <ul style="margin-top: 15px;" class="nav vertical-nav">
+                          <li><a href="/supportPlans.html"><i class="fa fa-angle-double-right"></i>Support Plans</a></li>
+                          <li><a href="/maintenance.html"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+                          <li><a href="/training.html"><i class="fa fa-angle-double-right"></i>Training</a></li>
+                          <li><a href="/commerce/profiles.nsf/myAccount"><i class="fa fa-angle-double-right"></i>Customer Account</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Online Documents</h3>
+                      <form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+                        <div class="form-group nospace">
+                          <div id="searchFail" class="alert alert-warning hidden" role="alert">
+                            <strong>Oops!</strong> Search for something.
+                          </div>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="query" placeholder="Search Documentation" required>
+                            <span onclick="goSearch(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="centerImg" style="width: 150px;">
+                        <ul style="margin-top: 10px" class="nav vertical-nav">
+                          <li><a href="/help/dev"><i class="fa fa-angle-double-right"></i>Developer</a></li>
+                          <li><a href="/help/admin"><i class="fa fa-angle-double-right"></i>Administrator</a></li>
+                          <li><a href="/help/maint"><i class="fa fa-angle-double-right"></i>Maintenance</a></li>
+                          <li><a href="/help/operate"><i class="fa fa-angle-double-right"></i>Operator</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Reference Guide</h3>
+                      <div style="text-align: center">
+                        <a class="btn btn-primary" href="/web/CassiniReferenceGuide_2.3_mini.pdf" download="CassiniReferenceGuide_2.3_mini.pdf"><i class="fa fa-file-pdf-o"></i>Download PDF</a>
+                        <a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
 												<img style="padding-top: 9px; width: 160px;" class="centerImg" src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
 											</a>
-										  </div>
-										</div> <!-- End of .col -->
-										<div class="col-sm-3 text-center">
-											<h3>Get Support</h3>
-											<a class="btn btn-primary" href="mailto:support@roos.com"><i class="fa fa-envelope"></i> Email Support</a>
-											  <ul style="margin-bottom: 15px; text-align: center;" class="list-unstyled">
-												<li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
-												<li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
-											</ul>
-											<div style="text-align: center">
-											<a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Get Support</h3>
+                      <a class="btn btn-primary" href="mailto:support@roos.com"><i class="fa fa-envelope"></i> Email Support</a>
+                      <ul style="margin-bottom: 15px; text-align: center;" class="list-unstyled">
+                        <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+                        <li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+                      </ul>
+                      <div style="text-align: center">
+                        <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
 												<i class="fa fa-binoculars"></i> Remote Support</a>
-											</div>
-											<br>
-										</div> <!-- End of .col -->
-									</div> <!-- End of .row -->
-								</div> <!-- End of .yamm-content -->
-							</ul>
-						</li>
-						<li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
-							<a href="/privacy.html">Privacy</a>
-						</li>
-					</ul> <!-- End of .nav .navbar-nav -->
-					<ul class="nav navbar-nav hidden-xs">
-						<li style="margin-right: -12px;" class="search-form-toggle">
-							<a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
-						</li>
-					</ul>
-				</div> <!-- End of .navbar-collapse -->
-			</div> <!-- End of .container -->
-		</header>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/privacy.html">Privacy</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs">
+            <li style="margin-right: -12px;" class="search-form-toggle">
+              <a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
 
-		<!-- Print view only -->
-		<div class="clearfix visible-print">
-			<div class="pull-left">
-			   <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
-			</div>
-			<div class="pull-right">
-				  <img style="width: 11px;" src="/images/ri_back.png" alt="RI logo">
-			</div>
-		</div>
+      </div>
+    </header>
 
-		<!-- Search Modal -->
-		<div id="searchModal" class="modal fade" role="dialog">
-			<div class="modal-dialog modal-lg">
+    <!-- Print view only -->
+    <div class="clearfix visible-print">
+      <div class="pull-left">
+        <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+      </div>
+      <div class="pull-right">
+        <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+      </div>
+    </div>
 
-			<!-- Search Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Search</h3>
-					</div>
-					<div class="modal-body">
-						<div class="features-item" id="features-tabs-panels">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
-								<li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane fade in active" id="google-search">
-									<div class="reset-box-sizing" id="search">
-										<div class="gcse-search"></div>
-									</div> <!-- end of #search -->
-								</div>
-								<div class="tab-pane fade" id="document-search">
-									<form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
-										<div class="form-group nospace">
-											<div id="searchFail2" class="alert alert-warning hidden" role="alert">
-												<strong>Oops!</strong> Search for something.
-											</div>
-											<div class="input-group">
-												<input style="margin: 12px 0;" type="text" class="form-control" id="query2" placeholder="Search Documentation" required>
-												<span onclick="goSearch2(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Search Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Search</h3>
+          </div>
+          <div class="modal-body">
+            <div class="features-item" id="features-tabs-panels">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fa fa-globe"></i> &nbsp;Website</a></li>
+                <li><a href="#document-search" data-toggle="tab"><i class="fa fa-book"></i> &nbsp;Documentation<span class="hidden-xs">(<i class="fa fa-lock"></i> Sign In Required)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="google-search">
+                  <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
+                  </div>
+                  <!-- end of #search -->
+                </div>
+                <div class="tab-pane fade" id="document-search">
+                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2" placeholder="Search Documentation" required>
+                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ==========================
     	HEADER - END
     =========================== -->
 
-		<script type="text/javascript">
-			//INIT PAGE ELEMENTS
-			$(document).ready(function() {
-				document.title = "Green CSR | Roos Instruments";
-				$( "#nav-company" ).addClass( "active" );
-			});
-		</script>
+    <script>
+      //INIT PAGE ELEMENTS
+      $(document).ready(function() {
+        document.title = "Green CSR | Roos Instruments";
+        $("#nav-company").addClass("active");
+      });
+    </script>
 
     <!-- ==========================
     	BREADCRUMB - START
     =========================== -->
-		<section class="breadcrumb-wrapper">
-			<div class="container">
-				<h2>Green CSR</h2>
-				<ol class="breadcrumb">
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="/company.html">About US</a></li>
-					<li class="active">Green CSR</li>
-				</ol>
-			</div>
-		</section>
-	<!-- ==========================
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Green CSR</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/company.html">About US</a></li>
+          <li class="active">Green CSR</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
 
-		<section id ="content" class="roosC container">
+    <section id="content" class="roosC container">
 
 
-				<img alt="Energy Innovation Award" title="Energy Innovation Award 2011" src="/images/EnergyInnovationAward2010.jpg" style="width: 182px;height: 198px; float:right; margin: 4px 0 4px 8px;">
+      <img alt="Energy Innovation Award" title="Energy Innovation Award 2011" src="/images/EnergyInnovationAward2010.jpg" style="width: 182px;height: 198px; float:right; margin: 4px 0 4px 8px;">
 
 
 
-				<h5 class="upper">Corporate Social Responsibility (CSR)</h5>
-				<p class="main">
-					Roos Instruments, the premier supplier of High Speed RF and Microwave
-					ATE systems, has helped industry leaders like Analog Devices and Freescale
-					produce highly complex RF and microwave products. Committed to using
-					green power to protect the environment, Roos Instruments purchases renewable energy
-					for our 100% of our electricity consumption in Santa Clara. <q>"We believe it
+      <h5 class="upper">Corporate Social Responsibility (CSR)</h5>
+      <p class="main">
+        Roos Instruments, the premier supplier of High Speed RF and Microwave ATE systems, has helped industry leaders like Analog Devices and Freescale produce highly complex RF and microwave products. Committed to using green power to protect the environment,
+        Roos Instruments purchases renewable energy for our 100% of our electricity consumption in Santa Clara. <q>"We believe it
 					is important to protect our environment and using green power is a way
 					for our company to act on that belief. Green power is good for our
-					environment and good for our business,"</q> commented Catherine
-					Rossi-Roos, COO, Roos Instruments, Inc.
-				</p>
+					environment and good for our business,"</q> commented Catherine Rossi-Roos, COO, Roos Instruments, Inc.
+      </p>
 
-				<p class="main">
-					<img alt="EICC Logo" title="Electronic Industry Citizenship Coalition" src="/images/eicc.jpg" style="max-width: 200px; max-height: 83px; float:right; margin: 4px 0 4px 8px;">
-					As part of this effort, in 2010 we joined EICC (Electronic Industry Citizenship Coalition) that gives high level
-					standards regarding working conditions, ethics of business and a safe and healthy place for employees. Roos Instruments
-					supports EICC Code of Conduct and seeks to conform to the Code and its implementation methods across the company.<br />
-					For more information, visit the <a href="http://www.eiccoalition.org/standards/code-of-conduct/">EICC code of conduct</a>.
-				</p>
+      <p class="main">
+        <img alt="EICC Logo" title="Electronic Industry Citizenship Coalition" src="/images/eicc.jpg" style="max-width: 200px; max-height: 83px; float:right; margin: 4px 0 4px 8px;"> As part of this effort, in 2010 we joined EICC (Electronic Industry
+        Citizenship Coalition) that gives high level standards regarding working conditions, ethics of business and a safe and healthy place for employees. Roos Instruments supports EICC Code of Conduct and seeks to conform to the Code and its implementation
+        methods across the company.<br /> For more information, visit the <a href="http://www.eiccoalition.org/standards/code-of-conduct/">EICC code of conduct</a>.
+      </p>
 
-				<h5 class="upper">CSR Reports</h5>
-				<p>
-				    <a href="/pdf/GreenROOS-2016.pdf" title="2015 Corporate Social Responsiblity Report">2015 Corporate Social Responsiblity Report</a><br />
-	  			    <a href="/pdf/GreenROOS-2015.pdf" title="2015 Corporate Social Responsiblity Report">2015 Corporate Social Responsiblity Report</a><br />
-					<a href="/pdf/GreenROOS-2014.pdf" title="2014 Corporate Social Responsiblity Report">2014 Corporate Social Responsiblity Report</a><br />
-					<a href="/pdf/GreenROOS-2013.pdf" title="2013 Corporate Social Responsiblity Report">2013 Corporate Social Responsiblity Report</a><br />
-					<a href="/pdf/GreenROOS-2012.pdf" title="2012 Corporate Social Responsiblity Report">2012 Corporate Social Responsiblity Report</a><br />
-					<a href="/pdf/GreenROOS-2011.pdf" title="2011 Corporate Social Responsiblity Report">2011 Corporate Social Responsiblity Report</a><br />
-				</p>
+      <h5 class="upper">CSR Reports</h5>
+      <p>
+        <a href="/pdf/GreenROOS-2016.pdf" title="2015 Corporate Social Responsiblity Report">2015 Corporate Social Responsiblity Report</a><br />
+        <a href="/pdf/GreenROOS-2015.pdf" title="2015 Corporate Social Responsiblity Report">2015 Corporate Social Responsiblity Report</a><br />
+        <a href="/pdf/GreenROOS-2014.pdf" title="2014 Corporate Social Responsiblity Report">2014 Corporate Social Responsiblity Report</a><br />
+        <a href="/pdf/GreenROOS-2013.pdf" title="2013 Corporate Social Responsiblity Report">2013 Corporate Social Responsiblity Report</a><br />
+        <a href="/pdf/GreenROOS-2012.pdf" title="2012 Corporate Social Responsiblity Report">2012 Corporate Social Responsiblity Report</a><br />
+        <a href="/pdf/GreenROOS-2011.pdf" title="2011 Corporate Social Responsiblity Report">2011 Corporate Social Responsiblity Report</a><br />
+      </p>
 
-				<p class="main">
-					Employees are trained and engaged directly in regular self-audits relating
-					to topics including energy conservation, reuse and recycle programs, and
-					compliance with all laws, regulations, and contract obligations.
-				</p>
+      <p class="main">
+        Employees are trained and engaged directly in regular self-audits relating to topics including energy conservation, reuse and recycle programs, and compliance with all laws, regulations, and contract obligations.
+      </p>
 
-				<h5 class="upper">2011&nbsp;Energy Innovation Awards</h5>
-				<p class="main">
-					Roos Instruments accepts the "Environmental Innovator" award at
-					at the 2011 Silicon Valley Energy Summit.  "The Environmental Innovator
-					award is given for comprehensive efforts to support energy efficiency
-					and renewable energy" according to Silicon Valley Power.  RI is honored
-					to be recognized for our "all in" commitment to environmental stewardship
-					of our planet and leadership role the industry's efforts to reduce any
-					negative impact on the environment we create.  Please <a href="https://siliconvalleypower.com/index.aspx?recordid=1128&page=2065">read about the awards</a> and fill out our
-					<a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dEJaV19HZ1RRNEM5ZE81QWpncy1IQWc6MQ#gid=0">"Green" Partner Program Sign Up Form</a>
-					to be recognized.
-				</p>
+      <h5 class="upper">2011&nbsp;Energy Innovation Awards</h5>
+      <p class="main">
+        Roos Instruments accepts the "Environmental Innovator" award at at the 2011 Silicon Valley Energy Summit. "The Environmental Innovator award is given for comprehensive efforts to support energy efficiency and renewable energy" according to Silicon Valley
+        Power. RI is honored to be recognized for our "all in" commitment to environmental stewardship of our planet and leadership role the industry's efforts to reduce any negative impact on the environment we create. Please <a href="https://siliconvalleypower.com/index.aspx?recordid=1128&page=2065">read about the awards</a>        and fill out our
+        <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dEJaV19HZ1RRNEM5ZE81QWpncy1IQWc6MQ#gid=0">"Green" Partner Program Sign Up Form</a> to be recognized.
+      </p>
 
 
-				<h5 class="upper">EPA Green Power Partnership</h5>
-					<a href="http://www.epa.gov/greenpower/partners/partners/roosinstrumentsinc.htm">
+      <h5 class="upper">EPA Green Power Partnership</h5>
+      <a href="http://www.epa.gov/greenpower/partners/partners/roosinstrumentsinc.htm">
 						<img alt="EPA Green Power Partner" title="EPA Green Power Partner" src="/images/GreenPowerLogo.gif" style="max-height: 83px; max-width: 180px; float:right; margin: 4px 0 4px 8px;">
 					</a>
-				<p class="main">
-					Roos Instruments, Inc. is proud to purchase 100% Green Power from
-					Silicon Valley Power and 3 Degrees and we hope that our customers and
-					vendors will do the same. We believe it is important to protect our
-					environment and using green power is a way for our company to act on
-					that belief. Green power is good for our environment and good for our
-					business.
-				</p>
+      <p class="main">
+        Roos Instruments, Inc. is proud to purchase 100% Green Power from Silicon Valley Power and 3 Degrees and we hope that our customers and vendors will do the same. We believe it is important to protect our environment and using green power is a way for
+        our company to act on that belief. Green power is good for our environment and good for our business.
+      </p>
 
-				<a href="http://www.siliconvalleypower.com/solar-and-green-power/santa-clara-green-power/green-power-facilities"><p class="main">Santa Clara Green Power Product Content:</a> 5% Solar, 95% Wind in 2010</p>
-				<img alt="Green E Certified (Silicon Valley Power)" src="/images/Green-e-Logo.jpg" style="max-width: 31px; max-height:38px"><br>
-				<img alt="Silicon Valley Power - Green Power" src="/images/Santa-Clara-Green-Power-Logo-150px.gif" style="display: inline; height: 38px; width: 150px;">
+      <a href="http://www.siliconvalleypower.com/solar-and-green-power/santa-clara-green-power/green-power-facilities">Santa Clara Green Power Product Content:</a>
+      <br>5% Solar, 95% Wind in 2010
+      <img alt="Green E Certified (Silicon Valley Power)" src="/images/Green-e-Logo.jpg" style="max-width: 31px; max-height:38px"><br>
+      <img alt="Silicon Valley Power - Green Power" src="/images/Santa-Clara-Green-Power-Logo-150px.gif" style="display: inline; height: 38px; width: 150px;">
 
-				<h5 class="upper">Goals and Accomplishments</h5>
-				<p class="main">
-					Use 100% renewable electricity. *Since 2005<br>
-					eWaste Recycling - monitors, batteries, etc... *Since 2004<br>
-					Reduce Travel with Telecommuting and Virtual/Web Conferencing *Since 2004<br>
-					Compliance reports are available <a href="mailto:admin@roos.com">by request</a>.
-				</p>
-				<div class="hidden">
-				  <h5 class="upper">Earth Hour</h5>
-				  <p class="main">
-					  <a href="http://www.earthhour.org" target="_blank"><img src="/images/EH_tiny.jpg" alt="Earth Hour - Logo" style="max-width:205px; max-height: 140px; float: right; clear: right; margin: 4px 0 4px 8px;"/></a>
-					  Since 2010, RI has participated in <a href="http://www.earthhour.org" target="_blank">Earth Hour</a> by switching OFF our lights for an hour on March 26th at 8:30pm.
-					  If you are our customer, vendor, or partner, please join our partner program (below) and <a href="mailto:admin@roos.com">let us know</a> what
-					  else you will be doing for the rest of the year to be green.
-				  </p>
-				</div>
-				<h5 class="upper">Supply Chain Partners</h5>
-				<p class="main">
-					All the companies listed below have a published Corporate Responsibility program.
-					Starting in 2010, our signifigant customers and suppliers are asked to develop a Corporate Responsiblity program.
-					Participating supply chain partners (vendors and customers) should fill out
-					our <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dEJaV19HZ1RRNEM5ZE81QWpncy1IQWc6MQ#gid=0">"Green" Partner Program Sign Up Form</a>
-					to be included in the list below.<br>
-				</p>
+      <h5 class="upper">Goals and Accomplishments</h5>
+      <p class="main">
+        Use 100% renewable electricity. *Since 2005<br> eWaste Recycling - monitors, batteries, etc... *Since 2004<br> Reduce Travel with Telecommuting and Virtual/Web Conferencing *Since 2004<br> Compliance reports are available <a href="mailto:admin@roos.com">by request</a>.
+      </p>
+      <div class="hidden">
+        <h5 class="upper">Earth Hour</h5>
+        <p class="main">
+          <a href="http://www.earthhour.org" target="_blank"><img src="/images/EH_tiny.jpg" alt="Earth Hour - Logo" style="max-width:205px; max-height: 140px; float: right; clear: right; margin: 4px 0 4px 8px;"/></a> Since 2010, RI has participated in
+          <a href="http://www.earthhour.org" target="_blank">Earth Hour</a> by switching OFF our lights for an hour on March 26th at 8:30pm. If you are our customer, vendor, or partner, please join our partner program (below) and <a href="mailto:admin@roos.com">let us know</a>          what else you will be doing for the rest of the year to be green.
+        </p>
+      </div>
+      <h5 class="upper">Supply Chain Partners</h5>
+      <p class="main">
+        All the companies listed below have a published Corporate Responsibility program. Starting in 2010, our signifigant customers and suppliers are asked to develop a Corporate Responsiblity program. Participating supply chain partners (vendors and customers)
+        should fill out our <a href="https://spreadsheets.google.com/spreadsheet/viewform?hl=en_US&formkey=dEJaV19HZ1RRNEM5ZE81QWpncy1IQWc6MQ#gid=0">"Green" Partner Program Sign Up Form</a> to be included in the list below.<br>
+      </p>
 
-				<ul>
-					<div class="col-md-4">
-						<li><a href="//www.adp.com/about-us/corporate-social-responsibility">ADP</a></li>
-						<li><a href="//www.analog.com/en/corporate/sustainability/content/index.html">Analog Devices</li>
-						<li><a href="//www.avnet.com/en-us/who-we-are/Pages/corporate-responsibility.aspx">Avnet Electronics Marketing</a></li>
-						<li>Everett Charles Technologies (<a href="//xcerra.com/investors/corporate-governance/">an Xcerra company</a>)</li>
-						<li><a href="//csr.fedex.com/">FedEx</a></li>
-						<li><a href="//www.hubersuhner.com/en/Company/Sustainability">Huber + Suhner, Inc.</a></li>
-						<li><a href="//investor.insight.com/governance.cfm">Insight Electronics, LCC.</a></li>
-						<li><a href="//www.johnstech.com/rohs-compliance.php">Johnstech Int. Corp.</a></li>
-						<li><a href="//www.linear.com/company/environment.php">Linear Technology</a></li>
-						<li><a href="//www.millitech.com/CustomerSupplier.htm">Millitech</a></li>
-						<li><a href="//www.mouser.com/environmental/">Mouser</a></li>
-						<li><a href="//www.nordengroup.com/quality/supplier-quality-requirements/">Norden Millimeter</a></li>
-						<li><a href="//responsibility.rackspace.com/pocket/responsibility">Rackspace</a></li>
-						<li><a href="//www.samtec.com/about-us/quality.aspx">Samtec, Inc.</a></li>
-						<li>Tensolite <a href="//car2013.ideasbynature.org/sites/default/files/misc/2013EnvironmentalPolicy.pdf">(Carlisle)</a></li>
-						<li><a href="//www.wellsfargo.com/about/csr/ea/">Wells Fargo</a></li>
-					</div>
-					<div class="col-md-4">
-						<li><a href="//www.agilent.com/environment/environment.shtml">Agilent Technologies</a></li>
-						<li><a href="//www.anritsu.com/en-US/About-Anritsu/CSR/">Anritsu</a></li>
-						<li><a href="//www.brother-usa.com/environment/#.VPjeqS4XEag">Brothers Int'l Inc.</a></li>
-						<li><a href="//www.e-z-hook.com/government.html">E-Z Hook</a></li>
-						<li><a href="//www.freescale.com/webapp/sps/site/homepage.jsp?code=CORP_SOCIAL_RESP">Freescale</a></li>
-						<li><a href="//www.hunter-technology.com/our-quality/">Hunter Technology Corporation</a></li>
-						<li><a href="//blogs.intel.com/csr/">Intel</a></li>
-						<li><a href="//www.joysignal.com/about-us/conflict-minerals-policy">Joy Signal Technology</a></li>
-						<li><a href="//www.markimicrowave.com/55/COMPANY.aspx">Marki Microwave</a></li>
-						<li><a href="//www.minicircuits.com/quality/quality_mgt_principles.html">Mini-Circuits, Inc.</a></li>
-						<li><a href="//www.nefab.com/en/northamerica/about/suppliers/">NEFAB</a></li>
-						<li><a href="//www.nxp.com/about/corporate-social-responsibility.html">NXP</a></li>
-						<li><a href="//www.richardsonrfpd.com/content/english/AboutUs/Pages/Environment.aspx">Richardson RFPD, Inc.</a></li>
-						<li><a href="//www.souriau.com/index.php?id=625">Souriau</a></li>
-						<li><a href="//responsibility.ups.com/Environment">UPS</a></li>
-						<li><a href="//www.gore.com/en_xx/aboutus/socialresponsibilitystatements/social_responsibility_statement.html">W. L. Gore & Associates, Inc.</a></li>
+      <ul class="list-group row">
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.adp.com/about-us/corporate-social-responsibility">ADP</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.analog.com/en/corporate/sustainability/content/index.html">Analog Devices</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.avnet.com/en-us/who-we-are/Pages/corporate-responsibility.aspx">Avnet Electronics Marketing</a></li>
+        <li class="list-group-item col-sm-6 col-md-4">Everett Charles Technologies (<a href="//xcerra.com/investors/corporate-governance/">an Xcerra company</a>)</li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//csr.fedex.com/">FedEx</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.hubersuhner.com/en/Company/Sustainability">Huber + Suhner, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//investor.insight.com/governance.cfm">Insight Electronics, LCC.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.johnstech.com/rohs-compliance.php">Johnstech Int. Corp.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.linear.com/company/environment.php">Linear Technology</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.millitech.com/CustomerSupplier.htm">Millitech</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.mouser.com/environmental/">Mouser</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.nordengroup.com/quality/supplier-quality-requirements/">Norden Millimeter</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//responsibility.rackspace.com/pocket/responsibility">Rackspace</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.samtec.com/about-us/quality.aspx">Samtec, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4">Tensolite <a href="//car2013.ideasbynature.org/sites/default/files/misc/2013EnvironmentalPolicy.pdf">(Carlisle)</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.wellsfargo.com/about/csr/ea/">Wells Fargo</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.agilent.com/environment/environment.shtml">Agilent Technologies</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.anritsu.com/en-US/About-Anritsu/CSR/">Anritsu</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.brother-usa.com/environment/#.VPjeqS4XEag">Brothers Int'l Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.e-z-hook.com/government.html">E-Z Hook</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.freescale.com/webapp/sps/site/homepage.jsp?code=CORP_SOCIAL_RESP">Freescale</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.hunter-technology.com/our-quality/">Hunter Technology Corporation</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//blogs.intel.com/csr/">Intel</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.joysignal.com/about-us/conflict-minerals-policy">Joy Signal Technology</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.markimicrowave.com/55/COMPANY.aspx">Marki Microwave</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.minicircuits.com/quality/quality_mgt_principles.html">Mini-Circuits, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.nefab.com/en/northamerica/about/suppliers/">NEFAB</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.nxp.com/about/corporate-social-responsibility.html">NXP</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.richardsonrfpd.com/content/english/AboutUs/Pages/Environment.aspx">Richardson RFPD, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.souriau.com/index.php?id=625">Souriau</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//responsibility.ups.com/Environment">UPS</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.gore.com/en_xx/aboutus/socialresponsibilitystatements/social_responsibility_statement.html">W. L. Gore & Associates, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.altera.com/support/reliability/qual-rel-index.html">Altera Corporation</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.arrow.com/community/">Arrow Electronics, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.csr.com/ir/corporate-governance-responsibility/corporate-responsibility">CSR</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.futureelectronics.com/en/policies/Pages/TradeCompliance.aspx">FAI Electronics Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//investor.gigatronics.com/governance.cfm">Giga-tronics Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.ibm.com/ibm/responsibility/">IBM</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.idinet.com/About-IDI/RoHS.aspx/">Interconnect Devices</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.l-com.com/content/AboutUs.html?cmp=topmenu">L-com</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.massprecision.com/quality.php">MASS Precision, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//us.misumi-ec.com/contents/environment/rohs/mech.html">Misumi</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.noisecom.com/investor">Noise Com, Inc.</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.olander.com/content.aspx?file=customerpages/rohs.htm">Olander Company</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.ricoh.com/environment/guideline/index.html">Ricoh</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.teledynestorm.com/doingbusinesswithus.asp">Storm Microwave</a></li>
+        <li class="list-group-item col-sm-6 col-md-4"><a href="//www.vicorpower.com/quality">Vicor Corporation</a></li>
+        <li class="list-group-item col-sm-6 col-md-4">More pending review...</li>
+      </ul>
+      <br><br>
+    </section>
+    <!-- End of #content section-->
 
-
-					</div>
-					<div class="col-md-4">
-						<li><a href="//www.altera.com/support/reliability/qual-rel-index.html">Altera Corporation</a></li>
-						<li><a href="//www.arrow.com/community/">Arrow Electronics, Inc.</a></li>
-						<li><a href="//www.csr.com/ir/corporate-governance-responsibility/corporate-responsibility">CSR</a></li>
-						<li><a href="//www.futureelectronics.com/en/policies/Pages/TradeCompliance.aspx">FAI Electronics Inc.</a></li>
-						<li><a href="//investor.gigatronics.com/governance.cfm">Giga-tronics Inc.</a></li>
-						<li><a href="//www.ibm.com/ibm/responsibility/">IBM</a></li>
-						<li><a href="//www.idinet.com/About-IDI/RoHS.aspx/">Interconnect Devices</a></li>
-						<li><a href="//www.l-com.com/content/AboutUs.html?cmp=topmenu">L-com</a></li>
-						<li><a href="//www.massprecision.com/quality.php">MASS Precision, Inc.</a></li>
-						<li><a href="//us.misumi-ec.com/contents/environment/rohs/mech.html">Misumi</a></li>
-						<li><a href="//www.noisecom.com/investor">Noise Com, Inc.</a></li>
-						<li><a href="//www.olander.com/content.aspx?file=customerpages/rohs.htm">Olander Company</a></li>
-						<li><a href="//www.ricoh.com/environment/guideline/index.html">Ricoh</a></li>
-						<li><a href="//www.teledynestorm.com/doingbusinesswithus.asp">Storm Microwave</a></li>
-						<li><a href="//www.vicorpower.com/quality">Vicor Corporation</a></li>
-
-
-
-						<li>More pending review...</li>
-				  </div>
-			  </ul>
-			<br><br>
-		</section> <!-- End of #content section-->
-
-      <!-- BOTTOM START -->
-  		<footer class="text-center">
-  			<div class="defaultCursor container">
-  				<div class="row">
-  					<div class="col-md-4 col-sm-8">
-  					  <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
-  							  <h3><i class="fa fa-flag"></i>Contact</h3>
-  							  <div class="vcard">
-  								  <div class="org">
-  									  <ul class="list-unstyled">
-  										  <li>
-  											  <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
+    <!-- BOTTOM START -->
+    <footer class="text-center">
+      <div class="defaultCursor container">
+        <div class="row">
+          <div class="col-md-4 col-sm-8">
+            <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
+            <h3><i class="fa fa-flag"></i>Contact</h3>
+            <div class="vcard">
+              <div class="org">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
   											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
-  										  </li>
-  										  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
-  										  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
-  									</ul>
-  								</div>
-  							</div>
-  							<ul class="brands">
-  								<li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-  								<li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-  								<li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-  								<li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
-  							</ul>
-  					  </div>
-  					<div class="col-md-4 hidden-xs hidden-sm">
-  						<h3><i class="fa fa-th-large"></i>Product Catalog</h3>
-  						<div class="row" id="latest-work-footer">
-  							<div class="overlay-wrapper col-sm-6">
-  								<img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
-  								<span class="overlay">
+                  </li>
+                  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
+                  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="brands">
+              <li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 hidden-xs hidden-sm">
+            <h3><i class="fa fa-th-large"></i>Product Catalog</h3>
+            <div class="row" id="latest-work-footer">
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
+                <span class="overlay">
   									<a href="/apps">Systems</a>
   								</span>
-  							</div>
-  							<div class="overlay-wrapper col-sm-6">
-  								<img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
-  								<span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
+                <span class="overlay">
   									<a href="/rik">RIK Catalog</a>
   								</span>
-  							</div>
-  							<div class="overlay-wrapper col-sm-6">
-  								<img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
-  								<span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
+                <span class="overlay">
   									<a href="/accessories">Accessories</a>
   								</span>
-  							</div>
-  							<div class="overlay-wrapper col-sm-6">
-  								<img src="/images/service.png" class="img-responsive" alt="Services">
-  								<span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/service.png" class="img-responsive" alt="Services">
+                <span class="overlay">
   									<a href="/services">Services</a>
   								</span>
-  							</div>
-  						</div>
-  					</div>
-  					<div class="col-md-4 col-sm-4 hidden-xs">
-  						<h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
-  						<!-- Begin MailChimp Signup Form -->
-  						<form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  						  <div class="form-group nospace">
-  							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-  							<div style="position: absolute; left: -5000px;"><input aria-hidden="true "type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
-  							  <fieldset>
-  								<div class="input-group" style="padding-bottom: 15px;">
-  								  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-  								  <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
-  								</div>
-  							  </fieldset>
-  							</div>
-  						</form>
-  						<h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-  						<a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 hidden-xs">
+            <h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="form-group nospace">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input aria-hidden="true" type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
+                <fieldset>
+                  <div class="input-group" style="padding-bottom: 15px;">
+                    <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+                    <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+            <h3><i class="fa fa-cloud-download"></i>Brochure</h3>
+            <a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
   							<p style="padding-top: 5px;">Learn more about Cassini</p>
   						</a>
-  					</div>
-  				</div>
-  				<div class="footer-bottom">
-  					<ul class="nav navbar-nav navbar-right hidden-xs">
-  						<li><a title="Roos Instruments" href="/index.html">Home</a></li>
-  						<li><a title="Products Overview" href="/products.html">Products</a></li>
-  						<li><a title="Services Overview" href="/services.html">Services</a></li>
-  						<li><a title="Company Overview" href="/company.html">Company</a></li>
-  						<li><a title="Support Overview" href="/support.html">Support</a></li>
-  						<li><a title="Contact Overview" href="/contact.html">Contact</a></li>
-  						<li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
-  					</ul>
-  				</div>
-  			</div>
-  		</footer>
-    </div>
-	<!--  BOTTOM END - v18 -->
-  </body>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li><a title="Roos Instruments" href="/index.html">Home</a></li>
+            <li><a title="Products Overview" href="/products.html">Products</a></li>
+            <li><a title="Services Overview" href="/services.html">Services</a></li>
+            <li><a title="Company Overview" href="/company.html">Company</a></li>
+            <li><a title="Support Overview" href="/support.html">Support</a></li>
+            <li><a title="Contact Overview" href="/contact.html">Contact</a></li>
+            <li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--  BOTTOM END - v19 -->
+</body>
+
 </html>

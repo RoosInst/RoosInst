@@ -29,14 +29,20 @@ gulp.task('sass', function(){
 
 //Minify & concat CSS
 gulp.task('css', ['sass'], function() { //list sass as dependency, want to compile to scss to css first
-    return gulp.src([
-      './src/css/**/!(roos)*.css', // all .css files except roos.css (want roos css concat last, most important & CSS order matters)
+      gulp.src([
+      './src/css/**/!(roos)*.css', // all .css files except css files with "roos" in start of filename (want roos.css concat last, most important & CSS order matters)
       './src/css/roos.css',
-    ])
-    .pipe(concat('roos.min.css'))
-    .pipe(minifyCSS())
-    .pipe(prefix('last 2 versions'))
-    .pipe(gulp.dest('dist/css'))
+      ])
+      .pipe(concat('roos.min.css'))
+      .pipe(minifyCSS())
+      .pipe(prefix('last 2 versions'))
+      .pipe(gulp.dest('dist/css'));
+
+      gulp.src('./src/css/roos-print.css') // separate roos-print.css
+      .pipe(concat('roos-print.min.css'))
+      .pipe(minifyCSS())
+      .pipe(prefix('last 2 versions'))
+      .pipe(gulp.dest('dist/css'));
 });
 
 //Minify HTML

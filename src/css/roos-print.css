@@ -1,0 +1,78 @@
+#print,
+#search,
+#nav-tag,
+.top-header,
+header,
+footer,
+address,
+nav,
+.btn-group,
+.btn-group a { display: none; }
+
+#title {
+  size: 12pt;
+  color: #aaa;
+  overflow:hidden;
+  display: block !importantl
+}
+
+body,
+.container { background: none; }
+
+body {
+  line-height:1.5;
+  font-family:'Source Sans Pro','Helvetica Neue', Arial, Helvetica, sans-serif;
+  color:#000;
+}
+
+hr {
+  background:#ccc;
+  color:#ccc;
+  width:100%;
+  height:2px;
+  margin:2em 0;
+  padding:0;
+  border:none;
+}
+
+hr.space {
+  background:#fff;
+  color:#fff;
+  visibility:hidden;
+}
+
+code { font:.9em 'Courier New', Monaco, Courier, monospace; }
+
+a img { border:none; }
+
+blockquote {
+  margin:1.5em;
+  padding:1em;font-style:italic;font-size:.9em;
+}
+
+.hide {
+  display:none;
+}
+
+a:link,
+a:visited {
+  background: transparent;
+  font-weight:700; text-decoration:underline;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+.tab-content > .tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+table tr td,
+table tr th {
+   page-break-inside: avoid;
+}
+
+.catalogTable { display: table; } /*disabled in css but enabled with javascript, but print view doesn't have javascript to enable/*

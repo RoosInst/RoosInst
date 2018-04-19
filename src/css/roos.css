@@ -1,20 +1,3 @@
-/*-------------------------------
- * Roos Instruments CSS, suitable for roos.com and RiApps
- * contact Ryan Benech - rbenech@roos.com or Joe Theberge - jtheberge@roos.com
- * Combined from Roxie boostrap theme, Blueprint and custom styles
- * not compressed, subject to change without notice
- * CSS3
- *  v1.0
---------------------------------*/
-/*------------------------------
- * Copyright 2014 Pixelized
- * http://www.pixelized.cz
- *
- * Roxie theme v1.1
-------------------------------*/
-/*------------------------------
-	MAIN
-------------------------------*/
 html {
   margin: 0;
   padding: 0;
@@ -1230,63 +1213,54 @@ body #services.services3 .service:hover i {
   margin: 0px;
   padding: 0px; }
 
-nav {
-  line-height: 1.5;
-  margin: 50px auto;
-  /*for display only*/
-  width: 200px;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); }
-
 /*------------------------------
 	BLUE
 ------------------------------*/
 a {
-  color: #084AA1; }
+  color: #084aa1; }
 
 .btn-inverse:hover, .btn-inverse:focus {
-  color: #084AA1; }
+  color: #084aa1; }
 
 .nav.vertical-nav li a:hover, form label, .top-header .header-item, .dropdown-menu > li > a:hover i {
-  color: #084AA1; }
+  color: #084aa1; }
 
 footer h3 i, footer .navbar-nav > li > a:hover {
-  color: #084AA1; }
+  color: #084aa1; }
 
 #services .service:hover h3, #services.services1 .service i, #services.services3 .service i {
-  color: #084AA1; }
+  color: #084aa1; }
 
 #section-blog-posts .btn:hover, #index-content h1, #jumbotron-slider .btn-inverse, #questionMark, .nav.vertical-nav > li > a:hover i, #jumbotron-slider #index-slide-3 .btn-inverse:hover {
-  color: #084AA1; }
+  color: #084aa1; }
 
 .btn-primary {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
 
 .nav-tabs > li.active > a {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
   .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background-color: #084AA1; }
+    background-color: #084aa1; }
 
 .overlay-wrapper .overlay {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
 
 .navbar-default .navbar-nav > .active > a {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
   .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #084AA1; }
+    background-color: #084aa1; }
 
 .content-separator, .pricing-plan .pricing-plan-price, #services.services3 .service:hover i {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
 
 #jumbotron-slider .btn-inverse:hover, #jumbotron-slider .btn-inverse:focus {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
 
 .owl-carousel .owl-dot.active span, #section-blog-posts {
-  background-color: #084AA1; }
+  background-color: #084aa1; }
 
 .navbar-nav > li > .dropdown-menu, #services.services3 .service i, #jumbotron-slider .btn-inverse {
-  border-color: #084AA1; }
+  border-color: #084aa1; }
 
 /* TRANSPARENT */
 .map-overlay {
@@ -1372,7 +1346,7 @@ abbr {
     color: #0095d7;
     text-decoration: none; }
     .default a:focus, .default a:hover {
-      color: #084AA1; }
+      color: #084aa1; }
 
 /*This will resize image once below max-width, important for responsive design*/
 .roosC table {
@@ -1401,7 +1375,7 @@ q:before, q:after {
   .roosC a img {
     border: none; }
   .roosC a:focus, .roosC a:hover {
-    color: #084AA1; }
+    color: #084aa1; }
   .roosC blockquote {
     margin: 1.5em;
     color: #666;
@@ -2177,9 +2151,9 @@ input.gsc-search-button-v2 {
     background-color: #4677B8;
     color: #FFF; }
   .navbar-default .navbar-nav > .active > a {
-    background-color: #084AA1; }
+    background-color: #084aa1; }
     .navbar-default .navbar-nav > .active > a:hover {
-      background-color: #084AA1; }
+      background-color: #084aa1; }
   #searchKits {
     margin-bottom: 15px; }
   #vShiftChevron {
@@ -2320,3 +2294,21 @@ footer .overlay-wrapper .overlay a {
     background-color: #4875B4; }
   .brands > li > a.brands-twitter {
     background-color: #33CCFF; } }
+
+.link {
+  background: none !important;
+  color: #084aa1;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  cursor: pointer;
+  outline: none; }
+  .link:hover {
+    color: #1280ed; }
+
+.list-group-item {
+  border: none;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 5px;
+  margin-bottom: 0; }
