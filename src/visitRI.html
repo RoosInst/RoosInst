@@ -264,96 +264,95 @@
     	HEADER - END
     =========================== -->
 
-		<script>
-			//INIT PAGE ELEMENTS
-			$(document).ready(function() {
-				document.title = "Plan a Visit | Roos Instruments";
-				$( "#nav-company" ).addClass( "active" );
-			});
-		</script>
+    <script>
+      //INIT PAGE ELEMENTS
+      $(document).ready(function() {
+        document.title = "Plan a Visit | Roos Instruments";
+        $("#nav-company").addClass("active");
+      });
+    </script>
 
     <!-- ==========================
     	BREADCRUMB - START
     =========================== -->
-		<section class="breadcrumb-wrapper">
-			<div class="container">
-				<h2>Plan a Visit</h2>
-				<ol class="breadcrumb">
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="/company.html">Company</a></li>
-					<li class="active">Plan a Visit</li>
-				</ol>
-			</div>
-		</section>
-	<!-- ==========================
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Plan a Visit</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/company.html">Company</a></li>
+          <li class="active">Plan a Visit</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
 
-		<section id ="content" class="container">
-		<br>
+    <section id="content" class="container">
+      <br>
 
-		<section>
-		<p class="text-center visible-xs-block" style="font-size: 18px;">
-			<a href="https://goo.gl/maps/4eQnc" title="Map of Roos Instruments">2285 Martin Avenue, Santa Clara, California 95050, USA</a> <br />
-			<small><a href="tel:+1-408-748-8589">+1(408)748-8589</a></small>
-		</p>
-		<div class="hidden-xs map-overlay-wrapper">
-			<a href="https://goo.gl/maps/4eQnc">
-				<div class="map-overlay">
-					<i class="fa fa-map-marker"></i>
-					<div class="map-overlay-body">
-						<h3>Headquarters</h3>
-						<ul class="list-unstyled">
-							<li>2285 Martin Ave</li>
-							<li>Santa Clara, California</li>
-							<li>United States</li>
-						</ul>
-					</div>
-				</div>
-			</a>
-		</div>
-		<img class="center" style="width:100%" alt="Roos Instruments Santa Clara, CA" src="images/RIsantaClara.jpg">
-		</section>
+      <section>
+        <p class="text-center visible-xs-block" style="font-size: 18px;">
+          <a href="https://goo.gl/maps/4eQnc" title="Map of Roos Instruments">2285 Martin Avenue, Santa Clara, California 95050, USA</a> <br />
+          <small><a href="tel:+1-408-748-8589">+1(408)748-8589</a></small>
+        </p>
+        <div class="hidden-xs map-overlay-wrapper">
+          <a href="https://goo.gl/maps/4eQnc">
+            <div class="map-overlay">
+              <i class="fa fa-map-marker"></i>
+              <div class="map-overlay-body">
+                <h3>Headquarters</h3>
+                <ul class="list-unstyled">
+                  <li>2285 Martin Ave</li>
+                  <li>Santa Clara, California</li>
+                  <li>United States</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        <img class="center" style="width:100%" alt="Roos Instruments Santa Clara, CA" src="images/RIsantaClara.jpg">
+      </section>
 
-		<div class="roosC">
-			<p class="text-center main">
-				Our facility is conveniently located in the heart of Silicon Valley, just minutes away from San Jose Airport and close to numerous
-				Hotels, Restaurants and Attractions. We hope your visit to Roos Instruments is enjoyable and productive.
-			</p>
-		</div>
+      <div class="roosC">
+        <p class="text-center main">
+          Our facility is conveniently located in the heart of Silicon Valley, just minutes away from San Jose Airport and close to numerous Hotels, Restaurants and Attractions. We hope your visit to Roos Instruments is enjoyable and productive.
+        </p>
+      </div>
 
-<!--	Google Map-->
-		<div class="embed-responsive embed-responsive-16by9"><iframe src="//www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0" width="640" height="480"> </iframe></div>
+      <!--	Google Map-->
+      <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0"> </iframe></div>
+      <br>
 
-		<br>
+      <!--Weather-->
+      <div><iframe style="width: 100%; height: 245px; border: none;" id="forecast_embed" src="https://forecast.io/embed/%23lat=37.368298&lon=-121.962838&name=Santa%20Clara,%20CA&color=%23084AA1&font=Source%20Sans%20Pro"> </iframe></div>
 
-<!--Weather-->
-		<div><iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="//forecast.io/embed/#lat=37.368298&lon=-121.962838&name=Santa%20Clara,%20CA&color=#084AA1&font=Source%20Sans%20Pro"> </iframe></div>
-
-	<!-- ==========================
+      <!-- ==========================
     	HOTELS - START
     =========================== -->
-		<section class="content" id="section-partners">
-				<h3 style="margin-bottom: 5px" class="text-center">Recommended Hotels</h3>
-				<div id="partners-slider" class="owl-carousel">
-					<div class="item"><a href="http://www.bwuniversityinn.com/"><img onmouseover="this.src='images/hotel-best.png'" onmouseout="this.src='images/hotel-best_bw.png'" class="centerImg" style="width: 79px; height: 72px;" src="images/hotel-best_bw.png" alt="Best Western University Inn"></a></div>
-					<div class="item"><a href="http://hotelbiltmore.com/"><img onmouseover="this.src='images/hotel-biltmore.png'" onmouseout="this.src='images/hotel-biltmore_bw.png'" class="centerImg" style="width: 96px; height: 72px;" src="images/hotel-biltmore_bw.png" alt="Biltmore Hotel & Suites"></a></div>
-					<div class="item"><a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/santa-clara/sncca/hoteldetail?cm_mmc=GoogleMaps-_-ex-_-USEN-_-sncca"><img onmouseover="this.src='images/hotel-holiday.png'" onmouseout="this.src='images/hotel-holiday_bw.png'" class="centerImg" style="width: 144px; height: 72px;" src="images/hotel-holiday_bw.png" alt="Holiday Inn Express & Suites"></a></div>
-					<div class="item"><a href="http://www.marriott.com/hotels/travel/sjcga-santa-clara-marriott/"><img onmouseover="this.src='images/hotel-marriott.png'" onmouseout="this.src='images/hotel-marriott_bw.png'" class="centerImg" style="width: 96px; height: 72px;" src="images/hotel-marriott_bw.png" alt="Santa Clara Marriott"></a></div>
-					<div class="item"><a href="http://www.jdvhotels.com/hotels/california/silicon-valley-hotels/avatar-hotel/"><img onmouseover="this.src='images/hotel-avatar.png'" onmouseout="this.src='images/hotel-avatar_bw.png'" class="centerImg" style="width: 200px; height: 72px;" src="images/hotel-avatar_bw.png" alt="Avatar Hotel"></a></div>
-					<div class="item"><a href="http://www.qualityinnsantaclara.com/"><img onmouseover="this.src='images/hotel-quality.png'" onmouseout="this.src='images/hotel-quality_bw.png'" class="centerImg" style="width: 63px; height: 72px;" src="images/hotel-quality_bw.png" alt="Quality Inn & Suites Silicon Valley"></a></div>
-					<div class="item"><a href="http://www.ihg.com/candlewood/hotels/us/en/santa-clara/sjcsc/hoteldetail?cm_mmc=GoogleMaps-_-cw-_-USEN-_-sjcsc"><img onmouseover="this.src='images/hotel-candlewood.png'" onmouseout="this.src='images/hotel-candlewood_bw.png'" class="centerImg" style="width: 155px; height: 72px;" src="images/hotel-candlewood_bw.png" alt="Candlewood Suites Silicon Valley/San Jose"></a></div>
-					<div class="item"><a href="http://www.hiltonsantaclara.com/"><img onmouseover="this.src='images/hotel-hilton.png'" onmouseout="this.src='images/hotel-hilton_bw.png'" class="centerImg" style="width: 138px; height: 72px;" src="images/hotel-hilton_bw.png" alt="Hilton Santa Clara"></a></div>
-					<div class="item"><a href="http://santaclara.regency.hyatt.com/en/hotel/home.html"><img onmouseover="this.src='images/hotel-hyatt-regency.png'" onmouseout="this.src='images/hotel-hyatt-regency_bw.png'" class="centerImg" style="width: 66px; height: 72px;" src="images/hotel-hyatt-regency_bw.png" alt="Hyatt Regency"></a></div>
-					<div class="item"><a href="http://santaclara.house.hyatt.com/en/hotel/home.html"><img onmouseover="this.src='images/hotel-hyatt-house.png'" onmouseout="this.src='images/hotel-hyatt-house_bw.png'" class="centerImg" style="width: 67px; height: 72px;" src="images/hotel-hyatt-house_bw.png" alt="Hyatt House"></a></div>
-					<div class="item"><a href="http://embassysuites3.hilton.com/en/hotels/california/embassy-suites-santa-clara-silicon-valley-SNCCAES/index.html"><img onmouseover="this.src='images/hotel-embassy.png'" onmouseout="this.src='images/hotel-embassy_bw.png'" class="centerImg" style="width: 90px; height: 72px;" src="images/hotel-embassy_bw.png" alt="Embassy Suites by Hilton"></a></div>
-				</div>
-		</section>
-    <!-- ==========================
+      <section class="content" id="section-partners">
+        <h3 style="margin-bottom: 5px" class="text-center">Recommended Hotels</h3>
+        <div id="partners-slider" class="owl-carousel">
+          <div class="item"><a href="http://www.bwuniversityinn.com/"><img onmouseover="this.src='images/hotel-best.png'" onmouseout="this.src='images/hotel-best_bw.png'" class="centerImg" style="width: 79px; height: 72px;" src="images/hotel-best_bw.png" alt="Best Western University Inn"></a></div>
+          <div class="item"><a href="http://hotelbiltmore.com/"><img onmouseover="this.src='images/hotel-biltmore.png'" onmouseout="this.src='images/hotel-biltmore_bw.png'" class="centerImg" style="width: 96px; height: 72px;" src="images/hotel-biltmore_bw.png" alt="Biltmore Hotel & Suites"></a></div>
+          <div class="item"><a href="http://www.ihg.com/holidayinnexpress/hotels/us/en/santa-clara/sncca/hoteldetail?cm_mmc=GoogleMaps-_-ex-_-USEN-_-sncca"><img onmouseover="this.src='images/hotel-holiday.png'" onmouseout="this.src='images/hotel-holiday_bw.png'" class="centerImg" style="width: 144px; height: 72px;" src="images/hotel-holiday_bw.png" alt="Holiday Inn Express & Suites"></a></div>
+          <div class="item"><a href="http://www.marriott.com/hotels/travel/sjcga-santa-clara-marriott/"><img onmouseover="this.src='images/hotel-marriott.png'" onmouseout="this.src='images/hotel-marriott_bw.png'" class="centerImg" style="width: 96px; height: 72px;" src="images/hotel-marriott_bw.png" alt="Santa Clara Marriott"></a></div>
+          <div class="item"><a href="http://www.jdvhotels.com/hotels/california/silicon-valley-hotels/avatar-hotel/"><img onmouseover="this.src='images/hotel-avatar.png'" onmouseout="this.src='images/hotel-avatar_bw.png'" class="centerImg" style="width: 200px; height: 72px;" src="images/hotel-avatar_bw.png" alt="Avatar Hotel"></a></div>
+          <div class="item"><a href="http://www.qualityinnsantaclara.com/"><img onmouseover="this.src='images/hotel-quality.png'" onmouseout="this.src='images/hotel-quality_bw.png'" class="centerImg" style="width: 63px; height: 72px;" src="images/hotel-quality_bw.png" alt="Quality Inn & Suites Silicon Valley"></a></div>
+          <div class="item"><a href="http://www.ihg.com/candlewood/hotels/us/en/santa-clara/sjcsc/hoteldetail?cm_mmc=GoogleMaps-_-cw-_-USEN-_-sjcsc"><img onmouseover="this.src='images/hotel-candlewood.png'" onmouseout="this.src='images/hotel-candlewood_bw.png'" class="centerImg" style="width: 155px; height: 72px;" src="images/hotel-candlewood_bw.png" alt="Candlewood Suites Silicon Valley/San Jose"></a></div>
+          <div class="item"><a href="http://www.hiltonsantaclara.com/"><img onmouseover="this.src='images/hotel-hilton.png'" onmouseout="this.src='images/hotel-hilton_bw.png'" class="centerImg" style="width: 138px; height: 72px;" src="images/hotel-hilton_bw.png" alt="Hilton Santa Clara"></a></div>
+          <div class="item"><a href="http://santaclara.regency.hyatt.com/en/hotel/home.html"><img onmouseover="this.src='images/hotel-hyatt-regency.png'" onmouseout="this.src='images/hotel-hyatt-regency_bw.png'" class="centerImg" style="width: 66px; height: 72px;" src="images/hotel-hyatt-regency_bw.png" alt="Hyatt Regency"></a></div>
+          <div class="item"><a href="http://santaclara.house.hyatt.com/en/hotel/home.html"><img onmouseover="this.src='images/hotel-hyatt-house.png'" onmouseout="this.src='images/hotel-hyatt-house_bw.png'" class="centerImg" style="width: 67px; height: 72px;" src="images/hotel-hyatt-house_bw.png" alt="Hyatt House"></a></div>
+          <div class="item"><a href="http://embassysuites3.hilton.com/en/hotels/california/embassy-suites-santa-clara-silicon-valley-SNCCAES/index.html"><img onmouseover="this.src='images/hotel-embassy.png'" onmouseout="this.src='images/hotel-embassy_bw.png'" class="centerImg" style="width: 90px; height: 72px;" src="images/hotel-embassy_bw.png" alt="Embassy Suites by Hilton"></a></div>
+        </div>
+      </section>
+      <!-- ==========================
     	HOTELS - END
     =========================== -->
 
-		</section> <!-- End of #content section-->
+    </section>
+    <!-- End of #content section-->
 
     <!-- BOTTOM START -->
     <footer class="text-center">
@@ -446,5 +445,6 @@
     </footer>
   </div>
   <!--  BOTTOM END - v19 -->
-  </body>
+</body>
+
 </html>

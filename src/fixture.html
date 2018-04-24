@@ -319,12 +319,10 @@
 					<area id="bottomPlate" shape="rect" coords="0,590,640,800" alt="Bottom Plate & Interface Inserts" title="Bottom Plate & Interface Inserts">
 				</map>
         <script>
-          //RESIZE IMAGEMAP
-          $('#FixtureExplodedViewImg').ImageMapResize({
-            origImageWidth: "640"
-          });
-          //QTIP POPOVER
           $(document).ready(function() {
+            $('#FixtureExplodedViewImg').ImageMapResize({
+              origImageWidth: "640"
+            });
             $('#DIB-Clamp').qtip({
               content: {
                 title: 'DIB Clamp',
