@@ -1416,7 +1416,8 @@ hr.space {
   background-image: url(/images/index-slide-5.png); }
 
 .index-slideshow .item {
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
 
 #index-content {
   text-align: center; }
