@@ -422,7 +422,7 @@ body {
     width: 100%;
     text-align: left;
     cursor: pointer;
-    
+
     &:after {
       display: inline-block;
       font-family: FontAwesome;
@@ -2499,4 +2499,15 @@ footer .overlay-wrapper .overlay a {
   border-bottom: 1px solid #ddd;
   padding: 10px 5px;
   margin-bottom: 0;
+}
+
+#section-blog-posts {
+  background: $roosBlue;
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: white;
+  }
 }
