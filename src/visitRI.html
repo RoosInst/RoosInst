@@ -325,8 +325,8 @@
       <div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0"> </iframe></div>
       <br>
 
-      <!--Weather-->
-      <div><iframe style="width: 100%; height: 245px; border: none;" id="forecast_embed" src="https://forecast.io/embed/%23lat=37.368298&lon=-121.962838&name=Santa%20Clara,%20CA&color=%23084AA1&font=Source%20Sans%20Pro"> </iframe></div>
+      <!--Weather (src URL shouldn't have #'s in iframe (W3C), but %23 encoding doesn't work and no other way to pass params to site so keeping)-->
+      <iframe style="width: 100%; height: 245px; border: none;" id="forecast_embed" src="https://forecast.io/embed/#lat=37.368298&lon=-121.962838&name=Santa%20Clara,%20CA&color=#084AA1&font=Source%20Sans%20Pro"></iframe>
 
       <!-- ==========================
     	HOTELS - START
