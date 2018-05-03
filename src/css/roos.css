@@ -1891,3 +1891,84 @@ footer .overlay-wrapper .overlay a {
   align-items: center; }
   #section-blog-posts h2 {
     color: white; }
+
+.dark-theme body {
+  color: #ccc; }
+
+.dark-theme body,
+.dark-theme .breadcrumb-wrapper,
+.dark-theme .top-header,
+.dark-theme footer {
+  background: #0f0f0f; }
+
+.dark-theme .roosC,
+.dark-theme .navbar-default .navbar-nav > li > a,
+.dark-theme .breadcrumb-wrapper .breadcrumb > .active {
+  color: #d5d5d5; }
+
+.dark-theme .mainTitleAdjust,
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
+  color: #ccc; }
+
+.dark-theme #nav-tag {
+  color: #b3b3b3; }
+
+.dark-theme abbr:hover::after {
+  color: #b3b3b3;
+  background: #000; }
+
+.dark-theme .page-boxed {
+  box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.1); }
+
+.dark-theme #page-wrapper,
+.dark-theme #content,
+.dark-theme .navbar {
+  background: #000;
+  border-color: #222; }
+
+.dark-theme .navbar,
+.dark-theme .top-header,
+.dark-theme .breadcrumb-wrapper {
+  border-color: #222; }
+
+.dark-theme .navbar-default .navbar-nav > .open > a {
+  background: #181818;
+  color: #aaa; }
+  .dark-theme .navbar-default .navbar-nav > .open > a:focus, .dark-theme .navbar-default .navbar-nav > .open > a:hover {
+    background: #181818;
+    color: #aaa; }
+
+.dark-theme .footer-bottom {
+  border-top: 1px solid #222; }
+
+.dark-theme footer .navbar-nav > li > a {
+  color: #aaa; }
+  .dark-theme footer .navbar-nav > li > a:hover {
+    color: #084aa1; }
+
+.dark-theme .navbar-nav > li > .dropdown-menu {
+  background-color: #070707;
+  border: 0;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2); }
+
+.dark-theme .dropdown-menu > li {
+  border-color: #3A3A3A; }
+  .dark-theme .dropdown-menu > li a {
+    color: #aaa;
+    background: #000; }
+    .dark-theme .dropdown-menu > li a:hover {
+      background-color: #1A1A1A;
+      color: #ccc; }
+
+.dark-theme .nav.vertical-nav li {
+  border-color: #1A1A1A; }
+  .dark-theme .nav.vertical-nav li a {
+    color: #aaa; }
+
+.dark-theme .contactLinks {
+  color: #aaa; }
+  .dark-theme .contactLinks:hover {
+    color: #084aa1; }
+
+.automotiveNums {
+  width: 50px !important; }
