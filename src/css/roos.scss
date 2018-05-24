@@ -912,18 +912,17 @@ footer {
   margin-bottom: 20px;
 }
 
-#pricing .row, #pricingtable .row {
+#pricing, #pricingtable .row {
   margin: 0;
 }
 
-#pricing .row > div, #pricingtable .row > div {
+#pricing > div, #pricingtable .row > div {
   padding: 0;
 }
 
 .pricing-plan {
   background-color: #F5F5F5;
   text-align: center;
-  margin: 30px 0 0;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   &.popular {
     background-color: #E5E5E5;
@@ -954,6 +953,10 @@ body .pricing-plan.popular {
   }
   .pricing-plan-price {
     padding: 13px 0;
+    h2 {
+      font-size: 1.5em;
+      color: white;
+    }
   }
 }
 
@@ -978,6 +981,7 @@ body .pricing-plan.popular .pricing-plan-price {
   }
   ul {
     padding: 10px 30px;
+    margin-bottom: 0;
     text-align: left;
     li {
       border-bottom: 1px solid #E5E5E5;
@@ -994,7 +998,7 @@ body .pricing-plan.popular .pricing-plan-price {
     }
     i {
       color: #999999;
-      width: 35px;
+      padding: 0 5px;
     }
   }
   .btn {
@@ -1072,10 +1076,6 @@ body #services.services3 .service:hover i {
   background-color: #F9F9F9;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   margin: 0 0 30px;
-}
-
-#about-content {
-  padding: 50px 0;
 }
 
 .profile {
@@ -1576,11 +1576,6 @@ q {
     line-height: 1.5em !important;
   }
   margin-top: -10px;
-}
-
-.list-unstyled div {
-  padding: 0 0 10px 35px;
-  line-height: 1.5em;
 }
 
 /* Google search specifc fix for Bootstrap */
@@ -2129,21 +2124,19 @@ footer {
 #content {
   background: #FFF;
   position: relative;
-  padding-bottom: 295px;
-  /*padding size of footer +30px for space*/
+  padding-top: 15px;
+  padding-bottom: 285px + 15px;
+  /*padding size of footer +15px for space*/
+  > *:first-child {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 768px) {
   #content {
-    padding-bottom: 369px;
-    /*padding size of footer +40px for space*/
-  }
-}
-
-@media (min-width: 992px) {
-  #content {
-    padding-bottom: 399px;
-    /*padding size of footer +50px for space*/
+    padding-top: 25px;
+    padding-bottom: 348px + 25px;
+    /*padding size of footer +25px for space*/
   }
 }
 
@@ -2262,11 +2255,13 @@ img {
       font-size: 14px;
       font-weight: 600;
     }
+
     &.active > a {
       padding: 9px;
       border-bottom: 2px solid #E5E5E5;
       font-size: 14px;
       font-weight: 600;
+
       &:hover, &:focus {
         padding: 9px;
         border-bottom: 2px solid #E5E5E5;
@@ -2275,9 +2270,11 @@ img {
       }
     }
   }
+
   .navbar-default .navbar-nav > li > a i {
     display: none;
   }
+
   .navbar-nav > li > .dropdown-menu {
     display: block;
     position: relative;
@@ -2287,12 +2284,13 @@ img {
     border: 0;
     margin-bottom: 15px;
   }
+
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     background-color: #F3F3F3;
     padding: 8px 10px;
   }
-  .content-full header.navbar {
-    height: 70px;
+
+  header.navbar {
     background-color: #FFFFFF;
   }
 }

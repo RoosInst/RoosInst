@@ -699,16 +699,15 @@ footer {
   border-top: 1px solid #DDDDDD;
   margin-bottom: 20px; }
 
-#pricing .row, #pricingtable .row {
+#pricing, #pricingtable .row {
   margin: 0; }
 
-#pricing .row > div, #pricingtable .row > div {
+#pricing > div, #pricingtable .row > div {
   padding: 0; }
 
 .pricing-plan {
   background-color: #F5F5F5;
   text-align: center;
-  margin: 30px 0 0;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1); }
   .pricing-plan.popular {
     background-color: #E5E5E5;
@@ -732,6 +731,9 @@ body .pricing-plan.popular h3, body .pricing-plan.popular p {
 
 .pricing-plan .pricing-plan-price {
   padding: 13px 0; }
+  .pricing-plan .pricing-plan-price h2 {
+    font-size: 1.5em;
+    color: white; }
 
 body .pricing-plan.popular .pricing-plan-price {
   background-color: #666666; }
@@ -750,6 +752,7 @@ body .pricing-plan.popular .pricing-plan-price {
 
 .pricing-plan ul {
   padding: 10px 30px;
+  margin-bottom: 0;
   text-align: left; }
   .pricing-plan ul li {
     border-bottom: 1px solid #E5E5E5;
@@ -764,7 +767,7 @@ body .pricing-plan.popular .pricing-plan-price {
 
 .pricing-plan ul li i {
   color: #999999;
-  width: 35px; }
+  padding: 0 5px; }
 
 .pricing-plan .btn {
   margin-bottom: 30px; }
@@ -826,9 +829,6 @@ body #services.services3 .service:hover i {
   #services.services3 .service h3 {
     margin: 20px 0 15px;
     font-size: 24px; }
-
-#about-content {
-  padding: 50px 0; }
 
 .profile {
   text-align: center;
@@ -1181,10 +1181,6 @@ q:before, q:after {
     padding-left: 30px;
     border-bottom: none !important;
     line-height: 1.5em !important; }
-
-.list-unstyled div {
-  padding: 0 0 10px 35px;
-  line-height: 1.5em; }
 
 /* Google search specifc fix for Bootstrap */
 input.gsc-input, .gsc-input-box, .gsc-search-button {
@@ -1599,18 +1595,17 @@ footer {
 #content {
   background: #FFF;
   position: relative;
-  padding-bottom: 295px;
-  /*padding size of footer +30px for space*/ }
+  padding-top: 15px;
+  padding-bottom: 300px;
+  /*padding size of footer +15px for space*/ }
+  #content > *:first-child {
+    margin-top: 0; }
 
 @media (min-width: 768px) {
   #content {
-    padding-bottom: 369px;
-    /*padding size of footer +40px for space*/ } }
-
-@media (min-width: 992px) {
-  #content {
-    padding-bottom: 399px;
-    /*padding size of footer +50px for space*/ } }
+    padding-top: 25px;
+    padding-bottom: 373px;
+    /*padding size of footer +25px for space*/ } }
 
 #latest-work-footer img {
   background-color: #c1cfe0; }
@@ -1722,8 +1717,7 @@ img {
   .navbar-default .navbar-nav .dropdown-menu > li > a {
     background-color: #F3F3F3;
     padding: 8px 10px; }
-  .content-full header.navbar {
-    height: 70px;
+  header.navbar {
     background-color: #FFFFFF; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {

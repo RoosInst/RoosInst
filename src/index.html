@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<!-- TOP - v47 -->
 <html lang="en">
 
 <head>
+  <title>Home | Roos Instruments</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("nav-home").classList.add("active");
+    });
+  </script>
+
+  <!-- TOP - v47 -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
   <meta name="author" content="Roos Instruments, Inc.">
   <meta name="theme-color" content="#f0f0f0">
-
-  <title>Roos Instruments</title>
 
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet">
@@ -177,7 +182,7 @@
                     <div class="col-sm-3 text-center">
                       <h3>Get Support</h3>
                       <a class="btn btn-primary" href="mailto:support@roos.com"><i class="fa fa-envelope"></i> Email Support</a>
-                      <ul style="margin-bottom: 15px; text-align: center;" class="list-unstyled">
+                      <ul style="margin-bottom: 15px; text-align: center;">
                         <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
                         <li><small><i class="fa fa-clock-o">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
                       </ul>
@@ -264,90 +269,75 @@
     	HEADER - END
     =========================== -->
 
-    <script>
-      //INIT PAGE ELEMENTS
-      $(document).ready(function() {
-        document.title = "Home | Roos Instruments";
-        $("#nav-home").addClass("active");
-      });
-    </script>
+    <!-- ==========================
+    JUMBOTRON - START
+  =========================== -->
+    <section id="jumbotron" class="roosC">
+      <div class="jumbotron index-slideshow">
+        <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
 
-
-    <!--<div id="notice" class="hide column span-12 prepend-4">
-			<p class="text-center notice rounded" style="font-size: larger;">
-			Check out <a href="http://roos.com/parts/CASSINI/$file/CASSINI.pdf" target="_blank">CASSINI</a> and <a href="signup.html">Sign up</a> for our Newsletter.<br />
-			</p>
-		</div>-->
-
-    <section id="content" class="roosC">
-
-      <!-- ==========================
-    	JUMBOTRON - START
-    =========================== -->
-      <section id="jumbotron">
-        <div class="jumbotron index-slideshow">
-          <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-
-            <div class="item" id="index-slide-1">
-              <h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-7">
-                    <h5>When Add-On RF Can't Get the</h5>
-                    <h5>Performance you Need...</h5>
-                    <h5>Now There's an ATE Solution That Puts RF First.</h5>
-                    <a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
-                  </div>
+          <div class="item" id="index-slide-1">
+            <h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-7">
+                  <h5>When Add-On RF Can't Get the</h5>
+                  <h5>Performance you Need...</h5>
+                  <h5>Now There's an ATE Solution That Puts RF First.</h5>
+                  <a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="item" id="index-slide-2">
-              <h2 class="index-slideshow-bar">Modular Instruments... Truly</h2>
-              <div class="container">
-                <h5>It's One Thing to Say Modular.</h5>
-                <h5>It's Something Else Entirely to Do It.</h5>
-                <a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
-              </div>
+          <div class="item" id="index-slide-2">
+            <h2 class="index-slideshow-bar">Modular Instruments... Truly</h2>
+            <div class="container">
+              <h5>It's One Thing to Say Modular.</h5>
+              <h5>It's Something Else Entirely to Do It.</h5>
+              <a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
+          </div>
 
-            <div class="item" id="index-slide-3">
-              <h2 class="index-slideshow-bar">
-								Automotive Radar Test?
-									<span style="font-family: 'Quando';">
-										<em>Done.</em>
-									</span>
-							</h2>
-              <div class="container">
-                <h5>Production-Ready mmWave.</h5>
-                <h5>All Part of the ATE Industry's Fastest</h5>
-                <h5>and Most Accurate ATE Platform.</h5>
-                <a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
-              </div>
+          <div class="item" id="index-slide-3">
+            <h2 class="index-slideshow-bar">
+              Automotive Radar Test?
+                <span style="font-family: 'Quando';">
+                  <em>Done.</em>
+                </span>
+            </h2>
+            <div class="container">
+              <h5>Production-Ready mmWave.</h5>
+              <h5>All Part of the ATE Industry's Fastest</h5>
+              <h5>and Most Accurate ATE Platform.</h5>
+              <a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
+          </div>
 
-            <div class="item" id="index-slide-4">
-              <h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
-              <div class="container">
-                <h5>Instruments and Interconnects</h5>
-                <h5>in a Configurable, Scalable,</h5>
-                <h5>and Cost-Effective Environment.</h5>
-                <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
-              </div>
+          <div class="item" id="index-slide-4">
+            <h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
+            <div class="container">
+              <h5>Instruments and Interconnects</h5>
+              <h5>in a Configurable, Scalable,</h5>
+              <h5>and Cost-Effective Environment.</h5>
+              <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
+          </div>
 
-            <div class="item" id="index-slide-5">
-              <h2 class="index-slideshow-bar">Guru Knows Where Everything Goes</h2>
-              <div class="container">
-                <h5>Database Storage, Automated Backups, Distribution Control</h5>
-                <h5>Guru Brings Test and Data Management</h5>
-                <h5>to a Whole New Level.</h5>
-                <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
-              </div>
+          <div class="item" id="index-slide-5">
+            <h2 class="index-slideshow-bar">Guru Knows Where Everything Goes</h2>
+            <div class="container">
+              <h5>Database Storage, Automated Backups, Distribution Control</h5>
+              <h5>Guru Brings Test and Data Management</h5>
+              <h5>to a Whole New Level.</h5>
+              <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section id="content" class="roosC">
+
       <!-- ==========================
     	JUMBOTRON - END
     =========================== -->
@@ -355,9 +345,15 @@
       <!-- ==========================
     	INTRODUCTION - START
     =========================== -->
-      <section id="index-content" style="padding: 2% 0;" class="container">
+      <section id="index-content" class="container">
         <h1>Fast &amp; Modular</h1>
-        <p id="index-main"><strong>Semiconductor manufacturers use our instruments to test millions of chips every year.</strong><br> Roos Instruments combines more than 25 years of research into modular Automated Test Equipment that leads the industry in test accuracy,
+        <p id="index-main">
+          <strong>
+            Semiconductor manufacturers use our instruments to test millions of
+            chips every year.
+          </strong><br>
+          Roos Instruments combines more than 25 years of research into modular
+          Automated Test Equipment that leads the industry in test accuracy,
           reliability, and time to market.
         </p>
       </section>
@@ -377,7 +373,7 @@
             <h3><i class="fa fa-flag"></i>Contact</h3>
             <div class="vcard">
               <div class="org">
-                <ul class="list-unstyled">
+                <ul>
                   <li>
                     <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
   											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
