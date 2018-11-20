@@ -286,7 +286,7 @@
     	BREADCRUMB - END
     =========================== -->
 
-    <section id="content" class="roosC container">
+    <div id="content" class="roosC container">
       <h2>Why RI is Faster to Market (Time) and Faster to Test (Speed)</h2>
       <blockquote>
         Since the mid 90s, RI's ATE has generally been twice as fast as the status quo for RF centric parts. Given this history, the results of proprietary benchmarks are no surprise to us. While I can't explain why the others are so slow, I do have some ideas
@@ -299,131 +299,140 @@
         Cassini testplans involve defining the state of the ATE and the device, taking some data and then performing math operations. The Cassini compiler then computes the fastest means to collect the data. By removing duplicate state changes and ordering
         the sequence to minimize the use of expensive state changes, we have seen 30% reductions in test times. The execution is also different in that the compiler generates a stream of hardware changes which are executed by a FPGA based state machine
         and not the PC. This removes quite a bit of PC related delays during test execution and frees the PC to perform other tasks.
-        <hr>
-        <h6>Architectural Advantages</h6>
-        <p>
-          There is a major architectural difference in how Cassini testplans are defined and executed. Most ATE software is written in a high level language as a set of procedures which is then compiled and executed in order by the PC using the tester hardware.
-          Cassini testplans involve defining the state of the ATE and the device, taking some data and then performing math operations. The Cassini compiler then computes the fastest means to collect the data. By removing duplicate state changes and ordering
-          the sequence to minimize the use of expensive state changes, we have seen 30% reductions in test times. The execution is also different in that the compiler generates a stream of hardware changes which are executed by a FPGA based state machine
-          and not the PC. This removes quite a bit of PC related delays during test execution and frees the PC to perform other tasks.
-        </p>
-        <h6>Datalogging Advantages</h6>
-        <p>
-          Datalogging is also handled differently. In most ATE the user adds log requests throughout the testplan causing the execution to pause at each request and write to a file. In Cassini the logging is handled by the math subsystem and is held until the testing
-          is complete. While the part is being binned the log is generated. By doing a single write at a time when testing is not being impacted can have a big impact on test time.
-        </p>
-        <h6>DUT Programming Advantages</h6>
-        <p>
-          RI's ATE have always used a protocol aware approach to handling device serial programming. Because of this, the pattern generators are optimized for short patterns which can be changed based on test results. It appears that this is a big help for parts
-          which are controlled and not just scanned.
-        </p>
-        <h6>DC &amp; Digital Advantages</h6>
-        <p>
-          Cassini's DC instruments are not really power supplies but are power audio amplifiers. With smooth, symmetric responses, low noise and wide bandwidth, they require less bypass capacitance on the load boards and therefore have faster settling times.
-        </p>
-        <h6>RF Advantages</h6>
-        <p>
-          And finally, SyRF Core&trade;, our RF measurement engine, uses a direct to baseband IQ conversion instead of DSP at an IF. What this means is that we get RF measurement data with no DSP reducing the amount of data collected, transferred and processed.
-          The data we get with a single sample may require 2000 samples and the associated processing in traditional mixed signal ATE. When we do need DSP on the capture we have implemented the DSP in the FPGA attached to the converter thus doing it in
-          real time as part of the capture.
-        </p>
-        <br>
-        <p>
-          In summary, there is no rocket science here. Decisions we made twenty years ago on architecture have worked out well and still seem to give the best performance for complex RF devices.
-        </p>
-  </div>
+      </p>
+      <hr>
+      <h5>Architectural Advantages</h5>
+      <p>
+        There is a major architectural difference in how Cassini testplans are defined and executed. Most ATE software is written in a high level language as a set of procedures which is then compiled and executed in order by the PC using the tester hardware.
+        Cassini testplans involve defining the state of the ATE and the device, taking some data and then performing math operations. The Cassini compiler then computes the fastest means to collect the data. By removing duplicate state changes and ordering
+        the sequence to minimize the use of expensive state changes, we have seen 30% reductions in test times. The execution is also different in that the compiler generates a stream of hardware changes which are executed by a FPGA based state machine
+        and not the PC. This removes quite a bit of PC related delays during test execution and frees the PC to perform other tasks.
+      </p>
+      <h5>Datalogging Advantages</h5>
+      <p>
+        Datalogging is also handled differently. In most ATE the user adds log requests throughout the testplan causing the execution to pause at each request and write to a file. In Cassini the logging is handled by the math subsystem and is held until the testing
+        is complete. While the part is being binned the log is generated. By doing a single write at a time when testing is not being impacted can have a big impact on test time.
+      </p>
+      <h5>DUT Programming Advantages</h5>
+      <p>
+        RI's ATE have always used a protocol aware approach to handling device serial programming. Because of this, the pattern generators are optimized for short patterns which can be changed based on test results. It appears that this is a big help for parts
+        which are controlled and not just scanned.
+      </p>
+      <h5>DC &amp; Digital Advantages</h5>
+      <p>
+        Cassini's DC instruments are not really power supplies but are power audio amplifiers. With smooth, symmetric responses, low noise and wide bandwidth, they require less bypass capacitance on the load boards and therefore have faster settling times.
+      </p>
+      <h5>RF Advantages</h5>
+      <p>
+        And finally, SyRF Core&trade;, our RF measurement engine, uses a direct to baseband IQ conversion instead of DSP at an IF. What this means is that we get RF measurement data with no DSP reducing the amount of data collected, transferred and processed.
+        The data we get with a single sample may require 2000 samples and the associated processing in traditional mixed signal ATE. When we do need DSP on the capture we have implemented the DSP in the FPGA attached to the converter thus doing it in
+        real time as part of the capture.
+      </p>
+      <br>
+      <p>
+        In summary, there is no rocket science here. Decisions we made twenty years ago on architecture have worked out well and still seem to give the best performance for complex RF devices.
+      </p>
+    </div>
 
-  <!-- BOTTOM START -->
-  <footer class="text-center">
-    <div class="defaultCursor container">
-      <div class="row">
-        <div class="col-md-4 col-sm-8">
-          <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
-          <h3><i class="fa fa-flag"></i>Contact</h3>
-          <div class="vcard">
-            <div class="org">
-              <ul>
-                <li>
-                  <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
-  											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
-                </li>
-                <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
-                <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
-              </ul>
+    <!-- BOTTOM START -->
+    <footer class="text-center">
+      <div class="defaultCursor container">
+        <div class="row">
+          <div class="col-md-4 col-sm-8">
+            <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
+            <h3><i class="fa fa-flag"></i>Contact</h3>
+            <div class="vcard">
+              <div class="org">
+                <ul>
+                  <li>
+                    <a href="https://goo.gl/maps/4eQnc">
+                      <i class="fa fa-map-marker"></i>
+                      <span class="contactLinks adr">
+                        <span class="street-address">&nbsp;&nbsp;2285 Martin Ave</span><br>
+      							    <span class="locality">Santa Clara</span>,
+                        <span class="region">CA</span>
+                        <span class="postal-code">95050</span>,
+                        <span class="country-name">US</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
+                  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
+                </ul>
+              </div>
             </div>
+            <ul class="brands">
+              <li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
+              <li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
           </div>
-          <ul class="brands">
-            <li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
-          <h3><i class="fa fa-th-large"></i>Product Catalog</h3>
-          <div class="row" id="latest-work-footer">
-            <div class="overlay-wrapper col-sm-6">
-              <img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
-              <span class="overlay">
+          <div class="col-md-4 hidden-xs hidden-sm">
+            <h3><i class="fa fa-th-large"></i>Product Catalog</h3>
+            <div class="row" id="latest-work-footer">
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
+                <span class="overlay">
   									<a href="/apps">Systems</a>
   								</span>
-            </div>
-            <div class="overlay-wrapper col-sm-6">
-              <img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
-              <span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
+                <span class="overlay">
   									<a href="/rik">RIK Catalog</a>
   								</span>
-            </div>
-            <div class="overlay-wrapper col-sm-6">
-              <img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
-              <span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
+                <span class="overlay">
   									<a href="/accessories">Accessories</a>
   								</span>
-            </div>
-            <div class="overlay-wrapper col-sm-6">
-              <img src="/images/service.png" class="img-responsive" alt="Services">
-              <span class="overlay">
+              </div>
+              <div class="overlay-wrapper col-sm-6">
+                <img src="/images/service.png" class="img-responsive" alt="Services">
+                <span class="overlay">
   									<a href="/services">Services</a>
   								</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-4 hidden-xs">
-          <h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
-          <!-- Begin MailChimp Signup Form -->
-          <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div class="form-group nospace">
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input aria-hidden="true" type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
-              <fieldset>
-                <div class="input-group" style="padding-bottom: 15px;">
-                  <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-                  <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
-                </div>
-              </fieldset>
-            </div>
-          </form>
-          <h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-          <a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
+          <div class="col-md-4 col-sm-4 hidden-xs">
+            <h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
+            <!-- Begin MailChimp Signup Form -->
+            <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="form-group nospace">
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;"><input aria-hidden="true" type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
+                <fieldset>
+                  <div class="input-group" style="padding-bottom: 15px;">
+                    <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+                    <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+            <h3><i class="fa fa-cloud-download"></i>Brochure</h3>
+            <a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
   							<p style="padding-top: 5px;">Learn more about Cassini</p>
   						</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li><a title="Roos Instruments" href="/index.html">Home</a></li>
+            <li><a title="Products Overview" href="/products.html">Products</a></li>
+            <li><a title="Services Overview" href="/services.html">Services</a></li>
+            <li><a title="Company Overview" href="/company.html">Company</a></li>
+            <li><a title="Support Overview" href="/support.html">Support</a></li>
+            <li><a title="Contact Overview" href="/contact.html">Contact</a></li>
+            <li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <ul class="nav navbar-nav navbar-right hidden-xs">
-          <li><a title="Roos Instruments" href="/index.html">Home</a></li>
-          <li><a title="Products Overview" href="/products.html">Products</a></li>
-          <li><a title="Services Overview" href="/services.html">Services</a></li>
-          <li><a title="Company Overview" href="/company.html">Company</a></li>
-          <li><a title="Support Overview" href="/support.html">Support</a></li>
-          <li><a title="Contact Overview" href="/contact.html">Contact</a></li>
-          <li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </div>
-  <!--  BOTTOM END - v19 -->
+  <!--  BOTTOM END - v20 -->
 </body>
 
 </html>

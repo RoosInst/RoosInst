@@ -286,7 +286,7 @@
     	BREADCRUMB - END
     =========================== -->
 
-    <section id="content" class="roosC container">
+    <div id="content" class="roosC container">
       <section class="content services1" id="services">
         <!-- Service -->
         <div class="col-sm-4">
@@ -510,8 +510,7 @@
         <!--End mc_embed_signup-->
       </section>
 
-    </section>
-    <!-- End of #content section-->
+		</div>
 
     <!-- BOTTOM START -->
     <footer class="text-center">
@@ -524,8 +523,16 @@
               <div class="org">
                 <ul>
                   <li>
-                    <a href="https://goo.gl/maps/4eQnc"><i class="fa fa-map-marker"></i> <span class="contactLinks adr"><span class="street-address">2285 Martin Ave</span><br>
-  											  <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span class="postal-code">95050</span>, <span class="country-name">US</span></span></a>
+                    <a href="https://goo.gl/maps/4eQnc">
+                      <i class="fa fa-map-marker"></i>
+                      <span class="contactLinks adr">
+                        <span class="street-address">&nbsp;&nbsp;2285 Martin Ave</span><br>
+      							    <span class="locality">Santa Clara</span>,
+                        <span class="region">CA</span>
+                        <span class="postal-code">95050</span>,
+                        <span class="country-name">US</span>
+                      </span>
+                    </a>
                   </li>
                   <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
                   <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
@@ -571,14 +578,14 @@
           <div class="col-md-4 col-sm-4 hidden-xs">
             <h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
             <!-- Begin MailChimp Signup Form -->
-            <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div class="form-group nospace">
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input aria-hidden="true" type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
                 <fieldset>
                   <div class="input-group" style="padding-bottom: 15px;">
-                    <input type="email" value="" name="EMAIL" class="form-control email" placeholder="email address" required>
-                    <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" class="btn btn-primary">Subscribe</button></span>
+                    <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
+                    <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
                   </div>
                 </fieldset>
               </div>
@@ -603,7 +610,7 @@
       </div>
     </footer>
   </div>
-  <!--  BOTTOM END - v19 -->
+  <!--  BOTTOM END - v20 -->
 </body>
 
 </html>
