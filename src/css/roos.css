@@ -712,7 +712,9 @@ footer {
   .pricing-plan.popular {
     background-color: #E5E5E5;
     position: relative;
-    top: -35px; }
+    top: -35px;
+  .pricing-plan ul {
+    margin:0; }
   .pricing-plan h3, .pricing-plan p {
     padding: 15px 0;
     color: #FFFFFF;
@@ -1821,6 +1823,9 @@ footer .overlay-wrapper .overlay a {
 
 #article img {
   display: inline-block; }
+
+#article font {
+  font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; }
 
 .eshop-product-body h3 {
   height: 32px !important;
