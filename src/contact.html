@@ -320,13 +320,13 @@
         </div>
 
         <div class="col-md-6" style="margin-top: 30px;">
-          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
-          <script>
+		  <script>
+			//NOTE: Requires script load at footer!
             $(document).ready(function() {
               var myLatlng = new google.maps.LatLng(37.3682577, -121.9628301);
               var mapOptions = {
                 zoom: 17,
-                center: myLatlng,
+                center: {lat: 37.3682557, lng: -121.9628301},
                 navigationControl: false,
                 mapTypeControl: false,
                 scaleControl: false,
@@ -372,8 +372,8 @@
           <a class="no_u" href="http://www.bostonsemiequipment.com/">
 						<img class="centerImg" alt="Boston Semi Equipment" src="images/company-boston.png" style="max-width: 206px; max-height: 53px; top:-25px">
 					</a>
-          <br> +886-3-571-5887
-          <br><br> 9F-1, No.101, Sec.2<br> Gongdao 5th Road<br> Hsinchu, 30070, Taiwan<br>
+          <br> +886-3-577-2556
+          <br><br> 10F-1, No.118<br> Ciyun Road<br> Hsinchu City 30072, Taiwan<br>
 
         </div>
         <div class="col-md-4">
@@ -539,6 +539,6 @@
     </footer>
   </div>
   <!--  BOTTOM END - v19 -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuKJMdHG3tpGn6Mc9fyjHkVJua5HWwZcY&callback=initMap" type="text/javascript"></script>
 </body>
-
 </html>
