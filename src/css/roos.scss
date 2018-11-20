@@ -984,6 +984,7 @@ body .pricing-plan.popular .pricing-plan-price {
   }
   ul {
     padding: 10px 30px;
+    margin-left: 0;
     margin-bottom: 0;
     text-align: left;
     li {
@@ -1015,7 +1016,7 @@ body .pricing-plan.popular .pricing-plan-price {
 }
 
 .pricing-plan-titles {
-  margin-top: 203px;
+  margin-top: 178px;
 }
 
 #pricingtable .pricing-plan-titles ul {
@@ -2450,7 +2451,6 @@ footer .overlay-wrapper .overlay a {
   font {
       font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial,Helvetica,sans-serif; }
   }
-}
 
 .eshop-product-body h3 {
   height: 32px !important;
