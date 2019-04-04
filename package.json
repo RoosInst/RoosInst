@@ -6749,6 +6749,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
   }
