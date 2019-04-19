@@ -1,44 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- ==========================
+    	HEADER - START
+    =========================== -->
+     <div class="top-header hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i class="fa fa-envelope"></i> support@roos.com</a></div>
+          <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa fa-phone"></i>+1-408-748-8589</a></div>
+        </div>
+        <div class="header-item pull-right">
+          <span id="newuser"><a href="/newFullUser"><i class="fa fa-user-plus"></i>Create new account&nbsp;&nbsp;</a></span>
+          <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fa fa-lock"></i>Sign in</span>&nbsp;&nbsp;</a>
+          <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i class="fa fa-sign-out"></i>Sign Out</a></span>
+        </div>
+      </div>
+    </div>
+    <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+      <div class="container">
 
-<head>
-  <title>Lowest Cost | Roos Instruments</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("nav-products").classList.add("active");
-    });
-  </script>
-
-  <!-- TOP - v47 -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
-  <meta name="author" content="Roos Instruments, Inc.">
-  <meta name="theme-color" content="#f0f0f0">
-
-  <link rel="icon" href="/images/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="/css/roos.min.css" rel="stylesheet" id="pageTheme">
-  <link href="roos-print.min.css" rel="stylesheet" media="print">
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script defer src="/js/roos.min.js?v1"></script>
-</head>
-
-<body>
-  <noscript>
-		<div class="alert alert-danger">
-			<div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
-		</div>
-  </noscript>
-  <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
-
-  <div id="page-wrapper" class="page-boxed">
-
-  <div class="top"></div>
-  <script src="js/loadtop.js"></script>
+        <div class="navbar-header">
+          <div class="visible-xs-block">
+            <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+            <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i></a></div>
+          </div>
 
           <div id="title">
             <div class="hidden-xs hidden-sm">
@@ -245,151 +228,5 @@
       </div>
     </div>
     <!-- ==========================
-    	BREADCRUMB - START
+    	HEADER - END
     =========================== -->
-		<section class="breadcrumb-wrapper">
-			<div class="container">
-				<h2>Lowest Cost</h2>
-				<ol class="breadcrumb">
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="/products.html">Products</a></li>
-					<li><a href="/fixture.html">Device Interface</a></li>
-				</ol>
-			</div>
-		</section>
-	<!-- ==========================
-    	BREADCRUMB - END
-    =========================== -->
-
-		<section id ="content" class="roosC container">
-			<h5>Lowest Test Cost Per Device</h5>
-			<p>
-				RI's per-piece cycle time for production test is typically sub-1 second which
-				includes generating and logging complete results data. A full characterization
-				test may take 3 to 5 seconds. RI systems have demonstrated performance in excess
-				of 10 million pieces per year, over 75,000 parts per day. This throughput
-				combined with system prices starting under six hundred thousand dollars equates
-				to the lowest test cost per device on the market.
-			</p>
-			<h5>Maximum Uptime</h5>
-			<p>
-				RI designs its RF sources, signal paths, and programmable DUT controller for
-				maximum stability over temperature and time. System errors are minimized through
-				design and removed via software. While frequent calibration is a requirement of
-				most T & M equipment, RI has reduced it to a scheduled maintenance item. MTBF's
-				are above 10,000 hours and increasing while maintenance cycles are semiannual.
-				Reliability is a primary feature of the RI system. All components, including any
-				custom filtering specified by customers, are engineered for dependability.
-			</p>
-			<h5>Performance Guaranteed</h5>
-			<p>
-				The acceptance test for every RI system is the first production run. From
-				pre-shipment integration acceptance through installation, on-site start up
-				training and test plan development to final acceptance, RI professionals
-				personally guarantee system performance and customer satisfaction.
-			</p>
-
-		</section> <!-- End of #content section-->
-
-    <!-- BOTTOM START -->
-    <footer class="text-center">
-      <div class="defaultCursor container">
-        <div class="row">
-          <div class="col-md-4 col-sm-8">
-            <a href="/index.html"><img style="float: left; padding-bottom: 76px;" alt="ROOS Logo" src="/images/RILogoWeb.png"></a>
-            <h3><i class="fa fa-flag"></i>Contact</h3>
-            <div class="vcard">
-              <div class="org">
-                <ul>
-                  <li>
-                    <a href="https://goo.gl/maps/4eQnc">
-                      <i class="fa fa-map-marker"></i>
-                      <span class="contactLinks adr">
-                        <span class="street-address">&nbsp;&nbsp;2285 Martin Ave</span><br>
-      							    <span class="locality">Santa Clara</span>,
-                        <span class="region">CA</span>
-                        <span class="postal-code">95050</span>,
-                        <span class="country-name">US</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li style="margin:10px 0px;"><a href="mailto:support@roos.com"><i class="fa fa-envelope"></i><span class="contactLinks"> &nbsp;&nbsp;support@roos.com</span></a></li>
-                  <li><a href="tel:+1-408-748-8589">&nbsp;<i class="fa fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;+1-408-748-8589</span></a></li>
-                </ul>
-              </div>
-            </div>
-            <ul class="brands">
-              <li><a aria-label="Facebook" href="https://facebook.com/RoosInst" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-              <li><a aria-label="Twitter" href="https://twitter.com/RoosInstruments" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-              <li><a aria-label="Google+" href="https://plus.google.com/+RoosInst/posts" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-              <li><a aria-label="LinkedIn" href="https://www.linkedin.com/company/roos-instruments" class="brands-linkedin"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 hidden-xs hidden-sm">
-            <h3><i class="fa fa-th-large"></i>Product Catalog</h3>
-            <div class="row" id="latest-work-footer">
-              <div class="overlay-wrapper col-sm-6">
-                <img src="/images/Cassini16_wAuxRotate_opt-icon.png" class="img-responsive" alt="Request a Quote">
-                <span class="overlay">
-  									<a href="/apps">Systems</a>
-  								</span>
-              </div>
-              <div class="overlay-wrapper col-sm-6">
-                <img src="/images/fixture_clam-icon.png" class="img-responsive" alt="Fixture RIKs">
-                <span class="overlay">
-  									<a href="/rik">RIK Catalog</a>
-  								</span>
-              </div>
-              <div class="overlay-wrapper col-sm-6">
-                <img src="/images/accessories-icon.png" class="img-responsive" alt="RIK Accessories">
-                <span class="overlay">
-  									<a href="/accessories">Accessories</a>
-  								</span>
-              </div>
-              <div class="overlay-wrapper col-sm-6">
-                <img src="/images/service.png" class="img-responsive" alt="Services">
-                <span class="overlay">
-  									<a href="/services">Services</a>
-  								</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 hidden-xs">
-            <h3><i class="fa fa-newspaper-o"></i>Newsletter</h3>
-            <!-- Begin MailChimp Signup Form -->
-            <form action="//roos.us1.list-manage.com/subscribe/post?u=e4af34dd926ba03edc61ded32&amp;id=3cd36fd7fa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div class="form-group nospace">
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input aria-hidden="true" type="text" name="b_e4af34dd926ba03edc61ded32_3cd36fd7fa" placeholder="name" tabindex="-1" value=""></div>
-                <fieldset>
-                  <div class="input-group" style="padding-bottom: 15px;">
-                    <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required>
-                    <span class="input-group-btn"><button aria-label="Enter your email address to sign up for our newsletter" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button></span>
-                  </div>
-                </fieldset>
-              </div>
-            </form>
-            <h3><i class="fa fa-cloud-download"></i>Brochure</h3>
-            <a href="/parts/CASSINI/$file/CASSINI.pdf"><img width="160" class=" img-responsive centerImg" src="/images/cassini-brochure.png" alt="Cassini Brochure">
-  							<p style="padding-top: 5px;">Learn more about Cassini</p>
-  						</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <ul class="nav navbar-nav navbar-right hidden-xs">
-            <li><a title="Roos Instruments" href="/index.html">Home</a></li>
-            <li><a title="Products Overview" href="/products.html">Products</a></li>
-            <li><a title="Services Overview" href="/services.html">Services</a></li>
-            <li><a title="Company Overview" href="/company.html">Company</a></li>
-            <li><a title="Support Overview" href="/support.html">Support</a></li>
-            <li><a title="Contact Overview" href="/contact.html">Contact</a></li>
-            <li><a title="Privacy Policy, Cookies, and Use" href="/privacy.html">Privacy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!--  BOTTOM END - v20 -->
-</body>
-
-</html>
