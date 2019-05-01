@@ -7,13 +7,13 @@ footer,
 address,
 nav,
 .btn-group,
-.btn-group a { display: none; }
+.btn-group a { display: none !important; }
 
 #title {
   size: 12pt;
   color: #aaa;
   overflow:hidden;
-  display: block !importantl
+  display: block !important
 }
 
 body,
