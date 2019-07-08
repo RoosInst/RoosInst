@@ -306,11 +306,18 @@
           </ul>
           <h3>Step 2) Exchange TIM</h3>
           <ul>
-            <li>Remove Failed TIM, Pull Top Latch Then Pull Bottom Handle to Release from the Testhead.</li>
+              <li>Depending on the TIM model number, choose the appropriate step:
+                <ul>
+                  <li>For RI7725 AUX Rack 20 GHz Source, See <a href="https://roos.com/docs/RBEH-8SW447">Exchanging AUX Rack Source TIM</a>.</li>
+                  <li>For RI8574 EPC System Controller TIM, See <a href="https://roos.com/docs/RBEH-APL2LM">System Controller Exchange Checklist (EPC TIM)</a>.</li>
+                  <li>For RI8545 20 GHz TestSet (Testhead instrument), See <a href="https://roos.com/docs/RBEH-ASAUGU">Cal Data Activation (Testhead)</a>.</li>
+                  <li>For all others, Remove Failed TIM With System ON, Pull Top Latch Then Pull Bottom Handle to Release from Testhead.</li>
+                </ul>
             <li>Perform <b>System &gt; Check</b> (Instrument(s) Removed from Configuration)</li>
             <li>Install New TIM in the same T-location labeled on TIM. Example: <button style="background-color: rgb(255,255,255); border: 1px solid; border-radius: 5px;" disabled>&nbsp;&nbsp;&nbsp;T-4&nbsp;&nbsp;&nbsp;</button> <br> Slide TIM Horizontally
               Until Touching Testhead, Slide TIM Vertically Until In Position, Press Top Latch Down</li>
             <li>Perform <b>System &gt; Check </b>(Instrument(s) Added to Configuration). Start Warm Up Timer (20 minutes)</li>
+            <li>Choose <b>Tester &gt; Save</b> menu from the Configuration window to save the configuration. </li>
           </ul>
           <h3>Step 3) Verify and Release to Production</h3>
           <ul>
