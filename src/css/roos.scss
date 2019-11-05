@@ -424,7 +424,7 @@ body {
     cursor: pointer;
 
     &:after {
-      display: inline-block;
+      display: block;
       font-family: FontAwesome;
       font-style: normal;
       font-weight: normal;
@@ -1111,7 +1111,7 @@ body #services.services3 .service:hover i {
   i {
     font-size: 64px;
     padding: 20px 20px 0 20px;
-    display: inline-block;
+    display: block;
     float: left;
   }
   .map-overlay-body {
@@ -1836,7 +1836,7 @@ hr.space {
 #index-slide-0, #index-slide-1, #index-slide-2, #index-slide-3, #index-slide-4, #index-slide-5 {
   background-size: cover;
 }
-\
+
 #index-slide-0 {
   background-image: url(/images/index-slide-0.png);
 }
