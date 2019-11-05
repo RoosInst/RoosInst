@@ -6756,6 +6756,7 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1"
   }
 }

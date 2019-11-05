@@ -10,7 +10,20 @@ const gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin')
     sass = require('gulp-sass'),
     del = require('del'),
-    imagemin = require('gulp-imagemin');
+    imagemin = require('gulp-imagemin'),
+    webserver = require('gulp-webserver');
+
+//local-webserver
+gulp.task('webserver', function() {
+  gulp.src('dist')
+  .pipe(webserver({
+    port:8016,
+    livereload: true,
+    directoryListing: true,
+    open: true,
+    fallback: 'index.html'
+  }))
+});
 
 // Minify & concat JS
 gulp.task('js', function(){
@@ -76,3 +89,4 @@ gulp.task('default', ['clean'], function() {
     gulp.start('js');
     gulp.start('html');
 });
+
