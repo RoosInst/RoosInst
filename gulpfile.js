@@ -12,7 +12,13 @@ const gulp = require('gulp'),
     sass = require('gulp-sass'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
-    webserver = require('gulp-webserver');
+    webserver = require('gulp-webserver'),
+    sync = require('gulp-npm-script-sync');
+
+//sync
+gulp.task('sync', function () {
+  sync(gulp);
+});
 
 //local-webserver
 gulp.task('webserver', function() {
@@ -89,5 +95,6 @@ gulp.task('default', ['clean'], function() {
     gulp.start('css');
     gulp.start('js');
     gulp.start('html');
+    gulp.start('sync');
 });
 
