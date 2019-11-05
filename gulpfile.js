@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* Before using make sure you have:
    npm install --save-dev gulp gulp-minify-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
 */
