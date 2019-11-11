@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 /* Before using make sure you have:
-   npm install --save-dev gulp gulp-minify-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
+   npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
 */
 
 const gulp = require('gulp'),
-    minifyCSS = require('gulp-minify-css'),
+    minifyCSS = require('gulp-clean-css'),
     concat = require('gulp-concat')
     uglify = require('gulp-uglify')
     prefix = require('gulp-autoprefixer')
