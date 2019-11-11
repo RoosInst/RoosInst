@@ -32,7 +32,7 @@ $linkHoverColor: #1280ed;
     img {
       border: none;
     }
-    &:focus, &:hover {
+    &:focus, &:hover {aa
       color: $roosBlue;
     }
   }
@@ -176,8 +176,6 @@ body {
   height: 100%;
   font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
   background: #F0F0F0;
-  color: #707070;
-  font-weight: normal;
 }
 
 #page-wrapper {
