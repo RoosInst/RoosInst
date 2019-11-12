@@ -9,3 +9,4 @@ IBM_iNotes*
 *.komodoproject
 node_modules/
 dist/
+build/
