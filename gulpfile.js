@@ -37,7 +37,7 @@
     postcss       = require('gulp-postcss'),
     sourcemaps    = devBuild ? require('gulp-sourcemaps') : null,
     browsersync   = devBuild ? require('browser-sync').create() : null,
-    sync          = require('npm-script-sync');
+    sync          = require('gulp-npm-script-sync');
 
 
   console.log('Gulp', devBuild ? 'development' : 'production', 'build');
@@ -133,7 +133,7 @@
 
   const syncConfig = {
     server: {
-      baseDir   : './',
+      baseDir   : './build/',
       index     : 'index.html'
     },
     port        : 8000,
@@ -161,12 +161,12 @@
 
   }
 
-    /**************** sync task ****************/
+    /**************** sync NPM scripts task ****************/
 
-    function sync(done) {
+    function syncNPMScript(done) {
 
       // sync build scripts
-      gulp.sync(gulp);
+      sync(gulp);
   
       done();
   
@@ -174,6 +174,6 @@
 
   /**************** default task ****************/
 
-  exports.default = gulp.series(exports.css, watch, server);
+  exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
 
 })();

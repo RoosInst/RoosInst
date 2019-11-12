@@ -4,7 +4,12 @@
   "description": "roos.com website (static pages)",
   "main": "gulpfile.js",
   "scripts": {
-    "gulp": "gulp default"
+    "gulp": "gulp default",
+    "clean": "gulp taskWrapper",
+    "wipe": "gulp taskWrapper",
+    "images": "gulp taskWrapper",
+    "css": "gulp taskWrapper",
+    "default": "gulp taskWrapper"
   },
   "repository": {
     "type": "git",
@@ -6621,6 +6626,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "autoprefixer": "^9.7.1",
+    "browser-sync": "^2.26.7",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^3.0.0",
@@ -6640,6 +6646,7 @@
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-debug": "^3.0.0",
     "gulp-terser": "^1.2.0",
