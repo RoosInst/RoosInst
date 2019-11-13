@@ -33,6 +33,7 @@
     newer         = require('gulp-newer'),
     size          = require('gulp-size'),
     imagemin      = require('gulp-imagemin'),
+    htmlclean     = require('gulp-htmlclean'),
     sass          = require('gulp-sass'),
     postcss       = require('gulp-postcss'),
     sourcemaps    = devBuild ? require('gulp-sourcemaps') : null,
@@ -102,7 +103,33 @@
       })
     ]
 
-  };
+  }
+ 
+// HTML processing
+function html() {
+  const out = build + '/';
+
+  return gulp.src(src + '/**/*')
+    .pipe(newer(out))
+    .pipe(devBuild ? noop() : htmlclean())
+    .pipe(gulp.dest(out));
+}
+exports.html = gulp.series(images, html);
+
+// JavaScript processing
+function js() {
+
+  return gulp.src(src + 'js/**/*')
+    .pipe(sourcemaps ? sourcemaps.init() : noop())
+    .pipe(deporder())
+    .pipe(concat('main.js'))
+    .pipe(stripdebug ? stripdebug() : noop())
+    .pipe(terser())
+    .pipe(sourcemaps ? sourcemaps.write() : noop())
+    .pipe(gulp.dest(build + 'js/'));
+
+}
+exports.js = js;
 
   // remove unused selectors and minify production CSS
   if (!devBuild) {
@@ -157,6 +184,12 @@
     // CSS changes
     gulp.watch(cssConfig.watch, css);
 
+    // HTML changes
+    gulp.watch(htmlConfig.watch, html);
+
+      // JS changes
+      gulp.watch(jsConfig.watch, html);
+
     done();
 
   }
@@ -172,8 +205,11 @@
   
     }
 
-  /**************** default task ****************/
+// run all tasks
+exports.build = gulp.parallel(exports.html, exports.css, exports.js);
 
-  exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
+/**************** default task ****************/
+
+ exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
 
 })();
