@@ -5,8 +5,6 @@
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
    npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
-
-
 */
 
 (() => {
@@ -58,8 +56,8 @@
   /**************** images task ****************/
 
   const imgConfig = {
-    src           : dir.src + 'images/**/*',
-    build         : dir.build + 'images/',
+    src           : dir.src + 'src/images/**/*',
+    build         : dir.build + 'build/images/',
 
     minOpts: {
       optimizationLevel: 5
@@ -82,9 +80,9 @@
 
   const cssConfig = {
 
-    src         : dir.src + 'css/roos.scss',
-    watch       : dir.src + 'css/**/*.scss',
-    build       : dir.build + 'css/',
+    src         : dir.src + '/css/roos.scss',
+    watch       : dir.src + '/css/**/*.scss',
+    build       : dir.build + '/css/',
     sassOpts: {
       sourceMap       : devBuild,
       outputStyle     : 'nested',
@@ -103,6 +101,22 @@
       })
     ]
 
+  }
+
+   /**************** HTML task ****************/
+
+   const htmlConfig = {
+    src         : dir.src + '/',
+    watch       : dir.src + '/**/*.html',
+    build       : dir.build + '/'
+  }
+
+  /**************** JS task ****************/
+
+  const jsConfig = {
+    src         : dir.src + '/js/**/*',
+    watch       : dir.src + '/js/**/*.js',
+    build       : dir.build + '/js/'
   }
  
 // HTML processing
@@ -144,6 +158,7 @@ exports.js = js;
   function css() {
 
     return gulp.src(cssConfig.src)
+      .pipe(gulp.dest('../src/css'))  //readable .css back in src
       .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
       .pipe(postcss(cssConfig.postCSS))
@@ -163,7 +178,7 @@ exports.js = js;
       baseDir   : './build/',
       index     : 'index.html'
     },
-    port        : 8000,
+    port        : 8016,
     open        : false
   };
 
@@ -187,8 +202,8 @@ exports.js = js;
     // HTML changes
     gulp.watch(htmlConfig.watch, html);
 
-      // JS changes
-      gulp.watch(jsConfig.watch, html);
+    // JS changes
+    gulp.watch(jsConfig.watch, js);
 
     done();
 
