@@ -75,4 +75,4 @@ table tr th {
    page-break-inside: avoid;
 }
 
-.catalogTable { display: table; } /*disabled in css but enabled with javascript, but print view doesn't have javascript to enable/*
+.catalogTable { display: table; }

@@ -16,27 +16,30 @@
   const
 
     // development or production
-    devBuild  = ((process.env.NODE_ENV || 'development').trim().toLowerCase() === 'development'),
+    devBuild = ((process.env.NODE_ENV || 'development').trim().toLowerCase() === 'development'),
 
     // directory locations
     dir = {
-      src         : 'src/',
-      build       : 'build/'
+      src: 'src/',
+      build: 'build/'
     },
 
     // modules
-    gulp          = require('gulp'),
-    del           = require('del'),
-    noop          = require('gulp-noop'),
-    newer         = require('gulp-newer'),
-    size          = require('gulp-size'),
-    imagemin      = require('gulp-imagemin'),
-    htmlclean     = require('gulp-htmlclean'),
-    sass          = require('gulp-sass'),
-    postcss       = require('gulp-postcss'),
-    sourcemaps    = devBuild ? require('gulp-sourcemaps') : null,
-    browsersync   = devBuild ? require('browser-sync').create() : null,
-    sync          = require('gulp-npm-script-sync');
+    gulp = require('gulp'),
+    concat = require('gulp-concat'),
+    concatcss = require('gulp-concat-css'),
+    del = require('del'),
+    deporder = require('gulp-deporder'),
+    noop = require('gulp-noop'),
+    newer = require('gulp-newer'),
+    size = require('gulp-size'),
+    imagemin = require('gulp-imagemin'),
+    htmlclean = require('gulp-htmlclean'),
+    sass = require('gulp-sass'),
+    postcss = require('gulp-postcss'),
+    sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
+    browsersync = devBuild ? require('browser-sync').create() : null,
+    sync = require('gulp-npm-script-sync');
 
 
   console.log('Gulp', devBuild ? 'development' : 'production', 'build');
@@ -46,7 +49,7 @@
 
   function clean() {
 
-    return del([ dir.build ]);
+    return del([dir.build]);
 
   }
   exports.clean = clean;
@@ -56,8 +59,8 @@
   /**************** images task ****************/
 
   const imgConfig = {
-    src           : dir.src + 'src/images/**/*',
-    build         : dir.build + 'build/images/',
+    src: dir.src + 'src/images/**/*',
+    build: dir.build + 'build/images/',
 
     minOpts: {
       optimizationLevel: 5
@@ -69,7 +72,7 @@
     return gulp.src(imgConfig.src)
       .pipe(newer(imgConfig.build))
       .pipe(imagemin(imgConfig.minOpts))
-      .pipe(size({ showFiles:true }))
+      .pipe(size({ showFiles: true }))
       .pipe(gulp.dest(imgConfig.build));
 
   }
@@ -79,16 +82,17 @@
   /**************** CSS task ****************/
 
   const cssConfig = {
-
-    src         : dir.src + '/css/roos.scss',
-    watch       : dir.src + '/css/**/*.scss',
-    build       : dir.build + '/css/',
+    scssSrc: dir.src + '/css/**/*.scss',
+    printSrc: dir.src + '/css/roos-print.css',
+    src: dir.src + '/css/**/*!(root-print).css',
+    watch: dir.src + '/css/**/*',
+    build: dir.build + '/css/',
     sassOpts: {
-      sourceMap       : devBuild,
-      outputStyle     : 'nested',
-      imagePath       : '/images/',
-      precision       : 3,
-      errLogToConsole : true
+      sourceMap: devBuild,
+      outputStyle: 'nested',
+      imagePath: '/images/',
+      precision: 3,
+      errLogToConsole: true
     },
 
     postCSS: [
@@ -96,54 +100,55 @@
         loadPaths: ['images/'],
         basePath: dir.build
       }),
-      require('autoprefixer')({
-        browsers: ['> 1%']
-      })
+      require('autoprefixer')
+      /** --replaced by package.json "browserslist" option...  
+       * ({
+       * browsers: ['> 1%'] 
+       * }) */
     ]
 
   }
 
-   /**************** HTML task ****************/
+  /**************** HTML task ****************/
 
-   const htmlConfig = {
-    src         : dir.src + '/',
-    watch       : dir.src + '/**/*.html',
-    build       : dir.build + '/'
+  const htmlConfig = {
+    src: dir.src + '/',
+    watch: dir.src + '/**/*.html',
+    build: dir.build + '/'
   }
 
   /**************** JS task ****************/
 
   const jsConfig = {
-    src         : dir.src + '/js/**/*',
-    watch       : dir.src + '/js/**/*.js',
-    build       : dir.build + '/js/'
+    src: dir.src + 'js/**/*',
+    watch: dir.src + '/js/**/*.js',
+    build: dir.build + '/js/'
   }
- 
-// HTML processing
-function html() {
-  const out = build + '/';
 
-  return gulp.src(src + '/**/*')
-    .pipe(newer(out))
-    .pipe(devBuild ? noop() : htmlclean())
-    .pipe(gulp.dest(out));
-}
-exports.html = gulp.series(images, html);
+  // HTML processing
+  function html() {
+    const out = build + '/';
 
-// JavaScript processing
-function js() {
+    return gulp.src(src + '/**/*')
+      .pipe(newer(out))
+      .pipe(devBuild ? noop() : htmlclean())
+      .pipe(gulp.dest(out));
+  }
+  exports.html = gulp.series(images, html);
 
-  return gulp.src(src + 'js/**/*')
-    .pipe(sourcemaps ? sourcemaps.init() : noop())
-    .pipe(deporder())
-    .pipe(concat('main.js'))
-    .pipe(stripdebug ? stripdebug() : noop())
-    .pipe(terser())
-    .pipe(sourcemaps ? sourcemaps.write() : noop())
-    .pipe(gulp.dest(build + 'js/'));
+  // JavaScript processing
+  function js() {
 
-}
-exports.js = js;
+    return gulp.src(jsConfig.src)
+      .pipe(concat('roos.min.js'))
+      // .pipe(sourcemaps ? sourcemaps.init() : noop())
+      .pipe(deporder())
+      // .pipe(terser())
+      // .pipe(sourcemaps ? sourcemaps.write() : noop())
+      .pipe(gulp.dest(jsConfig.build));
+
+  }
+  exports.js = js;
 
   // remove unused selectors and minify production CSS
   if (!devBuild) {
@@ -152,34 +157,47 @@ exports.js = js;
       require('usedcss')({ html: ['index.html'] }),
       require('cssnano')
     );
+  }
 
+  function scss() {
+
+    return gulp.src(cssConfig.scssSrc)  //process SASS before css
+      .pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
+      .pipe(postcss(cssConfig.postCSS))
+      .pipe(gulp.dest('src/css'));
+  }
+
+  function cssPrint() {
+
+    return gulp.src(cssConfig.printSrc)//roos-print.css is separate
+      .pipe(gulp.dest(cssConfig.build))
+      .pipe(concatcss('roos-print.css'))
+      .pipe(postcss(cssConfig.postCSS));
   }
 
   function css() {
 
     return gulp.src(cssConfig.src)
-      .pipe(gulp.dest('../src/css'))  //readable .css back in src
-      .pipe(sourcemaps ? sourcemaps.init() : noop())
-      .pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
-      .pipe(postcss(cssConfig.postCSS))
-      .pipe(sourcemaps ? sourcemaps.write() : noop())
-      .pipe(size({ showFiles:true }))
+      //.pipe(sourcemaps ? sourcemaps.init() : noop())
+      .pipe(concatcss('roos.min.css'))
+      //.pipe(sourcemaps ? sourcemaps.write() : noop())
+      .pipe(size({ showFiles: true }))
       .pipe(gulp.dest(cssConfig.build))
+      .pipe(postcss(cssConfig.postCSS))
       .pipe(browsersync ? browsersync.reload({ stream: true }) : noop());
-
   }
-  exports.css = gulp.series(images, css);
+  exports.css = gulp.series(images, scss, cssPrint, css);
 
 
   /**************** server task (now private) ****************/
 
   const syncConfig = {
     server: {
-      baseDir   : './build/',
-      index     : 'index.html'
+      baseDir: './build/',
+      index: 'index.html'
     },
-    port        : 8016,
-    open        : false
+    port: 8016,
+    open: false
   };
 
   // browser-sync
@@ -209,22 +227,22 @@ exports.js = js;
 
   }
 
-    /**************** sync NPM scripts task ****************/
+  /**************** sync NPM scripts task ****************/
 
-    function syncNPMScript(done) {
+  function syncNPMScript(done) {
 
-      // sync build scripts
-      sync(gulp);
-  
-      done();
-  
-    }
+    // sync build scripts
+    sync(gulp);
 
-// run all tasks
-exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+    done();
 
-/**************** default task ****************/
+  }
 
- exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
+  // run all tasks
+  exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+
+  /**************** default task ****************/
+
+  exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
 
 })();

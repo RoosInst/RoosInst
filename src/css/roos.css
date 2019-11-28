@@ -127,7 +127,9 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
-  background: #F0F0F0; }
+  background: #F0F0F0;
+  color: #707070;
+  font-weight: normal; }
 
 #page-wrapper {
   background: #FFFFFF;
@@ -706,6 +708,10 @@ footer {
 
 #pricing > div, #pricingtable .row > div {
   padding: 0; }
+
+.row-no-padding > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 .pricing-plan {
   background: #F5F5F5;
@@ -1289,11 +1295,6 @@ hr.space {
   font-size: 30px; }
 
 .ROOSbanner {
-  background: -moz-linear-gradient(left, #5ebcf0 0%, #54b6ec 18%, #0095d7 34%, #0085ca 60%, #186fb7 73%, rgba(38, 98, 172, 0.84) 81%, rgba(40, 88, 163, 0.67) 95%, rgba(42, 75, 151, 0) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5ebcf0), color-stop(18%, #54b6ec), color-stop(34%, #0095d7), color-stop(60%, #0085ca), color-stop(73%, #186fb7), color-stop(95%, rgba(38, 98, 172, 0)), color-stop(89%, rgba(40, 88, 163, 0.67)), color-stop(100%, rgba(42, 75, 151, 0.28)));
-  background: -webkit-linear-gradient(left, #5ebcf0 0%, #54b6ec 18%, #0095d7 34%, #0085ca 60%, #186fb7 73%, rgba(38, 98, 172, 0.84) 81%, rgba(40, 88, 163, 0.67) 95%, rgba(42, 75, 151, 0) 100%);
-  background: -o-linear-gradient(left, #5ebcf0 0%, #54b6ec 18%, #0095d7 34%, #0085ca 60%, #186fb7 73%, rgba(38, 98, 172, 0.84) 81%, rgba(40, 88, 163, 0.67) 95%, rgba(42, 75, 151, 0) 100%);
-  background: -ms-linear-gradient(left, #5ebcf0 0%, #54b6ec 18%, #0095d7 34%, #0085ca 60%, #186fb7 73%, rgba(38, 98, 172, 0.84) 81%, rgba(40, 88, 163, 0.67) 95%, rgba(42, 75, 151, 0) 100%);
   background: linear-gradient(to right, #5ebcf0 0%, #54b6ec 18%, #0095d7 34%, #0085ca 60%, #186fb7 73%, rgba(38, 98, 172, 0.84) 81%, rgba(40, 88, 163, 0.67) 95%, rgba(42, 75, 151, 0) 100%);
   height: 2px;
   width: 377px; }
@@ -1761,8 +1762,6 @@ input.gsc-search-button-v2 {
   margin-top: 10px; }
 
 #productImg .childbox img {
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
   cursor: zoom-in; }
 
 @media (max-width: 767px) {
@@ -1978,3 +1977,11 @@ footer .overlay-wrapper .overlay a {
 
 ul {
   list-style-type: none; }
+
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-pad > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
