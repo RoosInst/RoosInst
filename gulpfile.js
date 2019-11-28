@@ -4,7 +4,7 @@
    npm install gulp gulp-newer gulp-imagemin --save-dev
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
-   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
+   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
 */
 
 (() => {
@@ -28,6 +28,7 @@
     gulp = require('gulp'),
     concat = require('gulp-concat'),
     concatcss = require('gulp-concat-css'),
+    cleanCSS = require('gulp-clean-css'),
     del = require('del'),
     deporder = require('gulp-deporder'),
     noop = require('gulp-noop'),
@@ -37,7 +38,7 @@
     htmlclean = require('gulp-htmlclean'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
-    sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
+    //sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
     browsersync = devBuild ? require('browser-sync').create() : null,
     sync = require('gulp-npm-script-sync');
 
@@ -100,11 +101,12 @@
         loadPaths: ['images/'],
         basePath: dir.build
       }),
-      require('autoprefixer')
+      require('autoprefixer'),
       /** --replaced by package.json "browserslist" option...  
        * ({
        * browsers: ['> 1%'] 
        * }) */
+      require('cleanCSS')
     ]
 
   }
@@ -171,7 +173,6 @@
 
     return gulp.src(cssConfig.printSrc)//roos-print.css is separate
       .pipe(gulp.dest(cssConfig.build))
-      .pipe(concatcss('roos-print.css'))
       .pipe(postcss(cssConfig.postCSS));
   }
 
