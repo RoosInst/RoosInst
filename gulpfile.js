@@ -38,6 +38,7 @@
     htmlclean = require('gulp-htmlclean'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
+    fileinclude = require('gulp-file-include'),
     //sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
     browsersync = devBuild ? require('browser-sync').create() : null,
     sync = require('gulp-npm-script-sync');
@@ -75,13 +76,13 @@
       .pipe(imagemin(imgConfig.minOpts))
       .pipe(size({ showFiles: true }))
       .pipe(gulp.dest(imgConfig.build));
-
   }
   exports.images = images;
 
 
   /**************** CSS task ****************/
-
+  /** SASS compiles to CSS, roos-print.css just cleaned,
+   *  everything is concatenated to roos-min.css */
   const cssConfig = {
     scssSrc: dir.src + '/css/**/*.scss',
     printSrc: dir.src + '/css/roos-print.css',
@@ -102,11 +103,6 @@
         basePath: dir.build
       }),
       require('autoprefixer'),
-      /** --replaced by package.json "browserslist" option...  
-       * ({
-       * browsers: ['> 1%'] 
-       * }) */
-      require('cleanCSS')
     ]
 
   }
@@ -114,7 +110,7 @@
   /**************** HTML task ****************/
 
   const htmlConfig = {
-    src: dir.src + '/',
+    src: dir.src + '/*.html',
     watch: dir.src + '/**/*.html',
     build: dir.build + '/'
   }
@@ -127,26 +123,37 @@
     build: dir.build + '/js/'
   }
 
+  /**************** Include "Templating" ******/
+  gulp.task('fileinclude', function () {
+    gulp.src(htmlConfig.src)
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest(htmlConfig.build));
+  });
+
   // HTML processing
   function html() {
-    const out = build + '/';
+    const out = htmlConfig.build;
 
-    return gulp.src(src + '/**/*')
+    return gulp.src(htmlConfig.src)
       .pipe(newer(out))
       .pipe(devBuild ? noop() : htmlclean())
       .pipe(gulp.dest(out));
   }
-  exports.html = gulp.series(images, html);
+  exports.html = gulp.series(images, fileinclude, html);
 
   // JavaScript processing
   function js() {
 
     return gulp.src(jsConfig.src)
-      .pipe(concat('roos.min.js'))
-      // .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(deporder())
+      // .pipe(sourcemaps ? sourcemaps.init() : noop())
+      .pipe(concat('roos.min.js'))
       // .pipe(terser())
       // .pipe(sourcemaps ? sourcemaps.write() : noop())
+
       .pipe(gulp.dest(jsConfig.build));
 
   }
@@ -172,6 +179,7 @@
   function cssPrint() {
 
     return gulp.src(cssConfig.printSrc)//roos-print.css is separate
+      .pipe(cleanCSS())
       .pipe(gulp.dest(cssConfig.build))
       .pipe(postcss(cssConfig.postCSS));
   }
@@ -179,6 +187,7 @@
   function css() {
 
     return gulp.src(cssConfig.src)
+      .pipe(cleanCSS())
       //.pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
       //.pipe(sourcemaps ? sourcemaps.write() : noop())

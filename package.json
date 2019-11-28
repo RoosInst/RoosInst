@@ -29,7 +29,7 @@
     "url": "https://github.com/RoosInst/RoosInst/issues"
   },
   "homepage": "https://www.roos.com",
-  "browserlist": [
+  "browserslist": [
     "last 2 versions",
     "defaults"
   ],
@@ -6637,6 +6637,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "gulp-deporder": "^1.2.0",
+    "gulp-file-include": "^2.1.1",
     "gulp-htmlclean": "^2.7.22",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
