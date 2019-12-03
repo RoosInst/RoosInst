@@ -39,6 +39,11 @@
   <script>
     window.addEventListener("load", function () {
       window.cookieconsent.initialise({
+        "cookie": {
+          secure: true,
+          sameSite: true,
+          sameSiteValue: "Strict"
+        },
         "palette": {
           "popup": {
             "background": "#252e39"
@@ -72,7 +77,7 @@
 
   <div id="page-wrapper" class="page-boxed">
     <!-- gulp-include template -->
-    @@include('./top.html')
+    @@include('./_top.html')
 
     <!-- ==========================
     	BREADCRUMB - START
