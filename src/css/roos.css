@@ -24,7 +24,7 @@
   .roosC a img {
     border: none; }
   .roosC a:focus, .roosC a:hover {
-    color: #084aa1; }
+    color: #4676B8; }
   .roosC blockquote {
     margin: 1.5em;
     color: #666;
@@ -42,7 +42,7 @@
     height: 100%; }
   .roosC a {
     font-weight: 400;
-    color: #0095d7;
+    color: #00A7FF;
     text-decoration: none; }
   @media (min-width: 0px) and (max-width: 767px) {
     .roosC img {
@@ -59,7 +59,7 @@
     .roosC .main {
       font-size: 16px; }
     .roosC h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       line-height: .5;
       margin-bottom: 0.4em; }
     .roosC h2 {
@@ -78,11 +78,11 @@
       margin-bottom: 0.125em; } }
   @media (min-width: 992px) {
     .roosC h1 {
-      font-size: 4em;
+      font-size: 2.5em;
       line-height: .75;
       margin-bottom: 0.4em; }
     .roosC h2 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       margin-bottom: 0.4em; }
     .roosC h3 {
       font-size: 1.75em;
@@ -98,11 +98,11 @@
       margin-bottom: 0.25em; } }
   @media (min-width: 1200px) {
     .roosC h1 {
-      font-size: 4em;
+      font-size: 2.5em;
       line-height: 1;
       margin-bottom: 0.4em; }
     .roosC h2 {
-      font-size: 3em;
+      font-size: 2.4em;
       margin-bottom: 0.5em; }
     .roosC h3 {
       font-size: 2.25em;
@@ -168,8 +168,8 @@ p {
   margin: 0 0 20px; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
-  font-weight: 300; }
+  color: #707070;
+  font-weight: 400; }
 
 .text-warning {
   color: #E67E22; }
@@ -439,7 +439,7 @@ form label span {
   .owl-carousel .owl-dot span {
     background: #CCCCCC; }
   .owl-carousel .owl-dot.active span {
-    background: #084aa1; }
+    background: #4676B8; }
 
 .owl-carousel .owl-nav div {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -532,7 +532,7 @@ form label span {
 .navbar-nav > li > .dropdown-menu {
   background: #F8F8F8;
   border: 0;
-  border-bottom: 3px solid #084aa1;
+  border-bottom: 3px solid #4676B8;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -633,7 +633,7 @@ form label span {
       line-height: 1; }
 
 .search-doc-bar {
-  background: #084aa1;
+  background: #4676B8;
   margin: 15px 0;
   padding: 25px;
   color: #FFFFFF; }
@@ -838,7 +838,7 @@ body .pricing-plan.popular .pricing-plan-price {
   padding: 15px 0; }
   #services.services3 .service i {
     font-size: 40px;
-    border: 2px solid #084aa1;
+    border: 2px solid #4676B8;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -1061,47 +1061,47 @@ body #services.services3 .service:hover i {
   padding: 0px; }
 
 a {
-  color: #084aa1; }
+  color: #4676B8; }
 
 .btn-inverse:hover, .btn-inverse:focus {
-  color: #084aa1; }
+  color: #4676B8; }
 
 .nav.vertical-nav li a:hover, form label, .top-header .header-item, .dropdown-menu > li > a:hover i {
-  color: #084aa1; }
+  color: #4676B8; }
 
 footer h3 i, footer .navbar-nav > li > a:hover {
-  color: #084aa1; }
+  color: #4676B8; }
 
 #services .service:hover h3, #services.services1 .service i, #services.services3 .service i {
-  color: #084aa1; }
+  color: #4676B8; }
 
 #index-content h1, #jumbotron-slider .btn-inverse, #questionMark, .nav.vertical-nav > li > a:hover i, #jumbotron-slider #index-slide-3 .btn-inverse:hover {
-  color: #084aa1; }
+  color: #4676B8; }
 
 .btn-primary {
-  background: #084aa1; }
+  background: #4676B8; }
 
 .nav-tabs > li.active > a {
-  background: #084aa1; }
+  background: #4676B8; }
   .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    background: #084aa1; }
+    background: #4676B8; }
 
 .overlay-wrapper .overlay {
-  background: #084aa1; }
+  background: #4676B8; }
 
 .navbar-default .navbar-nav > .active > a {
-  background: #084aa1; }
+  background: #4676B8; }
   .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background: #084aa1; }
+    background: #4676B8; }
 
 .content-separator, .pricing-plan .pricing-plan-price, #services.services3 .service:hover i {
-  background: #084aa1; }
+  background: #4676B8; }
 
 #jumbotron-slider .btn-inverse:hover, #jumbotron-slider .btn-inverse:focus {
-  background: #084aa1; }
+  background: #4676B8; }
 
 .navbar-nav > li > .dropdown-menu, #services.services3 .service i, #jumbotron-slider .btn-inverse {
-  border-color: #084aa1; }
+  border-color: #4676B8; }
 
 .map-overlay {
   background: rgba(8, 74, 161, 0.8); }
@@ -1113,16 +1113,16 @@ footer h3 i, footer .navbar-nav > li > a:hover {
     border-color: #0D58A6; } }
 
 a:hover, a:focus {
-  color: #1280ed; }
+  color: #00A7FF; }
 
 .btn-primary:hover, .btn-primary:focus {
-  background: #1280ed; }
+  background: #00A7FF; }
 
 .pricing-plan h3, .pricing-plan p {
-  background: #1280ed; }
+  background: #00A7FF; }
 
 .btn-primary:hover, .btn-primary:focus {
-  border-color: #1280ed; }
+  border-color: #00A7FF; }
 
 #title {
   font-family: 'Michroma','Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Arial, Helvetica, sans-serif;
@@ -1183,7 +1183,7 @@ abbr {
     color: #0095d7;
     text-decoration: none; }
     .default a:focus, .default a:hover {
-      color: #084aa1; }
+      color: #4676B8; }
 
 blockquote:after {
   content: ""; }
@@ -1202,7 +1202,7 @@ q:before, q:after {
 
 .main {
   font-family: 'Source Sans Pro', 'HelveticaNeue-Light',arial,veranda, helvetica,'Quando','Times New Roman', Times, serif;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .navButton {
   background: transparent; }
@@ -1401,7 +1401,7 @@ hr.space {
   font-size: 30px;
   color: #FFFFFF;
   background: rgba(0, 0, 0, 0.6);
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 10px;
   padding: 10px 20px;
   width: 218px;
@@ -1459,7 +1459,7 @@ hr.space {
     color: #0095d7;
     text-decoration: none; }
   #nav-home:hover > a, #nav-mobile-support:hover > a, #nav-mobile-privacy:hover > a, #nav-mobile-myAccount:hover > a {
-    color: #1280ed; } }
+    color: #00A7FF; } }
 
 #productImg img {
   vertical-align: middle;
@@ -1720,7 +1720,7 @@ img {
       border: 0;
       -webkit-box-shadow: none;
               box-shadow: none;
-      border-bottom: 3px solid #084aa1;
+      border-bottom: 3px solid #4676B8;
       margin: 0 -15px;
       max-height: 300px;
       float: none; }
@@ -1782,9 +1782,9 @@ input.gsc-search-button-v2 {
     background: #4677B8;
     color: #FFF; }
   .navbar-default .navbar-nav > .active > a {
-    background: #084aa1; }
+    background: #4676B8; }
     .navbar-default .navbar-nav > .active > a:hover {
-      background: #084aa1; }
+      background: #4676B8; }
   #searchKits {
     margin-bottom: 15px; }
   #vShiftChevron {
@@ -1910,14 +1910,14 @@ footer .overlay-wrapper .overlay a {
 
 .link {
   background: none !important;
-  color: #084aa1;
+  color: #4676B8;
   border: none;
   padding: 0 !important;
   font: inherit;
   cursor: pointer;
   outline: none; }
   .link:hover {
-    color: #1280ed; }
+    color: #00A7FF; }
 
 .list-group-item {
   border: none;
@@ -1927,7 +1927,7 @@ footer .overlay-wrapper .overlay a {
   margin-bottom: 0; }
 
 #section-blog-posts {
-  background: #084aa1;
+  background: #4676B8;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1991,7 +1991,7 @@ footer .overlay-wrapper .overlay a {
 .dark-theme footer .navbar-nav > li > a {
   color: #aaa; }
   .dark-theme footer .navbar-nav > li > a:hover {
-    color: #084aa1; }
+    color: #4676B8; }
 
 .dark-theme .navbar-nav > li > .dropdown-menu {
   background: #070707;
@@ -2016,7 +2016,7 @@ footer .overlay-wrapper .overlay a {
 .dark-theme .contactLinks {
   color: #aaa; }
   .dark-theme .contactLinks:hover {
-    color: #084aa1; }
+    color: #4676B8; }
 
 .automotiveNums {
   width: 50px !important; }
