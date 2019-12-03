@@ -1,3 +1,3 @@
-$(document).ready(function(){
-  $('.top').load("top.html");
+$(document).ready(function () {
+  $('.top').load("_top.html");
 });
