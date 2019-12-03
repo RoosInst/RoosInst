@@ -189,9 +189,9 @@
 
     return gulp.src(cssConfig.src)
       .pipe(size({ showFiles: true }))
-      .pipe(cleanCSS())
       //.pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
+      .pipe(cleanCSS())
       //.pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
       .pipe(postcss(cssConfig.postCSS))
