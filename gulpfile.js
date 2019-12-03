@@ -85,8 +85,8 @@
    *  everything is concatenated to roos-min.css */
   const cssConfig = {
     scssSrc: dir.src + '/css/**/*.scss',
-    printSrc: dir.src + '/css/roos-print.css',
-    src: dir.src + '/css/**/*!(root-print).css',
+    altSrc: dir.src + '/css/roos-*.css',
+    src: dir.src + '/css/**/!(roos-)*.css',
     watch: dir.src + '/css/**/*',
     build: dir.build + '/css/',
     sassOpts: {
@@ -178,25 +178,27 @@
 
   function cssPrint() {
 
-    return gulp.src(cssConfig.printSrc)//roos-print.css is separate
+    return gulp.src(cssConfig.altSrc)//roos-print.css is separate
       .pipe(cleanCSS())
       .pipe(gulp.dest(cssConfig.build))
+      .pipe(size({ showFiles: true }))
       .pipe(postcss(cssConfig.postCSS));
   }
 
   function css() {
 
     return gulp.src(cssConfig.src)
+      .pipe(size({ showFiles: true }))
       .pipe(cleanCSS())
       //.pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
       //.pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
-      .pipe(gulp.dest(cssConfig.build))
       .pipe(postcss(cssConfig.postCSS))
+      .pipe(gulp.dest(cssConfig.build))
       .pipe(browsersync ? browsersync.reload({ stream: true }) : noop());
   }
-  exports.css = gulp.series(images, scss, cssPrint, css);
+  exports.css = gulp.series(images, scss, css, cssPrint);
 
 
   /**************** server task (now private) ****************/
