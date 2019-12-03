@@ -94,15 +94,15 @@
 
     <style>
       .spec-line-1 {
-        width: 173 px;
-        border: 1.5px solid #0849A1;
+        border: 1px solid #0849A1;
         opacity: 1;
+        margin-bottom: 5px;
       }
 
       .spec-line-2 {
-        width: 470 px;
-        border: 1.5px solid #0849A1;
+        border: 1px solid #0849A1;
         opacity: 1;
+        margin-bottom: 5px;
       }
     </style>
 
@@ -127,7 +127,7 @@
           <script>
             $(document).ready(function () {
               $('#SoftwareArchitectureImg').ImageMapResize({
-                origImageWidth: "1920"
+                origImageWidth: "1200"
               });
             });
           </script>
@@ -135,8 +135,8 @@
         <div class="container">
           <p class="main">
             Quite simply, our test platforms offer the industry’s broadest frequency and application range on the
-            market.
-            As the technology pushes for higher performance and wider frequency capabilities, be ready with Cassini.
+            market. As the technology pushes for higher performance and wider frequency capabilities, be ready with
+            Cassini.
           </p>
         </div>
 
@@ -148,14 +148,14 @@
           </div>
           <div style="position: relative; z-index: 1;" class="col-xs-12 col-sm-6">
             <hr class="space">
-            <div class="row row-no-padding">
+            <div class="row">
               <div class="col-sm-3">
                 <div class="spec-line-1"></div>
                 specifications
               </div>
               <div class="col-sm-9">
                 <div class="spec-line-2"></div>
-                <div class="col-sm-3">
+                <div style="padding:0" class="col-sm-3">
                   <p>height</p>
                   <p>footprint</p>
                   <p>weight</p>
@@ -211,7 +211,7 @@
             </div>
             <div class="col-sm-9">
               <div class="spec-line-2"></div>
-              <div class="col-sm-3">
+              <div style="padding:0" class="col-sm-3">
                 <p>height</p>
                 <p>footprint</p>
                 <p>weight</p>
@@ -250,154 +250,145 @@
           size.
         </p>
       </div> <!-- #SPYDER -->
+      <style>
+        #MSC-dots-1 {
+          position: relative;
+          width: 750px;
+          height: 330px;
+          border-top: 2px dashed #4676B8;
+          border-right: 2px dashed #4676B8;
+          border-left: 0;
+          border-bottom: 0;
+          margin-left: 15px;
+          opacity: 1;
+          z-index: 1;
+        }
+
+        #MSC-dots-2 {
+          position: relative;
+          top: 566px;
+          left: 243px;
+          width: 350px;
+          height: 260px;
+          border-top: 2px dashed #4676B8;
+          border-left: 2px dashed #4676B8;
+          border-right: 0;
+          border-bottom: 0;
+          opacity: 1;
+          z-index: 1;
+        }
+
+        .msc-spec {
+          display: inline-grid;
+          width: 110px;
+          height: 110px;
+          border: 2px solid #c0c0c0;
+          z-index: 2;
+          margin: 3px;
+          vertical-align: middle;
+        }
+
+        .msc-spec p {
+          margin: 0 auto;
+        }
+
+        .msc-spec span {
+          font: Bold 1.5em Source Sans Pro;
+          letter-spacing: 0;
+          color: #00A7FF;
+          text-align: center;
+          margin: 0 auto;
+          display: table-cell;
+        }
+      </style>
 
       <div id="Testhead" class="row">
-        <h2 style="position: relative; z-index: 1;">Modular, Configurable, Scalable</h2>
-        <style>
-          #MSC-dots-1 {
-            position: absolute;
-            top: 150px;
-            left: 160px;
-            width: 650px;
-            height: 411px;
-            border-top: 3px dashed #4676B8;
-            border-right: 3px dashed #4676B8;
-            border-left: 0;
-            border-bottom: 0;
-            opacity: 1;
-            z-index: -2;
-          }
-
-          ;
-
-          #MSC-dots-2 {
-            position: absolute;
-            top: 150px;
-            left: 350px;
-            width: 250px;
-            height: 511px;
-            border-top: 3px dashed #4676B8;
-            border-left: 3px dashed #4676B8;
-            border-right: 0;
-            border-bottom: 0;
-            opacity: 1;
-            z-index: -2;
-          }
-
-          ;
-
-          .msc-spec {
-            border-color: grey;
-            border-width: 1px;
-            width: 200px;
-            height: 200px;
-          }
-
-          .msc-spec span {
-            text-align: center;
-            font: Bold 36px/45px Source Sans Pro;
-            letter-spacing: 0;
-            color: #00A7FF;
-          }
-        </style>
-        <div id="MSC-dots-1"></div>
-        <div class="col-sm-5 col-sm-offset-1 col-sm-push-6">
-          <img style="max-width: 356px;" alt="Modular Testhead" src="/images/Cassini16_testheadview.png">
+        <div class="col-sm-6 col-sm-push-6">
+          <img alt="Modular Testhead" src="/images/Cassini16_testheadview.png">
         </div>
         <div class="col-sm-6 col-sm-pull-6">
-          <p>Cassini’s backplane-less design allows for any instrument in any slot to optimize the test head for
-            multisite, mixed signal topology, and feature expansion with up to:</p>
-          <div class="row row-no-padding">
-            <div class="col-sm-3 msc-spec">
-              <div class="msc-spec"><span>1200</span>
-                <p>Digital Pins</p>
-              </div>
-              <div class="msc-spec"><span>36</span>
-                <p>Vector RF Ports</p>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="msc-spec"><span>224</span>
-                <p>DC Pins</p>
-              </div>
-            </div>
+          <h4 style="position: relative; z-index: 1; margin-bottom: 1px;">Modular, Configurable,
+            Scalable</h4>
+          <div id="MSC-dots-1" class="hidden-md"></div>
+          <div style="position: relative; z-index: 1;top: -295px; margin-left: 15px; width: 80%;">
+            <p>Cassini’s backplane-less design allows for any instrument in any slot to optimize the test head for
+              multisite, mixed signal topology, and feature expansion with up to:</p>
+            <img style="max-width: 260px" alt="Max Pins/Ports" src="images/system_MaxPinsPorts.png">
+
           </div>
         </div> <!-- #Testhead -->
-        <div id="MSC-dots-2"></div>
+        <div id="MSC-dots-2" class="hidden-md"></div>
       </div> <!-- End #Testhead-->
 
       <style>
         #UltimateTesthead {
-          position: absolute;
+          position: relative;
           top: 2501px;
           left: -815.5px;
           width: 1306px;
           height: 1801px;
           transform: matrix(0, -1, 1, 0, 0, 0);
-          background: transparent url('img/UltimateTestheadConfig2.png') 0% 0% no-repeat padding-box;
+          background: transparent url('images/UltimateTestheadConfig2.png') 0% 0% no-repeat padding-box;
           opacity: 1;
         }
-
-        ;
       </style>
       <div id="MSA" class="row">
-        <div id="UltimateTesthead"></div>
-        <div class="row">
-          <div class="col-sm-7 col-sm-push-4">
-            <div class="row">
-              <h3 style="position: relative; z-index: 1;">Modular System Architecture</h3>
+        <div class="col-sm-4">
+          <img style="margin-left: -30px; max-height: 1100px;" src="images/UltimateTestheadConfig2-Cropped.png">
+        </div>
+        <div class="col-sm-7 col-sm-push-1">
+          <div class="row">
+            <h3 style="position: relative; z-index: 1;">Modular System Architecture</h5>
               <p class="main">
                 By fusing 30 years of test system integration with a configurable instrument architecture, Cassini
                 delivers a test solution that scales vertically to meet capacity needs while maintaining a cost
                 effective approach to capture emerging markets and disruptive technology.
               </p>
               <a href="products.html" title="Products">Learn More</a>
+          </div>
+          <hr class="space">
+          <hr class="space">
+          <div class="row">
+            <div class="col-sm-3">
+              <h5 style="text-align: center;">DC</h5>
+              <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_DCtim 2.png">
             </div>
-            <hr class="space">
-            <hr class="space">
-            <div class="row">
-              <div class="col-sm-3">
-                <h4 style="text-align: center;">DC</h4>
-                <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_DCtim 2.png">
-              </div>
-              <div class="col-sm-3">
-                <h4 style="text-align: center;">Digital</h4>
-                <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface"
-                  src="/images/blindmate_Digitaltim 2.png">
-              </div>
-              <div class="col-sm-3">
-                <h4 style="text-align: center;">RF</h4>
-                <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_rfTIM 2.png">
-              </div>
-              <div class="col-sm-3">
-                <h4 style="text-align: center;">mmWave</h4>
-                <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_mmWave6.png">
-              </div>
+            <div class="col-sm-3">
+              <h5 style="text-align: center;">Digital</h5>
+              <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface"
+                src="/images/blindmate_Digitaltim 2.png">
             </div>
-            <hr class="space">
-            <hr class="space">
-            <div class="row">
-              <h2>Blind Mate Interface</h2>
-              <p class="main">It’s the missing piece that transforms a set of modular instruments into a modular test
-                system. The blind-mate interface creates a unified testhead from DC to millimeter wave without requiring
-                specialized tooling or training. The setup provides a precise and consistent test interface while
-                enabling better access to resources during development, quicker instrument servicing and calibration,
-                and fast changeout in production.</p>
+            <div class="col-sm-3">
+              <h5 style="text-align: center;">RF</h5>
+              <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_rfTIM 2.png">
             </div>
-            <hr class="space">
-            <hr class="space">
-            <div class="row">
-              <div class="col-sm-6">
-                <img style="z-index: -1; max-width: 333px;" alt="RIFL Communication Bus" src="/images/RIFLpath_Web.jpg">
-              </div>
-              <div class="col-sm-6">
-                <h3>A Smarter Data Bus</h3>
-                <p class="main">Roos Instruments Fast Link(RIFL) is the first open-standard data bus designed
-                  specifically for production test. Unwilling to compromise performance or functionality, we designed
-                  RIFL as a high-speed data bus and precision instrument power. It supports distributed compute packets
-                  across Cassini’s instruments to reduce data payloads and boosting system performance with real-time
-                  FPGA processing.</p>
-              </div>
+            <div class="col-sm-3">
+              <h5 style="text-align: center;">mmWave</h5>
+              <img style="z-index: -1; max-width: 162px;" alt="DC TIM Interface" src="/images/blindmate_mmWave6.png">
+            </div>
+          </div>
+          <div class="row">
+            <h5>Blind Mate Interface</h5>
+            <p class="main">It’s the missing piece that transforms a set of modular instruments into a modular test
+              system. The blind-mate interface creates a unified testhead from DC to millimeter wave without requiring
+              specialized tooling or training. The setup provides a precise and consistent test interface while
+              enabling better access to resources during development, quicker instrument servicing and calibration,
+              and fast changeout in production.</p>
+          </div>
+          <hr class="space">
+          <hr class="space">
+          <div class="row">
+            <div class="col-sm-6">
+              <img style="z-index: -1; max-width: 350px; margin: 15px auto; padding:0;" alt="RIFL Communication Bus"
+                src="/images/RIFLpath_Web.jpg">
+            </div>
+            <div class="col-sm-6">
+              <h5>A Smarter Data Bus</h5>
+              <p class="main">Roos Instruments Fast Link(RIFL) is the first open-standard data bus designed
+                specifically for production test. Unwilling to compromise performance or functionality, we designed
+                RIFL as a high-speed data bus and precision instrument power. It supports distributed compute packets
+                across Cassini’s instruments to reduce data payloads and boosting system performance with real-time
+                FPGA processing.</p>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-$roosBlue: #084aa1;
-$linkHoverColor: #1280ed;
+$roosBlue: #4676B8;
+$linkHoverColor: #00A7FF;
 
 .roosC blockquote, q {
   quotes: "" "";
@@ -64,7 +64,7 @@ $linkHoverColor: #1280ed;
   }
   a {
     font-weight: 400;
-    color: rgb(0, 149, 215);
+    color: $linkHoverColor;
     text-decoration: none;
   }
 
@@ -87,7 +87,7 @@ $linkHoverColor: #1280ed;
       font-size: 16px;
     }
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       line-height: .5;
       margin-bottom: 0.4em;
     }
@@ -112,12 +112,12 @@ $linkHoverColor: #1280ed;
   }
   @media (min-width: 992px) {
     h1 {
-      font-size: 4em;
+      font-size: 2.5em;
       line-height: .75;
       margin-bottom: 0.4em;
     }
     h2 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       margin-bottom: 0.4em;
     }
     h3 {
@@ -138,12 +138,12 @@ $linkHoverColor: #1280ed;
   }
   @media (min-width: 1200px) {
     h1 {
-      font-size: 4em;
+      font-size: 2.5em;
       line-height: 1;
       margin-bottom: 0.4em;
     }
     h2 {
-      font-size: 3em;
+      font-size: 2.4em;
       margin-bottom: 0.5em;
     }
     h3 {
