@@ -96,8 +96,8 @@
     <section id="content" class="container roosC">
       <div class="row">
         <h2>Unlimited Test Capability</h2>
-        <img class="full-page" src="images/Image 3.png" alt="Unlimited Test Capability - Spectrum of Applications"
-          usemap="#image-map" style="top: -30px;">
+        <img id="UnlimitedTest" class="full-page" src="images/Image 3.png"
+          alt="Unlimited Test Capability - Spectrum of Applications" usemap="#image-map" style="top: -30px;">
         <map name="image-map">
           <area target="" alt="4G/LTE Communications" title="4G/LTE Communications"
             href="https://roos.com/parts/4G-CASSINI" coords="2,4,440,355" shape="rect">
@@ -112,7 +112,7 @@
         </map>
         <script>
           $(document).ready(function () {
-            $('#SoftwareArchitectureImg').ImageMapResize({
+            $('#UnlimitedTest').ImageMapResize({
               origImageWidth: "1200"
             });
           });
@@ -127,7 +127,8 @@
             </p>
           </div>
         </div>
-
+        <hr class="space">
+        <hr class="space">
         <div id="Cassini16" class="row">
           <div class="col-sm-6">
             <h2>CASSINI 16</h2>
@@ -161,7 +162,8 @@
             <div class="row">
               <div class="col-sm-3">
                 <div class="spec-line-1"></div>
-                specifications
+                <span class="hidden-md hidden-sm">specifications</span>
+                <span class="hidden-lg hidden-xs">specs</span>
               </div>
               <div class="col-sm-9">
                 <div class="spec-line-2"></div>
@@ -228,7 +230,8 @@
           <div class="row">
             <div class="col-sm-3">
               <div class="spec-line-1"></div>
-              specifications
+              <span class="hidden-md hidden-sm">specifications</span>
+              <span class="hidden-lg hidden-xs">specs</span>
             </div>
             <div class="col-sm-9">
               <div class="spec-line-2"></div>
@@ -281,34 +284,9 @@
           </p>
         </div>
       </div> <!-- #SPYDER -->
+      <hr class="space">
+
       <style>
-        #MSC-dots-1 {
-          margin-left: 15px;
-          position: relative;
-          width: 735px;
-          height: 330px;
-          border-top: 2px dashed #4676B8;
-          border-right: 2px dashed #4676B8;
-          border-left: 0;
-          border-bottom: 0;
-          opacity: 1;
-          z-index: 1;
-        }
-
-        #MSC-dots-2 {
-          position: relative;
-          top: 566px;
-          left: 243px;
-          width: 350px;
-          height: 260px;
-          border-top: 2px dashed #4676B8;
-          border-left: 2px dashed #4676B8;
-          border-right: 0;
-          border-bottom: 0;
-          opacity: 1;
-          z-index: 1;
-        }
-
         .msc-spec {
           display: inline-grid;
           width: 110px;
@@ -331,31 +309,216 @@
           margin: 0 auto;
           display: table-cell;
         }
+
+        @media (min-width: 0px) and (max-width: 767px) {
+          #Testhead {
+            height: inherit;
+          }
+
+          #MSC-c1 {
+            height: 380px;
+          }
+
+          #MSC-dots-1 {
+            margin-left: 15px;
+            position: relative;
+            width: 767px;
+            height: 200px;
+            border-top: 2px dashed #4676B8;
+            border-right: 2px dashed #4676B8;
+            border-left: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          #MSC-p1 {
+            position: relative;
+            z-index: 1;
+            top: -198px;
+            margin-left: 15px;
+            width: 80%;
+          }
+
+          #MSC-p1 img {
+            max-width: 200px;
+          }
+
+        }
+
+        @media (min-width: 768px) {
+          #Testhead {
+            height: inherit;
+          }
+
+          #MSC-c1 {
+            height: 520px;
+          }
+
+          #MSC-dots-1 {
+            margin-left: 15px;
+            position: relative;
+            width: 455px;
+            height: 200px;
+            border-top: 2px dashed #4676B8;
+            border-right: 2px dashed #4676B8;
+            border-left: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          #MSC-p1 {
+            position: relative;
+            z-index: 1;
+            top: -198px;
+            margin-left: 15px;
+            width: 80%;
+          }
+
+          #MSC-p1 img {
+            max-width: 200px;
+          }
+
+          #MSC-dots-2 {
+            position: relative;
+            top: -262px;
+            left: 159px;
+            width: 230px;
+            height: 168px;
+            border-top: 2px dashed #4676B8;
+            border-left: 2px dashed #4676B8;
+            border-right: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+        }
+
+        @media (min-width: 992px) {
+          #Testhead {
+            height: inherti;
+          }
+
+          #MSC-dots-1 {
+            margin-left: 15px;
+            position: relative;
+            width: 590px;
+            height: 270px;
+            border-top: 2px dashed #4676B8;
+            border-right: 2px dashed #4676B8;
+            border-left: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          #MSC-p1 {
+            position: relative;
+            z-index: 1;
+            top: -278px;
+            margin-left: 15px;
+            width: 80%;
+          }
+
+          #MSC-p1 img {
+            max-width: 240px;
+          }
+
+          #MSC-dots-2 {
+            position: relative;
+            top: -246px;
+            left: 210px;
+            width: 297px;
+            height: 202px;
+            border-top: 2px dashed #4676B8;
+            border-left: 2px dashed #4676B8;
+            border-right: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          #Testhead {
+            height: inherit;
+          }
+
+          #MSC-dots-1 {
+            margin: 0 0 0 15px;
+            position: relative;
+            width: 735px;
+            height: 330px;
+            border-top: 2px dashed #4676B8;
+            border-right: 2px dashed #4676B8;
+            border-left: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          #MSC-p1 {
+            position: relative;
+            z-index: 1;
+            top: -295px;
+            margin-left: 15px;
+            width: 80%;
+          }
+
+          #MSC-p1 img {
+            max-width: 260px;
+          }
+
+          #MSC-dots-2 {
+            margin: 0;
+            position: relative;
+            top: -193px;
+            left: 247px;
+            width: 350px;
+            height: 260px;
+            border-top: 2px dashed #4676B8;
+            border-left: 2px dashed #4676B8;
+            border-right: 0;
+            border-bottom: 0;
+            opacity: 1;
+            z-index: 1;
+          }
+
+          .xl-no-left {
+            margin-left: -30px;
+          }
+        }
+
+        #Testhead h4 {
+          position: relative;
+          z-index: 1;
+          margin-bottom: 1px;
+          margin-left: 15px
+        }
       </style>
 
       <div id="Testhead" class="row">
         <div class="col-sm-6 col-sm-push-6">
           <img alt="Modular Testhead" src="/images/Cassini16_testheadview.png">
         </div>
-        <div class="col-sm-6 col-sm-pull-6">
-          <h4 style="position: relative; z-index: 1; margin-bottom: 1px; margin-left:15px">Modular, Configurable,
-            Scalable</h4>
-          <div id="MSC-dots-1" class="hidden-md"></div>
-          <div style="position: relative; z-index: 1;top: -295px; margin-left: 15px; width: 80%;">
+        <div id="MSC-c1" class="col-sm-6 col-sm-pull-6">
+          <h4>Modular, Configurable, Scalable</h4>
+          <hr id="MSC-dots-1">
+          <div id="MSC-p1">
             <p>Cassini’s backplane-less design allows for any instrument in any slot to optimize the test head for
               multisite, mixed signal topology, and feature expansion with up to:</p>
-            <img style="max-width: 260px" alt="Max Pins/Ports" src="images/system_MaxPinsPorts.png">
-
+            <img alt="Max Pins/Ports" src="images/system_MaxPinsPorts.png">
           </div>
-        </div> <!-- #Testhead -->
-        <div id="MSC-dots-2" class="hidden-md"></div>
+          <hr id="MSC-dots-2">
+        </div>
       </div> <!-- End #Testhead-->
 
-      <div id="MSA" style="margin-left: -30px;" class="row">
+      <div id="MSA" class="row xl-no-left">
         <div class="col-sm-4 hidden-xs">
           <img src="images/UltimateTestheadConfig2-Cropped.png">
         </div>
-        <div style="margin-left: -30px;" class="col-sm-7 col-sm-push-1">
+        <div style="" class="col-sm-7 col-sm-push-1 xl-no-left">
           <div class="row">
             <div class="col">
               <h3>Modular System Architecture</h5>
@@ -400,11 +563,11 @@
           <hr class="space">
           <hr class="space">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <img style="z-index: -1; max-width: 350px; margin: 15px auto; padding:0;" alt="RIFL Communication Bus"
                 src="/images/RIFLpath_Web.jpg">
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <h5>A Smarter Data Bus</h5>
               <p class="main">Roos Instruments Fast Link(RIFL) is the first open-standard data bus designed
                 specifically for production test. Unwilling to compromise performance or functionality, we designed
