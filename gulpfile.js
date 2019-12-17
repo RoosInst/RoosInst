@@ -123,15 +123,17 @@
     build: dir.build + '/js/'
   }
 
-  /**************** Include "Templating" ******/
-  gulp.task('fileinclude', function () {
+  /**************** Include Templating w/ @file ***/
+  function fileInclude() {
+
     gulp.src(htmlConfig.src)
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
       }))
       .pipe(gulp.dest(htmlConfig.build));
-  });
+  }
+  exports.fileInclude = gulp.series(fileinclude, html)
 
   // HTML processing
   function html() {
@@ -142,7 +144,7 @@
       .pipe(devBuild ? noop() : htmlclean())
       .pipe(gulp.dest(out));
   }
-  exports.html = gulp.series(images, fileinclude, html);
+  exports.html = gulp.parallel(images, html);
 
   // JavaScript processing
   function js() {
@@ -195,10 +197,10 @@
 
     return gulp.src(cssConfig.src)
       .pipe(size({ showFiles: true }))
-      .pipe(sourcemaps ? sourcemaps.init() : noop())
+      // .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
       .pipe(cleanCSS())
-      .pipe(sourcemaps ? sourcemaps.write() : noop())
+      //  .pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
       .pipe(postcss(cssConfig.postCSS))
       .pipe(gulp.dest(cssConfig.build))

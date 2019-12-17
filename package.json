@@ -12,7 +12,9 @@
     "default": "gulp taskWrapper",
     "html": "gulp taskWrapper",
     "js": "gulp taskWrapper",
-    "build": "gulp taskWrapper"
+    "build": "gulp taskWrapper",
+    "fileinclude": "gulp taskWrapper",
+    "minify-css": "gulp taskWrapper"
   },
   "repository": {
     "type": "git",
