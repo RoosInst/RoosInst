@@ -5,16 +5,16 @@
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp default",
-    "clean": "gulp taskWrapper",
-    "wipe": "gulp taskWrapper",
-    "images": "gulp taskWrapper",
-    "css": "gulp taskWrapper",
-    "default": "gulp taskWrapper",
-    "html": "gulp taskWrapper",
-    "js": "gulp taskWrapper",
-    "build": "gulp taskWrapper",
-    "fileinclude": "gulp taskWrapper",
-    "minify-css": "gulp taskWrapper"
+    "clean": "gulp clean",
+    "wipe": "gulp wipe",
+    "images": "gulp images",
+    "css": "gulp css",
+    "default": "gulp default",
+    "html": "gulp html",
+    "js": "gulp js",
+    "build": "gulp build",
+    "fileinclude": "gulp fileinclude",
+    "minify-css": "gulp minify-css"
   },
   "repository": {
     "type": "git",

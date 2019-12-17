@@ -39,9 +39,10 @@
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
     fileinclude = require('gulp-file-include'),
+    //sync = require('gulp-npm-script-sync'),
     //sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
-    browsersync = devBuild ? require('browser-sync').create() : null,
-    sync = require('gulp-npm-script-sync');
+    browsersync = devBuild ? require('browser-sync').create() : null;
+
 
 
   console.log('Gulp', devBuild ? 'development' : 'production', 'build');
@@ -190,7 +191,7 @@
   gulp.task('minify-css', () => {
     return gulp.src(CssConfig.src)
       .pipe(cleanCSS())
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest(CssCon.dest));
   });
 
   function css() {
@@ -247,7 +248,7 @@
 
   }
 
-  /**************** sync NPM scripts task ****************/
+  /**************** sync NPM scripts task **************
 
   function syncNPMScript(done) {
 
@@ -257,12 +258,14 @@
     done();
 
   }
+  ***/
 
   // run all tasks
   exports.build = gulp.parallel(exports.html, exports.css, exports.js);
 
   /**************** default task ****************/
 
-  exports.default = gulp.series(exports.css, watch, server, syncNPMScript);
+  exports.default = gulp.series(exports.css, watch, server)
+  // ,syncNPMScript);
 
 })();
