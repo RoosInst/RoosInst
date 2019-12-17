@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Products Overview | Roos Instruments</title>
+    <title>System RF Core | Roos Instruments</title>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("nav-products").classList.add("active");
@@ -85,7 +85,7 @@
     =========================== -->
         <section class="breadcrumb-wrapper">
             <div class="container">
-                <h2>System Core</h2>
+                <h2>System RF Core</h2>
                 <ol class="breadcrumb">
                     <li><a href="/index.html">Home</a></li>
                     <li class="">Products</li>
@@ -96,10 +96,29 @@
         <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
+        <style>
+            @media (min-width: 768px) {
+                #core1 {
+                    margin: 0px -30px;
+                    width: 100%;
+                    align-content: left;
+                    align-self: auto;
+                }
+            }
 
+            @media (min-width: 0px) and (max-width: 767px) {
+                #core1 {
+                    margin: 0px;
+                    width: 100%;
+                    align-content: center;
+                    align-self: auto;
+                }
+            }
+        </style>
         <section id="content" class="roosC container">
-            <img style="margin:0px -30px; width: 100%; align-content: left; align-self: auto;" title="Modular Microwave"
-                alt="Modular Microwave" src="images/core1.png">
+            <div class="row no-pad">
+                <img id="core1" title="System RF Core" alt="System RF Core" src="images/core1.png">
+            </div>
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <h3>System RF Core</h3>
@@ -112,7 +131,7 @@
                         technology. </p>
                 </div>
             </div>
-            <hr class="blue-horiz-rule">
+            <hr class="blue-hr">
             <img title="Sources for Modular Microwave" alt="Sources for Modular Microwave" src="images/core2.png">
             <div id="Sourcing" class="row">
                 <div class="col-sm-10 col-sm-offset-1">
@@ -124,7 +143,6 @@
                         device under test. Using the internal relays, both sources can be combined to provide two-tone
                         capability for intermodulation test setups.
                     </p>
-
                 </div>
             </div>
             <div class="row">
@@ -171,8 +189,9 @@
                     </p>
                 </div>
             </div>
-            <hr class="blue-horiz-rule">
-            <img title="REceiver for Modular Microwave" alt="Receiver for Modular Microwave" src="images/core3.png">
+            <hr class="blue-hr">
+
+            <img title="Receiver for Modular Microwave" alt="Receiver for Modular Microwave" src="images/core3.png">
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <h3>Synchrodyne Vector Receiver</h3>
@@ -187,7 +206,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-2">
+                <div class="col-sm-10 col-sm-offset-1">
                     <h5>Innovative</h5>
                     <img style="width: 100%" title="Modular Microwave" alt="Modular Microwave"
                         src="images/Image 16.png">
@@ -220,9 +239,8 @@
                     </div>
                 </div>
             </div>
-
-
-
+            <hr class="space">
+            <hr class="space">
         </section> <!-- End of #content section-->
         <div class="bottom"></div>
         <script src="js/loadbottom.js"></script>

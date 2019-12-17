@@ -185,14 +185,20 @@
       .pipe(postcss(cssConfig.postCSS));
   }
 
+  gulp.task('minify-css', () => {
+    return gulp.src(CssConfig.src)
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('dist'));
+  });
+
   function css() {
 
     return gulp.src(cssConfig.src)
       .pipe(size({ showFiles: true }))
-      //.pipe(sourcemaps ? sourcemaps.init() : noop())
+      .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
       .pipe(cleanCSS())
-      //.pipe(sourcemaps ? sourcemaps.write() : noop())
+      .pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
       .pipe(postcss(cssConfig.postCSS))
       .pipe(gulp.dest(cssConfig.build))

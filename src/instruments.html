@@ -91,13 +91,66 @@
     <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
+    <style>
+      #core img {
+        margin: 122px auto;
+      }
+
+      @media (min-width: 0px) and (max-width: 767px) {
+        #blueprint img {
+          max-width: auto;
+          width: auto
+        }
+
+        #blueprint h3,
+        #MeasDiff h3 {
+          text-align: center;
+        }
+
+        #core img {
+          margin: auto;
+        }
+      }
+
+      @media (min-width: 768px) {
+        #blueprint img {
+          margin-left: -15px;
+          max-width: 1200px;
+          width: auto;
+        }
+
+        #blueprint h3 {
+          text-align: right;
+        }
+
+        #blindmate {
+          margin-left: 50px;
+        }
+
+        #core img {
+          margin: 181px auto;
+        }
+
+      }
+
+      @media (min-width: 992px) {
+        #core img {
+          margin: 142px auto;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        #core img {
+          margin: 106px auto;
+        }
+      }
+    </style>
 
     <div id="content" class="roosC container">
-      <div class="row">
-        <h2>Measure the Difference</h2>
+      <div id="MeasDiff" class="row">
+        <h3>Measure the Difference</h3>
         <a href="/tims.html" title="Test Instrument Modules (TIMs)"><img class="centerImg" alt="Instruments"
             src="images/TIM_fan_crop_shopped3.png"></a>
-
         <p class="col-sm-10 col-sm-offset-1 main">
           At the heart of Cassini’s configurable architecture are Test Instrument Modules (TIMs). These air-cooled,
           shielded instruments provide all of the source, receive, measure, and signal processing capability for a broad
@@ -107,11 +160,12 @@
         </p>
       </div>
       <hr class="space">
-      <div class="row">
-        <img class="centerImg" alt="TIMblueprint" src="images/TIM_blueprint.002.png"
-          style="margin-left: -15px; max-width: 1200px; width:auto">
+
+      </style>
+      <div id="blueprint" class="row">
+        <img class="centerImg" alt="TIM Blueprint" src="images/TIM_blueprint.002.png">
         <div class="col-sm-8 col-sm-offset-3">
-          <h3 style="text-align:right">Form that Follows Function</h3>
+          <h3>Form that Follows Function</h3>
           <p class="main">
             With Test Instrument Modules, we created an instrument design that marries modular test capability with
             robust production interfaces and interconnect. The light and portable form factor makes for easy swapping
@@ -122,28 +176,28 @@
 
       <hr class="space">
 
-      <div class="row">
-        <div class="col-sm-11" style="margin-left: 50px;">
+      <div id="blindmate" class="row">
+        <div class="col-sm-11">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-xs-3">
               <h5 style="text-align: center;">DC</h5>
               <img alt="DC TIM Interface" src="/images/blindmate_DCtim 2.png">
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-3">
               <h5 style="text-align: center;">Digital</h5>
               <img alt="DC TIM Interface" src="/images/blindmate_Digitaltim 2.png">
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-3">
               <h5 style="text-align: center;">RF</h5>
               <img alt="DC TIM Interface" src="/images/blindmate_rfTIM 2.png">
             </div>
-            <div class="col-sm-3">
+            <div class="col-xs-3">
               <h5 style="text-align: center;">mmWave</h5>
               <img alt="DC TIM Interface" src="/images/blindmate_mmWave6.png">
             </div>
           </div>
         </div>
-        <div class="col-sm-8" style="margin-left: 50px;">
+        <div class="col-sm-8">
           <h3>Blind-Mate Interfaces</h3>
           <p class="main">
             It's the missing piece that transforms a set of modular instruments into a modular test system. The
@@ -158,10 +212,10 @@
       <hr class="space">
 
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-6">
           <img alt="configure_cassini" src="images/TimInsert2crop.png">
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-6">
           <img alt="configure_cassini" src="images/TimInsert1crop.png">
         </div>
 
@@ -181,7 +235,6 @@
       <hr class="space">
 
       <div class="row">
-
         <div class="col-sm-6">
           <img alt="TIM Efficiency" style="height: 590px;" src="images/TIMefficiency.001.png">
           <p class="main">
@@ -195,9 +248,9 @@
           <a href="infrastructure.html#Cassini16">Learn More</a>
         </div>
 
-        <div class="col-sm-6">
-          <img alt="SyRFcore" src="images/Screen Shot 2019-10-08 at 3.05.12 PM.png"><br>
-          <h3 style="text-align: left;">Accelerate RF Measurements</h3>
+        <div id="core" class="col-sm-6">
+          <img alt="SyRF Core" src="images/Screen Shot 2019-10-08 at 3.05.12 PM.png">
+          <h3>Accelerate RF Measurements</h3>
           <p class="main">
             Test set and receiver instruments incorporate our proprietary universal-channel, vector RF architecture
             called
@@ -210,7 +263,6 @@
             <li>Distortion Measurements</li>
             <li>Modulation/Demodulation Test</li>
           </ul>
-          <hr class="space">
           <a href="/core.html" title="SyRF Core" class="link">Learn More</a>
         </div>
         <div class="col-sm-6">
