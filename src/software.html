@@ -108,423 +108,444 @@
             sophisticated microwave measurements accurately and reliably every time.
           </p>
         </div>
-        <ul style="padding-right: 20px;">
-          <li>Simple Graphical Programming Environment</li>
-          <li>User Access Permissions Provides Control</li>
-          <li>Bench-like Instrument Control During Development & Debugging</li>
-          <li>Advanced Datalog and Graphing Tools</li>
-          <li>
-            Offline test development through Virtualization
-          </li>
-          <li class="hidden-xs" style="margin-left: 55%;">
-            <a title="Learn about Roos Cassini ATE (brochure)" href="/parts/CASSINI/$file/CASSINI.pdf">
-              Learn More &raquo;
-            </a>
-          </li>
-          <li style="margin-left: 100px;" class="visible-xs">
-            <a title="Learn about Roos Cassini ATE (brochure)" href="/parts/CASSINI/$file/CASSINI.pdf">
-              Learn More &raquo;
-            </a>
-          </li>
-        </ul>
+        <div class="col-sm-10 col-sm-offset-1">
+          <ul style="padding-right: 20px;">
+            <li>Simple Graphical Programming Environment</li>
+            <li>User Access Permissions Provides Control</li>
+            <li>Bench-like Instrument Control During Development & Debugging</li>
+            <li>Advanced Datalog and Graphing Tools</li>
+            <li>
+              Offline test development through Virtualization
+            </li>
+            <li class="hidden-xs" style="margin-left: 55%;">
+              <a title="Learn about Roos Cassini ATE (brochure)" href="/parts/CASSINI/$file/CASSINI.pdf">
+                Learn More &raquo;
+              </a>
+            </li>
+            <li style="margin-left: 100px;" class="visible-xs">
+              <a title="Learn about Roos Cassini ATE (brochure)" href="/parts/CASSINI/$file/CASSINI.pdf">
+                Learn More &raquo;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .row -->
+
+      <hr class="space">
+      <div class="row">
+        <div class="col-sm-4">
+          <img alt="Synapse Test State Optimizer" src="/images/samplecube2.png"
+            class="hidden-xs centerImg leftImgAlignH1-H3" style="margin-top: 50px; max-height: 250px">
+          <img alt="Synapse Test State Optimizer Stage 2" src="/images/samplecube3.png"
+            class="centerImg leftImgAlignH1-H3" style="max-width: 250px">
+          <img alt="Synapse Test State Optimizer Final" src="/images/samplecube.png"
+            class="hidden-xs centerImg leftImgAlignH1-H3" style="max-width: 250px">
+        </div>
+        <div style="position: relative; z-index: 1;" class="col-xs-12 col-sm-7">
+          <h2>Unleash State Machine Speed</h2>
+          <p class="main">
+            Under the surface of the graphical programming environment is a fundamentally different interaction of
+            software
+            and hardware. Test programs are compiled into a dedicated, run-time state machine on FPGAs that drive the
+            instrumentation and signal processing in real time. This produces faster tests, consistent measurements, and
+            enables a powerful feature never before possible in an ATE system - intelligent test optimization. Built
+            into
+            the compiler is Synapse, a test state optimizer that guarantees the most efficient program execution on any
+            tester configuration.
+          </p>
+          <ul style="padding-right: 40px;">
+            <li>
+              <img alt="Typical Test Flow (time)" src="/images/synapse_flow1.jpg"
+                style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
+              Typical test programs are designed with an execution order that follows the programmer’s code
+              organization.
+              While conventional, this can have unintended inefficiencies — redundant program calls, unnecessary
+              instrument
+              settings, and repeated test states. Code optimization and reuse across different devices requirements and
+              tester configurations can quickly become unmanageable.
+            </li>
+            <li>
+              <img alt="Synapse Test State Optimizer (Optimized Time)" src="/images/synapse_flow2.jpg"
+                style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
+              Synapse optimizes test execution using an advanced state analysis of measurement setup and program flow.
+              This
+              removes superfluous test states, groups similar types, executes repeated measurement setups in parallel,
+              and
+              organizes the overall test flow to reduce processing and execution overhead.
+            </li>
+            <li><img alt="Synapse Test State Optimizer (Fastest Test Time)" src="/images/synapse_flow3.jpg"
+                style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
+              The result is a test program that is twice as fast (Typical test time improvement) and guarantees the most
+              efficient execution on any Cassini instrument and tester configuration. With full user control over where
+              and
+              how Synapse optimizes the test program, the focus can be put back
+              on test and measurement design.
+            </li>
+          </ul>
+        </div>
       </div>
-  </div>
-  <!-- .row -->
-  <hr class="space">
-  <div class="row">
-    <div class="col-sm-4">
-      <img alt="Synapse Test State Optimizer" src="/images/samplecube2.png"
-        class="hidden-xs centerImg leftImgAlignH1-H3" style="margin-top: 50px; max-height: 250px">
-      <img alt="Synapse Test State Optimizer Stage 2" src="/images/samplecube3.png" class="centerImg leftImgAlignH1-H3"
-        style="max-width: 250px">
-      <img alt="Synapse Test State Optimizer Final" src="/images/samplecube.png"
-        class="hidden-xs centerImg leftImgAlignH1-H3" style="max-width: 250px">
-    </div>
-    <div style="position: relative; z-index: 1;" class="col-xs-12 col-sm-7">
-      <h2>Unleash State Machine Speed</h2>
-      <p class="main">
-        Under the surface of the graphical programming environment is a fundamentally different interaction of software
-        and hardware. Test programs are compiled into a dedicated, run-time state machine on FPGAs that drive the
-        instrumentation and signal processing in real time. This produces faster tests, consistent measurements, and
-        enables a powerful feature never before possible in an ATE system - intelligent test optimization. Built into
-        the compiler is Synapse, a test state optimizer that guarantees the most efficient program execution on any
-        tester configuration.
-      </p>
-      <ul style="padding-right: 40px;">
-        <li>
-          <img alt="Typical Test Flow (time)" src="/images/synapse_flow1.jpg"
-            style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
-          Typical test programs are designed with an execution order that follows the programmer’s code organization.
-          While conventional, this can have unintended inefficiencies — redundant program calls, unnecessary instrument
-          settings, and repeated test states. Code optimization and reuse across different devices requirements and
-          tester configurations can quickly become unmanageable.
-        </li>
-        <li>
-          <img alt="Synapse Test State Optimizer (Optimized Time)" src="/images/synapse_flow2.jpg"
-            style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
-          Synapse optimizes test execution using an advanced state analysis of measurement setup and program flow. This
-          removes superfluous test states, groups similar types, executes repeated measurement setups in parallel, and
-          organizes the overall test flow to reduce processing and execution overhead.
-        </li>
-        <li><img alt="Synapse Test State Optimizer (Fastest Test Time)" src="/images/synapse_flow3.jpg"
-            style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
-          The result is a test program that is twice as fast (Typical test time improvement) and guarantees the most
-          efficient execution on any Cassini instrument and tester configuration. With full user control over where and
-          how Synapse optimizes the test program, the focus can be put back
-          on test and measurement design.
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- .row -->
-  <hr class="space">
-  <h2 style="position: relative; z-index: 1;">Building Bridges to Islands of Automation</h2>
-  <img class="visible-xs-block" style="position: relative; max-width: 325px;" alt="Guru" src="/images/guru_map.jpg">
-  <div class="row">
-    <div class="col-sm-6">
-      <p class="main">
-        Guru is the first of its kind, integrating the file system with a database and networking backbone to create a
-        seamless software work flow. With an integrated local and network storage architecture, Guru manages file
-        directories, tester configuration resources, and storage space automatically across the entire production floor.
-        Users can create tests and link resources while Guru keeps track of dependencies and distribution for easy
-        organization and quick deployment to production
-        with a host of powerful features.
-      </p>
-      <ul>
-        <li>Digitally signs and encrypts files for secure data transfer</li>
-        <li>Native support for Rich Interactive Test Database (RITdb)</li>
-        <li>Link test resources with user-defined tags</li>
-        <li>Versioning file system keeps a complete test development history</li>
-        <li>File and data redundancy with automated backups</li>
-        <li>Search, filter, and organize files quickly and efficiently</li>
-        <li class="hidden-xs" style="margin-left: 55%;">
-          <a title="Learn about Guru" href="/guru.html">
-            Learn More &raquo;
-          </a>
-        </li>
-        <li style="margin-left: 100px;" class="visible-xs-block">
-          <a title="Learn about Guru" href="/guru.html">
-            Learn More &raquo;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-sm-6 hidden-xs">
-      <img style="z-index: -1; max-width: 525px; margin-top: 20px;" alt="Guru Knows Where Everything Goes"
-        src="/images/guru_map.jpg">
-    </div>
-  </div>
-  <!-- ..row -->
-  <hr class="space">
-  <!-- ==========================
+      <!-- .row -->
+      <hr class="space">
+      <h2 style="position: relative; z-index: 1;">Building Bridges to Islands of Automation</h2>
+      <img class="visible-xs-block" style="position: relative; max-width: 325px;" alt="Guru" src="/images/guru_map.jpg">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="main">
+            Guru is the first of its kind, integrating the file system with a database and networking backbone to create
+            a seamless software work flow. With an integrated local and network storage architecture, Guru manages file
+            directories, tester configuration resources, and storage space automatically across the entire production
+            floor. Users can create tests and link resources while Guru keeps track of dependencies and distribution for
+            easy organization and quick deployment to production with a host of powerful features. </p>
+          <ul>
+            <li>Digitally signs and encrypts files for secure data transfer</li>
+            <li>Native support for Rich Interactive Test Database (RITdb)</li>
+            <li>Link test resources with user-defined tags</li>
+            <li>Versioning file system keeps a complete test development history</li>
+            <li>File and data redundancy with automated backups</li>
+            <li>Search, filter, and organize files quickly and efficiently</li>
+            <li class="hidden-xs" style="margin-left: 55%;">
+              <a title="Learn about Guru" href="/guru.html">
+                Learn More &raquo;
+              </a>
+            </li>
+            <li style="margin-left: 100px;" class="visible-xs-block">
+              <a title="Learn about Guru" href="/guru.html">
+                Learn More &raquo;
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 hidden-xs">
+          <img style="z-index: -1; max-width: 525px; margin-top: 20px;" alt="Guru Knows Where Everything Goes"
+            src="/images/guru_map.jpg">
+        </div>
+      </div>
+      <!-- ..row -->
+      <hr class="space">
+      <!-- ==========================
     	PRICING - START
     =========================== -->
-  <h5>RI System Software</h5>
-  <br>
-  <div id="pricing" class="row">
+      <h5>RI System Software</h5>
+      <br>
+      <div id="pricing" class="row">
 
-    <!-- Pricing plan -->
-    <div class="col-sm-4">
-      <div class="pricing-plan">
-        <h3>Cassini</h3>
-        <div class="pricing-plan-price">
-          <span class="pricing-plan-number"><i class="fas fa-microchip"></i></span>
-          <span class="pricing-plan-text">Automated Test Equipment</span>
+        <!-- Pricing plan -->
+        <div class="col-sm-4">
+          <div class="pricing-plan">
+            <h3>Cassini</h3>
+            <div class="pricing-plan-price">
+              <span class="pricing-plan-number"><i class="fas fa-microchip"></i></span>
+              <span class="pricing-plan-text">Automated Test Equipment</span>
+            </div>
+            <ul>
+              <li><i class="fas fa-bolt"></i><b>Real Time</b> Measurements</li>
+              <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
+              <li><i class="far fa-edit"></i><b>Graphical</b> Development Environment</li>
+              <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
+              <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+              <li><i class="fas fa-upload"></i>Regular Software Updates</li>
+              <li><i class="fas fa-database"></i>Effortless Data Collection</li>
+              <li><i class="far fa-hand-o-up"></i><b>Touch UI</b> option for Production</li>
+            </ul>
+            <a href="/apps" class="btn btn-lg btn-primary">Configure ATE</a>
+          </div>
         </div>
-        <ul>
-          <li><i class="fas fa-bolt"></i><b>Real Time</b> Measurements</li>
-          <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
-          <li><i class="far fa-edit"></i><b>Graphical</b> Integrated Development Environment</li>
-          <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
-          <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
-          <li><i class="fas fa-upload"></i>Regular Software Updates</li>
-          <li><i class="fas fa-database"></i>Effortless Data Collection</li>
-          <li><i class="far fa-hand-o-up"></i><b>Touch UI</b> option for Production</li>
-        </ul>
-        <a href="/apps" class="btn btn-lg btn-primary">Configure ATE</a>
-      </div>
-    </div>
 
-    <!-- Pricing plan -->
-    <div class="col-sm-4">
-      <div class="pricing-plan popular">
-        <h3>Desktop</h3>
-        <p>Offline Development</p>
-        <div class="pricing-plan-price">
-          <span class="pricing-plan-number"><i class="fas fa-desktop"></i></span>
-          <span class="pricing-plan-text">Virtual Workstation</span>
+        <!-- Pricing plan -->
+        <div class="col-sm-4">
+          <div class="pricing-plan popular">
+            <h3>Desktop</h3>
+            <p>Offline Development</p>
+            <div class="pricing-plan-price">
+              <span class="pricing-plan-number"><i class="fas fa-desktop"></i></span>
+              <span class="pricing-plan-text">Virtual Workstation</span>
+            </div>
+            <ul>
+              <li><i class="fas fa-bolt"></i><b>Simulated</b> Instruments</li>
+              <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
+              <li><i class="far fa-edit"></i><b>Graphical</b> Development Environment</li>
+              <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
+              <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+              <li><i class="fas fa-upload"></i>Regular Software Updates</li>
+              <li><i class="fas fa-database"></i>Effortless Data Collection</li>
+              <li><i class="fas fa-desktop"></i>4K Resolution for Development</li>
+            </ul>
+            <a href="/parts/RIK0126A" class="btn btn-lg btn-primary">Purchase</a>
+          </div>
         </div>
-        <ul>
-          <li><i class="fas fa-bolt"></i><b>Simulated</b> Instruments</li>
-          <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
-          <li><i class="far fa-edit"></i><b>Graphical</b> Integrated Development Environment</li>
-          <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
-          <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
-          <li><i class="fas fa-upload"></i>Regular Software Updates</li>
-          <li><i class="fas fa-database"></i>Effortless Data Collection</li>
-          <li><i class="fas fa-desktop"></i>4K Resolution for Development</li>
-        </ul>
-        <a href="/parts/RIK0126A" class="btn btn-lg btn-primary">Purchase</a>
-      </div>
-    </div>
 
-    <!-- Pricing plan -->
-    <div class="col-sm-4">
-      <div class="pricing-plan">
-        <h3>Network Appliance</h3>
-        <div class="pricing-plan-price">
-          <span class="pricing-plan-number"><i class="fas fa-users"></i></span>
-          <span class="pricing-plan-text">via Remote Desktop</span>
+        <!-- Pricing plan -->
+        <div class="col-sm-4">
+          <div class="pricing-plan">
+            <h3>Network Appliance</h3>
+            <div class="pricing-plan-price">
+              <span class="pricing-plan-number"><i class="fas fa-users"></i></span>
+              <span class="pricing-plan-text">via Remote Desktop</span>
+            </div>
+            <ul>
+              <li><i class="fas fa-bolt"></i><b>Simulated</b> Instruments</li>
+
+              <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
+              <li><i class="far fa-edit"></i><b>Graphical</b> Development Environment</li>
+              <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
+              <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
+              <li><i class="fas fa-upload"></i>Regular Software Updates</li>
+              <li><i class="fas fa-database"></i>Effortless Data Collection</li>
+              <li><i class="fas fa-bolt"></i><b>Up to 8</b> Simultaneous Workstations</li>
+            </ul>
+            <a href="/parts/RIK0301A" class="btn btn-lg btn-primary">Purchase</a>
+          </div>
         </div>
-        <ul>
-          <li><i class="fas fa-bolt"></i><b>Simulated</b> Instruments</li>
-
-          <li><i class="fas fa-save"></i><b>Guru</b> Apps & Data</li>
-          <li><i class="far fa-edit"></i><b>Graphical</b> Integrated Development Environment</li>
-          <li><i class="fas fa-check"></i><b>Measurement Expert</b> System</li>
-          <li><i class="fab fa-first-order"></i><b>Synapse&trade;</b> Test Plan Optimizer</li>
-          <li><i class="fas fa-upload"></i>Regular Software Updates</li>
-          <li><i class="fas fa-database"></i>Effortless Data Collection</li>
-          <li><i class="fas fa-bolt"></i><b>Up to 8</b> Simultaneous Workstations</li>
-        </ul>
-        <a href="/parts/RIK0301A" class="btn btn-lg btn-primary">Purchase</a>
       </div>
-    </div>
-  </div>
-  <!-- ==========================
+      <!-- ==========================
       	PRICING - END
       =========================== -->
 
-  <h5>Software Architecture</h5>
-  <p>
-    From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE hardware
-    and software. We found the best results by using a state-based approach in our software; it allows the software's
-    commands to operate on
-    the hardware components as state-based objects. It becomes easier to develop test plans and measurement algorithms
-    when the programming interface reflects the changes in hardware states that occur during a test. The following
-    section explains
-    our approach to ATE software and how to use it to build measurements, create test plans, and control the flow of
-    test execution.
-  </p>
+      <h5>Software Architecture</h5>
+      <p>
+        From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE
+        hardware
+        and software. We found the best results by using a state-based approach in our software; it allows the
+        software's
+        commands to operate on
+        the hardware components as state-based objects. It becomes easier to develop test plans and measurement
+        algorithms
+        when the programming interface reflects the changes in hardware states that occur during a test. The following
+        section explains
+        our approach to ATE software and how to use it to build measurements, create test plans, and control the flow of
+        test execution.
+      </p>
 
-  <div class="text-center">
-    <div style="margin: 20px 0 20px 0;"><small><i class="far fa-2x fa-border fa-hand-pointer-o"></i> Interact with
-        Software Diagram to Learn More</small></div>
-    <img class="centerImg" style="max-width: 600px; max-height: 100%;" id="SoftwareArchitectureImg"
-      src="images/SoftwareArchitecture.png" usemap="#SoftwareArchitecture" width="600" height="312"
-      alt="Software Artchitecture">
-    <map name="SoftwareArchitecture">
-      <area id="library" shape="rect" coords="111,243,215,302" title="Test Object Library">
-      <area id="builder" shape="rect" coords="16,115,98,182" title="Test Plan Builder">
-      <area id="synapse" shape="rect" coords="87,41,267,94" title="Synapse&trade;">
-      <area id="testExec" shape="rect" coords="301,32,376,102" title="Test Exec">
-      <area id="guru" shape="rect" coords="150,104,264,203" title="Guru&trade;">
-    </map>
-  </div>
-  <script>
-    $(document).ready(function () {
-      $('#SoftwareArchitectureImg').ImageMapResize({
-        origImageWidth: "600"
-      });
-      $('#library').qtip({
-        content: {
-          title: 'Test Object Library',
-          text: 'Collection of definitions for fixture configurations, test commands, and measurement functions. Functionality and commands vary based on TIM configuration.'
-        },
-        style: {
-          classes: 'qtip-bootstrap qtip-shadow'
-        },
-        position: {
-          my: 'top center',
-          at: 'bottom center',
-          adjust: {
-            mouse: false
-          },
-          viewport: $('#content')
-        },
-      });
-
-      $('#builder').qtip({
-        content: {
-          title: 'Test Plan Builder',
-          text: 'Graphic User Interface that represents commands visually as blocks that link together to build test plans and procedures.'
-        },
-        style: {
-          classes: 'qtip-bootstrap qtip-shadow'
-        },
-        position: {
-          my: 'top center',
-          at: 'bottom center',
-          adjust: {
-            mouse: false
-          },
-          viewport: $('#content')
-        },
-      });
-
-      $('#synapse').qtip({
-        content: {
-          title: 'Synpase&trade;',
-          text: 'Test plan optimizer that aligns measurement procedure with the hardware to minimize test times and cost.'
-        },
-        style: {
-          classes: 'qtip-bootstrap qtip-shadow'
-        },
-        position: {
-          my: 'top center',
-          viewport: $('#content')
-        },
-      });
-
-      $('#testExec').qtip({
-        content: {
-          title: 'Test Exec',
-          text: 'Executes test plans providing real time error correction, hardware optimization and operation workflow. Provides visual feedback to the ' +
-            'user and saves all results in Guru. Controls handler/prober via Serial, Parallel or GPIB interface.'
-        },
-        style: {
-          classes: 'qtip-bootstrap qtip-shadow'
-        },
-        position: {
-          my: 'top center',
-          at: 'bottom center',
-        }
-      });
-
-      $('#guru').qtip({
-        content: {
-          title: 'Guru',
-          text: 'Repository for all files, resources, and test data. Serves as the central hub for backup, software distribution, and synchronization.'
-        },
-        style: {
-          classes: 'qtip-bootstrap qtip-shadow'
-        },
-        position: {
-          my: 'top center',
-          at: 'bottom center',
-          viewport: $('#content')
-        }
-      });
-    });
-  </script>
-
-  <hr>
-  <h5>Rapid Development</h5>
-  <p>
-    Simple, reliable test hardware driven by novel system software sets the RI tester apart from the competition.
-    Designed to make fundamental measurements, the system hardware is tailored for speed, reliability and stability.
-    Typical time-wasters such as
-    redundant measurement states, error correction calculations, and instrument processing delays are reduced or
-    eliminated through sophisticated automatic test plan optimization. Complex measurements are synthesized by the
-    system software from the
-    fundamental measurements taken at very high speed, woven together with the data processing to create error corrected
-    data. With little effect on system speed, the measurements are unobtrusively captured and saved by the built-in
-    database. RI's
-    virtual instrument design provides superior performance at lower cost and high reliability.
-  </p>
-
-  <h5>Graphical Test Plan Creation Tools</h5>
-  <p>
-    Test plan development plays a crucial role in the time-to-market equation. RI software provides the tools that
-    enable engineers to quickly and easily debug tests, revise test programs, document, and analyze test data. Test plan
-    creation is fast and intuitive
-    with a graphical test plan editor. Just cut and paste tests as dictated by your requirements. RI systems allow your
-    test engineers to design in a completely new and highly productive way. Operating in a multitasking graphical
-    environment, test
-    designers use a mouse to manipulate graphical objects (buttons) representing measurement processes, parameters and
-    test results. Buttons are connected graphically and parameter values are set, resulting in a simplified flow
-    chart-like picture
-    of the test. Completed tests are stored in graphic form and are easily recalled and modified to create new tests.
-  </p>
-
-  <h5>Measurement Expert System</h5>
-  <p>
-    An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
-    This is especially true when production testing requires a durable DUT interface, consistency across multiple
-    testers, and fast test times.
-    Cassini integrates 80 collective years of microwave expertise into its workflow. Our expertise translates into
-    accurate measurements, robust hardware, and a simplified user experience.
-  </p>
-
-  <h5>Optimization Ensures Maximum Performance</h5>
-  <p>
-    RI's test plan compiler and optimizer automatically considers time requirements for system state changes, identifies
-    duplicate measurement states, and restructures the test sequence for highest measurement speed. Execution speed is
-    improved dramatically
-    by compiling and optimizing the test plan instead of simply interpreting it. Rapid test plan development makes
-    device characterization a powerful capability of the RI system. The software allows you to change frequency ranges
-    and add measurement
-    mains with simple mouse selections. For example, adding multiple bias mains to a gain vs. frequency test requires
-    adding a single DC bias state button. The large volumes of data generated by device characterization are collected,
-    stored and analyzed
-    by RI's built-in database. Debugging features including break mains and single stepping that help the user to
-    quickly finish test plans.
-  </p>
-
-
-  <h5>Effortless Data Collection</h5>
-  <p>
-    Whether characterizing a part with hundreds of parameters or performing production testing with only a few
-    parameters, capturing and storing measurement data is effortless with the integrated RI database. Test plans
-    automatically store all system state,
-    user and device information as standard data types in an SQL relational database. RI's Advanced Analysis Package
-    allows you to analyze, summarize and view data, or export it to a variety of database and spread sheet formats.
-  </p>
-
-  <h5>Scalable User Interface</h5>
-  <p>
-    Log-on and security features of the RI software automatically tailor the user interface to fit the various
-    requirements of the current user. System operators can easily select tests and start and stop the tester with a
-    click of the mouse. Technicians
-    can view real-time graphical test results to monitor fixture performance and overall lot/sublot performance.
-    Production test engineers maintain complete control over tests and data. At RI, we recognize the unique requirements
-    of each customer.
-    We are prepared to work with customers to modify the interfaces to match specific production test environments. We
-    also modify our data export formats to support existing data collection systems.
-  </p>
-
-  <h5>RTalk - Smalltalk 'Live' Environment on the JVM</h5>
-  <p>
-    RI Smalltalk developers are developing apps that can run within the Java virtual machine. "RTalk" provides a
-    Smalltalk compatible emulation layer that implements a dynamic language on the JVM.
-  </p>
-  <ul>
-    <li>
-      <div class="btn-group" role="group">
-        <a href="https://youtu.be/92wegwZePso" class="btn btn-default"><i class="fas fa-play"></i>Watch</a>
-        <a href="/pdf/Roos-Rtalk12.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
+      <div class="text-center">
+        <div style="margin: 20px 0 20px 0;"><small><i class="far fa-2x fa-border fa-hand-pointer-o"></i> Interact with
+            Software Diagram to Learn More</small></div>
+        <img class="centerImg" style="max-width: 600px; max-height: 100%;" id="SoftwareArchitectureImg"
+          src="images/SoftwareArchitecture.png" usemap="#SoftwareArchitecture" width="600" height="312"
+          alt="Software Artchitecture">
+        <map name="SoftwareArchitecture">
+          <area id="library" shape="rect" coords="111,243,215,302" title="Test Object Library">
+          <area id="builder" shape="rect" coords="16,115,98,182" title="Test Plan Builder">
+          <area id="synapse" shape="rect" coords="87,41,267,94" title="Synapse&trade;">
+          <area id="testExec" shape="rect" coords="301,32,376,102" title="Test Exec">
+          <area id="guru" shape="rect" coords="150,104,264,203" title="Guru&trade;">
+        </map>
       </div>
-      "Live" Smalltalk Environment on JVM presentation by Mark Roos at the <a
-        href="http://www.oracle.com/technetwork/java/javase/community/jvmls2012-1840099.html">JVM Language Summit
-        2012</a>
-    </li>
-    <li>
-      <div class="btn-group" role="group">
-        <!-- <a href="http://medianetwork.oracle.com/video/player/1113248955001" class="btn btn-default"><i class="fa fa-play"></i>Watch</a> -->
-        <a href="/pdf/Roos-Rtalk11.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
-      </div>
-      Smalltalk Dynamic Lanugage on JVM at the <a
-        href="http://www.oracle.com/technetwork/java/javase/community/jvmls2011-sessions-461516.html">JVM Language
-        Summit 2011</a>
-    </li>
-  </ul>
+      <script>
+        $(document).ready(function () {
+          $('#SoftwareArchitectureImg').ImageMapResize({
+            origImageWidth: "600"
+          });
+          $('#library').qtip({
+            content: {
+              title: 'Test Object Library',
+              text: 'Collection of definitions for fixture configurations, test commands, and measurement functions. Functionality and commands vary based on TIM configuration.'
+            },
+            style: {
+              classes: 'qtip-bootstrap qtip-shadow'
+            },
+            position: {
+              my: 'top center',
+              at: 'bottom center',
+              adjust: {
+                mouse: false
+              },
+              viewport: $('#content')
+            },
+          });
 
-  <h5>Rich Interactive Test Database - Evolution of STDF</h5>
-  <p>
-    Rich Interactive Test Database (RITdb) is the next generation file format for storing and processing testdata.
-    Cassini systems natively support RITdb. Download the STDF translator and source code below.
-  </p>
-  <ul>
-    <li><a href="/web/stdfTranslatorV51.zip">Java STDF Translator</a> version 51</li>
-    <li><a href="/web/stdfTranslatorV51JavaSrc.zip">Java STDF Translator Source Code</a> version 51</li>
-  </ul>
-  <hr class="space">
-  <span class="pull-right"><a href="/fixture.html" class="link pull-right">Learn More about Device Interface
-      &raquo;</a></span>
-  </section>
+          $('#builder').qtip({
+            content: {
+              title: 'Test Plan Builder',
+              text: 'Graphic User Interface that represents commands visually as blocks that link together to build test plans and procedures.'
+            },
+            style: {
+              classes: 'qtip-bootstrap qtip-shadow'
+            },
+            position: {
+              my: 'top center',
+              at: 'bottom center',
+              adjust: {
+                mouse: false
+              },
+              viewport: $('#content')
+            },
+          });
 
-  <div class="bottom"></div>
-  <script src="js/loadbottom.js"></script>
+          $('#synapse').qtip({
+            content: {
+              title: 'Synpase&trade;',
+              text: 'Test plan optimizer that aligns measurement procedure with the hardware to minimize test times and cost.'
+            },
+            style: {
+              classes: 'qtip-bootstrap qtip-shadow'
+            },
+            position: {
+              my: 'top center',
+              viewport: $('#content')
+            },
+          });
+
+          $('#testExec').qtip({
+            content: {
+              title: 'Test Exec',
+              text: 'Executes test plans providing real time error correction, hardware optimization and operation workflow. Provides visual feedback to the ' +
+                'user and saves all results in Guru. Controls handler/prober via Serial, Parallel or GPIB interface.'
+            },
+            style: {
+              classes: 'qtip-bootstrap qtip-shadow'
+            },
+            position: {
+              my: 'top center',
+              at: 'bottom center',
+            }
+          });
+
+          $('#guru').qtip({
+            content: {
+              title: 'Guru',
+              text: 'Repository for all files, resources, and test data. Serves as the central hub for backup, software distribution, and synchronization.'
+            },
+            style: {
+              classes: 'qtip-bootstrap qtip-shadow'
+            },
+            position: {
+              my: 'top center',
+              at: 'bottom center',
+              viewport: $('#content')
+            }
+          });
+        });
+      </script>
+
+      <hr>
+      <h5>Rapid Development</h5>
+      <p>
+        Simple, reliable test hardware driven by novel system software sets the RI tester apart from the competition.
+        Designed to make fundamental measurements, the system hardware is tailored for speed, reliability and stability.
+        Typical time-wasters such as
+        redundant measurement states, error correction calculations, and instrument processing delays are reduced or
+        eliminated through sophisticated automatic test plan optimization. Complex measurements are synthesized by the
+        system software from the
+        fundamental measurements taken at very high speed, woven together with the data processing to create error
+        corrected
+        data. With little effect on system speed, the measurements are unobtrusively captured and saved by the built-in
+        database. RI's
+        virtual instrument design provides superior performance at lower cost and high reliability.
+      </p>
+
+      <h5>Graphical Test Plan Creation Tools</h5>
+      <p>
+        Test plan development plays a crucial role in the time-to-market equation. RI software provides the tools that
+        enable engineers to quickly and easily debug tests, revise test programs, document, and analyze test data. Test
+        plan
+        creation is fast and intuitive
+        with a graphical test plan editor. Just cut and paste tests as dictated by your requirements. RI systems allow
+        your
+        test engineers to design in a completely new and highly productive way. Operating in a multitasking graphical
+        environment, test
+        designers use a mouse to manipulate graphical objects (buttons) representing measurement processes, parameters
+        and
+        test results. Buttons are connected graphically and parameter values are set, resulting in a simplified flow
+        chart-like picture
+        of the test. Completed tests are stored in graphic form and are easily recalled and modified to create new
+        tests.
+      </p>
+
+      <h5>Measurement Expert System</h5>
+      <p>
+        An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
+        This is especially true when production testing requires a durable DUT interface, consistency across multiple
+        testers, and fast test times.
+        Cassini integrates 80 collective years of microwave expertise into its workflow. Our expertise translates into
+        accurate measurements, robust hardware, and a simplified user experience.
+      </p>
+
+      <h5>Optimization Ensures Maximum Performance</h5>
+      <p>
+        RI's test plan compiler and optimizer automatically considers time requirements for system state changes,
+        identifies
+        duplicate measurement states, and restructures the test sequence for highest measurement speed. Execution speed
+        is
+        improved dramatically
+        by compiling and optimizing the test plan instead of simply interpreting it. Rapid test plan development makes
+        device characterization a powerful capability of the RI system. The software allows you to change frequency
+        ranges
+        and add measurement
+        mains with simple mouse selections. For example, adding multiple bias mains to a gain vs. frequency test
+        requires
+        adding a single DC bias state button. The large volumes of data generated by device characterization are
+        collected,
+        stored and analyzed
+        by RI's built-in database. Debugging features including break mains and single stepping that help the user to
+        quickly finish test plans.
+      </p>
+
+
+      <h5>Effortless Data Collection</h5>
+      <p>
+        Whether characterizing a part with hundreds of parameters or performing production testing with only a few
+        parameters, capturing and storing measurement data is effortless with the integrated RI database. Test plans
+        automatically store all system state,
+        user and device information as standard data types in an SQL relational database. RI's Advanced Analysis Package
+        allows you to analyze, summarize and view data, or export it to a variety of database and spread sheet formats.
+      </p>
+
+      <h5>Scalable User Interface</h5>
+      <p>
+        Log-on and security features of the RI software automatically tailor the user interface to fit the various
+        requirements of the current user. System operators can easily select tests and start and stop the tester with a
+        click of the mouse. Technicians
+        can view real-time graphical test results to monitor fixture performance and overall lot/sublot performance.
+        Production test engineers maintain complete control over tests and data. At RI, we recognize the unique
+        requirements
+        of each customer.
+        We are prepared to work with customers to modify the interfaces to match specific production test environments.
+        We
+        also modify our data export formats to support existing data collection systems.
+      </p>
+
+      <h5>RTalk - Smalltalk 'Live' Environment on the JVM</h5>
+      <p>
+        RI Smalltalk developers are developing apps that can run within the Java virtual machine. "RTalk" provides a
+        Smalltalk compatible emulation layer that implements a dynamic language on the JVM.
+      </p>
+      <ul>
+        <li>
+          <div class="btn-group" role="group">
+            <a href="https://youtu.be/92wegwZePso" class="btn btn-default"><i class="fas fa-play"></i>Watch</a>
+            <a href="/pdf/Roos-Rtalk12.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
+          </div>
+          "Live" Smalltalk Environment on JVM presentation by Mark Roos at the <a
+            href="http://www.oracle.com/technetwork/java/javase/community/jvmls2012-1840099.html">JVM Language Summit
+            2012</a>
+        </li>
+        <li>
+          <div class="btn-group" role="group">
+            <!-- <a href="http://medianetwork.oracle.com/video/player/1113248955001" class="btn btn-default"><i class="fa fa-play"></i>Watch</a> -->
+            <a href="/pdf/Roos-Rtalk11.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
+          </div>
+          Smalltalk Dynamic Lanugage on JVM at the <a
+            href="http://www.oracle.com/technetwork/java/javase/community/jvmls2011-sessions-461516.html">JVM Language
+            Summit 2011</a>
+        </li>
+      </ul>
+
+      <h5>Rich Interactive Test Database - Evolution of STDF</h5>
+      <p>
+        Rich Interactive Test Database (RITdb) is the next generation file format for storing and processing testdata.
+        Cassini systems natively support RITdb. Download the STDF translator and source code below.
+      </p>
+      <ul>
+        <li><a href="/web/stdfTranslatorV51.zip">Java STDF Translator</a> version 51</li>
+        <li><a href="/web/stdfTranslatorV51JavaSrc.zip">Java STDF Translator Source Code</a> version 51</li>
+      </ul>
+      <hr class="space">
+      <span class="pull-right"><a href="/fixture.html" class="link pull-right">Learn More about Device Interface
+          &raquo;</a></span>
+    </section>
+
+    <div class="bottom"></div>
+    <script src="js/loadbottom.js"></script>
 
 </body>
 
