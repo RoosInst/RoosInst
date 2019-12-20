@@ -145,41 +145,31 @@
           <h2>Unleash State Machine Speed</h2>
           <p class="main">
             Under the surface of the graphical programming environment is a fundamentally different interaction of
-            software
-            and hardware. Test programs are compiled into a dedicated, run-time state machine on FPGAs that drive the
-            instrumentation and signal processing in real time. This produces faster tests, consistent measurements, and
-            enables a powerful feature never before possible in an ATE system - intelligent test optimization. Built
-            into
-            the compiler is Synapse, a test state optimizer that guarantees the most efficient program execution on any
-            tester configuration.
-          </p>
+            software and hardware. Test programs are compiled into a dedicated, run-time state machine on FPGAs that
+            drive the instrumentation and signal processing in real time. This produces faster tests, consistent
+            measurements, and enables a powerful feature never before possible in an ATE system - intelligent test
+            optimization. Built into the compiler is Synapse, a test state optimizer that guarantees the most efficient
+            program execution on any tester configuration. </p>
           <ul style="padding-right: 40px;">
             <li>
               <img alt="Typical Test Flow (time)" src="/images/synapse_flow1.jpg"
                 style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
               Typical test programs are designed with an execution order that follows the programmer’s code
-              organization.
-              While conventional, this can have unintended inefficiencies — redundant program calls, unnecessary
-              instrument
-              settings, and repeated test states. Code optimization and reuse across different devices requirements and
-              tester configurations can quickly become unmanageable.
+              organization. While conventional, this can have unintended inefficiencies — redundant program calls,
+              unnecessary instrument settings, and repeated test states. Code optimization and reuse across different
+              devices requirements and tester configurations can quickly become unmanageable.
             </li>
             <li>
               <img alt="Synapse Test State Optimizer (Optimized Time)" src="/images/synapse_flow2.jpg"
                 style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
               Synapse optimizes test execution using an advanced state analysis of measurement setup and program flow.
-              This
-              removes superfluous test states, groups similar types, executes repeated measurement setups in parallel,
-              and
-              organizes the overall test flow to reduce processing and execution overhead.
-            </li>
+              This removes superfluous test states, groups similar types, executes repeated measurement setups in
+              parallel, and organizes the overall test flow to reduce processing and execution overhead. </li>
             <li><img alt="Synapse Test State Optimizer (Fastest Test Time)" src="/images/synapse_flow3.jpg"
                 style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
               The result is a test program that is twice as fast (Typical test time improvement) and guarantees the most
               efficient execution on any Cassini instrument and tester configuration. With full user control over where
-              and
-              how Synapse optimizes the test program, the focus can be put back
-              on test and measurement design.
+              and how Synapse optimizes the test program, the focus can be put back on test and measurement design.
             </li>
           </ul>
         </div>
@@ -197,8 +187,8 @@
             floor. Users can create tests and link resources while Guru keeps track of dependencies and distribution for
             easy organization and quick deployment to production with a host of powerful features. </p>
           <ul>
-            <li>Digitally signs and encrypts files for secure data transfer</li>
-            <li>Native support for Rich Interactive Test Database (RITdb)</li>
+            <li>Digitally signs and encrypts files for reliable data transfer</li>
+            <li>Rich Interactive Test Database (RITdb) and STDFv4 Support</li>
             <li>Link test resources with user-defined tags</li>
             <li>Versioning file system keeps a complete test development history</li>
             <li>File and data redundancy with automated backups</li>
@@ -304,16 +294,11 @@
       <h5>Software Architecture</h5>
       <p>
         From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE
-        hardware
-        and software. We found the best results by using a state-based approach in our software; it allows the
-        software's
-        commands to operate on
-        the hardware components as state-based objects. It becomes easier to develop test plans and measurement
-        algorithms
-        when the programming interface reflects the changes in hardware states that occur during a test. The following
-        section explains
-        our approach to ATE software and how to use it to build measurements, create test plans, and control the flow of
-        test execution.
+        hardware and software. We found the best results by using a state-based approach in our software; it allows the
+        software's commands to operate on the hardware components as state-based objects. It becomes easier to develop
+        test plans and measurement algorithms when the programming interface reflects the changes in hardware states
+        that occur during a test. The following section explains our approach to ATE software and how to use it to build
+        measurements, create test plans, and control the flow of test execution.
       </p>
 
       <div class="text-center">
@@ -422,14 +407,11 @@
       <p>
         Simple, reliable test hardware driven by novel system software sets the RI tester apart from the competition.
         Designed to make fundamental measurements, the system hardware is tailored for speed, reliability and stability.
-        Typical time-wasters such as
-        redundant measurement states, error correction calculations, and instrument processing delays are reduced or
-        eliminated through sophisticated automatic test plan optimization. Complex measurements are synthesized by the
-        system software from the
-        fundamental measurements taken at very high speed, woven together with the data processing to create error
-        corrected
-        data. With little effect on system speed, the measurements are unobtrusively captured and saved by the built-in
-        database. RI's
+        Typical time-wasters such as redundant measurement states, error correction calculations, and instrument
+        processing delays are reduced or eliminated through sophisticated automatic test plan optimization. Complex
+        measurements are synthesized by the system software from the fundamental measurements taken at very high speed,
+        woven together with the data processing to create error corrected data. With little effect on system speed, the
+        measurements are unobtrusively captured and saved by the built-in database. RI's
         virtual instrument design provides superior performance at lower cost and high reliability.
       </p>
 
@@ -437,49 +419,31 @@
       <p>
         Test plan development plays a crucial role in the time-to-market equation. RI software provides the tools that
         enable engineers to quickly and easily debug tests, revise test programs, document, and analyze test data. Test
-        plan
-        creation is fast and intuitive
-        with a graphical test plan editor. Just cut and paste tests as dictated by your requirements. RI systems allow
-        your
-        test engineers to design in a completely new and highly productive way. Operating in a multitasking graphical
-        environment, test
-        designers use a mouse to manipulate graphical objects (buttons) representing measurement processes, parameters
-        and
-        test results. Buttons are connected graphically and parameter values are set, resulting in a simplified flow
-        chart-like picture
-        of the test. Completed tests are stored in graphic form and are easily recalled and modified to create new
-        tests.
-      </p>
-
+        plan creation is fast and intuitive with a graphical test plan editor. Just cut and paste tests as dictated by
+        your requirements. RI systems allow your test engineers to design in a completely new and highly productive way.
+        Operating in a multitasking graphical environment, test designers use a mouse to manipulate graphical objects
+        (buttons) representing measurement processes, parameters and test results. Buttons are connected graphically and
+        parameter values are set, resulting in a simplified flow chart-like picture of the test. Completed tests are
+        stored in graphic form and are easily recalled and modified to create new tests. </p>
       <h5>Measurement Expert System</h5>
       <p>
         An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
         This is especially true when production testing requires a durable DUT interface, consistency across multiple
-        testers, and fast test times.
-        Cassini integrates 80 collective years of microwave expertise into its workflow. Our expertise translates into
-        accurate measurements, robust hardware, and a simplified user experience.
+        testers, and fast test times. Cassini integrates 80 collective years of microwave expertise into its workflow.
+        Our expertise translates into accurate measurements, robust hardware, and a simplified user experience.
       </p>
 
       <h5>Optimization Ensures Maximum Performance</h5>
       <p>
         RI's test plan compiler and optimizer automatically considers time requirements for system state changes,
-        identifies
-        duplicate measurement states, and restructures the test sequence for highest measurement speed. Execution speed
-        is
-        improved dramatically
-        by compiling and optimizing the test plan instead of simply interpreting it. Rapid test plan development makes
-        device characterization a powerful capability of the RI system. The software allows you to change frequency
-        ranges
-        and add measurement
-        mains with simple mouse selections. For example, adding multiple bias mains to a gain vs. frequency test
-        requires
-        adding a single DC bias state button. The large volumes of data generated by device characterization are
-        collected,
-        stored and analyzed
-        by RI's built-in database. Debugging features including break mains and single stepping that help the user to
-        quickly finish test plans.
-      </p>
-
+        identifies duplicate measurement states, and restructures the test sequence for highest measurement speed.
+        Execution speed is improved dramatically by compiling and optimizing the test plan instead of simply
+        interpreting it. Rapid test plan development makes device characterization a powerful capability of the RI
+        system. The software allows you to change frequency ranges and add measurement mains with simple mouse
+        selections. For example, adding multiple bias mains to a gain vs. frequency test requires adding a single DC
+        bias state button. The large volumes of data generated by device characterization are collected, stored and
+        analyzed by RI's built-in database. Debugging features including break mains and single stepping that help the
+        user to quickly finish test plans. </p>
 
       <h5>Effortless Data Collection</h5>
       <p>
