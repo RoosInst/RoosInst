@@ -447,7 +447,7 @@ window.addEventListener("load", function () {
 			}
 		},
 		"theme": "classic",
-		"position": "bottom-right",
+		"position": "bottom-left",
 		"content": {
 			"message": "This website uses cookies when you sign in to grant access to secure resources.",
 			"allow": "Allow cookies",
