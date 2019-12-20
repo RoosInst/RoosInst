@@ -337,221 +337,222 @@
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
-  <script>
-    (function () {
-      var cx = '016663888408278794732:a1ud06__nsq';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();
-  </script>
+    <script>
+      (function () {
+        var cx = '016663888408278794732:a1ud06__nsq';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
 
-  <style>
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      background: #242424;
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #242424;
 
-    }
-
-    html::after {
-      content: '';
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
-
-    .fullScreen {
-      background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-    .center {
-      max-height: 400px;
-      max-width: 500px;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      text-align: center;
-    }
-
-    h1,
-    p {
-      margin: 0;
-      padding: 0;
-      -webkit-animation: funnytext 4s ease-in-out infinite;
-      animation: funnytext 4s ease-in-out infinite;
-    }
-
-    .center h1 {
-      font-size: 16rem;
-      color: rgba(0, 0, 0, 0.3);
-      -webkit-filter: blur(3px);
-      filter: blur(3px);
-      position: relative;
-    }
-
-    p {
-      font-size: 2rem;
-      color: rgba(0, 0, 0, 0.6);
-    }
-
-    body::after,
-    body::before {
-      content: ' ';
-      display: block;
-      position: fixed;
-      left: 0;
-      right: 0;
-      top: -4px;
-      height: 4px;
-      -webkit-animation: scanline 8s linear infinite;
-      animation: scanline 8s linear infinite;
-      opacity: 0.33;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0)), -webkit-canvas(noise);
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0)), -moz-element(#canvas);
-    }
-
-    body::before {
-      -webkit-animation-delay: 4s;
-      animation-delay: 4s;
-    }
-
-    .well {
-      margin: 15px;
-      font-weight: 900;
-      border-radius: 10px;
-      font-size: 18px;
-      background-color: rgba(255, 255, 255, 0.85);
-    }
-
-    canvas {
-      background: #000;
-    }
-
-    @-webkit-keyframes scanline {
-      0% {
-        top: -5px;
       }
 
-      100% {
-        top: 100%;
-      }
-    }
-
-    @keyframes scanline {
-      0% {
-        top: -5px;
+      html::after {
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
       }
 
-      100% {
-        top: 100%;
-      }
-    }
-
-    @-webkit-keyframes funnytext {
-      0% {
-        color: rgba(0, 0, 0, 0.5);
-        -webkit-filter: blur(4px);
+      .fullScreen {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
 
-      30% {
-        color: rgba(0, 0, 0, 0.6);
-        -webkit-filter: blur(2px);
+      .center {
+        max-height: 400px;
+        max-width: 500px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
       }
 
-      65% {
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+        -webkit-animation: funnytext 4s ease-in-out infinite;
+        animation: funnytext 4s ease-in-out infinite;
+      }
+
+      .center h1 {
+        font-size: 16rem;
         color: rgba(0, 0, 0, 0.3);
-        -webkit-filter: blur(6px);
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+        position: relative;
       }
 
-      100% {
-        color: rgba(0, 0, 0, 0.5);
-        -webkit-filter: blur(4px);
-      }
-    }
-
-    @keyframes funnytext {
-      0% {
-        color: rgba(0, 0, 0, 0.5);
-        filter: blur(4px);
-      }
-
-      30% {
+      p {
+        font-size: 2rem;
         color: rgba(0, 0, 0, 0.6);
-        filter: blur(2px);
       }
 
-      65% {
-        color: rgba(0, 0, 0, 0.3);
-        filter: blur(6px);
+      body::after,
+      body::before {
+        content: ' ';
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -4px;
+        height: 4px;
+        -webkit-animation: scanline 8s linear infinite;
+        animation: scanline 8s linear infinite;
+        opacity: 0.33;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0)), -webkit-canvas(noise);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0)), -moz-element(canvas);
       }
 
-      100% {
-        color: rgba(0, 0, 0, 0.5);
-        filter: blur(4px);
+      body::before {
+        -webkit-animation-delay: 4s;
+        animation-delay: 4s;
       }
-    }
-  </style>
 
-  <a href="index.html">
-    <canvas id="canvas"></canvas>
-    <div class="fullScreen"></div>
-  </a>
-  <div class="center">
+      .well {
+        margin: 15px;
+        font-weight: 900;
+        border-radius: 10px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      canvas {
+        background: #000;
+      }
+
+      @-webkit-keyframes scanline {
+        0% {
+          top: -5px;
+        }
+
+        100% {
+          top: 100%;
+        }
+      }
+
+      @keyframes scanline {
+        0% {
+          top: -5px;
+        }
+
+        100% {
+          top: 100%;
+        }
+      }
+
+      @-webkit-keyframes funnytext {
+        0% {
+          color: rgba(0, 0, 0, 0.5);
+          -webkit-filter: blur(4px);
+        }
+
+        30% {
+          color: rgba(0, 0, 0, 0.6);
+          -webkit-filter: blur(2px);
+        }
+
+        65% {
+          color: rgba(0, 0, 0, 0.3);
+          -webkit-filter: blur(6px);
+        }
+
+        100% {
+          color: rgba(0, 0, 0, 0.5);
+          -webkit-filter: blur(4px);
+        }
+      }
+
+      @keyframes funnytext {
+        0% {
+          color: rgba(0, 0, 0, 0.5);
+          filter: blur(4px);
+        }
+
+        30% {
+          color: rgba(0, 0, 0, 0.6);
+          filter: blur(2px);
+        }
+
+        65% {
+          color: rgba(0, 0, 0, 0.3);
+          filter: blur(6px);
+        }
+
+        100% {
+          color: rgba(0, 0, 0, 0.5);
+          filter: blur(4px);
+        }
+      }
+    </style>
+
     <a href="index.html">
-      <h1>50x</h1>
+      <canvas id="canvas"></canvas>
+      <div class="fullScreen"></div>
     </a>
-    <div class="well">
-      The page you are looking for is temporarily unavailable. Please try again later.<br>
-      <a href="javascript:history.back()">Go Back</a> or
-      <button class='link' data-toggle="modal" data-target="#searchModal">Search our website</button>.<br>
-      <small>
-        Feel this was a mistake? Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</a> for assistance
-        with this page, or
-        contact our <a href="/support.html">experienced application engineers</a> for product and technical
-        questions.<br>
-        In the meantime, check out our <a href="/rik">RI Kit Portfolio</a> of accessories or browse <a
-          href="/docs">technical documentation</a> for application notes, white papers, and more.
-      </small>
+    <div class="center">
+      <a href="index.html">
+        <h1>50x</h1>
+      </a>
+      <div class="well">
+        The page you are looking for is temporarily unavailable. Please try again later.<br>
+        <a href="javascript:history.back()">Go Back</a> or
+        <button class='link' data-toggle="modal" data-target="#searchModal">Search our website</button>.<br>
+        <small>
+          Feel this was a mistake? Contact us at <a href="mailto:webmaster@roos.com">webmaster@roos.com</a> for
+          assistance
+          with this page, or
+          contact our <a href="/support.html">experienced application engineers</a> for product and technical
+          questions.<br>
+          In the meantime, check out our <a href="/rik">RI Kit Portfolio</a> of accessories or browse <a
+            href="/docs">technical documentation</a> for application notes, white papers, and more.
+        </small>
+      </div>
     </div>
-  </div>
-  <script>
-    c = document.getElementById("canvas");
-    c.width = screen.width;
-    c.height = screen.height;
-    var ctx = c.getContext("2d", {
-      alpha: false
-    }); // context without alpha channel.
-    var idata = ctx.createImageData(c.width, c.height); // create image data
-    var buffer32 = new Uint32Array(idata.data.buffer); // get 32-bit view
+    <script>
+      c = document.getElementById("canvas");
+      c.width = screen.width;
+      c.height = screen.height;
+      var ctx = c.getContext("2d", {
+        alpha: false
+      }); // context without alpha channel.
+      var idata = ctx.createImageData(c.width, c.height); // create image data
+      var buffer32 = new Uint32Array(idata.data.buffer); // get 32-bit view
 
-    (function loop() {
-      noise(ctx);
-      requestAnimationFrame(loop)
-    })()
+      (function loop() {
+        noise(ctx);
+        requestAnimationFrame(loop)
+      })()
 
-    function noise(ctx) {
-      var len = buffer32.length - 1;
-      while (len--) buffer32[len] = Math.random() < 0.5 ? 0 : -1 >> 0;
-      ctx.putImageData(idata, 0, 0);
-    }
-  </script>
+      function noise(ctx) {
+        var len = buffer32.length - 1;
+        while (len--) buffer32[len] = Math.random() < 0.5 ? 0 : -1 >> 0;
+        ctx.putImageData(idata, 0, 0);
+      }
+    </script>
 </body>
 
 </html>
