@@ -9,7 +9,7 @@
     });
   </script>
 
-  <!-- TOP - v47 -->
+  <!-- TOP - v48 -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -59,6 +59,7 @@
       })
     });
   </script>
+
 </head>
 
 <body>
@@ -68,12 +69,282 @@
           href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
     </div>
   </noscript>
-  <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
   <div id="page-wrapper" class="page-boxed">
+    <!-- ==========================
+        	HEADER - START
+        =========================== -->
+    <div class="top-header hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
+                class="fas fa-envelope"></i> support@roos.com</a></div>
+          <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fas fa-phone"></i>+1-408-748-8589</a></div>
+        </div>
+        <div class="header-item pull-right">
+          <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
+              account&nbsp;&nbsp;</a></span>
+          <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
+              in</span>&nbsp;&nbsp;</a>
+          <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i
+                class="fas fa-sign-out-alt"></i>Sign Out</a></span>
+        </div>
+      </div>
+    </div>
+    <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+      <div class="container">
 
-    <div class="top"></div>
-    <script src="js/loadtop.js"></script>
+        <div class="navbar-header">
+          <div class="visible-xs-block">
+            <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle"
+              data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-bars"></i></button>
+            <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
+                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+          </div>
+
+          <div id="title">
+            <div class="hidden-xs hidden-sm">
+              <a href="/index.html">
+                <div class="mainTitleAdjust">Roos Instruments</div>
+                <div class="ROOSbanner"></div>
+                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most
+                  Advanced
+                  Technology</span>
+              </a>
+            </div>
+            <div class="visible-sm">
+              <a href="/index.html">
+                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+              </a>
+            </div>
+            <div class="visible-xs-block container">
+              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+              <a href="/index.html">
+                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+              </a>
+              <div class="ROOSbanner"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of .navbar-header -->
+        <nav class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li id="nav-home" class="dropdown">
+              <a href="/index.html">Home</a>
+            </li>
+            <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/support.html">Support</a>
+            </li>
+            <li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/commerce/profiles.nsf/myAccount">My Account</a>
+            </li>
+            <li id="nav-products" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Products<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/products.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/infrastructure.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Test
+                    Systems</a>
+                </li>
+                <li><a href="/instruments.html"><i class=" nav-indent1 fas fa-angle-double-right"></i>Instruments</a>
+                </li>
+                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angle-double-right"></i>Browse TIMs</a></li>
+                <li><a href="/software.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Software</a></li>
+                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Device Interface</a>
+                </li>
+                <li><a href="/rik"><i class="fas fa-angle-double-right"></i>RIK Catalog</a></li>
+              </ul>
+            </li>
+            <li id="nav-services" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Services<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/services.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/turnkey.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Turnkey</a></li>
+                <li><a href="/production.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Production</a>
+                </li>
+                <li><a href="/guru.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Enterprise</a></li>
+                <li><a href="/training.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Training</a></li>
+              </ul>
+            </li>
+            <li id="nav-company" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Company<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/company.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                <li><a href="/news.html"><i class="nav-indent1 fas fa-angle-double-right"></i>News & Events</a></li>
+                <li><a href="/careers.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Careers</a></li>
+                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Media Kit</a></li>
+                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Plan a Visit</a></li>
+                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Contact Us</a></li>
+              </ul>
+            </li>
+            <li id="nav-support" class="dropdown yamm-fw hidden-xs">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Support <i
+                  class="fas fa-chevron-down"></i></a>
+              <section id="hideOnSupport" class="dropdown-menu">
+                <div class="yamm-content">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Planning</h3>
+                      <div style="text-align: center">
+                        <a href="/newFullUser" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create
+                          Account</a>
+                      </div>
+                      <div style="width: 150px;" class="centerImg">
+                        <ul style="margin-top: 15px;" class="nav vertical-nav">
+                          <li><a href="/supportPlans.html"><i class="fas fa-angle-double-right"></i>Support Plans</a>
+                          </li>
+                          <li><a href="/maintenance.html"><i class="fas fa-angle-double-right"></i>Maintenance</a>
+                          </li>
+                          <li><a href="/training.html"><i class="fas fa-angle-double-right"></i>Training</a></li>
+                          <li><a href="/commerce/profiles.nsf/myAccount"><i
+                                class="fas fa-angle-double-right"></i>Customer
+                              Account</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Online Documents</h3>
+                      <form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+                        <div class="form-group nospace">
+                          <div id="searchFail" class="alert alert-warning hidden" role="alert">
+                            <strong>Oops!</strong> Search for something.
+                          </div>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="query" placeholder="Search Documentation"
+                              required>
+                            <span onclick="goSearch(); return false;" class="input-group-btn"><button
+                                class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="centerImg" style="width: 150px;">
+                        <ul style="margin-top: 10px" class="nav vertical-nav">
+                          <li><a href="/help/dev"><i class="fas fa-angle-double-right"></i>Developer</a></li>
+                          <li><a href="/help/admin"><i class="fas fa-angle-double-right"></i>Administrator</a></li>
+                          <li><a href="/help/maint"><i class="fas fa-angle-double-right"></i>Maintenance</a></li>
+                          <li><a href="/help/operate"><i class="fas fa-angle-double-right"></i>Operator</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Reference Guide</h3>
+                      <div style="text-align: center">
+                        <a class="btn btn-primary" href="/pdf/CassiniReferenceGuide_2.6_mini.pdf"
+                          download="CassiniReferenceGuide_2.6_mini.pdf"><i class="far fa-file-pdf"></i>Download
+                          PDF</a>
+                        <a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+                          <img style="padding-top: 9px; width: 160px;" class="centerImg"
+                            src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Get Support</h3>
+                      <a class="btn btn-primary" href="mailto:support@roos.com"><i class="fas fa-envelope"></i> Email
+                        Support</a>
+                      <ul style="margin-bottom: 15px; text-align: center;">
+                        <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i
+                              class="fas fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+                        <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+                      </ul>
+                      <div style="text-align: center">
+                        <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                          <i class="fas fa-binoculars"></i> Remote Support</a>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/privacy.html">Privacy</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs">
+            <li style="margin-right: -12px;" class="search-form-toggle">
+              <a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i
+                  class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Print view only -->
+    <div class="clearfix visible-print">
+      <div class="pull-left">
+        <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+      </div>
+      <div class="pull-right">
+        <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Search Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Search</h3>
+          </div>
+          <div class="modal-body">
+            <div class="features-item" id="features-tabs-panels">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fas fa-globe"></i>
+                    &nbsp;Website</a>
+                </li>
+                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i> &nbsp;Documentation<span
+                      class="hidden-xs">(<i class="fas fa-lock"></i> Sign In Required)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="google-search">
+                  <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
+                  </div>
+                  <!-- end of #search -->
+                </div>
+                <div class="tab-pane fade" id="document-search">
+                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
+                          placeholder="Search Documentation" required>
+                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button
+                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        	HEADER - END
+        =========================== -->
+
+    <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
+
+
+
+
 
     <!-- ==========================
     	BREADCRUMB - START
@@ -98,10 +369,13 @@
             <h5>About Roos Instruments</h5>
             <p class="main">
               Roos Instruments integrates over 20 years of research into our ATE systems.  We designed the Cassini
-              platform to be modular from the ground up so that it can be reconfigured for any new device or test plan,
+              platform to be modular from the ground up so that it can be reconfigured for any new device or test
+              plan,
               no matter how advanced.  Its streamlined design
-              gives Cassini the purest test signals in the industry and pinpoint accuracy from DC to 86 GHz and beyond.
-              Cassini’s software is intuitive enough to save months in test development and time-to market, yet powerful
+              gives Cassini the purest test signals in the industry and pinpoint accuracy from DC to 86 GHz and
+              beyond.
+              Cassini’s software is intuitive enough to save months in test development and time-to market, yet
+              powerful
               enough for fast and accurate
               testing of the world's most advanced high-frequency technology.
             </p>
@@ -223,13 +497,15 @@
           <div class="col-sm-8">
             <h3>Corporate History</h3>
             <p class="main">
-              Roos Instruments, Inc. was founded in 1989 by a group of RF Microwave engineers, out of the bench-top test
+              Roos Instruments, Inc. was founded in 1989 by a group of RF Microwave engineers, out of the bench-top
+              test
               equipment industry, to create an automated microwave test system using a fundamentally new approach. The
               concept was to combine a personal computer
               and object oriented software technology with high speed microwave measurement technology, creating the
               world's first true Microwave ATE system. A true <abbr title="Automated Test Equipment">ATE</abbr> system
               is one that is
-              designed with the sole purpose of testing parts at the highest throughput possible while operating in all
+              designed with the sole purpose of testing parts at the highest throughput possible while operating in
+              all
               types of environmental conditions anywhere in the world. The goal was to deliver a turnkey test solution
               with an order of magnitude
               higher throughput.
@@ -248,18 +524,22 @@
                 The US military was in the midst of a large Manufacturing Technology research and development effort
                 (the <a href="https://www.dodmantech.com/">ManTech</a> program), looking for novel approaches to speed
                 the production of microwave hardware
-                while lowering the cost. RI was awarded a grant to prototype and demonstrate our Microwave ATE concepts.
+                while lowering the cost. RI was awarded a grant to prototype and demonstrate our Microwave ATE
+                concepts.
                 Under the leadership and vision of it's founder Mark Roos, a 10 to 100 times improvement in test
                 throughput was demonstrated, which
-                lead to a firm contract to produce a marketable product. This first product addressed the X and Ku band
-                interests for the military radar market covering the 100 MHz to 20 GHz range. The direction and funding
+                lead to a firm contract to produce a marketable product. This first product addressed the X and Ku
+                band
+                interests for the military radar market covering the 100 MHz to 20 GHz range. The direction and
+                funding
                 of the Man Tech program allowed
                 Roos Instruments to be born without the need for venture capital funding and is still today internally
                 funded as well as employee owned and operated.
               </p>
               <p class="main">
                 Mark Roos is the founder and CEO of Roos Instruments, a position he has held since its inception in
-                1989. Mark graduated from California State Polytechnic University with a B.S. in Electrical Engineering
+                1989. Mark graduated from California State Polytechnic University with a B.S. in Electrical
+                Engineering
                 in 1973, holds a <abbr title="Masters of Science">MS</abbr> in Electrical Engineering from Stanford
                 University, and an <abbr title="Masters of
 							Business Administration">MBA</abbr> from Santa Clara University.
@@ -268,13 +548,16 @@
                 Measurement technology has been the focus of his entire career starting with his early work experience
                 as R&D Project Leader for Hewlett-Packard (later Agilent) Network Measurements Division in Santa Rosa
                 where he was responsible for the microwave receiver
-                and processing (i.e. "bottom box") of the record-breaking HP 8510 Microwave Network Analyzer. After the
+                and processing (i.e. "bottom box") of the record-breaking HP 8510 Microwave Network Analyzer. After
+                the
                 enormous success of that network analyzer, Mark went on to lead the marketing efforts for HP's RF and
                 Scalar Microwave Network Analyzer
-                products. The next phase of Mark's career was VP of Engineering for EIP Microwave, a maker of electronic
+                products. The next phase of Mark's career was VP of Engineering for EIP Microwave, a maker of
+                electronic
                 counters and other instrumentation. While at EIP, he discovered a need for high performance automated
                 instruments. He left EIP to
-                found Roos Instruments to serve this market for high-speed RF instrumentation with capabilities suitable
+                found Roos Instruments to serve this market for high-speed RF instrumentation with capabilities
+                suitable
                 for high volume manufacturing.
               </p>
               <p class="main">
@@ -282,7 +565,8 @@
                 <abbr title="Small Business Innovative Research">SBIR</abbr> grant. The initial funding allowed Roos
                 Instruments to develop a totally new approach to RF measurements using a single receiver and advanced
                 software -- ideas Mark pioneered.
-                Early in 1994, Roos Instruments won a comprehensive benchmark at Motorola with the RI7100A, resulting in
+                Early in 1994, Roos Instruments won a comprehensive benchmark at Motorola with the RI7100A, resulting
+                in
                 its first major success. Thus began Roos Instruments' rise as the supplier of these advanced
                 technologies in production testers world-wide.
               </p>
@@ -300,7 +584,8 @@
               <div class="service-body">
                 <h3>Green Initative</h3>
                 <p class="main">
-                  Roos Instruments' commitment to corporate social responsibility leads the industry with 100% renewable
+                  Roos Instruments' commitment to corporate social responsibility leads the industry with 100%
+                  renewable
                   energy, commitment to reclaim and recycle all RI equipment, and a commitment to reduce and reuse
                   office resources. We also adopt the Responsible Business Alliance's Code of Conduct.<br>
                   <a href="/green.html">Learn More &raquo;</a>
@@ -337,7 +622,8 @@
                   <li><a href="/legal.html">Legal Statement</a></li>
                   <li><a href="/terms.html">Contract Terms</a></li>
                   <li><a href="/mediaKit.html">Media Kit</a></li>
-                  <li><a href="http://www.responsiblebusiness.org/standards/code-of-conduct/" target="_new">RBA Code of
+                  <li><a href="http://www.responsiblebusiness.org/standards/code-of-conduct/" target="_new">RBA Code
+                      of
                       Conduct</a></li>
                 </ul>
               </div>
@@ -359,7 +645,8 @@
               <a href="/pdf/Roos-Rtalk12.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
             </div>
             "Live" Smalltalk Environment on JVM presentation by Mark Roos at the <a
-              href="http://www.oracle.com/technetwork/java/javase/community/jvmls2012-1840099.html">JVM Language Summit
+              href="http://www.oracle.com/technetwork/java/javase/community/jvmls2012-1840099.html">JVM Language
+              Summit
               2012</a>
           </li>
           <li>
@@ -368,7 +655,8 @@
               <a href="/pdf/Roos-Rtalk11.pdf" class="btn btn-default"><i class="fas fa-desktop"></i>Slides</a>
             </div>
             Smalltalk Dynamic Lanugage on JVM at the <a
-              href="http://www.oracle.com/technetwork/java/javase/community/jvmls2011-sessions-461516.html">JVM Language
+              href="http://www.oracle.com/technetwork/java/javase/community/jvmls2011-sessions-461516.html">JVM
+              Language
               Summit 2011</a>
           </li>
         </ul>

@@ -9,7 +9,7 @@
     });
   </script>
 
-  <!-- TOP - v47 -->
+  <!-- TOP - v48 -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -59,6 +59,7 @@
       })
     });
   </script>
+
 </head>
 
 <body>
@@ -68,12 +69,282 @@
           href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
     </div>
   </noscript>
-  <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
   <div id="page-wrapper" class="page-boxed">
+    <!-- ==========================
+        	HEADER - START
+        =========================== -->
+    <div class="top-header hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
+                class="fas fa-envelope"></i> support@roos.com</a></div>
+          <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fas fa-phone"></i>+1-408-748-8589</a></div>
+        </div>
+        <div class="header-item pull-right">
+          <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
+              account&nbsp;&nbsp;</a></span>
+          <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
+              in</span>&nbsp;&nbsp;</a>
+          <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i
+                class="fas fa-sign-out-alt"></i>Sign Out</a></span>
+        </div>
+      </div>
+    </div>
+    <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+      <div class="container">
 
-    <div class="top"></div>
-    <script src="js/loadtop.js"></script>
+        <div class="navbar-header">
+          <div class="visible-xs-block">
+            <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle"
+              data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-bars"></i></button>
+            <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
+                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+          </div>
+
+          <div id="title">
+            <div class="hidden-xs hidden-sm">
+              <a href="/index.html">
+                <div class="mainTitleAdjust">Roos Instruments</div>
+                <div class="ROOSbanner"></div>
+                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most
+                  Advanced
+                  Technology</span>
+              </a>
+            </div>
+            <div class="visible-sm">
+              <a href="/index.html">
+                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+              </a>
+            </div>
+            <div class="visible-xs-block container">
+              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+              <a href="/index.html">
+                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+              </a>
+              <div class="ROOSbanner"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of .navbar-header -->
+        <nav class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li id="nav-home" class="dropdown">
+              <a href="/index.html">Home</a>
+            </li>
+            <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/support.html">Support</a>
+            </li>
+            <li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/commerce/profiles.nsf/myAccount">My Account</a>
+            </li>
+            <li id="nav-products" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Products<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/products.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/infrastructure.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Test
+                    Systems</a>
+                </li>
+                <li><a href="/instruments.html"><i class=" nav-indent1 fas fa-angle-double-right"></i>Instruments</a>
+                </li>
+                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angle-double-right"></i>Browse TIMs</a></li>
+                <li><a href="/software.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Software</a></li>
+                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Device Interface</a>
+                </li>
+                <li><a href="/rik"><i class="fas fa-angle-double-right"></i>RIK Catalog</a></li>
+              </ul>
+            </li>
+            <li id="nav-services" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Services<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/services.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/turnkey.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Turnkey</a></li>
+                <li><a href="/production.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Production</a>
+                </li>
+                <li><a href="/guru.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Enterprise</a></li>
+                <li><a href="/training.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Training</a></li>
+              </ul>
+            </li>
+            <li id="nav-company" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Company<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/company.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                <li><a href="/news.html"><i class="nav-indent1 fas fa-angle-double-right"></i>News & Events</a></li>
+                <li><a href="/careers.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Careers</a></li>
+                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Media Kit</a></li>
+                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Plan a Visit</a></li>
+                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Contact Us</a></li>
+              </ul>
+            </li>
+            <li id="nav-support" class="dropdown yamm-fw hidden-xs">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Support <i
+                  class="fas fa-chevron-down"></i></a>
+              <section id="hideOnSupport" class="dropdown-menu">
+                <div class="yamm-content">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Planning</h3>
+                      <div style="text-align: center">
+                        <a href="/newFullUser" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create
+                          Account</a>
+                      </div>
+                      <div style="width: 150px;" class="centerImg">
+                        <ul style="margin-top: 15px;" class="nav vertical-nav">
+                          <li><a href="/supportPlans.html"><i class="fas fa-angle-double-right"></i>Support Plans</a>
+                          </li>
+                          <li><a href="/maintenance.html"><i class="fas fa-angle-double-right"></i>Maintenance</a>
+                          </li>
+                          <li><a href="/training.html"><i class="fas fa-angle-double-right"></i>Training</a></li>
+                          <li><a href="/commerce/profiles.nsf/myAccount"><i
+                                class="fas fa-angle-double-right"></i>Customer
+                              Account</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Online Documents</h3>
+                      <form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+                        <div class="form-group nospace">
+                          <div id="searchFail" class="alert alert-warning hidden" role="alert">
+                            <strong>Oops!</strong> Search for something.
+                          </div>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="query" placeholder="Search Documentation"
+                              required>
+                            <span onclick="goSearch(); return false;" class="input-group-btn"><button
+                                class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="centerImg" style="width: 150px;">
+                        <ul style="margin-top: 10px" class="nav vertical-nav">
+                          <li><a href="/help/dev"><i class="fas fa-angle-double-right"></i>Developer</a></li>
+                          <li><a href="/help/admin"><i class="fas fa-angle-double-right"></i>Administrator</a></li>
+                          <li><a href="/help/maint"><i class="fas fa-angle-double-right"></i>Maintenance</a></li>
+                          <li><a href="/help/operate"><i class="fas fa-angle-double-right"></i>Operator</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Reference Guide</h3>
+                      <div style="text-align: center">
+                        <a class="btn btn-primary" href="/pdf/CassiniReferenceGuide_2.6_mini.pdf"
+                          download="CassiniReferenceGuide_2.6_mini.pdf"><i class="far fa-file-pdf"></i>Download
+                          PDF</a>
+                        <a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+                          <img style="padding-top: 9px; width: 160px;" class="centerImg"
+                            src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Get Support</h3>
+                      <a class="btn btn-primary" href="mailto:support@roos.com"><i class="fas fa-envelope"></i> Email
+                        Support</a>
+                      <ul style="margin-bottom: 15px; text-align: center;">
+                        <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i
+                              class="fas fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+                        <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+                      </ul>
+                      <div style="text-align: center">
+                        <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                          <i class="fas fa-binoculars"></i> Remote Support</a>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/privacy.html">Privacy</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs">
+            <li style="margin-right: -12px;" class="search-form-toggle">
+              <a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i
+                  class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Print view only -->
+    <div class="clearfix visible-print">
+      <div class="pull-left">
+        <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+      </div>
+      <div class="pull-right">
+        <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Search Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Search</h3>
+          </div>
+          <div class="modal-body">
+            <div class="features-item" id="features-tabs-panels">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fas fa-globe"></i>
+                    &nbsp;Website</a>
+                </li>
+                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i> &nbsp;Documentation<span
+                      class="hidden-xs">(<i class="fas fa-lock"></i> Sign In Required)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="google-search">
+                  <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
+                  </div>
+                  <!-- end of #search -->
+                </div>
+                <div class="tab-pane fade" id="document-search">
+                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
+                          placeholder="Search Documentation" required>
+                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button
+                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        	HEADER - END
+        =========================== -->
+
+    <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
+
+
+
+
 
     <!-- ==========================
     	BREADCRUMB - START
@@ -101,8 +372,10 @@
         <div class="col-sm-10 col-sm-offset-1">
           <p class="main">
             Accurate measurements are made not only by using the right equipment, but also employing the right
-            practices. The software environment dynamically builds VNA, spectrum analyzer, and power meter functionality
-            from the instrument configuration and resource interconnections. Combined with a code base of over 30 years
+            practices. The software environment dynamically builds VNA, spectrum analyzer, and power meter
+            functionality
+            from the instrument configuration and resource interconnections. Combined with a code base of over 30
+            years
             of microwave test and measurement experience, Cassini delivers streamlined multi-instrument test in a
             simple, more powerful test work flow. This expert system software enables a user to design and execute
             sophisticated microwave measurements accurately and reliably every time.
@@ -148,7 +421,8 @@
             software and hardware. Test programs are compiled into a dedicated, run-time state machine on FPGAs that
             drive the instrumentation and signal processing in real time. This produces faster tests, consistent
             measurements, and enables a powerful feature never before possible in an ATE system - intelligent test
-            optimization. Built into the compiler is Synapse, a test state optimizer that guarantees the most efficient
+            optimization. Built into the compiler is Synapse, a test state optimizer that guarantees the most
+            efficient
             program execution on any tester configuration. </p>
           <ul style="padding-right: 40px;">
             <li>
@@ -167,8 +441,10 @@
               parallel, and organizes the overall test flow to reduce processing and execution overhead. </li>
             <li><img alt="Synapse Test State Optimizer (Fastest Test Time)" src="/images/synapse_flow3.jpg"
                 style="margin-top: 20px; margin-bottom: 5px; max-width: 100%">
-              The result is a test program that is twice as fast (Typical test time improvement) and guarantees the most
-              efficient execution on any Cassini instrument and tester configuration. With full user control over where
+              The result is a test program that is twice as fast (Typical test time improvement) and guarantees the
+              most
+              efficient execution on any Cassini instrument and tester configuration. With full user control over
+              where
               and how Synapse optimizes the test program, the focus can be put back on test and measurement design.
             </li>
           </ul>
@@ -181,10 +457,13 @@
       <div class="row">
         <div class="col-sm-6">
           <p class="main">
-            Guru is the first of its kind, integrating the file system with a database and networking backbone to create
-            a seamless software work flow. With an integrated local and network storage architecture, Guru manages file
+            Guru is the first of its kind, integrating the file system with a database and networking backbone to
+            create
+            a seamless software work flow. With an integrated local and network storage architecture, Guru manages
+            file
             directories, tester configuration resources, and storage space automatically across the entire production
-            floor. Users can create tests and link resources while Guru keeps track of dependencies and distribution for
+            floor. Users can create tests and link resources while Guru keeps track of dependencies and distribution
+            for
             easy organization and quick deployment to production with a host of powerful features. </p>
           <ul>
             <li>Digitally signs and encrypts files for reliable data transfer</li>
@@ -294,10 +573,12 @@
       <h5>Software Architecture</h5>
       <p>
         From its inception Roos Instruments designed Cassini to have a more comprehensive interaction between ATE
-        hardware and software. We found the best results by using a state-based approach in our software; it allows the
+        hardware and software. We found the best results by using a state-based approach in our software; it allows
+        the
         software's commands to operate on the hardware components as state-based objects. It becomes easier to develop
         test plans and measurement algorithms when the programming interface reflects the changes in hardware states
-        that occur during a test. The following section explains our approach to ATE software and how to use it to build
+        that occur during a test. The following section explains our approach to ATE software and how to use it to
+        build
         measurements, create test plans, and control the flow of test execution.
       </p>
 
@@ -406,11 +687,14 @@
       <h5>Rapid Development</h5>
       <p>
         Simple, reliable test hardware driven by novel system software sets the RI tester apart from the competition.
-        Designed to make fundamental measurements, the system hardware is tailored for speed, reliability and stability.
+        Designed to make fundamental measurements, the system hardware is tailored for speed, reliability and
+        stability.
         Typical time-wasters such as redundant measurement states, error correction calculations, and instrument
         processing delays are reduced or eliminated through sophisticated automatic test plan optimization. Complex
-        measurements are synthesized by the system software from the fundamental measurements taken at very high speed,
-        woven together with the data processing to create error corrected data. With little effect on system speed, the
+        measurements are synthesized by the system software from the fundamental measurements taken at very high
+        speed,
+        woven together with the data processing to create error corrected data. With little effect on system speed,
+        the
         measurements are unobtrusively captured and saved by the built-in database. RI's
         virtual instrument design provides superior performance at lower cost and high reliability.
       </p>
@@ -418,16 +702,20 @@
       <h5>Graphical Test Plan Creation Tools</h5>
       <p>
         Test plan development plays a crucial role in the time-to-market equation. RI software provides the tools that
-        enable engineers to quickly and easily debug tests, revise test programs, document, and analyze test data. Test
+        enable engineers to quickly and easily debug tests, revise test programs, document, and analyze test data.
+        Test
         plan creation is fast and intuitive with a graphical test plan editor. Just cut and paste tests as dictated by
-        your requirements. RI systems allow your test engineers to design in a completely new and highly productive way.
+        your requirements. RI systems allow your test engineers to design in a completely new and highly productive
+        way.
         Operating in a multitasking graphical environment, test designers use a mouse to manipulate graphical objects
-        (buttons) representing measurement processes, parameters and test results. Buttons are connected graphically and
+        (buttons) representing measurement processes, parameters and test results. Buttons are connected graphically
+        and
         parameter values are set, resulting in a simplified flow chart-like picture of the test. Completed tests are
         stored in graphic form and are easily recalled and modified to create new tests. </p>
       <h5>Measurement Expert System</h5>
       <p>
-        An ATE system needs both the right instruments and streamlined processes in order to deliver consistent results.
+        An ATE system needs both the right instruments and streamlined processes in order to deliver consistent
+        results.
         This is especially true when production testing requires a durable DUT interface, consistency across multiple
         testers, and fast test times. Cassini integrates 80 collective years of microwave expertise into its workflow.
         Our expertise translates into accurate measurements, robust hardware, and a simplified user experience.
@@ -450,20 +738,24 @@
         Whether characterizing a part with hundreds of parameters or performing production testing with only a few
         parameters, capturing and storing measurement data is effortless with the integrated RI database. Test plans
         automatically store all system state,
-        user and device information as standard data types in an SQL relational database. RI's Advanced Analysis Package
-        allows you to analyze, summarize and view data, or export it to a variety of database and spread sheet formats.
+        user and device information as standard data types in an SQL relational database. RI's Advanced Analysis
+        Package
+        allows you to analyze, summarize and view data, or export it to a variety of database and spread sheet
+        formats.
       </p>
 
       <h5>Scalable User Interface</h5>
       <p>
         Log-on and security features of the RI software automatically tailor the user interface to fit the various
-        requirements of the current user. System operators can easily select tests and start and stop the tester with a
+        requirements of the current user. System operators can easily select tests and start and stop the tester with
+        a
         click of the mouse. Technicians
         can view real-time graphical test results to monitor fixture performance and overall lot/sublot performance.
         Production test engineers maintain complete control over tests and data. At RI, we recognize the unique
         requirements
         of each customer.
-        We are prepared to work with customers to modify the interfaces to match specific production test environments.
+        We are prepared to work with customers to modify the interfaces to match specific production test
+        environments.
         We
         also modify our data export formats to support existing data collection systems.
       </p>
