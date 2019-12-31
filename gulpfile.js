@@ -62,8 +62,8 @@
   /**************** images task ****************/
 
   const imgConfig = {
-    src: dir.src + 'src/images/**/*',
-    build: dir.build + 'build/images/',
+    src: dir.src + 'images/**/*',
+    build: dir.build + 'images/',
 
     minOpts: {
       optimizationLevel: 5
@@ -85,15 +85,15 @@
   /** SASS compiles to CSS, roos-print.css just cleaned,
    *  everything is concatenated to roos-min.css */
   const cssConfig = {
-    scssSrc: dir.src + '/css/**/*.scss',
-    altSrc: dir.src + '/css/roos-*.css',
-    src: dir.src + '/css/**/!(roos-)*.css',
-    watch: dir.src + '/css/**/*',
-    build: dir.build + '/css/',
+    scssSrc: dir.src + 'css/**/*.scss',
+    altSrc: dir.src + 'css/roos-*.css',
+    src: dir.src + 'css/**/!(roos-)*.css',
+    watch: dir.src + 'css/**/*',
+    build: dir.build + 'css/',
     sassOpts: {
       sourceMap: devBuild,
       outputStyle: 'nested',
-      imagePath: '/images/',
+      imagePath: imgConfig.src,
       precision: 3,
       errLogToConsole: true
     },
@@ -111,17 +111,17 @@
   /**************** HTML task ****************/
 
   const htmlConfig = {
-    src: dir.src + '/*.html',
-    watch: dir.src + '/**/*.html',
-    build: dir.build + '/'
+    src: dir.src + '*.html',
+    watch: dir.src + '**/*.html',
+    build: dir.build
   }
 
   /**************** JS task ****************/
 
   const jsConfig = {
     src: dir.src + 'js/**/*',
-    watch: dir.src + '/js/**/*.js',
-    build: dir.build + '/js/'
+    watch: dir.src + 'js/**/*.js',
+    build: dir.build + 'js/'
   }
 
   /**************** Include Templating w/ @file ***/
