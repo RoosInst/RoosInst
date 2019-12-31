@@ -41,7 +41,8 @@
     fileinclude = require('gulp-file-include'),
     //sync = require('gulp-npm-script-sync'),
     //sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
-    browsersync = devBuild ? require('browser-sync').create() : null;
+    browsersync = devBuild ? require('browser-sync').create() : null,
+    webp = require("gulp-webp");
 
 
 
@@ -70,8 +71,14 @@
     }
   };
 
-  function images() {
+  function webp() {
+    return gulp.src(imgConfig.src + '.{png,jpg,jpeg}')
+      .pipe(webp())
+      .pipe(gulp.dest(imgConfig.build));
+  }
+  exports.webp = webp;
 
+  function images() {
     return gulp.src(imgConfig.src)
       .pipe(newer(imgConfig.build))
       .pipe(imagemin(imgConfig.minOpts))
