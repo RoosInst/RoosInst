@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* Before using make sure you have:
    npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
-   npm install gulp gulp-newer gulp-imagemin --save-dev
+   npm install gulp gulp-newer gulp-imagemin gulp-webp --save-dev
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
    npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
@@ -71,12 +71,12 @@
     }
   };
 
-  function webp() {
+  function convertToWebp() {
     return gulp.src(imgConfig.src + '.{png,jpg,jpeg}')
       .pipe(webp())
       .pipe(gulp.dest(imgConfig.build));
   }
-  exports.webp = webp;
+  exports.convertToWebp = convertToWebp;
 
   function images() {
     return gulp.src(imgConfig.src)

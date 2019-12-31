@@ -1,6 +1,6 @@
 {
   "name": "roosinst",
-  "version": "5.1",
+  "version": "5.1.0",
   "description": "roos.com website (static pages)",
   "main": "gulpfile.js",
   "scripts": {
@@ -959,7 +959,7 @@
       "version": "1.5.1"
     },
     "cookie-bar": "^1.7.8",
-    "cookie-consent-box": "^2.3.1",
+    "cookie-consent-box": "^2.4.0",
     "cookieconsent": "^3.1.1",
     "copy-descriptor": {
       "integrity": "sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=",
@@ -6625,10 +6625,10 @@
     }
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
-    "autoprefixer": "^9.7.1",
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
-    "browserslist": "^4.7.2",
+    "browserslist": "^4.8.2",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^3.0.0",
@@ -6655,6 +6655,7 @@
     "gulp-strip-debug": "^3.0.0",
     "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
     "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
     "postcss-assets": "^5.0.0"
