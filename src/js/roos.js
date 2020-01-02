@@ -275,7 +275,7 @@ $(document).ready(function () {
 		$("#newuser").addClass("hidden");
 	}
 
-	//Document Search
+	//Document Search (with up to 4 different search forms/fields)
 	$("#docSearchButton").click(function () { goSearch() });
 	$("#docSearchButton2").click(function () { goSearch2() });
 	$("#docSearchButton3").click(function () { goSearch3() });
@@ -436,23 +436,23 @@ function goSearch4() {
 } //end function
 
 //site-wide cookie opt-in
-window.addEventListener("load", function () {
+/* window.addEventListener("load", function () {
 	window.cookieconsent.initialise({
 		"palette": {
 			"popup": {
 				"background": "#252e39"
 			},
 			"button": {
-				"background": "#084aa1"
+				"background": "#4676B8"
 			}
 		},
 		"theme": "classic",
 		"position": "bottom-left",
 		"content": {
-			"message": "This website uses cookies when you sign in to grant access to secure resources.",
+			"message": "This website uses cookies when searching or if you sign in.",
 			"allow": "Allow cookies",
 			"link": "Learn more",
 			"href": "https://roos.com/privacy.html"
 		}
 	})
-});
+}); */
