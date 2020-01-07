@@ -983,13 +983,17 @@ body #services.services3 .service:hover i {
   .dropdown-menu > li > a {
     font-size: 13px; }
   .forms-only {
-    padding: 0 80px; } }
+    padding: 0 80px; }
+  .overlay-wrapper .overlay a {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: -15px; } }
 
 @media (max-width: 991px) {
   .overlay-wrapper .overlay a {
-    font-size: 60px;
-    margin-left: -25px;
-    margin-top: -38px; }
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: -15px; }
   .breadcrumb-wrapper .breadcrumb {
     display: none; }
   footer {
@@ -1238,12 +1242,6 @@ input.gsc-input, .gsc-input-box, .gsc-search-button {
 
 .upper {
   text-transform: uppercase; }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .overlay-wrapper .overlay a {
-    font-size: 24px;
-    margin-left: -60px;
-    margin-top: -18px; } }
 
 #services .service ul {
   margin: 0; }
