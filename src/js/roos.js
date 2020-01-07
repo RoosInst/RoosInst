@@ -10,6 +10,7 @@ jquery.magnific-popup.min.js
 jquery.maphilight.js
 jquery.qtip.js
 jquery.roundabout.min.js
+js.cookie.min.js
 loadbottom.js
 loadtop.js
 owl.carousel.min.js
