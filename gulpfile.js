@@ -40,7 +40,7 @@
     postcss = require('gulp-postcss'),
     fileinclude = require('gulp-file-include'),
     //sync = require('gulp-npm-script-sync'),
-    //sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
+    sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
     browsersync = devBuild ? require('browser-sync').create() : null,
     webp = require("gulp-webp");
 
@@ -205,10 +205,10 @@
 
     return gulp.src(cssConfig.src)
       .pipe(size({ showFiles: true }))
-      // .pipe(sourcemaps ? sourcemaps.init() : noop())
+      .pipe(sourcemaps ? sourcemaps.init() : noop())
       .pipe(concatcss('roos.min.css'))
       .pipe(cleanCSS())
-      //  .pipe(sourcemaps ? sourcemaps.write() : noop())
+      .pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
       .pipe(postcss(cssConfig.postCSS))
       .pipe(gulp.dest(cssConfig.build))
