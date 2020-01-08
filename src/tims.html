@@ -358,7 +358,7 @@
     	BREADCRUMB - END
     =========================== -->
     <style>
-      .tim-specs img {
+      .tim-specs a img {
         height: 175px;
         width: auto;
       }
@@ -371,18 +371,18 @@
             Cassini isn’t just modular instruments, it’s a modular architecture and there’s a difference. Test
             Instrument Modules (TIMs) provide the building blocks for a configurable microwave system with resource
             ports designed to integrate seamlessly, creating a flexible instrument architecture. This gives Cassini drop
-            in measurement capability and frequency extension as well as instant multi-site expansion.
+            in measurement capability and frequency extension as well as instant multi-site expansion with all the DC,
+            mixed signal, and communication pins that an IC might need.
           </p>
           <a href="https://roos.com/web/All_TIM_Briefs.zip" title="All TIM Briefs (zip)" class="link">Download All TIM
             Briefs (.zip) &raquo;</a>
         </div>
       </div>
-
       <!-- TODO NEED TO ADD PA TIM
-      <li class="hidden"><a href="/pdf/RI8595_PowerAmplifier.pdf" title="RI8595" class="link"
-          onclick="ga('send','event','PDF','view','RI8595 PA')">RF Power Amplifier</a> <small>RI8595</small></li>
- -->
-      <hr class="space">
+          <li class="hidden"><a href="/pdf/RI8595_PowerAmplifier.pdf" title="RI8595" class="link"
+              onclick="ga('send','event','PDF','view','RI8595 PA')">RF Power Amplifier</a> <small>RI8595</small></li>
+     -->
+      <hr id="source" class="space">
       <div class="row">
         <div class="col-sm-2">
           <img src="images/mod_src.png" alt="Source Icon">
@@ -396,7 +396,6 @@
       </div>
 
       <div class="row">
-
         <div class="col-sm-3" style="padding: 0 30px;">
           <a href="#" title="RI7725" target="_blank">
             <img alt="RI7725 20 GHz Source" src="images/RI7725C_Source_20GHz.gif">
@@ -421,19 +420,6 @@
           <p>Modulated Output</p>
         </div>
 
-
-        <div class="col-sm-3" style="padding: 0 30px;">
-          <a href="/pdf/RI8577_Combiner.pdf" title="RI8577" target="_blank">
-            <img alt="RI8577 20 GHz Combiner" src="images/RI8577_Combiner.jpg">
-            <h4>RI8577</h4>
-            <div style="width: 100%; border: 2px solid #324993; margin-bottom: 10px;"></div>
-          </a>
-          <p>100kHz to 20GHz</p>
-          <p>2-Tone Signal Routing</p>
-          <p>2 Step Attenuators</p>
-          <p>2 Low Noise Amplifiers</p>
-        </div>
-
         <div class="col-sm-3" style="padding: 0 30px;">
           <a href="/pdf/RI8594_HighPerformanceWaveformMeasure.pdf" title="RI8594" target="_blank">
             <img title="Waveform Measure and Low Noise Clock" alt="RI8594 Waveform/Measure and Low Noise Clock"
@@ -448,10 +434,67 @@
           <p>Low Noise Clock</p>
         </div>
 
+        <div class="col-sm-3" style="padding: 0 30px;">
+          <a href="#" title="RI8595" target="_blank">
+            <img alt="RI8595 6 GHz Power Amplifier" src="images/RI8577_Combiner.jpg" title="Actual TIM Not Pictured">
+            <h4>RI8595</h4>
+            <div style="width: 100%; border: 2px solid #324993; margin-bottom: 10px;"></div>
+          </a>
+          <p>Power Amplification to 20 Watts</p>
+          <p>700kHz to 6GHz</p>
+          <p>P1dB exceeds 10 Watts</p>
+          <p>Power Accuracy &plusmn;1 dB</p>
+        </div>
+
       </div>
 
 
-      <hr class="space">
+
+      <hr id="combiner" class="space">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="images/mod_comb.png" alt="Combiners Icon">
+        </div>
+        <div class="col-sm-9" style="padding: 0 30px;">
+          <h3>Signal Combination</h3>
+          <p>These instruments extend the capability of microwave sources by providing signal routing and signal
+            conditioning features. Two input sources can be routed out of 4 different outputs for increased port
+            efficiency. Built-in step attenuators and amplifications extends the dynamic range of traditional sources
+            providing 150dB of adjustable dynamic range. Precision microwave combiners enable two-tone signal delivery
+            for high performance intermodulation and linearity test setups.</p>
+          <a href="/core.html#Sourcing">Learn More &raquo;</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2" style="padding: 0 30px;"></div>
+        <div class="col-sm-3" style="padding: 0 30px;">
+          <a href="/pdf/RI8577_Combiner.pdf" title="RI8577" target="_blank">
+            <img alt="RI8577 20 GHz Combiner" src="images/RI8577_Combiner.jpg">
+            <h4>RI8577</h4>
+            <div style="width: 100%; border: 2px solid #324993; margin-bottom: 10px;"></div>
+          </a>
+          <p>100kHz to 20GHz</p>
+          <p>2-Tone Signal Routing</p>
+          <p>2 Step Attenuators</p>
+          <p>2 Low Noise Amplifiers</p>
+        </div>
+
+        <div class="col-sm-3" style="padding: 0 30px;">
+          <a href="#" title="RI8605" target="_blank">
+            <img alt="RI8605 20 GHz Combiner" src="images/RI8577_Combiner.jpg" title="Actual TIM Not Pictured">
+            <h4>RI8605</h4>
+            <div style="width: 100%; border: 2px solid #324993; margin-bottom: 10px;"></div>
+          </a>
+          <p>100kHz to 20GHz</p>
+          <p>2 RF Input Ports</p>
+          <p>8 RF Outut Ports</p>
+          <p>2 Low Noise Amplifiers</p>
+        </div>
+      </div>
+
+
+      <hr id="receiver" class="space">
       <div class="row">
         <div class="col-sm-2">
           <img src="images/mod_rec.png" alt="Receiver Icon">
@@ -492,7 +535,7 @@
             <div style="width: 100%; border: 2px solid #1e441b; margin-bottom: 10px;"></div>
           </a>
           <p>100kHz to 12GHz</p>
-          <p>2 RF Inputs</p>
+          <p>2 Vector Tx/Rx Ports</p>
           <p>Internal LO and IF Out</p>
           <p>Continuous & Pulsed with DSP</p>
           <p>Noise Figure up to 12 GHz</p>
@@ -512,7 +555,7 @@
         </div>
       </div>
 
-      <hr class="space">
+      <hr id="testset" class="space">
       <div class="row">
         <div class="col-sm-2">
           <img src="images/mod_ts.png" alt="Testset Icon">
@@ -581,7 +624,7 @@
         </div>
       </div>
 
-      <hr class="space">
+      <hr id="dc" class="space">
       <div class="row">
         <div class="col-sm-2">
           <img src="images/dc.png" alt="DC and Digital Icon">
@@ -636,10 +679,7 @@
           <p>Native JTAG Support for SCAN</p>
         </div>
       </div>
-    </div>
-
-    <hr class="space">
-    <!-- End of #content block-->
+    </div><!-- End of #content block-->
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
