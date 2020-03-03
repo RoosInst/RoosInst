@@ -354,7 +354,6 @@ function logout() {
 	$("#username").html("<i class='fa fa-lock'></i> Sign in");
 	$("#logout").addClass("hidden");
 	$("#newuser").removeClass("hidden");
-	location.reload();
 }
 
 //search RI Product documentation.  All 4 functions are similar, just use a different input field.
