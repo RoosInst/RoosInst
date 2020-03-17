@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Continuity of Service During COVID-19 Pandemic | Roos Instruments</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("nav-company").classList.add("active");
+    });
+  </script>
+
+  <!-- TOP - v49 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Roos Instruments combines over 20 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
+  <meta name="author" content="Roos Instruments, Inc.">
+  <meta name="theme-color" content="#f0f0f0">
+
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="/css/roos.min.css?v2" rel="stylesheet" id="pageTheme">
+  <link href="/css/roos-print.min.css?v2" rel="stylesheet" media="print">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script defer src="/js/roos.min.js?v2"></script>
+
+  <script src="https://kit.fontawesome.com/d50cb0696d.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+  <script src="/js/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#252e39"
+          },
+          "button": {
+            "background": "#4676B8"
+          }
+        },
+        "position": "bottom-left",
+        "type": "opt-in",
+        "content": {
+          "message": "This website uses cookies when logged in and when searching to ensure you get the best experience.",
+          "dismiss": "Dismiss",
+          "allow": "Allow cookies",
+          "link": "Learn more",
+          "href": "https://roos.com/privacy.html"
+        }
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+  <noscript>
+    <div class="alert alert-danger">
+      <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
+          href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+    </div>
+  </noscript>
+
+  <div id="page-wrapper" class="page-boxed">
+    <!-- ==========================
+        	HEADER - START
+        =========================== -->
+    <div class="top-header hidden-xs">
+      <div class="container">
+        <div class="pull-left">
+          <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
+                class="fas fa-envelope"></i> support@roos.com</a></div>
+          <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fas fa-phone"></i>+1-408-748-8589</a></div>
+        </div>
+        <div class="header-item pull-right">
+          <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
+              account&nbsp;&nbsp;</a></span>
+          <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
+              in</span>&nbsp;&nbsp;</a>
+          <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i
+                class="fas fa-sign-out-alt"></i>Sign Out</a></span>
+        </div>
+      </div>
+    </div>
+    <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+      <div class="container">
+
+        <div class="navbar-header">
+          <div class="visible-xs-block">
+            <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle"
+              data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-bars"></i></button>
+            <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
+                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+          </div>
+
+          <div id="title">
+            <div class="hidden-xs hidden-sm">
+              <a href="/index.html">
+                <div class="mainTitleAdjust">Roos Instruments</div>
+                <div class="ROOSbanner"></div>
+                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most
+                  Advanced
+                  Technology</span>
+              </a>
+            </div>
+            <div class="visible-sm">
+              <a href="/index.html">
+                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+              </a>
+            </div>
+            <div class="visible-xs-block container">
+              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+              <a href="/index.html">
+                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+              </a>
+              <div class="ROOSbanner"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- end of .navbar-header -->
+        <nav class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li id="nav-home" class="dropdown">
+              <a href="/index.html">Home</a>
+            </li>
+            <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/support.html">Support</a>
+            </li>
+            <li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/commerce/profiles.nsf/myAccount">My Account</a>
+            </li>
+            <li id="nav-products" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Products<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/products.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/infrastructure.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Test
+                    Systems</a>
+                </li>
+                <li><a href="/instruments.html"><i class=" nav-indent1 fas fa-angle-double-right"></i>Instruments</a>
+                </li>
+                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angle-double-right"></i>Browse TIMs</a></li>
+                <li><a href="/software.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Software</a></li>
+                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Device Interface</a>
+                </li>
+                <li><a href="/rik"><i class="fas fa-angle-double-right"></i>RIK Catalog</a></li>
+              </ul>
+            </li>
+            <li id="nav-services" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Services<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/services.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                <li><a href="/turnkey.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Turnkey</a></li>
+                <li><a href="/production.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Production</a>
+                </li>
+                <li><a href="/guru.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Enterprise</a></li>
+                <li><a href="/training.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Training</a></li>
+              </ul>
+            </li>
+            <li id="nav-company" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                data-delay="300">Company<i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="/company.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                <li><a href="/news.html"><i class="nav-indent1 fas fa-angle-double-right"></i>News & Events</a></li>
+                <li><a href="/careers.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Careers</a></li>
+                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Media Kit</a></li>
+                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Plan a Visit</a></li>
+                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Contact Us</a></li>
+              </ul>
+            </li>
+            <li id="nav-support" class="dropdown yamm-fw hidden-xs">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300">Support <i
+                  class="fas fa-chevron-down"></i></a>
+              <section id="hideOnSupport" class="dropdown-menu">
+                <div class="yamm-content">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Planning</h3>
+                      <div style="text-align: center">
+                        <a href="/newFullUser" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create
+                          Account</a>
+                      </div>
+                      <div style="width: 150px;" class="centerImg">
+                        <ul style="margin-top: 15px;" class="nav vertical-nav">
+                          <li><a href="/supportPlans.html"><i class="fas fa-angle-double-right"></i>Support Plans</a>
+                          </li>
+                          <li><a href="/maintenance.html"><i class="fas fa-angle-double-right"></i>Maintenance</a>
+                          </li>
+                          <li><a href="/training.html"><i class="fas fa-angle-double-right"></i>Training</a></li>
+                          <li><a href="/commerce/profiles.nsf/myAccount"><i
+                                class="fas fa-angle-double-right"></i>Customer
+                              Account</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <h3 class="text-center">Online Documents</h3>
+                      <form name="docsSearch" method="POST" action="#" onSubmit="goSearch(); return false;">
+                        <div class="form-group nospace">
+                          <div id="searchFail" class="alert alert-warning hidden" role="alert">
+                            <strong>Oops!</strong> Search for something.
+                          </div>
+                          <div class="input-group">
+                            <input type="text" class="form-control" id="query" placeholder="Search Documentation"
+                              required>
+                            <span onclick="goSearch(); return false;" class="input-group-btn"><button
+                                class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="centerImg" style="width: 150px;">
+                        <ul style="margin-top: 10px" class="nav vertical-nav">
+                          <li><a href="/help/dev"><i class="fas fa-angle-double-right"></i>Developer</a></li>
+                          <li><a href="/help/admin"><i class="fas fa-angle-double-right"></i>Administrator</a></li>
+                          <li><a href="/help/maint"><i class="fas fa-angle-double-right"></i>Maintenance</a></li>
+                          <li><a href="/help/operate"><i class="fas fa-angle-double-right"></i>Operator</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Reference Guide</h3>
+                      <div style="text-align: center">
+                        <a class="btn btn-primary" href="/pdf/CassiniReferenceGuide_2.7_mini.pdf"
+                          download="CassiniReferenceGuide_2.7_mini.pdf"><i class="far fa-file-pdf"></i>Download
+                          PDF</a>
+                        <a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+                          <img style="padding-top: 9px; width: 160px;" class="centerImg"
+                            src="/images/ibook-cassini-ref-guide.png" alt="Cassini Reference Guide iBook">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <h3>Get Support</h3>
+                      <a class="btn btn-primary" href="mailto:support@roos.com"><i class="fas fa-envelope"></i> Email
+                        Support</a>
+                      <ul style="margin-bottom: 15px; text-align: center;">
+                        <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i
+                              class="fas fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+                        <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+                      </ul>
+                      <div style="text-align: center">
+                        <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                          <i class="fas fa-binoculars"></i> Remote Support</a>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+              <a href="/privacy.html">Privacy</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs">
+            <li style="margin-right: -12px;" class="search-form-toggle">
+              <a aria-label="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i
+                  class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- Print view only -->
+    <div class="clearfix visible-print">
+      <div class="pull-left">
+        <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+      </div>
+      <div class="pull-right">
+        <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+
+        <!-- Search Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Search</h3>
+          </div>
+          <div class="modal-body">
+            <div class="features-item" id="features-tabs-panels">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fas fa-globe"></i>
+                    &nbsp;Website</a>
+                </li>
+                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i> &nbsp;Documentation<span
+                      class="hidden-xs">(<i class="fas fa-lock"></i> Sign In Required)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="google-search">
+                  <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
+                    <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
+                      searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>
+                  </div>
+                  <!-- end of #search -->
+                </div>
+                <div class="tab-pane fade" id="document-search">
+                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
+                          placeholder="Search Documentation" required>
+                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button
+                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+        	HEADER - END
+        =========================== -->
+
+    <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Continuity of Service During COVID-19 Pandemic</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/company.html">Company</a>a</li>
+          <li class="active">COVID-19</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="roosC container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Continuity of Service During COVID-19 Pandemic</h2>
+          <p class="main">To our Customers and Partners,</p>
+          <p>The corona virus outbreak is a human tragedy, affecting nearly everyone we interact with on a daily basis.
+            We will remain open and will continue to provide excellent service and support for the duration of the
+            COVID-19 pandemic. Our continuity of business capabilities and unique factory environment create safe work
+            conditions honoring social distancing requirements while encouraging proper hygiene that enable us to
+            continue research and development, software service and hardware support.</p>
+          <p>We are closely monitoring updates from our local health organization, the World Health Organization (WHO),
+            and the Centers for Disease Control and Prevention (CDC) to help protect our staff. Our offices remain open
+            and our employees are restricted from non-essential travel. We have extended our flexible work from home
+            policies to help reduce the possibility of transmission at our factory. RI employees are taking all possible
+            measures to safeguard themselves. We have comprehensive continuity and emergency readiness plans. Our
+            incident response team is monitoring the situation and remains in constant contact with our teams, including
+            field service representatives and our supply chain partners. For example, we have regular reviews to ensure
+            we are aware of any potential delays or disruptions that could impact our customers.</p>
+          <p>In addition, to ensure RI can operate as usual, should many of our employees need to work at home for an
+            extended time, we are training our customer support team to successfully perform work from home with no loss
+            of effectiveness. We are prepared to serve our customers at full capability, regardless of where the work is
+            taking place. Should global conditions worsen, we are confident we can quickly respond to changing market
+            dynamics, minimizing impacts to our business and disruptions to our customers and partners.</p>
+          <p>We sympathize with everyone who has been affected by this virus and are immensely thankful for those
+            working to combat it. We encourage everyone to follow local guidelines to protect themselves and their
+            communities. We are fully prepared to navigate through these circumstances with your confidence in us at the
+            forefront of our thoughts and actions. Thank you for your trust in Roos Instruments.</p>
+          <p>Best,<br><br>
+            Mark D. Roos<br>
+            CEO<br>
+            Roos Instruments, Inc.</p>
+        </div>
+      </div>
+      <!-- end .row -->
+
+      <div class="bottom"></div>
+      <script src="js/loadbottom.js"></script>
+
+</body>
+
+</html>
