@@ -260,14 +260,21 @@ $(document).ready(function () {
 
 	//Google search
 	(function () {
-		var cx = '016663888408278794732:a1ud06__nsq';
-		var gcse = document.createElement('script');
-		gcse.type = 'text/javascript';
-		gcse.async = true;
-		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-			'//cse.google.com/cse.js?cx=' + cx;
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(gcse, s);
+	// 	var cx = '016663888408278794732:a1ud06__nsq';
+	// 	$.get('https://www.googleapis.com/customsearch/v1', {'cx': cx, 'q' = },
+	// 	function (data, textStatus, jqXHR) {  // success callback
+	// 		console.log(data);
+	//   }
+
+	// 	)
+		
+		// var gcse = document.createElement('script');
+		// gcse.type = 'text/javascript';
+		// gcse.async = true;
+		// gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		// 	'//cse.google.com/cse.js?cx=' + cx;
+		// var s = document.getElementsByTagName('script')[0];
+		// s.parentNode.insertBefore(gcse, s);
 	})();
 	//replace sign in with username when signed in, requires js.cookies.js
 	if (Cookies.get("username")) {
@@ -281,6 +288,7 @@ $(document).ready(function () {
 	$("#docSearchButton2").click(function () { goSearch2() });
 	$("#docSearchButton3").click(function () { goSearch3() });
 	$("#docSearchButton4").click(function () { goSearch4() });
+	$("#docSearchButton5").click(function () { goSearch5() });
 
 	var imgNumProduct = $("#productImg").find('img').length - 1;
 	sourcelink = $('#eshop-slider img:first-child').attr('src');
@@ -373,6 +381,28 @@ function goSearch() {
 		location.href = searchString;
 		$("#searchFail").addClass("hidden");
 		docSearch.query.value = "";
+		return true;
+	}
+} //end function
+
+function goSearch5() {
+	var docSearch5 = window.document.docsSearch5;
+	var searchPhrase5 = docSearch5.query5.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase2)
+	if (searchPhrase5 == '') {
+		$("#searchFail5").removeClass("hidden");
+		docSearch5.query5.value = "";
+		docSearch5.query5.focus();
+		return true;
+	} else {
+		var searchString5 = escape(searchPhrase5);
+		//alert(searchString);
+		var cx = '016663888408278794732:a1ud06__nsq';
+		$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : searchString5, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo'},
+			function (data, textStatus, jqXHR) {  // success callback
+				console.log(data);
+	  		}
+		)
 		return true;
 	}
 } //end function
