@@ -2153,6 +2153,23 @@ footer {
   }
 }
 
+#googleResults {
+  background: #FFF;
+  position: relative;
+  padding-bottom: 285px + 15px;
+  /*padding size of footer +15px for space*/
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #googleResults {
+    padding-bottom: 348px + 25px;
+    /*padding size of footer +25px for space*/
+  }
+}
+
 #latest-work-footer img {
   background: #c1cfe0;
 }
