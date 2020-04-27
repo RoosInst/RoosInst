@@ -281,6 +281,7 @@ $(document).ready(function () {
 	$("#docSearchButton2").click(function () { goSearch2() });
 	$("#docSearchButton3").click(function () { goSearch3() });
 	$("#docSearchButton4").click(function () { goSearch4() });
+	$("#docSearchButton5").click(function () { goSearch5() });
 
 	var imgNumProduct = $("#productImg").find('img').length - 1;
 	sourcelink = $('#eshop-slider img:first-child').attr('src');
@@ -435,6 +436,23 @@ function goSearch4() {
 		return true;
 	}
 } //end function
+
+function goSearch5() { 
+	var docSearch5 = window.document.docsSearch5; 
+	var searchPhrase5 = docSearch5.query5.value.toString();  //ensures numbers will be treated as strings 
+	//alert(searchPhrase2) 
+	if (searchPhrase5 == '') { 
+		$("#searchFail5").removeClass("hidden"); 
+		docSearch5.query5.value = ""; 
+		docSearch5.query5.focus(); 
+		return true; 
+	} else { 
+		var searchString5 = "/search.html?q=" +escape(searchPhrase5); 
+		//alert(searchString); 
+		location.href = searchString5
+		return true; 
+	} 
+}  //end function
 
 //site-wide cookie opt-in
 /* window.addEventListener("load", function () {

@@ -307,22 +307,20 @@
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="google-search">
                   <form name="docsSearch5" method="POST" action="#" onSubmit="goSearch5(); return false;"> 
-                    <div class="form-group nospace"> 
-                      <div id="searchFail5" class="alert alert-warning hidden" role="alert"> 
-                        <strong>Oops!</strong> Search for something. 
+                      <div class="form-group nospace"> 
+                        <div id="searchFail5" class="alert alert-warning hidden" role="alert"> 
+                          <strong>Oops!</strong> Search for something. 
+                        </div> 
+                        <div class="input-group"> 
+                          <input style="margin: 12px 0;" type="text" class="form-control" id="query5" 
+                            placeholder="Search Documentation" required> 
+                          <span onclick="goSearch5(); return false;" class="input-group-btn"><button 
+                              class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span> 
+                        </div> 
                       </div> 
-                      <div class="input-group"> 
-                        <input style="margin: 12px 0;" type="text" class="form-control" id="query5" 
-                          placeholder="Search Documentation" required> 
-                        <span onclick="goSearch5(); return false;" class="input-group-btn"><button 
-                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span> 
-                      </div> 
-                    </div> 
-                  </form> 
-                  
+                    </form> 
                     <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
                       searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>
-                  
                   <!-- end of #search -->
                 </div>
                 <div class="tab-pane fade" id="document-search">
@@ -358,47 +356,13 @@
     <!-- ==========================
     	BREADCRUMB - START
     =========================== -->
-    <section class="breadcrumb-wrapper">
-      <div class="container">
-        <h2>Products Overview</h2>
-        <ol class="breadcrumb">
-          <li><a href="/index.html">Home</a></li>
-          <li class="active">Products Overview</li>
-        </ol>
-      </div>
-    </section>
     <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
-
-    <div id="content" class="roosC container">
-      <div class="row">
-        <div class="layout1">
-          <div class="leftBig col-md-8">
-            <h2>HEADLINE</h2>
-            <p class="main">
-              Content here
-            </p>
-          </div>
-          <div class="rightSmall col-md-4">
-            <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
-          </div>
-        </div>
-        <!-- end .layout1 -->
-      </div>
-      <!-- end .row -->
-      <div class="row">
-        <div class="layout2">
-          <div class="leftSmall col-md-4">
-            <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
-          </div>
-          <div class="rightBig col-md-8 right-element">
-            <h2>Headline</h2>
-            <p class="text-left main">Description.</p>
-          </div>
-        </div>
-      </div>
+    <div class="reset-box-sizing" id="search">
+      <div class="gcse-searchresults-only"></div>
     </div>
+    
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
