@@ -1647,6 +1647,19 @@ footer {
     padding-bottom: 373px;
     /*padding size of footer +25px for space*/ } }
 
+#googleResults {
+  background: #FFF;
+  position: relative;
+  padding-bottom: 300px;
+  /*padding size of footer +15px for space*/ }
+  #googleResults > *:first-child {
+    margin-top: 0; }
+
+@media (min-width: 768px) {
+  #googleResults {
+    padding-bottom: 373px;
+    /*padding size of footer +25px for space*/ } }
+
 #latest-work-footer img {
   background: #c1cfe0; }
 
