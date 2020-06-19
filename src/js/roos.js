@@ -401,11 +401,150 @@ function goSearch5() {
 		$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : searchString5, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo'},
 			function (data, textStatus, jqXHR) {  // success callback
 				console.log(data);
+				if(!$("#searchFail5").hasClass("hidden")){
+					$("#searchFail5").addClass("hidden");
+				}
+				items = data.items;
+				html = '<div>';
+				for (i = 0; i < items.length; ++i){
+
+					if (items[i].content != undefined){
+						content = items[i].content;
+					}else{
+						content = items[i].htmlSnippet;
+					}
+					//content = content.replace(searchString5, '<b>' + searchString5 + '</b>');
+					content = content.replace(/(\r\n|\n|\r)/gm,"");
+					background = ''
+					if(i % 2 == 1){
+						background = 'background-color: aliceblue';
+					}
+
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+
+
+				}
+				html += '</div>'
+				html += '<div style="display: flex; justify-content:center; height: 48px; padding-top: 8px; align-items:center; position: relative;"><div style="display: flex; justify-content:center; height: 20px;width: 200px; position: absolute;">'
+
+				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
+					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +searchString5+'" href="#" onClick="getPage(this)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
+				}
+				html += '</div>'
+
+				if(data.queries.previousPage != undefined){
+					button = '<button class="btn btn-primary prev" id="prev-page-btn" data-q="' +searchString5+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="getSearchResults(this)">Previous Page</button>';
+					html+=button;
+				}
+				if(data.queries.nextPage != undefined){
+					button = '<button class="btn btn-primary next" id="next-page-btn" data-q="' +searchString5+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="getSearchResults(this)">Next Page</button>';
+					html+=button;
+				}
+				html += '</div>'
+				html+='<div class="spacer" style="clear: both;"></div>'
+				$('#search-results').html(html);
 	  		}
 		)
 		return true;
 	}
 } //end function
+
+function getPage(identifier){
+	console.log(identifier)
+	query = $(identifier).data('q');
+	start = parseInt($(identifier).text());
+	var cx = '016663888408278794732:a1ud06__nsq';
+	$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : query, 'start': start, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo'},
+			function (data, textStatus, jqXHR) {  // success callback
+				console.log(data);
+				items = data.items;
+				html = '';
+				for (i = 0; i < items.length; ++i){
+
+					if (items[i].content != undefined){
+						content = items[i].content;
+					}else{
+						content = items[i].htmlSnippet;
+					}
+					//content = content.replace(searchString5, '<b>' + searchString5 + '</b>');
+					content = content.replace(/(\r\n|\n|\r)/gm,"");
+					background = ''
+					if(i % 2 == 1){
+						background = 'background-color: aliceblue';
+					}
+
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+
+				}
+
+				html += '<div style="display: flex; justify-content:center; height: 48px; padding-top: 8px; align-items:center; position: relative;"><div style="display: flex; justify-content:center; height: 20px;width: 200px; position: absolute;">'
+
+				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
+					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +query+'" href="#" onClick="getPage(this)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
+				}
+				html += '</div></div>'
+
+				if(data.queries.previousPage != undefined){
+					button = '<button class="btn btn-primary prev" id="prev-page-btn" data-q="' +query+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="getSearchResults(this)">Previous Page</button>';
+					html+=button;
+				}
+				if(data.queries.nextPage != undefined){
+					button = '<button class="btn btn-primary next" id="next-page-btn" data-q="' +query+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="getSearchResults(this)">Next Page</button>';
+					html+=button;
+				}
+				html+='<div class="spacer" style="clear: both;"></div>'
+				$('#search-results').html(html);
+	  		}
+		)
+}
+function getSearchResults(identifier){
+	console.log(identifier)
+	query = $(identifier).data('q');
+	start = $(identifier).data('s');
+	var cx = '016663888408278794732:a1ud06__nsq';
+	$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : query, 'start': start, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo'},
+			function (data, textStatus, jqXHR) {  // success callback
+				console.log(data);
+				items = data.items;
+				html = '';
+				for (i = 0; i < items.length; ++i){
+
+					if (items[i].content != undefined){
+						content = items[i].content;
+					}else{
+						content = items[i].htmlSnippet;
+					}
+					//content = content.replace(searchString5, '<b>' + searchString5 + '</b>');
+					content = content.replace(/(\r\n|\n|\r)/gm,"");
+					background = ''
+					if(i % 2 == 1){
+						background = 'background-color: aliceblue';
+					}
+
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+
+				}
+
+				html += '<div style="display: flex; justify-content:center; height: 48px; padding-top: 8px; align-items:center; position: relative;"><div style="display: flex; justify-content:center; height: 20px;width: 200px; position: absolute;">'
+
+				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
+					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +query+'" href="#" onClick="getPage(this)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
+				}
+				html += '</div></div>'
+				if(data.queries.previousPage != undefined){
+					button = '<button class="btn btn-primary prev" id="prev-page-btn" data-q="' +query+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="getSearchResults(this)">Previous Page</button>';
+					html+=button;
+				}
+				if(data.queries.nextPage != undefined){
+					button = '<button class="btn btn-primary next" id="next-page-btn" data-q="' +query+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="getSearchResults(this)">Next Page</button>';
+					html+=button;
+				}
+		
+				html+='<div class="spacer" style="clear: both;"></div>'
+				$('#search-results').html(html);
+	  		}
+		)
+}
 
 function goSearch2() {
 	var docSearch2 = window.document.docsSearch2;
