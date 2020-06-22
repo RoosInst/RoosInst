@@ -420,7 +420,7 @@ function goSearch5() {
 						background = 'background-color: aliceblue';
 					}
 
-					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="display:block;">'+content+'</span></div></div>';
 
 
 				}
@@ -452,7 +452,7 @@ function goSearch5() {
 function getPage(identifier){
 	console.log(identifier)
 	query = $(identifier).data('q');
-	start = parseInt($(identifier).text());
+	start = (parseInt($(identifier).text()) - 1) * 10;
 	var cx = '016663888408278794732:a1ud06__nsq';
 	$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : query, 'start': start, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo'},
 			function (data, textStatus, jqXHR) {  // success callback
@@ -473,7 +473,7 @@ function getPage(identifier){
 						background = 'background-color: aliceblue';
 					}
 
-					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="display:block;">'+content+'</span></div></div>';
 
 				}
 
@@ -482,8 +482,7 @@ function getPage(identifier){
 				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
 					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +query+'" href="#" onClick="getPage(this)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
 				}
-				html += '</div></div>'
-
+				html += '</div>'
 				if(data.queries.previousPage != undefined){
 					button = '<button class="btn btn-primary prev" id="prev-page-btn" data-q="' +query+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="getSearchResults(this)">Previous Page</button>';
 					html+=button;
@@ -492,6 +491,7 @@ function getPage(identifier){
 					button = '<button class="btn btn-primary next" id="next-page-btn" data-q="' +query+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="getSearchResults(this)">Next Page</button>';
 					html+=button;
 				}
+				html += '</div>'
 				html+='<div class="spacer" style="clear: both;"></div>'
 				$('#search-results').html(html);
 	  		}
@@ -521,7 +521,7 @@ function getSearchResults(identifier){
 						background = 'background-color: aliceblue';
 					}
 
-					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="height: 40px; display:block;">'+content+'</span></div></div>';
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="display:block;">'+content+'</span></div></div>';
 
 				}
 
@@ -530,7 +530,7 @@ function getSearchResults(identifier){
 				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
 					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +query+'" href="#" onClick="getPage(this)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
 				}
-				html += '</div></div>'
+				html += '</div>'
 				if(data.queries.previousPage != undefined){
 					button = '<button class="btn btn-primary prev" id="prev-page-btn" data-q="' +query+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="getSearchResults(this)">Previous Page</button>';
 					html+=button;
@@ -539,6 +539,7 @@ function getSearchResults(identifier){
 					button = '<button class="btn btn-primary next" id="next-page-btn" data-q="' +query+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="getSearchResults(this)">Next Page</button>';
 					html+=button;
 				}
+				html += '</div>'
 		
 				html+='<div class="spacer" style="clear: both;"></div>'
 				$('#search-results').html(html);
