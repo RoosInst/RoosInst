@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>5G Test Equipment | Roos Instruments</title>
+    <title>5G Device Testing | Roos Instruments</title>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("nav-support").classList.add("active");
@@ -30,6 +30,8 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script defer src="/js/roos.min.js?v2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <script src="https://kit.fontawesome.com/d50cb0696d.js"></script>
 
@@ -392,7 +394,7 @@
     =========================== -->
         <section class="breadcrumb-wrapper">
             <div class="container">
-                <h2>Products Overview</h2>
+                <h2>5G Device Testing</h2>
                 <ol class="breadcrumb">
                     <li><a href="/index.html">Home</a></li>
                     <li>Products Overview</li>
@@ -407,34 +409,110 @@
             JUMBOTRON - START
           =========================== -->
         <style>
-            .index-slideshow {
+            #fiveG-slideshow {
                 font-weight: 300;
             }
+
+            .fiveG-slideshow .item {
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            #fiveG-slide-1,
+            #fiveG-slide-2,
+            #fiveG-slide-3,
+            #fiveG-slide-4 {
+                background-size: cover;
+                height: 600px;
+            }
+
+            #5g-slide-1 {
+                background-image: url(/images/5GSpectrumCoverage_WebSlides.001.png);
+            }
+
+            #5g-slide-2 {
+                background-image: url(/images/5GSpectrumCoverage_WebSlides.002.png);
+            }
+
+            #5g-slide-3 {
+                background-image: url(/images/5GSpectrumCoverage_WebSlides.003.png);
+            }
+
+            #5g-slide-4 {
+                background-image: url(/images/5GSpectrumCoverage_WebSlides.004.png);
+            }
         </style>
-        <section id="jumbotron" class="roosC">
-            <div class="jumbotron index-slideshow">
-                <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="index-slide-0">
-                        <img src="images/5GSpectrumCoverage_WebSlides.001.png">
+        <script>
+            $(document).ready(function () {
+                $("#5g-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: false,
+                    loop: true,
+                    autoplayHoverPause: true
+                });
+            });
+        </script>
+        <section id="5g-coverage" class="roosC">
+            <div class="jumbotron fiveG-slideshow">
+                <div id="5g-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="fiveG-slide-1">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map">
+                        <map name="slide-1-map">
+                            <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
+                                shape="rect">
+                            <area target="" alt="40GHz" title="40GHz" href="#fiveG-slide-2" coords="303,0,654,600"
+                                shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" href="#fiveG-slide-3" coords="655,0,926,600"
+                                shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" href="#fiveG-slide-4" coords="927,0,1200,600"
+                                shape="rect">
+                        </map>
                     </div>
-
-                    <div class="item" id="index-slide-1">
-                        <img src="images/5GSpectrumCoverage_WebSlides.002.png">
+                    <div class="item" id="fiveG-slide-2">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map">
+                        <map name="slide-2-map">
+                            <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
+                                shape="rect">
+                            <area target="" alt="40GHz" title="40GHz" href="#40g" coords="303,0,654,600" shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" href="#fiveG-slide-3" coords="655,0,926,600"
+                                shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" href="#fiveG-slide-4" coords="927,0,1200,600"
+                                shape="rect">
+                        </map>
                     </div>
-
-                    <div class="item" id="index-slide-2">
-                        <img src="images/5GSpectrumCoverage_WebSlides.003.png">
+                    <div class="item" id="fiveG-slide-3">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map">
+                        <map name="slide-3-map">
+                            <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
+                                shape="rect">
+                            <area target="" alt="40GHz" title="40GHz" href="#40g" coords="303,0,654,600" shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" href="#60g" coords="655,0,926,600" shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" href="#5g-slide-4" coords="927,0,1200,600"
+                                shape="rect">
+                        </map>
                     </div>
-
-                    <div class="item" id="index-slide-3">
-                        <img src="images/5GSpectrumCoverage_WebSlides.004.png">
+                    <div class="item" id="fiveG-slide-4">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map">
+                        <map name="slide4-map">
+                            <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
+                                shape="rect">
+                            <area target="" alt="40GHz" title="40GHz" href="#40g" coords="303,0,654,600" shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" href="#60g" coords="655,0,926,600" shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" href="#80g" coords="927,0,1200,600" shape="rect">
+                        </map>
                     </div>
-                    < </div>
                 </div>
+            </div>
+
+            <div class="container">
                 <h2>5G Test Spectrum Coverage </h2>
-                <p class="main">Cassini is the only fully integrated ATE solution for high frequency markets above 6 GHz
-                    and is 5G ready today. 5G technology rapidly changes, the Cassini 16 slot ATE platform allows for
-                    flexibility by progressively adding higher frequency capability.</p>
+                <p class="main">Cassini is the only fully integrated ATE solution for high frequency markets above 6
+                    GHz and is 5G ready today. 5G technology rapidly changes, the Cassini 16 slot ATE platform allows
+                    for flexibility by progressively adding higher frequency capability.</p>
+            </div>
         </section>
 
         <!-- ==========================
@@ -442,10 +520,43 @@
             =========================== -->
 
         <div id="content" class="roosC container">
-            <div class="row">
+            <div id="TestSet20" class="row">
+                <h2>4GHz to 40GHz Test Set (RI8563)</h2>
+                <div class="layout2">
+                    <div class="leftSmall col-md-8">
+                        <img src="images/TestSet20gSource.svg" alt="20 GHz Test Set Signal Source">
+                    </div>
+                    <div class="rightBig col-md-4 right-element">
+                        <h3>Signal Sourcing</h3>
+                        <p class="text-left main">Three input source options that access all four
+                            measurement ports. One dedicated low-loss, high linearity path for harmonic and
+                            intermodulation measurement sourcing.</p>
+                        <img src="images/TestSet20_SignalPath_Key1.png" alt="TestSet Sources Image Key"
+                            style="vertical-align: bottom;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="20g" class="row">
                 <div class="layout1">
                     <div class="leftBig col-md-8">
-                        <h2>HEADLINE</h2>
+                        <h2>100kHz to 20GHz (RI8545)</h2>
+                        <p class="main">
+                            Content here
+                        </p>
+                    </div>
+                    <div class="rightSmall col-md-4">
+
+                    </div>
+                </div>
+                <!-- end .layout1 -->
+            </div>
+            <!-- end .row -->
+            <div id="40g" class="row">
+                <div class="layout1">
+                    <div class="leftBig col-md-8">
+                        <h2>4GHz to 40GHz (RI8563)</h2>
                         <p class="main">
                             Content here
                         </p>
@@ -457,17 +568,36 @@
                 <!-- end .layout1 -->
             </div>
             <!-- end .row -->
-            <div class="row">
-                <div class="layout2">
-                    <div class="leftSmall col-md-4">
+            <div id="60g" class="row">
+                <div class="layout1">
+                    <div class="leftBig col-md-8">
+                        <h2>57GHz to 71GHz (RI8580)</h2>
+                        <p class="main">
+                            Content here
+                        </p>
+                    </div>
+                    <div class="rightSmall col-md-4">
                         <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
                     </div>
-                    <div class="rightBig col-md-8 right-element">
-                        <h2>Headline</h2>
-                        <p class="text-left main">Description.</p>
+                </div>
+                <!-- end .layout1 -->
+            </div>
+            <!-- end .row -->
+            <div id="60g" class="row">
+                <div class="layout1">
+                    <div class="leftBig col-md-8">
+                        <h2>71GHz to 86GHz (RI8604))</h2>
+                        <p class="main">
+                            Content here
+                        </p>
+                    </div>
+                    <div class="rightSmall col-md-4">
+                        <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
                     </div>
                 </div>
+                <!-- end .layout1 -->
             </div>
+            <!-- end .row -->
         </div>
 
         <div class="bottom"></div>
