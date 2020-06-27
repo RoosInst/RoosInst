@@ -409,6 +409,14 @@
             JUMBOTRON - START
           =========================== -->
         <style>
+            a.anchor {
+                display: block;
+                position: relative;
+                top: -75px;
+                visibility: hidden;
+            }
+
+            /* 
             #fiveG-slideshow {
                 font-weight: 300;
             }
@@ -426,7 +434,7 @@
                 height: 600px;
             }
 
-            #fiveG-slide-1 {
+          #fiveG-slide-1 {
                 background-image: url(/images/5GSpectrumCoverage_WebSlides.001.png);
             }
 
@@ -440,7 +448,7 @@
 
             #fiveG-slide-4 {
                 background-image: url(/images/5GSpectrumCoverage_WebSlides.004.png);
-            }
+            } */
         </style>
         <script>
             $(document).ready(function () {
@@ -449,13 +457,27 @@
                     autoPlay: 2000,
                     singleItem: true,
                     transitionStyle: "fade",
-                    dots: true,
+                    dots: false,
                     loop: true,
-                    autoplayHoverPause: true,
+                    autoplayHoverPause: false,
                     nav: true,
                     navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
+                });
+                var owl = $(".owl-carosel").data('owlCarousel');
+
+                $(".slide2-link").on("click", function (e) {
+                    e.preventDefault();
+                    owl.goto(2)
+                });
+                $(".slide3-link").on("click", function (e) {
+                    e.preventDefault();
+                    owl.goto(3)
+                });
+                $(".slide4-link").on("click", function (e) {
+                    e.preventDefault();
+                    owl.goto(4)
                 });
                 $("#TestSet20-slider").owlCarousel({
                     items: 1,
@@ -514,20 +536,22 @@
         <section id="5g-coverage" class="roosC">
             <div class="fiveG-slideshow">
                 <div id="fiveG-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="fiveG-slide-1">
+                    <div class="item">
+                        <a id="fiveG-slide-1" class="anchor"></a>
                         <img src="/images/5GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map">
                         <map name="slide-1-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
                                 shape="rect">
-                            <area target="" alt="40GHz" title="40GHz" href="#fiveG-slide-2" coords="303,0,654,600"
+                            <area target="" alt="40GHz" title="40GHz" class="slide2-link" href="" coords="303,0,654,600"
                                 shape="rect">
-                            <area target="" alt="60GHz" title="60GHz" href="#fiveG-slide-3" coords="655,0,926,600"
+                            <area target="" alt="60GHz" title="60GHz" class="slide3-link" href="" coords="655,0,926,600"
                                 shape="rect">
-                            <area target="" alt="80GHz" title="80GHz" href="#fiveG-slide-4" coords="927,0,1200,600"
-                                shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" class="slide4-link" href=""
+                                coords="927,0,1200,600" shape="rect">
                         </map>
                     </div>
-                    <div class="item" id="fiveG-slide-2">
+                    <div class="item">
+                        <a id="fiveG-slide-2" class="anchor"></a>
                         <img src="/images/5GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map">
                         <map name="slide-2-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
@@ -540,7 +564,8 @@
                                 shape="rect">
                         </map>
                     </div>
-                    <div class="item" id="fiveG-slide-3">
+                    <div class="item">
+                        <a id="fiveG-slide-2" class="anchor"></a>
                         <img src="/images/5GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map">
                         <map name="slide-3-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
@@ -553,7 +578,8 @@
                                 shape="rect">
                         </map>
                     </div>
-                    <div class="item" id="fiveG-slide-4">
+                    <div class="item">
+                        <a id="fiveG-slide-2" class="anchor"></a>
                         <img src="/images/5GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map">
                         <map name="slide-4-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
@@ -587,11 +613,20 @@
             }
 
             #TestSet40 .right-element {
-                padding-top: 40px;
+                padding-top: 86px;
+            }
+
+            #TestSet60 .right-element {
+                padding-top: 86px;
+            }
+
+            #TestSet80 .right-element {
+                padding-top: 86px;
             }
         </style>
         <section id="content" class="roosC container fiveG">
-            <div id="TestSet20" class="row">
+            <a id="TestSet20" class="anchor"></a>
+            <div class="row">
                 <h2>100kHz to 20GHz Test Set (RI8545)</h2>
                 <div id="TestSet20-slider" class="owl-carousel hidden-control owl-theme">
                     <div class="item" id="ts20-slide-1">
@@ -667,7 +702,7 @@
                     <div class="item" id="ts20-slide-5">
                         <div class="layout2">
                             <div class="leftSmall col-md-7">
-                                <img src="images/TestSet20gLoadCond.svg" alt="20 GHz Test Set Direct Receive">
+                                <img src="images/Testset20gNFex.svg" alt="20 GHz Test Set Noise Figure">
                             </div>
                             <div class="rightBig col-md-5 right-element">
                                 <h3>Noise Figure</h3>
@@ -701,7 +736,7 @@
                     <div class="item" id="ts20-slide-7">
                         <div class="layout2">
                             <div class="leftSmall col-md-7">
-                                <img src="images/TestSet20gS21ex.svg" alt="20 GHz Test Set Return Loss">
+                                <img src="images/TestSet20gS21ex.svg" alt="20 GHz Test Set Gain">
                             </div>
                             <div class="rightBig col-md-5 right-element">
                                 <h3>Gain</h3>
@@ -717,9 +752,9 @@
                     </div>
                 </div>
             </div> <!-- TS20 .row -->
-
-            <div id="TestSet40" class="row">
-                <h2>4GHz to 50GHz Test Set (RI8507)</h2>
+            <a id="TestSet40" class="anchor"></a>
+            <div class="row">
+                <h2>4GHz to 50GHz Test Set (RI8607)</h2>
                 <div id="TestSet40-slider" class="owl-carousel hidden-control owl-theme">
                     <div class="item" id="ts20-slide-1">
                         <div class="layout2">
@@ -734,7 +769,7 @@
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
                                 <img src="images/TestSet40_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 145px;"
+                                    style="vertical-align: bottom; max-width: 350px; padding-top: 265px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -749,7 +784,7 @@
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
                                 <img src="images/TestSet40_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 200px; padding-top: 260px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -765,7 +800,7 @@
                                     the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
                                     measurement port.</p>
                                 <img src="images/TestSet40_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 190px; padding-top: 141px;"
+                                    style="vertical-align: bottom; max-width: 271px; padding-top: 141px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -781,14 +816,15 @@
                                     incident wave and b1 output wave from the device under test
                                     across two measurement ports.</p>
                                 <img src="images/TestSet40_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 300px; padding-top: 260px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
                     </div>
                 </div>
             </div> <!-- TS40 .row -->
-            <div id="TestSet60" class="row">
+            <a id="TestSet60" class="anchor"></a>
+            <div class="row">
                 <h2>57GHz to 71GHz (RI8580)</h2>
                 <div id="TestSet60-slider" class="owl-carousel hidden-control owl-theme">
                     <div class="item" id="ts60-slide-1">
@@ -804,7 +840,7 @@
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
                                 <img src="images/TestSet60_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 145px;"
+                                    style="vertical-align: bottom; max-width: 400px; padding-top: 240px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -812,14 +848,14 @@
                     <div class="item" id="ts60-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset60gDirectR.svg" alt="50 GHz Test Set Direct Receive">
+                                <img src="images/Testset60gDirectR.svg" alt="60 GHz Test Set Direct Receive">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>Direct Receive</h3>
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
                                 <img src="images/TestSet60_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 200px; padding-top: 260px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -827,7 +863,7 @@
                     <div class="item" id="ts60-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset60gS11ex.svg" alt="50 GHz Test Set Return Loss">
+                                <img src="images/Testset60gS11ex.svg" alt="60 GHz Test Set Return Loss">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>Return Loss</h3>
@@ -835,7 +871,7 @@
                                     the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
                                     measurement port.</p>
                                 <img src="images/TestSet60_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 190px; padding-top: 141px;"
+                                    style="vertical-align: bottom; max-width: 350px; padding-top: 280px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -843,7 +879,7 @@
                     <div class="item" id="t60-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset60gS21ex.svg" alt="50 GHz Test Set Gain">
+                                <img src="images/Testset60gS21ex.svg" alt="60 GHz Test Set Gain">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>Gain</h3>
@@ -851,20 +887,21 @@
                                     incident wave and b1 output wave from the device under test
                                     across two measurement ports.</p>
                                 <img src="images/TestSet60_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 300px; padding-top: 280px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
                     </div>
                 </div>
             </div> <!-- TestSet60 .row -->
-            <div id="TestSet80" class="row">
+            <a id="TestSet80" class="anchor"></a>
+            <div class="row">
                 <h2>71GHz to 86GHz (RI8604)</h2>
                 <div id="TestSet80-slider" class="owl-carousel hidden-control owl-theme">
                     <div class="item" id="ts80-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset80gSpara.svg" alt="60 GHz Test Set S-Parameters">
+                                <img src="images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>S-Parameters</h3>
@@ -874,7 +911,7 @@
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
                                 <img src="images/TestSet80_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 145px;"
+                                    style="vertical-align: bottom; max-width: 380px; padding-top: 240px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -882,14 +919,14 @@
                     <div class="item" id="ts80-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset80gDirectR.svg" alt="50 GHz Test Set Direct Receive">
+                                <img src="images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>Direct Receive</h3>
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
                                 <img src="images/TestSet80_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 200px; padding-top: 265px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -897,15 +934,16 @@
                     <div class="item" id="ts80-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset80gS11ex.svg" alt="50 GHz Test Set Return Loss">
+                                <img src="images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
                             </div>
                             <div class="rightBig col-md-6 right-element">
-                                <h3>Return Loss</h3>
-                                <p class="text-left main">Vector error corrected S<sub>11</sub> measurement, capturing
-                                    the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
-                                    measurement port.</p>
+                                <h3>2-Tone</h3>
+                                <p class="text-left main">Millimeter wave subharmonic mixers and a signal combiner
+                                    provides dual tone generation from two upconverted 20GHz
+                                    microwave sources. Each signal path provides independent
+                                    source level control.</p>
                                 <img src="images/TestSet80_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 190px; padding-top: 141px;"
+                                    style="vertical-align: bottom; max-width: 210px; padding-top: 250px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
@@ -913,41 +951,27 @@
                     <div class="item" id="t80-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-md-6">
-                                <img src="images/Testset80gS21ex.svg" alt="50 GHz Test Set Gain">
+                                <img src="images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
                             </div>
                             <div class="rightBig col-md-6 right-element">
                                 <h3>Gain</h3>
-                                <p class="text-left main">Scalar error corrected S21 measurement capturing the a1
-                                    incident wave and b1 output wave from the device under test
-                                    across two measurement ports.</p>
+                                <p class="text-left main">Vector error corrected S<sub>21</sub> measurement capturing
+                                    the a1 incident wave and b<sub>1</sub> output wave from the device under test across
+                                    two measurement ports.</p>
                                 <img src="images/TestSet80_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 160px;"
+                                    style="vertical-align: bottom; max-width: 340px; padding-top: 270px;"
                                     class="hidden-xs hidden-s">
                             </div>
                         </div>
                     </div>
                 </div>
             </div> <!-- TestSet60 .row -->
-            <div id="80g" class="row">
-                <div class="layout1">
-                    <div class="leftBig col-md-8">
-                        <h2>)</h2>
-                        <p class="main">
-                            Content here
-                        </p>
-                    </div>
-                    <div class="rightSmall col-md-4">
-                        <img alt="IMAGE" src="/images/IMAGE.png" class="center" />
-                    </div>
-                </div>
-                <!-- end .layout1 -->
-            </div>
-            <!-- end .row -->
+
         </section>
 
         <div class="bottom"></div>
         <script src="js/loadbottom.js"></script>
-
+    </div>
 </body>
 
 </html>
