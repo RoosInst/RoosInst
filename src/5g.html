@@ -112,9 +112,7 @@
                                 <div class="mainTitleAdjust">Roos Instruments</div>
                                 <div class="ROOSbanner"></div>
                                 <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the
-                                    World's Most
-                                    Advanced
-                                    Technology</span>
+                                    World's Most Advanced Technology</span>
                             </a>
                         </div>
                         <div class="visible-sm">
@@ -397,7 +395,7 @@
                 <h2>5G Device Testing</h2>
                 <ol class="breadcrumb">
                     <li><a href="/index.html">Home</a></li>
-                    <li>Products Overview</li>
+                    <li><a href="/products.html"></a>Products Overview</li>
                     <li class="active">5G Testing</li>
                 </ol>
             </div>
@@ -408,6 +406,7 @@
         <!-- ==========================
             JUMBOTRON - START
           =========================== -->
+
         <style>
             a.anchor {
                 display: block;
@@ -415,70 +414,39 @@
                 top: -75px;
                 visibility: hidden;
             }
-
-            /* 
-            #fiveG-slideshow {
-                font-weight: 300;
-            }
-
-            .fiveG-slideshow .item {
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            #fiveG-slide-1,
-            #fiveG-slide-2,
-            #fiveG-slide-3,
-            #fiveG-slide-4 {
-                background-size: cover;
-                height: 600px;
-            }
-
-          #fiveG-slide-1 {
-                background-image: url(/images/5GSpectrumCoverage_WebSlides.001.png);
-            }
-
-            #fiveG-slide-2 {
-                background-image: url(/images/5GSpectrumCoverage_WebSlides.002.png);
-            }
-
-            #fiveG-slide-3 {
-                background-image: url(/images/5GSpectrumCoverage_WebSlides.003.png);
-            }
-
-            #fiveG-slide-4 {
-                background-image: url(/images/5GSpectrumCoverage_WebSlides.004.png);
-            } */
         </style>
+
         <script>
             $(document).ready(function () {
-                $("#fiveG-slider").owlCarousel({
-                    items: 1,
-                    autoPlay: 2000,
-                    singleItem: true,
-                    transitionStyle: "fade",
-                    dots: false,
-                    loop: true,
-                    autoplayHoverPause: false,
-                    nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                    autoplay: true,
-                    autoplayHoverPause: true
+                $('#slide1-img').ImageMapResize({
+                    origImageWidth: "1200"
                 });
-                var owl = $(".owl-carosel").data('owlCarousel');
+                $('#slide2-img').ImageMapResize({
+                    origImageWidth: "1200"
+                });
+                $('#slide3-img').ImageMapResize({
+                    origImageWidth: "1200"
+                });
+                $('#slide4-img').ImageMapResize({
+                    origImageWidth: "1200"
+                });
 
-                $(".slide2-link").on("click", function (e) {
-                    e.preventDefault();
-                    owl.goto(2)
-                });
-                $(".slide3-link").on("click", function (e) {
-                    e.preventDefault();
-                    owl.goto(3)
-                });
-                $(".slide4-link").on("click", function (e) {
-                    e.preventDefault();
-                    owl.goto(4)
-                });
+                /*   $("fiveG-slider").owlCarousel({
+                      items: 1,
+                      autoPlay: 2000,
+                      singleItem: true,
+                      transitionStyle: "fade",
+                      dots: false,
+                      loop: true,
+                      autoplayHoverPause: false,
+                      nav: true,
+                      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                      autoplay: true,
+                      autoplayHoverPause: true
+                  });
+                  var owl = $(".owl-carosel").data('owlCarousel');
+  */
+
                 $("#TestSet20-slider").owlCarousel({
                     items: 1,
                     autoPlay: 2000,
@@ -531,42 +499,75 @@
                     autoplay: true,
                     autoplayHoverPause: true
                 });
+                var slider = tns({
+                    container: '.my-slider',
+                    mode: 'gallery',
+                    items: 1,
+                    controls: false,
+                    nav: false,
+                    arrowkeys: true,
+                    autoplay: true,
+                    autoplayPosition: 'bottom',
+                    autoplayTimeout: 3500,
+                    autoplayHoverPause: false,
+                    autoplayText: ['', ''],
+                    rewind: true
+                });
+                $(".next-link").on("click", function (e) {
+                    // e.preventDefault();
+                    slider.goTo('next')
+                });
+                $(".next2-link").on("click", function (e) {
+                    // e.preventDefault();
+                    slider.goTo('next')
+                    slider.goTo('next')
+                });
+                $(".last-link").on("click", function (e) {
+                    // e.preventDefault();
+                    slider.goTo('last')
+                });
             });
         </script>
         <section id="5g-coverage" class="roosC">
+            <div class="container">
+                <h2>We've Got 5G Covered</h2>
+                <p class="main">Cassini is the only fully integrated ATE solution for high frequency markets above 6
+                    GHz and is 5G ready today. 5G technology rapidly changes, the Cassini 16 slot ATE platform allows
+                    for flexibility by progressively adding higher frequency capability.</p>
+            </div>
             <div class="fiveG-slideshow">
-                <div id="fiveG-slider" class="owl-carousel hidden-control owl-theme">
+                <div id="fiveG-slider" class="my-slider">
                     <div class="item">
                         <a id="fiveG-slide-1" class="anchor"></a>
-                        <img src="/images/5GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map" id="slide1-img">
                         <map name="slide-1-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
                                 shape="rect">
-                            <area target="" alt="40GHz" title="40GHz" class="slide2-link" href="" coords="303,0,654,600"
-                                shape="rect">
-                            <area target="" alt="60GHz" title="60GHz" class="slide3-link" href="" coords="655,0,926,600"
-                                shape="rect">
-                            <area target="" alt="80GHz" title="80GHz" class="slide4-link" href=""
+                            <area target="" alt="40GHz" title="40GHz" class="next-link" href="#fiveG-slide-2"
+                                coords="303,0,654,600" shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" class="next2-link" href="#fiveG-slide-3"
+                                coords="655,0,926,600" shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" class="last-link" href="#fiveG-slide-4"
                                 coords="927,0,1200,600" shape="rect">
                         </map>
                     </div>
                     <div class="item">
                         <a id="fiveG-slide-2" class="anchor"></a>
-                        <img src="/images/5GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map" id="slide2-img">
                         <map name="slide-2-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
                                 shape="rect">
                             <area target="" alt="40GHz" title="40GHz" href="#TestSet40" coords="303,0,654,600"
                                 shape="rect">
-                            <area target="" alt="60GHz" title="60GHz" href="#fiveG-slide-3" coords="655,0,926,600"
-                                shape="rect">
-                            <area target="" alt="80GHz" title="80GHz" href="#fiveG-slide-4" coords="927,0,1200,600"
-                                shape="rect">
+                            <area target="" alt="60GHz" title="60GHz" class="next-link" href="#fiveG-slide-3"
+                                coords="655,0,926,600" shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" class="last-link" href="#fiveG-slide-4"
+                                coords="927,0,1200,600" shape="rect">
                         </map>
                     </div>
                     <div class="item">
                         <a id="fiveG-slide-2" class="anchor"></a>
-                        <img src="/images/5GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map" id="slide3-img">
                         <map name="slide-3-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
                                 shape="rect">
@@ -574,13 +575,13 @@
                                 shape="rect">
                             <area target="" alt="60GHz" title="60GHz" href="#TestSet60" coords="655,0,926,600"
                                 shape="rect">
-                            <area target="" alt="80GHz" title="80GHz" href="#fiveG-slide-4" coords="927,0,1200,600"
-                                shape="rect">
+                            <area target="" alt="80GHz" title="80GHz" class="last-link" href="#fiveG-slide-4"
+                                coords="927,0,1200,600" shape="rect">
                         </map>
                     </div>
                     <div class="item">
                         <a id="fiveG-slide-2" class="anchor"></a>
-                        <img src="/images/5GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img">
                         <map name="slide-4-map">
                             <area target="" alt="20GHz" title="20GHz" href="#TestSet20" coords="0,0,302,600"
                                 shape="rect">
@@ -595,39 +596,32 @@
                 </div>
             </div>
 
-            <div class="container">
-                <h2>We've got 5G Covered</h2>
-                <p class="main">Cassini is the only fully integrated ATE solution for high frequency markets above 6
-                    GHz and is 5G ready today. 5G technology rapidly changes, the Cassini 16 slot ATE platform allows
-                    for flexibility by progressively adding higher frequency capability.</p>
-            </div>
+
         </section>
 
         <!-- ==========================
             	JUMBOTRON - END
             =========================== -->
         <style>
-            #TestSet20 h3,
-            #TestSet40 h3,
-            #TestSet60 h3,
-            #TestSet80 h3 {
-                font-weight: 600;
+            h2,
+            h3 {
+                font-weight: 500;
             }
 
-            #TestSet20 .right-element {
+            #TestSet20-slider .right-element {
                 padding-top: 20px;
                 left: -30px;
             }
 
-            #TestSet40 .right-element {
+            #TestSet40-slider .right-element {
                 padding-top: 86px;
             }
 
-            #TestSet60 .right-element {
+            #TestSet60-slider .right-element {
                 padding-top: 86px;
             }
 
-            #TestSet80 .right-element {
+            #TestSet80-slider .right-element {
                 padding-top: 86px;
             }
         </style>
@@ -974,6 +968,53 @@
                 </div>
             </div> <!-- TestSet60 .row -->
 
+            <hr class="space">
+            <div class="row">
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-4">
+                        <img src="/images/5GFixture.jpg" style="max-height: 250px;" class="centerImg">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/5g-mobile-phone-mast.jpg" style="max-height: 250px;" class="centerImg">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="centerImg" src="/images/mmwave_article_thumbnail.png"
+                            style="max-width: 182px; max-height: 250px;">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <h3>5G Device Interface</h3>
+                    <p>Low loss blind mate interfaces solve production challenges for 5G devices. We're taking
+                        modular to a whole new level.</p>
+                </div>
+                <div class="col-md-4">
+
+                    <h3>5G Base station or Backhaul (High Power)</h3>
+                    <p>Basestations require phase measurements that are possible with Cassini's calibrated high
+                        power
+                        signal paths.</p>
+                </div>
+                <div class="col-md-4">
+
+                    <h3>mmWave Mass Market Production</h3>
+                    <p>Cassini leverages a modular configuration focused on precise calibration, low loss device
+                        connections and high
+                        measurement accuracy with a small footprint and low capital expense.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a class="link" href="/fixture.html">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <a class="link" href="/parts/BACK-CASSINI">Learn More</a>
+                </div>
+                <div class="col-md-4">
+                    <a class="link" href="/article_mmwave_journal_march2020.html">Learn More</a>
+                </div>
+            </div>
         </section>
 
         <div class="bottom"></div>
