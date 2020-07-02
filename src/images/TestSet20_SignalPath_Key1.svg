@@ -1,0 +1,121 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 72.61 63.25">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-10,
+            .cls-12,
+            .cls-14,
+            .cls-9 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                font-size: 7px;
+                fill: #231f20;
+                font-family: Source Sans Pro-Italic, Source Sans Pro;
+                font-style: italic;
+            }
+
+            .cls-5 {
+                letter-spacing: 0em;
+            }
+
+            .cls-6 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-7 {
+                opacity: 0.75;
+            }
+
+            .cls-8 {
+                clip-path: url(#clip-path-4);
+            }
+
+            .cls-9 {
+                stroke: #00a1e4;
+            }
+
+            .cls-12,
+            .cls-14,
+            .cls-9 {
+                stroke-width: 4px;
+            }
+
+            .cls-10 {
+                stroke: #231f20;
+                stroke-width: 0.25px;
+            }
+
+            .cls-11 {
+                clip-path: url(#clip-path-6);
+            }
+
+            .cls-12 {
+                stroke: #006dad;
+            }
+
+            .cls-13 {
+                clip-path: url(#clip-path-7);
+            }
+
+            .cls-14 {
+                stroke: #25408f;
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="-380.08" y="-302.4" width="612" height="792" />
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect class="cls-1" x="8.62" y="8.63" width="20" height="6" />
+        </clipPath>
+        <clipPath id="clip-path-6">
+            <rect class="cls-1" x="8.62" y="28.63" width="20" height="6" />
+        </clipPath>
+        <clipPath id="clip-path-7">
+            <rect class="cls-1" x="8.62" y="48.63" width="20" height="6" />
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g class="cls-2">
+            <rect class="cls-3" x="-380.08" y="-302.4" width="612" height="792" />
+            <rect class="cls-3" x="-380.08" y="-302.4" width="612" height="792" />
+            <text class="cls-4" transform="translate(31.49 13.15)">
+                <tspan class="cls-5">Source 1</tspan>
+            </text><text class="cls-4" transform="translate(31.49 33.15)">
+                <tspan class="cls-5">Source 2</tspan>
+            </text><text class="cls-4" transform="translate(31.49 53.15)">
+                <tspan class="cls-5">Source 3</tspan>
+            </text>
+            <g class="cls-2">
+                <g class="cls-7">
+                    <g class="cls-8">
+                        <line class="cls-9" x1="9.62" y1="11.63" x2="27.62" y2="11.63" />
+                    </g>
+                </g>
+            </g>
+            <rect class="cls-10" x="0.12" y="0.13" width="72.36" height="63" />
+            <g class="cls-2">
+                <g class="cls-7">
+                    <g class="cls-11">
+                        <line class="cls-12" x1="9.62" y1="31.63" x2="27.62" y2="31.63" />
+                    </g>
+                </g>
+                <g class="cls-7">
+                    <g class="cls-13">
+                        <line class="cls-14" x1="9.62" y1="51.63" x2="27.62" y2="51.63" />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

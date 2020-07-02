@@ -620,8 +620,16 @@
                 padding-top: 40px;
             }
 
+            .right-element {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
             .right-element img {
-                vertical-align: bottom;
+                margin-top: auto;
+                width: 60%;
+                height: 60%;
             }
 
             @media (max-width: 991px) {
@@ -634,7 +642,7 @@
                     padding-top: 20px;
                 }
 
-                .right-element img {
+                .item .right-element img {
                     display: none;
                     padding: 0;
                 }
@@ -655,8 +663,7 @@
                                 <p class="text-left main">Three input source options that access all four
                                     measurement ports. One dedicated low-loss, high linearity path for harmonic and
                                     intermodulation measurement sourcing.</p>
-                                <img src="images/TestSet20_SignalPath_Key1.png" alt="TestSet Sources Image Key"
-                                    style="vertical-align: bottom; max-width: 140px; padding-top: 145px;">
+                                <img src="images/TestSet20_SignalPath_Key1.svg" alt="TestSet Sources Image Key">
 
                             </div>
                         </div>
@@ -683,8 +690,7 @@
                                 <p class="text-left main">Vector-error corrected 4-Port S-parameter
                                     measurements that use bilateral, 12-term error correction model or high-speed
                                     unilateral, 8-term error correction.</p>
-                                <img src="images/TestSet20_SignalPath_Key2.png" alt="TestSet Sources Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 141px;">
+                                <img src="images/TestSet20_SignalPath_Key2.png" alt="TestSet Sources Image Key">
                             </div>
                         </div>
                     </div>
@@ -724,8 +730,7 @@
                                     calibrated noise sourcing, low-loss direct receive
                                     path, and maximum source/measure port
                                     isolation.</p>
-                                <img src="images/TestSet20_SignalPath_Key3.png" alt="TestSet Noise Figure Image Key"
-                                    style="vertical-align: bottom; max-width: 160px; padding-top: 195px;">
+                                <img src="images/TestSet20_SignalPath_Key3.png" alt="TestSet Noise Figure Image Key">
                             </div>
                         </div>
                     </div>
@@ -740,8 +745,7 @@
                                     the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
                                     measurement
                                     port.</p>
-                                <img src="images/TestSet20_SignalPath_Key4.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 160px; padding-top: 190px;">
+                                <img src="images/TestSet20_SignalPath_Key4.png" alt="TestSet Return Loss Image Key">
                             </div>
                         </div>
                     </div>
@@ -756,8 +760,7 @@
                                     the a<sub>1</sub> incident wave and b<sub>1</sub> output wave from the
                                     device under test across two measurement ports
                                     with maximum port isolation.</p>
-                                <img src="images/TestSet20_SignalPath_Key5.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 170px;">
+                                <img src="images/TestSet20_SignalPath_Key5.png" alt="TestSet Gain Image Key">
                             </div>
                         </div>
                     </div>
@@ -779,8 +782,7 @@
                                     unilateral, 8-term error correction. Additional scalar
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
-                                <img src="images/TestSet40_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 350px; padding-top: 265px;">
+                                <img src="images/TestSet40_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key">
                             </div>
                         </div>
                     </div>
@@ -793,8 +795,7 @@
                                 <h3>Direct Receive</h3>
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
-                                <img src="images/TestSet40_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 260px;">
+                                <img src="images/TestSet40_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key">
                             </div>
                         </div>
                     </div>
@@ -808,8 +809,7 @@
                                 <p class="text-left main">Vector error corrected S<sub>11</sub> measurement, capturing
                                     the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
                                     measurement port.</p>
-                                <img src="images/TestSet40_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 141px;">
+                                <img src="images/TestSet40_SignalPath_Key3.png" alt="TestSet Return Loss Image Key">
                             </div>
                         </div>
                     </div>
@@ -823,8 +823,7 @@
                                 <p class="text-left main">Scalar error corrected S21 measurement capturing the a1
                                     incident wave and b1 output wave from the device under test
                                     across two measurement ports.</p>
-                                <img src="images/TestSet40_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 260px;">
+                                <img src="images/TestSet40_SignalPath_Key4.png" alt="TestSet Gain Image Key">
                             </div>
                         </div>
                     </div>
@@ -846,8 +845,7 @@
                                     unilateral, 8-term error correction. Additional scalar
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
-                                <img src="images/TestSet60_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 400px; padding-top: 240px;">
+                                <img src="images/TestSet60_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key">
                             </div>
                         </div>
                     </div>
@@ -860,8 +858,7 @@
                                 <h3>Direct Receive</h3>
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
-                                <img src="images/TestSet60_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 260px;">
+                                <img src="images/TestSet60_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key">
                             </div>
                         </div>
                     </div>
@@ -875,8 +872,7 @@
                                 <p class="text-left main">Vector error corrected S<sub>11</sub> measurement, capturing
                                     the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
                                     measurement port.</p>
-                                <img src="images/TestSet60_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 380px; padding-top: 280px;">
+                                <img src="images/TestSet60_SignalPath_Key3.png" alt="TestSet Return Loss Image Key">
                             </div>
                         </div>
                     </div>
@@ -890,8 +886,7 @@
                                 <p class="text-left main">Scalar error corrected S21 measurement capturing the a1
                                     incident wave and b1 output wave from the device under test
                                     across two measurement ports.</p>
-                                <img src="images/TestSet60_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 300px; padding-top: 280px;">
+                                <img src="images/TestSet60_SignalPath_Key4.png" alt="TestSet Gain Image Key">
                             </div>
                         </div>
                     </div>
@@ -913,8 +908,7 @@
                                     unilateral, 8-term error correction. Additional scalar
                                     receive-only port for S<sub>21</sub> and gain measurements in a single
                                     instrument.</p>
-                                <img src="images/TestSet80_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key"
-                                    style="vertical-align: bottom; max-width: 380px; padding-top: 240px;">
+                                <img src="images/TestSet80_SignalPath_Key1.png" alt="TestSet S-Parameters Image Key">
                             </div>
                         </div>
                     </div>
@@ -927,8 +921,7 @@
                                 <h3>Direct Receive</h3>
                                 <p class="text-left main">Direct down conversion, scalar receive path for maximum
                                     dynamic range measurements.</p>
-                                <img src="images/TestSet80_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key"
-                                    style="vertical-align: bottom; max-width: 200px; padding-top: 265px;">
+                                <img src="images/TestSet80_SignalPath_Key2.png" alt="TestSet Direct Receive Image Key">
                             </div>
                         </div>
                     </div>
@@ -943,8 +936,7 @@
                                     provides dual tone generation from two upconverted 20GHz
                                     microwave sources. Each signal path provides independent
                                     source level control.</p>
-                                <img src="images/TestSet80_SignalPath_Key3.png" alt="TestSet Return Loss Image Key"
-                                    style="vertical-align: bottom; max-width: 210px; padding-top: 250px;">
+                                <img src="images/TestSet80_SignalPath_Key3.png" alt="TestSet Return Loss Image Key">
                             </div>
                         </div>
                     </div>
@@ -958,8 +950,7 @@
                                 <p class="text-left main">Vector error corrected S<sub>21</sub> measurement capturing
                                     the a1 incident wave and b<sub>1</sub> output wave from the device under test across
                                     two measurement ports.</p>
-                                <img src="images/TestSet80_SignalPath_Key4.png" alt="TestSet Gain Image Key"
-                                    style="vertical-align: bottom; max-width: 340px; padding-top: 270px;">
+                                <img src="images/TestSet80_SignalPath_Key4.png" alt="TestSet Gain Image Key">
                             </div>
                         </div>
                     </div>
