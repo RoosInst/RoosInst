@@ -620,16 +620,18 @@
                 padding-top: 40px;
             }
 
-            .right-element {
+            .layout2 .right-element {
                 display: flex;
                 flex-direction: column;
                 flex: 1;
             }
 
-            .right-element img {
+            .layout2 .right-element p {
+                flex-grow: 1;
+            }
+
+            .layout2 .right-element img {
                 margin-top: auto;
-                width: 60%;
-                height: 60%;
             }
 
             @media (max-width: 991px) {
@@ -663,7 +665,8 @@
                                 <p class="text-left main">Three input source options that access all four
                                     measurement ports. One dedicated low-loss, high linearity path for harmonic and
                                     intermodulation measurement sourcing.</p>
-                                <img src="images/TestSet20_SignalPath_Key1.svg" alt="TestSet Sources Image Key">
+                                <img src="images/TestSet20_SignalPath_Key1.svg" alt="TestSet Sources Image Key"
+                                    style="height:150px;">
 
                             </div>
                         </div>
@@ -973,7 +976,8 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <h3>5G Device Interface <br></h3>
+                    <h3>5G Device Interface</h3>
+                    <br>
                     <p>Low loss blind mate interfaces solve production challenges for 5G devices. We're taking
                         modular to a whole new level.</p>
                     <a class="link" href="/fixture.html">Learn More</a>

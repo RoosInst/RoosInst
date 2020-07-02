@@ -20,7 +20,7 @@
 
             .cls-4 {
                 font-size: 7px;
-                fill: #231f20;
+                fill: #666666;
                 font-family: Source Sans Pro-Italic, Source Sans Pro;
                 font-style: italic;
             }
@@ -52,7 +52,7 @@
             }
 
             .cls-10 {
-                stroke: #231f20;
+                stroke: #666666;
                 stroke-width: 0.25px;
             }
 
