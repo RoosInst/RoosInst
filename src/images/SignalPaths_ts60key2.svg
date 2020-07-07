@@ -56,7 +56,7 @@
                 font-size: 7px;
                 fill: #666666;
                 font-family: Source Sans Pro;
-                font-style: italic;
+
                 font-weight: 400;
             }
 
@@ -128,7 +128,7 @@
             </g><text class="cls-11" transform="translate(31.51 14.29)">Distributed LO </text><text class="cls-11"
                 transform="translate(31.51 34.29)">
                 <tspan class="cls-14">Downconverted IF</tspan>
-            </text><text class="cls-11" transform="translate(31.51 54.29)">56-67GHz Measure </text>
+            </text><text class="cls-11" transform="translate(31.51 54.29)">56 to 67GHz Measure </text>
             <rect class="cls-19" x="0.14" y="0.12" width="106.13" height="64.52" />
         </g>
     </g>

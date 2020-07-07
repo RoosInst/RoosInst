@@ -64,7 +64,7 @@
             .cls-27 {
                 font-size: 7px;
                 fill: #666666;
-                font-style: italic;
+
             }
 
             .cls-11 {
@@ -233,8 +233,8 @@
             </g><text class="cls-11" transform="translate(31.62 13.85)">Distributed LO
 
             </text><text class="cls-11" transform="translate(31.62 33.85)">
-                <tspan class="cls-17">0.1 to 20GHz Source</tspan>
-            </text><text class="cls-11" transform="translate(31.62 53.85)">4-50GHz Source
+                <tspan class="cls-17">0.1 to 20 GHz Source</tspan>
+            </text><text class="cls-11" transform="translate(31.62 53.85)">4-50 GHz Source
             </text>
             <g class="cls-2">
                 <g class="cls-4">
@@ -245,7 +245,7 @@
             </g><text class="cls-11" transform="translate(135.27 13.53)">Direct Receive IF
             </text><text class="cls-11" transform="translate(135.27 26.53)">Incident Wave IF
             </text><text class="cls-11" transform="translate(135.27 39.53)">IF to Receiver
-            </text><text class="cls-11" transform="translate(135.27 52.53)">4-50GHz Measure
+            </text><text class="cls-11" transform="translate(135.27 52.53)">4-50 GHz Measure
             </text>
             <g class="cls-2">
                 <g class="cls-4">

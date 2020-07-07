@@ -58,7 +58,7 @@
             .cls-9 {
                 font-size: 7px;
                 fill: #666666;
-                font-style: italic;
+
                 font-weight: 400;
             }
 
@@ -203,7 +203,7 @@
             <rect class="cls-24" x="0.14" y="0.14" width="208.73" height="64.52" />
             <line class="cls-4" x1="10.64" y1="12.78" x2="28.64" y2="12.78" /><text class="cls-25"
                 transform="translate(32.5 14.3)">
-                <tspan class="cls-12">0.1 to 20GHz Source</tspan>
+                <tspan class="cls-12">0.1 to 20 GHz Source</tspan>
             </text><text class="cls-25" transform="translate(32.5 27.3)">56 to 67GHz Source </text><text class="cls-25"
                 transform="translate(32.5 40.3)">Distributed LO </text><text class="cls-25"
                 transform="translate(32.5 53.3)">IF to Receiver </text>
