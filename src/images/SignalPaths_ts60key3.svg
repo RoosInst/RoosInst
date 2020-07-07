@@ -1,279 +1,274 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 205.88 64.81">
-    <defs>
-        <style>
-            .cls-1,
-            .cls-10,
-            .cls-27,
-            .cls-38,
-            .cls-40,
-            .cls-42,
-            .cls-43,
-            .cls-6,
-            .cls-8 {
-                fill: none;
-            }
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 206.7 64.1" style="enable-background:new 0 0 206.7 64.1;" xml:space="preserve">
+	<style type="text/css">
+		.st0 {
+			clip-path: url(#SVGID_2_);
+		}
 
-            .cls-2 {
-                clip-path: url(#clip-path);
-            }
+		.st1 {
+			clip-path: url(#SVGID_4_);
+		}
 
-            .cls-3 {
-                fill: #fff;
-            }
+		.st2 {
+			fill: #FFFFFF;
+		}
 
-            .cls-4 {
-                opacity: 0.75;
-            }
+		.st3 {
+			clip-path: url(#SVGID_6_);
+		}
 
-            .cls-5 {
-                clip-path: url(#clip-path-4);
-            }
+		.st4 {
+			opacity: 0.75;
+		}
 
-            .cls-6 {
-                stroke: #fee900;
-            }
+		.st5 {
+			clip-path: url(#SVGID_8_);
+		}
 
-            .cls-10,
-            .cls-27,
-            .cls-38,
-            .cls-40,
-            .cls-42,
-            .cls-6,
-            .cls-8 {
-                stroke-width: 4px;
-            }
+		.st6 {
+			fill: none;
+			stroke: #FEE900;
+			stroke-width: 4;
+		}
 
-            .cls-7 {
-                clip-path: url(#clip-path-5);
-            }
+		.st7 {
+			clip-path: url(#SVGID_10_);
+		}
 
-            .cls-8 {
-                stroke: #00aeef;
-            }
+		.st8 {
+			fill: none;
+			stroke: #00AEEF;
+			stroke-width: 4;
+		}
 
-            .cls-9 {
-                clip-path: url(#clip-path-6);
-            }
+		.st9 {
+			clip-path: url(#SVGID_12_);
+		}
 
-            .cls-10 {
-                stroke: #006dad;
-            }
+		.st10 {
+			fill: none;
+			stroke: #006DAD;
+			stroke-width: 4;
+		}
 
-            .cls-11,
-            .cls-28 {
-                font-family: Source Sans Pro;
-                font-size: 7px;
-                fill: #666666;
-                font-style: italic;
-               font-weight: 400;
-            }
+		.st11 {
+			fill: #666666;
+		}
 
-            .cls-12 {
-                letter-spacing: 0em;
-            }
+		.st12 {
+			font-family: Source Sans Pro;
+			font-style: italic;
+			font-weight: 400;
+		}
 
-            .cls-13 {
-                letter-spacing: 0em;
-            }
+		.st13 {
+			font-size: 7px;
+		}
 
-            .cls-14 {
-                letter-spacing: 0em;
-            }
+		.st14 {
+			clip-path: url(#SVGID_14_);
+		}
 
-            .cls-15 {
-                letter-spacing: 0em;
-            }
+		.st15 {
+			clip-path: url(#SVGID_16_);
+		}
 
-            .cls-16 {
-                letter-spacing: -0.04em;
-            }
+		.st16 {
+			fill: none;
+			stroke: #8DC63F;
+			stroke-width: 4;
+		}
 
-            .cls-17 {
-                letter-spacing: -0.01em;
-            }
+		.st17 {
+			clip-path: url(#SVGID_18_);
+		}
 
-            .cls-18 {
-                letter-spacing: -0.07em;
-            }
+		.st18 {
+			clip-path: url(#SVGID_20_);
+		}
 
-            .cls-19 {
-                letter-spacing: 0em;
-            }
+		.st19 {
+			fill: none;
+			stroke: #39B54A;
+			stroke-width: 4;
+		}
 
-            .cls-20 {
-                letter-spacing: -0.01em;
-            }
+		.st20 {
+			clip-path: url(#SVGID_22_);
+		}
 
-            .cls-21 {
-                letter-spacing: 0em;
-            }
+		.st21 {
+			fill: none;
+			stroke: #00A775;
+			stroke-width: 4;
+		}
 
-            .cls-22 {
-                letter-spacing: 0em;
-            }
+		.st22 {
+			clip-path: url(#SVGID_24_);
+		}
 
-            .cls-23 {
-                letter-spacing: -0.01em;
-            }
+		.st23 {
+			fill: none;
+			stroke: #007B78;
+			stroke-width: 4;
+		}
 
-            .cls-24 {
-                letter-spacing: 0em;
-            }
-
-            .cls-25 {
-                letter-spacing: 0.07em;
-            }
-
-            .cls-26 {
-                clip-path: url(#clip-path-8);
-            }
-
-            .cls-27 {
-                stroke: #8dc63f;
-            }
-
-            .cls-28 {
-                font-family: Source Sans Pro;
-               font-weight: 400;
-            }
-
-            .cls-29 {
-                letter-spacing: -0.01em;
-            }
-
-            .cls-30 {
-                letter-spacing: -0.02em;
-            }
-
-            .cls-31 {
-                letter-spacing: -0.01em;
-            }
-
-            .cls-32 {
-                letter-spacing: -0.02em;
-            }
-
-            .cls-33 {
-                letter-spacing: 0em;
-            }
-
-            .cls-34 {
-                letter-spacing: -0.01em;
-            }
-
-            .cls-35 {
-                letter-spacing: 0.07em;
-            }
-
-            .cls-36 {
-                letter-spacing: 0.01em;
-            }
-
-            .cls-37 {
-                clip-path: url(#clip-path-10);
-            }
-
-            .cls-38 {
-                stroke: #39b54a;
-            }
-
-            .cls-39 {
-                clip-path: url(#clip-path-11);
-            }
-
-            .cls-40 {
-                stroke: #00a775;
-            }
-
-            .cls-41 {
-                clip-path: url(#clip-path-12);
-            }
-
-            .cls-42 {
-                stroke: #007b78;
-            }
-
-            .cls-43 {
-                stroke: #a8a7ad;
-                stroke-width: 0.5px;
-            }
-        </style>
-        <clipPath id="clip-path">
-            <rect class="cls-1" x="-313.14" y="-298.75" width="612" height="792" />
-        </clipPath>
-        <clipPath id="clip-path-4">
-            <rect class="cls-1" x="8.55" y="9.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-5">
-            <rect class="cls-1" x="8.55" y="29.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-6">
-            <rect class="cls-1" x="8.55" y="49.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-8">
-            <rect class="cls-1" x="116.55" y="9.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-10">
-            <rect class="cls-1" x="116.55" y="22.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-11">
-            <rect class="cls-1" x="116.55" y="35.78" width="20" height="6" />
-        </clipPath>
-        <clipPath id="clip-path-12">
-            <rect class="cls-1" x="116.55" y="48.78" width="20" height="6" />
-        </clipPath>
-    </defs>
-    <g class="cls-2">
-        <g class="cls-2">
-            <rect class="cls-3" x="-313.14" y="-298.75" width="612" height="792" />
-            <g class="cls-2">
-                <g class="cls-4">
-                    <g class="cls-5">
-                        <line class="cls-6" x1="9.55" y1="12.78" x2="27.55" y2="12.78" />
-                    </g>
-                </g>
-                <g class="cls-4">
-                    <g class="cls-7">
-                        <line class="cls-8" x1="9.55" y1="32.78" x2="27.55" y2="32.78" />
-                    </g>
-                </g>
-                <g class="cls-4">
-                    <g class="cls-9">
-                        <line class="cls-10" x1="9.55" y1="52.78" x2="27.55" y2="52.78" />
-                    </g>
-                </g>
-            </g><text class="cls-11" transform="translate(31.41 14.63)">Distributed LO </text><text class="cls-11"
-                transform="translate(31.41 34.63)">0.1 to 20GHz Source </text><text class="cls-11"
-                transform="translate(31.41 54.63)">56 to 67 GHz Source </text>
-            <g class="cls-2">
-                <g class="cls-4">
-                    <g class="cls-26">
-                        <line class="cls-27" x1="117.55" y1="12.78" x2="135.55" y2="12.78" />
-                    </g>
-                </g>
-            </g><text class="cls-28" transform="translate(139.41 14.63)">Reflected Wave IF </text><text class="cls-28"
-                transform="translate(139.41 27.41)">Incident Wave IF </text><text class="cls-28"
-                transform="translate(139.41 40.71)">IF to Receiver </text><text class="cls-28"
-                transform="translate(139.41 54.31)">56 to 67 GHz Measure </text>
-            <g class="cls-2">
-                <g class="cls-4">
-                    <g class="cls-37">
-                        <line class="cls-38" x1="117.55" y1="25.78" x2="135.55" y2="25.78" />
-                    </g>
-                </g>
-                <g class="cls-4">
-                    <g class="cls-39">
-                        <line class="cls-40" x1="117.55" y1="38.78" x2="135.55" y2="38.78" />
-                    </g>
-                </g>
-                <g class="cls-4">
-                    <g class="cls-41">
-                        <line class="cls-42" x1="117.55" y1="51.78" x2="135.55" y2="51.78" />
-                    </g>
-                </g>
-            </g>
-            <rect class="cls-43" x="0.05" y="1.03" width="205.99" height="63.5" />
-        </g>
-    </g>
+		.st24 {
+			fill: none;
+			stroke: #A8A7AD;
+			stroke-width: 0.5;
+		}
+	</style>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-312.8" y="-299.5" width="612" height="792" />
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_" style="overflow:visible;" />
+		</clipPath>
+		<g class="st0">
+			<g>
+				<defs>
+					<rect id="SVGID_3_" x="-312.8" y="-299.5" width="612" height="792" />
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_" style="overflow:visible;" />
+				</clipPath>
+				<g class="st1">
+					<rect x="-312.8" y="-299.5" class="st2" width="612" height="792" />
+					<g>
+						<defs>
+							<rect id="SVGID_5_" x="-312.8" y="-299.5" width="612" height="792" />
+						</defs>
+						<clipPath id="SVGID_6_">
+							<use xlink:href="#SVGID_5_" style="overflow:visible;" />
+						</clipPath>
+						<g class="st3">
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_7_" x="8.9" y="9.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_8_">
+										<use xlink:href="#SVGID_7_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st5">
+										<line class="st6" x1="9.9" y1="12.1" x2="27.9" y2="12.1" />
+									</g>
+								</g>
+							</g>
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_9_" x="8.9" y="29.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_10_">
+										<use xlink:href="#SVGID_9_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st7">
+										<line class="st8" x1="9.9" y1="32.1" x2="27.9" y2="32.1" />
+									</g>
+								</g>
+							</g>
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_11_" x="8.9" y="49.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_12_">
+										<use xlink:href="#SVGID_11_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st9">
+										<line class="st10" x1="9.9" y1="52.1" x2="27.9" y2="52.1" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<text transform="matrix(1 0 0 1 31.764 13.9002)" class="st11 st12 st13">Distributed LO</text>
+					<text transform="matrix(1 0 0 1 31.764 33.9002)" class="st11 st12 st13">0.1 to 20GHz Source</text>
+					<text transform="matrix(1 0 0 1 31.764 53.9002)" class="st11 st12 st13">56 to 67 GHz Source</text>
+					<g>
+						<defs>
+							<rect id="SVGID_13_" x="-312.8" y="-299.5" width="612" height="792" />
+						</defs>
+						<clipPath id="SVGID_14_">
+							<use xlink:href="#SVGID_13_" style="overflow:visible;" />
+						</clipPath>
+						<g class="st14">
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_15_" x="116.9" y="9.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_16_">
+										<use xlink:href="#SVGID_15_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st15">
+										<line class="st16" x1="117.9" y1="12.1" x2="135.9" y2="12.1" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<text transform="matrix(1 0 0 1 139.764 13.9002)" class="st11 st12 st13">Reflected Wave IF</text>
+					<text transform="matrix(1 0 0 1 139.764 26.6802)" class="st11 st12 st13">Incident Wave IF</text>
+					<text transform="matrix(1 0 0 1 139.764 39.9802)" class="st11 st12 st13">IF to Receiver</text>
+					<text transform="matrix(1 0 0 1 139.764 53.5802)" class="st11 st12 st13">56 to 67 GHz Measure</text>
+					<g>
+						<defs>
+							<rect id="SVGID_17_" x="-312.8" y="-299.5" width="612" height="792" />
+						</defs>
+						<clipPath id="SVGID_18_">
+							<use xlink:href="#SVGID_17_" style="overflow:visible;" />
+						</clipPath>
+						<g class="st17">
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_19_" x="116.9" y="22.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_20_">
+										<use xlink:href="#SVGID_19_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st18">
+										<line class="st19" x1="117.9" y1="25.1" x2="135.9" y2="25.1" />
+									</g>
+								</g>
+							</g>
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_21_" x="116.9" y="35.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_22_">
+										<use xlink:href="#SVGID_21_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st20">
+										<line class="st21" x1="117.9" y1="38.1" x2="135.9" y2="38.1" />
+									</g>
+								</g>
+							</g>
+							<g class="st4">
+								<g>
+									<defs>
+										<rect id="SVGID_23_" x="116.9" y="48.1" width="20" height="6" />
+									</defs>
+									<clipPath id="SVGID_24_">
+										<use xlink:href="#SVGID_23_" style="overflow:visible;" />
+									</clipPath>
+									<g class="st22">
+										<line class="st23" x1="117.9" y1="51.1" x2="135.9" y2="51.1" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<rect x="0.4" y="0.3" class="st24" width="206" height="63.5" />
+				</g>
+			</g>
+		</g>
+	</g>
 </svg>
