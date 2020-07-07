@@ -69,7 +69,7 @@
 
             .cls-11 {
                 font-family: Source Sans Pro;
-                font-weight: 300;
+               font-weight: 400;
             }
 
             .cls-12 {
@@ -134,7 +134,7 @@
 
             .cls-27 {
                 font-family: SanFranciscoText-Italic, San Francisco Text;
-                font-weight: 300;
+               font-weight: 400;
             }
 
             .cls-28 {

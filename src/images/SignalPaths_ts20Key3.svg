@@ -1,1 +1,129 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 101.31 44.03"><defs><style>.cls-1, .cls-4, .cls-7, .cls-9{ fill:none;} .cls-2{ clip-path:url(#clip-path);} .cls-3{ fill:#fff;} .cls-4{ stroke:#666666; stroke-width:0.5px;} .cls-5{ opacity:0.75;} .cls-6{ clip-path:url(#clip-path-4);} .cls-7{ stroke:#ed1941;} .cls-7, .cls-9{ stroke-width:4px;} .cls-8{ clip-path:url(#clip-path-5);} .cls-9{ stroke:#00aeef;} .cls-10{ font-size:7px; fill:#666666; font-family:Source Sans Pro; font-weight:300; font-style:italic;} .cls-11{ letter-spacing:0.01em;} .cls-12{ letter-spacing:0em;} .cls-13{ letter-spacing:0em;} .cls-14{ letter-spacing:-0.01em;} .cls-15{ letter-spacing:-0.01em;} .cls-16{ letter-spacing:0.01em;} .cls-17{ letter-spacing:0em;} .cls-18{ letter-spacing:0em;} .cls-19{ letter-spacing:0em;} .cls-20{ letter-spacing:0.01em;} </style><clipPath id="clip-path"><rect class="cls-1" x="-381.99" y="-657.8" width="612" height="792" /></clipPath><clipPath id="clip-path-4"><rect class="cls-1" x="10.76" y="9.04" width="20" height="6" /></clipPath><clipPath id="clip-path-5"><rect class="cls-1" x="10.76" y="29.04" width="20" height="6" /></clipPath></defs><g class="cls-2"><g class="cls-2"><rect class="cls-3" x="-381.99" y="-657.8" width="612" height="792" /><rect class="cls-4" x="0.26" y="0.29" width="100.72" height="43.5" /><g class="cls-2"><g class="cls-5"><g class="cls-6"><line class="cls-7" x1="11.76" y1="12.04" x2="29.76" y2="12.04" /></g></g><g class="cls-5"><g class="cls-8"><line class="cls-9" x1="11.76" y1="32.04" x2="29.76" y2="32.04" /></g></g></g><text class="cls-10" transform="translate(33.63 13.89)">Output from DUT </text><text class="cls-10" transform="translate(33.63 33.89)"><tspan class="cls-16">Noise Source Path</tspan></text></g></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 101.31 44.03">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-4,
+            .cls-7,
+            .cls-9 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                stroke: #666666;
+                stroke-width: 0.5px;
+            }
+
+            .cls-5 {
+                opacity: 0.75;
+            }
+
+            .cls-6 {
+                clip-path: url(#clip-path-4);
+            }
+
+            .cls-7 {
+                stroke: #ed1941;
+            }
+
+            .cls-7,
+            .cls-9 {
+                stroke-width: 4px;
+            }
+
+            .cls-8 {
+                clip-path: url(#clip-path-5);
+            }
+
+            .cls-9 {
+                stroke: #00aeef;
+            }
+
+            .cls-10 {
+                font-size: 7px;
+                fill: #666666;
+                font-family: Source Sans Pro;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .cls-11 {
+                letter-spacing: 0.01em;
+            }
+
+            .cls-12 {
+                letter-spacing: 0em;
+            }
+
+            .cls-13 {
+                letter-spacing: 0em;
+            }
+
+            .cls-14 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-15 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-16 {
+                letter-spacing: 0.01em;
+            }
+
+            .cls-17 {
+                letter-spacing: 0em;
+            }
+
+            .cls-18 {
+                letter-spacing: 0em;
+            }
+
+            .cls-19 {
+                letter-spacing: 0em;
+            }
+
+            .cls-20 {
+                letter-spacing: 0.01em;
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="-381.99" y="-657.8" width="612" height="792" />
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect class="cls-1" x="10.76" y="9.04" width="20" height="6" />
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <rect class="cls-1" x="10.76" y="29.04" width="20" height="6" />
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g class="cls-2">
+            <rect class="cls-3" x="-381.99" y="-657.8" width="612" height="792" />
+            <rect class="cls-4" x="0.26" y="0.29" width="100.72" height="43.5" />
+            <g class="cls-2">
+                <g class="cls-5">
+                    <g class="cls-6">
+                        <line class="cls-7" x1="11.76" y1="12.04" x2="29.76" y2="12.04" />
+                    </g>
+                </g>
+                <g class="cls-5">
+                    <g class="cls-8">
+                        <line class="cls-9" x1="11.76" y1="32.04" x2="29.76" y2="32.04" />
+                    </g>
+                </g>
+            </g><text class="cls-10" transform="translate(33.63 13.89)">Output from DUT </text><text class="cls-10"
+                transform="translate(33.63 33.89)">
+                <tspan class="cls-16">Noise Source Path</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

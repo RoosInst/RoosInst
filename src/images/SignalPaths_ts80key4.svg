@@ -65,7 +65,7 @@
                 font-size: 7px;
                 fill: #666666;
                 font-style: italic;
-                font-weight: 300;
+               font-weight: 400;
                 font-family: Source Sans Pro;
             }
 

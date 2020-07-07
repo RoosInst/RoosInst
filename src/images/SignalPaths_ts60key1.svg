@@ -1,1 +1,220 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 209 64.81"><defs><style>.cls-1, .cls-21, .cls-22, .cls-23, .cls-24, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8{ fill:none;} .cls-2{ clip-path:url(#clip-path);} .cls-3{ fill:#fff;} .cls-4{ stroke:#00aeef;} .cls-21, .cls-22, .cls-23, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8{ stroke-width:4px;} .cls-5{ stroke:#25408f;} .cls-6{ stroke:#fee900;} .cls-7{ stroke:#00a775;} .cls-8{ stroke:#d7df23;} .cls-25, .cls-9{ font-size:7px; fill:#666666; font-style:italic; font-weight:300;} .cls-9{ font-family:Source Sans Pro;} .cls-10{ letter-spacing:-0.01em;} .cls-11{ letter-spacing:0em;} .cls-12{ letter-spacing:-0.01em;} .cls-13{ letter-spacing:0em;} .cls-14{ letter-spacing:-0.01em;} .cls-15{ letter-spacing:0em;} .cls-16{ letter-spacing:-0.02em;} .cls-17{ letter-spacing:-0.01em;} .cls-18{ letter-spacing:-0.02em;} .cls-19{ letter-spacing:0.05em;} .cls-20{ letter-spacing:0.01em;} .cls-21{ stroke:#8dc63f;} .cls-22{ stroke:#00a88e;} .cls-23{ stroke:#007b78;} .cls-24{ stroke:#666666; stroke-width:0.25px;} .cls-25{ font-family:Source Sans Pro; font-weight:300;} .cls-26{ letter-spacing:-0.07em;} .cls-27{ letter-spacing:0em;} .cls-28{ letter-spacing:-0.01em;} .cls-29{ letter-spacing:0em;} .cls-30{ letter-spacing:0em;} .cls-31{ letter-spacing:-0.01em;} .cls-32{ letter-spacing:0em;} .cls-33{ letter-spacing:0.07em;} .cls-34{ letter-spacing:0em;} .cls-35{ letter-spacing:0em;} .cls-36{ letter-spacing:-0.04em;} .cls-37{ letter-spacing:-0.01em;} </style><clipPath id="clip-path"><rect class="cls-1" x="-313.89" y="-298.75" width="612" height="792" /></clipPath></defs><g class="cls-2"><g class="cls-2"><rect class="cls-3" x="-313.89" y="-298.75" width="612" height="792" /><line class="cls-4" x1="10.64" y1="12.78" x2="28.64" y2="12.78" /><line class="cls-5" x1="10.64" y1="25.78" x2="28.64" y2="25.78" /><line class="cls-6" x1="10.64" y1="38.78" x2="28.64" y2="38.78" /><line class="cls-7" x1="10.64" y1="51.78" x2="28.64" y2="51.78" /><line class="cls-8" x1="114.64" y1="12.78" x2="130.36" y2="12.78" /><text class="cls-9" transform="translate(133.74 14.3)">Direct Receive IF </text><text class="cls-9" transform="translate(133.74 27.3)"><tspan class="cls-13">Reflected Wave IF</tspan></text><text class="cls-9" transform="translate(133.74 40.3)">Incident Wave IF </text><text class="cls-9" transform="translate(133.74 53.3)">56-67GHz Measure </text><line class="cls-21" x1="114.64" y1="25.78" x2="130.36" y2="25.78" /><line class="cls-22" x1="114.64" y1="38.78" x2="130.36" y2="38.78" /><line class="cls-23" x1="114.64" y1="51.78" x2="130.36" y2="51.78" /><rect class="cls-24" x="0.14" y="0.14" width="208.73" height="64.52" /><line class="cls-4" x1="10.64" y1="12.78" x2="28.64" y2="12.78" /><text class="cls-25" transform="translate(32.5 14.3)"><tspan class="cls-12">0.1 to 20GHz Source</tspan></text><text class="cls-25" transform="translate(32.5 27.3)">56-67GHz Source </text><text class="cls-25" transform="translate(32.5 40.3)">Distributed LO </text><text class="cls-25" transform="translate(32.5 53.3)">IF to Receiver </text><line class="cls-5" x1="10.64" y1="25.78" x2="28.64" y2="25.78" /><line class="cls-6" x1="10.64" y1="38.78" x2="28.64" y2="38.78" /><line class="cls-7" x1="10.64" y1="51.78" x2="28.64" y2="51.78" /><line class="cls-8" x1="114.64" y1="12.78" x2="130.36" y2="12.78" /><line class="cls-21" x1="114.64" y1="25.78" x2="130.36" y2="25.78" /><line class="cls-22" x1="114.64" y1="38.78" x2="130.36" y2="38.78" /><line class="cls-23" x1="114.64" y1="51.78" x2="130.36" y2="51.78" /><rect class="cls-24" x="0.14" y="0.14" width="208.73" height="64.52" /></g></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 209 64.81">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-21,
+            .cls-22,
+            .cls-23,
+            .cls-24,
+            .cls-4,
+            .cls-5,
+            .cls-6,
+            .cls-7,
+            .cls-8 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                stroke: #00aeef;
+            }
+
+            .cls-21,
+            .cls-22,
+            .cls-23,
+            .cls-4,
+            .cls-5,
+            .cls-6,
+            .cls-7,
+            .cls-8 {
+                stroke-width: 4px;
+            }
+
+            .cls-5 {
+                stroke: #25408f;
+            }
+
+            .cls-6 {
+                stroke: #fee900;
+            }
+
+            .cls-7 {
+                stroke: #00a775;
+            }
+
+            .cls-8 {
+                stroke: #d7df23;
+            }
+
+            .cls-25,
+            .cls-9 {
+                font-size: 7px;
+                fill: #666666;
+                font-style: italic;
+                font-weight: 400;
+            }
+
+            .cls-9 {
+                font-family: Source Sans Pro;
+            }
+
+            .cls-10 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-11 {
+                letter-spacing: 0em;
+            }
+
+            .cls-12 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-13 {
+                letter-spacing: 0em;
+            }
+
+            .cls-14 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-15 {
+                letter-spacing: 0em;
+            }
+
+            .cls-16 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-17 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-18 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-19 {
+                letter-spacing: 0.05em;
+            }
+
+            .cls-20 {
+                letter-spacing: 0.01em;
+            }
+
+            .cls-21 {
+                stroke: #8dc63f;
+            }
+
+            .cls-22 {
+                stroke: #00a88e;
+            }
+
+            .cls-23 {
+                stroke: #007b78;
+            }
+
+            .cls-24 {
+                stroke: #666666;
+                stroke-width: 0.25px;
+            }
+
+            .cls-25 {
+                font-family: Source Sans Pro;
+                font-weight: 400;
+            }
+
+            .cls-26 {
+                letter-spacing: -0.07em;
+            }
+
+            .cls-27 {
+                letter-spacing: 0em;
+            }
+
+            .cls-28 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-29 {
+                letter-spacing: 0em;
+            }
+
+            .cls-30 {
+                letter-spacing: 0em;
+            }
+
+            .cls-31 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-32 {
+                letter-spacing: 0em;
+            }
+
+            .cls-33 {
+                letter-spacing: 0.07em;
+            }
+
+            .cls-34 {
+                letter-spacing: 0em;
+            }
+
+            .cls-35 {
+                letter-spacing: 0em;
+            }
+
+            .cls-36 {
+                letter-spacing: -0.04em;
+            }
+
+            .cls-37 {
+                letter-spacing: -0.01em;
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="-313.89" y="-298.75" width="612" height="792" />
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g class="cls-2">
+            <rect class="cls-3" x="-313.89" y="-298.75" width="612" height="792" />
+            <line class="cls-4" x1="10.64" y1="12.78" x2="28.64" y2="12.78" />
+            <line class="cls-5" x1="10.64" y1="25.78" x2="28.64" y2="25.78" />
+            <line class="cls-6" x1="10.64" y1="38.78" x2="28.64" y2="38.78" />
+            <line class="cls-7" x1="10.64" y1="51.78" x2="28.64" y2="51.78" />
+            <line class="cls-8" x1="114.64" y1="12.78" x2="130.36" y2="12.78" /><text class="cls-9"
+                transform="translate(133.74 14.3)">Direct Receive IF </text><text class="cls-9"
+                transform="translate(133.74 27.3)">
+                <tspan class="cls-13">Reflected Wave IF</tspan>
+            </text><text class="cls-9" transform="translate(133.74 40.3)">Incident Wave IF </text><text class="cls-9"
+                transform="translate(133.74 53.3)">56-67GHz Measure </text>
+            <line class="cls-21" x1="114.64" y1="25.78" x2="130.36" y2="25.78" />
+            <line class="cls-22" x1="114.64" y1="38.78" x2="130.36" y2="38.78" />
+            <line class="cls-23" x1="114.64" y1="51.78" x2="130.36" y2="51.78" />
+            <rect class="cls-24" x="0.14" y="0.14" width="208.73" height="64.52" />
+            <line class="cls-4" x1="10.64" y1="12.78" x2="28.64" y2="12.78" /><text class="cls-25"
+                transform="translate(32.5 14.3)">
+                <tspan class="cls-12">0.1 to 20GHz Source</tspan>
+            </text><text class="cls-25" transform="translate(32.5 27.3)">56-67GHz Source </text><text class="cls-25"
+                transform="translate(32.5 40.3)">Distributed LO </text><text class="cls-25"
+                transform="translate(32.5 53.3)">IF to Receiver </text>
+            <line class="cls-5" x1="10.64" y1="25.78" x2="28.64" y2="25.78" />
+            <line class="cls-6" x1="10.64" y1="38.78" x2="28.64" y2="38.78" />
+            <line class="cls-7" x1="10.64" y1="51.78" x2="28.64" y2="51.78" />
+            <line class="cls-8" x1="114.64" y1="12.78" x2="130.36" y2="12.78" />
+            <line class="cls-21" x1="114.64" y1="25.78" x2="130.36" y2="25.78" />
+            <line class="cls-22" x1="114.64" y1="38.78" x2="130.36" y2="38.78" />
+            <line class="cls-23" x1="114.64" y1="51.78" x2="130.36" y2="51.78" />
+            <rect class="cls-24" x="0.14" y="0.14" width="208.73" height="64.52" />
+        </g>
+    </g>
+</svg>

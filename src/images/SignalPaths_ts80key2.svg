@@ -62,7 +62,7 @@
                 fill: #666666;
                 font-family: Source Sans Pro;
                 font-style: italic;
-                font-weight: 300;
+               font-weight: 400;
             }
 
             .cls-13 {
