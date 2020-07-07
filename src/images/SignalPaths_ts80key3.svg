@@ -1,1 +1,110 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 116.42 63.35"><defs><style>.cls-1,.cls-15,.cls-16,.cls-17,.cls-4,.cls-5{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke:#231f20;stroke-width:0.25px;}.cls-5{stroke:#6dcff6;}.cls-15,.cls-16,.cls-17,.cls-5{stroke-width:4px;}.cls-6{font-size:7px;fill:#231f20;font-family:SanFranciscoText-Italic, San Francisco Text;font-style:italic;}.cls-7{letter-spacing:-0.01em;}.cls-8{letter-spacing:-0.05em;}.cls-9{letter-spacing:-0.01em;}.cls-10{letter-spacing:0em;}.cls-11{letter-spacing:0em;}.cls-12{letter-spacing:0em;}.cls-13{letter-spacing:-0.03em;}.cls-14{letter-spacing:-0.01em;}.cls-15{stroke:#00aeef;}.cls-16{stroke:#007db6;}.cls-17{stroke:#25408f;}</style><clipPath id="clip-path"><rect class="cls-1" x="-327.07" y="-300.72" width="612" height="792"/></clipPath></defs><g class="cls-2"><g class="cls-2"><rect class="cls-3" x="-327.07" y="-300.72" width="612" height="792"/><rect class="cls-4" x="0.02" y="0.16" width="116.22" height="63"/><line class="cls-5" x1="10.45" y1="11.81" x2="26.18" y2="11.81"/><text class="cls-6" transform="translate(29.55 13.33)"><tspan class="cls-7">0</tspan><tspan class="cls-8" x="4.08" y="0">.</tspan><tspan x="5.58" y="0">1 to </tspan><tspan class="cls-9" x="18.47" y="0">2</tspan><tspan class="cls-10" x="22.28" y="0">0GHz </tspan><tspan class="cls-11" x="40.79" y="0">S</tspan><tspan x="44.89" y="0">ou</tspan><tspan class="cls-7" x="52.79" y="0">r</tspan><tspan class="cls-12" x="55.4" y="0">ce 1</tspan></text><text class="cls-6" transform="translate(29.55 26.33)"><tspan class="cls-13">7</tspan><tspan x="3.6" y="0">1-86GHz </tspan><tspan class="cls-14" x="32.21" y="0">S</tspan><tspan x="36.31" y="0">ou</tspan><tspan class="cls-7" x="44.2" y="0">r</tspan><tspan x="46.82" y="0">ce 1</tspan></text><text class="cls-6" transform="translate(29.55 39.33)"><tspan class="cls-7">0</tspan><tspan class="cls-8" x="4.08" y="0">.</tspan><tspan x="5.58" y="0">1 to </tspan><tspan class="cls-9" x="18.47" y="0">2</tspan><tspan class="cls-10" x="22.28" y="0">0GHz </tspan><tspan class="cls-11" x="40.79" y="0">S</tspan><tspan x="44.89" y="0">ou</tspan><tspan class="cls-7" x="52.79" y="0">r</tspan><tspan class="cls-12" x="55.4" y="0">ce 2</tspan></text><text class="cls-6" transform="translate(29.55 52.33)"><tspan class="cls-13">7</tspan><tspan x="3.6" y="0">1-86GHz </tspan><tspan class="cls-14" x="32.21" y="0">S</tspan><tspan x="36.31" y="0">ou</tspan><tspan class="cls-7" x="44.2" y="0">r</tspan><tspan x="46.82" y="0">ce 2</tspan></text><line class="cls-15" x1="10.45" y1="24.81" x2="26.18" y2="24.81"/><line class="cls-16" x1="10.45" y1="37.81" x2="26.18" y2="37.81"/><line class="cls-17" x1="10.45" y1="50.81" x2="26.18" y2="50.81"/></g></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 116.42 63.35">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-15,
+            .cls-16,
+            .cls-17,
+            .cls-4,
+            .cls-5 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                stroke: #231f20;
+                stroke-width: 0.25px;
+            }
+
+            .cls-5 {
+                stroke: #6dcff6;
+            }
+
+            .cls-15,
+            .cls-16,
+            .cls-17,
+            .cls-5 {
+                stroke-width: 4px;
+            }
+
+            .cls-6 {
+                font-size: 7px;
+                fill: #666666;
+                font-family: SanFranciscoText-Italic, San Francisco Text;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .cls-7 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-8 {
+                letter-spacing: -0.05em;
+            }
+
+            .cls-9 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-10 {
+                letter-spacing: 0em;
+            }
+
+            .cls-11 {
+                letter-spacing: 0em;
+            }
+
+            .cls-12 {
+                letter-spacing: 0em;
+            }
+
+            .cls-13 {
+                letter-spacing: -0.03em;
+            }
+
+            .cls-14 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-15 {
+                stroke: #00aeef;
+            }
+
+            .cls-16 {
+                stroke: #007db6;
+            }
+
+            .cls-17 {
+                stroke: #25408f;
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="-327.07" y="-300.72" width="612" height="792" />
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g class="cls-2">
+            <rect class="cls-3" x="-327.07" y="-300.72" width="612" height="792" />
+            <rect class="cls-4" x="0.02" y="0.16" width="116.22" height="63" />
+            <line class="cls-5" x1="10.45" y1="11.81" x2="26.18" y2="11.81" /><text class="cls-6"
+                transform="translate(29.55 13.33)">0.1 to 20GHz Source 1
+            </text><text class="cls-6" transform="translate(29.55 26.33)">
+                71 to 86GHz Source 1
+            </text><text class="cls-6" transform="translate(29.55 39.33)">0.1 to 20GHz Source 2
+            </text><text class="cls-6" transform="translate(29.55 52.33)">71 to 86GHz Source 2
+            </text>
+            <line class="cls-15" x1="10.45" y1="24.81" x2="26.18" y2="24.81" />
+            <line class="cls-16" x1="10.45" y1="37.81" x2="26.18" y2="37.81" />
+            <line class="cls-17" x1="10.45" y1="50.81" x2="26.18" y2="50.81" />
+        </g>
+    </g>
+</svg>

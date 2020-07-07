@@ -1,1 +1,130 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107.32 65.74"><defs><style>.cls-1,.cls-11,.cls-4,.cls-7,.cls-9{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke:#231f20;stroke-width:0.25px;}.cls-5{opacity:0.75;}.cls-6{clip-path:url(#clip-path-4);}.cls-7{stroke:#fee900;}.cls-11,.cls-7,.cls-9{stroke-width:4px;}.cls-8{clip-path:url(#clip-path-5);}.cls-9{stroke:#f58220;}.cls-10{clip-path:url(#clip-path-6);}.cls-11{stroke:#d2232a;}.cls-12{font-size:7px;fill:#231f20;font-family:SanFranciscoText-Regular, San Francisco Text;}.cls-13{letter-spacing:-0.02em;}.cls-14{letter-spacing:0.01em;}.cls-15{letter-spacing:0em;}.cls-16{letter-spacing:-0.01em;}.cls-17{letter-spacing:0em;}.cls-18{letter-spacing:0.03em;}</style><clipPath id="clip-path"><rect class="cls-1" x="-323.89" y="-640.07" width="612" height="792"/></clipPath><clipPath id="clip-path-4"><rect class="cls-1" x="8.75" y="10.36" width="20" height="6"/></clipPath><clipPath id="clip-path-5"><rect class="cls-1" x="8.75" y="30.36" width="20" height="6"/></clipPath><clipPath id="clip-path-6"><rect class="cls-1" x="8.75" y="50.36" width="20" height="6"/></clipPath></defs><g class="cls-2"><g class="cls-2"><rect class="cls-3" x="-323.89" y="-640.07" width="612" height="792"/><rect class="cls-4" x="0.25" y="0.71" width="106.13" height="64.52"/><g class="cls-2"><g class="cls-5"><g class="cls-6"><line class="cls-7" x1="9.75" y1="13.36" x2="27.75" y2="13.36"/></g></g><g class="cls-5"><g class="cls-8"><line class="cls-9" x1="9.75" y1="33.36" x2="27.75" y2="33.36"/></g></g><g class="cls-5"><g class="cls-10"><line class="cls-11" x1="9.75" y1="53.36" x2="27.75" y2="53.36"/></g></g></g><text class="cls-12" transform="translate(31.62 14.88)">Distributed <tspan class="cls-13" x="37.59" y="0">L</tspan><tspan x="41" y="0">O</tspan></text><text class="cls-12" transform="translate(31.62 34.88)"><tspan class="cls-14">D</tspan><tspan class="cls-15" x="4.67" y="0">o</tspan><tspan x="8.59" y="0">wnco</tspan><tspan class="cls-16" x="25.46" y="0">n</tspan><tspan class="cls-17" x="29.51" y="0">v</tspan><tspan x="32.99" y="0">e</tspan><tspan class="cls-18" x="36.79" y="0">r</tspan><tspan x="39.72" y="0">ted IF</tspan></text><text class="cls-12" transform="translate(31.62 54.88)">71-86GHz Measure</text></g></g></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 107.32 65.74">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-11,
+            .cls-4,
+            .cls-7,
+            .cls-9 {
+                fill: none;
+            }
+
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+
+            .cls-3 {
+                fill: #fff;
+            }
+
+            .cls-4 {
+                stroke: #666666;
+                stroke-width: 0.25px;
+            }
+
+            .cls-5 {
+                opacity: 0.75;
+            }
+
+            .cls-6 {
+                clip-path: url(#clip-path-4);
+            }
+
+            .cls-7 {
+                stroke: #fee900;
+            }
+
+            .cls-11,
+            .cls-7,
+            .cls-9 {
+                stroke-width: 4px;
+            }
+
+            .cls-8 {
+                clip-path: url(#clip-path-5);
+            }
+
+            .cls-9 {
+                stroke: #f58220;
+            }
+
+            .cls-10 {
+                clip-path: url(#clip-path-6);
+            }
+
+            .cls-11 {
+                stroke: #d2232a;
+            }
+
+            .cls-12 {
+                font-size: 7px;
+                fill: #666666;
+                font-family: Source Sans Pro;
+                font-style: italic;
+                font-weight: 300;
+            }
+
+            .cls-13 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-14 {
+                letter-spacing: 0.01em;
+            }
+
+            .cls-15 {
+                letter-spacing: 0em;
+            }
+
+            .cls-16 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-17 {
+                letter-spacing: 0em;
+            }
+
+            .cls-18 {
+                letter-spacing: 0.03em;
+            }
+        </style>
+        <clipPath id="clip-path">
+            <rect class="cls-1" x="-323.89" y="-640.07" width="612" height="792" />
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect class="cls-1" x="8.75" y="10.36" width="20" height="6" />
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <rect class="cls-1" x="8.75" y="30.36" width="20" height="6" />
+        </clipPath>
+        <clipPath id="clip-path-6">
+            <rect class="cls-1" x="8.75" y="50.36" width="20" height="6" />
+        </clipPath>
+    </defs>
+    <g class="cls-2">
+        <g class="cls-2">
+            <rect class="cls-3" x="-323.89" y="-640.07" width="612" height="792" />
+            <rect class="cls-4" x="0.25" y="0.71" width="106.13" height="64.52" />
+            <g class="cls-2">
+                <g class="cls-5">
+                    <g class="cls-6">
+                        <line class="cls-7" x1="9.75" y1="13.36" x2="27.75" y2="13.36" />
+                    </g>
+                </g>
+                <g class="cls-5">
+                    <g class="cls-8">
+                        <line class="cls-9" x1="9.75" y1="33.36" x2="27.75" y2="33.36" />
+                    </g>
+                </g>
+                <g class="cls-5">
+                    <g class="cls-10">
+                        <line class="cls-11" x1="9.75" y1="53.36" x2="27.75" y2="53.36" />
+                    </g>
+                </g>
+            </g><text class="cls-12" transform="translate(31.62 14.88)">Distributed LO
+            </text><text class="cls-12" transform="translate(31.62 34.88)">Downconverted IF
+            </text><text class="cls-12" transform="translate(31.62 54.88)">71 to 86GHz Measure</text>
+        </g>
+    </g>
+</svg>
