@@ -1,7 +1,19 @@
-<svg id="TS20_" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg id="TS20_key1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 72.61 63.25">
     <defs>
-        <style>
+        <style type="text/css">
+            /* source-sans-pro-regular - latin */
+            @font-face {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+                    url('https://roos.com/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+                    /* Chrome 26+, Opera 23+, Firefox 39+ */
+                    url('https://roos.com/fonts/source-sans-pro-v13-latin-regular.woff') format('woff');
+                /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            }
+
             .cls-1,
             .cls-10,
             .cls-12,
@@ -21,7 +33,7 @@
             .cls-4 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro';
 
                 font-weight: 400;
             }

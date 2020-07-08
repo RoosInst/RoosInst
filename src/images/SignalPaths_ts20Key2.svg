@@ -2,6 +2,18 @@
     viewBox="0 0 101.52 63.3">
     <defs>
         <style>
+            /* source-sans-pro-regular - latin */
+            @font-face {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+                    url('/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+                    /* Chrome 26+, Opera 23+, Firefox 39+ */
+                    url('/fonts/source-sans-pro-v13-latin-regular.woff') format('woff');
+                /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            }
+
             .cls-1,
             .cls-20,
             .cls-22,
@@ -41,7 +53,7 @@
             .cls-7 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro';
 
                 font-weight: 400;
             }

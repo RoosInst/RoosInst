@@ -50,7 +50,7 @@
             .cls-10 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro';
                 font-weight: 400;
 
             }

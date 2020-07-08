@@ -46,7 +46,7 @@
             }
 
             .cls-5 {
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro';
                font-weight: 400;
             }
 
@@ -131,7 +131,7 @@
             }
 
             .cls-26 {
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro';
                font-weight: 400;
             }
 

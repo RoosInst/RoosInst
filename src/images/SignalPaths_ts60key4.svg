@@ -69,7 +69,7 @@
 
             .cls-11,
             .cls-28 {
-                font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+                font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
                font-weight: 400;
 
             }
