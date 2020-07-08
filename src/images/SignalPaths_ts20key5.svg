@@ -3,7 +3,7 @@
     <defs>
 <style>
         @font-face {
-    	font-family: 'Source Sans Pro';
+    	'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
     	font-style: normal;
     	font-weight: 400;
     	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
@@ -67,7 +67,7 @@
             .cls-11 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: 'Source Sans Pro';
+                'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
                 font-weight: 400;
 
             }

@@ -4,7 +4,7 @@
 	 viewBox="0 0 210.7 64.1" style="enable-background:new 0 0 210.7 64.1;" xml:space="preserve">
 <style type="text/css">
     @font-face {
-    	font-family: 'Source Sans Pro';
+    	'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
     	font-style: normal;
     	font-weight: 400;
     	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
