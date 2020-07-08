@@ -1,7 +1,15 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 106.4 64.79">
     <defs>
-        <style>
+<style>
+        @font-face {
+    	font-family: 'Source Sans Pro';
+    	font-style: normal;
+    	font-weight: 400;
+    	src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+		url('../fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'),
+    	url('../fonts/source-sans-pro-v13-latin-regular.woff') format('woff');
+        }
             .cls-1,
             .cls-10,
             .cls-19,
