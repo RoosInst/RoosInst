@@ -245,7 +245,7 @@
 
             .cls-27,
             .cls-6 {
-              font-face: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
+              font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
                font-weight: 400;
             }
 

@@ -245,7 +245,6 @@
                 fill: #666666;
                 font-family: Source Sans Pro;
                 font-weight: 400;
-
             }
 
             .cls-11 {
@@ -313,10 +312,8 @@
                         <line class="cls-9" x1="11.76" y1="32.04" x2="29.76" y2="32.04" />
                     </g>
                 </g>
-            </g><text class="cls-10" transform="translate(33.63 13.89)">Output from DUT </text><text class="cls-10"
-                transform="translate(33.63 33.89)">
-                <tspan class="cls-16">Noise Source Path</tspan>
-            </text>
+            </g><text class="cls-10" transform="translate(33.63 13.89)">Output from DUT</text>
+            <text class="cls-10" transform="translate(33.63 33.89)">Noise Source Path</text>
         </g>
     </g>
 </svg>

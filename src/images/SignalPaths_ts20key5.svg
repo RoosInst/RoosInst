@@ -252,7 +252,7 @@
             .cls-11 {
                 font-size: 7px;
                 fill: #666666;
-              font-face: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
+              font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
                 font-weight: 400;
 
             }

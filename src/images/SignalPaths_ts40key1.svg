@@ -235,11 +235,7 @@
             .cls-5 {
                 font-size: 7px;
                 fill: #666666;
-
-            }
-
-            .cls-5 {
-               font-face:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
+                font-family:'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
                font-weight: 400;
             }
 
@@ -324,7 +320,7 @@
             }
 
             .cls-26 {
-              font-face: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
+              font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
                font-weight: 400;
             }
 
