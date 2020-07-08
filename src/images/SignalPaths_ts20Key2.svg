@@ -4,7 +4,7 @@
         <style>
             /* source-sans-pro-regular - latin */
             @font-face {
-                'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
+                font-family: 'Source Sans Pro';
                 font-style: normal;
                 font-weight: 400;
                 src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
@@ -54,7 +54,6 @@
                 font-size: 7px;
                 fill: #666666;
                 font-family: 'Source Sans Pro','HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',arial,veranda, helvetica,sans-serif;
-
                 font-weight: 400;
             }
 
