@@ -767,6 +767,24 @@
           margin-bottom: 1px;
           margin-left: 15px
         }
+
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 200px;
+          width: 125px;
+          height: 125px;
+          border: 0.5px solid #dddddd;
+          padding: 10px;
+        }
+
+        .strong {
+          color: #00a7ff;
+          font-weight: 800;
+          font-size: 1.5em;
+        }
       </style>
 
       <div id="Testhead" class="row">
@@ -779,7 +797,29 @@
           <div id="MSC-p1">
             <p>Cassini’s backplane-less design allows for any instrument in any slot to optimize the test head for
               multisite, mixed signal topology, and feature expansion with up to:</p>
-            <img alt="Max Pins/Ports" src="images/system_MaxPinsPorts.png">
+            <div class="row row-no-gutters">
+              <div class="col-md-4">
+                <div class="center">
+                  <p><span class="strong">1200</span><br>Digital Pins</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="center">
+                  <p><span class="strong">544</span><br>DC Pins</p>
+                </div>
+              </div>
+            </div>
+            <div class="row row-no-gutters">
+              <div class="col-md-4">
+                <div class="center">
+                  <p><span class="strong">52</span><br>RF Ports</p>
+                </div>
+              </div>
+              <!-- <img alt="10 High Speed Digital TIMs" src="/images/1200-Digital-Pins.png" style="max-width:100px">
+                <img alt="18 DC TIMs" src="/images/224-DC-Pins.png" style="max-width:100px">
+                <img alt="13 20 GHz TestSets (4x RF ports each)" src="/images/52-Vector-RF.png" style="max-width:100px"> -->
+            </div>
+            <img alt="Max Pins/Ports" src="/images/system_MaxPinsPorts.png">
           </div>
           <hr id="MSC-dots-2">
         </div>
