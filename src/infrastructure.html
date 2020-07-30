@@ -768,6 +768,15 @@
           margin-left: 15px
         }
 
+        .box {
+          padding-right: 0;
+          width: 135px;
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          float: left;
+        }
+
         .center {
           display: flex;
           justify-content: center;
@@ -778,12 +787,18 @@
           height: 125px;
           border: 0.5px solid #dddddd;
           padding: 10px;
+          line-height: 25px;
+        }
+
+        .center p {
+          font-size: 1.25em;
+          margin-bottom: 0;
         }
 
         .strong {
           color: #00a7ff;
-          font-weight: 800;
-          font-size: 1.5em;
+          font-weight: 900;
+          font-size: 1.25em;
         }
       </style>
 
@@ -798,28 +813,33 @@
             <p>Cassini’s backplane-less design allows for any instrument in any slot to optimize the test head for
               multisite, mixed signal topology, and feature expansion with up to:</p>
             <div class="row row-no-gutters">
-              <div class="col-md-4">
-                <div class="center">
-                  <p><span class="strong">1200</span><br>Digital Pins</p>
+              <div class="col-md-12" style="padding-left: 0;">
+                <div class="box">
+                  <div class="center">
+                    <p><span class="strong">1200</span><br>Digital Pins</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="center">
-                  <p><span class="strong">544</span><br>DC Pins</p>
+                <div class="box" style="padding-left: 11px;">
+                  <div class="center">
+                    <p><span class="strong">544</span><br>DC Pins</p>
+                  </div>
+                </div>
+                <div class="box visible-xs" style="padding-left: 6px;">
+                  <div class="center">
+                    <p><span class="strong">52</span><br>Vector RF Ports</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="row row-no-gutters">
-              <div class="col-md-4">
-                <div class="center">
-                  <p><span class="strong">52</span><br>RF Ports</p>
+            <div class="row row-no-gutters hidden-xs">
+              <div class="col-md-12" style="padding-left: 0;">
+                <div class="box">
+                  <div class="center" style="margin-top:5px">
+                    <p><span class="strong">52</span><br>Vector RF Ports</p>
+                  </div>
                 </div>
               </div>
-              <!-- <img alt="10 High Speed Digital TIMs" src="/images/1200-Digital-Pins.png" style="max-width:100px">
-                <img alt="18 DC TIMs" src="/images/224-DC-Pins.png" style="max-width:100px">
-                <img alt="13 20 GHz TestSets (4x RF ports each)" src="/images/52-Vector-RF.png" style="max-width:100px"> -->
             </div>
-            <img alt="Max Pins/Ports" src="/images/system_MaxPinsPorts.png">
           </div>
           <hr id="MSC-dots-2">
         </div>
