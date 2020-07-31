@@ -359,300 +359,212 @@
     <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
-
-    <div id="content" class="roosC container">
-
-      <div class="clearfix">
-        <h2>Taking Modular to a Whole New Level</h2>
-        <p class="main">
-          A modular test system is only as modular as it's least configurable component. All of the functionality and
-          capability of traditional load boards have been re-engineered to take advantage of the configurable instrument
-          framework of Cassini. The discrete layers enable maximum design flexibility for high performance RF devices
-          that can adapt to changing application needs.
-        </p>
-        <div class="text-center" style="margin: 20px 0 20px 0;"><small><i
-              class="far fa-2x fa-border fa-hand-pointer"></i>
-            Interact with Fixture Diagram to Learn More</small></div>
-        <img class="centerImg" style="max-width: 640px; max-height: 100%" id="FixtureExplodedViewImg"
-          src="images/FixtureEx_perspective_web.jpg" usemap="#FixtureExplodedView" border="0"
-          alt="Fixture Exploded View">
-        <map id="FixtureExplodedView" name="FixtureExplodedView">
-          <area id="DIB-Clamp" shape="rect" coords="0,0,640,90" alt="DIB Clamp" title="DIB Clamp">
-          <area id="DIB" shape="rect" coords="0,90,640,155" alt="Device Interface Board (DIB)"
-            title="Device Interface Board (DIB)">
-          <area id="pedestals" shape="rect" coords="0,155,640,235" alt="Pedestals & Pedestal Support"
-            title="Pedestals & Pedestal Support">
-          <area id="topPlate" shape="rect" coords="0,235,640,284" alt="Top Plate & Signal Launches"
-            title="Top Plate & Signal Launches">
-          <area id="carrier" shape="rect" coords="0,284,640,341" alt="Fixture Carrier" title="Fixture Carrier">
-          <area id="bodyAndDocking" shape="rect" coords="0,341,640,590" alt="Fixture Body with Docking Ears"
-            title="Fixture Body with Docking Ears">
-          <area id="bottomPlate" shape="rect" coords="0,590,640,800" alt="Bottom Plate & Interface Inserts"
-            title="Bottom Plate & Interface Inserts">
-        </map>
-        <script>
-          $(document).ready(function () {
-            $('#FixtureExplodedViewImg').ImageMapResize({
-              origImageWidth: "640"
-            });
-            $('#DIB-Clamp').qtip({
-              content: {
-                title: 'DIB Clamp',
-                text: 'The DIB Clamp completes the Quick-Lock&trade; system by aligning and protecting the PCB ' +
-                  'by sandwiching it between electrically shielded aluminum. The clamp frame design coupled ' +
-                  'with the pedestal support enhances multi-site isolation for sensitive parallel RF test ' +
-                  'applications.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#DIB').qtip({
-              content: {
-                title: 'Device Interface Board (DIB)',
-                text: 'With most of the application resources moved inside the fixture, the DIB reduces down to a ' +
-                  '2-layer interconnect PCB. With a solid ground plane and strip-line microwave signal paths, ' +
-                  'the DIB delivers unmatched performance up to 20 GHz, providing a low-cost solution for a ' +
-                  'high-wear component.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#pedestals').qtip({
-              content: {
-                title: 'Petestals & Support',
-                text: 'One of three components comprising the DIB Quick-Lock™ system, the aluminum pedestal support' +
-                  'provides reinforcement of the socket sites from underneath during handler insertion with ' +
-                  'aluminum pedestals. The housing doubles as both protection of the PCB as well as providing RF ' +
-                  'shielding and enhancing site isolation for the socket sites.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#topPlate').qtip({
-              content: {
-                title: 'Top Plate & Launches',
-                text: 'The aluminum frame incorporates a hinge top design for easy access to resources within the ' +
-                  'enclosure in addition to over 30 signal launch locations for configurable site topologies. ' +
-                  'Interchangeable DC, high-speed digital, RF and millimeter wave inserts provide high ' +
-                  'performance, precision signal launching around the perimeter of the device interface board.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#carrier').qtip({
-              content: {
-                title: 'Fixture Carrier',
-                text: 'Fixture PCB that provides 13 standard fixture module locations for adding instrument resources: ' +
-                  'switches, relays, signal conditioning, parametric measure, and more. The carrier interfaces with ' +
-                  'Cassini\'s testhead to bring integrated software control into the device interface and path calibration.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#bodyAndDocking').qtip({
-              content: {
-                title: 'Fixture Body & Docking',
-                text: 'The rugged aluminum enclosure is ideal for production floor use, protecting sensitive microwave ' +
-                  'components in addition to providing thermal and electrical shielding. The frame supports our ' +
-                  'integrated, precision handler docking system with built-in mechanical dampening and compliance with ' +
-                  'a variety of handler setups.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'top center',
-                at: 'bottom center',
-                viewport: $('#content')
-              }
-            });
-
-            $('#bottomPlate').qtip({
-              content: {
-                title: 'Bottom Plate & Blocks',
-                text: 'Aluminum plate with 16 universal instrument interface slots and standard docking pins for interfacing ' +
-                  'with Cassini\'s testhead. Each TIM slot accommodates blind-mate signal interface blocks for all of ' +
-                  'Cassini\'s Test Instrument Modules.'
-              },
-              style: {
-                classes: 'qtip-bootstrap qtip-shadow'
-              },
-              position: {
-                my: 'bottom center',
-                at: 'top center',
-                viewport: $('#content')
-              }
-            })
-          });
-        </script>
-      </div>
-      <hr class="space">
-      <span class="pull-right"><a href="/fixtures" class="link pull-right">Browse Fixture (<abbr
-            title="Roos Instruments Kits">RIKs</abbr> - Product Catalog) &raquo;</a></span>
-      <hr class="space">
-      <h2>Architect the Best Production Test</h2>
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-6">
-          <img class="dropShadow" style="max-width: 300px;" title=" Cassini 16 Fixture" alt="Cassini Fixture"
-            src="images/Cassini16fixture.jpg">
-        </div>
-        <div class="col-sm-6 col-sm-pull-6">
-          <p class="main">
+    <section id="primary">
+      <div id="content" class="roosC container">
+        <div class="row">
+          <h2>Architect the Best Production Test</h2>
+          <p class="main col-md-10">
             Fixtures carry the modular architecture of Cassini into the device interface environment. Housed in a rugged
-            aluminum enclosure is a completely configurable test resource environment. The form factor provides a
-            versatile application range from DC to 90 GHz
-            and a rapid changeout system in production. Seamless integration with Cassini's software allow fixtures to
-            extend and enhance the capabilities of test instruments with an integrated calibration layer that guarantees
-            signal accuracy right to
-            the device pin.
-          </p>
+            aluminum enclosure is a completely configurable test resource environment. It provides a versatile
+            application
+            range from DC to 90GHz and a rapid changeout system in production. Seamless integration with Cassini’s
+            software allow fixtures to extend and enhance the capabilities of test instruments with an integrated
+            calibration layer that guarantees signal accuracy right to the device pin. </p>
+          <img class="centerImg" style="max-width: 900px" title="Fixture Cost Layers" alt="Fixture Cost Layers"
+            src="images/fix1.png">
         </div>
-      </div>
-      <hr class="space">
-      <div class="row">
-        <div class="col-sm-7 col-sm-offset-5 col-md-offset-6 col-md-6">
-          <h2>Production Test Workbench</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-md-offset-2">
-          <img style="max-width: 200px;" alt="Fixture Layers" src="images/FixtureClamWebOpt_260px.png">
-        </div>
-        <div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+        <hr class="space">
+        <div class="row">
+          <h2>Flip the Cost Model</h2>
           <p class="main">
-            Standardized interfaces, reusable components, and robust interconnects create a rapid development
-            environment in which to design and iterate device applications. With easy access to all of the resources
-            within the fixture, signal path switching and application-specific
-            resources can be tailored to a device, a family of devices, or multiple test sites.
-          </p>
+            All of the functionality and capability of traditional load boards have been re-engineered to take advantage
+            of the configurable instrument framework of Cassini. Separating the device interface into two layers enables
+            maximum design flexibility for high performance measurements that can adapt to changing application needs
+            cost
+            effectively. </p>
+          <img class="centerImg" style="max-width: 800px" title="Fixture Cost Model Advantages"
+            alt="Fixture Cost Model Advantages" src="images/fix2.png">
         </div>
-      </div>
-      <hr class="space">
-      <h2>Launch Precision Measurement</h2>
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-6">
-          <img style="max-width: 459px;" alt="Fixture Inserts from DC to 80 GHz." src="images/DeviceInterface.png">
-        </div>
-        <div class="col-sm-6 col-sm-pull-6">
+        <hr class="space">
+        <div class="row">
+          <h2>Taking Modular to a Whole New Level</h2>
           <p class="main">
-            Interchangeable DC, high-speed digital, and microwave inserts provide precise contact signal launches onto
-            the device interface board.The inserts support a flexible signal topology for customizing to applications
-            and creating symmetric multi-site layouts.
+            A modular test system is only as modular as it's least configurable component. All of the functionality and
+            capability of traditional load boards have been re-engineered to take advantage of the configurable
+            instrument
+            framework of Cassini. The discrete layers enable maximum design flexibility for high performance RF devices
+            that can adapt to changing application needs.
           </p>
+          <img class="centerImg" style="max-width: 500px" title="Cassini Modular Fixture Layers"
+            alt="Cassini Modular Fixture Layers" src="images/fix3.png">
         </div>
-      </div>
-      <hr class="space">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-6">
-          <h2>Quick&#8209;Lock&trade; System</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <img class="dropShadow" style="max-width: 374px;" alt="Quick-Lock1"
-            src="images/DUTinterface-integrationview.jpg">
-        </div>
-        <div class="hidden-xs col-sm-6">
-          <p style="margin-top: 80px;" class="main">
-            The DIB, DIB clamp, and pedestal support comprise a single, serviceable unit in the fixture environment.
-            Four quick-release screws allow for rapid change-out of the device interface layer in production.
-          </p>
-        </div>
-        <div class="col-xs-12 visible-xs-block">
-          <p class="main">
-            The DIB, DIB clamp, and pedestal support comprise a single, serviceable unit in the fixture environment.
-            Four quick-release screws allow for rapid change-out of the device interface layer in production.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-6">
-          <img class="col-sm-push-6 dropShadow" style="max-width: 300px;" alt="Quick-Lock2"
-            src="images/DUTinterface-bottomview.jpg">
-        </div>
-        <div class="hidden-xs col-sm-6 col-sm-pull-6">
-          <p style="margin-top: 85px;" class="main">
-            The precision-milled aluminum housing ensures accurate alignment of the PCB while guide pins align signal
-            pads on the perimeter of the PCB with their corresponding signal launch inserts.<br>
-            <a href="/dibs.html" class="link">Learn more about the Device Interface &raquo;</a>
-          </p>
-        </div>
-        <div class="col-xs-12 visible-xs-block">
-          <p class="main">
-            The precision-milled aluminum housing ensures accurate alignment of the PCB while guide pins align signal
-            pads on the perimeter of the PCB with their corresponding signal launch inserts.<br>
-            <a href="/dibs.html" class="link">Learn more about the Device Interface &raquo;</a>
-          </p>
-        </div>
-      </div>
-      <hr class="space">
-      <div class="row">
-        <h2>Multi&#8209Instrument Test Done Right</h2>
-        <div class="col-sm-8">
-          <img style="max-width: 900px;" alt="TestheadDemo" style="margin: 0px 0px 0px 0px;"
-            src="images/TestHeadResourcesDemo_Cassini16.png">
-          <p class="main">
-            The fixture bottom plate lets you customize Cassini to applications while allowing drop-in capability
-            expansion quickly and cost-effectively.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <p class="main">
-            Blind-mate interface blocks and RF cables provide configurable interconnect between Test Instrument Modules
-            to synthesize standard microwave instruments such as vector network analyzers, oscilloscopes, spectrum
-            analyzers, frequency translation and receiver/transmitter
-            chains.
-          </p>
-        </div>
-      </div>
-      <div class="row hidden-print">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe id="ytplayer" type="text/html" width="640" height="360"
-            src="https://www.youtube.com/embed/sVT-SwJOAfE?autoplay=1&controls=0&fs=1&loop=1&modestbranding=1&rel=0&showinfo=0&autohide=1&theme=light&color=white"
-            frameborder="0" allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      <hr class="space">
-      <span class="pull-right"><a href="/services.html" class="link pull-right">Learn More about Services
-          &raquo;</a></span>
-    </div>
+        <div class="row">
+          <hr class="space">
+          <hr>
+          <hr class="space">
 
+          <div class="row">
+            <div class="col-sm-6">
+              <img alt="Fixture Layers" src="images/fix4.png">
+            </div>
+            <div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+              <img src="images/1.svg" title="#1" style="width:25px;">
+              <h2>Multi‑Instrument Test Done Right</h2>
+              <p class="main">
+                A truly unique aspect of Cassini ATE is the RF system integration layer in the device interface. The 16
+                universal instruments slots accommodate interchangeable interface blocks and interconnect, allowing the
+                test system’s architecture to be dynamically configured for each device application. </p>
+              <a href="products.html">Learn More</a>
+            </div>
+          </div>
+          <hr class="space">
+
+          <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+              <img title=" Cassini 16 Fixture" alt="Cassini Fixture" src="images/fix5.png">
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+              <img src="images/2.svg" title="#2" style="width:25px;">
+              <h2>Production Test Bench</h2>
+              <p class="main">
+                Fixtures enable easy access to microwave components while protecting them in a ruggedized, RF-shielded
+                enclosure during production. It also supports expandable instrument capability with fixture module cards
+                such as driver control for electromechanical relays and microwave switches as well as signal
+                attenuation,
+                amplification, and additional parametric measure resources.
+              </p>
+            </div>
+          </div>
+          <hr class="space">
+          <div class="row">
+            <div class="col-sm-7 col-sm-offset-5 col-md-offset-6 col-md-6">
+              <img src="images/3.svg" title="#3" style="width:25px;">
+              <h2>Launch Precision Measurement</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-md-offset-2">
+              <img alt="Fixture Layers" src="images/fix6.png">
+            </div>
+            <div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+              <p class="main">
+                Interchangeable DC, high-speed digital, and microwave inserts provide precise contact signal launches
+                onto
+                the device interface board.The inserts support a flexible signal topology for customizing to
+                applications
+                and creating symmetric multi-site layouts. </p>
+            </div>
+          </div>
+          <hr class="space">
+          <div class="row">
+            <div class="col-sm-3 col-sm-push-6">
+              <img class="centerImg" alt="Quick-Lock1" src="images/fix7.png">
+            </div>
+            <div class="col-sm-3 col-sm-push-6">
+              <img class="centerImg" alt="Quick-Lock1" src="images/fix8.png">
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+              <img src="images/4.svg" title="#4" style="width:25px;">
+              <h2>High Frequency Performance</h2>
+              <div class="hidden-xs col-sm-6">
+                <p class="main">
+                  The two-layer PCB and aluminum reinforcement combine high frequency performance and production
+                  durability.
+                  The design simplifies board layout, reduces the cost of high wear components, and enables quick
+                  changeout
+                  in production.
+                </p>
+              </div>
+              <div class="col-xs-12 visible-xs-block">
+                <p class="main">
+                  The two-layer PCB and aluminum reinforcement combine high frequency performance and production
+                  durability.
+                  The design simplifies board layout, reduces the cost of high wear components, and enables quick
+                  changeout
+                  in production.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr class="space">
+          <hr>
+          <h2>Configurable Resource Mapping</h2>
+          <p class="main">
+            With the ability to configure and reconfigure the device interface, Cassini’s software helps manage all of
+            complexity. Cassini’s software lets you define signal paths, resource switch control, and additional
+            measurement resources. This allows the software to automatically link paths together. </p>
+          <img class="centerImg" title="Cassini 16 Fixture" alt="Cassini Fixture" src="images/fix9.png">
+          <hr class="space">
+          <h2>Accuracy at the Device</h2>
+          <p class="main">
+            Cassini’s configuration software manages the calibration layers automatically. As fixtures and device
+            interface boards are interchanged with the test system, each calibration layer is cascaded to extend the
+            calibrated measurement plane for port match and signal loss correction. This guarantees an accurate and
+            repeatable test setup on the production floor for any device application.</p>
+          <div class="row">
+            <div class="col-md-5">
+              <img class="centerImg" title="System Calibration Layers" alt="System Calibration Layers"
+                src="images/fix10.png">
+            </div>
+            <div class="col-md-5">
+              <img class="centerImg" title="System Block Diagram" alt="System Block Diagram" src="images/fix11.png">
+            </div>
+          </div>
+        </div>
+        <hr class="space">
+
+        <hr class="space">
+        <div class="row">
+          <h2>Software Integration</h2>
+          <div class="row hidden-xs hidden-sm centerImg">
+            <div class="col-sm-4">
+              <a class="link" href="/software.html"><i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"
+                  style="margin: auto;  width: 50%;"></i></a>
+            </div>
+            <div class="col-sm-4">
+              <a class="link" href="/software.html"><i class='fas fa-fingerprint fa-4x'></i></a>
+            </div>
+            <div class="col-sm-4">
+              <a class="link" href="/software.html"><i class="fas fa-sitemap fa-3x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <h3>Synergy</h3>
+            <p>
+              Deep integration with Cassini’s instrument software, system configuration management, and calibration
+              scheme, makes the device interface an extension of the tester.</p>
+
+          </div>
+          <div class="col-sm-4">
+            <h3>Traceability</h3>
+            <p>Guru enterprise provides back-end database support for automated updates, auto-loading calibration, and
+              resource
+              tracking to support production logistics anywhere in the world.</p>
+
+          </div>
+          <div class="col-sm-4">
+            <h3>Workflow</h3>
+            <p>Native software support provides access to the latest features and updates for a powerful and efficient
+              workflow from
+              device characterization to high volume test.</p>
+
+          </div>
+        </div>
+
+        <!-- <div class="row hidden-print">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="ytplayer" type="text/html" width="640" height="360"
+              src="https://www.youtube.com/embed/sVT-SwJOAfE?autoplay=1&controls=0&fs=1&loop=1&modestbranding=1&rel=0&showinfo=0&autohide=1&theme=light&color=white"
+              frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div> -->
+        <hr class="space">
+        <span class="pull-right"><a href="/software.html" class="link pull-right">Learn More about Software
+            &raquo;</a></span>
+      </div>
+    </section>
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
 
