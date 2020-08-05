@@ -359,6 +359,36 @@
     <!-- ==========================
     	BREADCRUMB - END
     =========================== -->
+    <script>
+      $(document).ready(function () {
+        $('#FixImg').ImageMapResize({
+          origImageWidth: "705"
+        });
+      });
+    </script>
+    <style>
+      .flexCenter {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+        min-height: 200px;
+      }
+
+      #nextPages div.col-sm-4 {
+        text-align: center;
+        padding: 20px 20px;
+      }
+
+      #nextPages h3 {
+        text-align: center;
+      }
+
+      #nextPages p {
+        text-align: left;
+        padding: 20px 45px;
+      }
+    </style>
+
     <section id="primary">
       <div id="content" class="roosC container">
         <div class="row">
@@ -366,8 +396,8 @@
           <p class="main col-md-10">
             Fixtures carry the modular architecture of Cassini into the device interface environment. Housed in a rugged
             aluminum enclosure is a completely configurable test resource environment. It provides a versatile
-            application
-            range from DC to 90GHz and a rapid changeout system in production. Seamless integration with Cassini’s
+            application range from DC to 90GHz and a rapid changeout system in production. Seamless integration with
+            Cassini’s
             software allow fixtures to extend and enhance the capabilities of test instruments with an integrated
             calibration layer that guarantees signal accuracy right to the device pin. </p>
           <img class="centerImg" style="max-width: 900px" title="Fixture Cost Layers" alt="Fixture Cost Layers"
@@ -395,19 +425,29 @@
             framework of Cassini. The discrete layers enable maximum design flexibility for high performance RF devices
             that can adapt to changing application needs.
           </p>
-          <img class="centerImg" style="max-width: 500px" title="Cassini Modular Fixture Layers"
-            alt="Cassini Modular Fixture Layers" src="images/fix3.png">
+          <img id="FixImg" class="centerImg" style="max-width: 705px" title="Cassini Modular Fixture Layers"
+            alt="Cassini Modular Fixture Layers" usemap="#image-map" src="images/fix3.png">
+          <map name="image-map">
+            <area target="" alt="System Integration Layer" title="System Integration Layer" href="#Fix1"
+              coords="0,720,705,921" shape="rect">
+            <area target="" alt="Production Test Bench" title="Production Test Bench" href="#Fix2"
+              coords="0,720,705,260" shape="rect">
+            <area target="" alt="Launch Precision Measurement" title="Launch Precision Measurement" href="#Fix3"
+              coords="0,109,705,260" shape="rect">
+            <area target="" alt="High Frequency Performance" title="High Frequency Performance" href="#Fix4"
+              coords="0,0,705,109" shape="rect">
+          </map>
         </div>
         <div class="row">
           <hr class="space">
           <hr>
           <hr class="space">
-
           <div class="row">
+            <a id="Fix1" class="anchor"></a>
             <div class="col-sm-6">
-              <img alt="Fixture Layers" src="images/fix4.png">
+              <img alt="System Integration Layer" src="images/fix4.png">
             </div>
-            <div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+            <div class="col-sm-offset-1 col-md-offset-0 col-sm-6" style="padding-top: 50px;">
               <img src="images/1.svg" title="#1" style="width:25px;">
               <h2>Multi‑Instrument Test Done Right</h2>
               <p class="main">
@@ -420,6 +460,7 @@
           <hr class="space">
 
           <div class="row">
+            <a id="Fix2" class="anchor"></a>
             <div class="col-sm-6 col-sm-push-6">
               <img title=" Cassini 16 Fixture" alt="Cassini Fixture" src="images/fix5.png">
             </div>
@@ -430,70 +471,55 @@
                 Fixtures enable easy access to microwave components while protecting them in a ruggedized, RF-shielded
                 enclosure during production. It also supports expandable instrument capability with fixture module cards
                 such as driver control for electromechanical relays and microwave switches as well as signal
-                attenuation,
-                amplification, and additional parametric measure resources.
+                attenuation, amplification, and additional parametric measure resources.
               </p>
             </div>
           </div>
           <hr class="space">
           <div class="row">
-            <div class="col-sm-7 col-sm-offset-5 col-md-offset-6 col-md-6">
-              <img src="images/3.svg" title="#3" style="width:25px;">
-              <h2>Launch Precision Measurement</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-md-offset-2">
+            <a id="Fix3" class="anchor"></a>
+            <div class="col-sm-6">
               <img alt="Fixture Layers" src="images/fix6.png">
             </div>
-            <div class="col-sm-offset-1 col-md-offset-0 col-sm-6">
+            <div class="col-sm-6">
+              <img src="images/3.svg" title="#3" style="width:25px;">
+              <h2>Launch Precision Measurement</h2>
               <p class="main">
                 Interchangeable DC, high-speed digital, and microwave inserts provide precise contact signal launches
-                onto
-                the device interface board.The inserts support a flexible signal topology for customizing to
-                applications
-                and creating symmetric multi-site layouts. </p>
+                onto the device interface board.The inserts support a flexible signal topology for customizing to
+                applications and creating symmetric multi-site layouts. </p>
             </div>
           </div>
           <hr class="space">
+          <hr class="space">
+          <a id="Fix4" class="anchor"></a>
           <div class="row">
-            <div class="col-sm-3 col-sm-push-6">
+            <div class="col-sm-3 col-sm-push-6" style="padding-right: 0;">
               <img class="centerImg" alt="Quick-Lock1" src="images/fix7.png">
             </div>
-            <div class="col-sm-3 col-sm-push-6">
+            <div class="col-sm-3 col-sm-push-6" style="padding-left: 0;">
               <img class="centerImg" alt="Quick-Lock1" src="images/fix8.png">
             </div>
             <div class="col-sm-6 col-sm-pull-6">
               <img src="images/4.svg" title="#4" style="width:25px;">
               <h2>High Frequency Performance</h2>
-              <div class="hidden-xs col-sm-6">
-                <p class="main">
-                  The two-layer PCB and aluminum reinforcement combine high frequency performance and production
-                  durability.
-                  The design simplifies board layout, reduces the cost of high wear components, and enables quick
-                  changeout
-                  in production.
-                </p>
-              </div>
-              <div class="col-xs-12 visible-xs-block">
-                <p class="main">
-                  The two-layer PCB and aluminum reinforcement combine high frequency performance and production
-                  durability.
-                  The design simplifies board layout, reduces the cost of high wear components, and enables quick
-                  changeout
-                  in production.
-                </p>
-              </div>
+              <p class="main">
+                The two-layer PCB and aluminum reinforcement combine high frequency performance and production
+                durability. The design simplifies board layout, reduces the cost of high wear components, and enables
+                quick changeout in production.
+              </p>
             </div>
           </div>
           <hr class="space">
-          <hr>
+          <hr style="height: 3px; background: #0849a1;">
+          <hr class="space">
           <h2>Configurable Resource Mapping</h2>
           <p class="main">
             With the ability to configure and reconfigure the device interface, Cassini’s software helps manage all of
             complexity. Cassini’s software lets you define signal paths, resource switch control, and additional
             measurement resources. This allows the software to automatically link paths together. </p>
-          <img class="centerImg" title="Cassini 16 Fixture" alt="Cassini Fixture" src="images/fix9.png">
+          <img class="centerImg" title="Cassini 16 Fixture" alt="Cassini Fixture" src="images/fix9.png"
+            style="max-width: 900px">
           <hr class="space">
           <h2>Accuracy at the Device</h2>
           <p class="main">
@@ -502,7 +528,7 @@
             calibrated measurement plane for port match and signal loss correction. This guarantees an accurate and
             repeatable test setup on the production floor for any device application.</p>
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-md-offset-1">
               <img class="centerImg" title="System Calibration Layers" alt="System Calibration Layers"
                 src="images/fix10.png">
             </div>
@@ -513,54 +539,45 @@
         </div>
         <hr class="space">
 
+
         <hr class="space">
-        <div class="row">
+        <div id="nextPages" class="row">
           <h2>Software Integration</h2>
-          <div class="row hidden-xs hidden-sm centerImg">
-            <div class="col-sm-4">
-              <a class="link" href="/software.html"><i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"
+          <div class="row hidden-xs hidden-sm">
+            <div class="col-sm-4" style="text-align: center; padding: 20px 20px;">
+              <a class="link" href="/guru.html"><i class="fa fa-puzzle-piece fa-5x" aria-hidden="true"
                   style="margin: auto;  width: 50%;"></i></a>
             </div>
-            <div class="col-sm-4">
-              <a class="link" href="/software.html"><i class='fas fa-fingerprint fa-4x'></i></a>
+            <div class="col-sm-4" style="text-align: center; padding: 20px 20px;">
+              <a class="link" href="/guru.html"><i class='fas fa-fingerprint fa-4x'></i></a>
+            </div>
+            <div class="col-sm-4" style="text-align: center; padding: 20px 20px;">
+              <a class="link" href="/guru.html"><i class="fas fa-sitemap fa-3x"></i></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4" style="text-align: center; padding: 20px 20px;">
+              <h3>Synergy</h3>
+              <p>
+                Deep integration with Cassini’s instrument software, system configuration management, and calibration
+                scheme, makes the device interface an extension of the tester.</p>
+
+            </div>
+            <div class="col-sm-4" style="text-align: center; padding: 20px 20px;">
+              <h3>Traceability</h3>
+              <p>Guru enterprise provides back-end database support for automated updates, auto-loading calibration, and
+                resource
+                tracking to support production logistics anywhere in the world.</p>
+
             </div>
             <div class="col-sm-4">
-              <a class="link" href="/software.html"><i class="fas fa-sitemap fa-3x"></i></a>
+              <h3>Workflow</h3>
+              <p>Native software support provides access to the latest features and updates for a powerful and efficient
+                workflow from
+                device characterization to high volume test.</p>
             </div>
-          </div>
-
-          <div class="col-sm-4">
-            <h3>Synergy</h3>
-            <p>
-              Deep integration with Cassini’s instrument software, system configuration management, and calibration
-              scheme, makes the device interface an extension of the tester.</p>
-
-          </div>
-          <div class="col-sm-4">
-            <h3>Traceability</h3>
-            <p>Guru enterprise provides back-end database support for automated updates, auto-loading calibration, and
-              resource
-              tracking to support production logistics anywhere in the world.</p>
-
-          </div>
-          <div class="col-sm-4">
-            <h3>Workflow</h3>
-            <p>Native software support provides access to the latest features and updates for a powerful and efficient
-              workflow from
-              device characterization to high volume test.</p>
-
           </div>
         </div>
-
-        <!-- <div class="row hidden-print">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="ytplayer" type="text/html" width="640" height="360"
-              src="https://www.youtube.com/embed/sVT-SwJOAfE?autoplay=1&controls=0&fs=1&loop=1&modestbranding=1&rel=0&showinfo=0&autohide=1&theme=light&color=white"
-              frameborder="0" allowfullscreen>
-            </iframe>
-          </div>
-        </div> -->
-        <hr class="space">
         <span class="pull-right"><a href="/software.html" class="link pull-right">Learn More about Software
             &raquo;</a></span>
       </div>
