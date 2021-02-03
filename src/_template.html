@@ -306,7 +306,23 @@
               </ul>
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="google-search">
-                  <div class="reset-box-sizing" id="search">
+                  <form name="docsSearch5" method="POST" action="#" onSubmit="doSearch5(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail5" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query5"
+                          placeholder="Search Website" required>
+                        <span onclick="doSearch5(); return false;" class="input-group-btn"><button
+                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
+                  <div id="search-results">
+                    
+                  </div>
+                  <!-- <div class="reset-box-sizing" id="search">
                     <div class="gcse-search"></div>
                     <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
                       searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>

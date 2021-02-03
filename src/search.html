@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <title>Home | Roos Instruments</title>
+  <title>Search | Roos Instruments</title>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("nav-home").classList.add("active");
+      document.getElementById("nav-support").classList.add("active");
     });
   </script>
 
@@ -35,8 +35,8 @@
 
 
   <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
-  <!-- <script src="/js/cookieconsent.min.js"></script> -->
-  <!--   <script>
+  <script src="/js/cookieconsent.min.js"></script>
+  <script>
     window.addEventListener("load", function () {
       window.cookieconsent.initialise({
         "palette": {
@@ -58,7 +58,7 @@
         }
       })
     });
-  </script> -->
+  </script>
 
 </head>
 
@@ -306,7 +306,7 @@
               </ul>
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="google-search">
-                  <form name="docsSearch5" method="POST" action="#" onSubmit="doSearch5(); return false;">
+                  <form name="docsSearch5" method="POST" action="#" onSubmit="goSearch5(); return false;">
                     <div class="form-group nospace">
                       <div id="searchFail5" class="alert alert-warning hidden" role="alert">
                         <strong>Oops!</strong> Search for something.
@@ -314,14 +314,19 @@
                       <div class="input-group">
                         <input style="margin: 12px 0;" type="text" class="form-control" id="query5"
                           placeholder="Search Website" required>
-                        <span onclick="doSearch5(); return false;" class="input-group-btn"><button
+                        <span onclick="goSearch5(); return false;" class="input-group-btn"><button
                             class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
                       </div>
                     </div>
                   </form>
-                  <div id="search-results">
+                  <div id="results">
                     
                   </div>
+                  <!-- <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
+                    <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
+                      searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>
+                  </div> -->
                   <!-- end of #search -->
                 </div>
                 <div class="tab-pane fade" id="document-search">
@@ -353,239 +358,33 @@
         =========================== -->
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+    <section id="content" class="container" style="padding-bottom: 300px;">
+      <div id="search-results"></div>
+    </section>
+    <script>
+      window.addEventListener("load", function(){
+      queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
 
+      goSearch5(null, null, urlParams.get('query'));
+      });
+    </script>
+      
     <!-- ==========================
-    JUMBOTRON - START
-  =========================== -->
-    <style>
-      .index-slideshow {
-        font-weight: 300;
-      }
-
-      /* Temporary slide-0*/
-      /* #index-slide-0 {
-        background-image: url(/images/index-2020-itc.jpg);
-      } */
-    </style>
-    <section id="jumbotron" class="roosC">
-      <div class="jumbotron index-slideshow">
-        <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-          <div class="item" id="index-slide-0">
-            <!-- <a target="_blank" href="http://itctestweek.org">
-              <img src="/images/index-2020-itc.jpg">
-              <a target="_new" href="http://itctestweek.org" class="btn btn-index btn-inverse"
-                style="position: absolute; bottom: 25px; right: 160px;"
-                style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Exhibitor
-                Page</a>&nbsp;
-              <a target="_blank" href="http://www.itctestweek.org/register/" class="btn btn-index btn-inverse"
-                style="position: absolute; bottom: 5px; right: 30%;"
-                style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Register</a>
-            </a>
-            <a target="_blank" href="https://underline.io/events/35/expo/249-roos-instruments"
-              class="btn btn-index btn-inverse" style="position: absolute; bottom: 5px; right: 45%;"
-              style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Online Exhibit
-              (Registration Required)</a>
-            <a target="_blank" href="https://forms.gle/htoRV3G4NTrMx2KW7" class="btn btn-index btn-inverse"
-              style="position: absolute; bottom: 5px; right: 5%;"
-              style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">ITC Exhibition Giveaway</a>
-            </a> -->
-
-            <!-- 5G PROMO -->
-            <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
-            <div class="container">
-              <div class="row">
-                <div style="position: relative; top: 220px; left: 130px;">
-                  <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
-                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
-                    More</a>
-                </div>
-                <!-- <a target="_new" href="https://semi.6connex.com/event/SemiconWest2020/en-us#!/RoosInstruments"
-                  class="btn btn-index btn-inverse" style="position: absolute; top: 37px; right: 160px;"
-                  style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Our Virtual
-                  Booth @ SEMICON West 2020</a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="item" id="index-slide-1">
-            <h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-7">
-                  <h5>When Add-On RF Can't Get the</h5>
-                  <h5>Performance you Need...</h5>
-                  <h5>Now There's an ATE Solution That Puts RF First.</h5>
-                  <a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item" id="index-slide-2">
-            <h2 class="index-slideshow-bar">Modular Instruments... Truly</h2>
-            <div class="container">
-              <h5>It's One Thing to Say Modular.</h5>
-              <h5>It's Something Else Entirely to Do It.</h5>
-              <a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
-            </div>
-          </div>
-
-          <div class="item" id="index-slide-3">
-            <h2 class="index-slideshow-bar">
-              Automotive Radar Test?
-              <span style="font-family: 'Quando';">
-                <em>Done.</em>
-              </span>
-            </h2>
-            <div class="container">
-              <h5>Production-Ready mmWave.</h5>
-              <h5>All Part of the ATE Industry's Fastest</h5>
-              <h5>and Most Accurate ATE Platform.</h5>
-              <a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
-            </div>
-          </div>
-
-          <div class="item" id="index-slide-4">
-            <h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
-            <div class="container">
-              <h5>Instruments and Interconnects</h5>
-              <h5>in a Configurable, Scalable,</h5>
-              <h5>and Cost-Effective Environment.</h5>
-              <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
-            </div>
-          </div>
-
-          <div class="item" id="index-slide-5">
-            <h2 class="index-slideshow-bar">Guru Knows Where Everything Goes</h2>
-            <div class="container">
-              <h5>Database Storage, Automated Backups, Distribution Control</h5>
-              <h5>Guru Brings Test and Data Management</h5>
-              <h5>to a Whole New Level.</h5>
-              <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
-            </div>
-          </div>
-        </div>
+    	BREADCRUMB - START
+    =========================== 
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Products Overview</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li class="active">Products Overview</li>
+        </ol>
       </div>
     </section>
-    <div id="content" class="roosC">
-
-      <!-- ==========================
-    	JUMBOTRON - END
+     ==========================
+    	BREADCRUMB - END
     =========================== -->
-      <!-- ==========================
-    	PANELS - START
-    =========================== -->
-      <style>
-        #index-panels h4 {
-          text-align: right;
-          font: Regular 64px/80px Source Sans Pro;
-          letter-spacing: 0;
-          color: #707070;
-          opacity: 1;
-        }
-
-        #index-panels div {
-          column-count: 6;
-          column-gap: 0;
-          margin: 0;
-        }
-
-        @media (min-width: 0px) and (max-width: 767px) {
-          #index-slide-0 a {
-            position: relative;
-            left: -108px;
-            top: -207px;
-          }
-
-          #index-panels img {
-            margin: auto;
-            width: 100%;
-            max-width: 100%;
-            max-height: 300px;
-          }
-
-          #index-panels div {
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-          }
-
-          #index-panels p {
-            text-align: center;
-            font-size: 0.75em;
-          }
-        }
-      </style>
-      <section id="index-panels">
-        <h4 class="container">End-to-End Test Solutions</h4>
-        <div>
-          <a href="infrastructure.html" title="System">
-            <img src="images/System.png" alt="System Panel" style="height: 531.25;">
-          </a>
-          <a href="instruments.html" title="Instruments">
-            <img src="images/instruments.png" alt="Instruments Panel" style="height: 531.25;">
-          </a>
-          <a href="fixture.html" title="Interface">
-            <img src="images/interface.png" alt="Interface Panel" style="height: 531.25;">
-          </a>
-          <a href="software.html" title="Software Panel">
-            <img src="images/software.png" alt="Software Panel" style="height: 531.25;">
-          </a>
-          <a href="guru.html" title="Enterprise Panel">
-            <img src="images/enterprise.png" alt="Enterprise Panel" style="height: 531.25;">
-          </a>
-          <a href="support.html" title="Support Panel">
-            <img src="images/support.png" alt="Support Panel" style="height: 531.25;">
-          </a>
-        </div>
-        <p style="margin-left: 1em;">Select a panel to learn more</p>
-      </section>
-      <!-- ==========================
-    PANELS - END
-  =========================== -->
-
-      <section id="index-content" class="container">
-        <p id="index-main">
-          Roos Instruments combines more than 30 years of research into modular Automated Test Equipment that leads the
-          industry in test accuracy, reliability, and time to market. Semiconductor manufacturers use our instruments to
-          test millions of chips every year.
-        </p>
-      </section>
-      <hr class="space">
-
-      <section id="notice" class="container">
-        <div class="row">
-          <div class="col-sm-8" style="
-                background-color: #eeeeee; 
-                border-color: rgba(0,0,0,.1);
-                border-width: 0 .9375rem 0 .9375rem;
-                border-style: solid;
-                padding: .9375rem 2rem .9375rem .9375rem;">
-            <div class="col-sm-12">
-              <span><i class="far fa-newspaper"></i>
-                <a style="font-size: 18px;" href="https://semiengineering.com/new-data-format-boosts-test-analytics/">
-                  "New Data Format Boosts Test Analytics"
-                </a>
-                Semiconductor Engineering Article &nbsp;
-              </span>
-            </div>
-          </div>
-          <div class="col-sm-4" style="
-                  background-color: #fafad2; 
-                  border-color: rgba(0,0,0,.1);
-                  border-width: 0 .9375rem 0 .9375rem;
-                  border-style: solid;
-                  padding: .9375rem 2rem .9375rem .9375rem;">
-            <div class="col-sm-12">
-              <span><i class="fas fa-virus-slash"></i>
-                <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Continuity of Service</a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>

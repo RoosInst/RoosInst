@@ -377,6 +377,7 @@ function goSearch() {
 	}
 } //end function
 
+
 function goSearch2() {
 	var docSearch2 = window.document.docsSearch2;
 	var searchPhrase2 = docSearch2.query2.value.toString();  //ensures numbers will be treated as strings
@@ -432,6 +433,139 @@ function goSearch4() {
 		$('#documentSearch').addClass("active");
 		//alert(searchString4);
 		location.href = searchString4;
+		return true;
+	}
+} //end function
+
+// function loadResults(query){
+// 	checkCookie = false;
+// 	if (checkCookie = true){
+// 		//load docs
+// 	}else{
+// 		location.href = "/roos/search.html";
+// 		goSearch5(null, null, query);
+// 	}
+
+// }
+
+function hasCookie() {
+    str = document.cookie.split('; ');
+    var result = {};
+    for (var i = 0; i < str.length; i++) {
+        var cur = str[i].split('=');
+        result[cur[0]] = cur[1];
+    }
+    if (result.username != null){
+        return true;
+    }
+    return false;
+}
+function doSearch5(){
+	var docSearch5 = window.document.docsSearch5;
+	var searchPhrase5 = docSearch5.query5.value.toString();
+	if (searchPhrase5 == '') {
+		$("#searchFail5").removeClass("hidden");
+		docSearch5.query5.value = "";
+		docSearch5.query5.focus();
+		return true;
+	} else {
+		var searchString5 = escape(searchPhrase5).split("#")[0];
+		location.href = "/search.html?query=" + searchString5;
+		return;
+	}
+
+}
+function goSearch5(identifier = null, docs = null, query = null, target = null) {
+	
+	var docSearch5 = window.document.docsSearch5;
+	if (identifier == null && query == null){
+		var searchPhrase5 = docSearch5.query5.value.toString();  //ensures numbers will be treated as strings
+		var start = 1;	
+	}else if(query != null){
+		var searchPhrase5 = query;  //ensures numbers will be treated as strings
+		var start = 1;	
+	}else{
+		var searchPhrase5 = $(identifier).data('q');
+		var start = $(identifier).data('s');
+	}
+	
+	if (searchPhrase5 == '') {
+		$("#searchFail5").removeClass("hidden");
+		docSearch5.query5.value = "";
+		docSearch5.query5.focus();
+		return true;
+	} else {
+		var searchString5 = escape(searchPhrase5).split("#")[0];
+		if(hasCookie()){
+			location.href = "/roos/documentation.nsf/json?searchView&SearchFuzzy=TRUE&Query=" + searchString5;
+			return;
+		}
+		var cx = '016663888408278794732:a1ud06__nsq';
+		$.get('https://www.googleapis.com/customsearch/v1/', {'cx': cx, 'q' : searchString5, 'start': start, 'key' : 'AIzaSyAX2BF1-AFcEvBG6YPZs-6IS0fDFuSF4xo', 'num': 10},
+			function (data, textStatus, jqXHR) {  // success callback
+				currentPage = (data.queries.request[0].startIndex - 1)/10 + 1
+				console.log(currentPage);
+				console.log(data);
+				if(!$("#searchFail5").hasClass("hidden")){
+					$("#searchFail5").addClass("hidden");
+				}
+				if(target == null){
+					target = '#search-results';
+				}
+				items = data.items;
+				if(docs != null){
+					docsItems = docs.slice((currentPage - 1)* 10, currentPage * 10 - 1);
+					items.push(docsItems);
+				}
+				html = '<div class="alert alert-info" role="alert">Please <a href="/roos/documentation.nsf/json?searchView&SearchFuzzy=TRUE&Query=' + searchString5 + '" class="alert-link">sign in</a> to get documentation results</div>';
+				html += '<div>';
+				for (i = 0; i < items.length; ++i){
+
+					if (items[i].content != undefined){
+						content = items[i].content;
+					}else{
+						content = items[i].htmlSnippet;
+					}
+					if(content == undefined){
+						break;
+					}
+					content = content.replace(/(\r\n|\n|\r)/gm,"");
+					background = ''
+					if(i % 2 == 1){
+						background = 'background-color: aliceblue';
+					}
+
+					html += '<div class="result d-xl-flex" style="'+background+'"><div class="col d-flex"><a class="= d-xl-flex align-items-xl-start" href="'+ items[i].formattedUrl+'" style="font-size: 20px; display:block;">'+items[i].htmlTitle+'</a><span class="d-xl-flex align-items-xl-end" style="display:block;">'+content+'</span></div></div>';
+
+
+				}
+				html += '</div>'
+				html += '<div style="display: flex; justify-content:center; height: 48px; padding-top: 8px; align-items:center; position: relative;"><div style="display: flex; justify-content:center; height: 20px;width: 200px; position: absolute;">'
+				if(data.queries.previousPage != undefined){
+					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +searchString5+'" data-s="'+data.queries.previousPage[0].startIndex + '" onClick="goSearch5(this, target=target)" href="#" style="padding-right: 5px;padding-left: 5px;"><</a>'
+				}
+
+				currentPage = (data.queries.request[0].startIndex - 1)/10 + 1
+				
+				for (i = 1; i <= Math.ceil(data.searchInformation.totalResults/10) && i <= 10; ++i){
+					startIndex = (i - 1)*10 + 1;
+					if (i == currentPage){
+						html += '<a class="d-xl-flex justify-content-xl-center inactive" data-q="' +searchString5+'" data-s="'+startIndex+'" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
+
+					}else{
+						html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +searchString5+'" data-s="'+startIndex+'" href="#" onClick="goSearch5(this, target=target)" style="padding-right: 5px;padding-left: 5px;">'+i+'</a>'
+					}
+				}
+				if(data.queries.nextPage != undefined && currentPage !=10){
+					html += '<a class="d-xl-flex justify-content-xl-center" data-q="' +searchString5+'" data-s="'+data.queries.nextPage[0].startIndex + '" onClick="goSearch5(this, target=target)" href="#" style="padding-right: 5px;padding-left: 5px;">></a>'
+				}
+				html += '</div>'
+
+				html += '</div>'
+				html+='<div class="spacer" style="clear: both;"></div>'
+				$(target).html(html);
+	  		}
+		)
 		return true;
 	}
 } //end function
