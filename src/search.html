@@ -296,56 +296,46 @@
             <h3 class="modal-title">Search</h3>
           </div>
           <div class="modal-body">
-            <div class="features-item" id="features-tabs-panels">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fas fa-globe"></i>
-                    &nbsp;Website</a>
-                </li>
-                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i> &nbsp;Documentation<span
-                      class="hidden-xs">(<i class="fas fa-lock"></i> Sign In Required)</span></a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane fade in active" id="google-search">
-                  <form name="docsSearch5" method="POST" action="#" onSubmit="goSearch5(); return false;">
-                    <div class="form-group nospace">
-                      <div id="searchFail5" class="alert alert-warning hidden" role="alert">
-                        <strong>Oops!</strong> Search for something.
-                      </div>
-                      <div class="input-group">
-                        <input style="margin: 12px 0;" type="text" class="form-control" id="query5"
-                          placeholder="Search Website" required>
-                        <span onclick="goSearch5(); return false;" class="input-group-btn"><button
-                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
-                      </div>
-                    </div>
-                  </form>
-                  <div id="results">
-
+            <form id="modal-search" class="" name="modalSearch" method="POST" action="#"
+              onsubmit="searchModal(); return false;">
+              <div class="form-group" style="margin-bottom: 0;">
+                <div class="input-group">
+                  <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false"><span id="search_concept_modal">All</span><span
+                        class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Web</a></li>
+                      <li><a href="#">Documentation</a></li>
+                    </ul>
                   </div>
-                  <!-- <div class="reset-box-sizing" id="search">
-                    <div class="gcse-search"></div>
-                    <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
-                      searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>
-                  </div> -->
-                  <!-- end of #search -->
-                </div>
-                <div class="tab-pane fade" id="document-search">
-                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
-                    <div class="form-group nospace">
-                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
-                        <strong>Oops!</strong> Search for something.
-                      </div>
-                      <div class="input-group">
-                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
-                          placeholder="Search Documentation" required>
-                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button
-                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
-                      </div>
-                    </div>
-                  </form>
+                  <input type="hidden" name="search_param" value="all" id="search_param">
+                  <input type="text" class="searchTable form-control" id="query" placeholder="Search" required="">
+                  <span onclick="searchModal(); return false;" class="input-group-btn"><button style="margin-top: 0;"
+                      class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></span>
                 </div>
               </div>
-            </div>
+              <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                <strong>Oops!</strong> Search for something.
+              </div>
+            </form>
+
+            <script>
+              $(document).ready(function (e) {
+                $('.search-panel .dropdown-menu').find('a').click(function (e) {
+                  e.preventDefault();
+                  var concept = $(this).html();
+                  $('.search-panel span#search_concept_modal').html(concept);
+                });
+              });
+              window.addEventListener("load", function () {
+                queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+
+                goSearch5(null, null, urlParams.get('query'));
+              });
+            </script>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -358,10 +348,40 @@
         =========================== -->
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
     <section id="content" class="container" style="padding-bottom: 300px;">
+      <form id="search" class="" name="search" method="POST" action="#" onsubmit="searchBar(); return false;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <div class="input-group">
+            <div class="input-group-btn search-panel">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><span id="search_concept">All</span><span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Documentation</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+            <input type="hidden" name="search_param" value="all" id="search_param">
+            <input type="text" class="searchTable form-control" id="query" placeholder="Search" required="">
+            <span onclick="searchBar(); return false;" class="input-group-btn"><button style="margin-top: 0;"
+                class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+          </div>
+        </div>
+        <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+          <strong>Oops!</strong> Search for something.
+        </div>
+      </form>
       <div id="search-results"></div>
     </section>
     <script>
+      $(document).ready(function (e) {
+        $('.search-panel .dropdown-menu').find('a').click(function (e) {
+          e.preventDefault();
+          var concept = $(this).html();
+          $('.search-panel span#search_concept').html(concept);
+        });
+      });
       window.addEventListener("load", function () {
         queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
@@ -375,11 +395,6 @@
     =========================== 
     <section class="breadcrumb-wrapper">
       <div class="container">
-        <h2>Products Overview</h2>
-        <ol class="breadcrumb">
-          <li><a href="/index.html">Home</a></li>
-          <li class="active">Products Overview</li>
-        </ol>
       </div>
     </section>
      ==========================
