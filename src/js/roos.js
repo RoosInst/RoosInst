@@ -615,25 +615,3 @@ function goSearch5(identifier = null, docs = null, query = null, target = null) 
 		return true;
 	}
 } //end function
-
-//site-wide cookie opt-in
-/* window.addEventListener("load", function () {
-	window.cookieconsent.initialise({
-		"palette": {
-			"popup": {
-				"background": "#252e39"
-			},
-			"button": {
-				"background": "#4676B8"
-			}
-		},
-		"theme": "classic",
-		"position": "bottom-left",
-		"content": {
-			"message": "This website uses cookies when searching or if you sign in.",
-			"allow": "Allow cookies",
-			"link": "Learn more",
-			"href": "https://roos.com/privacy.html"
-		}
-	})
-}); */
