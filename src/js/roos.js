@@ -437,17 +437,6 @@ function goSearch4() {
 	}
 } //end function
 
-// function loadResults(query){
-// 	checkCookie = false;
-// 	if (checkCookie = true){
-// 		//load docs
-// 	}else{
-// 		location.href = "/roos/search.html";
-// 		goSearch5(null, null, query);
-// 	}
-
-// }
-
 function hasCookie() {
 	str = document.cookie.split('; ');
 	var result = {};
@@ -473,7 +462,6 @@ function doSearch5() {
 		location.href = "/search.html?query=" + unescape(searchString5);
 		return;
 	}
-
 }
 
 function searchModal() {
@@ -489,6 +477,7 @@ function searchModal() {
 			location.href = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + searchString;
 			break;
 	}
+	return true;
 }
 
 function searchBar() {
@@ -504,14 +493,14 @@ function searchBar() {
 			location.href = "/roos/documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + searchString;
 			break;
 	}
+	return true;
 }
 
 function goSearch5(identifier = null, docs = null, query = null, target = null) {
 
-	var docSearch5 = window.document.docsSearch5;
 	var searchPhrase5, start
 	if (identifier == null && query == null) {
-		searchPhrase5 = docSearch5.query5.value.toString();  //ensures numbers will be treated as strings
+		searchPhrase5 = window.document.docsSearch5.query5.value.toString();  //ensures numbers will be treated as strings
 		start = 1;
 	} else if (query != null) {
 		searchPhrase5 = query;  //ensures numbers will be treated as strings
@@ -532,8 +521,8 @@ function goSearch5(identifier = null, docs = null, query = null, target = null) 
 
 	if (searchPhrase5 == '') {
 		$("#searchFail5").removeClass("hidden");
-		docSearch5.query5.value = "";
-		docSearch5.query5.focus();
+		window.document.docsSearch5.query5.value = "";
+		window.document.docsSearch5.query5.focus();
 		return true;
 	} else {
 		var searchString5 = unescape(searchPhrase5).split("#")[0];

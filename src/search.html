@@ -285,10 +285,9 @@
       </div>
     </div>
 
-    <!-- Search Modal -->
+    <!-- New Search Modal -->
     <div id="searchModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg">
-
         <!-- Search Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -301,9 +300,9 @@
               <div class="form-group" style="margin-bottom: 0;">
                 <div class="input-group">
                   <div class="input-group-btn search-panel">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false"><span id="search_concept_modal">Web</span>
-                      <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false"><span id="search_concept_modal">Web </span><span
+                        class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="#">All</a></li>
                       <li><a href="#">Web</a></li>
@@ -313,37 +312,35 @@
                   <input type="hidden" name="search_param" value="all" id="search_param">
                   <input type="text" class="searchTable form-control" id="query" placeholder="Search" required="">
                   <span onclick="searchModal(); return false;" class="input-group-btn"><button style="margin-top: 0;"
-                      class="btn btn-primary" type="button"><i class="fa fa-search"
-                        aria-hidden="true"></i></button></span>
+                      class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></span>
                 </div>
               </div>
               <div id="searchFail2" class="alert alert-warning hidden" role="alert">
                 <strong>Oops!</strong> Search for something.
               </div>
             </form>
-
-            <script>
-              $(document).ready(function (e) {
-                $('.search-panel .dropdown-menu').find('a').click(function (e) {
-                  e.preventDefault();
-                  var concept = $(this).html();
-                  $('.search-panel span#search_concept_modal').html(concept);
-                });
-              });
-              window.addEventListener("load", function () {
-                queryString = window.location.search;
-                const urlParams = new URLSearchParams(queryString);
-
-                goSearch5(null, null, urlParams.get('query'));
-              });
-            </script>
           </div>
+          <script>
+            $(document).ready(function (e) {
+              $('.search-panel .dropdown-menu').find('a').click(function (e) {
+                e.preventDefault();
+                var concept = $(this).html();
+                $('.search-panel span#search_concept_modal').html(concept);
+              });
+            });
+            window.addEventListener("load", function () {
+              queryString = window.location.search;
+              const urlParams = new URLSearchParams(queryString);
+
+              goSearch5(null, null, urlParams.get('query'));
+            });
+          </script>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
-        </div>
+        </div> <!-- END Search Modal -->
       </div>
-    </div>
+    </div> <!-- END Search Modal -->
     <!-- ==========================
         	HEADER - END
         =========================== -->
