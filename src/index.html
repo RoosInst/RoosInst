@@ -296,52 +296,45 @@
             <h3 class="modal-title">Search</h3>
           </div>
           <div class="modal-body">
-            <form id="modal-search" class="" name="modalSearch" method="POST" action="#"
-              onsubmit="searchModal(); return false;">
-              <div class="form-group" style="margin-bottom: 0;">
-                <div class="input-group">
-                  <div class="input-group-btn search-panel">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false"><span id="search_concept_modal">Web </span><span
-                        class="caret"></span></button>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">All</a></li>
-                      <li><a href="#">Web</a></li>
-                      <li><a href="#">Documentation</a></li>
-                    </ul>
+            <div class="features-item" id="features-tabs-panels">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#google-search" data-toggle="tab"><i class="fas fa-globe"></i>
+                    &nbsp;Website</a>
+                </li>
+                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i> &nbsp;Documentation<span
+                      class="hidden-xs">(<i class="fas fa-lock"></i> Sign In Required)</span></a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="google-search">
+                  <div class="reset-box-sizing" id="search">
+                    <div class="gcse-search"></div>
                   </div>
-                  <input type="hidden" name="search_param" value="all" id="search_param">
-                  <input type="text" class="searchTable form-control" id="query" placeholder="Search" required="">
-                  <span onclick="searchModal(); return false;" class="input-group-btn"><button style="margin-top: 0;"
-                      class="btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                  <!-- end of #search -->
+                </div>
+                <div class="tab-pane fade" id="document-search">
+                  <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                    <div class="form-group nospace">
+                      <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                        <strong>Oops!</strong> Search for something.
+                      </div>
+                      <div class="input-group">
+                        <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
+                          placeholder="Search Documentation" required>
+                        <span onclick="goSearch2(); return false;" class="input-group-btn"><button
+                            class="btn btn-primary" type="button"><i class="fas fa-search"></i></button></span>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div id="searchFail2" class="alert alert-warning hidden" role="alert">
-                <strong>Oops!</strong> Search for something.
-              </div>
-            </form>
+            </div>
           </div>
-          <script>
-            $(document).ready(function (e) {
-              $('.search-panel .dropdown-menu').find('a').click(function (e) {
-                e.preventDefault();
-                var concept = $(this).html();
-                $('.search-panel span#search_concept_modal').html(concept);
-              });
-            });
-            window.addEventListener("load", function () {
-              queryString = window.location.search;
-              const urlParams = new URLSearchParams(queryString);
-
-              goSearch5(null, null, urlParams.get('query'));
-            });
-          </script>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- End Search Modal -->
     <!-- ==========================
         	HEADER - END
         =========================== -->
@@ -355,19 +348,32 @@
       .index-slideshow {
         font-weight: 300;
       }
+
+      #index-slide-0 {
+        background-image: url('/images/index-2021-ims.png');
+      }
     </style>
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
         <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
           <div class="item" id="index-slide-0">
             <!-- 5G PROMO -->
-            <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
+            <!--             <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
             <div class="container">
               <div class="row">
                 <div style="position: relative; top: 220px; left: 130px;">
                   <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
                     style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
                     More</a>
+                </div>
+              </div>
+            </div> -->
+            <!-- <h2 style="color: #b3e0dc;" class="index-slideshow-bar">Chat with us at IMS2021</h2> -->
+            <div class="container">
+              <div class="row">
+                <div style="position: relative; top: 80px; left: -20px;">
+                  <a href="https://ims-ieee.vfairs.com" class="btn btn-index btn-inverse"
+                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Virtual IMS</a>
                 </div>
               </div>
             </div>
