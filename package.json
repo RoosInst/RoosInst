@@ -1,6 +1,6 @@
 {
   "name": "roosinst",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "roos.com website (static pages)",
   "main": "gulpfile.js",
   "scripts": {
