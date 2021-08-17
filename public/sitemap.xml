@@ -148,8 +148,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/CassiniReferenceGuide_2.1.1_mini.pdf</loc>
-  <lastmod>2016-10-17T20:12:17+00:00</lastmod>
+  <loc>https://roos.com/pdf/CassiniReferenceGuide_2.7_mini.pdf</loc>
+  <lastmod>2021-10-17T20:12:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -193,17 +193,17 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Pack_TIM.pdf</loc>
+  <loc>https://roos.com/pdf/Pack_TIM.pdf</loc>
   <lastmod>2015-02-14T02:41:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Pack_AUX_Src.pdf</loc>
+  <loc>https://roos.com/pdf/Pack_AUX_Src.pdf</loc>
   <lastmod>2015-02-14T02:38:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Exchange_TIM.pdf</loc>
+  <loc>https://roos.com/pdf/Exchange_TIM.pdf</loc>
   <lastmod>2015-02-14T02:47:31+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -1483,17 +1483,17 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Cassini_Basic_Training_Syllabus.pdf</loc>
+  <loc>https://roos.com/pdf/Cassini_Basic_Training_Syllabus.pdf</loc>
   <lastmod>2015-09-10T21:42:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Admin_Training_Syllabus.pdf</loc>
+  <loc>https://roos.com/pdf/Admin_Training_Syllabus.pdf</loc>
   <lastmod>2015-09-10T21:42:04+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/Cassini_Maintenance_Training_Syllabus.pdf</loc>
+  <loc>https://roos.com/pdf/Cassini_Maintenance_Training_Syllabus.pdf</loc>
   <lastmod>2015-09-10T21:42:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -1520,11 +1520,6 @@
 <url>
   <loc>https://roos.com/terms.html</loc>
   <lastmod>2019-11-28T02:46:48+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/web/news.nsf/</loc>
-  <lastmod>2019-11-30T18:32:43+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1578,17 +1573,17 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/RoosCalibrationScope_v1.0.pdf</loc>
+  <loc>https://roos.com/pdf/RoosCalibrationScope_v1.0.pdf</loc>
   <lastmod>2016-03-24T20:59:53+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/CASSINI-AUTO.pdf</loc>
+  <loc>https://roos.com/pdf/CASSINI-AUTO.pdf</loc>
   <lastmod>2017-04-07T18:11:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/web/RI8564_TestSet_80GHz.pdf</loc>
+  <loc>https://roos.com/pdf/RI8564_TestSet_80GHz.pdf</loc>
   <lastmod>2015-12-18T23:06:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
