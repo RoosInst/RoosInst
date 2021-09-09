@@ -1451,6 +1451,46 @@ hr.space {
 #jumbotron-slider .btn-inverse:hover, #jumbotron-slider .btn-inverse:focus {
   color: #FFF; }
 
+.index-slideshow {
+  font-weight: 300; }
+
+#index-panels h4 {
+  text-align: right;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 80 px;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 0;
+  color: #707070;
+  opacity: 1; }
+
+#index-panels div {
+  -webkit-column-count: 6;
+     -moz-column-count: 6;
+          column-count: 6;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
+  margin: 0; }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #index-slide-0 a {
+    position: relative;
+    left: -108px;
+    top: -207px; }
+  #index-panels img {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px; }
+  #index-panels div {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+  #index-panels p {
+    text-align: center;
+    font-size: 0.75em; } }
+
 @media (max-width: 767px) {
   #nav-home > a, #nav-mobile-support > a, #nav-mobile-privacy > a, #nav-mobile-myAccount > a {
     font-weight: 700;
