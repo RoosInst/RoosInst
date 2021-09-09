@@ -9,6 +9,12 @@
     });
   </script>
 
+  <style>
+    /* #index-slide-0 {
+         background-image: url('/images/index-2021-ims.png');
+         } */
+  </style>
+
   <!-- TOP - v51 -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +27,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="/css/roos.min.css?v2" rel="stylesheet" id="pageTheme">
+  <link href="/css/roos.min.css?v3" rel="stylesheet" id="pageTheme">
   <link href="/css/roos-print.min.css?v2" rel="stylesheet" media="print">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -319,43 +325,11 @@
     <!-- ==========================
     JUMBOTRON - START
   =========================== -->
-    <style>
-      .index-slideshow {
-        font-weight: 300;
-      }
 
-      /* #index-slide-0 {
-        background-image: url('/images/index-2021-ims.png');
-      } */
-    </style>
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
         <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-          <div class="item" id="index-slide-0">
-            <!-- 5G PROMO -->
-            <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
-            <div class="container">
-              <div class="row">
-                <div style="position: relative; top: 220px; left: 130px;">
-                  <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
-                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
-                    More</a>
-                </div>
-              </div>
-            </div>
-            <!-- <h2 style="color: #b3e0dc;" class="index-slideshow-bar">Chat with us at IMS2021</h2>
-            <div class="container">
-              <div class="row">
-                <div style="position: relative; top: 80px; left: -20px;">
-                  <a href="https://ims-ieee.vfairs.com/en/hall#booth-128534" class="btn btn-index btn-inverse"
-                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Virtual IMS</a>
-                  <p style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Free Registration
-                    <br> Available
-                  </p>
-                </div>
-              </div>
-            </div> -->
-          </div>
+
 
           <div class="item" id="index-slide-1">
             <h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
@@ -414,6 +388,32 @@
               <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
           </div>
+          <div class="item" id="index-slide-0">
+            <!-- 5G PROMO -->
+            <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
+            <div class="container">
+              <div class="row">
+                <div style="position: relative; top: 220px; left: 130px;">
+                  <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
+                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
+                    More</a>
+                </div>
+              </div>
+            </div>
+            <!-- <h2 style="color: #b3e0dc;" class="index-slideshow-bar">Chat with us at IMS2021</h2>
+                      <div class="container">
+                        <div class="row">
+                          <div style="position: relative; top: 80px; left: -20px;">
+                            <a href="https://ims-ieee.vfairs.com/en/hall#booth-128534" class="btn btn-index btn-inverse"
+                              style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Virtual IMS</a>
+                            <p style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Free Registration
+                              <br> Available
+                            </p>
+                          </div>
+                        </div>
+                      </div> -->
+          </div>
+
         </div>
       </div>
     </section>
@@ -425,70 +425,30 @@
       <!-- ==========================
     	PANELS - START
     =========================== -->
-      <style>
-        #index-panels h4 {
-          text-align: right;
-          font: Regular 64px/80px Source Sans Pro;
-          letter-spacing: 0;
-          color: #707070;
-          opacity: 1;
-        }
 
-        #index-panels div {
-          column-count: 6;
-          column-gap: 0;
-          margin: 0;
-        }
-
-        @media (min-width: 0px) and (max-width: 767px) {
-          #index-slide-0 a {
-            position: relative;
-            left: -108px;
-            top: -207px;
-          }
-
-          #index-panels img {
-            margin: auto;
-            width: 100%;
-            max-width: 100%;
-            max-height: 300px;
-          }
-
-          #index-panels div {
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-          }
-
-          #index-panels p {
-            text-align: center;
-            font-size: 0.75em;
-          }
-        }
-      </style>
       <section id="index-panels">
         <h4 class="container">End-to-End Test Solutions</h4>
         <div>
           <a href="infrastructure.html" title="System">
-            <img src="images/System.png" alt="System Panel" style="height: 531.25;">
+            <img src="images/System.png" alt="System Panel">
           </a>
           <a href="instruments.html" title="Instruments">
-            <img src="images/instruments.png" alt="Instruments Panel" style="height: 531.25;">
+            <img src="images/instruments.png" alt="Instruments Panel">
           </a>
           <a href="fixture.html" title="Interface">
-            <img src="images/interface.png" alt="Interface Panel" style="height: 531.25;">
+            <img src="images/interface.png" alt="Interface Panel">
           </a>
           <a href="software.html" title="Software Panel">
-            <img src="images/software.png" alt="Software Panel" style="height: 531.25;">
+            <img src="images/software.png" alt="Software Panel">
           </a>
           <a href="guru.html" title="Enterprise Panel">
-            <img src="images/enterprise.png" alt="Enterprise Panel" style="height: 531.25;">
+            <img src="images/enterprise.png" alt="Enterprise Panel">
           </a>
           <a href="support.html" title="Support Panel">
-            <img src="images/support.png" alt="Support Panel" style="height: 531.25;">
+            <img src="images/support.png" alt="Support Panel">
           </a>
         </div>
-        <p style="margin-left: 1em;">Select a panel to learn more</p>
+        <p style="margin-left: 1em;">Select a panel above to learn more.</p>
       </section>
       <!-- ==========================
     PANELS - END
@@ -515,10 +475,10 @@
             <div class="col-sm-12">
               <span><i class="far fa-newspaper"></i>
                 <a style="font-size: 18px;"
-                  href=https://www.microwavejournal.com/articles/36147-high-power-production-test-for-base-station-power-transistors">
+                  href="https://www.microwavejournal.com/articles/36147-high-power-production-test-for-base-station-power-transistors">
                   "High-Power Production Test for Base Station Power Transistors"
                 </a>
-                Semiconductor Engineering Article &nbsp;
+                -Semiconductor Engineering
               </span>
             </div>
           </div>
@@ -541,7 +501,7 @@
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
-
+  </div>
 </body>
 
 </html>
