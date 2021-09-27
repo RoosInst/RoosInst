@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/RoosInst/RoosInst/issues"
   },
-  "homepage": "https://www.roos.com",
+  "homepage": "https://roos.com",
   "browserslist": [
     "last 2 versions",
     "defaults"
