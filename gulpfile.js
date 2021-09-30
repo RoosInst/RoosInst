@@ -36,7 +36,7 @@
     size = require('gulp-size'),
     imagemin = require('gulp-imagemin'),
     htmlclean = require('gulp-htmlclean'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     postcss = require('gulp-postcss'),
     fileinclude = require('gulp-file-include'),
     //sync = require('gulp-npm-script-sync'),
@@ -99,7 +99,6 @@
     build: dir.build + 'css/',
     sassOpts: {
       sourceMap: devBuild,
-      outputStyle: 'nested',
       imagePath: imgConfig.src,
       precision: 3,
       errLogToConsole: true
