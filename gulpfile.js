@@ -1,17 +1,38 @@
 /* eslint-disable no-undef */
-/* Before using make sure you have:
+/* BULD HISTORY
    npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
    npm install gulp gulp-newer gulp-imagemin gulp-webp --save-dev
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
-   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
+   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gulp-concat-css cssnano --save-dev
+   converted to ESM to support newer packages
 */
+
+// modules
+import gulp from 'gulp';
+import concat from 'gulp-concat';
+import concatcss from 'gulp-concat-css';
+import cleanCSS from 'gulp-clean-css';
+import del from 'del';
+import deporder from 'gulp-deporder';
+import noop from 'gulp-noop';
+import newer from 'gulp-newer';
+import size from 'gulp-size';
+import imagemin from 'gulp-imagemin';
+import htmlclean from 'gulp-htmlclean';
+import sass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import fileinclude from 'gulp-file-include';
+//import sync from 'gulp-npm-script-sync';
+import sourcemaps from 'gulp-sourcemaps';
+import browsersync from 'browser-sync';
+//import webp from 'gulp-webp';
 
 (() => {
 
-  'use strict';
-
-  /**************** Gulp.js 4 configuration ****************/
+  /**************** Gulp.js 4 ESM configuration ****************/
+  require = require("esm")(module/*, options*/)
+  module.exports = require("./main.js")
 
   const
 
@@ -22,43 +43,20 @@
     dir = {
       src: 'src/',
       build: 'build/'
-    },
-
-    // modules
-    gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    concatcss = require('gulp-concat-css'),
-    cleanCSS = require('gulp-clean-css'),
-    del = require('del'),
-    deporder = require('gulp-deporder'),
-    noop = require('gulp-noop'),
-    newer = require('gulp-newer'),
-    size = require('gulp-size'),
-    imagemin = require('gulp-imagemin'),
-    htmlclean = require('gulp-htmlclean'),
-    sass = require('gulp-sass')(require('sass')),
-    postcss = require('gulp-postcss'),
-    fileinclude = require('gulp-file-include'),
-    //sync = require('gulp-npm-script-sync'),
-    sourcemaps = devBuild ? require('gulp-sourcemaps') : null,
-    browsersync = devBuild ? require('browser-sync').create() : null,
-    webp = require("gulp-webp");
-
+    }
 
 
   console.log('Gulp', devBuild ? 'development' : 'production', 'build');
-
 
   /**************** clean task ****************/
 
   function clean() {
 
-    return del([dir.build]);
+    return del([dir.build], { force: true });
 
   }
-  exports.clean = clean;
-  exports.wipe = clean;
 
+  const wipe = gulp.clean;
 
   /**************** images task ****************/
 
@@ -76,7 +74,6 @@
       .pipe(webp())
       .pipe(gulp.dest(imgConfig.build));
   }
-  exports.convertToWebp = convertToWebp;
 
   function images() {
     return gulp.src(imgConfig.src)
@@ -85,7 +82,6 @@
       .pipe(size({ showFiles: true }))
       .pipe(gulp.dest(imgConfig.build));
   }
-  exports.images = images;
 
 
   /**************** CSS task ****************/
@@ -140,7 +136,7 @@
       }))
       .pipe(gulp.dest(htmlConfig.build));
   }
-  exports.fileInclude = gulp.series(fileinclude, html)
+  const fileInclude = gulp.series(fileinclude, html)
 
   // HTML processing
   function html() {
@@ -151,7 +147,7 @@
       .pipe(devBuild ? noop() : htmlclean())
       .pipe(gulp.dest(out));
   }
-  exports.html = gulp.parallel(images, html);
+  const html = gulp.parallel(images, html);
 
   // JavaScript processing
   function js() {
@@ -166,7 +162,6 @@
       .pipe(gulp.dest(jsConfig.build));
 
   }
-  exports.js = js;
 
   // remove unused selectors and minify production CSS
   if (!devBuild) {
@@ -213,8 +208,8 @@
       .pipe(gulp.dest(cssConfig.build))
       .pipe(browsersync ? browsersync.reload({ stream: true }) : noop());
   }
-  exports.css = gulp.series(images, scss, css, cssPrint);
 
+  const css = gulp.series(images, scss, css, cssPrint);
 
   /**************** server task (now private) ****************/
 
@@ -255,23 +250,26 @@
   }
 
   /**************** sync NPM scripts task **************
-
+ 
   function syncNPMScript(done) {
-
+ 
     // sync build scripts
     sync(gulp);
-
+ 
     done();
-
+ 
   }
   ***/
 
   // run all tasks
-  exports.build = gulp.parallel(exports.html, exports.css, exports.js);
+  const build = gulp.parallel(html, css, js);
 
   /**************** default task ****************/
 
-  exports.default = gulp.series(exports.css, watch, server)
+  const dev = gulp.series(html, css, js, watch, server)
   // ,syncNPMScript);
 
 })();
+
+export { clean, wipe, images, css, html, js, build, dev };
+export default build;
