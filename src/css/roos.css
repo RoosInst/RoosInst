@@ -1866,7 +1866,7 @@ hr.space {
   font-weight: 300;
 }
 
-#index-panels h4 {
+#index-panels h1, h4 {
   text-align: right;
   font-style: normal;
   font-size: 64px;
@@ -1910,6 +1910,12 @@ hr.space {
   #index-panels p {
     text-align: center;
     font-size: 0.75em;
+  }
+
+  #index-panels h1, h4 {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 767px) {
@@ -2052,6 +2058,12 @@ textarea {
   .index-slideshow .item {
     height: 79vmin;
     max-height: 605px;
+  }
+  
+  #index-panels h1, h4 {
+    font-style: normal;
+    font-size: 42 px;
+    line-height: 1;
   }
 
   #jumbotron h5 {

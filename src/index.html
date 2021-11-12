@@ -13,10 +13,28 @@
   </script>
 
   <style>
-    /* #index-slide-0 {
-         background-image: url('/images/index-2021-ims.png');
-         } */
+    #index-slide-0 {
+      background-image: url('/images/index-2021-semi.png') !important;
+      background-position-x: left !important;
+    }
+
+    @media (min-width: 768px) {
+      #index-slide-0 a {
+        position: relative;
+        top: 327px;
+        left: 329px;
+      }
+    }
+
+    @media (min-width: 0px) and (max-width: 767px) {
+      #index-slide-0 a {
+        position: relative;
+        top: 200px;
+        left: 30px;
+      }
+    }
   </style>
+
 
   <!-- TOP - v51 -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -331,7 +349,30 @@
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
         <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-
+          <div class="item" id="index-slide-0">
+            <!-- 5G PROMO -->
+            <!--             <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
+                      <div class="container">
+                        <div class="row">
+                          <div style="position: relative; top: 220px; left: 130px;">
+                            <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
+                              style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
+                              More</a>
+                          </div>
+                        </div>
+                      </div> -->
+            <h2 style="color: #b3e0dc;" class="hidden index-slideshow-bar">Visit us at SEMICON WEST 2021</h2>
+            <div class="container">
+              <div class="row">
+                <div>
+                  <a href="http://nvyt.es/37030e5efd146189ab81" class="btn btn-index btn-inverse"
+                    style="color: black; border-color: #b3e0dc; background-color: white;">Visit Booth #365 Live
+                    & Virtual</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="item" id="index-slide-1">
             <h2 class="index-slideshow-bar">It's Time To Get Serious About RF</h2>
@@ -390,32 +431,6 @@
               <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
             </div>
           </div>
-          <div class="item" id="index-slide-0">
-            <!-- 5G PROMO -->
-            <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
-            <div class="container">
-              <div class="row">
-                <div style="position: relative; top: 220px; left: 130px;">
-                  <a href="https://roos.com/5g" class="btn btn-index btn-inverse"
-                    style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Learn
-                    More</a>
-                </div>
-              </div>
-            </div>
-            <!-- <h2 style="color: #b3e0dc;" class="index-slideshow-bar">Chat with us at IMS2021</h2>
-                      <div class="container">
-                        <div class="row">
-                          <div style="position: relative; top: 80px; left: -20px;">
-                            <a href="https://ims-ieee.vfairs.com/en/hall#booth-128534" class="btn btn-index btn-inverse"
-                              style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Visit Virtual IMS</a>
-                            <p style="color: #b3e0dc; border-color: #b3e0dc; background-color: transparent;">Free Registration
-                              <br> Available
-                            </p>
-                          </div>
-                        </div>
-                      </div> -->
-          </div>
-
         </div>
       </div>
     </section>
@@ -429,7 +444,7 @@
     =========================== -->
 
       <section id="index-panels">
-        <h4 class="container">End-to-End Test Solutions</h4>
+        <h1 class="container">End-to-End Test Solutions</h1>
         <div>
           <a href="infrastructure.html" title="System">
             <img src="images/System.png" alt="System Panel">
