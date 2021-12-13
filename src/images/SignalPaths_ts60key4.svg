@@ -434,7 +434,7 @@
                 </g>
             </g><text class="cls-11" transform="translate(31.62 13.84)">Distributed LO
             </text><text class="cls-11" transform="translate(31.62 33.84)">0.1 to 20 GHz Source
-            </text><text class="cls-11" transform="translate(31.62 53.84)">56 to 67 GHz Source
+            </text><text class="cls-11" transform="translate(31.62 53.84)">50 to 70 GHz Source
             </text>
             <g class="cls-2">
                 <g class="cls-4">
@@ -445,7 +445,7 @@
             </g><text class="cls-28" transform="translate(139.62 13.84)">Direct Receive IF
             </text><text class="cls-28" transform="translate(139.62 26.92)">Incident Wave IF
             </text><text class="cls-28" transform="translate(139.62 39.92)">IF to Receiver
-            </text><text class="cls-28" transform="translate(139.62 53.42)">56 to 67 GHz Measure
+            </text><text class="cls-28" transform="translate(139.62 53.42)">50 to 70 GHz Measure
             </text>
             <g class="cls-2">
                 <g class="cls-4">

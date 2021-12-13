@@ -208,11 +208,11 @@
 </style>
 <text transform="matrix(1 0 0 1 31.764 13.9002)" class="st0 st1 st2">Distributed LO</text>
 <text transform="matrix(1 0 0 1 31.764 33.9002)" class="st0 st1 st2">0.1 to 20 GHz Source</text>
-<text transform="matrix(1 0 0 1 31.764 53.9002)" class="st0 st1 st2">56 to 67 GHz Source</text>
+<text transform="matrix(1 0 0 1 31.764 53.9002)" class="st0 st1 st2">50 to 70 GHz Source</text>
 <text transform="matrix(1 0 0 1 139.764 13.9002)" class="st0 st1 st2">Reflected Wave IF</text>
 <text transform="matrix(1 0 0 1 139.764 26.6802)" class="st0 st1 st2">Incident Wave IF</text>
 <text transform="matrix(1 0 0 1 139.764 39.9802)" class="st0 st1 st2">IF to Receiver</text>
-<text transform="matrix(1 0 0 1 139.764 53.5802)" class="st0 st1 st2">56 to 67 GHz Measure</text>
+<text transform="matrix(1 0 0 1 139.764 53.5802)" class="st0 st1 st2">50 to 70 GHz Measure</text>
 <g class="st3">
 	<line class="st4" x1="9.9" y1="12.1" x2="27.9" y2="12.1"/>
 	<line class="st5" x1="9.9" y1="32.1" x2="27.9" y2="32.1"/>
