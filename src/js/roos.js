@@ -160,7 +160,8 @@ $(document).ready(function () {
 	$("#jumbotron-slider").owlCarousel({
 		items: 1,
 		dots: false,
-		loop: true,
+		loop: false,
+		rewind: true,
 		nav: true,
 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 		autoplay: true,
