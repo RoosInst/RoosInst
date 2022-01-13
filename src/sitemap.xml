@@ -66,11 +66,6 @@
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://roos.com/rik</loc>
-  <lastmod>2019-11-30T18:27:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://roos.com/services.html</loc>
   <lastmod>2019-11-28T02:46:47+00:00</lastmod>
   <priority>0.80</priority>
@@ -133,26 +128,6 @@
 <url>
   <loc>https://roos.com/maintenance.html</loc>
   <lastmod>2019-11-28T02:46:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://roos.com/help/dev</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://roos.com/help/admin</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://roos.com/help/maint</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://roos.com/help/operate</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -331,123 +306,18 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/fixtures</loc>
-  <lastmod>2019-11-30T18:29:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/dibs.html</loc>
   <lastmod>2019-11-28T02:46:46+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/table</loc>
-  <lastmod>2019-11-30T18:29:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/cables/Filters=Launch</loc>
-  <lastmod>2019-11-30T18:29:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/cables/Filters=Module</loc>
-  <lastmod>2019-11-30T18:29:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/cables/Filters=Block</loc>
-  <lastmod>2019-11-30T18:29:19+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/cables</loc>
-  <lastmod>2019-11-30T18:29:20+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Top+Plates</loc>
+  <loc>https://roos.com/rik</loc>
   <lastmod>2019-11-30T18:29:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Inserts</loc>
-  <lastmod>2019-11-30T18:29:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Resource+Plates</loc>
-  <lastmod>2019-11-30T18:29:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Carriers</loc>
-  <lastmod>2019-11-30T18:29:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Modules</loc>
-  <lastmod>2019-11-30T18:29:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Sides</loc>
-  <lastmod>2019-11-30T18:29:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Accessories</loc>
-  <lastmod>2019-11-30T18:29:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Bottom+Plates</loc>
-  <lastmod>2019-11-30T18:29:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/category/Fixture+Blocks</loc>
-  <lastmod>2019-11-30T18:29:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Calibration+Tools</loc>
-  <lastmod>2019-11-30T18:29:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Replacement+Parts</loc>
-  <lastmod>2019-11-30T18:29:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Docking</loc>
-  <lastmod>2019-11-30T18:29:30+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Control+Pods</loc>
-  <lastmod>2019-11-30T18:29:31+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+DIB+Layer</loc>
-  <lastmod>2019-11-30T18:29:32+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Pedestal+Support+&amp;+Clamps</loc>
-  <lastmod>2019-11-30T18:29:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://roos.com/parts</loc>
   <lastmod>2019-11-30T18:29:34+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Featured</loc>
-  <lastmod>2019-11-30T18:29:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -478,11 +348,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0200A</loc>
   <lastmod>2019-11-30T18:29:41+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Calibration+Tools</loc>
-  <lastmod>2019-11-30T18:29:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -526,11 +391,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Accessories</loc>
-  <lastmod>2019-11-30T18:29:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0300A</loc>
   <lastmod>2019-11-30T18:29:50+00:00</lastmod>
   <priority>0.64</priority>
@@ -563,11 +423,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0020A</loc>
   <lastmod>2019-11-30T18:29:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Blocks</loc>
-  <lastmod>2019-11-30T18:29:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -621,11 +476,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Bottom+Plates</loc>
-  <lastmod>2019-11-30T18:30:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0178A</loc>
   <lastmod>2019-11-30T18:30:06+00:00</lastmod>
   <priority>0.64</priority>
@@ -633,11 +483,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0018B</loc>
   <lastmod>2019-11-30T18:30:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Cables</loc>
-  <lastmod>2019-11-30T18:30:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -866,11 +711,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Carriers</loc>
-  <lastmod>2019-11-30T18:30:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0236A</loc>
   <lastmod>2019-11-30T18:30:53+00:00</lastmod>
   <priority>0.64</priority>
@@ -888,11 +728,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0014B</loc>
   <lastmod>2019-11-30T18:30:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Control+PODs</loc>
-  <lastmod>2019-11-30T18:30:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1016,11 +851,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Inserts</loc>
-  <lastmod>2019-11-30T18:31:17+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0217A</loc>
   <lastmod>2019-11-30T18:31:18+00:00</lastmod>
   <priority>0.64</priority>
@@ -1053,11 +883,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0117A</loc>
   <lastmod>2019-11-30T18:31:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Modules</loc>
-  <lastmod>2019-11-30T18:31:24+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1151,11 +976,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Repair</loc>
-  <lastmod>2019-11-30T18:31:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0099A</loc>
   <lastmod>2019-11-30T18:31:41+00:00</lastmod>
   <priority>0.64</priority>
@@ -1163,11 +983,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0071A</loc>
   <lastmod>2019-11-30T18:31:42+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Resource+Plates</loc>
-  <lastmod>2019-11-30T18:31:43+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1241,11 +1056,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Sides</loc>
-  <lastmod>2019-11-30T18:31:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0235A</loc>
   <lastmod>2019-11-30T18:31:56+00:00</lastmod>
   <priority>0.64</priority>
@@ -1281,11 +1091,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Fixture+Top+Plates</loc>
-  <lastmod>2019-11-30T18:32:02+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0285A</loc>
   <lastmod>2019-11-30T18:32:02+00:00</lastmod>
   <priority>0.64</priority>
@@ -1303,11 +1108,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0012B</loc>
   <lastmod>2019-11-30T18:32:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Replacement+Parts</loc>
-  <lastmod>2019-11-30T18:32:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1366,11 +1166,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Services</loc>
-  <lastmod>2019-11-30T18:32:16+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0245A</loc>
   <lastmod>2019-11-30T18:32:17+00:00</lastmod>
   <priority>0.64</priority>
@@ -1411,11 +1206,6 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=System+Support+Options</loc>
-  <lastmod>2019-11-30T18:32:23+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://roos.com/parts/RIK0063B</loc>
   <lastmod>2019-11-30T18:32:24+00:00</lastmod>
   <priority>0.64</priority>
@@ -1433,11 +1223,6 @@
 <url>
   <loc>https://roos.com/parts/RIK0041B</loc>
   <lastmod>2019-11-30T18:32:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/FixturesByType?openform&amp;RestrictToCategory=Training+Courses</loc>
-  <lastmod>2019-11-30T18:32:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
@@ -1589,61 +1374,6 @@
   <loc>https://roos.com/parts/WIGIG-CASSINI</loc>
   <lastmod>2019-11-30T18:33:02+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Calibration%20Tools</loc>
-  <lastmod>2019-11-30T18:33:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Fixture%20Accessories</loc>
-  <lastmod>2019-11-30T18:33:03+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Fixture%20Blocks</loc>
-  <lastmod>2019-11-30T18:33:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/accessoriesbyType?openform&amp;RestrictToCategory=Replacement%20Parts</loc>
-  <lastmod>2019-11-30T18:33:05+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/66ce4b2a5a0cf49d8825768e006997de/a45689d2886a27d78825746700787bfe!OpenDocument</loc>
-  <lastmod>2019-11-30T18:33:06+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/66ce4b2a5a0cf49d8825768e006997de/7b69c99d5883c0e2882574750006f6ab!OpenDocument</loc>
-  <lastmod>2019-11-30T18:33:08+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/commerce/catalog.nsf/KITS2?openform&amp;count=1000&amp;RestrictToCategory=Replacement%20Parts</loc>
-  <lastmod>2019-11-30T18:33:08+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/a5d9dc807b3887b08825783e00739671!OpenDocument</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/19ed8609a2559dce88257f9e00560bd9!OpenDocument</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/roos/documentation.nsf/387b4af8707421a7882573fc0000a7c0/77d3d59d25dcf5038825782c0000e555!OpenDocument</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://roos.com/roos/documentation.nsf/14e44b3fe715e5ab8825683b00078bcd/1cd9ab44fa76cb69882579a000639c60!OpenDocument</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 <url>
   <loc>https://roos.com/parts/W+S</loc>
@@ -2470,6 +2200,4 @@
   <lastmod>2019-11-30T18:35:34+00:00</lastmod>
   <priority>0.51</priority>
 </url>
-
-
 </urlset>
