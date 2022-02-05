@@ -42,7 +42,7 @@ sequenceDiagram
       Cassini->>Guru: STDF RiDatalog
 ```
 
-### Ongoing
+### Copy STDF Datalog
 
 ```mermaid
 sequenceDiagram
