@@ -25,7 +25,7 @@ sequenceDiagram
     Note over Cassini: Compiles Exec to Pepare Run
     opt Check ACSdataSave Not Found
       Cassini->>ACS: Launch ACS
-      ACS--)Guru: ACSmsgLog Saved at Launch, Expires 12 hrs
+      ACS--)Guru: ACSmsgLog Saved at Launch
       activate ACS
       Note over ACS: ACS Select Exec
       Guru->>ACS: Loads CU data based on Exec Name
