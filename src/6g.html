@@ -451,23 +451,20 @@
                 });
 
                 $(".next-link").on("click", function (e) {
-                    // e.preventDefault();
                     slider.goTo('next')
                 });
                 $(".next2-link").on("click", function (e) {
-                    // e.preventDefault();
                     slider.goTo('next')
                     slider.goTo('next')
                 });
                 $(".next3-link").on("click", function (e) {
-                    // e.preventDefault();
                     slider.goTo('next')
                     slider.goTo('next')
                     slider.goTo('next')
                 });
                 $(".last-link").on("click", function (e) {
-                    // e.preventDefault();
-                    slider.goTo('last')
+                    // first because 'last' slide is presented first in the loop
+                    slider.goTo('first')
                 });
 
                 $("#TestSet20-slider").owlCarousel({
@@ -547,9 +544,9 @@
             <div class="container">
                 <h1>Cassini 6G Covered</h1>
                 <p class="main">Cassini is the only Automated Test Equipment (ATE) for testing high frequency
-                    semiconductors up to 110 GHz and is 6G ready today. 6G technology rapidly changes, the Cassini
-                    16-slot ATE platform allows for flexibility by progressively adding higher frequency test
-                    capabilities.</p>
+                    semiconductors at any frequency up to 110 GHz and is 6G ready today. 6G technology rapidly changes,
+                    the Cassini 16-slot ATE platform allows for flexibility by progressively adding higher frequency
+                    test capabilities.</p>
             </div>
             <div class="sixG-slideshow">
                 <div id="sixG-slider" class="my-slider">
@@ -557,84 +554,88 @@
                         <a id="sixG-slide-4" class="anchor"></a>
                         <img src="/images/6GSpectrumCoverage_WebSlides.005.png" usemap="#slide-5-map" id="slide5-img">
                         <map name="slide-5-map">
-                            <area target="" alt="RI8545: 100kHz to 20 GHz" title="20 GHz" href="#TestSet20"
-                                coords="0,0,230,600" shape="rect">
-                            <area target="" alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" href="#TestSet40"
-                                coords="230,0,510,600" shape="rect">
-                            <area target="" alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60"
-                                coords="510,0,755,600" shape="rect">
-                            <area target="" alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80"
-                                coords="755,0,942,600" shape="rect">
-                            <area target="" alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" href="#TestSet100"
-                                coords="942,0,1200,600" shape="rect">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" href="#TestSet40" coords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
+                                shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" href="#TestSet100"
+                                coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
                     <div class="item">
                         <a id="sixG-slide-1" class="anchor"></a>
                         <img src="/images/6GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map" id="slide1-img">
                         <map name="slide-1-map">
-                            <area target="" alt="RI8545: 100kHz to 20 GHz" title="20 GHz" href="#TestSet20"
-                                coords="0,0,230,600" shape="rect">
-                            <area target="" alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" href="next-link"
-                                coords="230,0,510,600" shape="rect">
-                            <area target="" alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="next2-link"
-                                coords="510,0,755,600" shape="rect">
-                            <area target="" alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="next3-link"
-                                coords="755,0,942,600" shape="rect">
-                            <area target="" alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" href="last-link"
-                                coords="942,0,1200,600" shape="rect">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" class="next-link" href="#"
+                                coords="230,0,510,600" shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" class="next2-link" href="#"
+                                coords="510,0,755,600" shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next3-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
                     <div class="item">
                         <a id="sixG-slide-2" class="anchor"></a>
                         <img src="/images/6GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map" id="slide2-img">
                         <map name="slide-2-map">
-                            <area target="" alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20"
-                                coords="0,0,230,600" shape="rect">
-                            <area target="" alt="RI8607: 4 GHz to 50 GHz" title="40 GHz" href="#TestSet40"
-                                ccoords="230,0,510,600" shape="rect">
-                            <area target="" alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" class="next-link" href="#"
-                                coords="510,0,755,600" shape="rect">
-                            <area target="" alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next2-link" href="#"
-                                coords="755,0,942,600" shape="rect">
-                            <area target="" alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link"
-                                coords="942,0,1200,600" shape="rect">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 4 GHz to 50 GHz" title="40 GHz" href="#TestSet40" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" class="next-link" href="#"
+                                coords="510,0,755,600" shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next2-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
                     <div class="item">
                         <a id="sixG-slide-3" class="anchor"></a>
                         <img src="/images/6GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map" id="slide3-img">
                         <map name="slide-3-map">
-                            <area target="" alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20"
-                                coords="0,0,230,600" shape="rect">
-                            <area target="" alt="RI8607: 4 GHz to 50 GHz" title="40 GHz" href="#TestSet40"
-                                ccoords="230,0,510,600" shape="rect">
-                            <area target="" alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60"
-                                coords="510,0,755,600" shape="rect">
-                            <area target="" alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next-link" href="#"
-                                coords="755,0,942,600" shape="rect">
-                            <area target="" alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link"
-                                coords="942,0,1200,600" shape="rect">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 4 GHz to 50 GHz" title="40 GHz" href="#TestSet40" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
+                    <!-- Where is the DIV? -->
+                    <div class="item">
+                        <a id="sixG-slide-4" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img">
+                        <map name="slide-4-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" href="#TestSet40" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
+                                shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <!-- Where is the DIV? close1-->
                 </div>
-                <div class="item">
-                    <a id="sixG-slide-4" class="anchor"></a>
-                    <img src="/images/6GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img">
-                    <map name="slide-4-map">
-                        <area target="" alt="RI8545: 100kHz to 20 GHz" title="20 GHz" href="#TestSet20"
-                            coords="0,0,230,600" shape="rect">
-                        <area target="" alt="RI8607: 2 GHz to 50 GHz" title="40 GHz" href="#TestSet40"
-                            ccoords="230,0,510,600" shape="rect">
-                        <area target="" alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60"
-                            coords="510,0,755,600" shape="rect">
-                        <area target="" alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80"
-                            coords="755,0,942,600" shape="rect">
-                        <area target="" alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link"
-                            coords="942,0,1200,600" shape="rect">
-                    </map>
-                </div>
+                <!-- Where is the DIV? close2-->
             </div>
+            <!-- Where is the DIV? close3-->
         </section>
 
         <!-- ==========================
@@ -1049,17 +1050,96 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- TestSet80 .row -->
+            </div> <!-- TestSet100 .row -->
+            <a id="TestSet100" class="anchor"></a>
+            <div class="row">
+                <h2>RI8610: 86 GHz to 110 GHz</h2>
+                <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation Automotive
+                    Radar plus up and down link devices at all the channel frequencies. Enables engineering lab accurate
+                    error corrected measurements in a production proven module for Gain, Phase, Absolute Power, Noise
+                    Figure, Return Loss, and Spectral Purity. Active port expansion through Cassini's support of mixing
+                    and matching multiple TIMs for up to 12 independent measurement ports plus Test
+                    Fixture based patented low loss waveguide port multiplication for support of nearly unlimited number
+                    of device ports.</p>
+                <div id="TestSet100-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts80-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">Vector-error corrected S-parameter measurements optimized for
+                                    low loss using
+                                    patented waveguide port connection technology for high density multi-port
+                                    support at these high frequencies. Cassini's unique port independent highspeed
+                                    unilateral, 8-term error correction is also supported which allows
+                                    engineers to mix and match measurements across additional ports even at
+                                    different frequencies or mix scalar and vector measurement types.</p>
+                                <img src="/images/SignalPaths_ts80key1.svg" alt="TestSet S-Parameters Image Key"
+                                    style="max-width: 400px; padding-top: 240px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Direct Receive</h3>
+                                <p class="text-left main">Direct down conversion, scalar receive path for
+                                    maximum
+                                    dynamic range measurements.</p>
+                                <img src="/images/SignalPaths_ts80key2.svg" alt="TestSet Direct Receive Image Key"
+                                    style="max-width: 220px; padding-top: 254px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>2-Tone</h3>
+                                <p class="text-left main">Millimeter wave subharmonic mixers and a signal
+                                    combiner
+                                    provides dual tone generation from two upconverted 20 GHz
+                                    microwave sources. Each signal path provides independent
+                                    source level control.</p>
+                                <img src="/images/SignalPaths_ts80key3.svg" alt="TestSet Return Loss Image Key"
+                                    style="max-width: 210px; padding-top: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="t80-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Vector error corrected S<sub>21</sub> measurement
+                                    capturing the a1 incident wave and b<sub>1</sub> output wave from the device under
+                                    test across two measurement ports.</p>
+                                <img src="/images/SignalPaths_ts80key4.svg" alt="TestSet Gain Image Key"
+                                    style="max-width: 390px; padding-top: 268px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- TestSet100 .row -->
 
             <hr class="space">
             <div class="row">
                 <div class="row hidden-xs hidden-sm">
                     <div class="col-sm-4">
-                        <a class="link" href="/fixture.html"><img src="/images/6GFixture.jpg" style="max-height: 250px;"
+                        <a class="link" href="/fixture.html"><img src="/images/5GFixture.jpg" style="max-height: 250px;"
                                 class="centerImg"></a>
                     </div>
                     <div class="col-sm-4">
-                        <a class="link" href="/parts/BACK-CASSINI"><img src="images/6G-mobile-phone-mast.jpg"
+                        <a class="link" href="/parts/BACK-CASSINI"><img src="images/5g-mobile-phone-mast.jpg"
                                 style="max-height: 250px;" class="centerImg"></a>
                     </div>
                     <div class="col-sm-4">
