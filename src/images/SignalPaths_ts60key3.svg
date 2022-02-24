@@ -207,7 +207,7 @@
 	.st10{fill:none;stroke:#007B78;stroke-width:4;}
 </style>
 <text transform="matrix(1 0 0 1 31.764 13.9002)" class="st0 st1 st2">Distributed LO</text>
-<text transform="matrix(1 0 0 1 31.764 33.9002)" class="st0 st1 st2">0.1 to 20 GHz Source</text>
+<text transform="matrix(1 0 0 1 31.764 33.9002)" class="st0 st1 st2">0.1 to 25 GHz Source</text>
 <text transform="matrix(1 0 0 1 31.764 53.9002)" class="st0 st1 st2">50 to 70 GHz Source</text>
 <text transform="matrix(1 0 0 1 139.764 13.9002)" class="st0 st1 st2">Reflected Wave IF</text>
 <text transform="matrix(1 0 0 1 139.764 26.6802)" class="st0 st1 st2">Incident Wave IF</text>

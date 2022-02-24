@@ -288,10 +288,10 @@
             <rect class="cls-3" x="-327.07" y="-300.72" width="612" height="792" />
             <rect class="cls-4" x="0.02" y="0.16" width="116.22" height="63" />
             <line class="cls-5" x1="10.45" y1="11.81" x2="26.18" y2="11.81" />
-            <text class="cls-6" transform="translate(29.55 13.33)">0.1 to 20 GHz Source 1
-            </text><text class="cls-6" transform="translate(29.55 26.33)">71 to 86 GHz Source 1
-            </text><text class="cls-6" transform="translate(29.55 39.33)">0.1 to 20 GHz Source 2
-            </text><text class="cls-6" transform="translate(29.55 52.33)">71 to 86 GHz Source 2
+            <text class="cls-6" transform="translate(29.55 13.33)">0.1 to 25 GHz Source 1
+            </text><text class="cls-6" transform="translate(29.55 26.33)">70 to 86 GHz Source 1
+            </text><text class="cls-6" transform="translate(29.55 39.33)">0.1 to 25 GHz Source 2
+            </text><text class="cls-6" transform="translate(29.55 52.33)">70 to 86 GHz Source 2
             </text>
             <line class="cls-15" x1="10.45" y1="24.81" x2="26.18" y2="24.81" />
             <line class="cls-16" x1="10.45" y1="37.81" x2="26.18" y2="37.81" />

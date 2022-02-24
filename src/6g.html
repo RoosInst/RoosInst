@@ -419,21 +419,23 @@
 
         <script>
             $(document).ready(function () {
-                $('#slide1-img').ImageMapResize({
-                    origImageWidth: "1200"
-                });
-                $('#slide2-img').ImageMapResize({
-                    origImageWidth: "1200"
-                });
-                $('#slide3-img').ImageMapResize({
-                    origImageWidth: "1200"
-                });
-                $('#slide4-img').ImageMapResize({
-                    origImageWidth: "1200"
-                });
-                $('#slide5-img').ImageMapResize({
-                    origImageWidth: "1200"
-                });
+                /*  ImageMap Resize Disabled, Firefox issue, OK Edge/Chrome
+                    Error = The “coords” attribute of the <area shape="rect"> tag is not in the “left,top,right,bottom” format.
+                                 $('#slide1-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide2-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide3-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide4-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide5-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                }); */
 
                 var slider = tns({
                     container: '.my-slider',
