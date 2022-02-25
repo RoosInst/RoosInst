@@ -64,7 +64,7 @@
             .cls-27 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: Source Sans Pro;
+                font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
                 font-weight: 400;
             }
 
