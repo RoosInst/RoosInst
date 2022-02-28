@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test Sets | Roos Instruments</title>
+    <link rel="canonical" href="https://roos.com/6G.html" />
+    <meta name="description"
+        content="Cassini is the only fully integrated ATE solution for high frequency devices up to 110 GHz
+                    As technology rapidly changes, the Cassini 16 slot ATE platform allows for flexibility by progressively adding higher frequency capability.">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("nav-support").classList.add("active");
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <!-- TOP - v52 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Roos Instruments, Inc.">
+    <meta name="theme-color" content="#f0f0f0">
+
+    <link rel="icon" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/css/roos.min.css?v2" rel="stylesheet" id="pageTheme">
+    <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script defer src="/js/roos.min.js?v2"></script>
+
+    <script src="https://kit.fontawesome.com/d50cb0696d.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+    <script src="/js/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#252e39"
+                    },
+                    "button": {
+                        "background": "#4676B8"
+                    }
+                },
+                "position": "bottom-left",
+                "type": "opt-in",
+                "content": {
+                    "message": "This website uses cookies when logged in and when searching to ensure you get the best experience.",
+                    "dismiss": "Dismiss",
+                    "allow": "Allow cookies",
+                    "link": "Learn more",
+                    "href": "https://roos.com/privacy.html"
+                }
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-danger">
+            <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
+                    href="http://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+        </div>
+    </noscript>
+
+    <div id="page-wrapper" class="page-boxed">
+        <!-- ==========================
+        	HEADER - START
+        =========================== -->
+        <div class="top-header hidden-xs">
+            <div class="container">
+                <div class="pull-left">
+                    <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
+                                class="fas fa-envelope"></i> support@roos.com</a></div>
+                    <div class="header-item"><a href="tel:+1-408-748-8589"><i
+                                class="fas fa-phone"></i>+1-408-748-8589</a></div>
+                </div>
+                <div class="header-item pull-right">
+                    <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
+                            account&nbsp;&nbsp;</a></span>
+                    <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
+                            in</span>&nbsp;&nbsp;</a>
+                    <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"><i
+                                class="fas fa-sign-out-alt"></i>Sign Out</a></span>
+                </div>
+            </div>
+        </div>
+        <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <div class="visible-xs-block">
+                        <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button"
+                            class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
+                                class="fas fa-bars"></i></button>
+                        <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
+                                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+                    </div>
+
+                    <div id="title">
+                        <div class="hidden-xs hidden-sm">
+                            <a href="/index.html">
+                                <div class="mainTitleAdjust">Roos Instruments</div>
+                                <div class="ROOSbanner"></div>
+                                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the
+                                    World's Most Advanced Technology</span>
+                            </a>
+                        </div>
+                        <div class="visible-sm">
+                            <a href="/index.html">
+                                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+                            </a>
+                        </div>
+                        <div class="visible-xs-block container">
+                            <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+                            <a href="/index.html">
+                                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+                            </a>
+                            <div class="ROOSbanner"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of .navbar-header -->
+                <nav class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li id="nav-home" class="dropdown">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="/support.html">Support</a>
+                        </li>
+                        <li id="nav-mobile-myAccount" class="dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="/commerce/profiles.nsf/myAccount">My Account</a>
+                        </li>
+                        <li id="nav-products" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Products<i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/products.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                                <li><a href="/infrastructure.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Test
+                                        Systems</a>
+                                </li>
+                                <li><a href="/instruments.html"><i
+                                            class=" nav-indent1 fas fa-angle-double-right"></i>Instruments</a>
+                                </li>
+                                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angle-double-right"></i>Browse
+                                        TIMs</a></li>
+                                <li><a href="/software.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Software</a></li>
+                                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Device
+                                        Interface</a>
+                                </li>
+                                <li><a href="/rik"><i class="fas fa-angle-double-right"></i>RIK Catalog</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-services" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Services<i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/services.html"><i class="fas fa-angle-double-right"></i>Overview</a></li>
+                                <li><a href="/turnkey.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Turnkey</a></li>
+                                <li><a href="/production.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Production</a>
+                                </li>
+                                <li><a href="/guru.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Enterprise</a></li>
+                                <li><a href="/training.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Training</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-company" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Company<i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/company.html"><i class="fas fa-angle-double-right"></i>About Us</a></li>
+                                <li><a href="/news.html"><i class="nav-indent1 fas fa-angle-double-right"></i>News &
+                                        Events</a></li>
+                                <li><a href="/careers.html"><i
+                                            class="nav-indent1 fas fa-angle-double-right"></i>Careers</a></li>
+                                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Media
+                                        Kit</a></li>
+                                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Plan a
+                                        Visit</a></li>
+                                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angle-double-right"></i>Contact
+                                        Us</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-support" class="dropdown yamm-fw hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                                data-delay="300">Support <i class="fas fa-chevron-down"></i></a>
+                            <section id="hideOnSupport" class="dropdown-menu">
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h3 class="text-center">Planning</h3>
+                                            <div style="text-align: center">
+                                                <a href="/newFullUser" class="btn btn-primary"><i
+                                                        class="fas fa-user-plus"></i> Create
+                                                    Account</a>
+                                            </div>
+                                            <div style="width: 150px;" class="centerImg">
+                                                <ul style="margin-top: 15px;" class="nav vertical-nav">
+                                                    <li><a href="/supportPlans.html"><i
+                                                                class="fas fa-angle-double-right"></i>Support Plans</a>
+                                                    </li>
+                                                    <li><a href="/maintenance.html"><i
+                                                                class="fas fa-angle-double-right"></i>Maintenance</a>
+                                                    </li>
+                                                    <li><a href="/training.html"><i
+                                                                class="fas fa-angle-double-right"></i>Training</a></li>
+                                                    <li><a href="/commerce/profiles.nsf/myAccount"><i
+                                                                class="fas fa-angle-double-right"></i>Customer
+                                                            Account</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h3 class="text-center">Online Documents</h3>
+                                            <form name="docsSearch" method="POST" action="#"
+                                                onSubmit="goSearch(); return false;">
+                                                <div class="form-group nospace">
+                                                    <div id="searchFail" class="alert alert-warning hidden"
+                                                        role="alert">
+                                                        <strong>Oops!</strong> Search for something.
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="query"
+                                                            placeholder="Search Documentation" required>
+                                                        <span onclick="goSearch(); return false;"
+                                                            class="input-group-btn"><button class="btn btn-primary"
+                                                                type="button"><i
+                                                                    class="fas fa-search"></i></button></span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="centerImg" style="width: 150px;">
+                                                <ul style="margin-top: 10px" class="nav vertical-nav">
+                                                    <li><a href="/help/dev"><i
+                                                                class="fas fa-angle-double-right"></i>Developer</a></li>
+                                                    <li><a href="/help/admin"><i
+                                                                class="fas fa-angle-double-right"></i>Administrator</a>
+                                                    </li>
+                                                    <li><a href="/help/maint"><i
+                                                                class="fas fa-angle-double-right"></i>Maintenance</a>
+                                                    </li>
+                                                    <li><a href="/help/operate"><i
+                                                                class="fas fa-angle-double-right"></i>Operator</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 text-center">
+                                            <h3>Reference Guide</h3>
+                                            <div style="text-align: center">
+                                                <a class="btn btn-primary"
+                                                    href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
+                                                    download="CassiniReferenceGuide_2.8_mini.pdf"><i
+                                                        class="far fa-file-pdf"></i>Download
+                                                    PDF</a>
+                                                <a
+                                                    href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10">
+                                                    <img style="padding-top: 9px; width: 160px;" class="centerImg"
+                                                        src="/images/ibook-cassini-ref-guide.png"
+                                                        alt="Cassini Reference Guide iBook">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 text-center">
+                                            <h3>Get Support</h3>
+                                            <a class="btn btn-primary" href="mailto:support@roos.com"><i
+                                                    class="fas fa-envelope"></i> Email
+                                                Support</a>
+                                            <ul style="margin-bottom: 15px; text-align: center;">
+                                                <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i
+                                                            class="fas fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a>
+                                                </li>
+                                                <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST
+                                                        M-F</small></li>
+                                            </ul>
+                                            <div style="text-align: center">
+                                                <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                                                    <i class="fas fa-binoculars"></i> Remote Support</a>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                        <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="/privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li style="margin-right: -12px;" class="search-form-toggle">
+                            <a aria-label="Search" class="navButton" href="#" data-toggle="modal"
+                                data-target="#searchModal"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Print view only -->
+        <div class="clearfix visible-print">
+            <div class="pull-left">
+                <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+            </div>
+            <div class="pull-right">
+                <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div id="searchModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Search Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Search</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="features-item" id="features-tabs-panels">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#google-search" data-toggle="tab"><i
+                                            class="fas fa-globe"></i>
+                                        &nbsp;Website</a>
+                                </li>
+                                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i>
+                                        &nbsp;Documentation<span class="hidden-xs">(<i class="fas fa-lock"></i> Sign In
+                                            Required)</span></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="google-search">
+                                    <div class="reset-box-sizing" id="search">
+                                        <div class="gcse-search"></div>
+                                        <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a>
+                                            are used when searching with Google. Pressing Enter or Search confirms your
+                                            consent to use cookies.</p>
+                                    </div>
+                                    <!-- end of #search -->
+                                </div>
+                                <div class="tab-pane fade" id="document-search">
+                                    <form name="docsSearch2" method="POST" action="#"
+                                        onSubmit="goSearch2(); return false;">
+                                        <div class="form-group nospace">
+                                            <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                                                <strong>Oops!</strong> Search for something.
+                                            </div>.svg
+                                            <div class="input-group">
+                                                <input style="margin: 12px 0;" type="text" class="form-control"
+                                                    id="query2" placeholder="Search Documentation" required>
+                                                <span onclick="goSearch2(); return false;"
+                                                    class="input-group-btn"><button class="btn btn-primary"
+                                                        type="button"><i class="fas fa-search"></i></button></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==========================
+        	HEADER - END
+        =========================== -->
+
+        <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
+        <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+        <section class="breadcrumb-wrapper">
+            <div class="container">
+                <h2>Test Sets</h2>
+                <ol class="breadcrumb">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products.html">Products Overview</a></li>
+                    <li class="active">Test Sets</li>
+                </ol>
+            </div>
+        </section>
+        <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+        <!-- ==========================
+            JUMBOTRON - START
+          =========================== -->
+
+        <style>
+            a.anchor {
+                display: block;
+                position: relative;
+                top: -75px;
+                visibility: hidden;
+            }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+                /*  ImageMap Resize Disabled, Firefox issue, OK Edge/Chrome
+                    Error = The “coords” attribute of the <area shape="rect"> tag is not in the “left,top,right,bottom” format.
+                                 $('#slide1-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide2-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide3-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide4-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                });
+                                $('#slide5-img').ImageMapResize({
+                                    origImageWidth: "1200"
+                                }); */
+
+                var slider = tns({
+                    container: '.my-slider',
+                    mode: 'gallery',
+                    items: 1,
+                    controls: false,
+                    nav: false,
+                    arrowkeys: true,
+                    autoplay: true,
+                    autoplayPosition: 'bottom',
+                    autoplayTimeout: 3500,
+                    autoplayHoverPause: false,
+                    autoplayText: ['', ''],
+                    rewind: true
+                });
+
+                $(".next-link").on("click", function (e) {
+                    slider.goTo('next')
+                });
+                $(".next2-link").on("click", function (e) {
+                    slider.goTo('next')
+                    slider.goTo('next')
+                });
+                $(".next3-link").on("click", function (e) {
+                    slider.goTo('next')
+                    slider.goTo('next')
+                    slider.goTo('next')
+                });
+                $(".last-link").on("click", function (e) {
+                    // first because 'last' slide is presented first in the loop
+                    slider.goTo('first')
+                });
+
+                $("#TestSet20-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: true,
+                    loop: true,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    autoplay: true,
+                    autoplayHoverPause: true
+                });
+                $("#TestSet50-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: true,
+                    loop: true,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    autoplay: true,
+                    autoplayHoverPause: true
+                });
+                $("#TestSet60-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: true,
+                    loop: true,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    autoplay: true,
+                    autoplayHoverPause: true
+                });
+                $("#TestSet80-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: true,
+                    loop: true,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    autoplay: true,
+                    autoplayHoverPause: true
+                });
+                $("#TestSet100-slider").owlCarousel({
+                    items: 1,
+                    autoPlay: 2000,
+                    singleItem: true,
+                    transitionStyle: "fade",
+                    dots: true,
+                    loop: true,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    autoplay: true,
+                    autoplayHoverPause: true
+                });
+            });
+        </script>
+
+        <!-- <style name="debug">
+            .owl-carousel {
+                display: inherit;
+            }
+        </style> -->
+        <section id="6G-coverage" class="roosC">
+            <div class="container">
+                <h1>Cassini Has You Covered</h1>
+                <p class="main">Cassini is the only Automated Test Equipment (ATE) for testing high frequency
+                    semiconductors at any frequency up to 110 GHz. As technology rapidly changes,
+                    the Cassini 16-slot ATE platform allows for flexibility by progressively adding higher frequency
+                    test capabilities.</p>
+            </div>
+            <div class="sixG-slideshow">
+                <div id="sixG-slider" class="my-slider">
+                    <div class="item">
+                        <a id="sixG-slide-4" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.005.png" usemap="#slide-5-map" id="slide5-img">
+                        <map name="slide-5-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" coords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
+                                shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" href="#TestSet100"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <div class="item">
+                        <a id="sixG-slide-1" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map" id="slide1-img">
+                        <map name="slide-1-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" class="next-link" href="#"
+                                coords="230,0,510,600" shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" class="next2-link" href="#"
+                                coords="510,0,755,600" shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next3-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <div class="item">
+                        <a id="sixG-slide-2" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map" id="slide2-img">
+                        <map name="slide-2-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" class="next-link" href="#"
+                                coords="510,0,755,600" shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next2-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <div class="item">
+                        <a id="sixG-slide-3" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map" id="slide3-img">
+                        <map name="slide-3-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next-link" href="#"
+                                coords="755,0,942,600" shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <!-- Where is the DIV? -->
+                    <div class="item">
+                        <a id="sixG-slide-4" class="anchor"></a>
+                        <img src="/images/6GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img">
+                        <map name="slide-4-map">
+                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
+                                shape="rect" />
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" ccoords="230,0,510,600"
+                                shape="rect" />
+                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
+                                shape="rect" />
+                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
+                                shape="rect" />
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
+                                coords="942,0,1200,600" shape="rect" />
+                        </map>
+                    </div>
+                    <!-- Where is the DIV? close1-->
+                </div>
+                <!-- Where is the DIV? close2-->
+            </div>
+            <!-- Where is the DIV? close3-->
+        </section>
+
+        <!-- ==========================
+            	JUMBOTRON - END
+            =========================== -->
+        <style>
+            h2,
+            h3 {
+                font-weight: 500;
+            }
+
+            #TestSet20-slider .right-element {
+                left: -30px;
+            }
+
+            #TestSet20-slider .right-element h3 {
+                padding-top: 20px;
+            }
+
+            .right-element h3 {
+                padding-top: 40px;
+            }
+
+            .layout2 .right-element {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .layout2 .right-element p {
+                flex-grow: 1;
+            }
+
+            .layout2 .right-element img {
+                margin-top: auto;
+            }
+
+            @media (max-width: 991px) {
+                #TestSet20-slider .right-element {
+                    padding-top: 10px;
+                    left: 0;
+                }
+
+                .right-element h3 {
+                    padding-top: 20px;
+                }
+
+                .item .right-element img {
+                    display: none;
+                    padding: 0;
+                }
+            }
+        </style>
+        <section id="content" class="roosC container sixG">
+            <a id="TestSet20" class="anchor"></a>
+            <div class="row">
+                <h2>RI8545: 100 kHz to 20 GHz</h2>
+                <p>Perform High Performance Full 4 Port S-Parameter Testing of all the traditional telecom devices
+                    at baseband and the most prevalent channel frequencies for LTE, 4G, 5G, 6G and Wifi.
+                    Enables engineering lab accurate error corrected measurements in a production proven module
+                    for Gain, Phase, Absolute Power, Noise Figure, Return Loss, and Spectral Purity. Massive MIMO
+                    and Beam Forming high port count devices are supported through Active port expansion in
+                    Cassini's mixing and matching of multiple TIMs for up to 16 independent
+                    measurement ports plus Test Fixture based port multiplication for support of nearly unlimited
+                    number of device ports.</p>
+                <div id="TestSet20-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts20-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gSource.svg" alt="20 GHz Test Set Signal Source">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Signal Sourcing</h3>
+                                <p class="text-left main">Three input source options that access all four bi-directional
+                                    measurement ports. One dedicated especially for low-loss, high
+                                    linearity measurments to support harmonic and intermodulation
+                                    measurement sourcing.</p>
+                                <img src="/images/SignalPaths_ts20key1.svg" alt="TestSet Sources Drawing Key"
+                                    style="max-width: 140px; padding-top: 148px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gNsource.svg" alt="20 GHz Test Set Noise Sourcing">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Noise Sourcing</h3>
+                                <p class="text-left main">Calibrated internal noise source available at all four
+                                    measurement ports for hot/cold noise testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gSpara.svg" alt="20 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">Vector-error corrected 4-Port S-parameter
+                                    measurements that use bilateral, 12-term error correction model or high-speed
+                                    unilateral, 8-term error correction.</p>
+                                <img src="/images/SignalPaths_ts20key2.svg" alt="TestSet Sources Drawing Key"
+                                    style="max-width: 200px; padding-top: 145px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gDirectR.svg" alt="20 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Direct Receive</h3>
+                                <p class="text-left main">Low-loss signal path routing option for maximum
+                                    dynamic range measurements available at all four
+                                    measurement ports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-5">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gLoadCond.svg" alt="20 GHz Test Load Conditions">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Load Conditions</h3>
+                                <p class="text-left main">Precision RF short and 50 ohm termination loads
+                                    available to all four measurement ports.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-5">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/Testset20gNFex.svg" alt="20 GHz Test Set Noise Figure">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Noise Figure</h3>
+                                <p class="text-left main">Example noise figure measurement combining
+                                    calibrated noise sourcing, low-loss direct receive
+                                    path, and maximum source/measure port
+                                    isolation.</p>
+                                <img src="/images/SignalPaths_ts20key3.svg" alt="TestSet Noise Figure Drawing Key"
+                                    style="max-width: 200px; padding-top: 183px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-6">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gS11ex.svg" alt="20 GHz Test Set Return Loss">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Return Loss</h3>
+                                <p class="text-left main">Vector error corrected S<sub>11</sub> measurement, capturing
+                                    the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a single
+                                    measurement
+                                    port.</p>
+                                <img src="/images/SignalPaths_ts20key4.svg" alt="TestSet Return Loss Drawing Key"
+                                    style="max-width: 200px; padding-top: 170px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts20-slide-7">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-7">
+                                <img src="/images/TestSet20gS21ex.svg" alt="20 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-5 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Vector error corrected S<sub>21</sub> measurement capturing
+                                    the a<sub>1</sub> incident wave and b<sub>1</sub> output wave from the
+                                    device under test across two measurement ports
+                                    with maximum port isolation.</p>
+                                <img src="/images/SignalPaths_ts20key5.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 400px; padding-top: 144px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="TestSet50" class="anchor"></a>
+            <div class="row">
+                <h2>RI8607: 2 GHz to 50 GHz</h2>
+                <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation telecom as
+                    well as back haul devices at all the channel frequencies for 5G and upcoming 6G standards. Enables
+                    engineering lab accurate error corrected measurements in a production proven module for Gain, Phase,
+                    Absolute Power, Noise Figure, Return Loss, Two Tone, Itermod and Spectral Purity. Active port
+                    expansion through Cassini's support of mixing and matching multiple TIMs for up to 24 independent
+                    measurement ports plus Test Fixture based port multiplication for support of nearly unlimited number
+                    of device ports.
+                </p>
+                <div id="TestSet50-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts50-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset50gSpara.svg" alt="50 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">Vector-error corrected S-parameter measurements using
+                                    Cassini's unique port
+                                    independent high-speed unilateral, 8-term error correction. Mix and match
+                                    measurements across additional ports even at different frequencies or mix scalar
+                                    and vector measurement types.</p>
+                                <img src="/images/SignalPaths_ts50key1.svg" alt="TestSet S-Parameters Drawing Key"
+                                    style="max-width: 400px; padding-top: 238px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts50-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset50g2tone.svg" alt="50 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Two-Tone Intermodulation</h3>
+                                <p class="text-left main">Precision microwave combiners enable two-tone signal delivery
+                                    for high performance intermodulation and linearity test setups on both ports.</p>
+                                <img src="/images/SignalPaths_ts50key2.svg" alt="TestSet 2 Tone Drawing Key"
+                                    style="max-width: 200px; padding-top: 267px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts50-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset50gS11.svg" alt="50 GHz Test Set Return Loss">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Return Loss</h3>
+                                <p class="text-left main">Vector error corrected S<sub>11</sub> measurement,
+                                    capturing the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a
+                                    single measurement port.</p>
+                                <img src="/images/SignalPaths_ts50key3.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 400px; padding-top: 262px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts50-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset50gS21.svg" alt="50 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Scalar error corrected S<sub>21</sub> measurement capturing
+                                    the a<sub>1</sub> incident wave and b<sub>1</sub> output wave from the device under
+                                    test across two measurement ports.</p>
+                                <img src="/images/SignalPaths_ts50key4.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 400px; padding-top: 262px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="TestSet60" class="anchor"></a>
+            <div class="row">
+                <h2>RI8580: 50 GHz to 70 GHz</h2>
+                <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation back haul
+                    plus WiGig and wirelessHD devices at all the 802.11ad channel frequencies. Enables engineering lab
+                    accurate error corrected measurements in a production proven module for Gain, Phase, Absolute Power,
+                    Noise Figure, Return Loss, and Spectral Purity. Active port expansion through Cassini's support of
+                    mixing and matching multiple TIMs up to 12 independent measurement ports plus
+                    Test Fixture based Patented low loss waveguide port multiplication for support of nearly unlimited
+                    number of device ports.</p>
+                <div id="TestSet60-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts60-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset60gSpara.svg" alt="60 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">
+                                    Vector-error corrected S-parameter measurements optimized for low loss using
+                                    patented waveguide port connection technology for high density multi-port
+                                    support at these high frequencies. Cassini's unique port independent highspeed
+                                    unilateral, 8-term error correction is also supported which allows
+                                    engineers to mix and match measurements across additional ports even at
+                                    different frequencies or mix scalar and vector measurement types.</p>
+                                <img src="/images/SignalPaths_ts60key1.svg" alt="TestSet S-Parameters Drawing Key"
+                                    style="max-width: 400px; padding-top: 172px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts60-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset60gDirectR.svg" alt="60 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Direct Receive</h3>
+                                <p class="text-left main">Direct down conversion, scalar receive path for
+                                    maximum dynamic range measurements.</p>
+                                <img src="/images/SignalPaths_ts60key2.svg" alt="TestSet Direct Receive Drawing Key"
+                                    style="max-width: 220px; padding-top: 257px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts60-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset60gS11ex.svg" alt="60 GHz Test Set Return Loss">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Return Loss</h3>
+                                <p class="text-left main">Vector error corrected S<sub>11</sub> measurement,
+                                    capturing the incident a<sub>1</sub> wave and reflected b<sub>1</sub> wave on a
+                                    single measurement port.</p> <img src="/images/SignalPaths_ts60key3.svg"
+                                    alt="TestSet Return Loss Drawing Key" style="max-width: 400px; padding-top: 270px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="t60-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset60gS21ex.svg" alt="60 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Scalar error corrected S<sub>21</sub> measurement capturing
+                                    the
+                                    a<sub>1</sub>
+                                    incident wave and b<sub>1</sub> output wave from the device under test
+                                    across two measurement ports.</p>
+                                <img src="/images/SignalPaths_ts60key4.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 400px; padding-top: 267px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="TestSet80" class="anchor"></a>
+            <div class="row">
+                <h2>RI8604: 70 GHz to 86 GHz</h2>
+                <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation Automotive
+                    Radar plus up and down link devices at all the channel frequencies. Enables engineering lab accurate
+                    error corrected measurements in a production proven module for Gain, Phase, Absolute Power, Noise
+                    Figure, Return Loss, and Spectral Purity. Active port expansion through Cassini's support of mixing
+                    and matching multiple TIMs for up to 12 independent measurement ports plus Test
+                    Fixture based patented low loss waveguide port multiplication for support of nearly unlimited number
+                    of device ports.</p>
+                <div id="TestSet80-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts80-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">Vector-error corrected S-parameter measurements optimized for
+                                    low loss using
+                                    patented waveguide port connection technology for high density multi-port
+                                    support at these high frequencies. Cassini's unique port independent highspeed
+                                    unilateral, 8-term error correction is also supported which allows
+                                    engineers to mix and match measurements across additional ports even at
+                                    different frequencies or mix scalar and vector measurement types.</p>
+                                <img src="/images/SignalPaths_ts80key1.svg" alt="TestSet S-Parameters Drawing Key"
+                                    style="max-width: 400px; padding-top: 172px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Direct Receive</h3>
+                                <p class="text-left main">Direct down conversion, scalar receive path for
+                                    maximum
+                                    dynamic range measurements.</p>
+                                <img src="/images/SignalPaths_ts80key2.svg" alt="TestSet Direct Receive Drawing Key"
+                                    style="max-width: 220px; padding-top: 254px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>2-Tone</h3>
+                                <p class="text-left main">Millimeter wave subharmonic mixers and a signal
+                                    combiner
+                                    provides dual tone generation from two upconverted 20 GHz
+                                    microwave sources. Each signal path provides independent
+                                    source level control.</p>
+                                <img src="/images/SignalPaths_ts80key3.svg" alt="TestSet Return Loss Drawing Key"
+                                    style="max-width: 210px; padding-top: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="t80-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Vector error corrected S<sub>21</sub> measurement
+                                    capturing the a1 incident wave and b<sub>1</sub> output wave from the device under
+                                    test across two measurement ports.</p>
+                                <img src="/images/SignalPaths_ts80key4.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 390px; padding-top: 268px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- TestSet100 .row -->
+            <a id="TestSet100" class="anchor"></a>
+            <div class="row">
+                <h2>RI8610: 86 GHz to 110 GHz</h2>
+                <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation Automotive
+                    Radar plus up and down link devices at all the channel frequencies. Enables engineering lab accurate
+                    error corrected measurements in a production proven module for Gain, Phase, Absolute Power, Noise
+                    Figure, Return Loss, and Spectral Purity. Active port expansion through Cassini's support of mixing
+                    and matching multiple TIMs for up to 12 independent measurement ports plus Test
+                    Fixture based patented low loss waveguide port multiplication for support of nearly unlimited number
+                    of device ports.</p>
+                <div id="TestSet100-slider" class="owl-carousel hidden-control owl-theme">
+                    <div class="item" id="ts80-slide-1">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>S-Parameters</h3>
+                                <p class="text-left main">Vector-error corrected S-parameter measurements optimized for
+                                    low loss using
+                                    patented waveguide port connection technology for high density multi-port
+                                    support at these high frequencies. Cassini's unique port independent highspeed
+                                    unilateral, 8-term error correction is also supported which allows
+                                    engineers to mix and match measurements across additional ports even at
+                                    different frequencies or mix scalar and vector measurement types.</p>
+                                <img src="/images/SignalPaths_ts100key1.svg" alt="TestSet S-Parameters Drawing Key"
+                                    style="max-width: 400px; padding-top: 240px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-2">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Direct Receive</h3>
+                                <p class="text-left main">Direct down conversion, scalar receive path for
+                                    maximum
+                                    dynamic range measurements.</p>
+                                <img src="/images/SignalPaths_ts100key2.svg" alt="TestSet Direct Receive Drawing Key"
+                                    style="max-width: 220px; padding-top: 254px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="ts80-slide-3">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>2-Tone</h3>
+                                <p class="text-left main">Millimeter wave subharmonic mixers and a signal
+                                    combiner
+                                    provides dual tone generation from two upconverted 20 GHz
+                                    microwave sources. Each signal path provides independent
+                                    source level control.</p>
+                                <img src="/images/SignalPaths_ts100key3.svg" alt="TestSet Return Loss Drawing Key"
+                                    style="max-width: 210px; padding-top: 250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="t80-slide-4">
+                        <div class="layout2">
+                            <div class="leftSmall col-sm-6">
+                                <img src="/images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
+                            </div>
+                            <div class="rightBig col-sm-6 right-element">
+                                <h3>Gain</h3>
+                                <p class="text-left main">Vector error corrected S<sub>21</sub> measurement
+                                    capturing the a1 incident wave and b<sub>1</sub> output wave from the device under
+                                    test across two measurement ports.</p>
+                                <img src="/images/SignalPaths_ts100key4.svg" alt="TestSet Gain Drawing Key"
+                                    style="max-width: 390px; padding-top: 268px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- TestSet100 .row -->
+
+            <hr class="space">
+            <div class="row">
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-sm-4">
+                        <a class="link" href="/fixture.html"><img src="/images/5GFixture.jpg" style="max-height: 250px;"
+                                class="centerImg"></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="link" href="/parts/BACK-CASSINI"><img src="images/5g-mobile-phone-mast.jpg"
+                                style="max-height: 250px;" class="centerImg"></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="/article_mmwave_journal_march2020.html"><img class="centerImg"
+                                src="/images/mmwave_article_thumbnail.png"
+                                style="max-width: 182px; max-height: 250px;"></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <h3>6G Device Interface &NonBreakingSpace; &NonBreakingSpace;</h3>
+                    <p style="padding-top: 2.5em;">Low loss blind mate interfaces solve production challenges for 6G
+                        devices. We're taking modular to a whole new level.</p>
+                    <a class="link" href="/fixture.html">Learn More</a>
+                </div>
+                <div class="col-sm-4">
+                    <h3>High Power Base Station or Backhaul</h3>
+                    <p>Basestations require phase measurements that are possible with Cassini's calibrated high
+                        power signal paths.</p>
+                    <a class="link" href="/parts/BACK-CASSINI">Learn More</a>
+                </div>
+                <div class="col-sm-4">
+                    <h3>mmWave Mass Market Production</h3>
+                    <p>Cassini leverages a modular configuration focused on precise calibration, low loss device
+                        connections and high measurement accuracy with a small footprint and low capital
+                        expense.</p>
+                    <a class="link" href="/article_mmwave_journal_march2020.html">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="bottom"></div>
+        <script src="js/loadbottom.js"></script>
+    </div>
+    </div>
+</body>
+
+</html>
