@@ -350,7 +350,7 @@
     =========================== -->
     <section class="breadcrumb-wrapper">
       <div class="container">
-        <h2>Fastest</h2>
+        <h2>Faster in Time and Speed</h2>
         <ol class="breadcrumb">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/products.html">Products</a></li>
@@ -364,63 +364,73 @@
     =========================== -->
 
     <div id="content" class="roosC container">
-      <h2>Why RI is Faster to Market (Time) and Faster to Test (Speed)</h2>
-      <blockquote>
-        Since the mid 90s, RI's ATE has generally been twice as fast as the status quo for RF centric parts. Given
-        this history, the results of proprietary benchmarks are no surprise to us. While I can't explain why the others
-        are so slow, I do have some ideas of why our ATE is as fast as it is.
-      </blockquote>
-      <p class="text-right">- M Roos</p>
-      <hr>
-      <p>
-        There is a major architectural difference in how Cassini testplans are defined and executed. Most ATE software
-        is written in a high level language as a set of procedures which is then compiled and executed in order by the
-        PC using the tester hardware.
-        Cassini testplans involve defining the state of the ATE and the device, taking some data and then performing
-        math operations. The Cassini compiler then computes the fastest means to collect the data. By removing
-        duplicate state changes and ordering the sequence to minimize the use of expensive state changes, we have seen
-        30% reductions in test times. The execution is also different in that the compiler generates a stream of
-        hardware changes which are executed by a FPGA based state machine and not the PC. This removes quite a bit of PC
-        related delays during test execution and frees the PC to perform other tasks.
-      </p>
-      <hr>
-      <h5>Architectural Advantages</h5>
-      <p>
-        There is a major architectural difference in how Cassini testplans are defined and executed. Most ATE software
-        is written in a high level language as a set of procedures which is then compiled and executed in order by the
-        PC using the tester hardware.
-        Cassini testplans involve defining the state of the ATE and the device, taking some data and then performing
-        math operations. The Cassini compiler then computes the fastest means to collect the data. By removing
-        duplicate state changes and ordering the sequence to minimize the use of expensive state changes, we have seen
-        30% reductions in test times. The execution is also different in that the compiler generates a stream of
-        hardware changes which are executed by a FPGA based state machine and not the PC. This removes quite a bit of PC
-        related delays during test execution and frees the PC to perform other tasks.
-      </p>
-      <h5>Datalogging Advantages</h5>
-      <p>
-        Datalogging is also handled differently. In most ATE the user adds log requests throughout the testplan
-        causing the execution to pause at each request and write to a file. In Cassini the logging is handled by the
-        math subsystem and is held until the testing is complete. While the part is being binned the log is generated.
-        By doing a single write at a time when testing is not being impacted can have a big impact on test time. </p>
-      <h5>DUT Programming Advantages</h5>
-      <p>
-        RI's ATE have always used a protocol aware approach to handling device serial programming. Because of this,
-        the pattern generators are optimized for short patterns which can be changed based on test results. It appears
-        that this is a big help for parts which are controlled and not just scanned. </p>
-      <h5>DC &amp; Digital Advantages</h5>
-      <p>
-        Cassini's DC instruments are not really power supplies but are power audio amplifiers. With smooth, symmetric
-        responses, low noise and wide bandwidth, they require less bypass capacitance on the load boards and therefore
-        have faster settling times.
-      </p>
-      <h5>RF Advantages</h5>
-      <p>
-        And finally, SyRF Core&trade;, our RF measurement engine, uses a direct to baseband IQ conversion instead of
-        DSP at an IF. What this means is that we get RF measurement data with no DSP reducing the amount of data
-        collected, transferred and processed. The data we get with a single sample may require 2000 samples and the
-        associated processing in traditional mixed signal ATE. When we do need DSP on the capture we have implemented
-        the DSP in the FPGA attached to the converter thus doing it in real time as part of the capture.
-      </p>
+      <h1>Why is RI Faster to Market (Time) and Faster to Test (Speed)?</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <hr class="space">
+          <blockquote>
+            Since the mid 90s, RI's ATE has generally been twice as fast as the status quo for RF centric parts. Given
+            this history, the results of proprietary benchmarks are no surprise to us. While I can't explain why the
+            others are so slow, I do have some ideas of why our ATE is as fast as it is.
+          </blockquote>
+          <p style="text-align: center;">- Mark Roos</p>
+
+        </div>
+        <div class="col-sm-6">
+          <h5>Architectural Advantages</h5>
+          <p>
+            There is a major architectural difference in how Cassini testplans are defined and executed. Most ATE
+            software is written in a high level language as a set of procedures which is then compiled and executed in
+            order by the PC using the tester hardware. Cassini testplans involve defining the state of the ATE and the
+            device, taking some data and then performing math operations. The Cassini compiler then computes the fastest
+            means to collect the data. By removing duplicate state changes and ordering the sequence to minimize the use
+            of expensive state changes, we have seen 30% reductions in test times. The execution is also different in
+            that the compiler generates a stream of hardware changes which are executed by a FPGA based state machine
+            and not the PC. This removes quite a bit of PC related delays during test execution and frees the PC to
+            perform other tasks.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h5>Datalogging Advantages</h5>
+          <p>
+            Datalogging is also handled differently. In most ATE the user adds log requests throughout the testplan
+            causing the execution to pause at each request and write to a file. In Cassini the logging is handled by the
+            math subsystem and is held until the testing is complete. While the part is being binned the log is
+            generated. By doing a single write at a time when testing is not being impacted can have a big impact on
+            test time.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h5>DUT Programming Advantages</h5>
+          <p>
+            RI's ATE have always used a protocol aware approach to handling device serial programming. Because of this,
+            the pattern generators are optimized for short patterns which can be changed based on test results. It
+            appears that this is a big help for parts which are controlled and not just scanned. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h5>DC &amp; Digital Advantages</h5>
+          <p>
+            Cassini's DC instruments are not really power supplies but are power audio amplifiers. With smooth,
+            symmetric responses, low noise and wide bandwidth, they require less bypass capacitance on the load boards
+            and therefore have faster settling times.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <h5>RF Advantages</h5>
+          <p>
+            And finally, SyRF Core&trade;, our RF measurement engine, uses a direct to baseband IQ conversion instead of
+            DSP at an IF. What this means is that we get RF measurement data with no DSP reducing the amount of data
+            collected, transferred and processed. The data we get with a single sample may require 2000 samples and the
+            associated processing in traditional mixed signal ATE. When we do need DSP on the capture we have
+            implemented the DSP in the FPGA attached to the converter thus doing it in real time as part of the capture.
+          </p>
+        </div>
+      </div>
       <br>
       <p>
         In summary, there is no rocket science here. Decisions we made twenty years ago on architecture have worked
