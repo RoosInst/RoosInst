@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>We're sorry, but something went wrong (500)</title>
+  <style type="text/css">
+    body {
+      background: #fafafa;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #979997;
+    }
+
+    *,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    hgroup {
+      position: absolute;
+      bottom: 15%;
+      width: 100%;
+      left: 0;
+    }
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    #canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      //min-height:350px;
+    }
+
+    hr {
+      border: 0;
+      width: 60%;
+      min-width: 300px;
+      color: #7c7e7c;
+      background-color: #afafaf;
+      height: 1px;
+    }
+
+    @media (max-width: 767px) {
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      h1,
+      h2 {
+        text-align: left;
+        padding-left: 30px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      hgroup {
+        position: absolute;
+        top: 7%;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="canvas" style="display: block;" width="1136" height="870"></canvas>
+  <hgroup>
+    <h1>We're sorry, but something went wrong.</h1>
+    <h2>
+      We've been notified, for now please go back or return to the
+      <a href="https://learn.roos.com/">homepage</a>
+    </h2>
+  </hgroup>
+
+  <script>
+    (function () {
+      var lastTime = 0;
+      var vendors = ['ms', 'moz', 'webkit', 'o'];
+      for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame']
+          || window[vendors[x] + 'CancelRequestAnimationFrame'];
+      }
+
+      if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function (callback, element) {
+          var currTime = new Date().getTime();
+          var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+          var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+            timeToCall);
+          lastTime = currTime + timeToCall;
+          return id;
+        };
+
+      if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function (id) {
+          clearTimeout(id);
+        };
+    }());
+
+    var Nodes = {
+
+      // Settings
+      density: 11,
+
+      drawDistance: 20,
+      baseRadius: 1.4,
+      maxLineThickness: 0.5,
+      reactionSensitivity: 0.5,
+      lineThickness: 0.5,
+
+      points: [],
+      mouse: { x: -1000, y: -1000, down: false },
+
+      animation: null,
+
+      canvas: null,
+      context: null,
+
+      imageInput: null,
+      bgImage: null,
+      bgCanvas: null,
+      bgContext: null,
+      bgContextPixelData: null,
+
+      init: function () {
+        // Set up the visual canvas 
+        this.canvas = document.getElementById('canvas');
+        this.context = canvas.getContext('2d');
+        this.context.globalCompositeOperation = "lighter";
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+        this.canvas.style.display = 'block'
+
+        this.imageInput = document.createElement('input');
+        this.imageInput.setAttribute('type', 'file');
+        this.imageInput.style.visibility = 'hidden';
+        this.imageInput.addEventListener('change', this.upload, false);
+        document.body.appendChild(this.imageInput);
+
+        this.canvas.addEventListener('mousemove', this.mouseMove, false);
+        this.canvas.addEventListener('mousedown', this.mouseDown, false);
+        this.canvas.addEventListener('mouseup', this.mouseUp, false);
+        this.canvas.addEventListener('mouseout', this.mouseOut, false);
+
+        window.onresize = function (event) {
+          Nodes.canvas.width = window.innerWidth;
+          Nodes.canvas.height = window.innerHeight;
+          Nodes.onWindowResize();
+        }
+
+        // Load image
+        this.loadData('data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAfkAAADeCAYAAAA+aHneAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgTWFjaW50b3NoIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxMy0xMi0yM1QxNjo0MzoxMS0wODowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTMtMTItMjRUMTg6NDg6MDItMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTMtMTItMjRUMTg6NDg6MDItMDg6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQyNjM5Q0VGNjRGMDExRTNBMkI2RTBFMjYzRjM0NTAzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQyNjM5Q0YwNjRGMDExRTNBMkI2RTBFMjYzRjM0NTAzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVm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');
+      },
+
+      preparePoints: function () {
+
+        // Clear the current points
+        this.points = [];
+
+        var width, height, i, j;
+
+        var colors = this.bgContextPixelData.data;
+
+        for (i = 0; i < this.canvas.height; i += this.density) {
+
+          for (j = 0; j < this.canvas.width; j += this.density) {
+
+            var pixelPosition = (j + i * this.bgContextPixelData.width) * 4;
+
+            // Dont use whiteish pixels
+            if (colors[pixelPosition] > 200 && (colors[pixelPosition + 1]) > 200 && (colors[pixelPosition + 2]) > 200 || colors[pixelPosition + 3] === 0) {
+              continue;
+            }
+
+            var color = 'rgba(' + colors[pixelPosition] + ',' + colors[pixelPosition + 1] + ',' + colors[pixelPosition + 2] + ',' + '1)';
+            this.points.push({ x: j, y: i, originalX: j, originalY: i, color: color });
+
+          }
+        }
+      },
+
+      updatePoints: function () {
+
+        var i, currentPoint, theta, distance;
+
+        for (i = 0; i < this.points.length; i++) {
+
+          currentPoint = this.points[i];
+
+          theta = Math.atan2(currentPoint.y - this.mouse.y, currentPoint.x - this.mouse.x);
+
+          if (this.mouse.down) {
+            distance = this.reactionSensitivity * 200 / Math.sqrt((this.mouse.x - currentPoint.x) * (this.mouse.x - currentPoint.x) +
+              (this.mouse.y - currentPoint.y) * (this.mouse.y - currentPoint.y));
+          } else {
+            distance = this.reactionSensitivity * 100 / Math.sqrt((this.mouse.x - currentPoint.x) * (this.mouse.x - currentPoint.x) +
+              (this.mouse.y - currentPoint.y) * (this.mouse.y - currentPoint.y));
+          }
+
+
+          currentPoint.x += Math.cos(theta) * distance + (currentPoint.originalX - currentPoint.x) * 0.05;
+          currentPoint.y += Math.sin(theta) * distance + (currentPoint.originalY - currentPoint.y) * 0.05;
+
+        }
+      },
+
+      drawLines: function () {
+
+        var i, j, currentPoint, otherPoint, distance, lineThickness;
+
+        for (i = 0; i < this.points.length; i++) {
+
+          currentPoint = this.points[i];
+
+          // Draw the dot.
+          this.context.fillStyle = currentPoint.color;
+          this.context.strokeStyle = currentPoint.color;
+
+          for (j = 0; j < this.points.length; j++) {
+
+            // Distaqnce between two points.
+            otherPoint = this.points[j];
+
+            if (otherPoint == currentPoint) {
+              continue;
+            }
+
+            distance = Math.sqrt((otherPoint.x - currentPoint.x) * (otherPoint.x - currentPoint.x) +
+              (otherPoint.y - currentPoint.y) * (otherPoint.y - currentPoint.y));
+
+            if (distance <= this.drawDistance) {
+
+              this.context.lineWidth = (1 - (distance / this.drawDistance)) * this.maxLineThickness * this.lineThickness;
+              this.context.beginPath();
+              this.context.moveTo(currentPoint.x, currentPoint.y);
+              this.context.lineTo(otherPoint.x, otherPoint.y);
+              this.context.stroke();
+            }
+          }
+        }
+      },
+
+      drawPoints: function () {
+
+        var i, currentPoint;
+
+        for (i = 0; i < this.points.length; i++) {
+
+          currentPoint = this.points[i];
+
+          // Draw the dot.
+          this.context.fillStyle = currentPoint.color;
+          this.context.strokeStyle = currentPoint.color;
+
+          this.context.beginPath();
+          this.context.arc(currentPoint.x, currentPoint.y, this.baseRadius, 0, Math.PI * 2, true);
+          this.context.closePath();
+          this.context.fill();
+
+        }
+      },
+
+      draw: function () {
+        this.animation = requestAnimationFrame(function () { Nodes.draw() });
+
+        this.clear();
+        this.updatePoints();
+        this.drawLines();
+        this.drawPoints();
+
+      },
+
+      clear: function () {
+        this.canvas.width = this.canvas.width;
+      },
+
+      // The filereader has loaded the image... add it to image object to be drawn
+      loadData: function (data) {
+
+        this.bgImage = new Image;
+        this.bgImage.src = data;
+
+        this.bgImage.onload = function () {
+
+          //this
+          Nodes.drawImageToBackground();
+        }
+      },
+
+      // Image is loaded... draw to bg canvas
+      drawImageToBackground: function () {
+
+        this.bgCanvas = document.createElement('canvas');
+        this.bgCanvas.width = this.canvas.width;
+        this.bgCanvas.height = this.canvas.height;
+
+        var newWidth, newHeight;
+
+        // If the image is too big for the screen... scale it down.
+        if (this.bgImage.width > this.bgCanvas.width - 100 || this.bgImage.height > this.bgCanvas.height - 100) {
+
+          var maxRatio = Math.max(this.bgImage.width / (this.bgCanvas.width - 100), this.bgImage.height / (this.bgCanvas.height - 100));
+          newWidth = this.bgImage.width / maxRatio;
+          newHeight = this.bgImage.height / maxRatio;
+
+        } else {
+          newWidth = this.bgImage.width;
+          newHeight = this.bgImage.height;
+        }
+
+        // Draw to background canvas
+        this.bgContext = this.bgCanvas.getContext('2d');
+        this.bgContext.drawImage(this.bgImage, (this.canvas.width - newWidth) / 2, (this.canvas.height - newHeight) / 2, newWidth, newHeight);
+        this.bgContextPixelData = this.bgContext.getImageData(0, 0, this.bgCanvas.width, this.bgCanvas.height);
+
+        this.preparePoints();
+        this.draw();
+      },
+
+      mouseDown: function (event) {
+        Nodes.mouse.down = true;
+      },
+
+      mouseUp: function (event) {
+        Nodes.mouse.down = false;
+      },
+
+      mouseMove: function (event) {
+        Nodes.mouse.x = event.offsetX || (event.layerX - Nodes.canvas.offsetLeft);
+        Nodes.mouse.y = event.offsetY || (event.layerY - Nodes.canvas.offsetTop);
+      },
+
+      mouseOut: function (event) {
+        Nodes.mouse.x = -1000;
+        Nodes.mouse.y = -1000;
+        Nodes.mouse.down = false;
+      },
+
+      // Resize and redraw the canvas.
+      onWindowResize: function () {
+        cancelAnimationFrame(this.animation);
+        this.drawImageToBackground();
+      }
+    }
+
+    setTimeout(function () {
+      Nodes.init();
+    }, 10);
+  </script>
+
+
+  <input type="file" style="visibility: hidden;">
+</body>
+
+</html>
