@@ -13,7 +13,7 @@
     });
   </script>
 
-  <!-- TOP - v52 -->
+  <!-- TOP - v53 -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Roos Instruments, Inc.">
@@ -34,9 +34,7 @@
     crossorigin="anonymous"></script>
   <script defer src="/js/roos.min.js?v2"></script>
 
-  <script src="https://kit.fontawesome.com/3c37819fef.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+  <script src="https://kit.fontawesome.com/d50cb0696d.js"></script>
 </head>
 
 <body>
@@ -322,32 +320,35 @@
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
-    <!--   <style>
-        #index-slide-0 {
-          background-image: url('/images/index-2021-semi.png') !important;
-          background-position-x: left !important;
+    <style>
+      #index-slide-0 {
+        background-image: url('/images/index-2022-semi.png') !important;
+        background-position-x: left !important;
+      }
+
+      @media (min-width: 768px) {
+        #index-slide-0 a {
+          position: relative;
+          top: 327px;
+          left: 329px;
         }
-        @media (min-width: 768px) {
-          #index-slide-0 a {
-            position: relative;
-            top: 327px;
-            left: 329px;
-          }
+      }
+
+      @media (min-width: 0px) and (max-width: 767px) {
+        #index-slide-0 a {
+          position: relative;
+          top: 200px;
+          left: 30px;
         }
-        @media (min-width: 0px) and (max-width: 767px) {
-          #index-slide-0 a {
-            position: relative;
-            top: 200px;
-            left: 30px;
-          }
-        }
-      </style> -->
+      }
+    </style>
 
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
         <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-          <div class="item" id="index-slide-0">
-            <!-- 5G PROMO -->
+          <div class="item" id="index-slide-0" aria-label="isit us at SEMICON WEST 2022 Hybrid, Online
+              &amp; In Person Booth #1246">
+            <!-- 5G PROMO 
             <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
             <div class="container">
               <div class="row">
@@ -357,19 +358,21 @@
                     More</a>
                 </div>
               </div>
-            </div>
-            <!--             
-            <h2 style="color: #b3e0dc;" class="hidden index-slideshow-bar">Visit us at SEMICON WEST 2021</h2>
+            </div> -->
+            <!-- Tradeshow promo -->
+            <h2 style="color: #b3e0dc;" class="hidden index-slideshow-bar">Visit us at SEMICON WEST 2022 Hybrid, Online
+              &amp; In Person Booth #1246
+            </h2>
             <div class="container">
               <div class="row">
                 <div>
-                  <a href="http://nvyt.es/37030e5efd146189ab81" class="btn btn-index btn-inverse"
-                    style="color: black; border-color: #b3e0dc; background-color: white;">Visit Booth #365 Live
+                  <a href="http://nvyt.es/0f6cb4049db8320c72fd" class="btn btn-index btn-inverse"
+                    style="color: black; border-color: #b3e0dc; background-color: white;">Visit Booth #1246 Live
                     & Virtual</a>
                   </p>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
 
           <div class="item" id="index-slide-1">
@@ -432,60 +435,27 @@
         </div>
       </div>
     </section>
-    <div id="content" class="roosC">
-      <section id="index-panels">
-        <h1 class="container">End-to-End Test Solutions</h1>
-        <div>
-          <a href="infrastructure.html" title="System">
-            <img src="images/System.png" alt="System Panel">
-          </a>
-          <a href="instruments.html" title="Instruments">
-            <img src="images/instruments.png" alt="Instruments Panel">
-          </a>
-          <a href="fixture.html" title="Interface">
-            <img src="images/interface.png" alt="Interface Panel">
-          </a>
-          <a href="software.html" title="Software Panel">
-            <img src="images/software.png" alt="Software Panel">
-          </a>
-          <a href="guru.html" title="Enterprise Panel">
-            <img src="images/enterprise.png" alt="Enterprise Panel">
-          </a>
-          <a href="support.html" title="Support Panel">
-            <img src="images/support.png" alt="Support Panel">
-          </a>
-        </div>
-        <p style="margin-left: 1em;">Select a panel above to learn more.</p>
-      </section>
-      <section id="index-content" class="container">
-        <p id="index-main">
-          Roos Instruments combines more than 30 years of research into modular Automated Test Equipment that leads the
-          industry in test accuracy, reliability, and time to market. Semiconductor manufacturers use our instruments to
-          test millions of chips every year.
-        </p>
-      </section>
+
+    <section id="notice" class="container">
       <hr class="space">
-
-      <section id="notice" class="container">
-
-        <div class="row">
-          <div class="col-sm-8" style="
+      <div class="row">
+        <div class="col-sm-12" style="
                 background-color: #eeeeee; 
                 border-color: rgba(0,0,0,.1);
                 border-width: 0 .9375rem 0 .9375rem;
                 border-style: solid;
                 padding: .9375rem 2rem .9375rem .9375rem;">
-            <div class="col-sm-12">
-              <span><i class="far fa-newspaper"></i>
-                <a style="font-size: 18px;"
-                  href="https://www.microwavejournal.com/articles/36147-high-power-production-test-for-base-station-power-transistors">
-                  "High-Power Production Test for Base Station Power Transistors"
-                </a>
-                -Semiconductor Engineering
-              </span>
-            </div>
+          <div class="col-sm-12">
+            <span><i class="far fa-newspaper"></i>
+              <a style="font-size: 18px;"
+                href="https://www.microwavejournal.com/articles/38330-the-unique-challenges-of-gan-amplifier-production-test">
+                "The Unique Challenges of GaN Amplifier Production Test"
+              </a>
+              -Semiconductor Engineering
+            </span>
           </div>
-          <div class="col-sm-4" style="
+        </div>
+        <!-- <div class="col-sm-4" style="
                   background-color: #fafad2; 
                   border-color: rgba(0,0,0,.1);
                   border-width: 0 .9375rem 0 .9375rem;
@@ -496,10 +466,48 @@
                 <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Continuity of Service</a>
               </span>
             </div>
+          </div> -->
+      </div>
+    </section>
+    <section id="site-nav">
+      <div id="content" class="roosC">
+        <section id="index-panels">
+          <h1 class="container">End-to-End Test Solutions</h1>
+          <div>
+            <a href="infrastructure.html" title="System">
+              <img src="images/System.png" alt="System Panel">
+            </a>
+            <a href="instruments.html" title="Instruments">
+              <img src="images/instruments.png" alt="Instruments Panel">
+            </a>
+            <a href="fixture.html" title="Interface">
+              <img src="images/interface.png" alt="Interface Panel">
+            </a>
+            <a href="software.html" title="Software Panel">
+              <img src="images/software.png" alt="Software Panel">
+            </a>
+            <a href="guru.html" title="Enterprise Panel">
+              <img src="images/enterprise.png" alt="Enterprise Panel">
+            </a>
+            <a href="support.html" title="Support Panel">
+              <img src="images/support.png" alt="Support Panel">
+            </a>
           </div>
-        </div>
-      </section>
-    </div>
+          <p style="margin-left: 1em;">Select a panel above to learn more.</p>
+        </section>
+        <section id="index-content" class="container">
+          <p id="index-main">
+            Roos Instruments combines more than 30 years of research into modular Automated Test Equipment that leads
+            the
+            industry in test accuracy, reliability, and time to market. Semiconductor manufacturers use our instruments
+            to
+            test millions of chips every year.
+          </p>
+        </section>
+        <hr class="space">
+
+      </div>
+    </section>
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
