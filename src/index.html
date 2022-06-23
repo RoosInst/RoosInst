@@ -191,7 +191,7 @@
                             <input type="text" class="form-control" id="query" placeholder="Search Documentation"
                               required>
                             <span onclick="goSearch(); return false;" class="input-group-btn"><button
-                                class="btn btn-primary" type="button" title="Search" title="Search"><i
+                                class="btn btn-primary" type="button" title="Search"><i
                                   class="fas fa-search"></i></button></span>
                           </div>
                         </div>
@@ -319,14 +319,13 @@
         =========================== -->
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
-
     <style>
       #index-slide-0 {
         background-image: url('/images/index-2022-semi.png') !important;
         background-position-x: left !important;
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: 767.1px) {
         #index-slide-0 a {
           position: relative;
           top: 327px;
@@ -334,11 +333,19 @@
         }
       }
 
-      @media (min-width: 0px) and (max-width: 767px) {
+      @media (min-width: 377.1px) and (max-width: 767px) {
         #index-slide-0 a {
           position: relative;
-          top: 258px;
+          top: 208px;
           left: 211px;
+        }
+      }
+
+      @media (min-width: 0px) and (max-width: 376px) {
+        #index-slide-0 a {
+          position: relative;
+          top: 200px;
+          left: 65px;
         }
       }
     </style>
@@ -346,8 +353,7 @@
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
         <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
-          <div class="item" id="index-slide-0" aria-label="isit us at SEMICON WEST 2022 Hybrid, Online
-              &amp; In Person Booth #1246">
+          <div class="item" id="index-slide-0">
             <!-- 5G PROMO 
             <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
             <div class="container">
@@ -369,7 +375,6 @@
                   <a href="http://nvyt.es/0f6cb4049db8320c72fd" class="btn btn-index btn-inverse"
                     style="color: black; border-color: #b3e0dc; background-color: white;">Visit Booth #1246 Live
                     & Virtual</a>
-                  </p>
                 </div>
               </div>
             </div>
@@ -440,27 +445,29 @@
       <hr class="space">
       <div class="row">
         <div class="col-sm-8">
-          <h3>RITdb Workshop</h3>
-          <p>Intro RITdb Implementation on a Test Floor<br>
-            Bring Order to the Chaos and Improve Your Testing Productivity</p>
-          <p>This 4 hour workshop is divided into three sections: and introduction to the problems and values, a walk
-            through on how
-            RI and TI implemented the POC in a working production environment and finally a deep technical dive into the
-            implementation effort needed to get started.</p>
+          <h2>RITdb Implementation on a Test Floor - STEP Class</h2>
+          <p>Bring Order to the Chaos and Improve Your Testing Productivity</p>
+          <p>This 4 hour workshop covers the problems and values, a walk through on how RI and TI implemented the <abbr
+              title="Proof of Concept">POC</abbr> in a working production environment and a deep technical dive
+            into the implementation effort.</p>
           <a href="https://www.semi.org/en/connect/events/introduction-ritdb-implementation-test-floor"
             title="Intro RITdb Implementation on a Test Floor">
-            Time: 1:00 pm - 4:00 pm
-            Location:
-            @ SEMICON West
-            Moscone Center
-            San Francisco, CA
-            United States
+            Tuesday, July 12 1:00 pm - 4:00 pm <br>
+            Location: @ SEMICON West Moscone Center, San Francisco, CA, United States
+          </a>
+          <h2>Test's Role in Uniting the Industry - Test Vision Symposium</h2>
+          <p>Mark Roos Keynote at 9:50am - Session 1: High Speed and mmWave, Session 2: Future of Test</p>
+          <a href="https://www.semi.org/en/connect/events/test-vision-symposium"
+            title="Test's Role in Uniting the Industry - Test Vision Symposium">
+            Wednesday, July 13 1:00 pm - 4:00 pm<br>
+            Location: South Hall, Level 3, Room 302<br>
+
           </a>
         </div>
         <div class="col-sm-4">
           <a href="https://www.semi.org/en/connect/events/introduction-ritdb-implementation-test-floor"
             title="Intro RITdb Implementation on a Test Floor">
-            <img src="/src/images/800x800C_RITdb.png" alt="RITdb Workshop">
+            <img src="/images/800x800C_RITdb.png" alt="RITdb Workshop">
           </a>
         </div>
       </div>
@@ -479,7 +486,8 @@
                 "The Unique Challenges of GaN Amplifier Production Test"
               </a>
               -Semiconductor Engineering
-            </span>
+            </span> <br>
+            <a class="link" href="news.html" title="News and Information">Learn More &raquo;</a>
           </div>
         </div>
         <!-- <div class="col-sm-4" style="
