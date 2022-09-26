@@ -6,6 +6,8 @@
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
    npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
 */
+import { gulp } from 'gulp';
+
 
 (() => {
 
@@ -34,7 +36,7 @@
     noop = require('gulp-noop'),
     newer = require('gulp-newer'),
     size = require('gulp-size'),
-    imagemin = require('gulp-imagemin'),
+    //imagemin = require('gulp-imagemin'),
     htmlclean = require('gulp-htmlclean'),
     sass = require('gulp-sass')(require('sass')),
     postcss = require('gulp-postcss'),
@@ -78,15 +80,15 @@
   }
   exports.convertToWebp = convertToWebp;
 
-  function images() {
-    return gulp.src(imgConfig.src)
-      .pipe(newer(imgConfig.build))
-      .pipe(imagemin(imgConfig.minOpts))
-      .pipe(size({ showFiles: true }))
-      .pipe(gulp.dest(imgConfig.build));
-  }
-  exports.images = images;
-
+  /*   function images() {
+      return gulp.src(imgConfig.src)
+        .pipe(newer(imgConfig.build))
+        .pipe(imagemin(imgConfig.minOpts))
+        .pipe(size({ showFiles: true }))
+        .pipe(gulp.dest(imgConfig.build));
+    }
+    exports.images = images;
+   */
 
   /**************** CSS task ****************/
   /** SASS compiles to CSS, roos-print.css just cleaned,
@@ -151,7 +153,8 @@
       .pipe(devBuild ? noop() : htmlclean())
       .pipe(gulp.dest(out));
   }
-  exports.html = gulp.parallel(images, html);
+  //exports.html = gulp.parallel(images, html);
+  exports.html = gulp.parallel(html);
 
   // JavaScript processing
   function js() {
@@ -213,8 +216,8 @@
       .pipe(gulp.dest(cssConfig.build))
       .pipe(browsersync ? browsersync.reload({ stream: true }) : noop());
   }
-  exports.css = gulp.series(images, scss, css, cssPrint);
-
+  //exports.css = gulp.series(images, scss, css, cssPrint);
+  exports.css = gulp.series(scss, css, cssPrint);
 
   /**************** server task (now private) ****************/
 
@@ -239,7 +242,7 @@
   function watch(done) {
 
     // image changes
-    gulp.watch(imgConfig.src, images);
+    //gulp.watch(imgConfig.src, images);
 
     // CSS changes
     gulp.watch(cssConfig.watch, css);
