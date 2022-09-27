@@ -7,7 +7,6 @@ cookieconsent.min.js
 datatables.min.js
 jquery.ImageMapResize.js
 jquery.magnific-popup.min.js
-jquery.maphilight.js
 jquery.qtip.js
 jquery.roundabout.min.js
 js.cookie.min.js
