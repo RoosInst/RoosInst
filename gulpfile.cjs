@@ -1,13 +1,12 @@
 /* eslint-disable no-undef */
 /* Before using make sure you have:
-   npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin del gulp-imagemin
+  removed 'del' requirement
+   npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin gulp-imagemin
    npm install gulp gulp-newer gulp-imagemin gulp-webp --save-dev
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
    npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
 */
-import { gulp } from 'gulp';
-
 
 (() => {
 
@@ -31,7 +30,7 @@ import { gulp } from 'gulp';
     concat = require('gulp-concat'),
     concatcss = require('gulp-concat-css'),
     cleanCSS = require('gulp-clean-css'),
-    del = require('del'),
+    //del = require('del'),
     deporder = require('gulp-deporder'),
     noop = require('gulp-noop'),
     newer = require('gulp-newer'),
@@ -53,13 +52,13 @@ import { gulp } from 'gulp';
 
   /**************** clean task ****************/
 
-  function clean() {
-
-    return del([dir.build]);
-
-  }
-  exports.clean = clean;
-  exports.wipe = clean;
+  /*   function clean() {
+  
+      return del([dir.build]);
+  
+    }
+    exports.clean = clean;
+    exports.wipe = clean; */
 
 
   /**************** images task ****************/

@@ -1,6 +1,7 @@
 module.exports = {
     "env": {
-        "browser": false
+        "browser": false,
+        "source type": module
     },
     "extends": "eslint:recommended",
     "globals": {
@@ -9,7 +10,7 @@ module.exports = {
     },
     "parserOptions": {
         "ecmaVersion": 6,
-        "sourceType": "script"
+        "sourceType": "modules"
     },
     "rules": {
     }
