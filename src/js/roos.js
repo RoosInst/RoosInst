@@ -108,7 +108,6 @@ $(document).ready(function () {
 	//POPOVER
 	$('.popover-init').popover();
 
-
 	//FORM TOGGLE
 	$('#reset-password-toggle').click(function () {
 		$('#reset-password').slideToggle(500);
@@ -144,8 +143,6 @@ $(document).ready(function () {
 		},
 		loop: true
 	});
-
-
 
 	$("#jumbotron-slider").owlCarousel({
 		items: 1,
@@ -231,12 +228,6 @@ $(document).ready(function () {
 		$(this).find(".owl-prev").animate({ opacity: 0, left: "40px" });
 		$(this).find(".owl-next").animate({ opacity: 0, right: "40px" });
 	});
-
-
-	//$('#section-statistics').waypoint(function(){
-	//	$('#section-statistics .number').countTo();
-	//	},{offset:'85%'}
-	//);
 
 	function replaceTitleAttributes() {
 		var elements = document.querySelectorAll('abbr[title]'),
