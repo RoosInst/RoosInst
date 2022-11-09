@@ -11,11 +11,11 @@
     });
   </script>
 
-  <!-- TOP - v52 -->
+  <!-- TOP - v53 TODO: html5 ul a to button, ref https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#associated_roles_and_attributes -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Roos Instruments, Inc.">
-  <meta name="theme-color" content="#f0f0f0">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f0f0f0">
 
   <link rel="icon" href="/images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
@@ -100,7 +100,7 @@
             <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle"
               data-toggle="collapse" data-target=".navbar-collapse"><i class="fas fa-bars"></i></button>
             <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
-                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+                data-target="#searchModal" title="Search Button"><i class="fas fa-search"></i></a></div>
           </div>
 
           <div id="title">
@@ -253,7 +253,7 @@
                         <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
                       </ul>
                       <div style="text-align: center">
-                        <a href="//get.teamviewer.com/roosinst" class="btn btn-primary">
+                        <a href="https://get.teamviewer.com/roosinst" class="btn btn-primary">
                           <i class="fas fa-binoculars"></i> Remote Support</a>
                       </div>
                       <br>
@@ -299,16 +299,18 @@
           </div>
           <div class="modal-body">
             <div class="features-item" id="features-tabs-panels">
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#google-search" data-toggle="tab" role="tab"><i class="fas fa-globe"></i>
-                    &nbsp;Website</a>
+              <ul class="nav nav-tabs" aria-label="Search Tabs" role="tabpanel">
+                <li class="active" tabindex="0" id="web_search_tab" role="tablist">
+                  <a href="#google-search" role="tab" data-toggle="tab" aria-selected="true"
+                    aria-controls="google-search"><i class="fas fa-globe"></i>
+                    &nbsp;<span>Website</span></a>
                 </li>
-                <li><a href="#document-search" data-toggle="tab" role="tab"><i class="fas fa-book"></i>
-                    &nbsp;Documentation<span class="hidden-xs"> (<i class="fas fa-lock"></i> Sign In
-                      Required)</span></a></li>
+                <li role="tablist"><a href="#document-search" data-toggle="tab" role="tab" aria-label="Documentation"><i
+                      class="fas fa-book"></i>
+                    &nbsp;<span>Documentation</span></a></li>
               </ul>
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="google-search">
+                <div class="tab-pane fade in active" id="google-search" aria-labelledby="web_search_tab" tabindex="0">
                   <form name="docsSearch5" method="POST" action="#" onSubmit="doSearch5(); return false;">
                     <div class="form-group nospace">
                       <div id="searchFail5" class="alert alert-warning hidden" role="alert">
@@ -333,7 +335,7 @@
                   </div>
                   <!-- end of #search -->
                 </div>
-                <div class="tab-pane fade" id="document-search">
+                <div class="tab-pane fade" id="document-search" aria-labelledby="doc_search_tab">
                   <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
                     <div class="form-group nospace">
                       <div id="searchFail2" class="alert alert-warning hidden" role="alert">
