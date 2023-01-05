@@ -12,7 +12,7 @@
         });
     </script>
 
-    <!-- TOP - v54 -->
+    <!-- TOP - v55 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Roos Instruments, Inc.">
@@ -34,33 +34,6 @@
     <script defer src="/js/roos.min.js?v2"></script>
 
     <script src="https://kit.fontawesome.com/d50cb0696d.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
-    <script src="/js/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#252e39"
-                    },
-                    "button": {
-                        "background": "#4676B8"
-                    }
-                },
-                "position": "bottom-left",
-                "type": "opt-in",
-                "content": {
-                    "message": "This website uses cookies when logged in and when searching to ensure you get the best experience.",
-                    "dismiss": "Dismiss",
-                    "allow": "Allow cookies",
-                    "link": "Learn more",
-                    "href": "https://roos.com/privacy.html"
-                }
-            })
-        });
-    </script>
-
 </head>
 
 <body>
@@ -84,12 +57,14 @@
                                 class="fas fa-phone"></i>+1-408-748-8589</a></div>
                 </div>
                 <div class="header-item pull-right">
-                    <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
-                            account&nbsp;&nbsp;</a></span>
-                    <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
-                            in</span>&nbsp;&nbsp;</a>
-                    <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"
-                            rel="nofollow"><i class="fas fa-sign-out-alt"></i>Sign Out</a></span>
+                    <!--       <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
+                account&nbsp;&nbsp;</a></span>
+            <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
+                in</span>&nbsp;&nbsp;</a>
+            <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"
+                rel="nofollow"><i class="fas fa-sign-out-alt"></i>Sign Out</a></span> -->
+                    <a href="https://learn.roos.com/" aria-label="Online Learning"><i class="fas fa-school"></i>
+                        Online Training</a>
                 </div>
             </div>
         </div>
@@ -101,8 +76,8 @@
                         <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button"
                             class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
                                 class="fas fa-bars"></i></button>
-                        <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
-                                data-target="#searchModal"><i class="fas fa-search"></i></a></div>
+                        <div class="search-form-toggle mobileTopBtn"><a title="Search Button" class="navButton" href="#"
+                                data-toggle="modal" data-target="#searchModal"><i class="fas fa-search"></i></a></div>
                     </div>
 
                     <div id="title">
@@ -241,7 +216,7 @@
                                                             placeholder="Search Documentation" required>
                                                         <span onclick="goSearch(); return false;"
                                                             class="input-group-btn"><button class="btn btn-primary"
-                                                                type="button"><i
+                                                                type="button" title="Search"><i
                                                                     class="fas fa-search"></i></button></span>
                                                     </div>
                                                 </div>
@@ -262,7 +237,9 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-3 text-center">
-                                            <h3>Reference Guide</h3>
+                                            <h3>Reference Guide <a href="https://roos.com/refGuide"
+                                                    title="Cassini Reference Guide Share Link"><i
+                                                        class="fas fa-share"></i></a></h3>
                                             <div style="text-align: center">
                                                 <a class="btn btn-primary"
                                                     href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
@@ -305,12 +282,11 @@
                     </ul>
                     <ul class="nav navbar-nav hidden-xs">
                         <li style="margin-right: -12px;" class="search-form-toggle">
-                            <a aria-label="Search" class="navButton" href="#" data-toggle="modal"
+                            <a title="Search" class="navButton" href="#" data-toggle="modal"
                                 data-target="#searchModal"><i class="fas fa-search"></i></a>
                         </li>
                     </ul>
                 </nav>
-
             </div>
         </header>
 
@@ -336,13 +312,17 @@
                     </div>
                     <div class="modal-body">
                         <div class="features-item" id="features-tabs-panels">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#google-search" data-toggle="tab"><i
-                                            class="fas fa-globe"></i>
-                                        &nbsp;Website</a>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active" role="tab" aria-controls="google-search" aria-selected="true">
+                                    <a href="#google-search" data-toggle="tab">
+                                        <i class="fas fa-globe" aria-hidden="true"></i>&nbsp;Website
+                                    </a>
                                 </li>
-                                <li><a href="#document-search" data-toggle="tab"><i class="fas fa-book"></i>
-                                        &nbsp;Documentation</a></li>
+                                <li role="tab" aria-controls="document-search">
+                                    <a href="#document-search" data-toggle="tab">
+                                        <i class="fas fa-book" aria-hidden="true"></i>&nbsp;Documentation
+                                    </a>
+                                </li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="google-search">
@@ -363,7 +343,8 @@
                                                     id="query2" placeholder="Search Documentation" required>
                                                 <span onclick="goSearch2(); return false;"
                                                     class="input-group-btn"><button class="btn btn-primary"
-                                                        type="button"><i class="fas fa-search"></i></button></span>
+                                                        type="button" title="Search"><i
+                                                            class="fas fa-search"></i></button></span>
                                             </div>
                                         </div>
                                     </form>
@@ -376,7 +357,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- End Search Modal -->
         <!-- ==========================
         	HEADER - END
         =========================== -->
