@@ -11,11 +11,6 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://roos.com/newFullUser</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://roos.com/commerce/profiles.nsf/myAccount</loc>
   <lastmod>2019-11-30T18:39:33+00:00</lastmod>
   <priority>0.80</priority>
@@ -161,12 +156,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://roos.com/commerce/registration.nsf/passwordRecovery!OpenForm&amp;Seq=1</loc>
-  <lastmod>2019-11-30T18:39:33+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://roos.com/docs</loc>
+  <loc>https://roos.com/roos/documentation.nsf/open</loc>
   <lastmod>2019-11-30T18:39:33+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -306,12 +296,12 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/rik</loc>
+  <loc>https://roos.com/commerce/catalog.nsf/kits1</loc>
   <lastmod>2019-11-30T18:29:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://roos.com/parts</loc>
+  <loc>https://roos.com/commerce/catalog.nsf/open</loc>
   <lastmod>2019-11-30T18:29:34+00:00</lastmod>
   <priority>0.64</priority>
 </url>
