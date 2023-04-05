@@ -343,24 +343,23 @@
 
     <div id="content" class="container">
       <section id="notice" class="container">
-        <div class="row">
+        <div class="row" style="padding-right: 30px;">
           <div class="col-sm-12" style="
                         background-color: #fafad2; 
                         border-color: rgba(0,0,0,.1);
                         border-width: 0 .9375rem 0 .9375rem;
                         border-style: solid;
                         padding: .9375rem 2rem .9375rem 2rem;">
-            <div class="col-sm-12">
-              <span><i class="fas fa-virus-slash"></i>
-                <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Guidance</a>
-              </span>
-              <p>Refer to <a href="https://www.dir.ca.gov/dosh/coronavirus/" title="Cal/OSHA">Cal/OSHA</a> Guidance for
-                Prevention Requirements currently in effect.
-                Please follow all <a href="https://covid19.who.int/" title="WHO">global</a>, <a
-                  href="https://www.dir.ca.gov/dosh/coronavirus/" title="Cal/OSHA">regional</a> and <a
-                  href="https://covid19.sccgov.org/home" title="Santa Clara County Public Health">local</a> guidelines
-                when planning a visit to RI.</p>
-            </div>
+            <span><i class="fas fa-virus-slash"></i>
+              <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Guidance</a>
+            </span>
+            <p class="main" style="margin-bottom:10px">Refer to <a href="https://www.dir.ca.gov/dosh/coronavirus/"
+                title="Cal/OSHA">Cal/OSHA</a> Guidance for current prevention requirements.
+              Please follow all <a href="https://covid19.who.int/" title="WHO">global</a>, <a
+                href="https://www.dir.ca.gov/dosh/coronavirus/" title="Cal/OSHA">regional</a> and <a
+                href="https://covid19.sccgov.org/home" title="Santa Clara County Public Health">local</a> guidelines
+              when planning a visit to RI.</p>
+
           </div>
         </div>
       </section>
@@ -396,15 +395,32 @@
         </p>
       </div>
 
-      <!--	Google Map-->
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe src="https://www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0"> </iframe>
-      </div>
-      <br>
+      <!-- Weather -->
+      <script>
+        (function (d, s, id) {
+          if (d.getElementById(id)) {
+            if (window.__TOMORROW__) {
+              window.__TOMORROW__.renderWidget();
+            }
+            return;
+          }
+          const fjs = d.getElementsByTagName(s)[0];
+          const js = d.createElement(s);
+          js.id = id;
+          js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
 
-      <!--Weather (src URL shouldn't have #'s in iframe (W3C), but %23 encoding doesn't work and no other way to pass params to site so keeping)-->
-      <iframe style="width: 100%; height: 245px; border: none;" id="forecast_embed"
-        src="https://forecast.io/embed/#lat=37.368298&lon=-121.962838&name=Santa%20Clara,%20CA&color=#084AA1&font=Source%20Sans%20Pro"></iframe>
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+      </script>
+
+      <div class="tomorrow" data-location-id="125903" data-language="EN" data-unit-system="IMPERIAL" data-skin="light"
+        data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+        <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+          <img alt="Powered by the Tomorrow.io Weather API"
+            src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+        </a>
+      </div>
 
       <!-- ==========================
     	HOTELS - START
@@ -461,9 +477,16 @@
                 alt="Embassy Suites by Hilton"></a></div>
         </div>
       </section>
+      <br>
       <!-- ==========================
     	HOTELS - END
     =========================== -->
+
+      <!--Google Map-->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0" title="map"> </iframe>
+      </div>
+
 
     </div>
 
