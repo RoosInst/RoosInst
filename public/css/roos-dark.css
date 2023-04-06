@@ -6195,12 +6195,12 @@ hr.space { /* not all of these properties seem needed anymore, but keeping for c
 /* fade */
 .owl-cassini-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut .5s both ease;
+  -animation: fadeOut .5s both ease;
   -moz-animation: fadeOut .5s both ease;
   animation: fadeOut .5s both ease;
 }
 .owl-cassini-fade-in {
-  -webkit-animation: fadeIn 2.5s both ease;
+  -animation: fadeIn 2.5s both ease;
   -moz-animation: fadeIn 2.5s both ease;
   animation: fadeIn 2.5s both ease;
 }
