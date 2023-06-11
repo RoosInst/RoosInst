@@ -510,6 +510,16 @@
           </div> -->
       </div>
     </section>
+    <style>
+      #index-panels div {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+      }
+      #index-panels div a {
+        width: 16.66%;
+      }
+              </style>
     <section id="site-nav">
       <div id="content" class="roosC">
         <section id="index-panels">
@@ -530,10 +540,10 @@
             <a href="/guru.html" title="Guru Enterprise Software">
               <img src="/images/enterprise.png" alt="Guru Enterprise Software">
             </a>
-            <!--  Chrome/Edge 103+ Unresponsive Work Around css last column?
+            <!--  Chrome/Edge 103+ Unresponsive Work Around css last column? parent div="column-count=6" but only works when there are 5 elements, FIX with "display=flex" above -->
             <a href="/support.html" title="Technical and Engineering Support">
               <img src="/images/support.png" alt="Technical and Engineering Support">
-            </a> -->
+            </a> 
           </div>
           <p style="margin-left: 1em;">Select a panel above to learn more.</p>
         </section>
