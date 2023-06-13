@@ -42,14 +42,12 @@
     "cookie-bar": "^1.9.4",
     "cookie-consent-box": "^2.4.0",
     "cookieconsent": "^3.1.1",
-    "live-server": "^1.1.0",
     "socket.io": "^4.5.2",
-    "tiny-slider": "^2.9.4",
-    "uuid": "^9.0.0"
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.29.3",
     "browserslist": "^4.21.4",
     "bufferutil": "^4.0.6",
     "chokidar": "^3.5.3",
@@ -80,7 +78,6 @@
     "gulp-strip-debug": "^5.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-webserver": "^0.9.1",
     "natives": "^1.1.6",
     "postcss-assets": "^6.0.0",
     "sass": "^1.55.0",
