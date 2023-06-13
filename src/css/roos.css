@@ -2168,9 +2168,12 @@ h4 {
 }
 
 #index-panels div {
-  column-count: 6;
-  column-gap: 0;
+  display: flex;
+  flex-direction: row;
   margin: 0;
+}
+#index-panels div a {
+  width: 16.66%;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
