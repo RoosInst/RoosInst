@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
-/* Before using make sure you have:
+/* OUTDATED --- Before using make sure you have:
   removed 'del' requirement
    npm install --save-dev gulp gulp-clean-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass gulp-htmlmin gulp-imagemin
    npm install gulp gulp-newer gulp-imagemin gulp-webp --save-dev
    npm install gulp-htmlclean gulp-noop --save-dev
    npm install gulp-deporder gulp-concat gulp-strip-debug gulp-terser gulp-sourcemaps --save-dev
-   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css gul-concat-css cssnano --save-dev
+   npm install gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker gulp-clean-css cssnano --save-dev
 */
 
 (() => {
@@ -28,7 +28,6 @@
     // modules
     gulp = require('gulp'),
     concat = require('gulp-concat'),
-    concatcss = require('gulp-concat-css'),
     cleanCSS = require('gulp-clean-css'),
     //del = require('del'),
     deporder = require('gulp-deporder'),
@@ -207,7 +206,6 @@
     return gulp.src(cssConfig.src)
       .pipe(size({ showFiles: true }))
       .pipe(sourcemaps ? sourcemaps.init() : noop())
-      .pipe(concatcss('roos.min.css'))
       .pipe(cleanCSS())
       .pipe(sourcemaps ? sourcemaps.write() : noop())
       .pipe(size({ showFiles: true }))
