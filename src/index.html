@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Home | Roos Instruments</title>
+  <meta charset="utf-8">
+  <title>Roos Instruments Inc.</title>
   <link rel="canonical" href="https://roos.com/index.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" /> 
+  <link rel="preconnect" href="https://kit.fontawesome.com/" /> 
+
   <meta name="description"
-    content="Roos Instruments combines over 30 years of research into modular ATE systems that lead the industry in test accuracy, reliability, and time to market.">
+    content="Roos Instruments combines over 30 years of research into modular ATE systems that lead the semiconductor industry in test accuracy, reliability, and time to market.">
   <!-- Remember to add CSR hash if this changes -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
+    }, {passive: true});
+    // Fixing jank FOUC https://medium.com/@fbnlsr/how-to-get-rid-of-the-flash-of-unstyled-content-d6b79bf5d75f
+    // Helper function
+    let domReady = (cb) => {
+     document.readyState === 'interactive' || document.readyState === 'complete'
+       ? cb()
+       : document.addEventListener('DOMContentLoaded', cb, {passive: true});
+    };
+
+    domReady(() => {
+    // Display body when DOM is loaded
+    document.body.style.visibility = 'visible';
     });
   </script>
 
   <!-- TOP - v56 -->
-  <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Roos Instruments, Inc.">
   <meta name="theme-color" content="#f0f0f0">
 
   <link rel="icon" href="/images/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
-    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?&family=Source+Sans+3:wght@300;400&text=%21%22%23%24%25%26%27%28%29%2A%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40ABCDEFGHIJKLMNOPQRSTUVWYZ%5B%5D_abcdefghijklmnopqrstuvwxyz%7B%7C%7D&display=swap" rel="stylesheet" media="screen, print" crossorigin="anonymous"> 
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="/css/roos.min.css?v2" rel="stylesheet" id="pageTheme">
-  <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-  <script defer src="/js/roos.min.js?v2"></script>
-
-  <script src="https://kit.fontawesome.com/3c37819fef.js" crossorigin="anonymous"></script>
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" media="screen, print">
+  <link rel="stylesheet" href="/css/roos.max-min.css?v2" media="screen" id="pageTheme">
+  <link rel="stylesheet" href="/css/roos-print.css?v2" media="print">
+  <style media="screen, print">
+    @font-face {  font-family: 'Michroma';  font-style: normal;  font-weight: 400;  font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=PN_zRfy9qWD8fEagAMg_tzaarJ22oBRRrPNp&skey=967406fa199edd66&v=v19) format('woff2');
+    }
+    /* @font-face {
+      font-family: 'Source Sans 3';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0QZMrcxHZP9o1SjFQ_5w&skey=1497ac707ba83cff&v=v10) format('woff2');
+    }
+    @font-face {
+      font-family: 'Source Sans 3';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0QZMrcxHZP9o1SjFQ_5w&skey=1497ac707ba83cff&v=v10) format('woff2');
+    } */
+  </style>
 </head>
 
-<body>
+<body style="visibility: hidden;">
+  <script>0</script> <!-- Firefox FOUC workaround -->
   <noscript>
     <div class="alert alert-danger">
       <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
@@ -63,7 +92,7 @@
                 in</span>&nbsp;&nbsp;</a>
             <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"
                 rel="nofollow"><i class="fas fa-sign-out-alt"></i>Sign Out</a></span> -->
-          <a href="https://learn.roos.com/" aria-label="Online Learning"><i class="fas fa-school"></i>
+          <a href="https://learn.roos.com/" aria-label="Online Training"><i class="fas fa-school"></i>
             Online Training</a>
         </div>
       </div>
@@ -327,9 +356,33 @@
 
     <!-- Tradeshow Promo -->    
     <style>
-      #index-slide-0 {
-        background-image: url('/images/index-2022-itc.jpg') !important;
+/*       #index-slide-0 {
+        background-image: url('/images/index-2022-itc.webp') !important;
         background-position-x: right !important;
+      } */
+       
+      #index-slide-0 {
+        background-image: url(/images/index-slide-0.webp);
+      }
+
+      #index-slide-1 {
+        background-image: url(/images/index-slide-1.webp);
+      }
+
+      #index-slide-2 {
+        background-image: url(/images/index-slide-2.webp);
+      }
+
+      #index-slide-3 {
+        background-image: url(/images/index-slide-3.webp);
+      }
+
+      #index-slide-4 {
+        background-image: url(/images/index-slide-4.webp);
+      }
+
+      #index-slide-5 {
+        background-image: url(/images/index-slide-5.webp);
       }
 
       @media (min-width: 767.1px) {
@@ -355,14 +408,16 @@
           left: 65px;
         }
       }
-    </style> 
-
+    </style>
 
     <section id="jumbotron" class="roosC">
       <div class="jumbotron index-slideshow">
-        <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme">
+        <div id="jumbotron-slider" class="owl-carousel hidden-control owl-theme" 
+        style="@media (max-width: 767px) { min-height: 79vmin; max-height: 605px; }; 
+        @media (min-width: 768px) { height: 605px;};
+        @media (min-width: 992px) { height: 992px;}">
           <div class="item" id="index-slide-0">
-            <!-- 5G PROMO 
+            <!-- 5G PROMO -->
             <h2 style="color: #b3e0dc;" class="index-slideshow-bar">A New Era of Production Test</h2>
             <div class="container">
               <div class="row">
@@ -372,9 +427,9 @@
                     More</a>
                 </div>
               </div>
-            </div> -->
+            </div>
 
-            <!-- Tradeshow promo -->
+            <!-- Tradeshow promo 
             <h2 style="color:white;" class="index-slideshow-bar">Visit us at International Test Conference 2023
             </h2>
             <div class="container">
@@ -384,8 +439,7 @@
                     style="color: black; border-color: white; background-color: white;">Visit Booth #316</a>
                 </div>
               </div>
-            </div>  
-
+            </div>  -->
           </div>
 
           <div class="item" id="index-slide-1">
@@ -396,7 +450,7 @@
                   <h5>When Add-On RF Can't Get the</h5>
                   <h5>Performance you Need...</h5>
                   <h5>Now There's an ATE Solution That Puts RF First.</h5>
-                  <a href="/infrastructure.html" class="btn btn-index btn-inverse">Learn More</a>
+                  <a href="/infrastructure.html" class="btn btn-index btn-inverse">Ulimited Test Capability</a>
                 </div>
               </div>
             </div>
@@ -407,14 +461,14 @@
             <div class="container">
               <h5>It's One Thing to Say Modular.</h5>
               <h5>It's Something Else Entirely to Do It.</h5>
-              <a href="/instruments.html" class="btn btn-index btn-inverse">Learn More</a>
+              <a href="/instruments.html" class="btn btn-index btn-inverse">Build Modular Instruments</a>
             </div>
           </div>
 
           <div class="item" id="index-slide-3">
             <h2 class="index-slideshow-bar">
               Automotive Radar Test?
-              <span style="font-family: 'Quando';">
+              <span style="font-family: serif;">
                 <em>Done.</em>
               </span>
             </h2>
@@ -422,17 +476,17 @@
               <h5>Production-Ready mmWave.</h5>
               <h5>All Part of the ATE Industry's Fastest</h5>
               <h5>and Most Accurate ATE Platform.</h5>
-              <a href="/automotive_radar.html" class="btn btn-index btn-inverse">Learn More</a>
+              <a href="/automotive_radar.html" class="btn btn-index btn-inverse">Native mmWave Testing</a>
             </div>
           </div>
 
           <div class="item" id="index-slide-4">
-            <h2 class="index-slideshow-bar">Rethink Device Interface Design</h2>
+            <h2 class="index-slideshow-bar">Architect the Best Production Test</h2>
             <div class="container">
               <h5>Instruments and Interconnects</h5>
               <h5>in a Configurable, Scalable,</h5>
               <h5>and Cost-Effective Environment.</h5>
-              <a href="/fixture.html" class="btn btn-index btn-inverse">Learn More</a>
+              <a href="/fixture.html" class="btn btn-index btn-inverse">Device Interface</a>
             </div>
           </div>
 
@@ -442,29 +496,26 @@
               <h5>Database Storage, Automated Backups, Distribution Control</h5>
               <h5>Guru Brings Test and Data Management</h5>
               <h5>to a Whole New Level.</h5>
-              <a href="/guru.html" class="btn btn-index btn-inverse">Learn More</a>
+              <a href="/guru.html" class="btn btn-index btn-inverse">Simplify Net Ops</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <section id="notices" class="container">
+  <!--  Notices
       <div class="row">
         <div class="col-sm-12">
           <h2>ITC 2023 - Allyship in the test community: a real-world guide to <abbr
               title="Diversity, Equity, and Inclusion">DEI</abbr>.</h2>
-          <p>The test community is a diverse one, yet many of us may not be familiar with either the subtleties or the
-            complexities of how best to work in such an environment. In this moderated panel session, we will hear several
-            of our test colleagues tell their stories and give us practical suggestions on how we can be better allies,
-            help members of under-represented groups get a better foothold, and create more welcoming and inclusive
-            workplaces. In contrast to (often counterproductive) DEI compliance training, this session focuses on the
-            narratives from people you know in our community and steps you can take to become a more aware coworker.
+          <p>Join the Diversity, Equity, and Inclusion (DEI) discussion on with the test community.
+            Learn practical suggestions on how we can be better allies, help members of under-represented groups 
+            get a foothold, and create more welcoming and inclusive workplaces.
             </p>
             <div>
           <a href="https://easychair.org/smart-program/ITC2023/2023-10-11.html#session:76892"
             title="Allyship in the test community: a real-world guide to DEI" target="_blank" rel="nofollow noopener">
-            Wednesday, July 12 2:40pm<br>
+            Wednesday, Oct 11 14:40-15:30<br>
             Location: Grand Ballroom Center @ Disneyland CA, United States</a>
             <br>
             <span>
@@ -474,22 +525,7 @@
             <a href="https://www.linkedin.com/in/adrienne-anderson-graml/" target="_blank" rel="nofollow noopener">Adrienne Anderson Graml</a>
           </span>
         </div>
-          <!--  SEMI Workshops
-          <h2>Test's Role in Uniting the Industry - Test Vision Symposium</h2>
-          <p></p>
-          <a href="https://www.semi.org/en/connect/events/test-vision-symposium"
-            title="Test's Role in Uniting the Industry - Test Vision Symposium" target="_blank">
-            Mark Roos Keynote at Wednesday, July 13 9:50am<br>
-            Location: South Hall, Level 3, Room 302<br>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://www.semi.org/en/connect/events/introduction-ritdb-implementation-test-floor"
-            title="Intro RITdb Implementation on a Test Floor" target="_blank">
-            <img src="/images/800x800C_RITdb.png" alt="RITdb Workshop">
-          </a> -->
-        </div>
-      </div>
+      </div> -->
       <hr class="space">
       <div class="row">
         <div class="col-sm-12" style="
@@ -533,6 +569,13 @@
       #index-panels div a {
         width: 16.66%;
       }
+
+      #index-panels img {
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 213 / 532;
+      }
     </style>
     <section id="site-nav">
       <div id="content" class="roosC">
@@ -540,22 +583,22 @@
           <h1 class="container">End-to-End Test Solutions</h1>
           <div>
             <a href="/infrastructure.html" title="System Overview">
-              <img src="/images/System.png" alt="System Overview">
+              <img src="/images/nav-system.webp" alt="System Overview">
             </a>
             <a href="/instruments.html" title="Test Instrument Modules">
-              <img src="/images/instruments.png" alt="Test Instrument Modules">
+              <img src="/images/nav-instruments.webp" alt="Test Instrument Modules">
             </a>
             <a href="/fixture.html" title="Device Interface">
-              <img src="/images/interface.png" alt="Device Interface Panel">
+              <img src="/images/nav-interface.webp" alt="Device Interface Panel">
             </a>
             <a href="/software.html" title="Software and Guru Applications">
-              <img src="/images/software.png" alt="Software and Guru Applications">
+              <img src="/images/nav-software.webp" alt="Software and Guru Applications">
             </a>
             <a href="/guru.html" title="Guru Enterprise Software">
-              <img src="/images/enterprise.png" alt="Guru Enterprise Software">
+              <img src="/images/nav-enterprise.webp" alt="Guru Enterprise Software">
             </a>
             <a href="/support.html" title="Technical and Engineering Support">
-              <img src="/images/support.png" alt="Technical and Engineering Support">
+              <img src="/images/nav-support.webp" alt="Technical and Engineering Support">
             </a>
           </div>
           <p style="margin-left: 1em;">Select a panel above to learn more.</p>
@@ -573,9 +616,157 @@
     </section>
 
     <div class="bottom"></div>
-    <script src="/js/loadbottom.js"></script>
-
   </div>
+  <noscript><style>body { visibility: visible; }</style></noscript>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous"></script>
+ 
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- inline min <script defer src="/js/roos.min.js?v2"></script> -->
+  <script defer src="/js/owl.carousel.min.js"></script>
+
+  <script defer src="https://kit.fontawesome.com/3c37819fef.js" crossorigin="anonymous"></script>
+
+  <script>
+  $(window).scroll(function () {
+	if ($(window).width() > 991) {
+		if ($(window).scrollTop() > 50) {
+			$('.navbar').addClass('navbar-offset');
+			$('.navbar').removeClass('navbar-static-top');
+			$('.navbar').addClass('navbar-fixed-top');
+			$('body').css("padding-top", "70px");
+		}
+		else {
+			$('.navbar').removeClass('navbar-offset');
+			$('.navbar').removeClass('navbar-fixed-top');
+			$('.navbar').addClass('navbar-static-top');
+			$('body').css("padding-top", "0px");
+		}
+	}
+
+	else {
+		if ($(window).scrollTop()) {
+			$('.navbar').addClass('navbar-offset');
+			$('.navbar').removeClass('navbar-static-top');
+			$('.navbar').addClass('navbar-fixed-top');
+			$('body').css("padding-top", "40px");
+		}
+		else {
+			$('.navbar').removeClass('navbar-offset');
+			$('.navbar').removeClass('navbar-fixed-top');
+			$('.navbar').addClass('navbar-static-top');
+			$('body').css("padding-top", "0px");
+		}
+	}
+});
+
+$(document).ready(function () {
+
+  $('.bottom').load("/_bottom-min.html");
+
+	//OWL CAROUSEL
+	$("#jumbotron-slider").owlCarousel({
+		items: 1,
+		dots: false,
+		loop: false,
+		rewind: true,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+		autoplay: true,
+		autoplayHoverPause: true
+	});
+
+	//OWL CAROUSEL - HIDDEN CONTROLS
+	$(".owl-carousel.hidden-control").mouseenter(function (e) {
+		$(this).find(".owl-prev").animate({ opacity: 1, left: "20px" });
+		$(this).find(".owl-next").animate({ opacity: 1, right: "20px" });
+	});
+
+	$(".owl-carousel.hidden-control").mouseleave(function (e) {
+		$(this).find(".owl-prev").animate({ opacity: 0, left: "40px" });
+		$(this).find(".owl-next").animate({ opacity: 0, right: "40px" });
+	});
+
+  //Document Search (with up to 4 different search forms/fields)
+	$("#docSearchButton").click(function () { goSearch(); });
+	$("#docSearchButton2").click(function () { goSearch2(); });
+}); //end Ready function
+
+//Google search js
+function add_gcse() {
+		var cx = '016663888408278794732:a1ud06__nsq';
+		var gcse = document.createElement('script');
+    gcse.id = 'gcse-id'
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			'//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	};
+
+//search RI Product documentation.  Each functions are similar, just use a different input field.
+//TODO: Rewrite with oncclick function passing query field instead of pulling it out of the input  
+function goSearch() {
+  let gseScript = document.getElementById('gcse-id');
+  if (JSON.stringify(gseScript) != "null") { add_gcse();};
+
+	var docSearch = window.document.docsSearch;
+	var searchPhrase = docSearch.query.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase)
+	if (searchPhrase == '') {
+		$("#searchFail").removeClass("hidden");
+		docSearch.query.value = "";
+		docSearch.query.focus();
+		return true;
+	} else {
+		var searchString = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
+		//alert(searchString);
+		location.href = searchString;
+		$("#searchFail").addClass("hidden");
+		docSearch.query.value = "";
+		return true;
+	}
+} //end function
+
+
+function goSearch2() {
+  let gseScript = document.getElementById('gcse-id');
+  if (JSON.stringify(gseScript) != "null") { add_gcse();};
+
+	var docSearch2 = window.document.docsSearch2;
+	var searchPhrase2 = docSearch2.query2.value.toString();  //ensures numbers will be treated as strings
+	//alert(searchPhrase2)
+	if (searchPhrase2 == '') {
+		$("#searchFail2").removeClass("hidden");
+		docSearch2.query2.value = "";
+		docSearch2.query2.focus();
+		return true;
+	} else {
+		var searchString2 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
+		//alert(searchString);
+		$("#searchFail2").addClass("hidden");
+		docSearch2.query2.value = searchPhrase2;
+		location.href = searchString2;
+		return true;
+	}
+} //end function
+
+function hasCookie() {
+	str = document.cookie.split('; ');
+	var result = {};
+	for (var i = 0; i < str.length; i++) {
+		var cur = str[i].split('=');
+		result[cur[0]] = cur[1];
+	}
+	if (result.username != null) {
+		return true;
+	}
+	return false;
+}
+</script>
 </body>
 
 </html>
