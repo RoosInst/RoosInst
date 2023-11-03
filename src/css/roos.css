@@ -649,8 +649,6 @@ form label span {
 
 .owl-carousel .owl-nav div {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   width: 46px;
   height: 46px;
   text-align: center;
