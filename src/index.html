@@ -15,7 +15,7 @@
       content="Roos Instruments combines over 30 years of research into modular ATE systems that lead the semiconductor industry in test accuracy, reliability, and time to market."
     />
     <!-- Remember to add CSR hash if this changes -->
-    <!--   <script>
+    <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
     }, {passive: true});
@@ -31,7 +31,7 @@
     // Display body when DOM is loaded
     document.body.style.visibility = 'visible';
     });
-  </script> -->
+  </script>
 
     <!-- TOP - v56 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,10 +47,10 @@
       href="https://fonts.googleapis.com/css2?&family=Source+Sans+3:wght@300;400&text=%21%22%23%24%25%26%27%28%29%2A%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40ABCDEFGHIJKLMNOPQRSTUVWXYZ%5B%5D_abcdefghijklmnopqrstuvwxyz%7B%7C%7D&display=swap"
       crossorigin="anonymous"
     /> -->
-    <link
+<!--     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Michroma&text=RIeimnorstu&display=swap"
-    />
+    /> -->
 
  <!--    <link
       rel="stylesheet"
@@ -60,10 +60,7 @@
       media="screen, print"
     /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="/css/roos.max-min.css?v2" media="screen" id="pageTheme" /> -->
     <link rel="stylesheet" href="/css/roos-print.css?v2" media="print" />
     <!-- <style media="screen, print">
@@ -1889,6 +1886,7 @@ hr.space {
   .mainTitleAdjust {
     font-size: 35px;
     margin-top: -1px;
+    display: inline;
   }
 
   .ROOSbanner {
@@ -1951,30 +1949,6 @@ hr.space {
 #index-slide-4,
 #index-slide-5 {
   background-size: cover;
-}
-
-#index-slide-0 {
-  background-image: url(/images/index-slide-0.png);
-}
-
-#index-slide-1 {
-  background-image: url(/images/index-slide-1.png);
-}
-
-#index-slide-2 {
-  background-image: url(/images/index-slide-2.png);
-}
-
-#index-slide-3 {
-  background-image: url(/images/index-slide-3.png);
-}
-
-#index-slide-4 {
-  background-image: url(/images/index-slide-4.png);
-}
-
-#index-slide-5 {
-  background-image: url(/images/index-slide-5.png);
 }
 
 .index-slideshow .item {
@@ -2677,20 +2651,47 @@ footer .overlay-wrapper .overlay a {
         </div>
       </div>
       <header>
-        <nav class="navbar fixed-top navbar-expand-lg sticky-top navbar-default d-block yamm">
-        <div class="container">
-          <div class="navbar-header">
+        <nav class="navbar fixed-top navbar-expand-sm sticky-top yamm">
+       
+        <div id="roosBrand" class="navbar-brand">
+            <div class="nav-item" class="d-none d-lg-block">
+              <a class="nav-link" href="/index.html">
+                <div class="mainTitleAdjust" style="display: flex;">
+                  <img width="510" height="42" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                </div>
+                <div class="ROOSbanner"></div>
+                <span id="nav-tag"
+                  >Modular
+                  <abbr title="Automated Test Equipment">ATE</abbr> for the
+                  World's Most Advanced Technology</span
+                >
+              </a>
+            </div>
+            <div class="d-none d-sm-block d-lg-none">
+              <a href="/index.html">
+                <div style="font-size: 25px" class="mainTitleAdjust">
+                  Roos<br />Instruments
+                </div>
+              </a>
+            </div>
+            <div class="d-block d-sm-none container">
+              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+              <a class="nav-link" href="/index.html">
+                <div style="display: inline-block" class="mainTitleAdjust">
+                  Roos Instruments
+                </div>
+              </a>
+              <div class="ROOSbanner"></div>
+            </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarMobile" class="container-fluid">
+          <div class="navbar-header ms-auto flex-nowrap">
             <div class="d-block d-sm-none">
-              <button
-                aria-label="Search Site"
-                style="top: 3px; z-index: 1"
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-              >
-                <i class="fas fa-bars"></i>
-              </button>
               <div class="search-form-toggle mobileTopBtn">
                 <a title="Search Button" class="navButton" href="/search.html"
                   ><i class="fas fa-search"></i
@@ -2698,56 +2699,21 @@ footer .overlay-wrapper .overlay a {
               </div>
             </div>
 
-            <div id="title" class="navbar-brand">
-              <div class="nav-item" class="d-none d-lg-block">
-                <a class="nav-link" href="/index.html">
-                  <div class="mainTitleAdjust">Roos Instruments</div>
-                  <div class="ROOSbanner"></div>
-                  <span id="nav-tag"
-                    >Modular
-                    <abbr title="Automated Test Equipment">ATE</abbr> for the
-                    World's Most Advanced Technology</span
-                  >
-                </a>
-              </div>
-              <div class="d-none d-sm-block d-lg-none">
-                <a href="/index.html">
-                  <div style="font-size: 25px" class="mainTitleAdjust">
-                    Roos<br />Instruments
-                  </div>
-                </a>
-              </div>
-              <div class="d-block d-sm-none container">
-                <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-                <a class="nav-link" href="/index.html">
-                  <div style="display: inline-block" class="mainTitleAdjust">
-                    Roos Instruments
-                  </div>
-                </a>
-                <div class="ROOSbanner"></div>
-              </div>
-            </div>
-          </div>
+            
           <!-- end of .navbar-header -->
-          <nav class="navbar navbar-collapse collapse navbar-right">
+          <div  class="navbar navbar-collapse collapse justify-content-end navbar-default">
             <div class="container-fluid">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav ms-auto flex-nowrap">
                 <li id="nav-home" class="nav-item dropdown">
                   <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li
                   id="nav-mobile-support"
-                  class="dropdown d-none d-sm-block nav-item"
+                  class="nav-item dropdown d-block d-sm-none"
                 >
                   <a class="nav-link" href="/support.html">Support</a>
                 </li>
-                <li
-                  id="nav-mobile-myAccount"
-                  class="dropdown d-block d-sm-none"
-                >
-                  <a class="nav-link" href="/commerce/profiles.nsf/myAccount">My Account</a>
-                </li>
-                <li id="nav-products" class="dropdown nav-item">
+                <li id="nav-products" class="nav-item dropdown">
                   <a
                     rel="nofollow"
                     class="dropdown-toggle nav-link"
@@ -2755,52 +2721,51 @@ footer .overlay-wrapper .overlay a {
                     onclick=""
                     data-hover="dropdown"
                     data-delay="300"
-                    >Products<i class="fas fa-chevron-down"></i
-                  ></a>
+                    >Products</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/products.html"
                         ><i class="fas fa-angle-double-right"></i>Overview</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/infrastructure.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i>Test
                         Systems</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/instruments.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Instruments</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/tims.html"
                         ><i class="nav-indent2 fas fa-angle-double-right"></i
                         >Browse TIMs</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/software.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Software</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/fixture.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Device Interface</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/rik"
                         ><i class="fas fa-angle-double-right"></i>RIK Catalog</a
                       >
                     </li>
                   </ul>
                 </li>
-                <li id="nav-services" class="dropdown">
+                <li id="nav-services" class="nav-item dropdown">
                   <a
                     rel="nofollow"
                     class="dropdown-toggle"
@@ -2808,33 +2773,32 @@ footer .overlay-wrapper .overlay a {
                     onclick=""
                     data-hover="dropdown"
                     data-delay="300"
-                    >Services<i class="fas fa-chevron-down"></i
-                  ></a>
+                    >Services</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/services.html"
                         ><i class="fas fa-angle-double-right"></i>Overview</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/turnkey.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Turnkey</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/production.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Production</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/guru.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Enterprise</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/training.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Training</a
@@ -2842,7 +2806,7 @@ footer .overlay-wrapper .overlay a {
                     </li>
                   </ul>
                 </li>
-                <li id="nav-company" class="dropdown">
+                <li id="nav-company" class="nav-item dropdown">
                   <a
                     rel="nofollow"
                     class="dropdown-toggle"
@@ -2850,39 +2814,38 @@ footer .overlay-wrapper .overlay a {
                     onclick=""
                     data-hover="dropdown"
                     data-delay="300"
-                    >Company<i class="fas fa-chevron-down"></i
-                  ></a>
+                    >Company</a>
                   <ul class="dropdown-menu">
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/company.html"
                         ><i class="fas fa-angle-double-right"></i>About Us</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/news.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i>News
                         & Events</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/careers.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Careers</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/mediaKit.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Media Kit</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/visitRI.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i>Plan
                         a Visit</a
                       >
                     </li>
-                    <li class="nav-item">
+                    <li class="dropdown-item">
                       <a class="nav-link" href="/contact.html"
                         ><i class="nav-indent1 fas fa-angle-double-right"></i
                         >Contact Us</a
@@ -2890,15 +2853,14 @@ footer .overlay-wrapper .overlay a {
                     </li>
                   </ul>
                 </li>
-                <li id="nav-support" class="dropdown yamm-fw d-none d-sm-block">
+                <li id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
                   <a
                     rel="nofollow"
                     class="dropdown-toggle"
                     data-toggle="dropdown"
                     data-hover="dropdown"
                     data-delay="300"
-                    >Support <i class="fas fa-chevron-down"></i
-                  ></a>
+                    >Support</a>
                   <section id="hideOnSupport" class="dropdown-menu">
                     <div class="yamm-content">
                       <div class="row">
@@ -3073,12 +3035,12 @@ footer .overlay-wrapper .overlay a {
                 </li>
                 <li
                   id="nav-mobile-privacy"
-                  class="nav-item dropdown d-block d-sm-none"
+                  class="nav-item d-block d-sm-none"
                 >
                   <a class="nav-link" href="/privacy.html">Privacy</a>
                 </li>
               </ul>
-              <ul class="nav navbar-nav d-none d-sm-block">
+              <ul class="nav nav-item d-none d-sm-block">
                 <li style="margin-right: -12px" class="search-form-toggle">
                   <a class="nav-link navButton" title="Search" href="/search.html"
                     ><i class="fas fa-search"></i
@@ -3086,8 +3048,6 @@ footer .overlay-wrapper .overlay a {
                 </li>
               </ul>
           </div>
-          </nav>
-        </div>
         </nav>
       </header>
 
@@ -3095,7 +3055,7 @@ footer .overlay-wrapper .overlay a {
       <div class="clearfix d-none d-print-block">
         <div class="float-start">
           <img
-            style="height: 50px"
+            height="50" width="293"
             src="/images/titleForPrint.jpg"
             alt="RI Title"
           />
@@ -3188,6 +3148,7 @@ footer .overlay-wrapper .overlay a {
           z-index: 2;
           top: 65px;
           left: 97.25%;
+          
         }
 
         @media (min-width: 377.1px) and (max-width: 767px) {
@@ -3442,18 +3403,6 @@ footer .overlay-wrapper .overlay a {
               >
             </div>
           </div>
-          <!-- <div class="col-sm-4" style="
-                  background-color: #fafad2; 
-                  border-color: rgba(0,0,0,.1);
-                  border-width: 0 .9375rem 0 .9375rem;
-                  border-style: solid;
-                  padding: .9375rem 2rem .9375rem .9375rem;">
-            <div class="col-sm-12">
-              <span><i class="fas fa-virus-slash"></i>
-                <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Continuity of Service</a>
-              </span>
-            </div>
-          </div> -->
         </div>
       </section>
       <section id="site-nav">
@@ -3513,11 +3462,17 @@ footer .overlay-wrapper .overlay a {
         .overlay-wrapper img {
           aspect-ratio: 16/9 auto;
         }
+
+        footer nav.navbar {
+          border-bottom: none;
+          background: none;
+          height: auto;
+        }
       </style>
       <footer class="text-center">
-        <div class="defaultCursor container">
+        <div class="defaultCursor container-md">
           <div class="row">
-            <div class="col-sm-5 col-md-4">
+            <div class="col-sm-6 col-md-4">
               <a href="/index.html"><img
                   style="float: left; padding-bottom: 76px"
                   alt="ROOS Logo"
@@ -3614,7 +3569,7 @@ footer .overlay-wrapper .overlay a {
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-5 d-none d-sm-block">
+            <div class="col-md-4 col-sm-6 d-none d-sm-block">
               <h3><i class="fas fa-cloud-download-alt"></i>Brochure</h3>
               <a href="/parts/CASSINI/$file/CASSINI.pdf" aria-label="Cassini Brochure PDF"
                 ><img
@@ -3628,9 +3583,9 @@ footer .overlay-wrapper .overlay a {
               </a>
             </div>
           </div>
-          <nav class="footer-bottom navbar navbar-expand-sm d-none d-sm-block">
-            <div class="container-fluid text-right">
-              <ul class="navbar-nav ms-auto flex-nowrap">
+          <nav class="navbar navbar-expand-sm justify-content-end d-none d-sm-block">
+            <div class="container-fluid">
+              <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" title="Roos Instruments" href="/index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" title="Products Overview" href="/products.html">Products</a></li>
                 <li class="nav-item"><a class="nav-link" title="Services Overview" href="/services.html">Services</a></li>
@@ -3682,13 +3637,16 @@ footer .overlay-wrapper .overlay a {
     ></script>
 
     <script>
+    
+    
+   
 
 
     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
     });
   
-
+    /* 
       $(window).scroll(function () {
         if ($(window).width() > 991) {
           if ($(window).scrollTop() > 50) {
@@ -3794,6 +3752,8 @@ footer .overlay-wrapper .overlay a {
           });
       })(jQuery, window);
 
+       */
+
       function goSearch() {
         var docSearch = window.document.docsSearch;
         var searchPhrase = docSearch.query.value.toString(); //ensures numbers will be treated as strings
@@ -3816,7 +3776,7 @@ footer .overlay-wrapper .overlay a {
       } //end function
 
       $(document).ready(function () {
-        $(".bottom").load("/_bottom-min.html");
+        // $(".bottom").load("/_bottom-min.html");
 
         //Tiny Slider
         var slider = tns({
