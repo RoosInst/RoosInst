@@ -105,6 +105,16 @@
 
     <style>
       /* Inline roos.css +index only */
+/* https://mdbootstrap.com/docs/standard/extended/dropdown-hover/ */
+      .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
 /*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3 https://geedmo.github.com/yamm3
@@ -2652,12 +2662,11 @@ footer .overlay-wrapper .overlay a {
       </div>
       <header>
         <nav class="navbar fixed-top navbar-expand-sm sticky-top yamm">
-       
         <div id="roosBrand" class="navbar-brand">
-            <div class="nav-item" class="d-none d-lg-block">
+            <div class="d-none d-lg-block">
               <a class="nav-link" href="/index.html">
                 <div class="mainTitleAdjust" style="display: flex;">
-                  <img width="510" height="42" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                  <img width="480" height="40" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
                 </div>
                 <div class="ROOSbanner"></div>
                 <span id="nav-tag"
@@ -2670,7 +2679,9 @@ footer .overlay-wrapper .overlay a {
             <div class="d-none d-sm-block d-lg-none">
               <a href="/index.html">
                 <div style="font-size: 25px" class="mainTitleAdjust">
-                  Roos<br />Instruments
+                  <img width="60" height="30" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                  <br />
+                  <img width="190" height="30" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
                 </div>
               </a>
             </div>
@@ -2678,34 +2689,30 @@ footer .overlay-wrapper .overlay a {
               <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
               <a class="nav-link" href="/index.html">
                 <div style="display: inline-block" class="mainTitleAdjust">
-                  Roos Instruments
+                  <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
                 </div>
               </a>
               <div class="ROOSbanner"></div>
             </div>
         </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="navbarMobile" class="container-fluid">
-          <div class="navbar-header ms-auto flex-nowrap">
-            <div class="d-block d-sm-none">
-              <div class="search-form-toggle mobileTopBtn">
-                <a title="Search Button" class="navButton" href="/search.html"
-                  ><i class="fas fa-search"></i
-                ></a>
-              </div>
-            </div>
+        <div class="container-fluid d-block d-sm-none">
+          <div class="nav-item ms-auto">
+              <a class="nav-item" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
 
             
           <!-- end of .navbar-header -->
-          <div  class="navbar navbar-collapse collapse justify-content-end navbar-default">
+          <div class="navbar navbar-collapse collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
             <div class="container-fluid">
-              <ul class="nav navbar-nav ms-auto flex-nowrap">
+              <ul class="nav navbar-nav ms-auto d-flex">
                 <li id="nav-home" class="nav-item dropdown">
-                  <a class="nav-link" href="/index.html">Home</a>
+                  <a class="nav-link" href="/index.html" aria-current="page">Home</a>
                 </li>
                 <li
                   id="nav-mobile-support"
@@ -2715,14 +2722,13 @@ footer .overlay-wrapper .overlay a {
                 </li>
                 <li id="nav-products" class="nav-item dropdown">
                   <a
-                    rel="nofollow"
+                    id="navProdDropdown" role="button" data-bs-toggle="dropdown"
                     class="dropdown-toggle nav-link"
-                    data-toggle="dropdown"
-                    onclick=""
                     data-hover="dropdown"
                     data-delay="300"
+                    aria-expanded="false"
                     >Products</a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
                     <li class="dropdown-item">
                       <a class="nav-link" href="/products.html"
                         ><i class="fas fa-angle-double-right"></i>Overview</a
@@ -3086,7 +3092,7 @@ footer .overlay-wrapper .overlay a {
           }
         }
 
-        #index-slide-0 h2, h5 {
+        #index-slide-0 h2, #index-slide-0 h5 {
           color: #b3e0dc;
         }
 
@@ -3102,6 +3108,26 @@ footer .overlay-wrapper .overlay a {
           background-position: center;
         }
 
+        #index-slide-1 {
+          background-image: url(/images/index-slide-1.webp);
+        }
+
+        #index-slide-2 {
+          background-image: url(/images/index-slide-2.webp);
+        }
+
+        #index-slide-3 {
+          background-image: url(/images/index-slide-3.webp);
+        }
+
+        #index-slide-4 {
+          background-image: url(/images/index-slide-4.webp);
+        }
+
+        #index-slide-5 {
+          background-image: url(/images/index-slide-5.webp);
+        }
+
         .tns-nav {
           display: flex;
           justify-content: right;
@@ -3110,7 +3136,6 @@ footer .overlay-wrapper .overlay a {
           padding-right: 35px;
           z-index: 1;
         }
-
 
         .tns-nav button,
         .tns-controls.active button {
@@ -3256,7 +3281,7 @@ footer .overlay-wrapper .overlay a {
               <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-xs-5">
+                  <div class="col-4">
                     <h5>Adding Higher Frequency Test Capabilities...</h5>
                     <h5>Cassini has 6G Covered.</h5>
                     <a href="/6g.html" class="btn btn-index">6G Device Testing</a>
@@ -3759,7 +3784,7 @@ footer .overlay-wrapper .overlay a {
         var searchPhrase = docSearch.query.value.toString(); //ensures numbers will be treated as strings
         //alert(searchPhrase)
         if (searchPhrase == "") {
-          $("#searchFail").removeClass("hidden");
+          $("#searchFail").removeClass("invisible");
           docSearch.query.value = "";
           docSearch.query.focus();
           return true;
@@ -3769,7 +3794,7 @@ footer .overlay-wrapper .overlay a {
             escape(searchPhrase);
           //alert(searchString);
           location.href = searchString;
-          $("#searchFail").addClass("hidden");
+          $("#searchFail").addClass("invisible");
           docSearch.query.value = "";
           return true;
         }
@@ -3796,7 +3821,7 @@ footer .overlay-wrapper .overlay a {
           nav: true,
           autoplay: true,
           autoplayButtonOutput: false,
-          lazyload: true,
+          lazyload: false,
           speed: 1200,
         });
 
