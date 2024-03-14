@@ -82,5 +82,6 @@
     "sass": "^1.55.0",
     "trim-newlines": "^5.0.0",
     "utf-8-validate": "^6.0.3"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
