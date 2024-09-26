@@ -56,12 +56,7 @@
           <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fas fa-phone"></i>+1-408-748-8589</a></div>
         </div>
         <div class="header-item pull-right">
-          <!--       <span id="newuser"><a href="/newFullUser"><i class="fas fa-user-plus"></i>Create new
-                account&nbsp;&nbsp;</a></span>
-            <a href="/commerce/profiles.nsf/myAccount"><span id="username"><i class="fas fa-lock"></i>Sign
-                in</span>&nbsp;&nbsp;</a>
-            <span id="logout" class="hidden"><a href="/names.nsf?logout" title="Sign Out" onclick="logout();"
-                rel="nofollow"><i class="fas fa-sign-out-alt"></i>Sign Out</a></span> -->
+
           <a href="https://learn.roos.com/" aria-label="Online Training"><i class="fas fa-school"></i>Online
             Training</a>
         </div>
@@ -165,9 +160,7 @@
                     <div class="col-sm-3">
                       <h3 class="text-center">Planning</h3>
                       <div style="text-align: center">
-                        <a href="/newFullUser" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create
-                          Account</a>
-                      </div>
+
                       <div style="width: 150px;" class="centerImg">
                         <ul style="margin-top: 15px;" class="nav vertical-nav">
                           <li><a href="/supportPlans.html"><i class="fas fa-angle-double-right"></i>Support Plans</a>
@@ -175,9 +168,7 @@
                           <li><a href="/maintenance.html"><i class="fas fa-angle-double-right"></i>Maintenance</a>
                           </li>
                           <li><a href="/training.html"><i class="fas fa-angle-double-right"></i>Training</a></li>
-                          <li><a href="/commerce/profiles.nsf/myAccount"><i
-                                class="fas fa-angle-double-right"></i>Customer
-                              Account</a></li>
+
                         </ul>
                       </div>
                     </div>
@@ -366,14 +357,17 @@
             <a href="/visitRI.html"><i class="fas fa-calendar-alt"></i> Plan a Visit</a>
           </div>
           <a href="https://goo.gl/maps/4eQnc">
-            <small><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i><span class="contactLinks adr"><span
-                  class="street-address">2285 Martin Ave</span><br>
-                <span class="locality">Santa Clara</span>, <span class="region">CA</span> <span
-                  class="postal-code">95050</span>, <span class="country-name">US</span></span><br>
+            <small><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>
+              Roos Instruments, Inc.
+              <span class="contactLinks adr"><span
+                  class="street-address">2285 Martin Avenue</span><br>
+                <span class="locality">Santa Clara</span>, <span class="region">California</span> <span
+                  class="postal-code">95050</span><br><span class="country-name">United States</span></span><br>
             </small>
           </a>
+          <p style="margin-top: 30px;">International Shipments:<br>ECCN: 3B992.b <br> HTC: 9030.82.00.00 RF Test Equipment Accessories</p>
           <p style="margin-top: 30px;">Purchasing Agents: <a href="/parts">Price List</a> <br> <a href="/rik">Browse
-              Product Catalog</a> or <a href="/newFullUser">Create New Account</a></p>
+              Product Catalog</a></p>
           <p>RMA Instructions:
             <a href="/pdf/Pack_TIM.pdf" title="Instructions for Packing a Testhead/EPC TIM">Pack TIM</a>,
             <a href="/pdf/Pack_AUX_Src.pdf" title="Instructions for Packing a Testhead/EPC TIM">Pack AUX TIM
@@ -383,30 +377,11 @@
         </div>
 
         <div class="col-md-6" style="margin-top: 30px;">
-          <script>
-            $(document).ready(function () {
-              var myLatlng = new google.maps.LatLng(37.3682577, -121.9628301);
-              var mapOptions = {
-                zoom: 9,
-                center: myLatlng,
-                navigationControl: false,
-                mapTypeControl: false,
-                scaleControl: false,
-                draggable: true,
-                scrollwheel: false
-              };
-
-              var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-              var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: "Roos Instruments"
-              });
-            });
-          </script>
           <section id="google-map">
-            <div id="map-canvas"></div>
+            <div id="map-canvas">
+              <iframe  width="450"  height="550"  style="border:0"  loading="lazy"  allowfullscreen  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_Cpvgz54WEzHRsFFSDEGQAyNnprO4KzM&q=Roos+Instruments,Santa+Clara+CA"> </iframe>
+            </div>
           </section>
         </div>
       </div>
@@ -489,10 +464,6 @@
 
     <div class="bottom"></div>
     <script src="js/loadbottom.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwAszZ5d8Jk5J8mmw-pszY0E2oTvIokoQ&callback=initMap"
-      type="text/javascript"></script>
-
   </div>
 </body>
 

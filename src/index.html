@@ -761,7 +761,8 @@ form label span {
   border-bottom: 1px solid #DDDDDD;
   background: #FFFFFF;
   margin: 0;
-  height: 70px;
+  height: 72px;
+  padding: 0;
 }
 
 .navbar-offset {
@@ -770,8 +771,10 @@ form label span {
 }
 
 .navbar-default .navbar-nav>li>a {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #777777;
   font-weight: 300;
   font-family: "Source Sans 3", "Segoe UI", "Segoe UI", sans-serif;
@@ -824,7 +827,6 @@ form label span {
   padding: 10px 15px;
   -webkit-transition: 0.3s ease-in-out 0s;
   transition: 0.3s ease-in-out 0s;
-  background: #FFF;
   position: relative;
 }
 
@@ -1047,127 +1049,11 @@ footer .org ul {
   margin-bottom: 20px;
 }
 
-#pricing,
-#pricingtable .row {
-  margin: 0;
-}
-
-#pricing>div,
-#pricingtable .row>div {
-  padding: 0;
-}
-
 .row-no-padding>[class*=col-] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.pricing-plan {
-  background: #F5F5F5;
-  text-align: center;
-  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.pricing-plan.popular {
-  background: #E5E5E5;
-  position: relative;
-  top: -35px;
-}
-
-.pricing-plan h3,
-.pricing-plan p {
-  padding: 15px 0;
-  color: #FFFFFF;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-body .pricing-plan.popular h3,
-body .pricing-plan.popular p {
-  background: #555555;
-}
-
-.pricing-plan p {
-  font-size: 14px;
-  color: #EEEEEE;
-  padding-top: 0;
-}
-
-.pricing-plan .pricing-plan-price {
-  padding: 13px 0;
-}
-
-.pricing-plan .pricing-plan-price h2 {
-  font-size: 1.5em;
-  color: white;
-}
-
-body .pricing-plan.popular .pricing-plan-price {
-  background: #666666;
-}
-
-.pricing-plan .pricing-plan-price span {
-  color: #FFFFFF;
-}
-
-.pricing-plan .pricing-plan-price span.pricing-plan-number {
-  font-size: 50px;
-}
-
-.pricing-plan .pricing-plan-price span.pricing-plan-text {
-  font-size: 16px;
-  display: block;
-  font-weight: 300;
-  position: relative;
-  top: -10px;
-  color: rgba(215, 215, 215, 0.7);
-}
-
-.pricing-plan ul {
-  padding: 10px 30px;
-  margin-left: 0;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.pricing-plan ul li {
-  border-bottom: 1px solid #E5E5E5;
-  color: #555555;
-  line-height: 50px;
-}
-
-.pricing-plan.popular ul li {
-  border-color: #D5D5D5;
-}
-
-.pricing-plan ul li:last-child {
-  border-bottom: 0;
-}
-
-.pricing-plan ul li i {
-  color: #999999;
-  padding: 0 5px;
-}
-
-.pricing-plan .btn {
-  margin-bottom: 30px;
-}
-
-#pricingtable .pricing-plan ul {
-  padding: 10px 30px;
-  text-align: center;
-}
-
-.pricing-plan-titles {
-  margin-top: 178px;
-}
-
-#pricingtable .pricing-plan-titles ul {
-  text-align: left;
-}
 
 #services .service h3 {
   text-transform: uppercase;
@@ -1327,14 +1213,6 @@ body #services.services3 .service:hover i {
     text-align: center;
   }
 
-  .pricing-plan {
-    margin: 0 0 30px;
-  }
-
-  .pricing-plan.popular {
-    top: 0;
-  }
-
   #about-content p {
     font-size: 16px;
     line-height: 26px;
@@ -1367,9 +1245,6 @@ body #services.services3 .service:hover i {
     margin: 0;
   }
 
-  .pricing-plan.popular {
-    top: -35px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1436,11 +1311,6 @@ body #services.services3 .service:hover i {
   }
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 a {
   color: #4676B8;
 }
@@ -1502,8 +1372,11 @@ footer .navbar-nav>li>a:hover {
   background: #4676B8;
 }
 
+.navbar-default > .navbar-link {
+  padding: 25px 15px;
+}
+
 .content-separator,
-.pricing-plan .pricing-plan-price,
 #services.services3 .service:hover i {
   background: #4676B8;
 }
@@ -1542,11 +1415,6 @@ a:focus {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #00A7FF;
-}
-
-.pricing-plan h3,
-.pricing-plan p {
   background: #00A7FF;
 }
 
@@ -1890,7 +1758,7 @@ hr.space {
   }
 
   #nav-tag {
-    font-size: 18px;
+    font-size: 0.85em;
   }
 
   .mainTitleAdjust {
@@ -2661,399 +2529,395 @@ footer .overlay-wrapper .overlay a {
         </div>
       </div>
       <header>
-        <nav class="navbar fixed-top navbar-expand-sm sticky-top yamm">
-        <div id="roosBrand" class="navbar-brand">
-            <div class="d-none d-lg-block">
-              <a class="nav-link" href="/index.html">
-                <div class="mainTitleAdjust" style="display: flex;">
-                  <img width="480" height="40" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+        <nav class="navbar fixed-top navbar-expand-md sticky-top yamm">
+          <div class="container">
+            <div id="roosBrand" class="navbar-brand">
+                <div class="d-none d-lg-block">
+                  <a class="nav-link" href="/index.html">
+                    <div class="mainTitleAdjust" style="display: flex;">
+                      <img width="350" height="38.5" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                    </div>
+                    <div class="ROOSbanner"></div>
+                    <span id="nav-tag"
+                      >Modular
+                      <abbr title="Automated Test Equipment">ATE</abbr> for the
+                      World's Most Advanced Technology</span
+                    >
+                  </a>
                 </div>
-                <div class="ROOSbanner"></div>
-                <span id="nav-tag"
-                  >Modular
-                  <abbr title="Automated Test Equipment">ATE</abbr> for the
-                  World's Most Advanced Technology</span
-                >
-              </a>
-            </div>
-            <div class="d-none d-sm-block d-lg-none">
-              <a href="/index.html">
-                <div style="font-size: 25px" class="mainTitleAdjust">
-                  <img width="60" height="30" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
-                  <br />
-                  <img width="190" height="30" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                <div class="d-none d-sm-block d-lg-none">
+                  <a href="/index.html">
+                    <div style="font-size: 25px" class="mainTitleAdjust">
+                      <img width="80" height="31" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                      <img width="192.3" height="31" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="d-block d-sm-none container">
-              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-              <a class="nav-link" href="/index.html">
-                <div style="display: inline-block" class="mainTitleAdjust">
-                  <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                <div class="d-block d-sm-none container">
+                  <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+                  <a class="nav-link" href="/index.html">
+                    <div style="display: inline-block" class="mainTitleAdjust">
+                      <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                    </div>
+                  </a>
+                  <div class="ROOSbanner"></div>
                 </div>
-              </a>
-              <div class="ROOSbanner"></div>
             </div>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="container-fluid d-block d-sm-none">
-          <div class="nav-item ms-auto">
-              <a class="nav-item" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
-          </div>
-        </div>
-
-            
-          <!-- end of .navbar-header -->
-          <div class="navbar navbar-collapse collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
-            <div class="container-fluid">
-              <ul class="nav navbar-nav ms-auto d-flex">
-                <li id="nav-home" class="nav-item dropdown">
-                  <a class="nav-link" href="/index.html" aria-current="page">Home</a>
-                </li>
-                <li
-                  id="nav-mobile-support"
-                  class="nav-item dropdown d-block d-sm-none"
-                >
-                  <a class="nav-link" href="/support.html">Support</a>
-                </li>
-                <li id="nav-products" class="nav-item dropdown">
-                  <a
-                    id="navProdDropdown" role="button" data-bs-toggle="dropdown"
-                    class="dropdown-toggle nav-link"
-                    data-hover="dropdown"
-                    data-delay="300"
-                    aria-expanded="false"
-                    >Products</a>
-                  <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/products.html"
-                        ><i class="fas fa-angle-double-right"></i>Overview</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/infrastructure.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i>Test
-                        Systems</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/instruments.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Instruments</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/tims.html"
-                        ><i class="nav-indent2 fas fa-angle-double-right"></i
-                        >Browse TIMs</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/software.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Software</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/fixture.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Device Interface</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/rik"
-                        ><i class="fas fa-angle-double-right"></i>RIK Catalog</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-services" class="nav-item dropdown">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    onclick=""
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Services</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/services.html"
-                        ><i class="fas fa-angle-double-right"></i>Overview</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/turnkey.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Turnkey</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/production.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Production</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/guru.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Enterprise</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/training.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Training</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-company" class="nav-item dropdown">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    onclick=""
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Company</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/company.html"
-                        ><i class="fas fa-angle-double-right"></i>About Us</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/news.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i>News
-                        & Events</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/careers.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Careers</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/mediaKit.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Media Kit</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/visitRI.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i>Plan
-                        a Visit</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/contact.html"
-                        ><i class="nav-indent1 fas fa-angle-double-right"></i
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Support</a>
-                  <section id="hideOnSupport" class="dropdown-menu">
-                    <div class="yamm-content">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h3 class="text-center">Planning</h3>
-                          <div style="text-align: center">
-                            <a
-                              href="https://learn.roos.com/"
-                              class="btn btn-primary"
-                              ><i class="fas fa-school"></i> Online Training</a
-                            >
-                          </div>
-                          <div style="width: 150px" class="centerImg">
-                            <ul style="margin-top: 15px" class="nav vertical-nav">
-                              <li class="nav-item">
-                                <a class="nav-link" href="/supportPlans.html"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Support Plans</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/maintenance.html"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Maintenance</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/training.html"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Training</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/commerce/profiles.nsf/myAccount"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Customer Account</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <h3 class="text-center">Online Documents</h3>
-                          <form
-                            name="docsSearch"
-                            method="POST"
-                            action="#"
-                            onSubmit="goSearch(); return false;"
-                          >
-                            <div class="form-group nospace">
-                              <div
-                                id="searchFail"
-                                class="alert alert-warning hidden"
-                                role="alert"
+            <div class="container-fluid d-block d-sm-none">
+              <div class="nav-item ms-auto">
+                  <a class="nav-item" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+                
+            <!-- end of .navbar-header -->
+            <div class="navbar navbar-collapse collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
+              <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ms-auto d-flex">
+                  <li id="nav-home" class="nav-item dropdown">
+                    <a class="nav-link" href="/index.html" aria-current="page">Home</a>
+                  </li>
+                  <li
+                    id="nav-mobile-support"
+                    class="nav-item dropdown d-block d-sm-none"
+                  >
+                    <a class="nav-link" href="/support.html">Support</a>
+                  </li>
+                  <li id="nav-products" class="nav-item dropdown">
+                    <a
+                      id="navProdDropdown" role="button" data-bs-toggle="dropdown"
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      aria-expanded="false"
+                      >Products</a>
+                    <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/products.html"
+                          ><i class="fas fa-angle-double-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/infrastructure.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>Test
+                          Systems</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/instruments.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Instruments</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/tims.html"
+                          ><i class="nav-indent2 fas fa-angle-double-right"></i
+                          >Browse TIMs</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/software.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Software</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/fixture.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Device Interface</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/rik"
+                          ><i class="fas fa-angle-double-right"></i>RIK Catalog</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-services" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Services</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/services.html"
+                          ><i class="fas fa-angle-double-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/turnkey.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Turnkey</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/production.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Production</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/guru.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Enterprise</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/training.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Training</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-company" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Company</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/company.html"
+                          ><i class="fas fa-angle-double-right"></i>About Us</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/news.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>News
+                          & Events</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/careers.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Careers</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/mediaKit.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Media Kit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/visitRI.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>Plan
+                          a Visit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/contact.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="padding-top:24px;" id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Support</a>
+                    <section id="hideOnSupport" class="dropdown-menu">
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h3 class="text-center">Planning</h3>
+                            <div style="text-align: center">
+                              <a
+                                href="https://learn.roos.com/"
+                                class="btn btn-primary"
+                                ><i class="fas fa-school"></i> Online Training</a
                               >
-                                <strong>Oops!</strong> Search for something.
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="query"
-                                  placeholder="Search Documentation"
-                                  required
-                                />
-                                <span
-                                  onclick="goSearch(); return false;"
-                                  class="input-group-btn"
-                                  ><button
-                                    class="btn btn-primary"
-                                    type="button"
-                                    title="Search"
-                                  >
-                                    <i class="fas fa-search"></i></button
-                                ></span>
-                              </div>
                             </div>
-                          </form>
-                          <div class="centerImg" style="width: 150px">
-                            <ul style="margin-top: 10px" class="nav vertical-nav">
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/dev"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Developer</a
+                            <div style="width: 150px" class="centerImg">
+                              <ul style="margin-top: 15px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/supportPlans.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Support Plans</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/maintenance.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/training.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Training</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <h3 class="text-center">Online Documents</h3>
+                            <form
+                              name="docsSearch"
+                              method="POST"
+                              action="#"
+                              onSubmit="goSearch(); return false;"
+                            >
+                              <div class="form-group nospace">
+                                <div
+                                  id="searchFail"
+                                  class="alert alert-warning visually-hidden"
+                                  role="alert"
+                                >
+                                  <strong>Oops!</strong> Search for something.
+                                </div>
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="query"
+                                    placeholder="Search Documentation"
+                                    required
+                                  />
+                                  <span
+                                    onclick="goSearch(); return false;"
+                                    class="input-group-btn"
+                                    ><button
+                                      class="btn btn-primary"
+                                      type="button"
+                                      title="Search"
+                                    >
+                                      <i class="fas fa-search"></i></button
+                                  ></span>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="centerImg" style="width: 150px">
+                              <ul style="margin-top: 10px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/dev"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Developer</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/admin"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Administrator</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/maint"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/operate"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Operator</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>
+                              Reference Guide
+                              <a
+                                href="/refGuide"
+                                title="Cassini Reference Guide Share Link"
+                                ><i class="fas fa-share"></i
+                              ></a>
+                            </h3>
+                            <div style="text-align: center">
+                              <a
+                                class="btn btn-primary"
+                                href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
+                                download="CassiniReferenceGuide_2.8_mini.pdf"
+                                ><i class="far fa-file-pdf"></i>Download PDF</a
+                              >
+                              <a
+                                rel="noopener"
+                                href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"
+                              >
+                                <img
+                                  style="padding-top: 9px; width: 160px"
+                                  class="centerImg"
+                                  src="/images/ibook-cassini-ref-guide.png"
+                                  alt="Cassini Reference Guide iBook"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>Get Support</h3>
+                            <a
+                              class="nav-link btn btn-primary"
+                              href="mailto:support@roos.com"
+                              ><i class="fas fa-envelope"></i> Email Support</a
+                            >
+                            <ul style="margin-bottom: 15px; text-align: center; list-style-type: none;">
+                              <li style="padding-top: 15px">
+                                <a href="tel:+1-408-748-8589"
+                                  >&nbsp;<i class="fas fa-phone"></i
+                                  >&nbsp;&nbsp;+1-408-748-8589</a
                                 >
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="/help/admin"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Administrator</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/maint"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Maintenance</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/operate"
-                                  ><i class="fas fa-angle-double-right"></i
-                                  >Operator</a
+                                <small
+                                  ><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM
+                                  PST M-F</small
                                 >
                               </li>
                             </ul>
-                          </div>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                          <h3>
-                            Reference Guide
-                            <a
-                              href="/refGuide"
-                              title="Cassini Reference Guide Share Link"
-                              ><i class="fas fa-share"></i
-                            ></a>
-                          </h3>
-                          <div style="text-align: center">
-                            <a
-                              class="btn btn-primary"
-                              href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
-                              download="CassiniReferenceGuide_2.8_mini.pdf"
-                              ><i class="far fa-file-pdf"></i>Download PDF</a
-                            >
-                            <a
-                              rel="noopener"
-                              href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"
-                            >
-                              <img
-                                style="padding-top: 9px; width: 160px"
-                                class="centerImg"
-                                src="/images/ibook-cassini-ref-guide.png"
-                                alt="Cassini Reference Guide iBook"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                          <h3>Get Support</h3>
-                          <a
-                            class="nav-link btn btn-primary"
-                            href="mailto:support@roos.com"
-                            ><i class="fas fa-envelope"></i> Email Support</a
-                          >
-                          <ul style="margin-bottom: 15px; text-align: center">
-                            <li style="padding-top: 15px">
-                              <a href="tel:+1-408-748-8589"
-                                >&nbsp;<i class="fas fa-phone"></i
-                                >&nbsp;&nbsp;+1-408-748-8589</a
+                            <div style="text-align: center">
+                              <a
+                                rel="noopener"
+                                href="https://get.teamviewer.com/roosinst"
+                                class="btn btn-primary"
                               >
-                            </li>
-                            <li class="nav-item">
-                              <small
-                                ><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM
-                                PST M-F</small
+                                <i class="fas fa-binoculars"></i> Remote Support</a
                               >
-                            </li>
-                          </ul>
-                          <div style="text-align: center">
-                            <a
-                              rel="noopener"
-                              href="https://get.teamviewer.com/roosinst"
-                              class="btn btn-primary"
-                            >
-                              <i class="fas fa-binoculars"></i> Remote Support</a
-                            >
+                            </div>
+                            <br />
                           </div>
-                          <br />
                         </div>
                       </div>
-                    </div>
-                  </section>
-                </li>
-                <li
-                  id="nav-mobile-privacy"
-                  class="nav-item d-block d-sm-none"
-                >
-                  <a class="nav-link" href="/privacy.html">Privacy</a>
-                </li>
-              </ul>
-              <ul class="nav nav-item d-none d-sm-block">
-                <li style="margin-right: -12px" class="search-form-toggle">
-                  <a class="nav-link navButton" title="Search" href="/search.html"
-                    ><i class="fas fa-search"></i
-                  ></a>
-                </li>
-              </ul>
+                    </section>
+                  </li>
+                  <li
+                    id="nav-mobile-privacy"
+                    class="nav-item d-block d-sm-none"
+                  >
+                    <a class="nav-link" href="/privacy.html">Privacy</a>
+                  </li>
+                </ul>
+                <ul class="nav nav-item d-none d-sm-block">
+                  <li style="margin-right: -12px" class="search-form-toggle">
+                    <a class="nav-link navButton" title="Search" href="/search.html"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </li>
+                </ul>
+            </div>
           </div>
+          </div> <!-- container around nav-->
         </nav>
       </header>
 
@@ -3093,12 +2957,12 @@ footer .overlay-wrapper .overlay a {
         }
 
         #index-slide-0 h2, #index-slide-0 h5 {
-          color: #b3e0dc;
+          color: rgb(112, 112, 112);
         }
 
         #index-slide-0 .btn-index {
-          color: #b3e0dc;
-          border-color: #b3e0dc;
+          color: rgb(179, 224, 220);
+          border-color: rgb(179, 224, 220);
           background-color: transparent;
         }
 
@@ -3155,7 +3019,7 @@ footer .overlay-wrapper .overlay a {
         }
 
         .tns-nav button.tns-nav-active {
-          background: #4676B8;
+          background: rgb(70, 118, 184);
           width: 24px;
           border-radius: 12px;
         }
@@ -3227,8 +3091,8 @@ footer .overlay-wrapper .overlay a {
           color: rgba(70, 118, 184, 0.1);
         }
 
-        .tns-controls button[data-controls='prev'] { border-radius: 45% 45% 0 0; }
-        .tns-controls button[data-controls='next'] { border-radius: 0 0 45% 45%; }
+        .tns-controls button[data-controls='prev'] { border-radius: 45% 45% 0 0; padding: 2px 3px; font-weight: 400; }
+        .tns-controls button[data-controls='next'] { border-radius: 0 0 45% 45%; padding: 0 3px 4px; font-weight: 400; }
 
         #index-panels div {
           display: flex;
@@ -3281,7 +3145,7 @@ footer .overlay-wrapper .overlay a {
               <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-4">
+                  <div style="width: 50%;">
                     <h5>Adding Higher Frequency Test Capabilities...</h5>
                     <h5>Cassini has 6G Covered.</h5>
                     <a href="/6g.html" class="btn btn-index">6G Device Testing</a>
@@ -3296,7 +3160,7 @@ footer .overlay-wrapper .overlay a {
               </h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-xs-7">
+                  <div style="width: 50%; color: #000;">
                     <h5>When Add-On RF Can't Get the</h5>
                     <h5>Performance you Need...</h5>
                     <h5>Now There's an ATE Solution That Puts RF First.</h5>
@@ -3812,8 +3676,8 @@ footer .overlay-wrapper .overlay a {
           edgePadding: "0",
           controlsPosition: "top",
           controlsText: [
-            "<i class='fa fa-angle-up' aria-label='previous'></i>",
-            "<i class='fa fa-angle-down' aria-label='next'></i>",
+            "&#8593;",
+            "&#8595;",
           ],
           navPosition: "top",
           arrowKeys: "true",
