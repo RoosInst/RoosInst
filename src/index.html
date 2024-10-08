@@ -1245,6 +1245,11 @@ body #services.services3 .service:hover i {
     margin: 0;
   }
 
+  .navbar-brand { 
+    width: 180px;
+    margin-right: 0px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -2496,6 +2501,14 @@ footer .overlay-wrapper .overlay a {
   padding: 10px 5px;
   margin-bottom: 0;
 }
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+.navbar-toggler-icon::before {
+  font-family: FontAwesome;
+  content: "\f0c9"; /* fa-bars, fa-navicon */
+}
     </style>
 
     <div id="page-wrapper" class="page-boxed">
@@ -2548,13 +2561,13 @@ footer .overlay-wrapper .overlay a {
                 <div class="d-none d-sm-block d-lg-none">
                   <a href="/index.html">
                     <div style="font-size: 25px" class="mainTitleAdjust">
-                      <img width="80" height="31" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                      <img width="80" height="31" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">&thinsp;
                       <img width="192.3" height="31" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
                     </div>
                   </a>
                 </div>
                 <div class="d-block d-sm-none container">
-                  <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+                  <!-- Separate than above div because .container is lost when shrunk, needed to re-add -->
                   <a class="nav-link" href="/index.html">
                     <div style="display: inline-block" class="mainTitleAdjust">
                       <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
@@ -2568,19 +2581,19 @@ footer .overlay-wrapper .overlay a {
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="container-fluid d-block d-sm-none">
+            <div class="container-fluid d-none">
               <div class="nav-item ms-auto">
                   <a class="nav-item" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
               </div>
             </div>
                 
             <!-- end of .navbar-header -->
-            <div class="navbar navbar-collapse collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
+            <div class="collapse navbar-collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
               <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ms-auto d-flex">
-                  <li id="nav-home" class="nav-item dropdown">
-                    <a class="nav-link" href="/index.html" aria-current="page">Home</a>
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                  <li id="nav-home" class="nav-item">
+                    <a class="nav-link active" href="/index.html" aria-current="page">Home</a>
                   </li>
                   <li
                     id="nav-mobile-support"
@@ -2908,7 +2921,7 @@ footer .overlay-wrapper .overlay a {
                     <a class="nav-link" href="/privacy.html">Privacy</a>
                   </li>
                 </ul>
-                <ul class="nav nav-item d-none d-sm-block">
+                <ul class="nav nav-item d-none d-md-block">
                   <li style="margin-right: -12px" class="search-form-toggle">
                     <a class="nav-link navButton" title="Search" href="/search.html"
                       ><i class="fas fa-search"></i
