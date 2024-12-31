@@ -73,6 +73,10 @@
     pointer-events: none;
 }
 
+.dropdown-toggle::after {
+  vertical-align: 0.18em;
+}
+
 /*!
  * Yamm!3
  * Yet another megamenu for Bootstrap 3 https://geedmo.github.com/yamm3
@@ -324,6 +328,12 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 0px) {
+  .page-boxed {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2020,6 +2030,18 @@ textarea {
   }
 }
 
+@media (max-width: 0px) {
+  .mainTitleAdjust {
+    margin-top: 17px;
+    font-size: 14px;
+  }
+
+  .ROOSbanner {
+    max-width: 100px;
+  }
+}
+
+
 .btn-index {
   margin: 0;
   background: rgba(255, 255, 255, 0.5);
@@ -2275,7 +2297,6 @@ img {
   }
 
   .navbar-default .navbar-nav .dropdown-menu>li>a {
-    background: #F3F3F3;
     padding: 8px 10px;
   }
 
@@ -2463,10 +2484,18 @@ footer .overlay-wrapper .overlay a {
 .navbar-toggler-icon {
   background-image: none;
 }
+
+.navbar-toggler {
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
 .navbar-toggler-icon::before {
   font-family: FontAwesome;
   content: "\f0c9"; /* fa-bars, fa-navicon */
 }
+
+
     </style>
 
     <div id="page-wrapper" class="page-boxed">
@@ -2528,7 +2557,7 @@ footer .overlay-wrapper .overlay a {
                   <!-- Separate than above div because .container is lost when shrunk, needed to re-add -->
                   <a class="nav-link" href="/index.html">
                     <div style="display: inline-block" class="mainTitleAdjust">
-                      <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                      <img width="300" height="33" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
                     </div>
                   </a>
                   <div class="ROOSbanner"></div>
@@ -2539,29 +2568,351 @@ footer .overlay-wrapper .overlay a {
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarMobile">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/support.html">Support</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact</a>
-                </li>
-              </ul>
+            <div class="container-fluid d-none">
+              <div class="nav-item ms-auto">
+                  <a class="nav-item" title="Search Button" href="/search.html"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+                
+            <!-- end of .navbar-header -->
+            <div class="collapse navbar-collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
+              <div class="container-fluid">
+                <div class="navbar-collapse float-end" id="navbarSupportedContent">
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                  <li id="nav-mobile-support" class="nav-item dropdown d-block d-sm-none">
+                    <a class="nav-link" title="Search" href="/search.html">Search</i>
+                    <a class="nav-link" title="Get Support" href="/support.html">Support</a>
+                  </li>
+                  <li id="nav-products" class="nav-item dropdown">
+                    <a
+                      id="navProdDropdown" role="button" data-bs-toggle="dropdown"
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      aria-expanded="false"
+                      >Products</a>
+                    <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/products.html"
+                          ><i class="fas fa-angle-double-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/infrastructure.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>Test
+                          Systems</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/instruments.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Instruments</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/tims.html"
+                          ><i class="nav-indent2 fas fa-angle-double-right"></i
+                          >Browse TIMs</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/software.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Software</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/fixture.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Device Interface</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/rik"
+                          ><i class="fas fa-angle-double-right"></i>RIK Catalog</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-services" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Services</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/services.html"
+                          ><i class="fas fa-angle-double-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/turnkey.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Turnkey</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/production.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Production</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/guru.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Enterprise</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/training.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Training</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-company" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Company</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/company.html"
+                          ><i class="fas fa-angle-double-right"></i>About Us</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/news.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>News
+                          & Events</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/careers.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Careers</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/mediaKit.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Media Kit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/visitRI.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i>Plan
+                          a Visit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/contact.html"
+                          ><i class="nav-indent1 fas fa-angle-double-right"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="padding-top:24px;" id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Support</a>
+                    <section id="hideOnSupport" class="dropdown-menu">
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h3 class="text-center">Planning</h3>
+                            <div style="text-align: center">
+                              <a
+                                href="https://learn.roos.com/"
+                                class="btn btn-primary"
+                                ><i class="fas fa-school"></i> Online Training</a
+                              >
+                            </div>
+                            <div style="width: 150px" class="centerImg">
+                              <ul style="margin-top: 15px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/supportPlans.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Support Plans</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/maintenance.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/training.html"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Training</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <h3 class="text-center"><span sytle=""></span><span class="d-none d-sm-block">Online </span>Documents</h3>
+                            <form
+                              name="docsSearch"
+                              method="POST"
+                              action="#"
+                              onSubmit="goSearch(); return false;"
+                            >
+                              <div class="form-group nospace">
+                                <div
+                                  id="searchFail"
+                                  class="alert alert-warning visually-hidden"
+                                  role="alert"
+                                >
+                                  <strong>Oops!</strong> Search for something.
+                                </div>
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="query"
+                                    placeholder="Search Documentation"
+                                    required
+                                  />
+                                  <span
+                                    onclick="goSearch(); return false;"
+                                    class="input-group-btn"
+                                    ><button
+                                      class="btn btn-primary"
+                                      type="button"
+                                      title="Search"
+                                    >
+                                      <i class="fas fa-search"></i></button
+                                  ></span>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="centerImg" style="width: 150px">
+                              <ul style="margin-top: 10px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/dev"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Developer</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/admin"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Administrator</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/maint"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/operate"
+                                    ><i class="fas fa-angle-double-right"></i
+                                    >Operator</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>
+                              Reference Guide
+                              <a
+                                href="/refGuide"
+                                title="Cassini Reference Guide Share Link"
+                                ><i class="fas fa-share"></i
+                              ></a>
+                            </h3>
+                            <div style="text-align: center">
+                              <a
+                                class="btn btn-primary"
+                                href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
+                                download="CassiniReferenceGuide_2.8_mini.pdf"
+                                ><i class="far fa-file-pdf"></i>Download PDF</a
+                              >
+                              <a
+                                rel="noopener"
+                                href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"
+                              >
+                                <img
+                                  style="padding-top: 9px; width: 160px"
+                                  class="centerImg"
+                                  src="/images/ibook-cassini-ref-guide.png"
+                                  alt="Cassini Reference Guide iBook"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>Get Support</h3>
+                            <a
+                              class="nav-link btn btn-primary"
+                              href="mailto:support@roos.com"
+                              ><i class="fas fa-envelope"></i> Email Support</a
+                            >
+                            <ul style="margin-bottom: 15px; text-align: center; list-style-type: none;">
+                              <li style="padding-top: 15px">
+                                <a href="tel:+1-408-748-8589"
+                                  >&nbsp;<i class="fas fa-phone"></i
+                                  >&nbsp;&nbsp;+1-408-748-8589</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <small
+                                  ><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM
+                                  PST M-F</small
+                                >
+                              </li>
+                            </ul>
+                            <div style="text-align: center">
+                              <a
+                                rel="noopener"
+                                href="https://get.teamviewer.com/roosinst"
+                                class="btn btn-primary"
+                              >
+                                <i class="fas fa-binoculars"></i> Remote Support</a
+                              >
+                            </div>
+                            <br />
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </li>
+                  <li
+                    id="nav-mobile-privacy"
+                    class="nav-item d-block d-sm-none"
+                  >
+                    <a class="nav-link" href="/privacy.html">Privacy</a>
+                  </li>
+                </ul>
+                <ul class="nav nav-item d-none d-md-block">
+                  <li style="margin-right: -12px" class="search-form-toggle">
+                    <a class="nav-link navButton" title="Search" href="/search.html"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                  </li>
+                </ul>
             </div>
           </div>
+          </div> <!-- container around nav-->
         </nav>
       </header>
 
@@ -3200,12 +3551,20 @@ footer .overlay-wrapper .overlay a {
           ],
           navPosition: "top",
           arrowKeys: "true",
-          controls: true,
-          nav: true,
           autoplay: true,
           autoplayButtonOutput: false,
           lazyload: false,
           speed: 1200,
+          responsive: {
+            0: {
+              nav: false,
+              controls: false,
+            },
+            768: {
+              nav: true,
+              controls: true,  
+            },
+          },
         });
 
         //Tiny Slider - HIDDEN CONTROLS
