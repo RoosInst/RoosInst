@@ -876,9 +876,11 @@ form label span {
 
 .breadcrumb-wrapper h1 {
   float: left;
+  font-weight: ;
   font-size: 24px;
   font-family: "Source Sans Pro";
   margin: 0;
+  margin-bottom: 0;
   color: #555555;
 }
 
