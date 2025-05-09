@@ -359,26 +359,23 @@
               <ul>
                 <li>For RI7725 AUX Rack 20 GHz Source, See <a href="https://roos.com/docs/RBEH-8SW447">Exchanging AUX
                     Rack Source TIM</a>.</li>
-                <li>For RI8574 EPC System Controller TIM, See <a href="https://roos.com/docs/RBEH-APL2LM">System
-                    Controller Exchange Checklist (EPC TIM)</a>.</li>
+                <li>For RI8574 ArcaOS EPC TIM or RI8608 Linux NUC, See <a href="https://roos.com/docs/RBEH-APL2LM">Exchange ArcaOS TIM Checklist</a> or <a href="https://roos.com/docs/RBEH-DG2R6U">Exchange Linux NUC Checklist</a>.</li>
                 <li>For RI8545 20 GHz TestSet (Testhead instrument), See <a href="https://roos.com/docs/RBEH-ASAUGU">Cal
                     Data Activation (Testhead)</a>.</li>
-                <li>For all others, Remove Failed TIM With System ON, Pull Top Latch Then Pull Bottom Handle to Release
+                <li>For all others, Pull Top Latch Then Pull Bottom Handle to Release
                   from Testhead.</li>
               </ul>
             <li>Perform <b>System &gt; Check</b> (Instrument(s) Removed from Configuration)</li>
-            <li>Install New TIM in the same T-location labeled on TIM. Example: <button
+            <li>Install Replacement TIM, one at a time, in the same T-location. <button
                 style="background-color: rgb(255,255,255); border: 1px solid; border-radius: 5px;"
                 disabled>&nbsp;&nbsp;&nbsp;T-4&nbsp;&nbsp;&nbsp;</button> <br> Slide TIM Horizontally
               Until Touching Testhead, Slide TIM Vertically Until In Position, Press Top Latch Down</li>
-            <li>Perform <b>System &gt; Check </b>(Instrument(s) Added to Configuration). Start Warm Up Timer (20
-              minutes)</li>
-            <li>Choose <b>Tester &gt; Save</b> menu from the Configuration window to save the configuration. </li>
+            <li>Perform <b>System &gt; Check </b>(Instrument Added to Configuration, repeat previous step)</li>
+            <li>Start Warm Up Timer (20 minutes). Choose <b>Tester &gt; Save</b> menu from the Configuration window to save the instrument names.</li>
           </ul>
           <h3>Step 3) Verify and Release to Production</h3>
           <ul>
             <li>Latch Diag/Cal Plate from Diagnostic Kit</li>
-
             <li>Perform <b>System &gt; Check </b>(Fixture Added to Configuration)</li>
             <li>Open Configuration window ( <b>System &gt; Tester</b> ) Perform Targeted Diags (<b>Tester &gt;
                 Diagnose</b>, Select Plans for Instrument Model #s)
@@ -450,6 +447,10 @@
                 <td>RI8594</td>
                 <td>Waveform TIM with Low Noise Clock (1 Yr)</td>
               </tr>
+              <tr>
+                <td>RI8612</td>
+                <td>Device Power Plus (1 Yr)</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -458,7 +459,7 @@
       <div class="row">
         <div style="margin-bottom: 50px;" class="col-xs-12">
           <h2>Maintenance Schedule</h2>
-          <p>Detailed Maintenance Schedule information and procedures are in the<a href="/refGuide"
+          <p>Detailed Maintenance Schedule information and procedures are in the <a href="/refGuide"
               title="Cassini Reference Guide">Cassini Reference Guide</a>, CH 3: Care &
             Maintenance.</p>
           <table id="maintSchedule" class="table table-striped table-bordered" style="width: 100%;">
