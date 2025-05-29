@@ -2933,11 +2933,7 @@ footer .overlay-wrapper .overlay a {
       <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
       <style>
-        /* Show Promo
-        #index-slide-0 {
-          background-image: url('/images/index-2022-itc.webp') !important;
-          background-position-x: right !important;
-        } */
+ 
 
         @media (min-width: 0) and (max-width: 767px) {
           #index-slide-0 a {
@@ -2955,12 +2951,6 @@ footer .overlay-wrapper .overlay a {
           color: rgb(179, 224, 220);
           border-color: rgb(179, 224, 220);
           background-color: transparent;
-        }
-
-
-        #index-slide-0 {
-          background-image: url(/images/index-slide-0.webp);
-          background-position: center;
         }
 
         #index-slide-1 {
@@ -3114,25 +3104,37 @@ footer .overlay-wrapper .overlay a {
           #jumbotron-slider { height: 992px;};
         }
 
+        /* Show Promo */
+        #index-slide-0 {
+          background-image: url('/images/index-ims-2025.webp') !important;
+          background-position-x: left !important;
+        } 
+        /* Standard Slide 
+        #index-slide-0 {
+          background-image: url(/images/index-slide-0.webp);
+          background-position: center;
+        } */
+
       </style>
 
       <section id="jumbotron" class="roosC">
         <div class="jumbotron index-slideshow">
           <div id="jumbotron-slider" class="index-slider">
             <div class="item" id="index-slide-0">
-              <!-- 5G PROMO -->
-
-              <!-- Tradeshow promo 
-            <h2 style="color:white;" class="index-slideshow-bar">Visit us at International Test Conference 2023
+              <!-- Tradeshow promo -->
+            <h2 style="color:white;" class="index-slideshow-bar">Join us at IMS 2025
             </h2>
             <div class="container">
               <div class="row">
                 <div>
-                  <a href="http://www.itctestweek.org/exhibitors-list/roos-instruments/" class="btn btn-index btn-inverse"
-                    style="color: black; border-color: white; background-color: white;">Visit Booth #316</a>
+                  <a href="https://ims-ieee.org/" class="btn btn-index btn-inverse"
+                    style="color: black; border-color: white; background-color: white;"
+                    target="_blank" rel="noopener nofollow">Visit Booth 132</a>
                 </div>
               </div>
-            </div>  -->
+            </div>
+
+              <!-- 6G PROMO 
               <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
               <div class="container">
                 <div class="row">
@@ -3143,6 +3145,7 @@ footer .overlay-wrapper .overlay a {
                   </div>
                 </div>
               </div>
+              -->
             </div>
 
             <div class="item" id="index-slide-1">
@@ -3228,35 +3231,11 @@ footer .overlay-wrapper .overlay a {
           </div>
         </div>
       </section>
+      <!--  Notices
       <section id="notices" class="container">
-        <!--  Notices
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>ITC 2023 - Allyship in the test community: a real-world guide to <abbr
-              title="Diversity, Equity, and Inclusion">DEI</abbr>.</h2>
-          <p>Join the Diversity, Equity, and Inclusion (DEI) discussion on with the test community.
-            Learn practical suggestions on how we can be better allies, help members of under-represented groups 
-            get a foothold, and create more welcoming and inclusive workplaces.
-            </p>
-            <div>
-          <a rel="noopener" href="https://easychair.org/smart-program/ITC2023/2023-10-11.html#session:76892"
-            title="Allyship in the test community: a real-world guide to DEI" target="_blank" rel="nofollow noopener">
-            Wednesday, Oct 11 14:40-15:30<br>
-            Location: Grand Ballroom Center @ Disneyland CA, United States</a>
-            <br>
-            <span>
-            Panel: <a rel="noopener" href="https://www.linkedin.com/in/teresa-mclaurin-6290a21/" target="_blank" rel="nofollow noopener">Cathy Rossi Roos</a>, 
-            <a rel="noopener" href="https://www.linkedin.com/in/teresa-mclaurin-6290a21/" target="_blank" rel="nofollow noopener">Teresa McLaurin</a>, 
-            <a rel="noopener" href="https://www.linkedin.com/in/shawn-blanton-b129876/" target="_blank" rel="nofollow noopener">Shawn Blanton</a> will be joined by AMD DEI coordinator 
-            <a rel="noopener" href="https://www.linkedin.com/in/adrienne-anderson-graml/" target="_blank" rel="nofollow noopener">Adrienne Anderson Graml</a>
-          </span>
-        </div>
-      </div> -->
-        <hr class="space" />
+       <hr class="space" />
         <div class="row">
-          <div
-            class="col-sm-12"
-            style="
+          <div class="col-sm-12" style="
               background-color: #eeeeee;
               border-color: rgba(0, 0, 0, 0.1);
               border-width: 0 0.9375rem 0 0.9375rem;
@@ -3265,11 +3244,8 @@ footer .overlay-wrapper .overlay a {
             "
           >
             <div class="col-sm-12">
-              <span
-                ><i class="far fa-newspaper"></i>
-                <a
-                  target="_blank"
-                  rel="noopener nofollow"
+              <span><i class="far fa-newspaper"></i>
+                <a target="_blank" rel="noopener nofollow"
                   style="font-size: 18px"
                   href="https://semiengineering.com/integration-challenges-for-ate-data/"
                 >
@@ -3284,7 +3260,13 @@ footer .overlay-wrapper .overlay a {
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-sm-12">
+          <h2>IMS 2025</h2>
+              <a class="link" href="https://ims-ieee.org/" title="IMS2025 | 15-20 June 2025 in San Francisco" target="_blank" rel="noopener nofollow">
+                <img src="/images/IMS2025-728x90.webp" alt="IMS2025 | 15-20 June 2025 in San Francisco" width="100%" height="90" /> 
+              </a>
+            </div>
+      </section> -->
       <section id="site-nav">
         <div id="content" class="roosC">
           <section id="index-panels">
