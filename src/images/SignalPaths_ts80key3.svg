@@ -231,7 +231,7 @@
             .cls-6 {
                 font-size: 7px;
                 fill: #666666;
-                font-family: SanFranciscoText-Italic, San Francisco Text;
+                font-family: 'Source Sans Pro', sans-serif;
                font-weight: 400;
             }
 
