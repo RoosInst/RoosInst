@@ -14,9 +14,10 @@
     />
     <!-- Remember to add CSR hash if this changes -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    /*  REMOVED Home tab on home page
+     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
-    }, {passive: true});
+    }, {passive: true}); */
     // Fixing jank FOUC https://medium.com/@fbnlsr/how-to-get-rid-of-the-flash-of-unstyled-content-d6b79bf5d75f
     // Helper function
     let domReady = (cb) => {
