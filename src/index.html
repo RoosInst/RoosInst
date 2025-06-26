@@ -1859,13 +1859,29 @@ h4 {
   width: 16.66%;
 }
 
+#index-panels {
+    min-height: 545.67px;
+  }
+
+  @media screen and (max-width: 321px) {
+    #index-panels {
+      height: 380.39px;
+    }
+  }
+
+  @media screen and (min-width: 321.0001px) and (max-width: 767px) {
+    #index-panels {
+      height: 354.39px;
+    }
+  }
+
 @media (min-width: 0px) and (max-width: 767px) {
   #index-slide-0 a {
     position: relative;
     left: -108px;
     top: -207px;
   }
-
+  
   #index-panels img {
     width: 100%;
     max-width: 100%;
@@ -3080,6 +3096,12 @@ footer .overlay-wrapper .overlay a {
           margin: 0;
         }
 
+        #index-panels div {
+          display: flex;
+          flex-direction: row;
+          margin: 0;
+        }
+
         #index-panels div a {
           width: 16.66%;
         }
@@ -3120,7 +3142,7 @@ footer .overlay-wrapper .overlay a {
         <div class="jumbotron index-slideshow">
           <div id="jumbotron-slider" class="index-slider">
             <div class="item" id="index-slide-0">
-              <!-- Tradeshow promo -->
+            <!-- Tradeshow promo 
             <h2 style="color:white;" class="index-slideshow-bar">Join us at IMS 2025
             </h2>
             <div class="container">
@@ -3132,8 +3154,8 @@ footer .overlay-wrapper .overlay a {
                 </div>
               </div>
             </div>
-
-              <!-- 6G PROMO 
+            -->
+              <!-- 6G PROMO    -->
               <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
               <div class="container">
                 <div class="row">
@@ -3144,7 +3166,7 @@ footer .overlay-wrapper .overlay a {
                   </div>
                 </div>
               </div>
-              -->
+           
             </div>
 
             <div class="item" id="index-slide-1">
