@@ -61,9 +61,10 @@
     </style>
 
     <style>
-      /* Inline roos.css +index only */
+/* Inline roos.css +index only */
+
 /* https://mdbootstrap.com/docs/standard/extended/dropdown-hover/ */
-      .dropdown:hover>.dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   display: block;
 }
 
@@ -110,6 +111,7 @@
   background: transparent;
 }
 
+/* Roos Instruments CSS */
 .roosC blockquote,
 q {
   quotes: """";
@@ -130,10 +132,6 @@ q {
 
 .roosC img {
   margin-bottom: 20px;
-}
-
-.roosC img.catalogImg {
-  margin-bottom: 0;
 }
 
 .roosC ul.list-compact,
@@ -1620,14 +1618,6 @@ hr.space {
   font-size: 16px;
 }
 
-.parentbox {
-  height: 150px;
-}
-
-.catalogImg {
-  max-height: 150px;
-}
-
 .mainTitleAdjust {
   color: #333;
   margin-top: 3px;
@@ -1665,13 +1655,6 @@ hr.space {
   #index-main {
     font-size: 17px;
   }
-
-  .catalogImg {
-    max-height: 230px;
-    width: initial !important;
-    height: initial !important;
-  }
-
   .parentbox,
   .parentbox2 {
     height: 230px;
@@ -1689,10 +1672,6 @@ hr.space {
 
   #index-main {
     font-size: 18px;
-  }
-
-  .catalogImg {
-    max-height: 196px;
   }
 
   .parentbox {
@@ -1741,10 +1720,6 @@ hr.space {
 
   .ROOSbanner {
     width: 440px;
-  }
-
-  .catalogImg {
-    max-height: 175px;
   }
 
   .parentbox {
@@ -1937,32 +1912,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .tab-content p {
   margin: 0;
-}
-
-/* aligns images both vertically and horizontally, used for product catalog */
-.parentbox,
-.parentbox2 {
-  width: 100%;
-  text-align: center;
-  font: 0/0 a;
-  /* KEEP THIS - fixes inline-block providing small spacing which makes not perfectly centered*/
-}
-
-.parentbox:before,
-.parentbox2:before {
-  /* create a full-height inline block pseudo-element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
-.childbox {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  font: 16px "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
-  /* KEEP - needed because parentbox, parentbox2 set font as 0 to fix spacing for inline-block*/
 }
 
 .forms-only>fieldset {
@@ -2161,10 +2110,6 @@ footer {
   margin-left: 5%;
 }
 
-.catalogImg {
-  padding: 5px;
-}
-
 #content {
   background: #FFF;
   position: relative;
@@ -2187,12 +2132,6 @@ footer {
 
 #latest-work-footer img {
   background: #c1cfe0;
-}
-
-@media (max-width: 767px) {
-  .parentbox2 {
-    height: 175px;
-  }
 }
 
 .product-price span {
@@ -2509,9 +2448,7 @@ footer .overlay-wrapper .overlay a {
   font-family: FontAwesome;
   content: "\f0c9"; /* fa-bars, fa-navicon */
 }
-
-
-    </style>
+</style>
 
     <div id="page-wrapper" class="page-boxed">
       <!-- ==========================
@@ -3484,25 +3421,11 @@ footer .overlay-wrapper .overlay a {
       <!--  BOTTOM END - v25 -->
       
     </div>
-    <noscript
-      ><style>
-        body {
-          visibility: visible;
-        }
-      </style></noscript
-    >
+    <noscript><style> body { visibility: visible; } </style></noscript>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="/js/fontawesome.all.min.js"></script>
 
