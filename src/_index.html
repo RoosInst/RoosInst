@@ -4,10 +4,6 @@
     <meta charset="utf-8" />
     <title>Roos Instruments Inc.</title>
     <link rel="canonical" href="https://roos.com/index.html" />
-<!--     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://kit.fontawesome.com/" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" />
 
     <meta
@@ -16,9 +12,10 @@
     />
     <!-- Remember to add CSR hash if this changes -->
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    /*  REMOVED Home tab on home page
+     document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
-    }, {passive: true});
+    }, {passive: true}); */
     // Fixing jank FOUC https://medium.com/@fbnlsr/how-to-get-rid-of-the-flash-of-unstyled-content-d6b79bf5d75f
     // Helper function
     let domReady = (cb) => {
@@ -33,55 +30,16 @@
     });
   </script>
 
-    <!-- TOP - v57 -->
+    <!-- TOP - v57-index -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Roos Instruments, Inc." />
     <meta name="theme-color" content="#f0f0f0" />
 
     <link rel="icon" href="/images/favicon.png" />
 
-<!--     <link
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.removeAttribute('media');"
-      href="https://fonts.googleapis.com/css2?&family=Source+Sans+3:wght@300;400&text=%21%22%23%24%25%26%27%28%29%2A%2B%2C-.%2F0123456789%3A%3B%3C%3D%3E%3F%40ABCDEFGHIJKLMNOPQRSTUVWXYZ%5B%5D_abcdefghijklmnopqrstuvwxyz%7B%7C%7D&display=swap"
-      crossorigin="anonymous"
-    /> -->
-<!--     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Michroma&text=RIeimnorstu&display=swap"
-    /> -->
-
- <!--    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-      media="screen, print"
-    /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="/css/roos.max-min.css?v2" media="screen" id="pageTheme" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css" integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="/css/roos-print.css?v2" media="print" />
-    <!-- <style media="screen, print">
-    @font-face {  font-family: 'Michroma';  font-style: normal;  font-weight: 400;  font-display: swap;
-      src: url(https://fonts.gstatic.com/l/font?kit=PN_zRfy9qWD8fEagAMg_tzaarJ22oBRRrPNp&skey=967406fa199edd66&v=v19) format('woff2');
-    }
-    /* @font-face {
-      font-family: 'Source Sans 3';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0QZMrcxHZP9o1SjFQ_5w&skey=1497ac707ba83cff&v=v10) format('woff2');
-    }
-    @font-face {
-      font-family: 'Source Sans 3';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url(https://fonts.gstatic.com/l/font?kit=nwpStKy2OAdR1K-IwhWudF-R7w0QZMrcxHZP9o1SjFQ_5w&skey=1497ac707ba83cff&v=v10) format('woff2');
-    } */
-  </style> -->
   </head>
 
   <body>
@@ -93,26 +51,30 @@
     <noscript>
       <div class="alert alert-danger">
         <div class="text-center">
-          <strong>Notice: </strong> JavaScript is not enabled, affecting site
-          navigation.<a
-            href="https://enable-javascript.com/"
-            class="btn btn-default"
-            >Please Enable JavaScript</a
-          >
+          <strong>Notice: </strong> JavaScript is not enabled, affecting sitenavigation.<a href="https://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a>
         </div>
       </div>
     </noscript>
 
+    <style title="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js">
+      .tns-outer{padding:0!important}.tns-outer [hidden]{display:none!important}.tns-outer [aria-controls],.tns-outer [data-action]{cursor:pointer}.tns-slider{-webkit-transition:all 0s;-moz-transition:all 0s;transition:all 0s}.tns-slider>.tns-item{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.tns-horizontal.tns-subpixel{white-space:nowrap}.tns-horizontal.tns-subpixel>.tns-item{display:inline-block;vertical-align:top;white-space:normal}.tns-horizontal.tns-no-subpixel:after{content:'';display:table;clear:both}.tns-horizontal.tns-no-subpixel>.tns-item{float:left}.tns-horizontal.tns-carousel.tns-no-subpixel>.tns-item{margin-right:-100%}.tns-no-calc{position:relative;left:0}.tns-gallery{position:relative;left:0;min-height:1px}.tns-gallery>.tns-item{position:absolute;left:-100%;-webkit-transition:transform 0s,opacity 0s;-moz-transition:transform 0s,opacity 0s;transition:transform 0s,opacity 0s}.tns-gallery>.tns-slide-active{position:relative;left:auto!important}.tns-gallery>.tns-moving{-webkit-transition:all .25s;-moz-transition:all .25s;transition:all .25s}.tns-autowidth{display:inline-block}.tns-lazy-img{-webkit-transition:opacity .6s;-moz-transition:opacity .6s;transition:opacity .6s;opacity:.6}.tns-lazy-img.tns-complete{opacity:1}.tns-ah{-webkit-transition:height 0s;-moz-transition:height 0s;transition:height 0s}.tns-ovh{overflow:hidden}.tns-visually-hidden{position:absolute;left:-10000em}.tns-transparent{opacity:0;visibility:hidden}.tns-fadeIn{opacity:1;z-index:0}.tns-fadeOut,.tns-normal{opacity:0;z-index:-1}.tns-vpfix{white-space:nowrap}.tns-vpfix>div,.tns-vpfix>li{display:inline-block}.tns-t-subp2{margin:0 auto;width:310px;position:relative;height:10px;overflow:hidden}.tns-t-ct{width:2333.3333333%;width:-webkit-calc(100% * 70 / 3);width:-moz-calc(100% * 70 / 3);width:calc(100% * 70 / 3);position:absolute;right:0}.tns-t-ct:after{content:'';display:table;clear:both}.tns-t-ct>div{width:1.4285714%;width:-webkit-calc(100% / 70);width:-moz-calc(100% / 70);width:calc(100% / 70);height:10px;float:left}
+    </style>
+
     <style>
-      /* Inline roos.css +index only */
+/* Inline roos.css +index only */
+
 /* https://mdbootstrap.com/docs/standard/extended/dropdown-hover/ */
-      .dropdown:hover>.dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   display: block;
 }
 
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
     pointer-events: none;
+}
+
+.dropdown-toggle::after {
+  vertical-align: 0.18em;
 }
 
 /*!
@@ -149,6 +111,7 @@
   background: transparent;
 }
 
+/* Roos Instruments CSS */
 .roosC blockquote,
 q {
   quotes: """";
@@ -169,10 +132,6 @@ q {
 
 .roosC img {
   margin-bottom: 20px;
-}
-
-.roosC img.catalogImg {
-  margin-bottom: 0;
 }
 
 .roosC ul.list-compact,
@@ -349,7 +308,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Source Sans 3", "Segoe UI", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
   background: #F0F0F0;
   color: #707070;
   font-weight: normal;
@@ -366,6 +325,12 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 0px) {
+  .page-boxed {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -761,7 +726,8 @@ form label span {
   border-bottom: 1px solid #DDDDDD;
   background: #FFFFFF;
   margin: 0;
-  height: 70px;
+  height: 72px;
+  padding: 0;
 }
 
 .navbar-offset {
@@ -770,11 +736,13 @@ form label span {
 }
 
 .navbar-default .navbar-nav>li>a {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #777777;
   font-weight: 300;
-  font-family: "Source Sans 3", "Segoe UI", "Segoe UI", sans-serif;
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
 }
 
 .navbar-default .navbar-nav>li>a>i {
@@ -824,7 +792,6 @@ form label span {
   padding: 10px 15px;
   -webkit-transition: 0.3s ease-in-out 0s;
   transition: 0.3s ease-in-out 0s;
-  background: #FFF;
   position: relative;
 }
 
@@ -864,7 +831,7 @@ form label span {
 .breadcrumb-wrapper h1 {
   float: left;
   font-size: 24px;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
   margin: 0;
   color: #555555;
 }
@@ -872,7 +839,7 @@ form label span {
 .breadcrumb-wrapper h2 {
   float: left;
   font-size: 24px;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
   margin: 0;
   color: #555555;
 }
@@ -1047,127 +1014,11 @@ footer .org ul {
   margin-bottom: 20px;
 }
 
-#pricing,
-#pricingtable .row {
-  margin: 0;
-}
-
-#pricing>div,
-#pricingtable .row>div {
-  padding: 0;
-}
-
 .row-no-padding>[class*=col-] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.pricing-plan {
-  background: #F5F5F5;
-  text-align: center;
-  -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.pricing-plan.popular {
-  background: #E5E5E5;
-  position: relative;
-  top: -35px;
-}
-
-.pricing-plan h3,
-.pricing-plan p {
-  padding: 15px 0;
-  color: #FFFFFF;
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-body .pricing-plan.popular h3,
-body .pricing-plan.popular p {
-  background: #555555;
-}
-
-.pricing-plan p {
-  font-size: 14px;
-  color: #EEEEEE;
-  padding-top: 0;
-}
-
-.pricing-plan .pricing-plan-price {
-  padding: 13px 0;
-}
-
-.pricing-plan .pricing-plan-price h2 {
-  font-size: 1.5em;
-  color: white;
-}
-
-body .pricing-plan.popular .pricing-plan-price {
-  background: #666666;
-}
-
-.pricing-plan .pricing-plan-price span {
-  color: #FFFFFF;
-}
-
-.pricing-plan .pricing-plan-price span.pricing-plan-number {
-  font-size: 50px;
-}
-
-.pricing-plan .pricing-plan-price span.pricing-plan-text {
-  font-size: 16px;
-  display: block;
-  font-weight: 300;
-  position: relative;
-  top: -10px;
-  color: rgba(215, 215, 215, 0.7);
-}
-
-.pricing-plan ul {
-  padding: 10px 30px;
-  margin-left: 0;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.pricing-plan ul li {
-  border-bottom: 1px solid #E5E5E5;
-  color: #555555;
-  line-height: 50px;
-}
-
-.pricing-plan.popular ul li {
-  border-color: #D5D5D5;
-}
-
-.pricing-plan ul li:last-child {
-  border-bottom: 0;
-}
-
-.pricing-plan ul li i {
-  color: #999999;
-  padding: 0 5px;
-}
-
-.pricing-plan .btn {
-  margin-bottom: 30px;
-}
-
-#pricingtable .pricing-plan ul {
-  padding: 10px 30px;
-  text-align: center;
-}
-
-.pricing-plan-titles {
-  margin-top: 178px;
-}
-
-#pricingtable .pricing-plan-titles ul {
-  text-align: left;
-}
 
 #services .service h3 {
   text-transform: uppercase;
@@ -1327,14 +1178,6 @@ body #services.services3 .service:hover i {
     text-align: center;
   }
 
-  .pricing-plan {
-    margin: 0 0 30px;
-  }
-
-  .pricing-plan.popular {
-    top: 0;
-  }
-
   #about-content p {
     font-size: 16px;
     line-height: 26px;
@@ -1367,9 +1210,11 @@ body #services.services3 .service:hover i {
     margin: 0;
   }
 
-  .pricing-plan.popular {
-    top: -35px;
+  .navbar-brand { 
+    width: 180px;
+    margin-right: 0px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -1436,11 +1281,6 @@ body #services.services3 .service:hover i {
   }
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 a {
   color: #4676B8;
 }
@@ -1502,8 +1342,11 @@ footer .navbar-nav>li>a:hover {
   background: #4676B8;
 }
 
+.navbar-default > .navbar-link {
+  padding: 25px 15px;
+}
+
 .content-separator,
-.pricing-plan .pricing-plan-price,
 #services.services3 .service:hover i {
   background: #4676B8;
 }
@@ -1542,11 +1385,6 @@ a:focus {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #00A7FF;
-}
-
-.pricing-plan h3,
-.pricing-plan p {
   background: #00A7FF;
 }
 
@@ -1780,14 +1618,6 @@ hr.space {
   font-size: 16px;
 }
 
-.parentbox {
-  height: 150px;
-}
-
-.catalogImg {
-  max-height: 150px;
-}
-
 .mainTitleAdjust {
   color: #333;
   margin-top: 3px;
@@ -1825,13 +1655,6 @@ hr.space {
   #index-main {
     font-size: 17px;
   }
-
-  .catalogImg {
-    max-height: 230px;
-    width: initial !important;
-    height: initial !important;
-  }
-
   .parentbox,
   .parentbox2 {
     height: 230px;
@@ -1849,10 +1672,6 @@ hr.space {
 
   #index-main {
     font-size: 18px;
-  }
-
-  .catalogImg {
-    max-height: 196px;
   }
 
   .parentbox {
@@ -1890,7 +1709,7 @@ hr.space {
   }
 
   #nav-tag {
-    font-size: 18px;
+    font-size: 0.85em;
   }
 
   .mainTitleAdjust {
@@ -1901,10 +1720,6 @@ hr.space {
 
   .ROOSbanner {
     width: 440px;
-  }
-
-  .catalogImg {
-    max-height: 175px;
   }
 
   .parentbox {
@@ -2004,7 +1819,7 @@ h4 {
   font-style: normal;
   font-size: 64px;
   line-height: 80px;
-  font-family: "Source Sans 3";
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
   letter-spacing: 0;
   color: #707070;
   opacity: 1;
@@ -2019,13 +1834,29 @@ h4 {
   width: 16.66%;
 }
 
+#index-panels {
+    min-height: 545.67px;
+  }
+
+  @media screen and (max-width: 321px) {
+    #index-panels {
+      height: 380.39px;
+    }
+  }
+
+  @media screen and (min-width: 321.0001px) and (max-width: 767px) {
+    #index-panels {
+      height: 354.39px;
+    }
+  }
+
 @media (min-width: 0px) and (max-width: 767px) {
   #index-slide-0 a {
     position: relative;
     left: -108px;
     top: -207px;
   }
-
+  
   #index-panels img {
     width: 100%;
     max-width: 100%;
@@ -2081,32 +1912,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .tab-content p {
   margin: 0;
-}
-
-/* aligns images both vertically and horizontally, used for product catalog */
-.parentbox,
-.parentbox2 {
-  width: 100%;
-  text-align: center;
-  font: 0/0 a;
-  /* KEEP THIS - fixes inline-block providing small spacing which makes not perfectly centered*/
-}
-
-.parentbox:before,
-.parentbox2:before {
-  /* create a full-height inline block pseudo-element */
-  content: " ";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-
-.childbox {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  font: 16px "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
-  /* KEEP - needed because parentbox, parentbox2 set font as 0 to fix spacing for inline-block*/
 }
 
 .forms-only>fieldset {
@@ -2188,6 +1993,18 @@ textarea {
     max-width: 176px;
   }
 }
+
+@media (max-width: 0px) {
+  .mainTitleAdjust {
+    margin-top: 17px;
+    font-size: 14px;
+  }
+
+  .ROOSbanner {
+    max-width: 100px;
+  }
+}
+
 
 .btn-index {
   margin: 0;
@@ -2293,10 +2110,6 @@ footer {
   margin-left: 5%;
 }
 
-.catalogImg {
-  padding: 5px;
-}
-
 #content {
   background: #FFF;
   position: relative;
@@ -2319,12 +2132,6 @@ footer {
 
 #latest-work-footer img {
   background: #c1cfe0;
-}
-
-@media (max-width: 767px) {
-  .parentbox2 {
-    height: 175px;
-  }
 }
 
 .product-price span {
@@ -2444,7 +2251,6 @@ img {
   }
 
   .navbar-default .navbar-nav .dropdown-menu>li>a {
-    background: #F3F3F3;
     padding: 8px 10px;
   }
 
@@ -2555,7 +2361,7 @@ footer .overlay-wrapper .overlay a {
 }
 
 #article font {
-  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "Source Sans 3", "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", arial, veranda, helvetica, sans-serif;
 }
 
 .brands>li {
@@ -2628,7 +2434,27 @@ footer .overlay-wrapper .overlay a {
   padding: 10px 5px;
   margin-bottom: 0;
 }
-    </style>
+
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler {
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+
+.navbar-toggler-icon::before {
+  font-family: FontAwesome;
+  content: "\f0c9"; /* fa-bars, fa-navicon */
+}
+
+footer svg, header svg, .top-header svg, .roosC svg {  /* FontAwesome SVG v6 fixes */
+  width: 1em;
+  padding-left: 4px;
+  padding-right: 8px;
+}
+</style>
 
     <div id="page-wrapper" class="page-boxed">
       <!-- ==========================
@@ -2661,407 +2487,400 @@ footer .overlay-wrapper .overlay a {
         </div>
       </div>
       <header>
-        <nav class="navbar fixed-top navbar-expand-sm sticky-top yamm">
-        <div id="roosBrand" class="navbar-brand">
-            <div class="d-none d-lg-block">
-              <a class="nav-link" href="/index.html">
-                <div class="mainTitleAdjust" style="display: flex;">
-                  <img width="480" height="40" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+        <nav class="navbar fixed-top navbar-expand-md sticky-top yamm">
+          <div class="container">
+            <div id="roosBrand" class="navbar-brand">
+                <div class="d-none d-lg-block">
+                  <a class="nav-link" href="/index.html">
+                    <div class="mainTitleAdjust" style="display: flex;">
+                      <img width="350" height="38.5" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                    </div>
+                    <div class="ROOSbanner"></div>
+                    <span id="nav-tag"
+                      >Modular
+                      <abbr title="Automated Test Equipment">ATE</abbr> for the
+                      World's Most Advanced Technology</span
+                    >
+                  </a>
                 </div>
-                <div class="ROOSbanner"></div>
-                <span id="nav-tag"
-                  >Modular
-                  <abbr title="Automated Test Equipment">ATE</abbr> for the
-                  World's Most Advanced Technology</span
-                >
-              </a>
-            </div>
-            <div class="d-none d-sm-block d-lg-none">
-              <a href="/index.html">
-                <div style="font-size: 25px" class="mainTitleAdjust">
-                  <img width="60" height="30" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
-                  <br />
-                  <img width="190" height="30" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                <div class="d-none d-md-block d-lg-none">
+                  <a href="/index.html">
+                    <div style="font-size: 25px" class="mainTitleAdjust">
+                      <img width="80" height="31" class="d-inline-block align-text-top" src="/images/Brand_Roos.svg" alt="Roos" title="Roos" style="float: left;">&thinsp;
+                      <img width="192.3" height="31" class="d-inline-block align-text-top" src="/images/Brand_Instruments.svg" alt="Instruments" title="Instruments"  style="float: left;">
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="d-block d-sm-none container">
-              <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-              <a class="nav-link" href="/index.html">
-                <div style="display: inline-block" class="mainTitleAdjust">
-                  <img width="346" height="36" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                <div class="d-block d-md-none">
+                  <!-- Separate than above div because .container is lost when shrunk, needed to re-add -->
+                  <a class="nav-link" href="/index.html">
+                    <div style="display: inline-block" class="mainTitleAdjust">
+                      <img width="300" height="33" class="d-inline-block align-text-top" src="/images/Brand_RoosInstruments.svg" alt="Roos Instruments" title="Roos Instruments" style="float: left;">
+                    </div>
+                  </a>
+                  <div class="ROOSbanner"></div>
                 </div>
-              </a>
-              <div class="ROOSbanner"></div>
             </div>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="container-fluid d-block d-sm-none">
-          <div class="nav-item ms-auto">
-              <a class="nav-item" title="Search Button" href="/search.html"><i class="fa-solid fa-search"></i></a>
-          </div>
-        </div>
-
-            
-          <!-- end of .navbar-header -->
-          <div class="navbar navbar-collapse collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
-            <div class="container-fluid">
-              <ul class="nav navbar-nav ms-auto d-flex">
-                <li id="nav-home" class="nav-item dropdown">
-                  <a class="nav-link" href="/index.html" aria-current="page">Home</a>
-                </li>
-                <li
-                  id="nav-mobile-support"
-                  class="nav-item dropdown d-block d-sm-none"
-                >
-                  <a class="nav-link" href="/support.html">Support</a>
-                </li>
-                <li id="nav-products" class="nav-item dropdown">
-                  <a
-                    id="navProdDropdown" role="button" data-bs-toggle="dropdown"
-                    class="dropdown-toggle nav-link"
-                    data-hover="dropdown"
-                    data-delay="300"
-                    aria-expanded="false"
-                    >Products</a>
-                  <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/products.html"
-                        ><i class="fa-solid fa-angles-right"></i>Overview</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/infrastructure.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i>Test
-                        Systems</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/instruments.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Instruments</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/tims.html"
-                        ><i class="nav-indent2 fas fa-angles-right"></i
-                        >Browse TIMs</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/software.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Software</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/fixture.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Device Interface</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/rik"
-                        ><i class="fa-solid fa-angles-right"></i>RIK Catalog</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-services" class="nav-item dropdown">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    onclick=""
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Services</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/services.html"
-                        ><i class="fa-solid fa-angles-right"></i>Overview</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/turnkey.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Turnkey</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/production.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Production</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/guru.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Enterprise</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/training.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Training</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-company" class="nav-item dropdown">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    onclick=""
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Company</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/company.html"
-                        ><i class="fa-solid fa-angles-right"></i>About Us</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/news.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i>News
-                        & Events</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/careers.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Careers</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/mediaKit.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Media Kit</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/visitRI.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i>Plan
-                        a Visit</a
-                      >
-                    </li>
-                    <li class="dropdown-item">
-                      <a class="nav-link" href="/contact.html"
-                        ><i class="nav-indent1 fas fa-angles-right"></i
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
-                  <a
-                    rel="nofollow"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown"
-                    data-hover="dropdown"
-                    data-delay="300"
-                    >Support</a>
-                  <section id="hideOnSupport" class="dropdown-menu">
-                    <div class="yamm-content">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <h3 class="text-center">Planning</h3>
-                          <div style="text-align: center">
-                            <a
-                              href="https://learn.roos.com/"
-                              class="btn btn-primary"
-                              ><i class="fa-solid fa-school"></i> Online Training</a
-                            >
-                          </div>
-                          <div style="width: 150px" class="centerImg">
-                            <ul style="margin-top: 15px" class="nav vertical-nav">
-                              <li class="nav-item">
-                                <a class="nav-link" href="/supportPlans.html"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Support Plans</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/maintenance.html"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Maintenance</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/training.html"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Training</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <h3 class="text-center">Online Documents</h3>
-                          <form
-                            name="docsSearch"
-                            method="POST"
-                            action="#"
-                            onSubmit="goSearch(); return false;"
-                          >
-                            <div class="form-group nospace">
-                              <div
-                                id="searchFail"
-                                class="alert alert-warning hidden"
-                                role="alert"
+            <div class="container-fluid d-none">
+              <div class="nav-item ms-auto">
+                  <a class="nav-item" title="Search Button" href="/search.html"><i class="fa-solid fa-search"></i></a>
+              </div>
+            </div>
+                
+            <!-- end of .navbar-header -->
+            <div class="collapse navbar-collapse justify-content-end navbar-default" role="navigation" id="navbarMobile">
+              <div class="container-fluid">
+                <div class="navbar-collapse float-end" id="navbarSupportedContent">
+                <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+                  <li id="nav-mobile-support" class="nav-item dropdown d-block d-sm-none">
+                    <a class="nav-link" title="Search" href="/search.html">Search</i>
+                    <a class="nav-link" title="Get Support" href="/support.html">Support</a>
+                  </li>
+                  <li id="nav-products" class="nav-item dropdown">
+                    <a
+                      id="navProdDropdown" role="button" data-bs-toggle="dropdown"
+                      class="dropdown-toggle nav-link"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      aria-expanded="false"
+                      >Products</a>
+                    <ul class="dropdown-menu" aria-labelledby="navProdDropdown">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/products.html"
+                          ><i class="fa-solid fa-angles-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/infrastructure.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i>Test
+                          Systems</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/instruments.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Instruments</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/tims.html"
+                          ><i class="nav-indent2 fas fa-angles-right"></i
+                          >Browse TIMs</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/software.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Software</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/fixture.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Device Interface</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/rik"
+                          ><i class="fa-solid fa-angles-right"></i>RIK Catalog</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-services" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Services</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/services.html"
+                          ><i class="fa-solid fa-angles-right"></i>Overview</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/turnkey.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Turnkey</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/production.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Production</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/guru.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Enterprise</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/training.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Training</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="top:24px;" id="nav-company" class="nav-item dropdown">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      onclick=""
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Company</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/company.html"
+                          ><i class="fa-solid fa-angles-right"></i>About Us</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/news.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i>News
+                          & Events</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/careers.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Careers</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/mediaKit.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Media Kit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/visitRI.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i>Plan
+                          a Visit</a
+                        >
+                      </li>
+                      <li class="dropdown-item">
+                        <a class="nav-link" href="/contact.html"
+                          ><i class="nav-indent1 fas fa-angles-right"></i
+                          >Contact Us</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li style="padding-top:24px;" id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
+                    <a
+                      rel="nofollow"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown"
+                      data-hover="dropdown"
+                      data-delay="300"
+                      >Support</a>
+                    <section id="hideOnSupport" class="dropdown-menu">
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <h3 class="text-center">Planning</h3>
+                            <div style="text-align: center">
+                              <a
+                                href="https://learn.roos.com/"
+                                class="btn btn-primary"
+                                ><i class="fa-solid fa-school"></i> Online Training</a
                               >
-                                <strong>Oops!</strong> Search for something.
-                              </div>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="query"
-                                  placeholder="Search Documentation"
-                                  required
-                                />
-                                <span
-                                  onclick="goSearch(); return false;"
-                                  class="input-group-btn"
-                                  ><button
-                                    class="btn btn-primary"
-                                    type="button"
-                                    title="Search"
-                                  >
-                                    <i class="fa-solid fa-search"></i></button
-                                ></span>
-                              </div>
                             </div>
-                          </form>
-                          <div class="centerImg" style="width: 150px">
-                            <ul style="margin-top: 10px" class="nav vertical-nav">
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/dev"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Developer</a
+                            <div style="width: 150px" class="centerImg">
+                              <ul style="margin-top: 15px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/supportPlans.html"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Support Plans</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/maintenance.html"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/training.html"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Training</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <h3 class="text-center"><span sytle=""></span><span class="d-none d-sm-block">Online </span>Documents</h3>
+                            <form
+                              name="docsSearch"
+                              method="POST"
+                              action="#"
+                              onSubmit="goSearch(); return false;"
+                            >
+                              <div class="form-group nospace">
+                                <div
+                                  id="searchFail"
+                                  class="alert alert-warning visually-hidden"
+                                  role="alert"
+                                >
+                                  <strong>Oops!</strong> Search for something.
+                                </div>
+                                <div class="input-group">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="query"
+                                    placeholder="Search Documentation"
+                                    required
+                                  />
+                                  <span
+                                    onclick="goSearch(); return false;"
+                                    class="input-group-btn"
+                                    ><button
+                                      class="btn btn-primary"
+                                      type="button"
+                                      title="Search"
+                                    >
+                                      <i class="fa-solid fa-search"></i></button
+                                  ></span>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="centerImg" style="width: 150px">
+                              <ul style="margin-top: 10px" class="nav vertical-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/dev"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Developer</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/admin"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Administrator</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/maint"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Maintenance</a
+                                  >
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="/help/operate"
+                                    ><i class="fa-solid fa-angles-right"></i
+                                    >Operator</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>
+                              Reference Guide
+                              <a
+                                href="/refGuide"
+                                title="Cassini Reference Guide Share Link"
+                                ><i class="fa-solid fa-share"></i
+                              ></a>
+                            </h3>
+                            <div style="text-align: center">
+                              <a
+                                class="btn btn-primary"
+                                href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
+                                download="CassiniReferenceGuide_2.8_mini.pdf"
+                                ><i class="far fa-file-pdf"></i>Download PDF</a
+                              >
+                              <a
+                                rel="noopener"
+                                href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"
+                              >
+                                <img
+                                  style="padding-top: 9px; width: 160px"
+                                  class="centerImg"
+                                  src="/images/ibook-cassini-ref-guide.png"
+                                  alt="Cassini Reference Guide iBook"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 text-center">
+                            <h3>Get Support</h3>
+                            <a
+                              class="nav-link btn btn-primary"
+                              href="mailto:support@roos.com"
+                              ><i class="fa-solid fa-envelope"></i> Email Support</a
+                            >
+                            <ul style="margin-bottom: 15px; text-align: center; list-style-type: none;">
+                              <li style="padding-top: 15px">
+                                <a href="tel:+1-408-748-8589"
+                                  >&nbsp;<i class="fa-solid fa-phone"></i
+                                  >+1-408-748-8589</a
                                 >
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="/help/admin"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Administrator</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/maint"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Maintenance</a
-                                >
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/help/operate"
-                                  ><i class="fa-solid fa-angles-right"></i
-                                  >Operator</a
+                                <small
+                                  ><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM
+                                  PST M-F</small
                                 >
                               </li>
                             </ul>
-                          </div>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                          <h3>
-                            Reference Guide
-                            <a
-                              href="/refGuide"
-                              title="Cassini Reference Guide Share Link"
-                              ><i class="fa-solid fa-share"></i
-                            ></a>
-                          </h3>
-                          <div style="text-align: center">
-                            <a
-                              class="btn btn-primary"
-                              href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"
-                              download="CassiniReferenceGuide_2.8_mini.pdf"
-                              ><i class="far fa-file-pdf"></i>Download PDF</a
-                            >
-                            <a
-                              rel="noopener"
-                              href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"
-                            >
-                              <img
-                                style="padding-top: 9px; width: 160px"
-                                class="centerImg"
-                                src="/images/ibook-cassini-ref-guide.png"
-                                alt="Cassini Reference Guide iBook"
-                              />
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                          <h3>Get Support</h3>
-                          <a
-                            class="nav-link btn btn-primary"
-                            href="mailto:support@roos.com"
-                            ><i class="fa-solid fa-envelope"></i> Email Support</a
-                          >
-                          <ul style="margin-bottom: 15px; text-align: center">
-                            <li style="padding-top: 15px">
-                              <a href="tel:+1-408-748-8589"
-                                >&nbsp;<i class="fa-solid fa-phone"></i
-                                >&nbsp;&nbsp;+1-408-748-8589</a
+                            <div style="text-align: center">
+                              <a
+                                rel="noopener"
+                                href="https://get.teamviewer.com/roosinst"
+                                class="btn btn-primary"
                               >
-                            </li>
-                            <li class="nav-item">
-                              <small
-                                ><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM
-                                PST M-F</small
+                                <i class="fa-solid fa-binoculars"></i> Remote Support</a
                               >
-                            </li>
-                          </ul>
-                          <div style="text-align: center">
-                            <a
-                              rel="noopener"
-                              href="https://get.teamviewer.com/roosinst"
-                              class="btn btn-primary"
-                            >
-                              <i class="fa-solid fa-binoculars"></i> Remote Support</a
-                            >
+                            </div>
+                            <br />
                           </div>
-                          <br />
                         </div>
                       </div>
-                    </div>
-                  </section>
-                </li>
-                <li
-                  id="nav-mobile-privacy"
-                  class="nav-item d-block d-sm-none"
-                >
-                  <a class="nav-link" href="/privacy.html">Privacy</a>
-                </li>
-              </ul>
-              <ul class="nav nav-item d-none d-sm-block">
-                <li style="margin-right: -12px" class="search-form-toggle">
-                  <a class="nav-link navButton" title="Search" href="/search.html"
-                    ><i class="fa-solid fa-search"></i
-                  ></a>
-                </li>
-              </ul>
+                    </section>
+                  </li>
+                  <li
+                    id="nav-mobile-privacy"
+                    class="nav-item d-block d-sm-none"
+                  >
+                    <a class="nav-link" href="/privacy.html">Privacy</a>
+                  </li>
+                </ul>
+                <ul class="nav nav-item d-none d-md-block">
+                  <li style="margin-right: -12px" class="search-form-toggle">
+                    <a class="nav-link navButton" title="Search" href="/search.html"
+                      ><i class="fa-solid fa-search"></i
+                    ></a>
+                  </li>
+                </ul>
+            </div>
           </div>
+          </div> <!-- container around nav-->
         </nav>
       </header>
 
       <!-- Print view only -->
       <div class="clearfix d-none d-print-block">
         <div class="float-start">
-          <img
-            height="50" width="293"
-            src="/images/titleForPrint.jpg"
-            alt="RI Title"
-          />
+          <img height="50" width="293" src="/images/titleForPrint.jpg" alt="RI Title" loading="lazy" />
         </div>
         <div class="float-end">
-          <img style="width: 11px" src="/images/RILogoWeb.png" alt="RI logo" />
+          <img style="width: 11px" src="/images/RILogoWeb.webp" alt="RI logo" />
         </div>
       </div>
 
@@ -3072,11 +2891,7 @@ footer .overlay-wrapper .overlay a {
       <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
       <style>
-        /* Show Promo
-        #index-slide-0 {
-          background-image: url('/images/index-2022-itc.webp') !important;
-          background-position-x: right !important;
-        } */
+ 
 
         @media (min-width: 0) and (max-width: 767px) {
           #index-slide-0 a {
@@ -3087,19 +2902,13 @@ footer .overlay-wrapper .overlay a {
         }
 
         #index-slide-0 h2, #index-slide-0 h5 {
-          color: #b3e0dc;
+          color: rgb(179, 224, 220);
         }
 
         #index-slide-0 .btn-index {
-          color: #b3e0dc;
-          border-color: #b3e0dc;
+          color: rgb(179, 224, 220);
+          border-color: rgb(179, 224, 220);
           background-color: transparent;
-        }
-
-
-        #index-slide-0 {
-          background-image: url(/images/index-slide-0.webp);
-          background-position: center;
         }
 
         #index-slide-1 {
@@ -3149,7 +2958,7 @@ footer .overlay-wrapper .overlay a {
         }
 
         .tns-nav button.tns-nav-active {
-          background: #4676B8;
+          background: rgb(70, 118, 184);
           width: 24px;
           border-radius: 12px;
         }
@@ -3221,8 +3030,14 @@ footer .overlay-wrapper .overlay a {
           color: rgba(70, 118, 184, 0.1);
         }
 
-        .tns-controls button[data-controls='prev'] { border-radius: 45% 45% 0 0; }
-        .tns-controls button[data-controls='next'] { border-radius: 0 0 45% 45%; }
+        .tns-controls button[data-controls='prev'] { border-radius: 45% 45% 0 0; padding: 2px 3px; font-weight: 400; }
+        .tns-controls button[data-controls='next'] { border-radius: 0 0 45% 45%; padding: 0 3px 4px; font-weight: 400; }
+
+        #index-panels div {
+          display: flex;
+          flex-direction: row;
+          margin: 0;
+        }
 
         #index-panels div {
           display: flex;
@@ -3253,35 +3068,48 @@ footer .overlay-wrapper .overlay a {
           #jumbotron-slider { height: 992px;};
         }
 
+        /* Show Promo 
+        #index-slide-0 {
+          background-image: url('/images/index-ims-2025.webp') !important;
+          background-position-x: left !important;
+        } */
+        /* Standard Slide  */
+        #index-slide-0 {
+          background-image: url(/images/index-slide-0.webp);
+          background-position: center;
+        }
+
       </style>
 
       <section id="jumbotron" class="roosC">
         <div class="jumbotron index-slideshow">
           <div id="jumbotron-slider" class="index-slider">
             <div class="item" id="index-slide-0">
-              <!-- 5G PROMO -->
-
-              <!-- Tradeshow promo 
-            <h2 style="color:white;" class="index-slideshow-bar">Visit us at International Test Conference 2023
+            <!-- Tradeshow promo 
+            <h2 style="color:white;" class="index-slideshow-bar">Join us at IMS 2025
             </h2>
             <div class="container">
               <div class="row">
                 <div>
-                  <a href="http://www.itctestweek.org/exhibitors-list/roos-instruments/" class="btn btn-index btn-inverse"
-                    style="color: black; border-color: white; background-color: white;">Visit Booth #316</a>
+                  <a href="https://ims-ieee.org/" class="btn btn-index btn-inverse"
+                    style="color: black; border-color: white; background-color: white;"
+                    target="_blank" rel="noopener nofollow">Visit Booth 132</a>
                 </div>
               </div>
-            </div>  -->
+            </div>
+            -->
+              <!-- 6G PROMO    -->
               <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-4">
-                    <h5>Adding Higher Frequency Test Capabilities...</h5>
+                  <div style="width: 50%;">
+                    <h5>Adding Higher Frequency <br>Test Capabilities...</h5>
                     <h5>Cassini has 6G Covered.</h5>
                     <a href="/6g.html" class="btn btn-index">6G Device Testing</a>
                   </div>
                 </div>
               </div>
+           
             </div>
 
             <div class="item" id="index-slide-1">
@@ -3290,7 +3118,7 @@ footer .overlay-wrapper .overlay a {
               </h2>
               <div class="container">
                 <div class="row">
-                  <div class="col-xs-7">
+                  <div style="width: 50%; color: #000;">
                     <h5>When Add-On RF Can't Get the</h5>
                     <h5>Performance you Need...</h5>
                     <h5>Now There's an ATE Solution That Puts RF First.</h5>
@@ -3367,35 +3195,11 @@ footer .overlay-wrapper .overlay a {
           </div>
         </div>
       </section>
+      <!--  Notices
       <section id="notices" class="container">
-        <!--  Notices
-      <div class="row">
-        <div class="col-sm-12">
-          <h2>ITC 2023 - Allyship in the test community: a real-world guide to <abbr
-              title="Diversity, Equity, and Inclusion">DEI</abbr>.</h2>
-          <p>Join the Diversity, Equity, and Inclusion (DEI) discussion on with the test community.
-            Learn practical suggestions on how we can be better allies, help members of under-represented groups 
-            get a foothold, and create more welcoming and inclusive workplaces.
-            </p>
-            <div>
-          <a rel="noopener" href="https://easychair.org/smart-program/ITC2023/2023-10-11.html#session:76892"
-            title="Allyship in the test community: a real-world guide to DEI" target="_blank" rel="nofollow noopener">
-            Wednesday, Oct 11 14:40-15:30<br>
-            Location: Grand Ballroom Center @ Disneyland CA, United States</a>
-            <br>
-            <span>
-            Panel: <a rel="noopener" href="https://www.linkedin.com/in/teresa-mclaurin-6290a21/" target="_blank" rel="nofollow noopener">Cathy Rossi Roos</a>, 
-            <a rel="noopener" href="https://www.linkedin.com/in/teresa-mclaurin-6290a21/" target="_blank" rel="nofollow noopener">Teresa McLaurin</a>, 
-            <a rel="noopener" href="https://www.linkedin.com/in/shawn-blanton-b129876/" target="_blank" rel="nofollow noopener">Shawn Blanton</a> will be joined by AMD DEI coordinator 
-            <a rel="noopener" href="https://www.linkedin.com/in/adrienne-anderson-graml/" target="_blank" rel="nofollow noopener">Adrienne Anderson Graml</a>
-          </span>
-        </div>
-      </div> -->
-        <hr class="space" />
+       <hr class="space" />
         <div class="row">
-          <div
-            class="col-sm-12"
-            style="
+          <div class="col-sm-12" style="
               background-color: #eeeeee;
               border-color: rgba(0, 0, 0, 0.1);
               border-width: 0 0.9375rem 0 0.9375rem;
@@ -3404,11 +3208,8 @@ footer .overlay-wrapper .overlay a {
             "
           >
             <div class="col-sm-12">
-              <span
-                ><i class="far fa-newspaper"></i>
-                <a
-                  target="_blank"
-                  rel="noopener nofollow"
+              <span><i class="far fa-newspaper"></i>
+                <a target="_blank" rel="noopener nofollow"
                   style="font-size: 18px"
                   href="https://semiengineering.com/integration-challenges-for-ate-data/"
                 >
@@ -3423,7 +3224,13 @@ footer .overlay-wrapper .overlay a {
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-sm-12">
+          <h2>IMS 2025</h2>
+              <a class="link" href="https://ims-ieee.org/" title="IMS2025 | 15-20 June 2025 in San Francisco" target="_blank" rel="noopener nofollow">
+                <img src="/images/IMS2025-728x90.webp" alt="IMS2025 | 15-20 June 2025 in San Francisco" width="100%" height="90" /> 
+              </a>
+            </div>
+      </section> -->
       <section id="site-nav">
         <div id="content" class="roosC">
           <section id="index-panels">
@@ -3506,7 +3313,7 @@ footer .overlay-wrapper .overlay a {
                       <a href="https://goo.gl/maps/4eQnc" target="_blank" rel="nofollow noopener">
                         <i class="fa-solid fa-map-marker-alt"></i>
                         <span class="contactLinks adr">
-                          <span class="street-address">&nbsp;&nbsp;2285 Martin Ave</span><br />
+                          <span class="street-address">2285 Martin Ave</span><br />
                           <span class="locality">Santa Clara</span>,
                           <span class="region">CA</span>&nbsp;
                           <span class="postal-code">95050</span>,
@@ -3516,10 +3323,10 @@ footer .overlay-wrapper .overlay a {
                     </li>
                     <li style="margin: 10px 0px">
                       <a href="mailto:support@roos.com"><i class="fa-solid fa-envelope"></i><span class="contactLinks">
-                          &nbsp;&nbsp;support@roos.com</span></a>
+                          support@roos.com</span></a>
                     </li>
                     <li>
-                      <a href="tel:+1-408-748-8589">&nbsp;<i class="fa-solid fa-phone"></i><span class="contactLinks">&nbsp;&nbsp;
+                      <a href="tel:+1-408-748-8589">&nbsp;<i class="fa-solid fa-phone"></i><span class="contactLinks">
                         +1-408-748-8589</span></a>
                     </li>
                   </ul>
@@ -3620,155 +3427,15 @@ footer .overlay-wrapper .overlay a {
       <!--  BOTTOM END - v25 -->
       
     </div>
-    <noscript
-      ><style>
-        body {
-          visibility: visible;
-        }
-      </style></noscript
-    >
+    <noscript><style> body { visibility: visible; } </style></noscript>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-<!--     <script
-      defer
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
-    ></script>
-
-<script src="/js/fontawesome.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="/js/fontawesome.all.min.js"></script>
 
     <script>
-    
-    
-   
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("nav-home").classList.add("active");
-    });
-  
-    /* 
-      $(window).scroll(function () {
-        if ($(window).width() > 991) {
-          if ($(window).scrollTop() > 50) {
-            $(".navbar").addClass("navbar-offset");
-            $(".navbar").removeClass("navbar-static-top");
-            $(".navbar").addClass("navbar-fixed-top");
-            $("body").css("padding-top", "70px");
-          } else {
-            $(".navbar").removeClass("navbar-offset");
-            $(".navbar").removeClass("navbar-fixed-top");
-            $(".navbar").addClass("navbar-static-top");
-            $("body").css("padding-top", "0px");
-          }
-        } else {
-          if ($(window).scrollTop()) {
-            $(".navbar").addClass("navbar-offset");
-            $(".navbar").removeClass("navbar-static-top");
-            $(".navbar").addClass("navbar-fixed-top");
-            $("body").css("padding-top", "40px");
-          } else {
-            $(".navbar").removeClass("navbar-offset");
-            $(".navbar").removeClass("navbar-fixed-top");
-            $(".navbar").addClass("navbar-static-top");
-            $("body").css("padding-top", "0px");
-          }
-        }
-      });
-
-      !(function (e, n) {
-        var o = e();
-        (e.fn.dropdownHover = function (t) {
-          return "ontouchstart" in document
-            ? this
-            : ((o = o.add(this.parent())),
-              this.each(function () {
-                function r() {
-                  d.parents(".navbar").find(".navbar-toggle").is(":visible") ||
-                    (n.clearTimeout(a),
-                    n.clearTimeout(i),
-                    (i = n.setTimeout(function () {
-                      o.find(":focus").blur(),
-                        v.instantlyCloseOthers === !0 && o.removeClass("open"),
-                        n.clearTimeout(i),
-                        d.attr("aria-expanded", "true"),
-                        s.addClass("open"),
-                        d.trigger(h);
-                    }, v.hoverDelay)));
-                }
-                var a,
-                  i,
-                  d = e(this),
-                  s = d.parent(),
-                  u = { delay: 500, hoverDelay: 0, instantlyCloseOthers: !0 },
-                  l = {
-                    delay: e(this).data("delay"),
-                    hoverDelay: e(this).data("hover-delay"),
-                    instantlyCloseOthers: e(this).data("close-others"),
-                  },
-                  h = "show.bs.dropdown",
-                  c = "hide.bs.dropdown",
-                  v = e.extend(!0, {}, u, t, l);
-                s.hover(
-                  function (e) {
-                    return s.hasClass("open") || d.is(e.target)
-                      ? void r(e)
-                      : !0;
-                  },
-                  function () {
-                    n.clearTimeout(i),
-                      (a = n.setTimeout(function () {
-                        d.attr("aria-expanded", "false"),
-                          s.removeClass("open"),
-                          d.trigger(c);
-                      }, v.delay));
-                  }
-                ),
-                  d.hover(function (e) {
-                    return s.hasClass("open") || s.is(e.target)
-                      ? void r(e)
-                      : !0;
-                  }),
-                  s.find(".dropdown-submenu").each(function () {
-                    var o,
-                      t = e(this);
-                    t.hover(
-                      function () {
-                        n.clearTimeout(o),
-                          t.children(".dropdown-menu").show(),
-                          t.siblings().children(".dropdown-menu").hide();
-                      },
-                      function () {
-                        var e = t.children(".dropdown-menu");
-                        o = n.setTimeout(function () {
-                          e.hide();
-                        }, v.delay);
-                      }
-                    );
-                  });
-              }));
-        }),
-          e(document).ready(function () {
-            e('[data-hover="dropdown"]').dropdownHover();
-          });
-      })(jQuery, window);
-
-       */
-
       function goSearch() {
         var docSearch = window.document.docsSearch;
         var searchPhrase = docSearch.query.value.toString(); //ensures numbers will be treated as strings
@@ -3802,17 +3469,25 @@ footer .overlay-wrapper .overlay a {
           edgePadding: "0",
           controlsPosition: "top",
           controlsText: [
-            "<i class='fa fa-angle-up' aria-label='previous'></i>",
-            "<i class='fa fa-angle-down' aria-label='next'></i>",
+            "&#8593;",
+            "&#8595;",
           ],
           navPosition: "top",
           arrowKeys: "true",
-          controls: true,
-          nav: true,
           autoplay: true,
           autoplayButtonOutput: false,
           lazyload: false,
           speed: 1200,
+          responsive: {
+            0: {
+              nav: false,
+              controls: false,
+            },
+            768: {
+              nav: true,
+              controls: true,  
+            },
+          },
         });
 
         //Tiny Slider - HIDDEN CONTROLS

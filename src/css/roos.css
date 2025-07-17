@@ -3129,3 +3129,9 @@ ul {
 .inactive {
   color: black !important;
 }
+
+footer svg, header svg, .top-header svg, .roosC svg {  /* FontAwesome SVG v6 fixes */
+  width: 1em;
+  padding-left: 4px;
+  padding-right: 8px;
+}
