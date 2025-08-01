@@ -3430,58 +3430,10 @@ footer .overlay-wrapper .overlay a {
     <script src="/js/fontawesome.all.min.js"></script>
 
     <script>
-      function goSearch() {
-        var docSearch = window.document.docsSearch;
-        var searchPhrase = docSearch.query.value.toString(); //ensures numbers will be treated as strings
-        //alert(searchPhrase)
-        if (searchPhrase == "") {
-          $("#searchFail").removeClass("invisible");
-          docSearch.query.value = "";
-          docSearch.query.focus();
-          return true;
-        } else {
-          var searchString =
-            "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" +
-            escape(searchPhrase);
-          //alert(searchString);
-          location.href = searchString;
-          $("#searchFail").addClass("invisible");
-          docSearch.query.value = "";
-          return true;
-        }
-      } //end function
-
       $(document).ready(function () {
-        // $(".bottom").load("/_bottom-min.html");
-
         //Tiny Slider
         var slider = tns({
-          container: ".index-slider",
-          mode: "carousel", // default: "carousel"
-          axis: "vertical",
-          gutter: "0",
-          edgePadding: "0",
-          controlsPosition: "top",
-          controlsText: [
-            "&#8593;",
-            "&#8595;",
-          ],
-          navPosition: "top",
-          arrowKeys: "true",
-          autoplay: true,
-          autoplayButtonOutput: false,
-          lazyload: false,
-          speed: 1200,
-          responsive: {
-            0: {
-              nav: false,
-              controls: false,
-            },
-            768: {
-              nav: true,
-              controls: true,  
-            },
-          },
+          container: ".index-slider", mode: "carousel", axis: "vertical", gutter: "0", edgePadding: "0", controlsPosition: "top", controlsText: ["&#8593;","&#8595;"], navPosition: "top", arrowKeys: "true", autoplay: true, autoplayButtonOutput: false, lazyload: false, speed: 1200, responsive:{ 0:{ nav: false, controls: false,}, 768:{ nav: true, controls: true,},},
         });
 
         //Tiny Slider - HIDDEN CONTROLS
