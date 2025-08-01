@@ -41,7 +41,7 @@
         crossorigin="anonymous"></script>
     <script defer src="/js/roos.min.js?v2"></script>
 
-    <script src="/js/fontawesome.all.min.js"></script>
+    <script src="/js/fontawesome.all.min.js"></script> 
 </head>
 
 <body>
@@ -368,9 +368,9 @@
             <div class="container">
                 <h2>6G Device Testing</h2>
                 <ol class="breadcrumb">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Products Overview</a></li>
-                    <li class="active">6G Testing</li>
+                    <li><a href="/index.html">Home</a></li>&nbsp;<i class="fa-solid fa-angles-right"></i>
+                    <li><a href="/products.html">Products Overview</a></li>&nbsp;<i class="fa-solid fa-angles-right"></i>
+                    <li class="active"></i>6G Testing</li>
                 </ol>
             </div>
         </section>
@@ -442,6 +442,23 @@
                     slider.goTo('first')
                 });
 
+                var ts20 = tns({
+                    container: '#TestSet20-tns',
+                    items: 1,
+                    controls: true,
+                    controlsPosition: 'bottom',
+                    controlsText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+                    nav: true,
+                    arrowkeys: true,
+                    autoplay: true,
+                    autoplayPosition: 'bottom',
+                    autoplayTimeout: 3500,
+                    autoplayHoverPause: false,
+                    autoplayText: ['', ''],
+                    fixedWidth: 900,
+                    loop: true
+                })
+
                 $("#TestSet20-slider").owlCarousel({
                     items: 1,
                     autoPlay: 2000,
@@ -451,7 +468,7 @@
                     loop: true,
                     autoplayHoverPause: true,
                     nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
                 });
@@ -464,7 +481,7 @@
                     loop: true,
                     autoplayHoverPause: true,
                     nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
                 });
@@ -477,7 +494,7 @@
                     loop: true,
                     autoplayHoverPause: true,
                     nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
                 });
@@ -490,7 +507,7 @@
                     loop: true,
                     autoplayHoverPause: true,
                     nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
                 });
@@ -503,7 +520,7 @@
                     loop: true,
                     autoplayHoverPause: true,
                     nav: true,
-                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
                     autoplay: true,
                     autoplayHoverPause: true
                 });
@@ -593,7 +610,6 @@
                                 coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
-                    <!-- Where is the DIV? -->
                     <div class="item">
                         <a id="sixG-slide-4" class="anchor"></a>
                         <img src="/images/6GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img"
@@ -611,11 +627,8 @@
                                 coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
-                    <!-- Where is the DIV? close1-->
                 </div>
-                <!-- Where is the DIV? close2-->
             </div>
-            <!-- Where is the DIV? close3-->
         </section>
 
         <!-- ==========================
@@ -681,8 +694,8 @@
                     Cassini's mixing and matching of multiple TIMs for up to 16 independent
                     measurement ports plus Test Fixture based port multiplication for support of nearly unlimited
                     number of device ports.</p>
-                <div id="TestSet20-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="ts20-slide-1">
+                <div id="TestSet20-tns">
+                    <div class="item row" id="ts20-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gSource.svg" alt="20 GHz Test Set Signal Source">
@@ -699,7 +712,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-2">
+                    <div class="item row" id="ts20-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gNsource.svg" alt="20 GHz Test Set Noise Sourcing">
@@ -711,7 +724,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-3">
+                    <div class="item row" id="ts20-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gSpara.svg" alt="20 GHz Test Set S-Parameters">
@@ -726,7 +739,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-4">
+                    <div class="item row" id="ts20-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gDirectR.svg" alt="20 GHz Test Set Direct Receive">
@@ -739,7 +752,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-5">
+                    <div class="item row" id="ts20-slide-5">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gLoadCond.svg" alt="20 GHz Test Load Conditions">
@@ -751,7 +764,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-5">
+                    <div class="item row" id="ts20-slide-5">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/Testset20gNFex.svg" alt="20 GHz Test Set Noise Figure">
@@ -767,7 +780,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-6">
+                    <div class="item row" id="ts20-slide-6">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gS11ex.svg" alt="20 GHz Test Set Return Loss">
@@ -783,7 +796,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts20-slide-7">
+                    <div class="item row" id="ts20-slide-7">
                         <div class="layout2">
                             <div class="leftSmall col-sm-7">
                                 <img src="/images/TestSet20gS21ex.svg" alt="20 GHz Test Set Gain">
@@ -813,7 +826,7 @@
                     of device ports.
                 </p>
                 <div id="TestSet50-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="ts50-slide-1">
+                    <div class="item row" id="ts50-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset50gSpara.svg" alt="50 GHz Test Set S-Parameters">
@@ -830,7 +843,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts50-slide-2">
+                    <div class="item row" id="ts50-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset50g2tone.svg" alt="50 GHz Test Set Direct Receive">
@@ -844,7 +857,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts50-slide-3">
+                    <div class="item row" id="ts50-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset50gS11.svg" alt="50 GHz Test Set Return Loss">
@@ -859,7 +872,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts50-slide-4">
+                    <div class="item row" id="ts50-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset50gS21.svg" alt="50 GHz Test Set Gain">
@@ -887,7 +900,7 @@
                     Test Fixture based Patented low loss waveguide port multiplication for support of nearly unlimited
                     number of device ports.</p>
                 <div id="TestSet60-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="ts60-slide-1">
+                    <div class="item row" id="ts60-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset60gSpara.svg" alt="60 GHz Test Set S-Parameters">
@@ -906,7 +919,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts60-slide-2">
+                    <div class="item row" id="ts60-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset60gDirectR.svg" alt="60 GHz Test Set Direct Receive">
@@ -920,7 +933,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts60-slide-3">
+                    <div class="item row" id="ts60-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset60gS11ex.svg" alt="60 GHz Test Set Return Loss">
@@ -934,7 +947,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="t60-slide-4">
+                    <div class="item row" id="t60-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset60gS21ex.svg" alt="60 GHz Test Set Gain">
@@ -964,7 +977,7 @@
                     Fixture based patented low loss waveguide port multiplication for support of nearly unlimited number
                     of device ports.</p>
                 <div id="TestSet80-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="ts80-slide-1">
+                    <div class="item row" id="ts80-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
@@ -983,7 +996,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts80-slide-2">
+                    <div class="item row" id="ts80-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
@@ -998,7 +1011,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts80-slide-3">
+                    <div class="item row" id="ts80-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
@@ -1015,7 +1028,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="t80-slide-4">
+                    <div class="item row" id="t80-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
@@ -1043,7 +1056,7 @@
                     Fixture based patented low loss waveguide port multiplication for support of nearly unlimited number
                     of device ports.</p>
                 <div id="TestSet100-slider" class="owl-carousel hidden-control owl-theme">
-                    <div class="item" id="ts80-slide-1">
+                    <div class="item row" id="ts80-slide-1">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gSpara.svg" alt="80 GHz Test Set S-Parameters">
@@ -1062,7 +1075,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts80-slide-2">
+                    <div class="item row" id="ts80-slide-2">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gDirectR.svg" alt="80 GHz Test Set Direct Receive">
@@ -1077,7 +1090,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="ts80-slide-3">
+                    <div class="item row" id="ts80-slide-3">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80g2tone.svg" alt="80 GHz Test Set 2-Tone">
@@ -1094,7 +1107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" id="t80-slide-4">
+                    <div class="item row" id="t80-slide-4">
                         <div class="layout2">
                             <div class="leftSmall col-sm-6">
                                 <img src="/images/Testset80gS21ex.svg" alt="80 GHz Test Set Gain">
@@ -1134,24 +1147,24 @@
                     <h3>6G Device Interface &NonBreakingSpace; &NonBreakingSpace;</h3>
                     <p style="padding-top: 2.5em;">Low loss blind mate interfaces solve production challenges for 6G
                         devices. We're taking modular to a whole new level.</p>
-                    <a class="link" href="/fixture.html">Learn More &raquo;</a>
+                    <a class="link" href="/fixture.html">Cassini Device Interface &raquo;</a>
                 </div>
                 <div class="col-sm-4">
                     <h3>High Power Base Station or Backhaul</h3>
                     <p>Basestations require phase measurements that are possible with Cassini's calibrated high
                         power signal paths.</p>
-                    <a class="link" href="/parts/BACK-CASSINI">Learn More &raquo;</a>
+                    <a class="link" href="/parts/BACK-CASSINI">Configure Cassini for Backhaul &raquo;</a>
                 </div>
                 <div class="col-sm-4">
                     <h3>mmWave Mass Market Production</h3>
                     <p>Cassini leverages a modular configuration focused on precise calibration, low loss device
                         connections and high measurement accuracy with a small footprint and low capital
                         expense.</p>
-                    <a class="link" href="/article_mmwave_journal_march2020.html">Learn More &raquo;</a>
+                    <a class="link" href="/article_mmwave_journal_march2020.html">Cassini mmWave Testing &raquo;</a>
                 </div>
             </div>
             <div class="row">
-                Learn More about <a href="5g.html">5G Device Cassini configurations &raquo;</a>.
+                Learn More about <a href="5g.html">5G Device Cassini configurations &raquo;</a>
             </div>
         </section>
 

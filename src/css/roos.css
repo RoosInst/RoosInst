@@ -876,7 +876,7 @@ form label span {
 
 .breadcrumb-wrapper h1 {
   float: left;
-  font-weight: ;
+  font-weight: 300;
   font-size: 24px;
   font-family: "Source Sans Pro";
   margin: 0;
@@ -910,7 +910,7 @@ form label span {
   font-weight: 700;
 }
 
-.breadcrumb-wrapper .breadcrumb>li+li:before {
+/* .breadcrumb-wrapper .breadcrumb>li+li:before {
   color: #AAAAAA;
   content: "\f101";
   padding: 0 8px;
@@ -919,7 +919,7 @@ form label span {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-}
+} */
 
 .search-doc-bar {
   background: #4676B8;
@@ -3130,8 +3130,8 @@ ul {
   color: black !important;
 }
 
-footer svg, header svg, .top-header svg, .roosC svg {  /* FontAwesome SVG v6 fixes */
+footer svg, header svg, .top-header svg, #pricing svg, .pricing-plan svg {  /* FontAwesome SVG v6 fixes */
   width: 1em;
-  padding-left: 4px;
-  padding-right: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
