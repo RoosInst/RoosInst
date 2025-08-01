@@ -150,7 +150,7 @@ $(document).ready(function () {
 		loop: false,
 		rewind: true,
 		nav: true,
-		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+		navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
 		autoplay: true,
 		autoplayHoverPause: true
 	});
@@ -170,7 +170,7 @@ $(document).ready(function () {
 		navigation: true,
 		singleItem: true,
 		transitionStyle: "fade",
-		navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+		navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
 	});
 
 	$("#portfolio-slider").owlCarousel({
@@ -178,7 +178,7 @@ $(document).ready(function () {
 		navigation: true,
 		singleItem: true,
 		slideSpeed: 500,
-		navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+		navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
 	});
 
 	$("#about-us-slider").owlCarousel({
@@ -200,7 +200,7 @@ $(document).ready(function () {
 		singleItem: true,
 		slideSpeed: 500,
 		transitionStyle: "fade",
-		navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+		navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
 	});
 
 	$("#features-fade-carousel #owl-carousel-fade").owlCarousel({
@@ -208,7 +208,7 @@ $(document).ready(function () {
 		navigation: true,
 		singleItem: true,
 		transitionStyle: "fade",
-		navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+		navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
 	});
 
 	$("#features-owl-carousel #carousel-wrapper").owlCarousel({
@@ -299,7 +299,7 @@ $(document).ready(function () {
 			rewind: $(this).find('img').length > 4,
 			autoplayHoverPause: true,
 			nav: true,
-			navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+			navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
 			dots: true,
 			lazyLoad: true
 		});
@@ -333,7 +333,7 @@ $(document).ready(function () {
 //replace username with sign in, hides logout
 function logout() {
 	Cookies.remove("username");
-	$("#username").html("<i class='fa fa-lock'></i> Sign in");
+	$("#username").html("<i class='fa-solid fa-lock'></i> Sign in");
 	$("#logout").addClass("hidden");
 	$("#newuser").removeClass("hidden");
 }
@@ -350,7 +350,7 @@ function goSearch() {
 		docSearch.query.focus();
 		return true;
 	} else {
-		var searchString = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase);
+		var searchString = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + encodeURI(searchPhrase);
 		//alert(searchString);
 		location.href = searchString;
 		$("#searchFail").addClass("hidden");
@@ -370,7 +370,7 @@ function goSearch2() {
 		docSearch2.query2.focus();
 		return true;
 	} else {
-		var searchString2 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase2);
+		var searchString2 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + encodeURI(searchPhrase2);
 		//alert(searchString);
 		$("#searchFail2").addClass("hidden");
 		docSearch2.query2.value = searchPhrase2;
@@ -388,7 +388,7 @@ function goSearch3() {
 		docSearch3.query3.focus();
 		return true;
 	} else {
-		var searchString3 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase3);
+		var searchString3 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + encodeURI(searchPhrase3);
 		//alert(searchString);
 		$("#searchFail3").addClass("hidden");
 		docSearch3.query3.value = "";
@@ -408,7 +408,7 @@ function goSearch4() {
 		docSearch4.query.focus();
 		return true;
 	} else {
-		var searchString4 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + escape(searchPhrase4);
+		var searchString4 = "/roos/Documentation.nsf/webDocs?searchView&SearchFuzzy=TRUE&Query=" + encodeURI(searchPhrase4);
 		$("#searchFail4").addClass("hidden");
 		docSearch4.query.value = searchPhrase4;
 		docSearch.query.value = searchPhrase4;
@@ -440,14 +440,14 @@ function doSearch5() {
 		docSearch5.query5.focus();
 		return true;
 	} else {
-		var searchString5 = escape(searchPhrase5).split("#")[0];
-		location.href = "/search.html?query=" + unescape(searchString5);
+		var searchString5 = encodeURI(searchPhrase5).split("#")[0];
+		location.href = "/search.html?query=" + decodeURI(searchString5);
 		return;
 	}
 }
 
 function searchModal() {
-	var searchString = escape(window.document.modalSearch.query.value);
+	var searchString = encodeURI(window.document.modalSearch.query.value);
 	switch ($('#search_concept_modal').text()) {
 		case 'All':
 			location.href = "/roos/Documentation.nsf/json?searchView&SearchFuzzy=TRUE&Query=" + searchString;
@@ -463,7 +463,7 @@ function searchModal() {
 }
 
 function searchBar() {
-	var searchString = escape(window.document.search.query.value);
+	var searchString = encodeURI(window.document.search.query.value);
 	switch ($('#search_concept').text()) {
 		case 'All':
 			location.href = "/roos/Documentation.nsf/json?searchView&SearchFuzzy=TRUE&Query=" + searchString;
@@ -507,7 +507,7 @@ function goSearch5(identifier = null, docs = null, query = null, target = null) 
 		window.document.docsSearch5.query5.focus();
 		return true;
 	} else {
-		var searchString5 = unescape(searchPhrase5).split("#")[0];
+		var searchString5 = decodeURI(searchPhrase5).split("#")[0];
 		// if(hasCookie()){
 		// 	location.href = "/roos/Documentation.nsf/json?searchView&SearchFuzzy=TRUE&Query=" + searchString5;
 		// 	return;
