@@ -155,7 +155,7 @@ $(document).ready(function () {
 		autoplayHoverPause: true
 	});
 
-	$("#about-slider").owlCarousel({
+/* 	$("#about-slider").owlCarousel({
 		autoplay: true,
 		//transitionStyle: "cassini-fade",
 		mouseDrag: false,
@@ -163,7 +163,7 @@ $(document).ready(function () {
 		items: 1,
 		dots: false,
 		autoplayHoverPause: true
-	});
+	}); */
 
 	$("#jumbotron-eshop-slider").owlCarousel({
 		autoPlay: 5000,

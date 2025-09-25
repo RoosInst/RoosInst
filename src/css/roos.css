@@ -3130,7 +3130,7 @@ ul {
   color: black !important;
 }
 
-footer svg, header svg, .top-header svg, #pricing svg, .pricing-plan svg {  /* FontAwesome SVG v6 fixes */
+.svg-inline--fa, footer svg, header svg, .top-header svg, #pricing svg, div.pricing-plan svg {  /* FontAwesome SVG v6 fixes */
   width: 1em;
   padding-left: 5px;
   padding-right: 5px;
