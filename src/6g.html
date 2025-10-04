@@ -371,8 +371,8 @@
             <div class="container">
                 <h2>6G Device Testing</h2>
                 <ol class="breadcrumb">
-                    <li><a href="/index.html">Home</a> &nbsp;<i class="fa-solid fa-angles-right"></i></li> 
-                    <li><a href="/products.html">Products Overview</a> &nbsp;<i class="fa-solid fa-angles-right"></i></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products.html">Products Overview</a></li>
                     <li class="active"></i>6G Testing</li>
                 </ol>
             </div>
@@ -431,11 +431,13 @@
 
                 var sixG = tns({
                     container: '#sixG-tns',
+                    mode: 'gallery',
                     items: 1,
                     controls: false,
                     nav: false,
                     arrowkeys: true,
                     autoplay: true,
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
                     autoplayText: ['▷', '⏸'],
@@ -448,13 +450,14 @@
                     controls: true,
                     controlsText: ['<i class="fa-solid fa-angle-left" aria-hidden="true"></i>', '<i class="fa-solid fa-angle-right" aria-hidden="true"></i>'],
                     nav: true,
+                    navPosition: 'bottom',
                     navAsThumbnails: true,
                     arrowkeys: true,
                     autoplay: true,
-                    autoplayPosition: 'bottom',
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
-                    autoplayText: ['', ''],
+                    autoplayText: ['▷', '⏸'],
                     loop: true,
                     gutter: 30,
                     slideby: 'page',
@@ -468,12 +471,13 @@
                     controlsPosition: 'bottom',
                     controlsText: ['<i class="fa-solid fa-angle-left" aria-hidden="true"></i>', '<i class="fa-solid fa-angle-right" aria-hidden="true"></i>'],
                     nav: true,
+                    navPosition: 'bottom',
                     arrowkeys: true,
                     autoplay: true,
-                    autoplayPosition: 'bottom',
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
-                    autoplayText: ['', ''],
+                    autoplayText: ['▷', '⏸'],
                     loop: true
                 });
 
@@ -484,12 +488,13 @@
                     controlsPosition: 'bottom',
                     controlsText: ['<i class="fa-solid fa-angle-left" aria-hidden="true"></i>', '<i class="fa-solid fa-angle-right" aria-hidden="true"></i>'],
                     nav: true,
+                    navPosition: 'bottom',
                     arrowkeys: true,
                     autoplay: true,
-                    autoplayPosition: 'bottom',
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
-                    autoplayText: ['', ''],
+                    autoplayText: ['▷', '⏸'],
                     loop: true
                 });
 
@@ -500,12 +505,13 @@
                     controlsPosition: 'bottom',
                     controlsText: ['<i class="fa-solid fa-angle-left" aria-hidden="true"></i>', '<i class="fa-solid fa-angle-right" aria-hidden="true"></i>'],
                     nav: true,
+                    navPosition: 'bottom',
                     arrowkeys: true,
                     autoplay: true,
-                    autoplayPosition: 'bottom',
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
-                    autoplayText: ['', ''],
+                    autoplayText: ['▷', '⏸'],
                     loop: true
                 });
 
@@ -516,16 +522,141 @@
                     controlsPosition: 'bottom',
                     controlsText: ['<i class="fa-solid fa-angle-left" aria-hidden="true"></i>', '<i class="fa-solid fa-angle-right" aria-hidden="true"></i>'],
                     nav: true,
+                    navPosition: 'bottom',
                     arrowkeys: true,
                     autoplay: true,
-                    autoplayPosition: 'bottom',
+                    autoplayButtonOutput: false,
                     autoplayTimeout: 3500,
                     autoplayHoverPause: false,
-                    autoplayText: ['', ''],
+                    autoplayText: ['▷', '⏸'],
                     loop: true
                 });
             });
         </script>
+
+        <style>
+            h2,
+            h3 {
+                font-weight: 500;
+            }
+
+            #TestSet20-slider .right-element {
+                left: -30px;
+            }
+
+            #TestSet20-slider .right-element h3 {
+                padding-top: 20px;
+            }
+
+            .right-element h3 {
+                padding-top: 40px;
+            }
+
+            .layout2 .right-element {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+            }
+
+            .layout2 .right-element p {
+                flex-grow: 1;
+            }
+
+            .layout2 .right-element img {
+                margin-top: auto;
+            }
+
+            @media (max-width: 991px) {
+                #TestSet20-slider .right-element {
+                    padding-top: 10px;
+                    left: 0;
+                }
+
+                .right-element h3 {
+                    padding-top: 20px;
+                }
+
+                .item .right-element img {
+                    display: none;
+                    padding: 0;
+                }
+            }
+
+            .tns-controls-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            /* Optional: stack controls vertically */
+            .tns-controls-wrapper.vertical {
+                flex-direction: column;
+            }
+
+            /* Ensure individual controls are centered */
+            .tns-controls,
+            .tns-nav,
+            .tns-autoplay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            /* Carousel nav dots */
+            .tns-nav button {
+                width: 16px;
+                height: 16px;
+                margin: 0 6px;
+                background-color: #d0d0d0;
+                border-radius: 50%;
+                border: none;
+                transition: background-color 0.3s ease;
+                cursor: pointer;
+            }
+
+            .tns-nav button.tns-nav-active {
+                background-color: #0072c6;
+                /* Roos blue accent */
+            }
+
+            /* Carousel arrows */
+            .tns-controls [data-controls] {
+                font-size: 20px;
+                color: #333;
+                background: none;
+                border: 2px solid #0072c6;
+                padding: 8px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .tns-controls [data-controls]:hover {
+                background-color: #e6f2fb;
+            }
+
+            /* Autoplay Start/Stop Button */
+            .tns-autoplay {
+                font-size: 16px;
+                color: #333;
+                background-color: #f5f5f5;
+                border: 2px solid #0072c6;
+                /* Roos blue */
+                padding: 6px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            .tns-autoplay:hover {
+                background-color: #e6f2fb;
+                color: #0072c6;
+            }
+        </style>
 
         <section id="6G-coverage" class="roosC">
             <div class="container">
@@ -629,54 +760,7 @@
         <!-- ==========================
             	JUMBOTRON - END
             =========================== -->
-        <style>
-            h2,
-            h3 {
-                font-weight: 500;
-            }
 
-            #TestSet20-slider .right-element {
-                left: -30px;
-            }
-
-            #TestSet20-slider .right-element h3 {
-                padding-top: 20px;
-            }
-
-            .right-element h3 {
-                padding-top: 40px;
-            }
-
-            .layout2 .right-element {
-                display: flex;
-                flex-direction: column;
-                flex: 1;
-            }
-
-            .layout2 .right-element p {
-                flex-grow: 1;
-            }
-
-            .layout2 .right-element img {
-                margin-top: auto;
-            }
-
-            @media (max-width: 991px) {
-                #TestSet20-slider .right-element {
-                    padding-top: 10px;
-                    left: 0;
-                }
-
-                .right-element h3 {
-                    padding-top: 20px;
-                }
-
-                .item .right-element img {
-                    display: none;
-                    padding: 0;
-                }
-            }
-        </style>
         <section id="content" class="roosC container sixG">
             <a id="TestSet20" class="anchor"></a>
             <div class="row">
