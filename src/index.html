@@ -2613,8 +2613,7 @@
     }
 
     .navbar-toggler-icon::before {
-      font-family: FontAwesome;
-      content: "\f0c9";
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg fill='%23000000' width='800px' height='800px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z'/%3E%3C/svg%3E");
       /* fa-bars, fa-navicon */
     }
 
@@ -3116,17 +3115,13 @@
       @media (min-width: 768px) {
         #jumbotron-slider {
           height: 605px;
-        }
-
-        ;
+        };
       }
 
       @media (min-width: 992px) {
         #jumbotron-slider {
           height: 992px;
-        }
-
-        ;
+        };
       }
 
       /* IMS Show Promo 
@@ -3148,7 +3143,7 @@
        /* SEMICON Show Promo */
       #index-slide-0 {
         background-image: url('/images/index-2025-semicon.webp') !important;
-        background-position-x: right !important;
+        background-position-x: left !important;
       }
     </style>
 
@@ -3157,14 +3152,13 @@
         <div id="jumbotron-slider" class="index-slider">
           <div class="item" id="index-slide-0">
             <!-- Tradeshow promo -->
-            <h2 style="color:white;" class="index-slideshow-bar">Visit us at Semicon West 2025
-            </h2>
             <div class="container">
               <div class="row">
-                <div>
+                <div class="col-sm-3">
+                  <br><br><br>
                   <a href="https://semi25.nvytes.co/semilanding25/SEMI25320.html" target="_blank" rel="noopener"
                     class="btn btn-index btn-inverse"
-                    style="color: black; border-color: white; background-color: white;">Visit Booth #1133</a>
+                    style="color: black; border-color: white; background-color: white;">Register Now</a>
                 </div>
               </div>
             </div>
