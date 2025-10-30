@@ -2316,10 +2316,9 @@ form label span {
 
 .breadcrumb-wrapper .breadcrumb>li+li:before {
   color: #AAAAAA;
-  content: "\f101";
+  content: "/";
   padding: 0 8px;
   display: inline-block;
-  font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -3560,7 +3559,7 @@ hr.space {
 }
 
 #index-panels h1,
-h4 {
+#index-panels h4 {
   text-align: right;
   font-style: normal;
   font-size: 64px;
@@ -3605,7 +3604,7 @@ h4 {
   }
 
   #index-panels h1,
-  h4 {
+  #index-panels h4 {
     font-style: normal;
     font-size: 26px;
     line-height: 1.1;
@@ -3773,7 +3772,7 @@ textarea {
   }
 
   #index-panels h1,
-  h4 {
+  #index-panels h4 {
     font-style: normal;
     font-size: 42 px;
     line-height: 1;
