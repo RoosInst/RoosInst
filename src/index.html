@@ -29,7 +29,7 @@
     });
   </script>
 
-  <!-- TOP - v57-index -->
+  <!-- TOP - v58-index -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Roos Instruments, Inc." />
   <meta name="theme-color" content="#f0f0f0" />
@@ -2793,7 +2793,10 @@
                       </li>
                     </ul>
                   </li>
-                  <li style="padding-top:24px;" id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
+                  <li id="nav-support" nav-link>
+                    <a class="nav-link" href="/support.html">Support</a>
+                  </li>
+                  <!-- <li style="padding-top:24px;" id="nav-support" class="nav-item dropdown yamm-fw d-none d-sm-block">
                     <a rel="nofollow" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
                       data-delay="300">Support</a>
                     <section id="hideOnSupport" class="dropdown-menu">
@@ -2898,7 +2901,7 @@
                         </div>
                       </div>
                     </section>
-                  </li>
+                  </li> -->
                   <li id="nav-mobile-privacy" class="nav-item d-block d-sm-none">
                     <a class="nav-link" href="/privacy.html">Privacy</a>
                   </li>
@@ -3115,13 +3118,17 @@
       @media (min-width: 768px) {
         #jumbotron-slider {
           height: 605px;
-        };
+        }
+
+        ;
       }
 
       @media (min-width: 992px) {
         #jumbotron-slider {
           height: 992px;
-        };
+        }
+
+        ;
       }
 
       /* IMS Show Promo 
@@ -3130,17 +3137,17 @@
           background-position-x: left !important;
         } */
       /* Standard Slide  */
-        #index-slide-0 {
-          background-image: url(/images/index-slide-0.webp);
-          background-position: center;
-        }
-          
+      #index-slide-0 {
+        background-image: url(/images/index-slide-0.webp);
+        background-position: center;
+      }
+
       /* ITC Show Promo 
       #index-slide-0 {
         background-image: url('/images/index-2022-itc.jpg') !important;
         background-position-x: right !important;
       } */
-       /* SEMICON Show Promo 
+      /* SEMICON Show Promo 
       #index-slide-0 {
         background-image: url('/images/index-2025-semicon.webp') !important;
         background-position-x: left !important;
@@ -3164,17 +3171,17 @@
             </div> -->
 
             <!-- 6G PROMO    -->
-              <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
-              <div class="container">
-                <div class="row">
-                  <div style="width: 50%;">
-                    <h5>Adding Higher Frequency <br>Test Capabilities...</h5>
-                    <h5>Cassini has 6G Covered.</h5>
-                    <a href="/6g.html" class="btn btn-index">6G Device Testing</a>
-                  </div>
+            <h2 class="index-slideshow-bar">A New Era of Production Test</h2>
+            <div class="container">
+              <div class="row">
+                <div style="width: 50%;">
+                  <h5>Adding Higher Frequency <br>Test Capabilities...</h5>
+                  <h5>Cassini has 6G Covered.</h5>
+                  <a href="/6g.html" class="btn btn-index">6G Device Testing</a>
                 </div>
               </div>
-             
+            </div>
+
           </div>
           <div class="item" id="index-slide-1">
             <h2 class="index-slideshow-bar">
@@ -3452,43 +3459,43 @@
   <script src="/js/fontawesome.all.min.js"></script>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Tiny Slider
-    var slider = tns({
-      container: ".index-slider",
-      mode: "carousel",
-      axis: "vertical",
-      gutter: "0",
-      edgePadding: "0",
-      controlsPosition: "top",
-      controlsText: ["&#8593;", "&#8595;"],
-      navPosition: "top",
-      arrowKeys: "true",
-      autoplay: true,
-      autoplayButtonOutput: false,
-      lazyload: false,
-      speed: 1200,
-      responsive: {
-        0: { nav: false, controls: false },
-        768: { nav: true, controls: true }
-      }
-    });
+    document.addEventListener('DOMContentLoaded', function () {
+      // Tiny Slider
+      var slider = tns({
+        container: ".index-slider",
+        mode: "carousel",
+        axis: "vertical",
+        gutter: "0",
+        edgePadding: "0",
+        controlsPosition: "top",
+        controlsText: ["&#8593;", "&#8595;"],
+        navPosition: "top",
+        arrowKeys: "true",
+        autoplay: true,
+        autoplayButtonOutput: false,
+        lazyload: false,
+        speed: 1200,
+        responsive: {
+          0: { nav: false, controls: false },
+          768: { nav: true, controls: true }
+        }
+      });
 
-    // Tiny Slider - HIDDEN CONTROLS (no jQuery)
-    document.querySelectorAll('.tns-outer').forEach(function (outer) {
-      var controls = outer.querySelector('.tns-controls');
-      if (controls) {
-        outer.addEventListener('mouseenter', function () {
-          controls.style.transition = 'opacity 0.4s';
-          controls.style.opacity = '1';
-        });
-        outer.addEventListener('mouseleave', function () {
-          controls.style.transition = 'opacity 0.4s';
-          controls.style.opacity = '0';
-        });
-      }
+      // Tiny Slider - HIDDEN CONTROLS (no jQuery)
+      document.querySelectorAll('.tns-outer').forEach(function (outer) {
+        var controls = outer.querySelector('.tns-controls');
+        if (controls) {
+          outer.addEventListener('mouseenter', function () {
+            controls.style.transition = 'opacity 0.4s';
+            controls.style.opacity = '1';
+          });
+          outer.addEventListener('mouseleave', function () {
+            controls.style.transition = 'opacity 0.4s';
+            controls.style.opacity = '0';
+          });
+        }
+      });
     });
-  });
   </script>
 </body>
 
