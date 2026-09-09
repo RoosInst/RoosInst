@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GaN Device Testing | Gallium Nitride Characterization with Cassini ATE</title>
+    <meta name="description"
+        content="Characterize and validate Gallium Nitride (GaN) power semiconductors with Cassini ATE. Perform double pulse testing, Eon/Eoff measurements, dynamic RDS(on) analysis, reliability testing, and precision parametric characterization.">
+    <link rel="canonical" href="https://roos.com/gan.html" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("nav-support").classList.add("active");
+        });
+    </script>
+
+    <!-- TOP - v54+ TODO: html5 ul a to button, ref https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#associated_roles_and_attributes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roos Instruments, Inc.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f0f0f0">
+
+    <link rel="icon" href="/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="/css/roos-min.css?v3" rel="stylesheet" id="pageTheme">
+    <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script defer src="/js/roos.min.js?v2"></script>
+
+    <script src="/js/fontawesome.all.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+    <script src="/js/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#252e39"
+                    },
+                    "button": {
+                        "background": "#4676B8"
+                    }
+                },
+                "position": "bottom-left",
+                "type": "opt-in",
+                "content": {
+                    "message": "This website uses cookies when logged in and when searching to ensure you get the best experience.",
+                    "dismiss": "Dismiss",
+                    "allow": "Allow cookies",
+                    "link": "Learn more",
+                    "href": "https://roos.com/privacy.html"
+                }
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <noscript>
+        <div class="alert alert-danger">
+            <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
+                href="https://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+        </div>
+    </noscript>
+
+    <div id="page-wrapper" class="page-boxed">
+        <!-- ==========================
+            	HEADER - START
+        =========================== -->
+        <div class="top-header hidden-xs">
+            <div class="container">
+                <div class="pull-left">
+                    <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
+                        class="fa-solid fa-envelope"></i> support@roos.com</a></div>
+                    <div class="header-item"><a href="tel:+1-408-748-8589"><i class="fa-solid fa-phone"></i>+1-408-748-8589</a></div>
+                </div>
+
+            </div>
+        </div>
+        <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <div class="visible-xs-block">
+                        <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button" class="navbar-toggle"
+                            data-toggle="collapse" data-target=".navbar-collapse"><i class="fa-solid fa-bars"></i></button>
+                        <div class="search-form-toggle mobileTopBtn"><a class="navButton" href="#" data-toggle="modal"
+                            data-target="#searchModal" title="Search Button"><i class="fa-solid fa-search"></i></a></div>
+                    </div>
+
+                    <div id="title">
+                        <div class="hidden-xs hidden-sm">
+                            <a href="/index.html">
+                                <div class="mainTitleAdjust">Roos Instruments</div>
+                                <div class="ROOSbanner"></div>
+                                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the World's Most
+                                    Advanced
+                                    Technology</span>
+                            </a>
+                        </div>
+                        <div class="visible-sm">
+                            <a href="/index.html">
+                                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
+                            </a>
+                        </div>
+                        <div class="visible-xs-block container">
+                            <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
+                            <a href="/index.html">
+                                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
+                            </a>
+                            <div class="ROOSbanner"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of .navbar-header -->
+                <nav class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li id="nav-home" class="dropdown">
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="/support.html">Support</a>
+                        </li>
+                        <li id="nav-products" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Products<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/products.html"><i class="fa-solid fa-angles-right"></i>Overview</a></li>
+                                <li><a href="/infrastructure.html"><i class="nav-indent1 fas fa-angles-right"></i>Test
+                                    Systems</a>
+                                </li>
+                                <li><a href="/instruments.html"><i class=" nav-indent1 fas fa-angles-right"></i>Instruments</a>
+                                </li>
+                                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angles-right"></i>Browse TIMs</a></li>
+                                <li><a href="/software.html"><i class="nav-indent1 fas fa-angles-right"></i>Software</a></li>
+                                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angles-right"></i>Device Interface</a>
+                                </li>
+                                <li><a href="/rik"><i class="fa-solid fa-angles-right"></i>RIK Catalog</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-services" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Services<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/services.html"><i class="fa-solid fa-angles-right"></i>Overview</a></li>
+                                <li><a href="/turnkey.html"><i class="nav-indent1 fas fa-angles-right"></i>Turnkey</a></li>
+                                <li><a href="/production.html"><i class="nav-indent1 fas fa-angles-right"></i>Production</a>
+                                </li>
+                                <li><a href="/guru.html"><i class="nav-indent1 fas fa-angles-right"></i>Enterprise</a></li>
+                                <li><a href="/training.html"><i class="nav-indent1 fas fa-angles-right"></i>Training</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-company" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
+                                data-delay="300">Company<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/company.html"><i class="fa-solid fa-angles-right"></i>About Us</a></li>
+                                <li><a href="/news.html"><i class="nav-indent1 fas fa-angles-right"></i>News & Events</a></li>
+                                <li><a href="/careers.html"><i class="nav-indent1 fas fa-angles-right"></i>Careers</a></li>
+                                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angles-right"></i>Media Kit</a></li>
+                                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angles-right"></i>Plan a Visit</a></li>
+                                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angles-right"></i>Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav-support">
+                            <a href="/support.html">Support</a>
+                        </li>
+                        <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+                            <a href="/privacy.html">Privacy</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav hidden-xs">
+                        <li style="margin-right: -12px;" class="search-form-toggle">
+                            <a title="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal"><i
+                                class="fa-solid fa-search"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Print view only -->
+        <div class="clearfix visible-print">
+            <div class="pull-left">
+                <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
+            </div>
+            <div class="pull-right">
+                <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
+            </div>
+        </div>
+
+        <!-- Search Modal -->
+        <div id="searchModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Search Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Search</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="features-item" id="features-tabs-panels">
+                            <ul class="nav nav-tabs" aria-label="Search Tabs" role="tabpanel">
+                                <li class="active" tabindex="0" id="web_search_tab" role="tablist">
+                                    <a href="#google-search" role="tab" data-toggle="tab" aria-selected="true"
+                                        aria-controls="google-search"><i class="fa-solid fa-globe"></i>
+                                        &nbsp;Website</a>
+                                </li>
+                                <li role="tablist"><a href="#document-search" data-toggle="tab" role="tab" aria-label="Documentation"><i
+                                    class="fa-solid fa-book"></i>
+                                    &nbsp;Documentation</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="google-search" aria-labelledby="web_search_tab" tabindex="0">
+                                    <form name="docsSearch5" method="POST" action="#" onSubmit="doSearch5(); return false;">
+                                        <div class="form-group nospace">
+                                            <div id="searchFail5" class="alert alert-warning hidden" role="alert">
+                                                <strong>Oops!</strong> Search for something.
+                                            </div>
+                                            <div class="input-group">
+                                                <input style="margin: 12px 0;" type="text" class="form-control" id="query5"
+                                                    placeholder="Search Website" required>
+                                                <span onclick="doSearch5(); return false;" class="input-group-btn"><button
+                                                    class="btn btn-primary" type="button" title="Search"><i
+                                                        class="fa-solid fa-search"></i></button></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="search-results">
+
+                                    </div>
+                                    <!-- <div class="reset-box-sizing" id="search">
+                                        <div class="gcse-search"></div>
+                                        <p class="quiet" style="text-align: right;"><a href="/privacy.html">Cookies</a> are used when
+                                            searching with Google. Pressing Enter or Search confirms your consent to use cookies.</p>
+                                    </div>
+                                    <!-- end of #search -->
+                                </div>
+                                <div class="tab-pane fade" id="document-search" aria-labelledby="doc_search_tab">
+                                    <form name="docsSearch2" method="POST" action="#" onSubmit="goSearch2(); return false;">
+                                        <div class="form-group nospace">
+                                            <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+                                                <strong>Oops!</strong> Search for something.
+                                            </div>
+                                            <div class="input-group">
+                                                <input style="margin: 12px 0;" type="text" class="form-control" id="query2"
+                                                    placeholder="Search Documentation" required>
+                                                <span onclick="goSearch2(); return false;" class="input-group-btn"><button
+                                                    class="btn btn-primary" type="button" title="Search"><i
+                                                        class="fa-solid fa-search"></i></button></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==========================
+            	HEADER - END
+        =========================== -->
+
+        <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
+
+        <!-- ==========================
+        	BREADCRUMB - START
+        =========================== -->
+        <section class="breadcrumb-wrapper">
+            <div class="container">
+                <h2>Testing Gallium Nitride (GaN) Devices</h2>                <ol class="breadcrumb">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/products.html">Products Overview</a></li>
+                    <li class="active">Testing GaN Devices</li>
+                </ol>
+            </div>
+        </section>
+        <!-- ==========================
+        	BREADCRUMB - END
+        =========================== -->
+
+        <div id="content" class="roosC container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Test Gallium Nitride (GaN) Devices with Confidence</h1>
+                    <p class="main">
+                        Modern Gallium Nitride (GaN) power devices are enabling higher efficiency, faster switching speeds,
+                        and greater power density than traditional silicon technologies. As device performance advances,
+                        characterization and production testing become increasingly demanding.
+                    </p>
+                    <p class="main">
+                        Cassini ATE provides the instrumentation, software, and data analysis tools required to
+                        characterize, validate, and optimize GaN devices throughout development, qualification, and
+                        manufacturing.
+                    </p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="/contact.html">Request a Demo</a>
+                        <a class="btn btn-default" href="/contact.html">Talk to an Applications Engineer</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Why GaN Technology Matters</h2>
+                    <p class="main">
+                        GaN power semiconductors are accelerating innovation across power conversion applications by
+                        enabling higher switching frequencies, improved power density, lower switching losses, increased
+                        system efficiency, and smaller and lighter power electronics systems.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Higher Switching Frequencies</h3>
+                        </div>
+                        <div class="panel-body">Reduce passive component size and increase system performance.</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Improved Power Density</h3>
+                        </div>
+                        <div class="panel-body">Deliver more power in smaller and lighter systems.</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Lower Switching Losses</h3>
+                        </div>
+                        <div class="panel-body">Enhance efficiency across power conversion applications.</div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Increased Efficiency</h3>
+                        </div>
+                        <div class="panel-body">Support demanding thermal and energy requirements.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Common GaN Applications</h3>
+                    <ul class="main">
+                        <li>Power Supplies</li>
+                        <li>Motor Control Systems</li>
+                        <li>Electric and Hybrid Vehicles</li>
+                        <li>Telecommunications Infrastructure</li>
+                        <li>AI and Data Center Servers</li>
+                        <li>Robotics and Industrial Automation</li>
+                        <li>Drones and Aerospace Systems</li>
+                        <li>Consumer and Industrial Appliances</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Challenges of Testing GaN Devices</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">High Voltage and High Current Characterization</h3>
+                        </div>
+                        <div class="panel-body">
+                            Power GaN devices frequently operate at elevated voltages and high peak currents. Test systems
+                            must safely source and measure these conditions while maintaining measurement accuracy and
+                            repeatability.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Fast Switching Dynamics</h3>
+                        </div>
+                        <div class="panel-body">
+                            GaN devices switch significantly faster than conventional silicon technologies, requiring precise
+                            measurement of switching events, transient behavior, dv/dt, and di/dt characteristics.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Low Current and Leakage Measurements</h3>
+                        </div>
+                        <div class="panel-body">
+                            The wide-bandgap properties of GaN can enable extremely low off-state currents, creating a need
+                            for sensitive measurement instrumentation capable of resolving very small leakage currents while
+                            also supporting high-voltage test conditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Dynamic Device Behavior</h3>
+                        </div>
+                        <div class="panel-body">
+                            Accurate characterization increasingly requires evaluation of dynamic RDS(on), switching energy
+                            losses, thermal effects, parasitic interactions, and transient operating conditions.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Manufacturing and Reliability Challenges</h3>
+                        </div>
+                        <div class="panel-body">
+                            Maintaining high-quality epitaxial GaN layers on silicon substrates remains an important
+                            manufacturing challenge. Material and thermal expansion mismatches can introduce defects that
+                            impact performance, yield, and reliability.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Cassini ATE Solutions for GaN Device Testing</h2>
+                    <p class="main">
+                        Cassini ATE delivers a scalable platform for development, characterization, reliability, and
+                        production test of GaN devices.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Double Pulse Switching Testing</h3>
+                        </div>
+                        <div class="panel-body">
+                            Characterize hard-switching turn-on and turn-off behavior using industry-standard Double Pulse
+                            Test methodologies.
+                            <ul>
+                                <li>Turn-on energy (Eon)</li>
+                                <li>Turn-off energy (Eoff)</li>
+                                <li>Switching loss analysis</li>
+                                <li>Voltage overshoot</li>
+                                <li>Current overshoot</li>
+                                <li>Dynamic switching behavior</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Precision Parametric Characterization</h3>
+                        </div>
+                        <div class="panel-body">
+                            Accurately source and measure high voltages, high peak currents, ultra-low leakage currents,
+                            and static and dynamic device parameters.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Dynamic Performance Analysis</h3>
+                        </div>
+                        <div class="panel-body">
+                            Gain insight into device operation through advanced characterization of dynamic RDS(on), dv/dt,
+                            di/dt, switching efficiencies, and thermal behavior.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Structural and Electrical Characterization</h3>
+                        </div>
+                        <div class="panel-body">
+                            Evaluate device integrity using electrical characterization techniques that complement
+                            traditional physical inspection methods and help identify defect-related behavior earlier in the
+                            development cycle.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Reliability and Stress Testing</h3>
+                        </div>
+                        <div class="panel-body">
+                            Characterize long-term device performance through intrinsic reliability testing, electrical stress
+                            testing, aging analysis, and failure characterization.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Data Analytics and Reporting</h3>
+                        </div>
+                        <div class="panel-body">
+                            Integrated software tools enable custom test development, automated measurements, statistical
+                            analysis, device comparison studies, and production data management.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Applications Supported by Cassini ATE</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Automotive Electronics</h3>
+                        </div>
+                        <div class="panel-body">
+                            Validate GaN devices used in onboard chargers, DC/DC converters, traction systems, and advanced
+                            vehicle electronics.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Telecommunications Infrastructure</h3>
+                        </div>
+                        <div class="panel-body">
+                            Characterize devices supporting high-efficiency power conversion for next-generation communication
+                            systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">AI and Data Centers</h3>
+                        </div>
+                        <div class="panel-body">
+                            Optimize power semiconductor performance for servers and high-density computing platforms.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Industrial Power Systems</h3>
+                        </div>
+                        <div class="panel-body">
+                            Test devices for motor drives, automation equipment, and industrial power conversion systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Robotics and Autonomous Systems</h3>
+                        </div>
+                        <div class="panel-body">
+                            Evaluate high-efficiency power components used in robotics and intelligent automation.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Aerospace and Drone Applications</h3>
+                        </div>
+                        <div class="panel-body">
+                            Characterize devices operating in demanding power and environmental conditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Why Choose Cassini ATE</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Comprehensive Test Hardware</h3>
+                        </div>
+                        <div class="panel-body">
+                            Cassini ATE combines fast RF sources, accurate RF power amplifiers, high-current resources,
+                            pulsed DC capability, and precision measurement instrumentation.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Flexible Development Environment</h3>
+                        </div>
+                        <div class="panel-body">
+                            Create custom test programs tailored to your device architecture, performance goals, and
+                            qualification requirements.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Accelerated Characterization</h3>
+                        </div>
+                        <div class="panel-body">
+                            Generate detailed electrical characterization data that helps engineers understand performance
+                            limits, optimize designs, and reduce time to market.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Scalable Test Architecture</h3>
+                        </div>
+                        <div class="panel-body">
+                            Support device research, engineering validation, reliability studies, and production deployment
+                            using a common platform.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Configuring a Cassini ATE Solution for GaN Devices</h2>
+                    <p class="main">
+                        Every GaN application has unique requirements. A successful test strategy begins with understanding:
+                    </p>
+                    <ul class="main">
+                        <li>Operating voltage requirements</li>
+                        <li>Peak current conditions</li>
+                        <li>Switching frequencies</li>
+                        <li>Power handling requirements</li>
+                        <li>Reliability objectives</li>
+                        <li>Characterization goals</li>
+                    </ul>
+                    <p class="main">
+                        Cassini ATE can be configured to support functional testing, parametric testing, structural
+                        testing, reliability evaluation, switching characterization, and production screening.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="space">
+
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Ready to Advance Your GaN Test Strategy?</h2>
+                    <p class="main">
+                        From device characterization and switching analysis to reliability qualification and production test,
+                        Cassini ATE provides the tools needed to evaluate modern GaN power semiconductors with confidence.
+                    </p>
+                    <div class="btn-group">
+                        <a class="btn btn-primary" href="/contact.html">Request a Demo</a>
+                        <a class="btn btn-default" href="/contact.html">Speak with an Applications Engineer</a>
+                        <a class="btn btn-default" href="/tims.html">Configure a Cassini Test Solution</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom"></div>
+        <script src="js/loadbottom.js"></script>
+
+    </div>
+</body>
+
+</html>
