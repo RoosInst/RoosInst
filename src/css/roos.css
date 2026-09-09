@@ -1288,7 +1288,7 @@ body #services.services3 .service:hover i {
   display: inline-block;
 }
 
-.map-overlay h3 {
+.map-overlay h1 {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
