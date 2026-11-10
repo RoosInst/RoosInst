@@ -15,13 +15,24 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 
 ### Phase 0 — Baseline ✅ (except step 4)
 1. ✅ git-lfs present on Windows; `* text=auto eol=lf` added, 55 CRLF files renormalized (`e8ac52d`).
-2. ✅ Live compared against the August baseline: 151/162 still matched. Recaptured all; 20 shots changed (`index`, `infrastructure`, `news`, plus masked embeds on `company`, `contact`, `ritdb`, `visitRI`, `form_network`). Third-party iframes (YouTube, Google Maps, Google Forms) are now masked by `src`. `gan` returns 404 live, so it has no baseline yet — run `npm run baseline -- --grep gan` once it's deployed.
+2. ✅ Live compared against the August baseline: 151/162 still matched. Recaptured all; 20 shots changed (`index`, `infrastructure`, `news`, plus masked embeds on `company`, `contact`, `ritdb`, `visitRI`, `form_network`). Third-party iframes (YouTube, Google Maps, Google Forms) are now masked by `src`.
 3. ✅ Merged `phase0-visual-baseline` → `master`; committed `visual/report/` and `visual/test-results/` dropped.
-4. ⏳ **Ryan to decide:** freeze content edits on legacy `src/`, or require a baseline update in the same commit.
+4. ✅ **Decided: `src/` edits are allowed, with the baseline updated in the same commit.** Serve `src/` on :4321, `npm run visual`, eyeball the diffs, then `npm run visual:update -- --grep-invert "(apps|form_network)$"`.
 
-### Found during Phase 0 (live-site bugs, not fixed — `src/` is frozen pending step 4)
-- **ritdb videos are broken live** ("Error 153 – Video player configuration error"). roos.com sends `Referrer-Policy: same-origin`, so YouTube gets no Referer. `company.html` works because its iframe sets `referrerpolicy="strict-origin-when-cross-origin"`; the two iframes in `ritdb.html` (lines ~325, ~376) need the same attribute.
-- **infrastructure overflows horizontally at 375px**: the page renders 799px wide on a phone (both baseline and live).
+### Layout fixes (2026-11-10)
+The baseline now reflects these fixes, which are **not yet deployed**. Until they are, live-vs-baseline shows ~80 expected diffs. After deploying, `VISUAL_LOCAL_URL=https://roos.com npm run visual` should be green; that is the deploy check.
+- **ritdb videos:** "Error 153" on live. The server sends `Referrer-Policy: same-origin`, so YouTube got no Referer. Fixed with `referrerpolicy="strict-origin-when-cross-origin"` (as `company.html` has) and made responsive.
+- **Horizontal scroll, sitewide:** every page was 780px wide at 768 (`.top-header` 30px padding around a fixed-width `.container`) and 1000px at 992–999 (`.page-boxed`/`footer` fixed at 1000px). Fixed in `roos-min.css` (served), `roos.css` and `roos.scss`, and in the inlined copy of `roos.css` in `index.html`.
+- **Per page:** error pages' noise canvas (1560px at 1440); `infrastructure` 799px at 375 (dashed bracket hard-coded to 767px; nested `.row`); `maintenance` table; `instruments` blueprint and blindmate images (alt text fixed too); `mediaKit` button column; `fixture` nested rows; `support` `container row` combo (content was also flush-left on desktop); `company`/`visitRI` nested `.container`; `index` panel fan and slider arrows; `5g`/`6g`/`testsets` nested rows at 992.
+- Verified: no page wider than the viewport at 320/375/414/768/992/1024/1200/1440.
+
+### Known local-vs-live differences (not bugs in `src/`)
+- `form_network.html` is replaced server-side by the Google Form itself; locally it's the iframe wrapper.
+- `apps.html` gets a different footer fragment on live (footer under `#page-wrapper`, plus `cookieconsent.min.css`). Same root cause as the two-cached-footers problem; Phase 2 removes it.
+- `roos-min.css` is now hand-maintained (gulp is gone) and had drifted from `roos.css` (e.g. `.map-overlay h1` from `ec9726c`). Edit both until Phase 2 replaces them.
+
+### gan
+`gan.html` is in development and intentionally unlinked. It's 404 on live today, so the probe skips it. Once uploaded it will be found by the next `npm run baseline`; that is fine even while it's hidden.
 
 ### Phase 1 — Astro scaffold
 1. Move `src/*.html` → `src-legacy/` (harness already looks there).

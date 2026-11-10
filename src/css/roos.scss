@@ -223,6 +223,7 @@ body {
 
 .page-boxed {
   width: auto;
+  max-width: 100%;
   margin: 0 auto;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
 }
@@ -732,8 +733,6 @@ form label span {
 .top-header {
   background: #F0F0F0;
   border-bottom: 1px solid #DDDDDD;
-  padding-left: 30px;
-  padding-right: 30px;
   height: 25px;
 
   .header-item {
@@ -2508,6 +2507,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     width: 1000px;
+    max-width: 100%;
   }
 }
 
