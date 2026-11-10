@@ -1,6 +1,6 @@
 {
   "origin": "https://roos.com",
-  "probedAt": "2026-08-19T03:39:50.573Z",
+  "probedAt": "2026-11-10T21:18:27.137Z",
   "ok": [
     "403",
     "404",
@@ -57,5 +57,11 @@
     "visitRI",
     "vmhost_landing"
   ],
-  "missing": []
+  "missing": [
+    {
+      "name": "gan",
+      "status": 404,
+      "note": ""
+    }
+  ]
 }

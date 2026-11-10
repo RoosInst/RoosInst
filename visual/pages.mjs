@@ -45,6 +45,13 @@ const GLOBAL_MASKS = [
   '.owl-carousel',
   // <video> posters and first frames decode at different times.
   'video',
+  // Third-party embeds: their contents change under us (map pins and place
+  // card on contact, YouTube's player chrome on ritdb, Google Forms' footer
+  // on form_network). The iframe box itself stays in the comparison.
+  'iframe[src*="youtube.com"]',
+  'iframe[src*="google.com/maps"]',
+  'iframe[src*="goo.gl/forms"]',
+  'iframe[src*="docs.google.com/forms"]',
   // The whole footer, deliberately.
   //
   // It is injected into 44 pages by jQuery from _bottom-min.html, and the site
