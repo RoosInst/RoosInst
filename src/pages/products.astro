@@ -1,0 +1,227 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Products Overview | Roos Instruments"}
+  description={"Cassini is a modular architecture with Test Instrument Modules provide the building blocks \n\tfor a configurable microwave system with resource ports designed to integrate seamlessly, creating a flexible instrument architecture. \n\tThis gives Cassini drop in measurement capability and frequency extension as well as multi-site expansion."}
+  active={["nav-products"]}>
+			<!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+			<section class="breadcrumb-wrapper">
+				<div class="container">
+					<h2>Products</h2>
+					<ol class="breadcrumb">
+						<li><a href="/index.html">Home</a></li>
+						<li class="active">Products</li>
+					</ol>
+				</div>
+			</section>
+			<!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+			<section id="content" class="roosC container">
+				<img title="Modular Microwave" alt="Modular Microwave" src="images/Prod1.png">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<h2>Modular Microwave</h2>
+						<p class="main">
+							Cassini isn’t just modular instruments, it’s a modular architecture and there’s a
+							difference. Test Instrument Modules provide the building blocks for a configurable microwave
+							system with resource ports designed to integrate seamlessly, creating a flexible instrument
+							architecture. This gives Cassini drop in measurement capability and frequency extension as
+							well as instant multi-site expansion.
+						</p>
+						<a href="core.html" title="System Core">How it all works &raquo;</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- TODO: Replace next 4 .png with proper svg-->
+					<div class="col-sm-2 col-sm-offset-1">
+						<img src="images/mod_src.png" alt="Source Icon">
+					</div>
+					<div class="col-sm-8">
+						<h3>Sources</h3>
+						<p class="main">Precision microwave signal delivery. Continuous wave signals from 100MHz to
+							20 GHz. Modulated sources from 10kHz to 6GHz carrier with 20MHz baseband.</p>
+						<a href="core.html#Sourcing" title="System Core">Learn More &raquo;</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1">
+						<img src="images/mod_comb.png" alt="Combiner Icon">
+					</div>
+					<div class="col-sm-8">
+						<h3>Signal Combination</h3>
+						<p class="main">These instruments extend the capability of microwave sources by providing
+							signal routing and signal conditioning features. Two input sources can be routed out of
+							4 different outputs for increased port efficiency. Built-in step attenuators and
+							amplifications extends the dynamic range of traditional sources providing 150dB of
+							adjustable dynamic range. Precision microwave combiners enable two-tone signal delivery
+							for high performance intermodulation and linearity test setups.</p>
+						<a href="core.html#Combination" title="Signal Combination">Learn More &raquo;</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1">
+						<img src="images/mod_rec.png" alt="Receiver Icon">
+					</div>
+					<div class="col-sm-8">
+						<h3>Receiver</h3>
+						<p class="main">
+							The hub for all measurements on Cassini, the synchrodoyne vector receiver provides two
+							direct measure ports for 100MHz to 20 GHz signals and a dedicated low frequency port for
+							signals from 100kHz to 2 GHz. The local oscillator can be shared with up to three
+							different frequency converting testsets along with their corresponding downconverted IF
+							signals to provide cross-instrument, phase-coherent measurements.
+						</p>
+						<a href="core.html#Reciever" title="Receiver">Learn More &raquo;</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1">
+						<img src="images/mod_ts.png" alt="Testset Icon">
+					</div>
+					<div class="col-sm-8">
+						<h3>Test Sets</h3>
+						<p class="main">Cassini Test Sets integrate with the RF System Core source to extend source and
+							receiver test ports. These specialized front-ends provide path switching, signal
+							conditioning, source combining, and frequency conversion for single insertion
+							intermodulation, linearity, VNA, spectrum analysis, noise figure and power meter
+							measurements.</p>
+						<a href="testsets.html" title="Test Sets">Learn More &raquo;</a>
+					</div>
+
+				</div>
+				<hr class="space">
+				<hr class="space">
+
+				<img title="System Integration" alt="System Integration" src="images/Prod2.png">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<h2>System Integration</h2>
+						<p class="main">
+							A truly unique aspect of Cassini ATE is the configurable system integration layer. Moving
+							this
+							traditional fixed layer into the device interface environment allows the test system’s
+							architecture to be dynamically configured for each device application. interchangeable
+							blind-mate interface blocks allow any instrument in any position on
+							the test head to optimzie for signal layout, multi-site, and forward/backward compatibility.
+							Coaxial micorwave cables and conformable waveguide combine high performance signal delivery
+							and
+							cost effective
+							routing.
+						</p>
+					</div>
+				</div>
+
+				<hr class="space">
+				<hr class="space">
+
+				<img title="System Integration" alt="System Integration" src="images/Prod3.png">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<h2>Port & Frequency Extension</h2>
+						<p class="main">
+							Cassini Test Sets integrate with the RF System Core to extend source and vector receiver
+							test ports. These specialized front-ends provide full vector corrected path switching,
+							signal conditioning, source combining, and frequency conversion for signle insertion
+							intermodulation, linearity, VNA, spectrum analysis, continuous, pulsed, noise figure and
+							power meter tests. <a href="testsets.html">Learn More &raquo;</a>
+						</p>
+					</div>
+				</div>
+
+				<style is:inline>
+					.roosC abc {
+						color: #777 !important;
+					}
+				</style>
+				<div class="row">
+					<div class="col-sm-2 col-sm-offset-1" style="padding: 0 30px;">
+						<a href="pdf/RI8545_TestSet_20GHz.pdf" title="RI8545 TestSet 20 GHz" target="_blank">
+							<img title="RI8545 20 GHz TestSet" alt="RI8545 20 GHz TestSet" src="images/ri8545_tim.png">
+							<h4>RI8545</h4>
+							<div style="width: 100%; border: 2px solid #324993; margin-bottom: 10px;"></div>
+						</a>
+						<p>0.1 to 20 GHz</p>
+						<p>4 Vector Tx/Rx</p>
+					</div>
+
+					<div class="col-sm-2" style="padding: 0 30px;">
+						<a href="pdf/RI8607_TestSet_50GHz.pdf" title="RI8607 TestSet 2-50 GHz" target="_blank">
+							<img title="RI8607 TestSet 4-50 GHz" alt="RI8607 TestSet 2-50 GHz"
+								src="images/ri8563_tim.png">
+							<h4>RI8607 </h4>
+							<div style="width: 100%; border: 2px solid #BD1A8D; margin-bottom: 10px;"></div>
+						</a>
+						<p>2 to 50 GHz</p>
+						<p>2 Vector Tx/Rx</p>
+					</div>
+
+					<div class="col-sm-2" style="padding: 0 30px;">
+						<a href="pdf/RI8580_TestSet_60GHz.pdf" title="RI8580 TestSet 60 GHz" target="_blank">
+							<img title="RI8580 60 GHz TestSet" alt="RI8580 60 GHz TestSet" src="images/ri8580_tim.png">
+							<h4>RI8580 </h4>
+							<div style="width: 100%; border: 2px solid #EA2D49; margin-bottom: 10px;"></div>
+						</a>
+						<p>50 to 70 GHz</p>
+						<p>1 Vector Tx/Rx</p>
+						<p>1 Scalar Rx</p>
+					</div>
+
+					<div class="col-sm-2" style="padding: 0 30px;">
+						<a href="pdf/RI8604_TestSet_80GHz.pdf" title="RI8604 TestSet 80 GHz" target="_blank">
+							<img title="RI8604 80 GHz TestSet" alt="RI8604 60 GHz TestSet" src="images/ri8604_tim.png">
+							<h4>RI8604</h4>
+							<div style="width: 100%; border: 2px solid #F5811F; margin-bottom: 10px;"></div>
+						</a>
+						<p>71 to 86 GHz</p>
+						<p>1 Vector Tx/Rx</p>
+						<p>1 Scalar Rx</p>
+					</div>
+
+					<div class="col-sm-2" style="padding: 0 30px;">
+						<a href="#" title="RI8610 100 GHz TestSet" target="_blank">
+							<img title="RI8610 100 GHz TestSet" alt="RI8610 100 GHz TestSet"
+								src="images/ri8604_tim.png">
+							<h4>RI8610 </h4>
+							<div style="width: 100%; border: 2px solid #f56e1f; margin-bottom: 10px;"></div>
+						</a>
+						<p>86 to 110 GHz</p>
+						<p>1 Vector Tx/Rx</p>
+						<p>1 Scalar Rx</p>
+					</div>
+					<hr class="space">
+					<p class="main"><br>Select an instrument above or <a href="/tims.html#testsets">Browse All TIMs
+							&raquo;</a>
+					</p>
+				</div>
+
+
+				<hr class="space">
+				<div class="row">
+					<img style="width: 100%" title="Ultimate Flexibility" alt="Ultimate Flexibility"
+						src="images/Image 26.png">
+				</div>
+				<div class="row roosC">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h3>Multi-Instrument Signal Flow</h3>
+						<p>When all of the pieces come together, the end result is a complete microwave test
+							system with unparalleled flexibility and resource efficiency. With both instrument-level
+							calibrations and a system-wide vector calibrfation that incorporates the integration layer,
+							Cassini delivers true virtual VNA, spectrum analyzer, and power meter measurement
+							capability. The multi-layered calibration guarantees accurate and repeatable source and
+							measurement capability right to the test port.
+						</p>
+						<p><a href="testsets.html">Learn More &raquo;</a></p>
+					</div>
+				</div>
+				<hr class="space">
+				<hr class="space">
+			</section> <!-- End of #content section-->
+</Base>

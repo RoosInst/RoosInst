@@ -5,6 +5,7 @@
  *
  *   node tools/port-page.mjs legal terms privacy      # write + git rm legacy
  *   node tools/port-page.mjs --dry legal              # report only
+ *   node tools/port-page.mjs --force fixture          # after hand-fixing src-legacy/fixture.html
  *
  * It refuses (exit 1, nothing written) when a page doesn't fit the layout
  * exactly: a header that differs from Header.astro beyond whitespace, <head>
@@ -172,6 +173,7 @@ for (const name of names) {
   if (dry) continue;
   if (existsSync(dest)) throw new Error(`${dest} exists`);
   writeFileSync(dest, out);
-  execFileSync('git', ['rm', '-q', join('src-legacy', `${name}.html`)], { cwd: root });
+  // --force: the legacy file has uncommitted hand fixes, now carried into the .astro
+  execFileSync('git', ['rm', '-q', ...(args.includes('--force') ? ['-f'] : []), join('src-legacy', `${name}.html`)], { cwd: root });
 }
 process.exit(failed ? 1 : 0);
