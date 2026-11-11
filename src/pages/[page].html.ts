@@ -1,22 +1,29 @@
 /**
  * Pass-through for pages that have not been ported yet.
  *
- * Serves src-legacy/<name>.html byte for byte at /<name>.html, so the built
- * site matches the legacy site exactly and `npm run visual` is green before
- * any page is ported. Porting a page = adding src/pages/<name>.astro; this
- * route then stops emitting that name. When src-legacy/ is empty, delete this
- * file.
+ * Serves src-legacy/<name>.html at /<name>.html unchanged except for one
+ * thing: the empty footer placeholder <div class="bottom"></div> gets the
+ * shared footer (src/components/Footer.astro) rendered into it at build time,
+ * instead of jQuery fetching it in the browser.
  *
- * Partials (_bottom-min.html etc.) are emitted too: legacy pages fetch them
- * at runtime with jQuery.
+ * Porting a page = adding src/pages/<name>.astro; this route then stops
+ * emitting that name. When src-legacy/ is empty, delete this file.
+ *
+ * Partials (_bottom.html, _bottom-min.html, ...) are still emitted as-is, so
+ * HTML that browsers cached before the switch can still fetch them. Drop them
+ * once that cache has expired.
  */
 import type { APIRoute, GetStaticPaths } from 'astro';
+import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import Footer from '../components/Footer.astro';
 
 const root = process.cwd();
 const legacyDir = join(root, 'src-legacy');
 const pagesDir = join(root, 'src', 'pages');
+
+const FOOTER_SLOT = '<div class="bottom"></div>';
 
 export const getStaticPaths = (() => {
   const ported = new Set(
@@ -31,7 +38,25 @@ export const getStaticPaths = (() => {
     .map((page) => ({ params: { page } }));
 }) satisfies GetStaticPaths;
 
-export const GET: APIRoute = ({ params }) => {
-  const body = readFileSync(join(legacyDir, `${params.page}.html`));
+let footerHtml: Promise<string> | undefined;
+const renderFooter = () =>
+  (footerHtml ??= AstroContainer.create().then((c) => c.renderToString(Footer)));
+
+export const GET: APIRoute = async ({ params }) => {
+  const name = params.page!;
+  const raw = readFileSync(join(legacyDir, `${name}.html`));
+  let body: string | Buffer = raw;
+
+  if (!name.startsWith('_')) {
+    const html = raw.toString('utf8');
+    const slots = html.split(FOOTER_SLOT).length - 1;
+    if (slots > 1) throw new Error(`${name}.html has ${slots} footer placeholders; expected at most one`);
+    if (slots === 0 && /class=["']\s*bottom\s*["']/.test(html)) {
+      throw new Error(`${name}.html has a .bottom element that isn't exactly ${FOOTER_SLOT}`);
+    }
+    if (slots === 1) {
+      body = html.replace(FOOTER_SLOT, `<div class="bottom">${await renderFooter()}</div>`);
+    }
+  }
   return new Response(body, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 };

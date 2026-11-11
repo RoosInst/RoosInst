@@ -12,4 +12,8 @@ export default defineConfig({
     headers: { 'Referrer-Policy': 'same-origin' },
   },
   devToolbar: { enabled: false }, // it would show up in dev-server screenshots
+  // Astro's compression drops whitespace that contains a newline, which
+  // deletes real spaces between inline elements in the legacy markup (the
+  // footer address became "Santa Clara,CA 95050,US").
+  compressHTML: false,
 });

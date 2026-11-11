@@ -52,23 +52,10 @@ const GLOBAL_MASKS = [
   'iframe[src*="google.com/maps"]',
   'iframe[src*="goo.gl/forms"]',
   'iframe[src*="docs.google.com/forms"]',
-  // The whole footer, deliberately.
-  //
-  // It is injected into 44 pages by jQuery from _bottom-min.html, and the site
-  // serves two different versions of that fragment: one renders the address as
-  // "Santa Clara, CA95050, US" (the &nbsp; in the maintained _bottom.html was
-  // lost in the minified copy), the other keeps the space. Load any page six
-  // times and you get each about half the time; at 375px they wrap to
-  // different heights and shift everything below them.
-  //
-  // No mask smaller than this contains it, because the height change
-  // propagates down the column. The footer is untestable by construction until
-  // it is rendered server-side.
-  //
-  // REMOVE THIS in Phase 2, once Base.astro renders the footer from a single
-  // source. That is the point the footer becomes worth regression-testing --
-  // and unmasking it is how you prove the fix landed.
-  'footer',
+  // The footer used to be masked here: two scripts raced to jQuery-load
+  // _bottom.html and _bottom-min.html into the same element, so each load got
+  // one of two footers at random. Since Phase 2 it is rendered at build time
+  // from src/components/Footer.astro and is regression-tested like the rest.
 ];
 
 const PAGE_MASKS = {
