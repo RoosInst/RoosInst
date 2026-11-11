@@ -9,7 +9,7 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 | Legacy site | 64 hand-written pages in `src/*.html`, partials `_top/_bottom/_bottom-min/_template`, jQuery + FontAwesome JS + owl/tiny-slider carousels. Old gulp build deleted in `3b0e412`. |
 | Phase 0 – visual baseline | **Done on `master`** (merge `d61637f`). Baseline recaptured from live 2026-11-10 (`7f27b60`): 54 pages × 375/768/1440, 162/162 green on a second pass against live. |
 | JS rewrite | `bd55e49` ".js rewrite – ai assist (in progress)" — unfinished. |
-| Not pushed | `master` is 5 commits ahead of `origin/master` (merge, LF normalization, recapture, this plan, layout fixes); `phase1-astro` is on top. Push LFS objects with it. |
+| Not pushed | `master` (through Phase 1) is 12 commits ahead of `origin/master`; `phase2-layout` is on top. Push LFS objects with it. |
 
 ## Phases
 
@@ -34,7 +34,7 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 ### gan
 `gan.html` is in development and intentionally unlinked. It's 404 on live today, so the probe skips it. Once uploaded it will be found by the next `npm run baseline`; that is fine even while it's hidden.
 
-### Phase 1 — Astro scaffold ✅ (branch `phase1-astro`, not merged)
+### Phase 1 — Astro scaffold ✅ (merged to `master` 2026-11-10)
 1. ✅ `src/*.html` → `src-legacy/` (61 files incl. partials).
 2. ✅ Astro 7.4.10 at repo root (`astro.config.mjs`: `build.format: 'file'` so URLs stay `/name.html`; port 4321; dev toolbar off).
 3. ✅ `src/css`, `src/images`, `src/js`, `src/sitemap.xml` → `public/`, next to the existing `public/` files. Two collisions: `public/sitemap.xml` was a stale 2024 copy (494 URLs; live serves the 1723-URL `src/` one), and `public/css/roos-dark.css` differed from `src/css/` only by a trailing blank line. The `src/` copies won.
@@ -44,13 +44,20 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
    - Five SVG references on `5g`/`6g`/`testsets` had the wrong case. roos.com and Windows ignore case; Astro's server, like most hosts, doesn't. Fixed on `master` (`5d40cde`) and merged in.
 - `pages.mjs` now merges `src/*.html`, `src-legacy/*.html` and `src/pages/*.astro`, so half-ported states are fully covered.
 - Root `npm run visual -- <flags>` now forwards flags (npm 12 rejected them before).
-- **Deploy changes after merge:** upload `dist/` (after `npm run build`) instead of `src/` + `public/`. Until merging, keep editing `src/` on `master`; bring changes over with `git merge master` (git follows the renames).
+- **Deploy:** `npm run build`, then upload `dist/` (not `src-legacy/` + `public/`). Edit pages in `src-legacy/`.
 - `http://localhost:4321/` 404s in dev/preview; use `/index.html`. Production web servers map `/` to `index.html` themselves.
 
-### Phase 2 — Layout + partials server-side
-1. `Base.astro` from `_top.html` / `_bottom.html`; one footer source.
-2. Fixes the live `CA95050` footer bug and the two-cached-versions problem; **remove the `footer` mask** in `pages.mjs` to prove it.
-3. Drop the jQuery footer fetch and FontAwesome JS → inline SVG icons (removes the ~1.5 s reflow `settle.mjs` waits for).
+### Phase 2 — Layout + partials server-side ✅ (branch `phase2-layout`, not merged)
+1. ✅ One footer source: `src/components/Footer.astro` (from the maintained `_bottom.html`). The pass-through renders it into `<div class="bottom"></div>` on the 45 Bootstrap 3 pages and fails the build on a malformed placeholder (`cassini_reference_guide` had `class=" bottom"`). `index` is Bootstrap 5 with its own inline footer; it joins when it's ported.
+   - **Root cause of the two footers:** `roos.min.js` bundles a copy of `loadbottom.js` that loads `/_bottom.html` into `.bottom`, and the pages also load `loadbottom.js`, which loads `/_bottom-min.html` into the same element. The last response won. Both loaders are gone; `roos.min.js?v2` → `?v3`.
+   - **`footer` mask removed.** 162/162 green on repeat runs, so the footer is deterministic now.
+   - `compressHTML: false`: Astro's compression deleted the spaces in the address ("Santa Clara,CA 95050,US").
+2. ✅ FontAwesome's script is gone. `src/lib/fontawesome.mjs` inlines each `<i class="fa…">` as the exact `<svg>` the script produced (FA 6.7.2 data from `node_modules`), including the carousel arrows in inline scripts and `roos.js`/`roos.min.js`. `/css/fontawesome-svg.min.css` is the CSS the script injected, linked where the script put it (first stylesheet in `<head>`). Unknown icon names fail the build.
+   - **Verified:** rendered icon markup is identical to the script's on 53/55 pages. The other two are fixes: `software` (`fa-hand-o-up`, `fa-hand-pointer-o`, both FA4 names) and `article_mmwave_journal_march2020` (`fa-small` → `fa-sm`) showed FA's pulsing "?" placeholder on live.
+   - The full visual run is ~25% faster without the 1.5 s icon reflow.
+3. ⏭ `Base.astro` (head + navbar) is deferred to the first Phase 3 port. Every page carries its own copy of the header with per-page differences (active nav item, title, meta), and there's no ported page to check it against yet. `_top.html` is dead code: no page has a `.top` placeholder.
+- `visual:update -- --update-snapshots=all` now works. `run.mjs` used to append a bare `--update-snapshots`, which silently reset it to "changed only", so sub-tolerance changes (like the address spacing) were never recorded.
+- Still served for HTML that browsers cached before the switch: `_bottom*.html`, `js/loadbottom.js`, `js/fontawesome.all.min.js`. Delete them a release or two later.
 
 ### Phase 3 — Page port
 1. Port pages in batches, simplest first: error pages → legal/terms/privacy/shipping/returns → products/instruments/software → carousel pages (`5g`, `6g`, `testsets`, `visitRI`, `index`) → interactive (`checkout`/Stripe, `search`, `contact`, `form_network`).

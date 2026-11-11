@@ -1,12 +1,14 @@
 /**
  * Get a page to a state where two screenshots of it would be identical.
  *
- * The legacy site finishes assembling itself well after `load`:
+ * The live (pre-Phase 2) site finishes assembling itself well after `load`:
  *   - the footer is fetched with jQuery (`$('.bottom').load(...)`)
  *   - FontAwesome's JS replaces every <i> with an <svg>, which changes icon
  *     widths and reflows the navbar horizontally
  * Measured on roos.com, both land ~1.5s after load. Screenshot before that and
  * the footer is missing and the nav labels sit at different x-positions.
+ * Builds from Phase 2 on do both at build time, so the first wait below
+ * passes immediately; it stays for `npm run baseline` against live.
  *
  * Every wait is bounded. A page that never finishes loading a third-party
  * asset should still produce a screenshot -- if that asset matters visually,

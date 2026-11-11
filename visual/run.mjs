@@ -41,6 +41,12 @@ function node(script, args, env) {
 }
 
 const pwArgs = ['test', ...process.argv.slice(3)];
+// Rewrites only shots that fail, unless the caller asked otherwise (e.g.
+// --update-snapshots=all to record a change smaller than the tolerance).
+// Appending the bare flag after theirs would silently override it.
+const updateArgs = pwArgs.some((a) => a.startsWith('--update-snapshots') || a === '-u')
+  ? pwArgs
+  : [...pwArgs, '--update-snapshots'];
 const stampFile = join(here, 'baseline', '.masks.json');
 
 function writeStamp() {
@@ -76,7 +82,7 @@ switch (mode) {
   case 'baseline':
     // Capture from the live site. This is the pre-migration reference.
     node(join(here, 'probe.mjs'), [], { VISUAL_BASE_URL: LIVE });
-    node(PW_CLI, [...pwArgs, '--update-snapshots'], { VISUAL_BASE_URL: LIVE });
+    node(PW_CLI, updateArgs, { VISUAL_BASE_URL: LIVE });
     writeStamp();
     break;
 
@@ -92,7 +98,7 @@ switch (mode) {
 
   case 'update':
     // Accept the local build's current rendering as the new reference.
-    node(PW_CLI, [...pwArgs, '--update-snapshots'], { VISUAL_BASE_URL: LOCAL });
+    node(PW_CLI, updateArgs, { VISUAL_BASE_URL: LOCAL });
     writeStamp();
     break;
 

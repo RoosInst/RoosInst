@@ -1,10 +1,12 @@
 /**
  * Pass-through for pages that have not been ported yet.
  *
- * Serves src-legacy/<name>.html at /<name>.html unchanged except for one
- * thing: the empty footer placeholder <div class="bottom"></div> gets the
- * shared footer (src/components/Footer.astro) rendered into it at build time,
- * instead of jQuery fetching it in the browser.
+ * Serves src-legacy/<name>.html at /<name>.html unchanged except for two
+ * things done at build time instead of in the browser:
+ *   - the empty footer placeholder <div class="bottom"></div> gets the shared
+ *     footer (src/components/Footer.astro) instead of a jQuery fetch;
+ *   - FontAwesome <i> icons become inline <svg> (src/lib/fontawesome.mjs)
+ *     instead of being swapped by fontawesome.all.min.js after load.
  *
  * Porting a page = adding src/pages/<name>.astro; this route then stops
  * emitting that name. When src-legacy/ is empty, delete this file.
@@ -18,6 +20,7 @@ import { experimental_AstroContainer as AstroContainer } from 'astro/container';
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import Footer from '../components/Footer.astro';
+import { inlineIcons, FA_CSS_HREF } from '../lib/fontawesome.mjs';
 
 const root = process.cwd();
 const legacyDir = join(root, 'src-legacy');
@@ -54,9 +57,14 @@ export const GET: APIRoute = async ({ params }) => {
     if (slots === 0 && /class=["']\s*bottom\s*["']/.test(html)) {
       throw new Error(`${name}.html has a .bottom element that isn't exactly ${FOOTER_SLOT}`);
     }
+    let out = html;
     if (slots === 1) {
-      body = html.replace(FOOTER_SLOT, `<div class="bottom">${await renderFooter()}</div>`);
+      out = out.replace(FOOTER_SLOT, `<div class="bottom">${await renderFooter()}</div>`);
     }
+    // Pages that used FontAwesome's script now link its stylesheet instead;
+    // their icons are inlined here. Pages without it never showed icons.
+    if (out.includes(FA_CSS_HREF)) out = inlineIcons(out, `${name}.html`);
+    body = out;
   }
   return new Response(body, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 };

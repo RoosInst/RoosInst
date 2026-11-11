@@ -177,7 +177,7 @@ function initPlugins() {
             loop: false,
             rewind: true,
             nav: true,
-            navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
+            navText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"],
             autoplay: true,
             autoplayHoverPause: true
         });
@@ -187,7 +187,7 @@ function initPlugins() {
             navigation: true,
             singleItem: true,
             transitionStyle: 'fade',
-            navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
+            navigationText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"]
         });
 
         jQuery('#portfolio-slider').owlCarousel({
@@ -195,7 +195,7 @@ function initPlugins() {
             navigation: true,
             singleItem: true,
             slideSpeed: 500,
-            navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
+            navigationText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"]
         });
 
         jQuery('#about-us-slider').owlCarousel({
@@ -217,7 +217,7 @@ function initPlugins() {
             singleItem: true,
             slideSpeed: 500,
             transitionStyle: 'fade',
-            navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
+            navigationText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"]
         });
 
         jQuery('#features-fade-carousel #owl-carousel-fade').owlCarousel({
@@ -225,7 +225,7 @@ function initPlugins() {
             navigation: true,
             singleItem: true,
             transitionStyle: 'fade',
-            navigationText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"]
+            navigationText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"]
         });
 
         jQuery('#features-owl-carousel #carousel-wrapper').owlCarousel({
@@ -279,7 +279,7 @@ function initPlugins() {
                 rewind: jQuery(slider).find('img').length > 4,
                 autoplayHoverPause: true,
                 nav: true,
-                navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
+                navText: ["<svg class='svg-inline--fa fa-angle-left' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path></svg>", "<svg class='svg-inline--fa fa-angle-right' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='angle-right' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path fill='currentColor' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'></path></svg>"],
                 dots: true,
                 lazyLoad: true
             });
@@ -358,7 +358,7 @@ onDocumentReady(function () {
     if (username) {
         const usernameEl = getEl('#username');
         if (usernameEl) {
-            usernameEl.innerHTML = "<i class='fa fa-user'></i>" + username;
+            usernameEl.innerHTML = "<svg class='svg-inline--fa fa-user' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='user' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='currentColor' d='M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z'></path></svg>" + username;
         }
         getEl('#logout')?.classList.remove('hidden');
         getEl('#newuser')?.classList.add('hidden');
@@ -440,7 +440,7 @@ function logout() {
     Cookies.remove('username');
     const usernameEl = getEl('#username');
     if (usernameEl) {
-        usernameEl.innerHTML = "<i class='fa-solid fa-lock'></i> Sign in";
+        usernameEl.innerHTML = "<svg class='svg-inline--fa fa-lock' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='lock' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path fill='currentColor' d='M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z'></path></svg> Sign in";
     }
     getEl('#logout')?.classList.add('hidden');
     getEl('#newuser')?.classList.remove('hidden');
