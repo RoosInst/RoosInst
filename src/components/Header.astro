@@ -3,7 +3,14 @@
  * Site header: contact bar, navbar and search modal. Taken from the legacy
  * pages, where 44 of the Bootstrap 3 pages carried this block with only
  * line-wrapping differences. Icons are inlined by src/middleware.ts.
+ *
+ * `active` lists the nav <li> ids to highlight (e.g. ['nav-company']); the
+ * legacy pages added the class from a DOMContentLoaded script.
  */
+interface Props { active?: string[] }
+const { active = [] } = Astro.props;
+const cls = (id: string, base = '') =>
+  [base, active.includes(id) ? 'active' : ''].filter(Boolean).join(' ') || undefined;
 ---
 <!-- ==========================
     	HEADER - START
@@ -61,13 +68,13 @@
     <!-- end of .navbar-header -->
     <nav class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li id="nav-home" class="dropdown">
+        <li id="nav-home" class={cls("nav-home", "dropdown")}>
           <a href="/index.html">Home</a>
         </li>
-        <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
+        <li id="nav-mobile-support" class={cls("nav-mobile-support", "dropdown hidden-sm hidden-md hidden-lg")}>
           <a href="/support.html">Support</a>
         </li>
-        <li id="nav-products" class="dropdown">
+        <li id="nav-products" class={cls("nav-products", "dropdown")}>
           <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
             data-delay="300">Products<i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown-menu">
@@ -84,7 +91,7 @@
             <li><a href="/rik"><i class="fa-solid fa-angles-right"></i>RIK Catalog</a></li>
           </ul>
         </li>
-        <li id="nav-services" class="dropdown">
+        <li id="nav-services" class={cls("nav-services", "dropdown")}>
           <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
             data-delay="300">Services<i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown-menu">
@@ -96,7 +103,7 @@
             <li><a href="/training.html"><i class="nav-indent1 fas fa-angles-right"></i>Training</a></li>
           </ul>
         </li>
-        <li id="nav-company" class="dropdown">
+        <li id="nav-company" class={cls("nav-company", "dropdown")}>
           <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
             data-delay="300">Company<i class="fa-solid fa-chevron-down"></i></a>
           <ul class="dropdown-menu">
@@ -108,10 +115,10 @@
             <li><a href="/contact.html"><i class="nav-indent1 fas fa-angles-right"></i>Contact Us</a></li>
           </ul>
         </li>
-        <li id="nav-support">
+        <li id="nav-support" class={cls("nav-support")}>
           <a href="/support.html">Support</a>
         </li>
-        <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
+        <li id="nav-mobile-privacy" class={cls("nav-mobile-privacy", "dropdown hidden-sm hidden-md hidden-lg")}>
           <a href="/privacy.html">Privacy</a>
         </li>
       </ul>

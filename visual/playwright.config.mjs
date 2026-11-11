@@ -24,7 +24,9 @@ export default defineConfig({
   timeout: 120_000,
   retries: 1, // one retry absorbs a flaky third-party load, not a real diff
 
-  snapshotPathTemplate: 'baseline/{projectName}/{arg}{ext}',
+  // VISUAL_SNAPSHOT_DIR + VISUAL_STRICT=1 compare two builds pixel for pixel
+  // (e.g. before/after porting a page) instead of against the live baseline.
+  snapshotPathTemplate: `${process.env.VISUAL_SNAPSHOT_DIR ?? 'baseline'}/{projectName}/{arg}{ext}`,
 
   expect: {
     // The stabilisation loop needs room: this site keeps mutating its DOM for
@@ -33,7 +35,7 @@ export default defineConfig({
     toHaveScreenshot: {
       // ~0.2% of pixels. Tight enough to catch a shifted section, loose
       // enough to survive font antialiasing between runs.
-      maxDiffPixelRatio: 0.002,
+      ...(process.env.VISUAL_STRICT ? { maxDiffPixels: 0, threshold: 0 } : { maxDiffPixelRatio: 0.002 }),
       animations: 'disabled',
       caret: 'hide',
       scale: 'css',

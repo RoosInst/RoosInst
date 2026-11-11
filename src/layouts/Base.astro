@@ -16,9 +16,11 @@ interface Props {
   /** Defaults to https://roos.com/<this page>.html */
   canonical?: string;
   footer?: boolean;
+  /** Nav <li> ids to highlight, e.g. ['nav-company'] */
+  active?: string[];
 }
 
-const { title, description, footer = true } = Astro.props;
+const { title, description, footer = true, active = [] } = Astro.props;
 const path = Astro.url.pathname.endsWith('.html') ? Astro.url.pathname : `${Astro.url.pathname}.html`;
 const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
 ---
@@ -60,7 +62,7 @@ const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
   </noscript>
 
   <div id="page-wrapper" class="page-boxed">
-    <Header />
+    <Header active={active} />
     <slot />
     {footer && <div class="bottom"><Footer /></div>}
   </div>
