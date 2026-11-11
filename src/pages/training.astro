@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Training | Roos Instruments"}
+  description={"Roos Instruments training for Test Engineers, Technicians, Maintenance and Administrators."}
+  active={["nav-services"]}>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Training</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li class="active">Training</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="roosC container">
+      <section class="content services1" id="services">
+        <!-- Service -->
+        <div class="col-sm-4">
+          <div class="service">
+            <i class="fa-solid fa-microchip"></i>
+            <div class="service-body">
+              <h3>Developers</h3>
+              <p>
+                The course provides students with the information necessary to create, debug, and maintain test programs
+                on Cassini. The general topics covered include the various instruments and features of the test system
+                with an emphasis on fundamental production test techniques for DC, digital, mixed signal and microwave
+                applications.</p>
+              <br>
+              <p class="pull-right">
+                <a href="https://learn.roos.com/" class="btn btn-lg btn-primary">Visit Basic
+                  Course</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service -->
+        <div class="col-sm-4">
+          <div class="service">
+            <i class="fa-solid fa-users"></i>
+            <div class="service-body">
+              <h3>Administrators</h3>
+              <p>
+                The course prepares individuals responsible for the initial configuration and support for the Cassini
+                System Controller, Virtual Workstation/s, and Guru Server. The course will familiarize students with
+                system site preparation, setup, software maintenance,
+                and customization of Cassini ATE test and data workflow.
+                <br>
+                <br>
+              <p class="pull-right">
+                <a href="https://learn.roos.com/courses/guru-admin" class="btn btn-lg btn-primary">Visit Guru Admin
+                  Course</a>
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service -->
+        <div class="col-sm-4">
+          <div class="service faa-parent animated-hover">
+            <i class="fa-solid fa-wrench faa-wrench"></i>
+            <div class="service-body">
+              <h3>Maintainers & Technicians</h3>
+              <p>
+                This beginning-level class provides training on the hardware, software, and fundamental microwave theory
+                necessary to troubleshoot, diagnose, repair, calibrate, and maintain the various instruments and
+                components of the Cassini ATE system.<br>
+                <a href="/pdf/Cassini_Maintenance_Training_Syllabus.pdf" class="pull-right link">View Maintenance
+                  Training Syllabus &raquo;</a>
+              </p>
+            </div>
+          </div>
+          <div class="hidden" style="margin: auto; width: 50%; padding: 10px; text-align: center;">
+            <a href="https://goo.gl/forms/xQUaoCWB2gB0AAtC3" class="btn btn-primary"><strong><i
+                  class="far fa-edit"></i>Register for Course</strong></a><br>
+            <strong>March 14-18</strong>
+          </div>
+        </div>
+      </section>
+      <hr class="space">
+
+      <section id="interested" class="">
+        <!-- Payment Form -->
+        <hr class="space">
+        <div style="padding: 0;" class="col-lg-8 col-lg-offset-2 panel-default form-only panel">
+          <div class="panel-heading">
+            <h5 style="margin-bottom: 0;" class="panel-title"><i class="fa-solid fa-graduation-cap"></i>Sign Up for Training Course Annoucements</h5>
+          </div>
+          <div class="panel-body">
+            <p>Please fill out this form to be notified when our next Cassini training course will be offered.
+            </p>
+            <div class="col-sm-4 col-sm-offset-4">
+              <a rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLScNqq8jCoDHqSV9MCqqfWCxNLHWtkAx271PyJnb9iESLTPOXQ/viewform" aria-label="Form to Request Course Annoucements"
+                class="btn btn-primary">Request Course Annoucements</a>
+            </div>
+          </div>
+        </div>
+        <!--End mc_embed_signup-->
+      </section>
+
+
+      <section id="paywithCC" class="hide">
+        <!-- Payment Form -->
+        <hr class="space">
+        <div style="padding: 0;" class="col-lg-8 col-lg-offset-2 panel-default form-only panel">
+          <div class="panel-heading">
+            <h5 style="margin-bottom: 0;" class="panel-title">Pay for Developer Training</h5>
+          </div>
+          <div class="panel-body">
+            <p>Please use the "Pay with Card" button to process your credit card for the amount due for the training
+              class. Do not pay until your registration has been processed and date is confirmed via email.</p>
+            <div class="col-sm-3 pull-right">
+              <script is:inline src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_live_1UhR4hfdIYQAuML4rQT1rlh1" data-name="Roos Instruments Inc."
+                data-description="Training Course"
+                data-image="https://s3.amazonaws.com/stripe-uploads/acct_150zhiCItvmu7x8Wmerchant-icon-1442449387324-icon_ball-128.png"
+                data-locale="auto" data-zip-code="true" data-amount="260000">
+                </script>
+            </div>
+            <div class="col-sm-9">
+              <span style="text-align: right;">US$ 2,600</span>
+            </div>
+          </div>
+        </div>
+        <!--End mc_embed_signup-->
+      </section>
+
+    </div>
+</Base>

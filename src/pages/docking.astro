@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Docking | Roos Instruments"}
+  description={"Cassini supports multi-site handlers and probers in multiple configurations (ping-pong or parallel, grid or rows)."}
+  active={["nav-products"]}>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Docking</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/fixture.html">Device Interface</a></li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="roosC container">
+      <h5>Multi-Site Testing to Maximize Operational Efficiency</h5>
+      <p>
+        Both <a href="/Cassini">CASSINI</a> and RI7100A ATE platforms fully support multi-site handlers and probers in
+        multiple configurations (ping-pong or parallel, grid or rows). The goal for multi-site test configurations is
+        to
+        optimize Operational
+        Efficiency (OE) by using 100% of the test resources while the Handler or Prober is preparing the next DUT,
+        called the Handler Intex Time (HT). Selecting the number of sites (1, 2, 4 or more) to maximize test resource
+        utilization is dependant on
+        the difference between Total Test Time (TTT) and the Handler Index Time (HT). Operational Efficiency (OE) is
+        calculated as a ratio between the Total Test Time and Handler Time (OE = TTT/HT). A 100% OE would mean that
+        the
+        test system does not have
+        to wait for the handler to load the next DUT and the handler does not have to wait for the test system to
+        complete testing. Since ROOS test systems can average 1,000s of highly accurate tests per second, the most
+        effective multi-site designs often
+        loose effectiveness past just 2 sites, drastically simplifying design and improving reliability. Dual Site
+        Handlers are often more reliable and cost effective than highly complex quad site or more solutions. Our
+        unique
+        Fixture design allows for
+        rapid debugging and incremental deployemnt of single and multi-site testing, reusing the same precision
+        components used at 1st silicon (single site, hand socket) to multi-site production test at high volumes.
+      </p>
+      <h5>Handler Interfaces For All DUTs</h5>
+      <p>
+        Roos Instruments has accumulated wide experience interfacing its Test Head and Fixtures so that any make or
+        model of IC handler can be supported. Every ROOS system includes technical assistance and interfacing support
+        to
+        ensure high-speed operation. ROOS
+        systems operate successfully with pick and place, gravity fed, bowl, strip, parallel and multi-site package
+        handlers. Programmable Handler Pods are used to interface to standard Serial, Parallel, or GPIB handler
+        control
+        ports. ROOS has built-in
+        support for many common handler manufacturers and 3rd party docking specialists, including:&nbsp;
+        <a href="https://www.aetrium.com/">Aetrium</a>, <a href="https://www.deltad.com/">Delta Design</a>,
+        <a href="https://www.djtech.co.jp/">DJ Tech</a>, <a href="https://www.intest.com/">inTest</a>, <a
+          href="https://www.multitest.com">MutiTest</a>,
+        <a href="https://www.epson.jp/e/products/handler/">Seiko-Epson</a>, <a
+          href="https://www.sowa-me.co.jp/e/e_home.html">SOWA</a>, <a href="https://www.rasco.de/">Rasco</a> and more...
+        Standard Docking Kits: <a href="/parts/rik0070a">RIK0070A - RI Large Handler Dock</a> and <a
+          href="/parts/RIK0068A">RIK0068A - Fixture Docking Ears</a>
+      </p>
+      <h5>Wafer Probing
+      </h5>
+      <p>
+        <img alt="Prober" src="images/ri_prober_interface.png" style="float:right; max-width: 75px">
+        <img alt="Prober" src="images/ri_prober_interface2.png"
+          style="padding-left: 5px; float:right; max-width: 136px"> With&nbsp;the trend toward multi-chip modules, it
+        is
+        becoming very important to test the die as well as the packaged parts. Anticipating
+        this, ROOS offers a full function wafer probing system with the ability to measure complex wafers and provide
+        complete wafer map outputs. ROOS works in conjunction with <a href="https://www.cmicro.com/">Cascade
+          Microtech</a> and other socket manufacturers to meet your requirements for these challenging aspects of RF
+        IC
+        testing.
+      </p>
+
+      <h5>Sockets and DUT Boards</h5>
+      <img alt="socket" src="images/socket.jpg" style="max-width: 168px; float:right;">
+      <p>
+        A key part of the ability to measure devices is to connect reliably to them. ROOS designs and builds two layer
+        DUT boards to customer specifications and guarantees their performance. Our DUT board design is compatible
+        with
+        several high-performance sockets
+        such as <a href="https://www.johnstech.com">Johnstech</a>, <a href="https://www.arieselec.com/">Aries</a>,<a
+          href="https://www.cmicro.com/">Cascade
+          Microtech</a> , <a href="https://www.phoenixcontact.com">Phoenix Contact</a>, or <a
+          href="https://www.yokowo.co.jp/english/product/catalog.shtml">Yokowo</a>. We also work with several customers
+        who prefer to build their own contactors and DUT boards.
+      </p>
+
+      <h5>Data Analysis and Exporting
+      </h5>
+      <p>
+        Test data is emitted in industry standard <a
+          href="https://en.wikipedia.org/wiki/Standard_Test_Data_Format">STDF</a> (binary and ASCII) format. An open
+        system design, standard system software, and modular hardware, enables your ROOS system to inter-operate
+        with any network, giving you remarkable flexibility to distribute test data. ROOS offers a unique "0-impact"
+        data collection system where there is absolutely NO overhead or time penalty for collecting detailed
+        measurement
+        data for every aspect
+        of your DUTs specifications. By collecting raw measurement data and processing it after in spare computation
+        cycles, the System Controller is able to generate detailed STDF data of full vector corrected measurements
+        offering characterization level
+        detail at production speeds.
+      </p>
+
+    </div>
+</Base>

@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"DIB Stack | Roos Instruments"}
+  description={"Device Interface Boards (DIBs) provide the final signal traces to the Device Under Test (DUT).  Cassini DIBs are uniquely simple and effective ways to extend the instrument performance to the socket or probe interface card."}
+  active={["nav-products"]}>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>DIB stack</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/fixture.html">Device Interface</a></li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="roosC container">
+      <div class="column span-22 prepend-1">
+        <h2>Rethink <abbr title="Device Under Test">DUT</abbr> Interface Design</h2>
+
+        <video style="width: 100%; max-height: 500px;" controls>
+          <source src="/images/WebMultimedia_Fixture.mp4" type="video/mp4">
+          Your browser does not support HTML5
+        </video>
+        <img alt="Next Section" src="images/section_divider.png">
+        <h2>'Simple' Device Interface Board (Simple<abbr title="Device Interface Board">DIB</abbr>&trade;)</h2>
+        <img src="/images/dib.jpg" alt="RI DIB board design"
+          style="max-width: 150px; float:right; margin: 0 20px 0 20px">
+        <ul id="dib">
+          <li>Only 12mm dual-layer <abbr title="Printed Circuit Board">PCB</abbr> designed in hours, that costs less
+            &amp; fails less.</li>
+          <li>Launch RF & DC resources near the <abbr title="Device Under Test">DUT</abbr> pins.</li>
+          <li>Quick Lock&trade; <abbr title="Device Interface Board">DIB</abbr> Support withstands high test volume
+            and
+            swaps in seconds.</li>
+          <li>20 GHz Blind-mate interfaces</li>
+          <li>40 GHz cable launches</li>
+          <li>Waveguide horns for contactless test beyond 80 GHz</li>
+        </ul>
+        <p class="main">Device is closer to the instruments, shorter RF paths reduce noise and path loss. Roos
+          Instruments' years of RF DIB board design experience can be leverged to develop your own solutions to all of
+          your device testing needs.</p>
+        <img style="max-width: 235px;" src="/images/DUT_board.jpg" alt="RI DUT Board design">
+      </div>
+
+    </div>
+</Base>
