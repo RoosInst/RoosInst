@@ -9,7 +9,7 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 | Legacy site | 64 hand-written pages in `src/*.html`, partials `_top/_bottom/_bottom-min/_template`, jQuery + FontAwesome JS + owl/tiny-slider carousels. Old gulp build deleted in `3b0e412`. |
 | Phase 0 – visual baseline | **Done on `master`** (merge `d61637f`). Baseline recaptured from live 2026-11-10 (`7f27b60`): 54 pages × 375/768/1440, 162/162 green on a second pass against live. |
 | JS rewrite | `bd55e49` ".js rewrite – ai assist (in progress)" — unfinished. |
-| Not pushed | `master` is 4 commits ahead of `origin/master` (merge, LF normalization, recapture, this plan). Push LFS objects with it. |
+| Not pushed | `master` is 5 commits ahead of `origin/master` (merge, LF normalization, recapture, this plan, layout fixes); `phase1-astro` is on top. Push LFS objects with it. |
 
 ## Phases
 
@@ -17,7 +17,7 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 1. ✅ git-lfs present on Windows; `* text=auto eol=lf` added, 55 CRLF files renormalized (`e8ac52d`).
 2. ✅ Live compared against the August baseline: 151/162 still matched. Recaptured all; 20 shots changed (`index`, `infrastructure`, `news`, plus masked embeds on `company`, `contact`, `ritdb`, `visitRI`, `form_network`). Third-party iframes (YouTube, Google Maps, Google Forms) are now masked by `src`.
 3. ✅ Merged `phase0-visual-baseline` → `master`; committed `visual/report/` and `visual/test-results/` dropped.
-4. ✅ **Decided: `src/` edits are allowed, with the baseline updated in the same commit.** Serve `src/` on :4321, `npm run visual`, eyeball the diffs, then `npm run visual:update -- --grep-invert "(apps|form_network)$"`.
+4. ✅ **Decided: `src/` edits are allowed, with the baseline updated in the same commit.** Serve the site on :4321 (from Phase 1: `npm run build && npx astro preview`), `npm run visual`, eyeball the diffs, then `npm run visual:update -- --grep-invert "(apps|form_network)$"`.
 
 ### Layout fixes (2026-11-10)
 The baseline now reflects these fixes, which are **not yet deployed**. Until they are, live-vs-baseline shows ~80 expected diffs. After deploying, `VISUAL_LOCAL_URL=https://roos.com npm run visual` should be green; that is the deploy check.
@@ -34,11 +34,16 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 ### gan
 `gan.html` is in development and intentionally unlinked. It's 404 on live today, so the probe skips it. Once uploaded it will be found by the next `npm run baseline`; that is fine even while it's hidden.
 
-### Phase 1 — Astro scaffold
-1. Move `src/*.html` → `src-legacy/` (harness already looks there).
-2. New Astro project at repo root, dev on `:4321` (harness default).
-3. Copy `src/css`, `src/images`, `public/` (robots, sitemap, Cassini guide, ahrefs/indexnow keys) unchanged.
-4. Exit: `npm run build` produces a site; `npm run visual` runs (failures expected).
+### Phase 1 — Astro scaffold ✅ (branch `phase1-astro`, not merged)
+1. ✅ `src/*.html` → `src-legacy/` (61 files incl. partials).
+2. ✅ Astro 7.4.10 at repo root (`astro.config.mjs`: `build.format: 'file'` so URLs stay `/name.html`; port 4321; dev toolbar off).
+3. ✅ `src/css`, `src/images`, `src/js`, `src/sitemap.xml` → `public/`, next to the existing `public/` files. Two collisions: `public/sitemap.xml` was a stale 2024 copy (494 URLs; live serves the 1723-URL `src/` one), and `public/css/roos-dark.css` differed from `src/css/` only by a trailing blank line. The `src/` copies won.
+4. ✅ `src/pages/[page].html.ts` serves every `src-legacy/` file byte for byte at `/<name>.html`, partials included (jQuery fetches `_bottom-min.html` at runtime). Porting a page = adding `src/pages/<name>.astro`; the pass-through then skips that name. Delete it once `src-legacy/` is empty.
+5. ✅ Exit: `npm run build` → `dist/` has 591 files = 61 pages (all byte-identical to `src-legacy/`) + 530 `public/` files. VISUAL_RESULT
+- `pages.mjs` now merges `src/*.html`, `src-legacy/*.html` and `src/pages/*.astro`, so half-ported states are fully covered.
+- Root `npm run visual -- <flags>` now forwards flags (npm 12 rejected them before).
+- **Deploy changes after merge:** upload `dist/` (after `npm run build`) instead of `src/` + `public/`. Until merging, keep editing `src/` on `master`; bring changes over with `git merge master` (git follows the renames).
+- `http://localhost:4321/` 404s in dev/preview; use `/index.html`. Production web servers map `/` to `index.html` themselves.
 
 ### Phase 2 — Layout + partials server-side
 1. `Base.astro` from `_top.html` / `_bottom.html`; one footer source.

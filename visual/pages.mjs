@@ -7,11 +7,11 @@ const here = dirname(fileURLToPath(import.meta.url));
 const repo = join(here, '..');
 
 /**
- * Where page sources live. Checked in order, so this keeps working as the
- * migration moves files:
- *   Phase 0-1  src/*.html
- *   Phase 1+   src-legacy/*.html  (originals parked during the migration)
- *   Phase 2+   src/pages/*.astro  (the real pages)
+ * Where page sources live. All are read and merged, because during the port
+ * each page lives in exactly one of them:
+ *   Phase 0    src/*.html          (the legacy site)
+ *   Phase 1+   src-legacy/*.html   (originals parked; served by src/pages/[page].html.ts)
+ *   Phase 3+   src/pages/*.astro   (ported pages)
  */
 const SOURCES = [
   { dir: join(repo, 'src', 'pages'), ext: '.astro' },
@@ -82,17 +82,23 @@ const PAGE_MASKS = {
 
 /** Pages discovered from the working tree, sorted, without the extension. */
 export function discoverPages() {
+  const names = new Set();
+  const from = [];
   for (const { dir, ext } of SOURCES) {
     if (!existsSync(dir)) continue;
-    const names = readdirSync(dir)
+    const found = readdirSync(dir)
       .filter((f) => f.endsWith(ext))
       .map((f) => f.slice(0, -ext.length))
       .filter((n) => !n.startsWith('_'))
-      .filter((n) => !SKIP.has(n))
-      .sort();
-    if (names.length) return { names, from: dir };
+      .filter((n) => !SKIP.has(n));
+    if (!found.length) continue;
+    found.forEach((n) => names.add(n));
+    from.push(dir);
   }
-  throw new Error('No page sources found. Looked in:\n  ' + SOURCES.map((s) => s.dir).join('\n  '));
+  if (!names.size) {
+    throw new Error('No page sources found. Looked in:\n  ' + SOURCES.map((s) => s.dir).join('\n  '));
+  }
+  return { names: [...names].sort(), from: from.join(', ') };
 }
 
 /** URL path for a page name. Kept in one place because Phase 3 must not change it. */

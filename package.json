@@ -4,13 +4,17 @@
   "description": "roos.com website (static pages)",
   "type": "module",
   "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
     "visual:setup": "npm --prefix visual install",
-    "baseline": "npm --prefix visual run baseline",
-    "baseline:probe": "npm --prefix visual run probe",
-    "visual": "npm --prefix visual run visual",
-    "visual:update": "npm --prefix visual run visual:update",
-    "visual:report": "npm --prefix visual run report",
-    "verify": "npm --prefix visual run visual"
+    "baseline": "npm --prefix visual run baseline --",
+    "baseline:probe": "npm --prefix visual run probe --",
+    "visual": "npm --prefix visual run visual --",
+    "visual:update": "npm --prefix visual run visual:update --",
+    "visual:report": "npm --prefix visual run report --",
+    "verify": "npm --prefix visual run visual --"
   },
   "repository": {
     "type": "git",
@@ -40,5 +44,8 @@
     "postcss": "^8.4.35",
     "socket.io": "^4.7.5",
     "tiny-slider": "^2.9.4"
+  },
+  "devDependencies": {
+    "astro": "7.4.10"
   }
 }

@@ -67,9 +67,9 @@ regression gets silently blessed.
 
 ## Adding or removing pages
 
-Nothing to edit. `pages.mjs` reads the working tree — `src/pages/*.astro` if it
-exists, else `src/*.html`, else `src-legacy/*.html` — so the list follows the
-migration automatically. Files starting with `_` are treated as partials.
+Nothing to edit. `pages.mjs` reads the working tree and merges `src/*.html`,
+`src-legacy/*.html` (unported pages) and `src/pages/*.astro` (ported pages), so
+the list follows the migration automatically. Files starting with `_` are treated as partials.
 
 Two lists in `pages.mjs` do need a human:
 
