@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Checkout | Roos Instruments"}
+  description={"Purchase RIKs with Credit Card or PO."}
+  active={["nav-products"]}>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Checkout</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li class="active">Checkout</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="roosC container">
+      <section class="content services1" id="services">
+        <!-- Service -->
+        <div class="col-lg-8">
+          <div class="service">
+            <i class="far fa-credit-card"></i>
+            <div class="service-body">
+              <h3>Checkout</h3>
+              <p>
+                Use this page to submit payments via credit card for any Purchase Order that has been accepted by Roos
+                Instruments and includes a 3% processing fee. A Purchase Order is only accepted after an
+                acknowledgement
+                email has been sent in response.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="paywithCC">
+        <!-- Payment Form -->
+        <hr class="space">
+        <div style="padding: 0;" class="col-lg-8 col-lg-offset-1 panel-default form-only panel" id="payment">
+          <div class="panel-heading">
+            <h5 style="margin-bottom: 0;" class="panel-title"><i class="fa-brands fa-cc-stripe"></i> Payment for Purchase
+              Order</h5>
+          </div>
+          <div class="panel-body">
+            <form action="#" method="POST">
+              <p>Please use the button below to process your credit card for the amount due for the Purchase Order. Do
+                not pay until the Purchase Order has been accepted and you were provided a link to this page for
+                payment. The PO must include 3% credit
+                card processing fee.</p>
+              <div class="col-lg-2 col-lg-offset-1">
+                <script is:inline src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_live_1UhR4hfdIYQAuML4rQT1rlh1" data-name="Roos Instruments Inc."
+                  data-description="For accepted Purchase Order"
+                  data-image="https://s3.amazonaws.com/stripe-uploads/acct_150zhiCItvmu7x8Wmerchant-icon-1442449387324-icon_ball-128.png"
+                  data-locale="auto" data-zip-code="true" data-panel-label="Pay">
+                  </script>
+              </div>
+            </form>
+          </div>
+          <div id="cc-security" class="panel-footer">
+            <i class="fa-solid fa-shield-alt"></i> <a href="https://stripe.com/docs/security">Security with Stripe</a>
+            <p>
+              <small>Never stored by Roos Instruments, all cardholder information is transmitted and stored by Stripe.
+                PCI Level 1 compliance is validated with annual
+                <abbr title="Self-Assessment Questionnaire">SAQ</abbr>.
+              </small>
+            </p>
+          </div>
+        </div>
+        <!--End Payment form-->
+      </section>
+    </div>
+</Base>
