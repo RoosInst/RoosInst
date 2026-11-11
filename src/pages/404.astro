@@ -1,0 +1,9 @@
+---
+import ErrorPage from '../layouts/ErrorPage.astro';
+---
+<ErrorPage code="404" title="404 Not Found | Roos Instruments"
+  description="Oops!  This page is not found - a classic 404 error.  Please try a different URL.">
+    This page can no longer be found.<br> Find what your looking for:<br>
+    <a href="javascript:history.back()">Go Back</a> or
+    <button class='link' data-toggle="modal" data-target="#searchModal">Search our website</button>.<br>
+</ErrorPage>

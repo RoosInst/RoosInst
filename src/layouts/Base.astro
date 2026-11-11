@@ -1,0 +1,69 @@
+---
+/**
+ * Shared page shell for the Bootstrap 3 pages: <head>, the JS notice, the
+ * header and (unless footer={false}) the footer, all inside #page-wrapper as
+ * on the legacy pages.
+ *
+ * Page-specific <head> content goes in slot="head"; it lands after the shared
+ * stylesheets and scripts, so it can override them.
+ */
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Defaults to https://roos.com/<this page>.html */
+  canonical?: string;
+  footer?: boolean;
+}
+
+const { title, description, footer = true } = Astro.props;
+const path = Astro.url.pathname.endsWith('.html') ? Astro.url.pathname : `${Astro.url.pathname}.html`;
+const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
+---
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{title}</title>
+  <link rel="stylesheet" href="/css/fontawesome-svg.min.css">
+  <link rel="canonical" href={canonical} />
+  <meta name="description" content={description}>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Roos Instruments, Inc.">
+  <meta name="theme-color" content="#f0f0f0">
+
+  <link rel="icon" href="/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="/css/roos-min.css?v3" rel="stylesheet" id="pageTheme">
+  <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
+
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script is:inline defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script is:inline defer src="/js/roos.min.js?v3"></script>
+  <slot name="head" />
+</head>
+
+<body>
+  <noscript>
+    <div class="alert alert-danger">
+      <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
+          href="https://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
+    </div>
+  </noscript>
+
+  <div id="page-wrapper" class="page-boxed">
+    <Header />
+    <slot />
+    {footer && <div class="bottom"><Footer /></div>}
+  </div>
+</body>
+
+</html>
