@@ -1,0 +1,13 @@
+---
+// Landing page of the VirtualBox host servers.
+import Base from '../layouts/Base.astro';
+import NoiseScreen from '../components/NoiseScreen.astro';
+---
+<Base title="VM Host Server | Roos Instruments" description="VM Host server." canonical={false} bare>
+  <NoiseScreen code="VBox Host" href="/phpvirtualbox/">
+            Please proceed to <a href="/phpvirtualbox/">PHP Virtualbox</a> Admin UI.
+            or connect to individual hosts via
+            <a href="https://technet.microsoft.com/en-us/library/dn473009(v=ws.11).aspx" data-external="true">
+                Remote Desktop Client</a>.
+  </NoiseScreen>
+</Base>

@@ -9,7 +9,7 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 | Legacy site | 64 hand-written pages in `src/*.html`, partials `_top/_bottom/_bottom-min/_template`, jQuery + FontAwesome JS + owl/tiny-slider carousels. Old gulp build deleted in `3b0e412`. |
 | Phase 0 – visual baseline | **Done on `master`** (merge `d61637f`). Baseline recaptured from live 2026-11-10 (`7f27b60`): 54 pages × 375/768/1440, 162/162 green on a second pass against live. |
 | JS rewrite | `bd55e49` ".js rewrite – ai assist (in progress)" — unfinished. |
-| Not pushed | `master` (through Phase 1) is 12 commits ahead of `origin/master`; `phase2-layout` (2) and `phase3-port` (9) are stacked on it. Push LFS objects with them. |
+| Not pushed | `master` (Phases 1–3, merged 2026-11-11) is ahead of `origin/master`. Push LFS objects with it. Ryan's uncommitted w768/gan recapture is in `stash@{0}` of the Dropbox checkout. |
 
 ## Phases
 
@@ -47,7 +47,7 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 - **Deploy:** `npm run build`, then upload `dist/` (not `src-legacy/` + `public/`). Edit pages in `src-legacy/`.
 - `http://localhost:4321/` 404s in dev/preview; use `/index.html`. Production web servers map `/` to `index.html` themselves.
 
-### Phase 2 — Layout + partials server-side ✅ (branch `phase2-layout`, not merged)
+### Phase 2 — Layout + partials server-side ✅ (merged to `master` 2026-11-11)
 1. ✅ One footer source: `src/components/Footer.astro` (from the maintained `_bottom.html`). The pass-through renders it into `<div class="bottom"></div>` on the 45 Bootstrap 3 pages and fails the build on a malformed placeholder (`cassini_reference_guide` had `class=" bottom"`). `index` is Bootstrap 5 with its own inline footer; it joins when it's ported.
    - **Root cause of the two footers:** `roos.min.js` bundles a copy of `loadbottom.js` that loads `/_bottom.html` into `.bottom`, and the pages also load `loadbottom.js`, which loads `/_bottom-min.html` into the same element. The last response won. Both loaders are gone; `roos.min.js?v2` → `?v3`.
    - **`footer` mask removed.** 162/162 green on repeat runs, so the footer is deterministic now.
@@ -59,8 +59,8 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 - `visual:update -- --update-snapshots=all` now works. `run.mjs` used to append a bare `--update-snapshots`, which silently reset it to "changed only", so sub-tolerance changes (like the address spacing) were never recorded.
 - Still served for HTML that browsers cached before the switch: `_bottom*.html`, `js/loadbottom.js`, `js/fontawesome.all.min.js`. Delete them a release or two later.
 
-### Phase 3 — Page port (in progress, branch `phase3-port` on top of `phase2-layout`)
-**49 of 56 pages ported** (2026-11-11), in 8 commits.
+### Phase 3 — Page port ✅ (merged to `master` 2026-11-11)
+**All 56 pages ported**; `src-legacy/` holds only the partials. The first 49 were ported in 8 commits, the last 7 in one more.
 - **Shared pieces:**
   - `src/layouts/Base.astro`: head, JS notice, header, footer. Props are `title`, `description`, `canonical`, `active` (nav ids, set at build time instead of by a script), `footer` and `htmlClass`. Slots are `head-early` (before `roos-min.css`), `head` and `end` (after the footer).
   - `src/components/Header.astro`.
@@ -70,6 +70,7 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 - **Verification:** two checks per batch.
   - Strict: `VISUAL_SNAPSHOT_DIR=<dir> VISUAL_STRICT=1` with zero tolerance, comparing the new build against a Phase 2 build. Every pixel change has to be explained.
   - Baseline: the usual `npm run visual`.
+  - The noise-canvas pages (error pages, landing pages) never give two identical frames, so they can only be checked by the baseline run.
 - **Pixel changes, all intended (baseline re-recorded):**
   - `returns`, `products`, `services`, `turnkey`: a second `#page-wrapper` nested and left unclosed, which drew a doubled edge shadow at 1440.
   - `turnkey`: live showed the text "body>" under the footer (from a broken `</div>body>`).
@@ -77,15 +78,15 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
   - `company`: its own header, which read "Modular ATEfor the World's…".
 - **Same DOM, but Astro won't compile it:** unclosed `li`/`ul`/`span`/`div`, and stray `</style>`/`</a>`/`</i>`/`</div>`. Closed where the browser closed them.
 - **Behavior changes:** `automotive_radar` moves from jQuery 3.6.0 to the site-wide 3.7.1. The second `#searchModal` on 403/404 is dropped.
-- **Remaining (still served by the pass-through):**
-  - `index`: Bootstrap 5, needs its own layout. It also holds the reworked header (see the question below).
-  - `search`: its header differs.
-  - `gan`: in development; leave until it's done.
-  - `form_network`: replaced server-side by the Google Form.
-  - `lab_landing`, `vmhost_landing`: standalone pages.
-  - `sitemap`: Domino-generated.
-- **Open question:** `company` had "About RI" and a search icon linking to `/search.html`. If that is the direction for the header, change `Header.astro` once.
-- **Content slip, not fixed:** the `testsets` breadcrumb says "6G Testing".
+- **Header (Ryan's call):** `Header.astro` took company's version: "About RI", and both search icons link to `/search.html` instead of opening the modal. The modal stays for the error pages' "Search our website" button. `index` (own BS5 header) got "About RI" too.
+- **The last 7:**
+  - `search`, `gan`: put on the shared header, then converted. `search` lost its own second modal, which re-ran the search API on every load and duplicated the page's `#query`/`#search_param` ids. Both gain the top bar's "Online Training" link they were missing. `gan` is still unlinked; edit `src/pages/gan.astro` now.
+  - `form_network`: converter, `footer={false}`.
+  - `lab_landing`, `vmhost_landing`: `Base bare` (no header/footer/#page-wrapper) + `src/components/NoiseScreen.astro`, which `ErrorPage.astro` now uses too. Their unreachable search modals are gone; `vmhost_landing` keeps having no canonical (`canonical={false}`). They get the error pages' canvas fix, so they no longer scroll by 5 px (baseline re-recorded).
+  - `index`: ported verbatim (`src/pages/index.astro`), the only Bootstrap 5 page, so no layout of its own yet. Hand fixes, same DOM: `Search</i>` → `</a>`, and the nav's `div.container` closed before `</nav>`.
+  - `sitemap.html`: generated crawler output, moved to `public/` unchanged. Its `grid.js` (table sorting) doesn't exist anywhere, on live either.
+- **Content fix:** `testsets` breadcrumb now says "Test Sets" (was "6G Device Testing" / "6G Testing"). The `<title>` still says "6G Device Testing".
+- **New pages:** write `src/pages/<name>.astro` on `Base` (see any ported page); `src-legacy/_template.html` predates the port.
 - Still to do: one carousel library (tiny-slider or owl), and finish or replace the `.js` rewrite (`bd55e49`).
 
 ### Phase 4 — SEO / infra parity

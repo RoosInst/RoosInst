@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+---
+// The home page: Bootstrap 5, with its own header, footer and inline CSS (the
+// only BS5 page, so no shared layout yet). Ported verbatim.
+---
 <html lang="en">
 
 <head>
@@ -11,7 +14,7 @@
   <meta name="description"
     content="Roos Instruments combines over 30 years of research into modular ATE systems that lead the semiconductor industry in test accuracy, reliability, and time to market." />
   <!-- Remember to add CSR hash if this changes -->
-  <script>
+  <script is:inline>
     /*  REMOVED Home tab on home page
      document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("nav-home").classList.add("active");
@@ -46,7 +49,7 @@
 
 <body>
   <!-- style="visibility: hidden;" -->
-  <script>
+  <script is:inline>
     0;
   </script>
   <!-- Firefox FOUC workaround -->
@@ -59,7 +62,7 @@
     </div>
   </noscript>
 
-  <style title="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.css">
+  <style is:inline title="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.css">
     .tns-outer {
       padding: 0 !important
     }
@@ -227,7 +230,7 @@
     }
   </style>
 
-  <style>
+  <style is:inline>
     /* Inline roos.css +index only */
 
     /* https://mdbootstrap.com/docs/standard/extended/dropdown-hover/ */
@@ -2711,7 +2714,7 @@
               <div class="navbar-collapse float-end" id="navbarSupportedContent">
                 <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
                   <li id="nav-mobile-support" class="nav-item dropdown d-block d-sm-none">
-                    <a class="nav-link" title="Search" href="/search.html">Search</i>
+                    <a class="nav-link" title="Search" href="/search.html">Search</a>
                       <a class="nav-link" title="Get Support" href="/support.html">Support</a>
                   </li>
                   <li id="nav-products" class="nav-item dropdown">
@@ -2777,7 +2780,7 @@
                       data-delay="300">Company</a>
                     <ul class="dropdown-menu">
                       <li class="dropdown-item">
-                        <a class="nav-link" href="/company.html"><i class="fa-solid fa-angles-right"></i>About Us</a>
+                        <a class="nav-link" href="/company.html"><i class="fa-solid fa-angles-right"></i>About RI</a>
                       </li>
                       <li class="dropdown-item">
                         <a class="nav-link" href="/news.html"><i class="nav-indent1 fas fa-angles-right"></i>News
@@ -2918,7 +2921,8 @@
                 </ul>
               </div>
             </div>
-          </div> <!-- container around nav-->
+          </div>
+        </div> <!-- container around nav-->
       </nav>
     </header>
 
@@ -2938,7 +2942,7 @@
 
     <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
 
-    <style>
+    <style is:inline>
       #index-slide-0 h2,
       #index-slide-0 h5 {
         color: rgb(179, 224, 220);
@@ -3332,7 +3336,7 @@
       </div>
     </section>
     <!-- Inline Bottom -->
-    <style>
+    <style is:inline>
       .overlay-wrapper img {
         aspect-ratio: 16/9 auto;
       }
@@ -3448,22 +3452,22 @@
 
   </div>
   <noscript>
-    <style>
+    <style is:inline>
       body {
         visibility: visible;
       }
     </style>
   </noscript>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
     integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+  <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
     integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-  <script>
+  <script is:inline>
     document.addEventListener('DOMContentLoaded', function () {
       // Tiny Slider
       var slider = tns({

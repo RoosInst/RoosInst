@@ -1,5 +1,7 @@
 /**
- * Pass-through for pages that have not been ported yet.
+ * Pass-through for src-legacy/. Since Phase 3 every page is ported, so this
+ * only emits the legacy partials (see below); new pages go in
+ * src/pages/<name>.astro on src/layouts/Base.astro.
  *
  * Serves src-legacy/<name>.html at /<name>.html unchanged except for two
  * things done at build time instead of in the browser:

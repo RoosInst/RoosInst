@@ -9,6 +9,9 @@
  * between Bootstrap and roos-min.css, for third-party CSS the site's own
  * styles override (tiny-slider). slot="end" follows the footer, for scripts
  * that legacy pages put there (carousel setup).
+ *
+ * bare: no header, footer or #page-wrapper, just the JS notice and the page
+ * (the lab/vmhost landing pages).
  */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -16,16 +19,17 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title: string;
   description: string;
-  /** Defaults to https://roos.com/<this page>.html */
-  canonical?: string;
+  /** Defaults to https://roos.com/<this page>.html; false omits the tag. */
+  canonical?: string | false;
   footer?: boolean;
   /** Nav <li> ids to highlight, e.g. ['nav-company'] */
   active?: string[];
   /** e.g. "dark-theme" (automotive_radar) */
   htmlClass?: string;
+  bare?: boolean;
 }
 
-const { title, description, footer = true, active = [], htmlClass } = Astro.props;
+const { title, description, footer = true, active = [], htmlClass, bare = false } = Astro.props;
 const path = Astro.url.pathname.endsWith('.html') ? Astro.url.pathname : `${Astro.url.pathname}.html`;
 const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
 ---
@@ -35,7 +39,7 @@ const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
   <meta charset="utf-8">
   <title>{title}</title>
   <link rel="stylesheet" href="/css/fontawesome-svg.min.css">
-  <link rel="canonical" href={canonical} />
+  {canonical && <link rel="canonical" href={canonical} />}
   <meta name="description" content={description}>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Roos Instruments, Inc.">
@@ -67,12 +71,14 @@ const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
     </div>
   </noscript>
 
-  <div id="page-wrapper" class="page-boxed">
-    <Header active={active} />
-    <slot />
-    {footer && <div class="bottom"><Footer /></div>}
-    <slot name="end" />
-  </div>
+  {bare ? <slot /> : (
+    <div id="page-wrapper" class="page-boxed">
+      <Header active={active} />
+      <slot />
+      {footer && <div class="bottom"><Footer /></div>}
+      <slot name="end" />
+    </div>
+  )}
 </body>
 
 </html>

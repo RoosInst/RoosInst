@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Search | Roos Instruments"}
+  description={"Search Roos Instruments for production information, support articles and more."}
+  active={["nav-support"]}>
+  <Fragment slot="head">
+    <link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+    <script is:inline src="/js/cookieconsent.min.js"></script>
+    <script is:inline>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#252e39"
+          },
+          "button": {
+            "background": "#4676B8"
+          }
+        },
+        "position": "bottom-left",
+        "type": "opt-in",
+        "content": {
+          "message": "This website uses cookies when logged in and when searching to ensure you get the best experience.",
+          "dismiss": "Dismiss",
+          "allow": "Allow cookies",
+          "link": "Learn more",
+          "href": "https://roos.com/privacy.html"
+        }
+      })
+    });
+  </script>
+  </Fragment>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Search</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li class="active">Search</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+    <section id="content" class="container" style="padding-bottom: 300px;">
+      <form id="search" class="" name="search" method="POST" action="#" onsubmit="searchBar(); return false;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <div class="input-group">
+            <div class="input-group-btn search-panel">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><span id="search_concept">All</span>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true" style="padding-left:5px;"></i></button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Web</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+            <input type="hidden" name="search_param" value="web" id="search_param">
+            <input type="text" class="searchTable form-control" id="query" placeholder="Search" required="">
+            <span onclick="searchBar(); return false;" class="input-group-btn"><button style="margin-top: 0;"
+                class="btn btn-primary" type="button" title="Search"><i class="fa fa-search"
+                  aria-hidden="true"></i></button></span>
+          </div>
+        </div>
+        <div id="searchFail2" class="alert alert-warning hidden" role="alert">
+          <strong>Oops!</strong> Search for something.
+        </div>
+      </form>
+      <div id="search-results"></div>
+    </section>
+    <script is:inline>
+      $(document).ready(function (e) {
+        $('.search-panel .dropdown-menu').find('a').click(function (e) {
+          e.preventDefault();
+          var concept = $(this).html();
+          $('.search-panel span#search_concept').html(concept);
+        });
+      });
+      window.addEventListener("load", function () {
+        queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        goSearch5(null, null, urlParams.get('query'));
+      });
+    </script>
+</Base>

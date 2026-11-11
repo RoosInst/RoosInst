@@ -58,6 +58,11 @@ const HEADER_VARIANTS = [
   ['aria-label="Online Learning"><i class="fa-solid fa-school"></i> Online Training', 'aria-label="Online Training"><i class="fa-solid fa-school"></i>Online Training'],
   ['<li id="nav-support" nav-link><a class="nav-link" href="/support.html">', '<li id="nav-support"><a href="/support.html">'],
   ['<!-- <li id="nav-support"><a href="/support.html">Support</a></li> -->', ''],
+  // Every legacy page: Header.astro has since taken company.html's changes
+  // (search icons link to /search.html, "About RI").
+  ['<a title="Search Button" class="navButton" href="#" data-toggle="modal" data-target="#searchModal">', '<a title="Search Button" class="navButton" href="/search.html">'],
+  ['<a title="Search" class="navButton" href="#" data-toggle="modal" data-target="#searchModal">', '<a title="Search" class="navButton" href="/search.html">'],
+  ['<i class="fa-solid fa-angles-right"></i>About Us</a>', '<i class="fa-solid fa-angles-right"></i>About RI</a>'],
 ];
 
 const decode = (s) => {
@@ -129,9 +134,12 @@ function port(name) {
 
   let rest = html.slice(endComment).replace(/^\s*<!-- TOP END[^>]*-->/, '');
   const slot = '<div class="bottom"></div>';
-  const at = rest.lastIndexOf(slot);
-  if (at < 0) problems.push('no footer placeholder');
-  let tail = rest.slice(at + slot.length);
+  // No placeholder (form_network): the page has no footer, so content runs to
+  // the closing #page-wrapper </div>.
+  const hasFooter = rest.includes(slot);
+  const at = hasFooter ? rest.lastIndexOf(slot) : rest.search(/<\/div>\s*<\/body>\s*<\/html>\s*$/);
+  if (at < 0) problems.push('no footer placeholder and no closing </div></body></html>');
+  let tail = rest.slice(at + (hasFooter ? slot.length : 0));
   // Scripts after the footer (carousel setup) go to slot="end".
   const endScripts = [];
   tail = tail.replace(/^\s*((?:<script\b[\s\S]*?<\/script>\s*)+)/, (_, s) => {
@@ -156,6 +164,7 @@ function port(name) {
     ...(canonical && canonical !== defaultCanonical ? [`canonical={${JSON.stringify(canonical)}}`] : []),
     ...(active.length ? [`active={${JSON.stringify(active)}}`] : []),
     ...(htmlClass ? [`htmlClass={${JSON.stringify(htmlClass)}}`] : []),
+    ...(hasFooter ? [] : ['footer={false}']),
   ];
   if (!canonical) problems.push('no canonical (Base will add the default one)');
 
