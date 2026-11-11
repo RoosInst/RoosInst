@@ -9,7 +9,7 @@ Built from this machine's git history (branches `master`, `phase0-visual-baselin
 | Legacy site | 64 hand-written pages in `src/*.html`, partials `_top/_bottom/_bottom-min/_template`, jQuery + FontAwesome JS + owl/tiny-slider carousels. Old gulp build deleted in `3b0e412`. |
 | Phase 0 – visual baseline | **Done on `master`** (merge `d61637f`). Baseline recaptured from live 2026-11-10 (`7f27b60`): 54 pages × 375/768/1440, 162/162 green on a second pass against live. |
 | JS rewrite | `bd55e49` ".js rewrite – ai assist (in progress)" — unfinished. |
-| Not pushed | `master` (through Phase 1) is 12 commits ahead of `origin/master`; `phase2-layout` is on top. Push LFS objects with it. |
+| Not pushed | `master` (through Phase 1) is 12 commits ahead of `origin/master`; `phase2-layout` (2) and `phase3-port` (9) are stacked on it. Push LFS objects with them. |
 
 ## Phases
 
@@ -55,14 +55,38 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 2. ✅ FontAwesome's script is gone. `src/lib/fontawesome.mjs` inlines each `<i class="fa…">` as the exact `<svg>` the script produced (FA 6.7.2 data from `node_modules`), including the carousel arrows in inline scripts and `roos.js`/`roos.min.js`. `/css/fontawesome-svg.min.css` is the CSS the script injected, linked where the script put it (first stylesheet in `<head>`). Unknown icon names fail the build.
    - **Verified:** rendered icon markup is identical to the script's on 53/55 pages. The other two are fixes: `software` (`fa-hand-o-up`, `fa-hand-pointer-o`, both FA4 names) and `article_mmwave_journal_march2020` (`fa-small` → `fa-sm`) showed FA's pulsing "?" placeholder on live.
    - The full visual run is ~25% faster without the 1.5 s icon reflow.
-3. ⏭ `Base.astro` (head + navbar) is deferred to the first Phase 3 port. Every page carries its own copy of the header with per-page differences (active nav item, title, meta), and there's no ported page to check it against yet. `_top.html` is dead code: no page has a `.top` placeholder.
+3. ✅ `Base.astro` (head + navbar): done in Phase 3 batch 1. `_top.html` is dead code: no page has a `.top` placeholder.
 - `visual:update -- --update-snapshots=all` now works. `run.mjs` used to append a bare `--update-snapshots`, which silently reset it to "changed only", so sub-tolerance changes (like the address spacing) were never recorded.
 - Still served for HTML that browsers cached before the switch: `_bottom*.html`, `js/loadbottom.js`, `js/fontawesome.all.min.js`. Delete them a release or two later.
 
-### Phase 3 — Page port
-1. Port pages in batches, simplest first: error pages → legal/terms/privacy/shipping/returns → products/instruments/software → carousel pages (`5g`, `6g`, `testsets`, `visitRI`, `index`) → interactive (`checkout`/Stripe, `search`, `contact`, `form_network`).
-2. Each batch merges only when `npm run visual` is green at all three widths. Use `visual:update` only for eyeballed, intentional diffs.
-3. Finish or replace the in-progress `.js` rewrite (`bd55e49`) here; one carousel lib (tiny-slider or owl, not both).
+### Phase 3 — Page port (in progress, branch `phase3-port` on top of `phase2-layout`)
+**49 of 56 pages ported** (2026-11-11), in 8 commits.
+- **Shared pieces:**
+  - `src/layouts/Base.astro`: head, JS notice, header, footer. Props are `title`, `description`, `canonical`, `active` (nav ids, set at build time instead of by a script), `footer` and `htmlClass`. Slots are `head-early` (before `roos-min.css`), `head` and `end` (after the footer).
+  - `src/components/Header.astro`.
+  - `src/layouts/ErrorPage.astro` (403/404/502/503/50x).
+  - `src/middleware.ts` inlines FA icons for every page, ported or not.
+- **Converter:** `node tools/port-page.mjs [--dry] [--force] <names>` writes `src/pages/<name>.astro` and `git rm`s the legacy file. It refuses anything it can't map exactly. Fix the legacy file, then rerun with `--force`.
+- **Verification:** two checks per batch.
+  - Strict: `VISUAL_SNAPSHOT_DIR=<dir> VISUAL_STRICT=1` with zero tolerance, comparing the new build against a Phase 2 build. Every pixel change has to be explained.
+  - Baseline: the usual `npm run visual`.
+- **Pixel changes, all intended (baseline re-recorded):**
+  - `returns`, `products`, `services`, `turnkey`: a second `#page-wrapper` nested and left unclosed, which drew a doubled edge shadow at 1440.
+  - `turnkey`: live showed the text "body>" under the footer (from a broken `</div>body>`).
+  - 13 pages had an "Online Learning" header variant with a space after the top-bar icon (101 px).
+  - `company`: its own header, which read "Modular ATEfor the World's…".
+- **Same DOM, but Astro won't compile it:** unclosed `li`/`ul`/`span`/`div`, and stray `</style>`/`</a>`/`</i>`/`</div>`. Closed where the browser closed them.
+- **Behavior changes:** `automotive_radar` moves from jQuery 3.6.0 to the site-wide 3.7.1. The second `#searchModal` on 403/404 is dropped.
+- **Remaining (still served by the pass-through):**
+  - `index`: Bootstrap 5, needs its own layout. It also holds the reworked header (see the question below).
+  - `search`: its header differs.
+  - `gan`: in development; leave until it's done.
+  - `form_network`: replaced server-side by the Google Form.
+  - `lab_landing`, `vmhost_landing`: standalone pages.
+  - `sitemap`: Domino-generated.
+- **Open question:** `company` had "About RI" and a search icon linking to `/search.html`. If that is the direction for the header, change `Header.astro` once.
+- **Content slip, not fixed:** the `testsets` breadcrumb says "6G Testing".
+- Still to do: one carousel library (tiny-slider or owl), and finish or replace the `.js` rewrite (`bd55e49`).
 
 ### Phase 4 — SEO / infra parity
 1. Same URLs (`.html` paths or redirects), canonical tags, `sitemap.xml`, `robots.txt`, `403/404/50x` pages.
