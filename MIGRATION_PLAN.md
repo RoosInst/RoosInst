@@ -39,7 +39,9 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 2. ✅ Astro 7.4.10 at repo root (`astro.config.mjs`: `build.format: 'file'` so URLs stay `/name.html`; port 4321; dev toolbar off).
 3. ✅ `src/css`, `src/images`, `src/js`, `src/sitemap.xml` → `public/`, next to the existing `public/` files. Two collisions: `public/sitemap.xml` was a stale 2024 copy (494 URLs; live serves the 1723-URL `src/` one), and `public/css/roos-dark.css` differed from `src/css/` only by a trailing blank line. The `src/` copies won.
 4. ✅ `src/pages/[page].html.ts` serves every `src-legacy/` file byte for byte at `/<name>.html`, partials included (jQuery fetches `_bottom-min.html` at runtime). Porting a page = adding `src/pages/<name>.astro`; the pass-through then skips that name. Delete it once `src-legacy/` is empty.
-5. ✅ Exit: `npm run build` → `dist/` has 591 files = 61 pages (all byte-identical to `src-legacy/`) + 530 `public/` files. VISUAL_RESULT
+5. ✅ Exit: `npm run build` → `dist/` has 591 files = 61 pages (all byte-identical to `src-legacy/`) + 530 `public/` files. `npm run visual` against `npx astro preview` (excluding `apps`/`form_network`): **156/156 green**. Getting there surfaced two things the old `src/`-only test server hid:
+   - `mediaKit`'s logos live in `public/mediakit/`, so the `ac576b4` baseline had recorded them as broken images. Re-accepted from the Astro build (logos present).
+   - Five SVG references on `5g`/`6g`/`testsets` had the wrong case. roos.com and Windows ignore case; Astro's server, like most hosts, doesn't. Fixed on `master` (`5d40cde`) and merged in.
 - `pages.mjs` now merges `src/*.html`, `src-legacy/*.html` and `src/pages/*.astro`, so half-ported states are fully covered.
 - Root `npm run visual -- <flags>` now forwards flags (npm 12 rejected them before).
 - **Deploy changes after merge:** upload `dist/` (after `npm run build`) instead of `src/` + `public/`. Until merging, keep editing `src/` on `master`; bring changes over with `git merge master` (git follows the renames).
