@@ -1,0 +1,141 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Support | Roos Instruments"}
+  description={"Roos Instruments technical and engineering support for Cassini ATE and turn-key test solustions to your most challenging test needs."}
+  active={["nav-support","nav-mobile-support"]}>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h1>Support</h1>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li class="active">Support</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+    <div id="content">
+      <section class="roosC container">
+        <div class="row">
+          <div class="text-center col-xs-12 col-sm-4">
+            <h3>Get Support</h3>
+            <ul style="margin-left:0;margin-bottom:15px">
+              <li style="padding-top:0"><a class="btn btn-primary" href="mailto:support@roos.com"><i
+                    class="fa-solid fa-envelope"></i> Email Support</a></li>
+              <li style="padding-top:15px"><a href="tel:+1-408-748-8589">&nbsp;<i
+                    class="fa-solid fa-phone"></i>&nbsp;&nbsp;+1-408-748-8589</a></li>
+              <li><small><i class="far fa-clock">&nbsp;</i>9:00AM-7:00PM PST M-F</small></li>
+            </ul>
+          </div>
+          <div>
+            <div class="text-center col-xs-12 col-sm-4">
+              <h3>Reference Guide <a href="https://roos.com/refGuide" title="Cassini Reference Guide Share Link"><i
+                    class="fa-solid fa-share"></i></a>
+              </h3>
+              <a class="btn btn-primary" href="/pdf/CassiniReferenceGuide_2.8_mini.pdf"><i
+                  class="far fa-file-pdf"></i>Download PDF</a>
+              <a href="https://itunes.apple.com/us/book/cassini-reference-guide/id816739794?mt=11&uo=10"><img
+                  style="padding-top:9px;width:160px" class="centerImg" src="/images/ibook-cassini-ref-guide.png"
+                  alt="Cassini Reference Guide iBook"></a>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h3 class="text-center">Support Planning</h3>
+              <div style="width:150px" class="centerImg">
+                <ul style="margin-left:0;margin-top:15px" class="nav vertical-nav">
+                  <li><a href="/supportPlans.html"><i class="fa-solid fa-angles-right"></i>Support Plans</a></li>
+                  <li><a href="/maintenance.html"><i class="fa-solid fa-angles-right"></i>Maintenance</a></li>
+                  <li><a href="/docs"><i class="fa-solid fa-angles-right"></i>Training</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="search-doc-bar">
+        <div class="row">
+          <div class="col-md-5 hidden-xs hidden-sm">
+            <h2>Search Documentation</h2>
+          </div>
+          <div class="col-md-7">
+            <form name="docsSearch3" method="POST" action="#" onsubmit="return goSearch3(),!1">
+              <div class="form-group nospace">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="query3" placeholder="Search Online Documentation"
+                    required> <span onclick="return goSearch3(),!1" class="input-group-btn"><button style="margin-top:0"
+                      class="btn btn-primary" type="button" title="Search"><i class="fa-solid fa-search"></i></button></span>
+                </div>
+              </div>
+              <div id="searchFail3" class="alert alert-warning hidden" role="alert"><strong>Oops!</strong> Search for
+                something.</div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="roosC container"><div class="row">
+        <div class="col-sm-4">
+          <hr class="space hidden-xs">
+          <h3>Return Instructions</h3>
+          <ul style="margin-top:3px" class="nav vertical-nav">
+            <li><a href="/maintenance.html" title="Exchanging a TIM"><i class="fa-solid fa-angles-right"></i>Exchange TIM Checklist</a></li>
+            <li><a href="/pdf/Pack_TIM.pdf" title="Instructions for Packing a Testhead/EPC TIM"><i
+              class="fa-solid fa-file-pdf"></i> Pack TIM</a></li>
+            <li><a href="/pdf/Pack_AUX_Src.pdf"
+              title="Instructions for Packing a Testhead/EPC TIM"><i class="fa-solid fa-file-pdf"></i> Pack AUX TIM
+              (RI7725)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <hr class="space hidden-xs">
+          <h3>Documents By Role</h3>
+          <ul style="margin-top:3px" class="nav vertical-nav">
+            <li><a href="/help/dev"><i class="fa-solid fa-angles-right"></i>Developer</a></li>
+            <li><a href="/help/admin"><i class="fa-solid fa-angles-right"></i>Administrator</a></li>
+            <li><a href="/help/maint"><i class="fa-solid fa-angles-right"></i>Maintenance</a></li>
+            <li><a href="/help/operate"><i class="fa-solid fa-angles-right"></i>Operator</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <hr class="space hidden-xs">
+          <h3>Documents By Topic</h3>
+          <ul style="margin-top:3px" class="nav vertical-nav">
+            <li><a href="/roos/Documentation.nsf/webTopicFixturing?OpenView"><i
+                  class="fa-solid fa-angles-right"></i>Fixturing</a></li>
+            <li><a href="/roos/Documentation.nsf/webTopicTestPlans?OpenView"><i
+                  class="fa-solid fa-angles-right"></i>Test Plan Development</a></li>
+            <li><a href="/roos/Documentation.nsf/webTopicSoftware?OpenView"><i class="fa-solid fa-angles-right"></i>RI
+                Software</a></li>
+            <li><a href="/roos/Documentation.nsf/webTopicPartSpecs?OpenView"><i
+                  class="fa-solid fa-angles-right"></i>Hardware Specs</a></li>
+            <li><a href="/roos/Documentation.nsf/webByTopic?OpenView"><i class="fa-solid fa-angles-right"></i>All
+                Topics</a></li>
+            <li><a href="/docs"><i class="fa-solid fa-angles-right"></i>All
+                Documents</a></li>
+          </ul>
+        </div>
+      </div></div>
+      <div class="roosC container"><div class="row">
+        <div style="margin-bottom: 50px;" class="col-xs-12">
+          <h3>Diagnose and Calibration</h3>
+          <p>Detailed Diagnose and Calibration information and procedures are in the <a href="/refGuide"
+              title="Cassini Reference Guide">Cassini Reference Guide</a>, CH 5: Diagnose and CH 6: Calibration.</p>
+          <ul>
+            <li>Diagnostic Kits: custom interface fixture, cables and components needed to self-diagnose issues.
+              (included with system order, required for Calibration)</li>
+            <li><a
+                href="/commerce/catalog.nsf/accessoriesbyType?openform&RestrictToCategory=Calibration+Tools">Calibration
+                Kits</a>: used to calibrate RF system, frequency dependant.</li>
+            <li><a href="/docs/RBEH-6XH5L4">Calibration - Written Procedure for Complete Cassini System Cal</a></li>
+            <li><a href="/pdf/RoosCalibrationScope_v2.0.pdf">Calibration Scope</a> (DC-88 GHz)</li>
+          </ul>
+          <p style="margin-top: 30px;">International Shipments: <br>ECCN 3B992.b <br> 
+            <a href="https://hts.usitc.gov/search?query=9030.82.00.00" rel="external">HTC 9030.82.00.00</a> RF Test Equipment Accessories</p>
+        </div>
+      </div></div>
+    </div>
+</Base>

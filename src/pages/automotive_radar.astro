@@ -1,0 +1,160 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Automotive Radar | Roos Instruments"}
+  description={"The high consumer demand and mission-critical safety requirements of automotive radar require capable and proven production \n\t\ttest solutions to deliver this technology to market. To meet the stringent performance and reliability standards, we offer the industry's most \n\t\treliable at-frequency, functional test system for 25 GHz, 77 GHz, and 81 GHz radar applications."}
+  active={["nav-company"]}
+  htmlClass={"dark-theme"}>
+  <Fragment slot="head">
+    <meta name="keywords" content="Automotive Radar Test Solutions, high-frequency testing, Cassini radar test system, 25 GHz, 77 GHz, 81 GHz, modular system architecture, RI7100C radar test system, waveguide interconnect system, military-grade components, precision measurements, RI8604 Test Set, frequency translation, signal conditioning, Roos Instruments">
+  </Fragment>
+		<!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+		<section class="breadcrumb-wrapper">
+			<div class="container">
+				<h2>Automotive Radar</h2>
+				<ol class="breadcrumb">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/company.html">Company</a></li>
+					<li class="active">Automotive Radar</li>
+				</ol>
+			</div>
+		</section>
+		<!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+		<section id="content" class="roosC container">
+
+			<h5 style="position:relative; z-index: 2; top: 55px;">Automotive Radar Test</h5>
+			<div class="text-center">
+				<img title="Automotive Radar" alt="Automotive Radar" src="/images/auto1.png"
+					style="position: relative; z-index: 1;">
+			</div>
+			<p class="main">
+				The high consumer demand and mission-critical safety requirements of
+				automotive radar require capable and proven production test solutions to
+				deliver this technology to market. To meet the stringent performance and
+				reliability standards, we offer the industry's most reliable at-frequency,
+				functional test system for 25 GHz, 77 GHz, and 81 GHz radar applications.<br>
+				<a class="link" href="/pdf/CASSINI-AUTO.pdf" title="Automotive Radar Brochure">Download the Brochure
+					&raquo;</a>
+			</p>
+			<hr class="space">
+			<h5 class="col-sm-offset-1">Anatomy of Radar Test</h5>
+
+			<map name="mmWaveCassiniMap">
+				<area shape="poly" coords="69,109,425,109,601,285,408,285,343,220,69,220" href="#mmWave1"
+					alt="Production Millimeter Wave" title="Production Millimeter Wave">
+				<area shape="rect" coords="0,286,525,375" href="#mmWave2" alt="Waveguide Interconnect System"
+					title="Waveguide Interconnect System">
+				<area shape="rect" coords="0,376,655,601" href="#mmWave3" alt="Precision Measurements"
+					title="Precision Measurements">
+			</map>
+
+
+			<img style="max-width: 1000px;" class="centerImg" id="mmWaveCassini"
+				alt="Cassini Test System for Automotive Radar" src="/images/AutomotiveTestSystem3.png"
+				usemap="#mmWaveCassiniMap">
+			<script is:inline>
+				//RESIZE IMAGEMAP
+				$(document).ready(function () {
+					$('#mmWaveCassini').ImageMapResize({ origImageWidth: "1000" });
+				});
+			</script>
+
+			<p class="main"><span id="mmWave1"></span>
+				Built upon the sucessful and proven technology of the industry's first
+				production radar test system (RI7100C), our second generation Cassini
+				radar test system picks up right where it's predecessor left off. With a
+				modular system architecture and more advanced instrumentation, the Cassini
+				radar system delivers wider application versatility and higher measurement
+				performance to tackle a diverse array of radar components while offering
+				tighter performance specifications.<br>
+				<a class="link" href="/pdf/CASSINI-AUTO.pdf" title="Automotive Radar Brochure">Download the Brochure
+					&raquo;</a>
+			</p>
+
+			<a href="#mmWaveCassini" style="text-decoration: none;">
+				<h5 style="position: relative; display: inline;">
+					<img alt="1)" src="/images/auto_id1.png" class="automotiveNums">
+					Production Millimeter Wave Ports
+				</h5>
+
+			</a>
+			<hr class="space">
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1">
+					<img alt="mmWave Waveguide Blind Mate Interface" src="/images/auto3.png" style="max-width: 306px;">
+				</div>
+				<div class="col-sm-6">
+					<div class="hidden-xs" style="margin-top: 55px;"></div>
+					<p id="mmWave2" class="main">
+						Using military-grade components and connectors, we have created the
+						industry's first blind-mate, production waveguide interface. The robust
+						mechanical design provides consistent waveguide alignment and docking
+						planarity to ensure accurate and repeatable measurements.
+					</p>
+				</div>
+			</div>
+			<hr class="space">
+			<div class="row">
+				<a href="#mmWaveCassini" style="text-decoration: none;">
+					<h5 class="col-xs-12 col-sm-7 col-sm-offset-5">
+						<img alt="2)" src="/images/auto_id2.png" class="automotiveNums">
+						Waveguide Interconnect System
+					</h5>
+				</a>
+				<div class="col-sm-6 col-sm-push-6">
+					<img alt="Waveguide Interconnect System" src="/images/auto4.png" style="max-width: 386px;">
+				</div>
+				<div class="col-sm-6 col-sm-pull-6">
+					<p class="main" style="margin-top: 55px;">
+						The interconnect system incorporates waveguide seamlessly into the
+						device interface environment to deliver optimum signal performance to
+						and from the device under test.<br>
+						Keyed guide pins and precision blind-mate surface tooling provide
+						reliable and repeatable waveguide connections while enabling easy
+						access to resources during development and field servicing of the test
+						bench in production.
+					</p>
+				</div>
+			</div>
+			<hr class="space">
+			<a href="#mmWaveCassini" style="text-decoration: none;">
+				<h5>
+					<img id="mmWave3" alt="3)" src="/images/auto_id3.png" class="automotiveNums">
+					Precision Measurements
+				</h5>
+			</a>
+			<div class="row">
+				<div class="col-sm-6">
+					<img alt="RI8564 Test Set" src="/images/auto5.png" style="max-width: 386px;">
+				</div>
+				<div class="col-sm-6">
+					<p class="main" style="margin-top: 40px;">
+						The RI8604 Test Set extends the microwave front-end of Cassini source and
+						receivers with frequency and port conversion for test and measure
+						capability in the 70 GHz to 86 GHz range. With integrated waveguide port
+						conversion, calibrated signal paths, and our SyRF Core vector RF
+						architecture, the instrument provides frequency translation and signal
+						condition for phase and power measurements, S-parameters, and distortion
+						test.<br>
+						<a class="link" href="/pdf/RI8604_TestSet_80GHz.pdf">Download RI8604 Test Set Brief &raquo;</a>
+					</p>
+				</div>
+			</div>
+			<hr class="space">
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="centerImg" alt="Source Performance from 74 GHz to 84 GHz" src="/images/auto6-pt1.png"
+						style="max-width: 324px;">
+				</div>
+				<div class="col-sm-6">
+					<img class="centerImg" alt="Receive Performance from 74 GHz to 84 GHz" src="/images/auto6-pt2.png"
+						style="max-width: 324px;">
+				</div>
+			</div>
+		</section> <!-- End of #content section-->
+</Base>

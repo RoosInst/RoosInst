@@ -5,7 +5,9 @@
  * on the legacy pages.
  *
  * Page-specific <head> content goes in slot="head"; it lands after the shared
- * stylesheets and scripts, so it can override them.
+ * stylesheets and scripts, so it can override them. slot="head-early" lands
+ * between Bootstrap and roos-min.css, for third-party CSS the site's own
+ * styles override (tiny-slider).
  */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -18,13 +20,15 @@ interface Props {
   footer?: boolean;
   /** Nav <li> ids to highlight, e.g. ['nav-company'] */
   active?: string[];
+  /** e.g. "dark-theme" (automotive_radar) */
+  htmlClass?: string;
 }
 
-const { title, description, footer = true, active = [] } = Astro.props;
+const { title, description, footer = true, active = [], htmlClass } = Astro.props;
 const path = Astro.url.pathname.endsWith('.html') ? Astro.url.pathname : `${Astro.url.pathname}.html`;
 const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
 ---
-<html lang="en">
+<html lang="en" class={htmlClass}>
 
 <head>
   <meta charset="utf-8">
@@ -41,6 +45,7 @@ const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
     rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <slot name="head-early" />
   <link href="/css/roos-min.css?v3" rel="stylesheet" id="pageTheme">
   <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
 

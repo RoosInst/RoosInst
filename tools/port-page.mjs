@@ -38,9 +38,26 @@ const BASE_HEAD = new Set([
   '<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>',
   '<script defer src="/js/roos.min.js?v3"></script>',
 ].map(squash));
-// Index of roos-min.css in the list above: page tags that came before it in
-// the legacy <head> would now come after it, which can change the cascade.
+// Legacy variants of Base's tags that Base's version replaces.
+const BASE_HEAD_VARIANTS = new Set([
+  // automotive_radar; the rest of the site is on 3.7.1
+  '<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>',
+].map(squash));
+// Page tags that came before roos-min.css go to slot="head-early" (between
+// Bootstrap and roos-min.css) so the cascade is unchanged.
 const THEME = squash('<link href="/css/roos-min.css?v3" rel="stylesheet" id="pageTheme">');
+// Tags whose position in <head> doesn't matter.
+const ORDER_FREE = /^<(meta\b|link\s+rel="(preconnect|dns-prefetch)")/i;
+
+// Known one-off header variants, normalised to Header.astro:
+//   10 pages: aria-label "Online Learning" and a space after the icon
+//   support, supportPlans: a stray nav-link attribute/class and a
+//   commented-out duplicate of the Support item
+const HEADER_VARIANTS = [
+  ['aria-label="Online Learning"><i class="fa-solid fa-school"></i> Online Training', 'aria-label="Online Training"><i class="fa-solid fa-school"></i>Online Training'],
+  ['<li id="nav-support" nav-link><a class="nav-link" href="/support.html">', '<li id="nav-support"><a href="/support.html">'],
+  ['<!-- <li id="nav-support"><a href="/support.html">Support</a></li> -->', ''],
+];
 
 const decode = (s) => {
   const out = s.replace(/&(amp|quot|#39|apos|lt|gt);/g, (_, e) => ({ amp: '&', quot: '"', '#39': "'", apos: "'", lt: '<', gt: '>' })[e]);
@@ -69,23 +86,28 @@ function port(name) {
   const html = readFileSync(src, 'utf8');
   const problems = [];
 
+  const htmlTag = html.match(/<html\b[^>]*>/i)?.[0] ?? '';
+  const htmlClass = attr(htmlTag, 'class');
+  if (squash(htmlTag.replace(/\s+class="[^"]*"/, '')) !== '<html lang="en">') problems.push(`unexpected <html> attributes: ${htmlTag}`);
+
   const head = html.match(/<head>([\s\S]*?)<\/head>/i)?.[1] ?? '';
   const title = decode(head.match(/<title>([\s\S]*?)<\/title>/i)[1].trim());
   const tags = head.match(/<!--[\s\S]*?-->|<script\b[\s\S]*?<\/script>|<style\b[\s\S]*?<\/style>|<title>[\s\S]*?<\/title>|<[a-z]+\b[^>]*>/gi) ?? [];
   let description, canonical;
   const active = [];
   const extra = [];
+  const early = [];
   let pastTheme = false;
   for (const t of tags) {
     const sq = squash(t);
     if (sq === THEME) pastTheme = true;
-    if (t.startsWith('<!--') || /^<title>/i.test(t) || BASE_HEAD.has(sq)) continue;
+    if (t.startsWith('<!--') || /^<title>/i.test(t) || BASE_HEAD.has(sq) || BASE_HEAD_VARIANTS.has(sq)) continue;
     if (/^<meta\s+name="description"/i.test(t)) { description = decode(attr(t, 'content')); continue; }
     if (/^<link\s+rel="canonical"/i.test(t)) { canonical = attr(t, 'href'); continue; }
     const navOnly = /^<script>\s*document\.addEventListener\("DOMContentLoaded", function \(\) \{((?:\s*document\.getElementById\("nav-[\w-]+"\)\.classList\.add\("active"\);)+)\s*\}\);\s*<\/script>$/.exec(t);
     if (navOnly) { active.push(...[...navOnly[1].matchAll(/"(nav-[\w-]+)"/g)].map((m) => m[1])); continue; }
-    if (!pastTheme) problems.push(`head tag before roos-min.css would move after it: ${sq.slice(0, 100)}`);
-    extra.push(t.trim());
+    if (ORDER_FREE.test(t) || pastTheme) extra.push(t.trim());
+    else early.push(t.trim());
   }
   if (!description) problems.push('no meta description');
 
@@ -94,7 +116,9 @@ function port(name) {
   const endComment = html.indexOf('-->', end) + 3;
   const header = html.slice(html.indexOf('<!--', html.indexOf('id="page-wrapper"')), endComment);
   const wrapper = html.slice(bodyStart, html.indexOf('<!--', html.indexOf('id="page-wrapper"')));
-  if (squash(header).replace(' rel="noopener"', '') !== headerRef) problems.push('header differs from Header.astro');
+  let headerSq = squash(header).replace(' rel="noopener"', '');
+  for (const [from, to] of HEADER_VARIANTS) headerSq = squash(headerSq.replace(from, to));
+  if (headerSq !== headerRef) problems.push('header differs from Header.astro');
   if (squash(wrapper) !== squash(`<body>
   <noscript><div class="alert alert-danger"><div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a href="https://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div></div></noscript>
   <div id="page-wrapper" class="page-boxed">`)) problems.push('body/noscript/#page-wrapper opening differs');
@@ -121,6 +145,7 @@ function port(name) {
     `description={${JSON.stringify(description)}}`,
     ...(canonical && canonical !== defaultCanonical ? [`canonical={${JSON.stringify(canonical)}}`] : []),
     ...(active.length ? [`active={${JSON.stringify(active)}}`] : []),
+    ...(htmlClass ? [`htmlClass={${JSON.stringify(htmlClass)}}`] : []),
   ];
   if (!canonical) problems.push('no canonical (Base will add the default one)');
 
@@ -128,11 +153,14 @@ function port(name) {
 import Base from '../layouts/Base.astro';
 ---
 <Base ${props.join('\n  ')}>
-${extra.length ? `  <Fragment slot="head">\n${extra.map((t) => '    ' + toTemplate(t)).join('\n')}\n  </Fragment>\n` : ''}${toTemplate(content)}
+${slotBlock('head-early', early)}${slotBlock('head', extra)}${toTemplate(content)}
 </Base>
 `;
-  return { out, problems, extra };
+  return { out, problems, extra: [...early, ...extra] };
 }
+
+const slotBlock = (name, tags) =>
+  tags.length ? `  <Fragment slot="${name}">\n${tags.map((t) => '    ' + toTemplate(t)).join('\n')}\n  </Fragment>\n` : '';
 
 let failed = false;
 for (const name of names) {
