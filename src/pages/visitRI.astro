@@ -1,0 +1,207 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"Plan a Visit | Roos Instruments"}
+  description={"Our facility is conveniently located in the heart of Silicon Valley, just minutes away from San Jose Airport and close to numerous Hotels, Restaurants and Attractions. We hope your visit to Roos Instruments is enjoyable and productive."}
+  active={["nav-company"]}>
+  <Fragment slot="head-early">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    integrity="sha384-PZZ0iQUb2LawAE6IluKzBVRHVB85dkzT3VbPqYx+he9UEfPLUsTpu2B/Qwv6ueAk" crossorigin="anonymous">
+  </Fragment>
+    <!-- ==========================
+    	BREADCRUMB - START
+    =========================== -->
+    <section class="breadcrumb-wrapper">
+      <div class="container">
+        <h2>Plan a Visit</h2>
+        <ol class="breadcrumb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/company.html">Company</a></li>
+          <li class="active">Plan a Visit</li>
+        </ol>
+      </div>
+    </section>
+    <!-- ==========================
+    	BREADCRUMB - END
+    =========================== -->
+
+    <div id="content" class="container">
+      
+      <section>
+        <div class="roosC">
+          <p class="text-center main">
+            Our facility is conveniently located in the heart of Silicon Valley, just minutes away from San Jose Airport
+            and close to numerous Hotels, Restaurants and Attractions. We hope your visit to Roos Instruments is enjoyable
+            and productive.
+          </p>
+        </div>
+
+        <p class="text-center visible-xs-block" style="font-size: 18px;">
+          <a href="https://goo.gl/maps/4eQnc" title="Map of Roos Instruments">2285 Martin Avenue, Santa Clara,
+            California 95050, USA</a> <br />
+          <small><a href="tel:+1-408-748-8589">+1(408)748-8589</a></small>
+        </p>
+        <div class="hidden-xs map-overlay-wrapper">
+          <a href="https://goo.gl/maps/4eQnc">
+            <div class="map-overlay">
+              <i class="fa-solid fa-map-marker-alt" style="margin-bottom: 20%;""></i>
+              <div class="map-overlay-body">
+                <h1 style="font-size: 24px; color: white;">Headquarters</h1>
+                <ul>
+                  <li>2285 Martin Ave</li>
+                  <li>Santa Clara, California</li>
+                  <li>United States</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        <img class="center" style="width:100%" alt="Roos Instruments Santa Clara, CA" src="images/RIsantaClara.jpg">
+
+        <!-- Weather -->
+      <script is:inline>
+        (function (d, s, id) {
+          if (d.getElementById(id)) {
+            if (window.__TOMORROW__) {
+              window.__TOMORROW__.renderWidget();
+            }
+            return;
+          }
+          const fjs = d.getElementsByTagName(s)[0];
+          const js = d.createElement(s);
+          js.id = id;
+          js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+      </script>
+
+      <div class="tomorrow" data-location-id="125903" data-language="EN" data-unit-system="IMPERIAL" data-skin="light"
+        data-widget-type="upcoming" style="padding-bottom:22px;position:relative;">
+        <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;">
+          <img alt="Powered by the Tomorrow.io Weather API"
+            src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="18" />
+        </a>
+      </div>
+    <br>  
+
+      </section>
+
+      
+      <!-- ==========================
+    	HOTELS - START
+    =========================== -->
+      <section class="content" id="section-hotels">
+        <h3 style="margin-bottom: 5px" class="text-center">Recommended Hotels</h3>
+        <div class="hotels-slider">
+          <div><a href="https://www.bestwestern.com/en_US/book/santa-clara/hotel-rooms/best-western-university-inn-santa-clara/propertyCode.05710.html"><img
+                onmouseover="this.src='images/hotel-best.png'" onmouseout="this.src='images/hotel-best_bw.png'"
+                class="centerImg" style="width: 79px; height: 72px;" src="images/hotel-best_bw.png"
+                alt="Best Western University Inn" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://hotelbiltmore.com/"><img onmouseover="this.src='images/hotel-biltmore.png'"
+                onmouseout="this.src='images/hotel-biltmore_bw.png'" class="centerImg"
+                style="width: 96px; height: 72px;" src="images/hotel-biltmore_bw.png" alt="Biltmore Hotel & Suites" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+          <div><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/santa-clara/sncca/hoteldetail?cm_mmc=GoogleMaps-_-ex-_-USEN-_-sncca"><img
+                onmouseover="this.src='images/hotel-holiday.png'" onmouseout="this.src='images/hotel-holiday_bw.png'"
+                class="centerImg" style="width: 144px; height: 72px;" src="images/hotel-holiday_bw.png"
+                alt="Holiday Inn Express & Suites" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://www.marriott.com/en-us/hotels/sjcde-delta-hotels-santa-clara-silicon-valley/overview/"><img
+                onmouseover="this.src='images/hotel-marriott.png'" onmouseout="this.src='images/hotel-marriott_bw.png'"
+                class="centerImg" style="width: 96px; height: 72px;" src="images/hotel-marriott_bw.png"
+                alt="Santa Clara Marriott" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://www.domainhotelsv.com/"><img class="centerImg"
+                style="width: 72px; height: 72px;" src="images/hotel-domain.png" alt="The Domain Hotel" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://www.choicehotels.com/california/santa-clara/quality-inn-hotels/ca285"><img
+                onmouseover="this.src='images/hotel-quality.png'" onmouseout="this.src='images/hotel-quality_bw.png'"
+                class="centerImg" style="width: 63px; height: 72px;" src="images/hotel-quality_bw.png"
+                alt="Quality Inn & Suites Silicon Valley"></a></div>
+          <div><a href="https://www.ihg.com/candlewood/hotels/us/en/santa-clara/sjcsc/hoteldetail?cm_mmc=GoogleMaps-_-cw-_-USEN-_-sjcsc"><img
+                onmouseover="this.src='images/hotel-candlewood.png'"
+                onmouseout="this.src='images/hotel-candlewood_bw.png'" class="centerImg"
+                style="width: 155px; height: 72px;" src="images/hotel-candlewood_bw.png"
+                alt="Candlewood Suites Silicon Valley/San Jose" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://www.hiltonsantaclara.com/"><img
+                onmouseover="this.src='images/hotel-hilton.png'" onmouseout="this.src='images/hotel-hilton_bw.png'"
+                class="centerImg" style="width: 138px; height: 72px;" src="images/hotel-hilton_bw.png"
+                alt="Hilton Santa Clara"></a></div>
+          <div><a href="https://santaclara.regency.hyatt.com/en/hotel/home.html"><img
+                onmouseover="this.src='images/hotel-hyatt-regency.png'"
+                onmouseout="this.src='images/hotel-hyatt-regency_bw.png'" class="centerImg"
+                style="width: 66px; height: 72px;" src="images/hotel-hyatt-regency_bw.png" alt="Hyatt Regency"></a>
+          </div>
+          <div><a href="https://santaclara.house.hyatt.com/en/hotel/home.html"><img
+                onmouseover="this.src='images/hotel-hyatt-house.png'"
+                onmouseout="this.src='images/hotel-hyatt-house_bw.png'" class="centerImg"
+                style="width: 67px; height: 72px;" src="images/hotel-hyatt-house_bw.png" alt="Hyatt House" target="_blank" rel="noopener noreferrer"></a></div>
+          <div><a href="https://embassysuites3.hilton.com/en/hotels/california/embassy-suites-santa-clara-silicon-valley-SNCCAES/index.html"><img
+                onmouseover="this.src='images/hotel-embassy.png'" onmouseout="this.src='images/hotel-embassy_bw.png'"
+                class="centerImg" style="width: 90px; height: 72px;" src="images/hotel-embassy_bw.png"
+                alt="Embassy Suites by Hilton" target="_blank" rel="noopener noreferrer"></a></div>
+        </div>
+      </section>
+      <br>    <br>  
+      <!-- ==========================
+    	HOTELS - END
+    =========================== -->
+    <section id="section-map">
+      <!--Google Map-->
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.google.com/maps/d/embed?mid=zwxVvBmWBBug.k4-cORlVkxM0" title="map"> </iframe>
+      </div>
+    </section>
+    <br>
+    <section id="notice">
+      <div class="row" style="padding-right: 30px;">
+        <div class="col-sm-12" style="
+                      background-color: #fafad2; 
+                      border-color: rgba(0,0,0,.1);
+                      border-width: 0 .9375rem 0 .9375rem;
+                      border-style: solid;
+                      padding: .9375rem 2rem .9375rem 2rem;">
+          <span><i class="fa-solid fa-virus-slash"></i>
+            <a style="font-size: 18px;" href="/covid_ready.html">COVID-19 Guidance</a>
+          </span>
+          <p class="main" style="margin-bottom:10px">Refer to <a href="https://www.dir.ca.gov/dosh/coronavirus/"
+              title="Cal/OSHA">Cal/OSHA</a> Guidance for current prevention requirements.
+            Please follow all <a href="https://covid19.who.int/" title="WHO">global</a>, <a
+              href="https://www.dir.ca.gov/dosh/coronavirus/" title="Cal/OSHA">regional</a> and <a
+              href="https://covid19.sccgov.org/home" title="Santa Clara County Public Health">local</a> guidelines
+            when planning a visit to RI.</p>
+        </div>
+      </div>
+    </section>
+    </div>
+  <Fragment slot="end">
+    <script is:inline defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script is:inline defer>
+      // Don't forget CSS when copying this script!
+      document.addEventListener('DOMContentLoaded', function () {
+        var slider = tns({
+          container: '.hotels-slider',
+          items: 6,
+          responsive: {
+            0: { items: 1 },
+            400: { items: 2 },
+            726: { items: 3 },
+            992: { items: 4 },
+            1200: { items: 6 }
+          },
+          slideBy: 1,
+          autoplay: true,
+          autoplayButtonOutput: false,
+          autoplayHoverPause: true,
+          controls: false,
+          nav: false,
+          autoplayTimeout: 1500,
+          speed: 400,
+          loop: true,
+          mouseDrag: false
+        });
+      });
+    </script>
+  </Fragment>
+</Base>

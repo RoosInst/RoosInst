@@ -7,7 +7,8 @@
  * Page-specific <head> content goes in slot="head"; it lands after the shared
  * stylesheets and scripts, so it can override them. slot="head-early" lands
  * between Bootstrap and roos-min.css, for third-party CSS the site's own
- * styles override (tiny-slider).
+ * styles override (tiny-slider). slot="end" follows the footer, for scripts
+ * that legacy pages put there (carousel setup).
  */
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -70,6 +71,7 @@ const canonical = Astro.props.canonical ?? new URL(path, Astro.site).href;
     <Header active={active} />
     <slot />
     {footer && <div class="bottom"><Footer /></div>}
+    <slot name="end" />
   </div>
 </body>
 

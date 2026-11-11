@@ -1,279 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>6G Device Testing | Roos Instruments</title>
-    <link rel="stylesheet" href="/css/fontawesome-svg.min.css">
-    <link rel="canonical" href="https://roos.com/testsets.html" />
-    <meta name="description" content="Cassini TestSets extend the SyRFCore to high frequency markets up to 110 GHz
-                The Cassini 16 slot ATE platform allows for flexibility by progressively adding higher frequency capability.">
-    <meta name="keywords"
-        content="TestSet, TestSets, S-Parameter Testing, Massive MIMO, Beam Forming, 
-        Signal Sourcing, Noise Sourcing, RF Testing, Telecom Device Testing, Roos Instruments, 6G Technology, Automated Test Equipment, High Port Count Devices, Frequency Translation">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("nav-products").classList.add("active");
-        });
-    </script>
-
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title={"5G Device Testing | Roos Instruments"}
+  description={"Cassini is the only fully integrated ATE solution for high frequency markets up to 110 GHz\n                    GHz and is 5G ready today. 5G technology rapidly changes, the Cassini 16 slot ATE platform allows\n                    for flexibility by progressively adding higher frequency capability."}
+  active={["nav-products"]}>
+  <Fragment slot="head-early">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
         integrity="sha384-bnNe8RYtqyFHZvs1dFmvpADgeNEGZCbzu5usprc4RtX/MlNbrGRu6aTZzVQHYiA1"
         crossorigin="anonymous"></script>
-
-    <!-- TOP - v57 -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Roos Instruments, Inc.">
-    <meta name="theme-color" content="#f0f0f0">
-
-    <link rel="icon" href="/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400%7CQuando%7CMichroma&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="/css/roos-min.css?v3" rel="stylesheet" id="pageTheme">
-    <link href="/css/roos-print.css?v2" rel="stylesheet" media="print">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script defer src="/js/roos.min.js?v3"></script>
-
-</head>
-
-<body>
-    <noscript>
-        <div class="alert alert-danger">
-            <div class="text-center"><strong>Notice: </strong> JavaScript is not enabled, affecting site navigation.<a
-                    href="https://enable-javascript.com/" class="btn btn-default">Please Enable JavaScript</a></div>
-        </div>
-    </noscript>
-
-    <div id="page-wrapper" class="page-boxed">
-        <!-- ==========================
-        	HEADER - START
-        =========================== -->
-        <div class="top-header hidden-xs">
-            <div class="container">
-                <div class="pull-left">
-                    <div class="header-item"><a href="mailto:support@roos.com" aria-label="email support@roos.com"><i
-                                class="fa-solid fa-envelope"></i> support@roos.com</a></div>
-                    <div class="header-item"><a href="tel:+1-408-748-8589"><i
-                                class="fa-solid fa-phone"></i>+1-408-748-8589</a></div>
-                </div>
-                <div class="header-item pull-right">
-
-                    <a href="https://learn.roos.com/" aria-label="Online Learning"><i class="fa-solid fa-school"></i>
-                        Online Training</a>
-                </div>
-            </div>
-        </div>
-        <header class="navbar yamm navbar-default navbar-static-top fh-fixedHeader">
-            <div class="container">
-
-                <div class="navbar-header">
-                    <div class="visible-xs-block">
-                        <button aria-label="Search Site" style="top: 3px; z-index: 1;" type="button"
-                            class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
-                                class="fa-solid fa-bars"></i></button>
-                        <div class="search-form-toggle mobileTopBtn"><a title="Search Button" class="navButton" href="#"
-                                data-toggle="modal" data-target="#searchModal"><i class="fa-solid fa-search"></i></a>
-                        </div>
-                    </div>
-
-                    <div id="title">
-                        <div class="hidden-xs hidden-sm">
-                            <a href="/index.html">
-                                <div class="mainTitleAdjust">Roos Instruments</div>
-                                <div class="ROOSbanner"></div>
-                                <span id="nav-tag">Modular <abbr title="Automated Test Equipment">ATE</abbr> for the
-                                    World's Most
-                                    Advanced
-                                    Technology</span>
-                            </a>
-                        </div>
-                        <div class="visible-sm">
-                            <a href="/index.html">
-                                <div style="font-size: 25px;" class="mainTitleAdjust">Roos<br>Instruments</div>
-                            </a>
-                        </div>
-                        <div class="visible-xs-block container">
-                            <!-- Separate than above div because .container lost when shrunk, needed to re-add -->
-                            <a href="/index.html">
-                                <div style="display: inline-block;" class="mainTitleAdjust">Roos Instruments</div>
-                            </a>
-                            <div class="ROOSbanner"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- end of .navbar-header -->
-                <nav class="navbar-collapse collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li id="nav-home" class="dropdown">
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li id="nav-mobile-support" class="dropdown hidden-sm hidden-md hidden-lg">
-                            <a href="/support.html">Support</a>
-                        </li>
-                        <li id="nav-products" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
-                                data-delay="300">Products<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/products.html"><i class="fa-solid fa-angles-right"></i>Overview</a></li>
-                                <li><a href="/infrastructure.html"><i class="nav-indent1 fas fa-angles-right"></i>Test
-                                        Systems</a>
-                                </li>
-                                <li><a href="/instruments.html"><i
-                                            class=" nav-indent1 fas fa-angles-right"></i>Instruments</a>
-                                </li>
-                                <li><a href="/tims.html"><i class="nav-indent2 fas fa-angles-right"></i>Browse
-                                        TIMs</a></li>
-                                <li><a href="/software.html"><i class="nav-indent1 fas fa-angles-right"></i>Software</a>
-                                </li>
-                                <li><a href="/fixture.html"><i class="nav-indent1 fas fa-angles-right"></i>Device
-                                        Interface</a>
-                                </li>
-                                <li><a href="/rik"><i class="fa-solid fa-angles-right"></i>RIK Catalog</a></li>
-                            </ul>
-                        </li>
-                        <li id="nav-services" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
-                                data-delay="300">Services<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/services.html"><i class="fa-solid fa-angles-right"></i>Overview</a></li>
-                                <li><a href="/turnkey.html"><i class="nav-indent1 fas fa-angles-right"></i>Turnkey</a>
-                                </li>
-                                <li><a href="/production.html"><i
-                                            class="nav-indent1 fas fa-angles-right"></i>Production</a>
-                                </li>
-                                <li><a href="/guru.html"><i class="nav-indent1 fas fa-angles-right"></i>Enterprise</a>
-                                </li>
-                                <li><a href="/training.html"><i class="nav-indent1 fas fa-angles-right"></i>Training</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="nav-company" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" onclick="" data-hover="dropdown"
-                                data-delay="300">Company<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/company.html"><i class="fa-solid fa-angles-right"></i>About Us</a></li>
-                                <li><a href="/news.html"><i class="nav-indent1 fas fa-angles-right"></i>News &
-                                        Events</a></li>
-                                <li><a href="/careers.html"><i class="nav-indent1 fas fa-angles-right"></i>Careers</a>
-                                </li>
-                                <li><a href="/mediaKit.html"><i class="nav-indent1 fas fa-angles-right"></i>Media
-                                        Kit</a></li>
-                                <li><a href="/visitRI.html"><i class="nav-indent1 fas fa-angles-right"></i>Plan a
-                                        Visit</a></li>
-                                <li><a href="/contact.html"><i class="nav-indent1 fas fa-angles-right"></i>Contact
-                                        Us</a></li>
-                            </ul>
-                        </li>
-            <li id="nav-support">
-              <a href="/support.html">Support</a>
-            </li>                        <li id="nav-mobile-privacy" class="dropdown hidden-sm hidden-md hidden-lg">
-                            <a href="/privacy.html">Privacy</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav hidden-xs">
-                        <li style="margin-right: -12px;" class="search-form-toggle">
-                            <a title="Search" class="navButton" href="#" data-toggle="modal"
-                                data-target="#searchModal"><i class="fa-solid fa-search"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <!-- Print view only -->
-        <div class="clearfix visible-print">
-            <div class="pull-left">
-                <img style="height: 50px;" src="/images/titleForPrint.jpg" alt="RI Title">
-            </div>
-            <div class="pull-right">
-                <img style="width: 11px;" src="/images/RILogoWeb.png" alt="RI logo">
-            </div>
-        </div>
-
-        <!-- Search Modal -->
-        <div id="searchModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-
-                <!-- Search Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Search</h3>
-                    </div>
-                    <div class="modal-body">
-                        <div class="features-item" id="features-tabs-panels">
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="active" role="tab" aria-controls="google-search" aria-selected="true">
-                                    <a href="#google-search" data-toggle="tab">
-                                        <i class="fa-solid fa-globe" aria-hidden="true"></i>&nbsp;Website
-                                    </a>
-                                </li>
-                                <li role="tab" aria-controls="document-search">
-                                    <a href="#document-search" data-toggle="tab">
-                                        <i class="fa-solid fa-book" aria-hidden="true"></i>&nbsp;Documentation
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="google-search">
-                                    <div class="reset-box-sizing" id="search">
-                                        <div class="gcse-search"></div>
-                                    </div>
-                                    <!-- end of #search -->
-                                </div>
-                                <div class="tab-pane fade" id="document-search">
-                                    <form name="docsSearch2" method="POST" action="#"
-                                        onSubmit="goSearch2(); return false;">
-                                        <div class="form-group nospace">
-                                            <div id="searchFail2" class="alert alert-warning hidden" role="alert">
-                                                <strong>Oops!</strong> Search for something.
-                                            </div>
-                                            <div class="input-group">
-                                                <input style="margin: 12px 0;" type="text" class="form-control"
-                                                    id="query2" placeholder="Search Documentation" required>
-                                                <span onclick="goSearch2(); return false;"
-                                                    class="input-group-btn"><button class="btn btn-primary"
-                                                        type="button" title="Search"><i
-                                                            class="fa-solid fa-search"></i></button></span>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End Search Modal -->
-        <!-- ==========================
-        	HEADER - END
-        =========================== -->
-
-        <!-- TOP END (error pages have no header, don't globally replace past this if updating head) -->
-
+  </Fragment>
+  <Fragment slot="head">
+    <meta name="keywords"
+        content="5G Device Testing, Cassini ATE, High Frequency Semiconductors, S-Parameter Testing, Massive MIMO, Beam Forming, 
+        Signal Sourcing, Noise Sourcing, RF Testing, Telecom Device Testing, Roos Instruments, 5G Technology, Automated Test Equipment, High Port Count Devices, Frequency Translation">
+  </Fragment>
         <!-- ==========================
     	BREADCRUMB - START
     =========================== -->
         <section class="breadcrumb-wrapper">
             <div class="container">
-                <h2>6G Device Testing</h2>
+                <h2>5G Device Testing</h2>
                 <ol class="breadcrumb">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/products.html">Products Overview</a></li>
-                    <li class="active"></i>6G Testing</li>
+                    <li><a href="/index.html">Home</a> &nbsp;<i class="fa-solid fa-angles-right"></i></li>
+                    <li><a href="/products.html">Products Overview</a> &nbsp;<i class="fa-solid fa-angles-right"></i>
+                    </li>
+                    <li class="active">5G Testing</li>
                 </ol>
             </div>
         </section>
@@ -284,7 +36,7 @@
             JUMBOTRON - START
           =========================== -->
 
-        <style>
+        <style is:inline>
             a.anchor {
                 display: block;
                 position: relative;
@@ -293,7 +45,7 @@
             }
         </style>
 
-        <script>
+        <script is:inline>
             // Replace jQuery slider navigation with vanilla JS
             document.addEventListener('DOMContentLoaded', function () {
                 // Make sure 'slider' is defined in the appropriate scope
@@ -434,7 +186,7 @@
             });
         </script>
 
-        <style>
+        <style is:inline>
             h2,
             h3 {
                 font-weight: 500;
@@ -558,11 +310,11 @@
             }
         </style>
 
-        <section id="6G-coverage" class="roosC">
+        <section id="5G-coverage" class="roosC">
             <div class="container">
-                <h1>Cassini 6G Covered</h1>
+                <h1>Cassini 5G Covered</h1>
                 <p class="main">Cassini is the only Automated Test Equipment (ATE) for testing high frequency
-                    semiconductors at any frequency up to 110 GHz and is 6G ready today. 6G technology rapidly changes,
+                    semiconductors at any frequency up to 110 GHz and is 5G ready today. 5G technology rapidly changes,
                     the Cassini 16-slot ATE platform allows for flexibility by progressively adding higher frequency
                     test capabilities.</p>
             </div>
@@ -570,25 +322,25 @@
                 <div id="sixG-tns">
                     <div class="item">
                         <a id="sixG-slide-4" class="anchor"></a>
-                        <img src="/images/6GSpectrumCoverage_WebSlides.005.png" usemap="#slide-5-map" id="slide5-img"
-                            alt="6G Spectrum Coverage Full">
-                        <map name="slide-5-map">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img"
+                            alt="5G Spectrum Coverage 4">
+                        <map name="slide-4-map">
                             <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
                                 shape="rect" />
-                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" coords="230,0,510,600"
+                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" ccoords="230,0,510,600"
                                 shape="rect" />
                             <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
                                 shape="rect" />
                             <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
                                 shape="rect" />
-                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" href="#TestSet100"
+                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
                                 coords="942,0,1200,600" shape="rect" />
                         </map>
                     </div>
                     <div class="item">
                         <a id="sixG-slide-1" class="anchor"></a>
-                        <img src="/images/6GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map" id="slide1-img"
-                            alt="6G Spectrum Coverage 1">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.001.png" usemap="#slide-1-map" id="slide1-img"
+                            alt="5G Spectrum Coverage 1">
                         <map name="slide-1-map">
                             <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
                                 shape="rect" />
@@ -604,8 +356,8 @@
                     </div>
                     <div class="item">
                         <a id="sixG-slide-2" class="anchor"></a>
-                        <img src="/images/6GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map" id="slide2-img"
-                            alt="6G Spectrum Coverage 2">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.002.png" usemap="#slide-2-map" id="slide2-img"
+                            alt="5G Spectrum Coverage 2">
                         <map name="slide-2-map">
                             <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
                                 shape="rect" />
@@ -621,8 +373,8 @@
                     </div>
                     <div class="item">
                         <a id="sixG-slide-3" class="anchor"></a>
-                        <img src="/images/6GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map" id="slide3-img"
-                            alt="6G Spectrum Coverage 3">
+                        <img src="/images/5GSpectrumCoverage_WebSlides.003.png" usemap="#slide-3-map" id="slide3-img"
+                            alt="5G Spectrum Coverage 3">
                         <map name="slide-3-map">
                             <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
                                 shape="rect" />
@@ -632,23 +384,6 @@
                                 shape="rect" />
                             <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" class="next-link" href="#"
                                 coords="755,0,942,600" shape="rect" />
-                            <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
-                                coords="942,0,1200,600" shape="rect" />
-                        </map>
-                    </div>
-                    <div class="item">
-                        <a id="sixG-slide-4" class="anchor"></a>
-                        <img src="/images/6GSpectrumCoverage_WebSlides.004.png" usemap="#slide-4-map" id="slide4-img"
-                            alt="6G Spectrum Coverage 4">
-                        <map name="slide-4-map">
-                            <area alt="RI8545: 100 kHz to 20 GHz" title="20 GHz" href="#TestSet20" coords="0,0,230,600"
-                                shape="rect" />
-                            <area alt="RI8607: 2 GHz to 50 GHz" title="50 GHz" href="#TestSet50" ccoords="230,0,510,600"
-                                shape="rect" />
-                            <area alt="RI8580: 50 GHz to 70 GHz" title="60 GHz" href="#TestSet60" coords="510,0,755,600"
-                                shape="rect" />
-                            <area alt="RI8604: 70 GHz to 86 GHz" title="80 GHz" href="#TestSet80" coords="755,0,942,600"
-                                shape="rect" />
                             <area alt="RI8610: 86 GHz to 110 GHz" title="100 GHz" class="last-link" href="#"
                                 coords="942,0,1200,600" shape="rect" />
                         </map>
@@ -666,7 +401,7 @@
             <div class="row">
                 <h2>RI8545: 100 kHz to 20 GHz</h2>
                 <p>Perform High Performance Full 4 Port S-Parameter Testing of all the traditional telecom devices
-                    at baseband and the most prevalent channel frequencies for LTE, 4G, 5G, 6G and Wifi.
+                    at baseband and the most prevalent channel frequencies for LTE, 4G, 5G, 5G and Wifi.
                     Enables engineering lab accurate error corrected measurements in a production proven module
                     for Gain, Phase, Absolute Power, Noise Figure, Return Loss, and Spectral Purity. Massive MIMO
                     and Beam Forming high port count devices are supported through Active port expansion in
@@ -797,7 +532,7 @@
             <div class="row">
                 <h2>RI8607: 2 GHz to 50 GHz</h2>
                 <p>Scalable High Performance 2 Port S-Parameter Testing optimized for frequency translation telecom as
-                    well as back haul devices at all the channel frequencies for 5G and upcoming 6G standards. Enables
+                    well as back haul devices at all the channel frequencies for 5G and upcoming 5G standards. Enables
                     engineering lab accurate error corrected measurements in a production proven module for Gain, Phase,
                     Absolute Power, Noise Figure, Return Loss, Two Tone, Itermod and Spectral Purity. Active port
                     expansion through Cassini's support of mixing and matching multiple TIMs for up to 24 independent
@@ -1123,8 +858,8 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <h3>6G Device Interface &NonBreakingSpace; &NonBreakingSpace;</h3>
-                    <p style="padding-top: 2.5em;">Low loss blind mate interfaces solve production challenges for 6G
+                    <h3>5G Device Interface &NonBreakingSpace; &NonBreakingSpace;</h3>
+                    <p style="padding-top: 2.5em;">Low loss blind mate interfaces solve production challenges for 5G
                         devices. We're taking modular to a whole new level.</p>
                     <a class="link" href="/fixture.html">Cassini Device Interface &raquo;</a>
                 </div>
@@ -1143,13 +878,7 @@
                 </div>
             </div>
             <div class="row">
-                Learn More about <a href="5g.html">5G Device Cassini configurations &raquo;</a>
+                Learn More about <a href="6g.html">6G Device Cassini configurations &raquo;</a>
             </div>
         </section>
-
-        <div class="bottom"></div>
-    </div>
-    </div>
-</body>
-
-</html>
+</Base>

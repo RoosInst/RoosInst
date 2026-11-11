@@ -76,11 +76,14 @@ function toTemplate(html) {
   }).join('');
 }
 
-const headerRef = squash(
+// Comments never render, so headers are compared without them (5g carries
+// a commented-out mega-menu).
+const noComments = (s) => s.replace(/<!--[\s\S]*?-->/g, '');
+const headerRef = squash(noComments(
   readFileSync(join(root, 'src/components/Header.astro'), 'utf8')
     .replace(/^---[\s\S]*?---/, '')
     .replace(/ class=\{cls\("[^"]*"(?:, "([^"]*)")?\)\}/g, (_, c) => (c ? ` class="${c}"` : '')),
-);
+));
 
 function port(name) {
   const src = join(root, 'src-legacy', `${name}.html`);
@@ -117,7 +120,7 @@ function port(name) {
   const endComment = html.indexOf('-->', end) + 3;
   const header = html.slice(html.indexOf('<!--', html.indexOf('id="page-wrapper"')), endComment);
   const wrapper = html.slice(bodyStart, html.indexOf('<!--', html.indexOf('id="page-wrapper"')));
-  let headerSq = squash(header).replace(' rel="noopener"', '');
+  let headerSq = squash(noComments(header)).replace(' rel="noopener"', '');
   for (const [from, to] of HEADER_VARIANTS) headerSq = squash(headerSq.replace(from, to));
   if (headerSq !== headerRef) problems.push('header differs from Header.astro');
   if (squash(wrapper) !== squash(`<body>
@@ -128,7 +131,13 @@ function port(name) {
   const slot = '<div class="bottom"></div>';
   const at = rest.lastIndexOf(slot);
   if (at < 0) problems.push('no footer placeholder');
-  const tail = rest.slice(at + slot.length);
+  let tail = rest.slice(at + slot.length);
+  // Scripts after the footer (carousel setup) go to slot="end".
+  const endScripts = [];
+  tail = tail.replace(/^\s*((?:<script\b[\s\S]*?<\/script>\s*)+)/, (_, s) => {
+    endScripts.push(...s.match(/<script\b[\s\S]*?<\/script>/g));
+    return '';
+  });
   if (squash(tail) !== '</div></body></html>') problems.push(`unexpected content after footer: ${squash(tail).slice(0, 80)}`);
   const content = rest.slice(0, at).replace(/^\s*\n/, '').replace(/\s+$/, '');
   // Astro needs balanced markup; browsers silently close what a page leaves
@@ -155,7 +164,7 @@ import Base from '../layouts/Base.astro';
 ---
 <Base ${props.join('\n  ')}>
 ${slotBlock('head-early', early)}${slotBlock('head', extra)}${toTemplate(content)}
-</Base>
+${slotBlock('end', endScripts)}</Base>
 `;
   return { out, problems, extra: [...early, ...extra] };
 }
