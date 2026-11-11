@@ -1,0 +1,48 @@
+name: site
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  check:
+    # The visual baseline was captured with Chromium on Windows (no platform suffix
+    # on the snapshots), so the check runs there too.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            visual/package-lock.json
+
+      - run: npm ci
+      - run: npm run build
+      - name: Internal links (case-sensitive)
+        run: node tools/check-links.mjs dist
+
+      - run: npm ci
+        working-directory: visual
+      - name: Visual check against the baseline
+        shell: bash
+        run: |
+          npx astro preview --port 4321 &
+          npx --yes wait-on@8.0.3 -t 60000 http://localhost:4321/index.html
+          npm run visual -- --grep-invert "(apps|form_network)$"
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: visual-report
+          path: |
+            visual/report/
+            visual/test-results/
+          retention-days: 14
