@@ -89,10 +89,14 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 - **New pages:** write `src/pages/<name>.astro` on `Base` (see any ported page); `src-legacy/_template.html` predates the port.
 - Still to do: one carousel library (tiny-slider or owl), and finish or replace the `.js` rewrite (`bd55e49`).
 
-### Phase 4 — SEO / infra parity
-1. Same URLs (`.html` paths or redirects), canonical tags, `sitemap.xml`, `robots.txt`, `403/404/50x` pages.
-2. Cookie consent: three packages in `package.json` (`cookie-bar`, `cookie-consent-box`, `cookieconsent`) → keep one. Drop unused `socket.io`, `@types/del`.
-3. Replace `codeql-analysis.yml`/old CI with: build + visual check on PR.
+### Phase 4 — SEO / infra parity ✅ (branch `phase4-seo`, 2026-11-11) — one open item
+1. ✅ URLs: `build.format: 'file'` keeps every `/name.html`; `dist/` has all 56 pages plus `403/404/502/503/50x(_alt)`, which the nginx `error_page` lines name. Canonicals audited: one per page, all self-referencing except `cassini_reference_guide` → `/refGuide` (Domino, 200 on live), `lab_landing` → `lab.roos.com`, `vmhost_landing` none (intended).
+   - **Fixed:** `fromBench` canonical pointed at `fromBenech.html` (404). `sitemap.xml` listed `/5G.html` (404 on live too; the file is `5g.html`).
+   - `sitemap.xml` and `robots.txt` ship unchanged otherwise. The sitemap is crawler output and leaves out 17 static pages (`ritdb`, `terms`, `legal`, `shipping`, `returns`, `green`, `fastest`, ...). `robots.txt` has no `Sitemap:` line.
+   - **New:** `node tools/check-links.mjs dist`: every internal `href`/`src` must name a file in the build *with exact case* (the cutover risk: roos.com and Windows ignore case, most hosts don't). Domino path prefixes (`parts/`, `rik`, `help/`, `docs/`, `*.nsf`, ...) are skipped; each was checked 200 on live.
+   - **Open:** `ritdb` links `/web/stdfTranslatorV86.zip` (14 MB, on live) but the repo has only `stdfTranslatorV83.zip`. Add V86 to `public/web/` (and drop V83?) before any deploy that deletes stale files. The link check fails on it until then.
+2. ✅ Cookie consent: the site uses only the vendored `public/js/cookieconsent.min.js` (`gan`, `search`, `roos.js`). Kept `cookieconsent` in `package.json`; dropped `cookie-bar`, `cookie-consent-box`, `socket.io`, `@types/del`, `postcss` (nothing imported them; Astro brings its own postcss). `tiny-slider` stays until the carousel decision.
+3. ✅ `.github/workflows/site.yml` replaces `codeql-analysis.yml` (CodeQL v1 actions, retired): on PR/push to `master`, `npm ci`, build, link check, then `npm run visual` against `astro preview`. Runs on `windows-latest` because the baseline was captured with Chromium on Windows. **Not yet run on GitHub**: needs a push, and font rendering on the hosted runner may differ from this machine.
 
 ### Phase 5 — Cutover
 1. Deploy to staging, run `VISUAL_LOCAL_URL=<staging> npm run visual`.
