@@ -99,8 +99,10 @@ The baseline now reflects these fixes, which are **not yet deployed**. Until the
 3. ✅ `.github/workflows/site.yml` replaces `codeql-analysis.yml` (CodeQL v1 actions, retired): on PR/push to `master`, `npm ci`, build, link check, then `npm run visual` against `astro preview`. Runs on `windows-latest` because the baseline was captured with Chromium on Windows. **Not yet run on GitHub**: needs a push, and font rendering on the hosted runner may differ from this machine.
 
 ### Phase 5 — Cutover
-1. Deploy to staging, run `VISUAL_LOCAL_URL=<staging> npm run visual`.
-2. Switch DNS/hosting; keep the legacy build tagged (`legacy-final`) for rollback.
+1. ✅ Staging (2026-11-13): `home1.roos.com`, `notes@home1.roos.com:/local/notesdata/domino/html` over SSH (key in the Windows ssh-agent, so use `C:\Windows\System32\OpenSSH\ssh.exe`; Git Bash's ssh can't reach the agent). That directory is also Domino's web root (`lotus/`, `oneuiv2/`, `sametime/`, ...), so deploys **add and overwrite only, never delete**: `tar -C dist -cf - . | ssh home1.roos.com 'tar -C /local/notesdata/domino/html --no-same-owner -xf -'`. Request explicit `/<page>.html` URLs: `/` goes to the Domino mail login.
+   - Pre-deploy backup on the server: `/local/notesdata/domino/html.bak-2026-11-13` (5.4 GB).
+   - Deployed `fcd4c95`. `VISUAL_LOCAL_URL=https://home1.roos.com npm run visual -- --grep-invert "(apps|form_network)$"`: **156/156 green** (10 min).
+2. Switch DNS/hosting; legacy build tagged `legacy-final` (`ef4f0fa`, pushed) for rollback.
 3. Clean up stale branches (`esm-gulp`, `Dev`, `vo-*`, ~20 dependabot branches).
 
 ## Risks
